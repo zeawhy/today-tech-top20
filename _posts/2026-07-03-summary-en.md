@@ -5,244 +5,158 @@ date: 2026-07-03
 lang: en
 ---
 
-> From 39 items, 10 important content pieces were selected
+> From 42 items, 8 important content pieces were selected
 
 ---
 
-1. [Why Startups Build Half-Baked Products](#item-1) ⭐️ 8.0/10
-2. [crustc: Entire Rust Compiler Translated to C](#item-2) ⭐️ 8.0/10
-3. [Podman v6.0.0 Released with Docker Compatibility](#item-3) ⭐️ 8.0/10
-4. [Immich 3.0 Released: Major Update for Self-Hosted Photos](#item-4) ⭐️ 8.0/10
-5. [US Bans Differential Privacy in Census Data](#item-5) ⭐️ 8.0/10
-6. [Understand to Participate: A New Paradigm for AI-Assisted Coding](#item-6) ⭐️ 8.0/10
-7. [ECTC 2026 Roundup: EMIB-T, Custom HBM, Photonics, Cooling](#item-7) ⭐️ 8.0/10
-8. [Anthropic Accuses Alibaba of Massive Distillation Attack on Claude](#item-8) ⭐️ 8.0/10
-9. [Huawei Launches Atlas 350 with ShengTeng 950PR, 2.87x H20 Performance](#item-9) ⭐️ 8.0/10
-10. [Geekerwan: Mate 80 Pro gaming efficiency beats Snapdragon 8 Gen3](#item-10) ⭐️ 8.0/10
+1. [Wordgard: New Rich-Text Editor from ProseMirror Creator](#item-1) ⭐️ 8.0/10
+2. [Crustc: Entire Rust Compiler Translated to C](#item-2) ⭐️ 8.0/10
+3. [CDD recovers finetuning data from LLMs using only logits](#item-3) ⭐️ 8.0/10
+4. [Anthropic Accuses Alibaba of Massive Distillation Attack on Claude](#item-4) ⭐️ 8.0/10
+5. [Huawei Launches Atlas 350 Accelerator with ShengTeng 950PR](#item-5) ⭐️ 8.0/10
+6. [Huawei Mate 80 Pro Gaming Efficiency Beats Snapdragon 8 Gen3](#item-6) ⭐️ 8.0/10
+7. [NASA Launches Rescue Satellite to Save Aging Swift Telescope](#item-7) ⭐️ 8.0/10
+8. [Tencent's Atuin AI beats Mythos in CyberGym benchmark](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Why Startups Build Half-Baked Products](https://weli.dev/blog/half-baked-product/) ⭐️ 8.0/10
+## [Wordgard: New Rich-Text Editor from ProseMirror Creator](https://wordgard.net/) ⭐️ 8.0/10
 
-A high-scoring essay on Hacker News critiques how misaligned incentives and lack of cross-domain understanding among founders, engineers, and salespeople lead to half-baked products. This analysis resonates deeply with the startup community, highlighting systemic issues that waste resources and produce subpar products, affecting founders, employees, and customers. The essay uses the metaphor of building an oven to illustrate how each persona focuses on their own domain while ignoring others, resulting in a product that fails to meet real needs.
+Wordgard is a new in-browser rich-text editor released by the creator of ProseMirror, offering improved developer experience and static typing support. This matters because it provides a modern alternative to ProseMirror with better TypeScript integration, potentially simplifying development for teams that need statically-typed document models. Wordgard shares many concepts with ProseMirror but is not an upgrade path; switching requires significant rework. The editor is designed with a focus on developer experience and static typing.
 
-hackernews · weli · Jul 3, 08:23 · [Discussion](https://news.ycombinator.com/item?id=48772388)
+hackernews · indy · Jul 3, 08:50 · [Discussion](https://news.ycombinator.com/item?id=48772573)
 
-**Background**: Startups often operate under pressure to move fast and raise funding, which can incentivize founders to prioritize growth over product quality. Engineers may chase technical perfection without market fit, while salespeople push features customers want but may not be feasible. This disconnect is a common source of startup failure.
+**Background**: ProseMirror is a widely-used open-source rich-text editor framework for the web, but it lacks built-in static typing support. Wordgard aims to address this by providing a statically-typed API from the ground up.
 
-**Discussion**: Commenters point to founder motivation (e.g., desire for wealth) and lack of domain expertise as root causes. Some note that while rare exceptions like Elon Musk exist, most founders fail to bridge the gap. Others share personal experiences of similar dysfunction.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://prosemirror.net/">ProseMirror</a></li>
 
-**Tags**: `#startups`, `#product development`, `#engineering culture`, `#founder dynamics`
+</ul>
+</details>
+
+**Discussion**: The community is excited about the new editor, with many praising its design and technical depth. Some users express concerns about the lack of an upgrade path from ProseMirror and the effort required to switch.
+
+**Tags**: `#rich-text editor`, `#ProseMirror`, `#web development`, `#open source`, `#JavaScript`
 
 ---
 
 <a id="item-2"></a>
-## [crustc: Entire Rust Compiler Translated to C](https://github.com/FractalFir/crustc) ⭐️ 8.0/10
+## [Crustc: Entire Rust Compiler Translated to C](https://github.com/FractalFir/crustc) ⭐️ 8.0/10
 
-A project called crustc has successfully translated the entire rustc compiler into C, enabling Rust code to be compiled on platforms without LLVM or GCC support. This breakthrough allows Rust to be bootstrapped from C on any platform with a C compiler, significantly expanding Rust's reach to legacy and obscure hardware, and enhancing trust through diverse double-compiling (DDC) verification. crustc is the 14th known attempt to compile Rust to C, and it aims to support old and obscure hardware that lacks LLVM or GCC backends. The project is open-source and available on GitHub.
+A project called crustc has successfully translated the entirety of the Rust compiler (rustc) into C, enabling bootstrapping on platforms without LLVM or GCC support. This breakthrough significantly improves compiler portability, allowing Rust to run on old or obscure hardware that lacks LLVM or GCC backends, and also provides a new way to verify the official Rust compiler for backdoors via diverse double-compiling. The project is the 14th known attempt to compile Rust to C, and it transpiles the entire rustc codebase rather than just a subset. The author notes that transpiling to C is easier than to LLVM IR, and letting GCC optimize may yield practical performance.
 
 hackernews · Philpax · Jul 2, 22:57 · [Discussion](https://news.ycombinator.com/item?id=48768464)
 
-**Background**: Bootstrapping is the process of using a compiler to compile itself, which creates a chicken-and-egg problem for new platforms. Rust currently requires an existing Rust compiler or LLVM/GCC to build, limiting its portability. Translating rustc to C breaks this dependency, allowing Rust to be built from a C compiler alone.
+**Background**: Rust's primary compiler, rustc, uses LLVM as its backend, which limits its support to platforms that LLVM targets. Bootstrapping Rust from source typically requires an existing Rust compiler, creating a chicken-and-egg problem for new platforms. Translating rustc to C breaks this dependency, as C compilers are available on virtually every platform.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/FractalFir/crustc">GitHub - FractalFir/crustc: Entirety of `rustc`, translated to C. · GitHub</a></li>
-<li><a href="https://rustc-dev-guide.rust-lang.org/building/bootstrapping/what-bootstrapping-does.html">What Bootstrapping does - Rust Compiler Development Guide</a></li>
-<li><a href="https://rustc-dev-guide.rust-lang.org/building/bootstrapping/intro.html">Prologue - Rust Compiler Development Guide</a></li>
+**Discussion**: The community expressed strong admiration for the project's technical novelty and dedication, with one commenter calling it an 'original work of art.' Several users discussed using crustc for diverse double-compiling to test for backdoors in the official Rust compiler, and others noted the historical context of LLVM's C backend being removed and later revived.
 
-</ul>
-</details>
-
-**Discussion**: The community praised the project as a significant technical achievement, with comments noting the dedication required for the 14th attempt. Some discussed using crustc for diverse double-compiling (DDC) to verify the official Rust compiler has no backdoors, while others compared it to LLVM's C backend.
-
-**Tags**: `#rust`, `#compiler`, `#bootstrapping`, `#transpilation`, `#systems`
+**Tags**: `#rust`, `#compiler`, `#transpilation`, `#bootstrapping`, `#systems programming`
 
 ---
 
 <a id="item-3"></a>
-## [Podman v6.0.0 Released with Docker Compatibility](https://blog.podman.io/2026/07/introducing-podman-v6-0-0/) ⭐️ 8.0/10
+## [CDD recovers finetuning data from LLMs using only logits](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
 
-Podman v6.0.0, a major version of the daemonless container engine, has been released with improved Docker compatibility and new features like Quadlet. This release strengthens Podman as a viable Docker alternative, especially for users seeking daemonless, rootless containers with systemd integration, potentially shifting the container ecosystem. Podman v6.0.0 introduces Quadlet for running containers under systemd, and maintains compatibility with Docker Compose files, though some minor differences may cause issues.
+Researchers introduce Contrastive Decoding Diffing (CDD), a grey-box method that recovers verbatim finetuning data from LLMs using only logit access, without needing model weights or activations. CDD achieves a verbatim recovery score of 4+/5 on 19 out of 20 organism-model pairs across four model families, outperforming the white-box Activation Difference Lens (ADL) method. This work highlights a significant privacy and security risk in LLM finetuning, as it demonstrates that sensitive training data can be extracted with minimal access. It also provides a powerful tool for auditing and understanding what models have learned during finetuning, potentially improving transparency in AI systems. CDD requires no per-model calibration, no layer selection, and no probe corpus, using a single default configuration across all experiments. An unexpected finding was that the name 'Dr. Elena Rodriguez' appeared across semantically unrelated finetuning domains, traced back to Claude Sonnet 3.6's bias in generating fictional scientists for synthetic data.
 
-hackernews · soheilpro · Jul 2, 14:23 · [Discussion](https://news.ycombinator.com/item?id=48762098)
+reddit · r/MachineLearning · /u/CebulkaZapiekana · Jul 3, 19:01
 
-**Background**: Podman is an open-source, daemonless container engine that runs containers without a central daemon, offering rootless mode for enhanced security. It is often compared to Docker as a more secure, systemd-native alternative.
+**Background**: Model diffing aims to detect what a finetuned model has learned compared to its base model. Prior work, Activation Difference Lens (ADL), required full weight access and only recovered vague domain-level descriptions. CDD operates on logit distributions, making it a grey-box method that is both more accessible and more effective.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.podman.io/">What is Podman? — Podman documentation</a></li>
-<li><a href="https://podman.io/">Podman</a></li>
-<li><a href="https://www.redhat.com/en/topics/containers/what-is-podman">What is Podman? - Red Hat</a></li>
+<li><a href="https://arxiv.org/abs/2605.25902">Reading the Finetuning Prior: Verbatim Content Recovery via Contrastive ...</a></li>
+<li><a href="https://arxiv.org/html/2605.25902v2">Reading the Finetuning Prior: Verbatim Content Recovery via Contrastive ...</a></li>
+<li><a href="https://www.machinebrief.com/news/unlocking-ais-hidden-memories-with-contrastive-decoding-9a3m">Unlocking AI's Hidden Memories with Contrastive Decoding</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community feedback is mixed: some users praise easy migration from Docker and Quadlet, while others criticize limited distro support (e.g., Ubuntu) and minor Docker incompatibilities that cause issues.
-
-**Tags**: `#Podman`, `#containers`, `#Docker alternative`, `#open source`, `#DevOps`
+**Tags**: `#LLM`, `#privacy`, `#model diffing`, `#finetuning`, `#security`
 
 ---
 
 <a id="item-4"></a>
-## [Immich 3.0 Released: Major Update for Self-Hosted Photos](https://github.com/immich-app/immich/discussions/29439) ⭐️ 8.0/10
-
-Immich 3.0 has been released with significant upgrades across mobile, web, backups, automation, and library management, further solidifying its position as a leading self-hosted Google Photos alternative. This release matters because Immich is one of the most popular open-source photo management platforms, and the 3.0 update brings it closer to feature parity with commercial services while maintaining full privacy and control for users. The project remains under very active development, with warnings about potential bugs and breaking changes; users are advised to follow the 3-2-1 backup plan for their photos and videos.
-
-hackernews · hashier · Jul 2, 14:13 · [Discussion](https://news.ycombinator.com/item?id=48761944)
-
-**Background**: Immich is a self-hosted photo and video management solution that provides AI-powered features like facial recognition, smart search, and automatic mobile uploads, all while keeping data under the user's control. It is designed as a privacy-focused alternative to cloud services like Google Photos.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://immich.app/">Immich</a></li>
-<li><a href="https://github.com/immich-app/immich">GitHub - immich-app/immich: High performance self-hosted ... Immich Complete Self-Hosting Guide: From Installation to ... Self-Hosting Your Photos with Immich — HomeLab Starter Download | Immich Immich 3.0 Released with Big Upgrades for Self-Hosted Photo ... How to Install Immich for Self-Hosted Photo Management on Ubuntu</a></li>
-<li><a href="https://aicybr.com/blog/immich-complete-self-hosting-guide">Immich Complete Self-Hosting Guide: From Installation to ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community is highly excited, with users sharing success stories of migrating from Google Photos and discussing encryption setups. Some debate the need for end-to-end encryption, with one user arguing that physical server theft is an unlikely threat, while others share their full-disk encryption and backup strategies.
-
-**Tags**: `#self-hosting`, `#photo management`, `#open source`, `#immich`
-
----
-
-<a id="item-5"></a>
-## [US Bans Differential Privacy in Census Data](https://scottaaronson.blog/?p=9902) ⭐️ 8.0/10
-
-On June 4, 2026, the U.S. Secretary of Commerce issued Directive DAO 216-26, which bans the use of differential privacy and noise infusion in all statistical products published by the Census Bureau and the Bureau of Economic Analysis. This directive eliminates the primary mathematical framework for protecting individual privacy in census data, potentially exposing sensitive information and undermining public trust in government statistics. The directive restricts disclosure avoidance techniques to 'coarsening' only, explicitly forbidding any method that adds random noise to data, which is the core mechanism of differential privacy.
-
-hackernews · flowercalled · Jul 3, 00:01 · [Discussion](https://news.ycombinator.com/item?id=48768992)
-
-**Background**: Differential privacy is a mathematically rigorous framework that adds carefully calibrated noise to statistical outputs to protect individual privacy while preserving data utility. It has been used by the Census Bureau since the 2020 Census to prevent re-identification of respondents. The new directive replaces this with coarsening, which aggregates data into broader categories but may not provide the same level of privacy protection.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.npr.org/2026/06/12/nx-s1-5855734/census-bureau-data-differential-privacy">A Trump push to cut 'statistical noise' could mean less data from the Census Bureau</a></li>
-<li><a href="https://www.404media.co/census-data-privacy-trump-policy-change-noise-infusion/">The Trump Administration’s New Census Data Rules Are a Policy Disaster</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Differential_privacy">Differential privacy</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed confusion about the political motives behind the directive, with some speculating it may be intended to reduce data accuracy or enable misuse. Others questioned the effectiveness of coarsening as a replacement and called for contacting legislators to oppose the change.
-
-**Tags**: `#privacy`, `#differential privacy`, `#census`, `#government policy`, `#statistics`
-
----
-
-<a id="item-6"></a>
-## [Understand to Participate: A New Paradigm for AI-Assisted Coding](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
-
-Geoffrey Litt introduced the concept of 'understand to participate' at the AIE conference, arguing that developers must maintain deep code comprehension when working with AI coding agents to avoid cognitive debt. This framing addresses a critical challenge in AI-assisted coding: as agents generate more code, developers risk losing understanding, leading to cognitive debt. It emphasizes that comprehension is essential for effective collaboration and creative participation. Litt's talk was part of the AIE World's Fair 2026, and a thread version is available on Twitter. The concept builds on the idea of cognitive debt, which refers to the erosion of shared understanding in a software system over time.
-
-rss · Simon Willison · Jul 2, 17:07
-
-**Background**: AI coding agents are tools that can autonomously write and modify code, but they often produce changes that developers don't fully understand. Cognitive debt is a team-level phenomenon where the gap between actual code and developers' mental models grows, making the system harder to maintain and evolve safely.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">Understanding is the new bottleneck</a></li>
-<li><a href="https://x.com/geoffreylitt/status/2072522251300409556">Geoffrey Litt on X: "Hot take: I think it's still important to understand the code that our agents write! In this mega thread (based on my AIE talk today), I will explain why that's the case, and show some ideas for how to efficiently understand code. Alright, let's dive in. 1/ https://t.co/765DNZh6LN" / X</a></li>
-<li><a href="https://arxiv.org/abs/2603.22106">From Technical Debt to Cognitive and Intent Debt: Rethinking ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community discussion on Twitter includes reactions to Litt's thread, with some expressing curiosity about handling cases where the agent passes a quiz but still makes mistakes. Overall sentiment is positive, with many appreciating the focus on understanding as a key skill.
-
-**Tags**: `#AI-assisted coding`, `#cognitive debt`, `#software engineering`, `#developer experience`, `#code comprehension`
-
----
-
-<a id="item-7"></a>
-## [ECTC 2026 Roundup: EMIB-T, Custom HBM, Photonics, Cooling](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
-
-A roundup from ECTC 2026 covers Intel's EMIB-T roadmap, custom HBM from SK Hynix/Samsung/Micron, HBM4 packaging challenges, microfluidic cooling from Microsoft, and photonic interconnects from Lightmatter and others. These advances address critical bottlenecks in AI/HPC hardware: bandwidth, power, thermal management, and interconnect density. The convergence of custom HBM, advanced packaging, and photonics will shape next-generation accelerators and data center infrastructure. Intel's EMIB-T adds TSVs to the EMIB bridge, enabling HBM4 integration and higher UCIe bandwidth. Microfluidic cooling circulates coolant through microscopic channels inside chips, while photonic interconnects use light for chip-to-chip data transmission.
-
-rss · Semianalysis · Jul 2, 17:25
-
-**Background**: Advanced packaging technologies like EMIB and microfluidic cooling are critical for scaling performance beyond Moore's Law. EMIB is a 2.5D interconnect using embedded bridges, while microfluidic cooling embeds liquid channels directly into silicon to remove heat more efficiently. Photonic interconnects replace electrical wires with optical pathways to reduce power and increase bandwidth.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-07/emib-product-brief.pdf">Intel Foundry EMIB Technology Brief</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T ...</a></li>
-<li><a href="https://www.datacenterdynamics.com/en/analysis/microfluidics-cooling-inside-the-chip/">Microfluidics: Cooling inside the chip - DCD</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#semiconductor packaging`, `#HBM`, `#photonic interconnects`, `#cooling`, `#advanced packaging`
-
----
-
-<a id="item-8"></a>
 ## [Anthropic Accuses Alibaba of Massive Distillation Attack on Claude](https://t.me/zaihuapd/42327) ⭐️ 8.0/10
 
-Anthropic has accused Alibaba of orchestrating a massive 'distillation attack' using approximately 25,000 fraudulent accounts to interact with Claude over 28.8 million times between April 22 and June 5, 2026, in an effort to extract the model's capabilities. This incident highlights growing tensions in AI intellectual property protection and could set a precedent for how model distillation attacks are legally and technically addressed, affecting AI security practices globally. Anthropic claims this is the largest known distillation attack against the company, involving Alibaba and its AI lab Qwen. In response, Alibaba reportedly ordered employees to uninstall all Anthropic products, including Claude Code, effective July 10.
+Anthropic has accused Alibaba of orchestrating a massive 'distillation attack' using approximately 25,000 fraudulent accounts to extract capabilities from its Claude AI model, with over 28.8 million interactions between April 22 and June 5, 2026. This incident highlights growing concerns over AI model security and intellectual property theft, with significant implications for US-China tech competition and the enforcement of export controls on advanced AI technologies. Anthropic claims this is the largest known distillation attack against the company, involving Alibaba and its AI lab Qwen. In response, Alibaba reportedly ordered employees to uninstall all Anthropic products, including Claude models and Claude Code, effective July 10, 2026.
 
 telegram · zaihuapd · Jul 3, 06:21
 
-**Background**: Model distillation is a technique where a smaller 'student' model is trained to mimic the outputs of a larger 'teacher' model, often used for model compression. A distillation attack involves using unauthorized queries to steal the teacher model's capabilities, which is considered a security threat to proprietary AI systems.
+**Background**: Model distillation is a technique where a weaker model learns from a stronger model's outputs to replicate its capabilities. While legitimate when authorized, using it on proprietary models without permission constitutes intellectual property theft. Anthropic has consistently supported export controls to maintain America's lead in AI, and distillation attacks can undermine those controls by allowing foreign entities to acquire advanced capabilities.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
-<li><a href="https://medium.com/@tahirbalarabe2/understanding-llm-distillation-attacks-929306ca38cd">Understanding LLM Distillation Attacks | by Tahir | Medium</a></li>
 <li><a href="https://www.mindstudio.ai/blog/ai-model-distillation-attacks-explained">AI Model Distillation Attacks: What They Are and Why They Matter | MindStudio</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments on Hacker News express skepticism about the accusation, with some noting that Anthropic has previously engaged in aggressive monitoring of competitor usage. Others highlight broader concerns about remote AI services being security risks for enterprises, especially regarding proprietary code exposure.
-
-**Tags**: `#AI`, `#security`, `#model distillation`, `#Anthropic`, `#Alibaba`
+**Tags**: `#AI security`, `#model distillation`, `#Anthropic`, `#Alibaba`, `#intellectual property`
 
 ---
 
-<a id="item-9"></a>
-## [Huawei Launches Atlas 350 with ShengTeng 950PR, 2.87x H20 Performance](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [Huawei Launches Atlas 350 Accelerator with ShengTeng 950PR](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
 
-At the 2026 Huawei China Partner Conference, Huawei announced and launched the Atlas 350 accelerator card powered by the new ShengTeng 950PR processor, claiming 2.87 times the single-card compute power of NVIDIA's H20 and support for FP4 low-precision inference. This marks a significant milestone for Huawei's AI hardware ecosystem, offering a competitive alternative to NVIDIA's H20 in the Chinese market. The Atlas 350's high performance and FP4 support could reduce inference costs for large language models and boost domestic AI infrastructure. The ShengTeng 950PR chip delivers 1 PFLOPS at FP8 and 2 PFLOPS at FP4, with 128 GB HBM memory and 1.6 TB/s bandwidth. The Atlas 350 card features 112 GB HBM and can load a 70B-parameter model on a single card.
+At the Huawei China Partner Conference 2026, Huawei officially launched and released the Atlas 350 AI training and inference accelerator card, powered by the new ShengTeng 950PR processor, claiming 2.87 times the compute power of NVIDIA's H20 and supporting FP4 precision. This announcement signals Huawei's aggressive push into the AI accelerator market, challenging NVIDIA's dominance with a domestically produced chip that offers higher performance and lower cost, which could reshape the AI hardware landscape in China. The Atlas 350 features 112 GB of HBM memory, supports FP4 low-precision inference, and can load a 70B-parameter model on a single card, significantly reducing inference latency and investment costs.
 
 telegram · zaihuapd · Jul 3, 08:35
 
-**Background**: Huawei's ShengTeng series is a line of AI accelerators designed for training and inference, competing with NVIDIA's GPU lineup. The Atlas 350 is the latest addition, targeting recommendation, multimodal generation, and LLM inference. FP4 is a low-precision data format that reduces memory usage and speeds up inference while maintaining model accuracy.
+**Background**: Huawei's ShengTeng 950PR chip, based on a SIMD architecture, delivers 1 PFLOPS (FP8) / 2 PFLOPS (FP4) and supports multiple data formats. It is priced at 70,000 RMB, about one-third the cost of NVIDIA's H200 in China, while achieving nearly 80% of its performance. This chip is part of Huawei's broader AI chip roadmap, which includes future models like the 950DT and 960.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://wallstreetcn.com/articles/3755816">华为昇腾AI芯片路线图公布：明年Q1推出昇腾950PR，采用自研HBM</a></li>
 <li><a href="https://cloud.tencent.com/developer/article/2652707">昇腾950PR加持！华为Atlas 350上市：算力是H20的3倍-腾讯云开发者社区-腾讯云</a></li>
-<li><a href="https://www.ithome.com/0/931/355.htm">华为 Atlas 350 加速卡上市，搭载全新昇腾 950PR 处理器 - IT之家</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/2026893491125467122">华为昇腾950PR正式量产！7万定价打穿英伟达，国产AI芯片终于站起来了 - 知乎</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#hardware`, `#AI`, `#Huawei`, `#accelerator`, `#deep learning`
+**Tags**: `#AI hardware`, `#Huawei`, `#accelerator`, `#FP4`, `#deep learning`
 
 ---
 
-<a id="item-10"></a>
-## [Geekerwan: Mate 80 Pro gaming efficiency beats Snapdragon 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [Huawei Mate 80 Pro Gaming Efficiency Beats Snapdragon 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
 
-Geekerwan's review of the Huawei Mate 80 Pro series reveals that the Kirin 9030 and 9030 Pro chips, thanks to native HarmonyOS optimizations, achieve better gaming efficiency than the Snapdragon 8 Gen3, with the Mate 80 Pro Max consuming only 4.9W in Genshin Impact at 60fps. This demonstrates that deep software-hardware co-optimization can overcome raw performance deficits, potentially reshaping the mobile chip landscape and challenging Qualcomm's dominance in gaming efficiency. The Kirin 9030 Pro features a 9-core, 14-thread CPU and a 6-core Maleoon 935 GPU with hardware ray tracing, built on a 5nm process. Despite its multi-core efficiency being between Snapdragon 8 Gen2 and 8 Gen3, real-world gaming performance surpasses the 8 Gen3 due to HarmonyOS native optimizations.
+Geekerwan's review shows that the Huawei Mate 80 Pro series, powered by the Kirin 9030 chip, achieves better gaming energy efficiency than the Snapdragon 8 Gen3 due to native HarmonyOS optimizations. This demonstrates that software-hardware co-optimization can overcome theoretical hardware disadvantages, potentially reshaping competition in the mobile chip market. The Kirin 9030 Pro features a 9-core, 14-thread CPU and a 6-core Maliang 935 GPU with ~15 billion transistors. In Genshin Impact at max settings 60fps, the Mate 80 Pro Max consumes only 4.9W, outperforming Snapdragon 8 Gen3 in efficiency.
 
 telegram · zaihuapd · Jul 3, 13:27
 
-**Background**: Huawei's Kirin chips have faced restrictions from US sanctions, limiting their access to advanced fabrication. The Kirin 9030 series represents Huawei's continued push for self-reliance, using a 5nm process and custom CPU/GPU architectures. HarmonyOS, Huawei's proprietary operating system, allows deep integration between hardware and software, enabling optimizations not possible on Android.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://nanoreview.net/en/soc/hisilicon-kirin-9030">HiSilicon Kirin 9030 Pro: specs and benchmarks - NanoReview</a></li>
-<li><a href="https://www.gsmarena.com/key_differences_between_kirin_9030_and_9030_pro_revealed_-news-70449.php">Key differences between Kirin 9030 and 9030 Pro revealed</a></li>
-<li><a href="https://www.163.com/dy/article/KH64DMU605523V44.html">数码：从Mali到马良，手机芯片GPU模块实现自研|显卡|gpu|马良 (青海)_...</a></li>
-
-</ul>
-</details>
+**Background**: Huawei's Kirin chips have faced US sanctions, limiting their access to advanced manufacturing. HarmonyOS is Huawei's proprietary operating system designed for seamless multi-device integration. This review highlights how native app optimizations can compensate for hardware limitations.
 
 **Tags**: `#Huawei`, `#Kirin 9030`, `#HarmonyOS`, `#mobile chips`, `#gaming performance`
+
+---
+
+<a id="item-7"></a>
+## [NASA Launches Rescue Satellite to Save Aging Swift Telescope](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 8.0/10
+
+On July 3, NASA launched the LINK spacecraft, a private rescue satellite, to rendezvous with the aging Swift space telescope and boost its orbit by about 240 kilometers, preventing its imminent atmospheric reentry as early as October. This mission marks the first time a private spacecraft will attempt to capture and service an uncrewed U.S. government satellite, potentially opening a new era of on-orbit servicing and space debris mitigation. The LINK spacecraft will use a robotic arm to grab the Swift telescope and then slowly raise its orbit using thrusters. If successful, Swift could resume observations as early as September.
+
+telegram · zaihuapd · Jul 3, 15:43
+
+**Background**: The Swift space telescope, launched in 2004, has been studying gamma-ray bursts and other cosmic phenomena for over 20 years. Due to increased solar activity, its orbit has been decaying faster than expected, threatening its mission. On-orbit servicing, where one spacecraft refuels or reboosts another, is a growing field aimed at extending satellite lifetimes and reducing space debris.
+
+**Tags**: `#space`, `#NASA`, `#satellite servicing`, `#space debris`, `#astronomy`
+
+---
+
+<a id="item-8"></a>
+## [Tencent's Atuin AI beats Mythos in CyberGym benchmark](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 8.0/10
+
+Tencent Xuanwu Lab's Atuin AI scored 84.0% on the CyberGym cybersecurity benchmark, surpassing Anthropic's Claude Mythos Preview, while costing less than 0.1% of Mythos's budget. It also discovered multiple high-severity vulnerabilities in projects like curl, OpenSSL, and Python cryptography that Mythos missed. This demonstrates that open-source, cost-effective AI models can outperform proprietary ones in vulnerability detection, potentially democratizing advanced cybersecurity tools. It also highlights the growing role of AI in finding critical bugs in widely-used open-source software. Atuin AI is built on the open-source GLM-5.1 model and can be deployed locally. It achieved a severity rank of #1 on the Berkeley BVI real-world vulnerability list and #5 in total vulnerabilities found.
+
+telegram · zaihuapd · Jul 3, 16:12
+
+**Background**: CyberGym is a cybersecurity benchmark led by UC Berkeley that evaluates AI systems on vulnerability detection tasks. Mythos is Anthropic's AI system under the 'Glass Wing Project' for cybersecurity. The comparison highlights the efficiency of open-source models versus proprietary ones.
+
+**Tags**: `#AI`, `#cybersecurity`, `#vulnerability detection`, `#open-source`, `#benchmark`
 
 ---

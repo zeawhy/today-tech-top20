@@ -5,244 +5,158 @@ date: 2026-07-03
 lang: zh
 ---
 
-> 从 39 条内容中筛选出 10 条重要资讯。
+> 从 42 条内容中筛选出 8 条重要资讯。
 
 ---
 
-1. [创业公司为何打造半成品](#item-1) ⭐️ 8.0/10
-2. [crustc：将整个 Rust 编译器翻译为 C 语言](#item-2) ⭐️ 8.0/10
-3. [Podman v6.0.0 发布，兼容 Docker](#item-3) ⭐️ 8.0/10
-4. [Immich 3.0 发布：自托管照片管理重大更新](#item-4) ⭐️ 8.0/10
-5. [美国禁止人口普查数据使用差分隐私](#item-5) ⭐️ 8.0/10
-6. [理解才能参与：AI 辅助编程的新范式](#item-6) ⭐️ 8.0/10
-7. [ECTC 2026 综述：EMIB-T、定制 HBM、光子互连与冷却技术](#item-7) ⭐️ 8.0/10
-8. [Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击](#item-8) ⭐️ 8.0/10
-9. [华为发布 Atlas 350 加速卡，搭载昇腾 950PR，性能达 H20 的 2.87 倍](#item-9) ⭐️ 8.0/10
-10. [极客湾评测：Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-10) ⭐️ 8.0/10
+1. [Wordgard：ProseMirror 创建者推出的新富文本编辑器](#item-1) ⭐️ 8.0/10
+2. [Crustc：将整个 Rust 编译器翻译为 C 语言](#item-2) ⭐️ 8.0/10
+3. [CDD 仅通过 logits 恢复 LLM 微调数据](#item-3) ⭐️ 8.0/10
+4. [Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击](#item-4) ⭐️ 8.0/10
+5. [华为发布搭载昇腾 950PR 的 Atlas 350 加速卡](#item-5) ⭐️ 8.0/10
+6. [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-6) ⭐️ 8.0/10
+7. [NASA 发射救援卫星拯救老化雨燕望远镜](#item-7) ⭐️ 8.0/10
+8. [腾讯阿图因 AI 在 CyberGym 测试中击败 Mythos](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [创业公司为何打造半成品](https://weli.dev/blog/half-baked-product/) ⭐️ 8.0/10
+## [Wordgard：ProseMirror 创建者推出的新富文本编辑器](https://wordgard.net/) ⭐️ 8.0/10
 
-一篇在 Hacker News 上获得高分的文章批评了创始人、工程师和销售人员之间激励不匹配和跨领域理解缺失如何导致半成品。 这一分析在创业社区引起强烈共鸣，揭示了浪费资源并产出劣质产品的系统性问题，影响到创始人、员工和客户。 文章以造烤箱为比喻，说明每个角色只关注自己的领域而忽视其他方面，导致产品无法满足真实需求。
+Wordgard 是 ProseMirror 创建者发布的一款新的浏览器内富文本编辑器，提供了改进的开发者体验和静态类型支持。 这很重要，因为它提供了 ProseMirror 的现代替代方案，具有更好的 TypeScript 集成，可能简化需要静态类型文档模型的团队的开发工作。 Wordgard 与 ProseMirror 共享许多概念，但并非升级路径；切换需要大量重写。该编辑器专注于开发者体验和静态类型。
 
-hackernews · weli · 7月3日 08:23 · [社区讨论](https://news.ycombinator.com/item?id=48772388)
+hackernews · indy · 7月3日 08:50 · [社区讨论](https://news.ycombinator.com/item?id=48772573)
 
-**背景**: 创业公司通常面临快速发展和融资的压力，这可能激励创始人优先考虑增长而非产品质量。工程师可能追求技术完美而忽视市场契合度，销售人员则推动客户想要但可能不可行的功能。这种脱节是创业失败的常见根源。
+**背景**: ProseMirror 是一个广泛使用的开源 Web 富文本编辑器框架，但缺乏内置的静态类型支持。Wordgard 旨在通过从头提供静态类型 API 来解决这一问题。
 
-**社区讨论**: 评论者指出创始人动机（如致富欲望）和缺乏领域专业知识是根本原因。一些人指出，尽管存在像埃隆·马斯克这样的罕见例外，但大多数创始人无法弥合这一差距。其他人则分享了类似的个人经历。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://prosemirror.net/">ProseMirror</a></li>
 
-**标签**: `#startups`, `#product development`, `#engineering culture`, `#founder dynamics`
+</ul>
+</details>
+
+**社区讨论**: 社区对新编辑器感到兴奋，许多人称赞其设计和技术深度。一些用户对缺乏从 ProseMirror 的升级路径以及切换所需的工作量表示担忧。
+
+**标签**: `#rich-text editor`, `#ProseMirror`, `#web development`, `#open source`, `#JavaScript`
 
 ---
 
 <a id="item-2"></a>
-## [crustc：将整个 Rust 编译器翻译为 C 语言](https://github.com/FractalFir/crustc) ⭐️ 8.0/10
+## [Crustc：将整个 Rust 编译器翻译为 C 语言](https://github.com/FractalFir/crustc) ⭐️ 8.0/10
 
-一个名为 crustc 的项目成功将整个 rustc 编译器翻译为 C 语言，使得 Rust 代码可以在没有 LLVM 或 GCC 支持的平台上编译。 这一突破使得 Rust 可以在任何拥有 C 编译器的平台上从 C 语言自举，极大地扩展了 Rust 对老旧和罕见硬件的支持，并通过多样化双重编译（DDC）验证增强了信任。 crustc 是已知的第 14 次将 Rust 编译为 C 的尝试，旨在支持缺乏 LLVM 或 GCC 后端的旧式及罕见硬件。该项目是开源的，可在 GitHub 上获取。
+一个名为 crustc 的项目成功将整个 Rust 编译器（rustc）翻译为 C 语言，从而能够在没有 LLVM 或 GCC 支持的平台上进行引导编译。 这一突破显著提升了编译器的可移植性，使 Rust 能够在缺乏 LLVM 或 GCC 后端的旧式或小众硬件上运行，并且通过多样双重编译提供了一种验证官方 Rust 编译器是否存在后门的新方法。 该项目是已知的第 14 次将 Rust 编译为 C 的尝试，它翻译了整个 rustc 代码库，而不仅仅是子集。作者指出，翻译为 C 比翻译为 LLVM IR 更容易，并且让 GCC 进行优化可能带来实用的性能。
 
 hackernews · Philpax · 7月2日 22:57 · [社区讨论](https://news.ycombinator.com/item?id=48768464)
 
-**背景**: 自举是使用编译器编译自身的过程，这为新平台带来了先有鸡还是先有蛋的问题。Rust 目前需要现有的 Rust 编译器或 LLVM/GCC 来构建，限制了其可移植性。将 rustc 翻译为 C 打破了这一依赖，使得仅凭 C 编译器即可构建 Rust。
+**背景**: Rust 的主要编译器 rustc 使用 LLVM 作为后端，这限制了其对 LLVM 目标平台的支持。从源代码引导编译 Rust 通常需要已有的 Rust 编译器，这为新平台带来了先有鸡还是先有蛋的问题。将 rustc 翻译为 C 打破了这种依赖，因为 C 编译器几乎在所有平台上都可用。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/FractalFir/crustc">GitHub - FractalFir/crustc: Entirety of `rustc`, translated to C. · GitHub</a></li>
-<li><a href="https://rustc-dev-guide.rust-lang.org/building/bootstrapping/what-bootstrapping-does.html">What Bootstrapping does - Rust Compiler Development Guide</a></li>
-<li><a href="https://rustc-dev-guide.rust-lang.org/building/bootstrapping/intro.html">Prologue - Rust Compiler Development Guide</a></li>
+**社区讨论**: 社区对该项目的技术新颖性和奉献精神表示高度赞赏，有评论者称其为“原创艺术品”。几位用户讨论了使用 crustc 进行多样双重编译以测试官方 Rust 编译器中的后门，其他人则提到了 LLVM 的 C 后端被移除后又恢复的历史背景。
 
-</ul>
-</details>
-
-**社区讨论**: 社区称赞该项目是一项重大的技术成就，评论指出这是第 14 次尝试所需的奉献精神。一些人讨论了使用 crustc 进行多样化双重编译（DDC）以验证官方 Rust 编译器没有后门，另一些人则将其与 LLVM 的 C 后端进行了比较。
-
-**标签**: `#rust`, `#compiler`, `#bootstrapping`, `#transpilation`, `#systems`
+**标签**: `#rust`, `#compiler`, `#transpilation`, `#bootstrapping`, `#systems programming`
 
 ---
 
 <a id="item-3"></a>
-## [Podman v6.0.0 发布，兼容 Docker](https://blog.podman.io/2026/07/introducing-podman-v6-0-0/) ⭐️ 8.0/10
+## [CDD 仅通过 logits 恢复 LLM 微调数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
 
-Podman v6.0.0 作为无守护进程容器引擎的重大版本发布，改进了 Docker 兼容性并引入了 Quadlet 等新功能。 此次发布巩固了 Podman 作为 Docker 可行替代方案的地位，尤其适合需要无守护进程、无根容器并与 systemd 集成的用户，可能改变容器生态格局。 Podman v6.0.0 引入了 Quadlet 以在 systemd 下运行容器，并保持与 Docker Compose 文件的兼容性，但一些细微差异可能引发问题。
+研究人员提出了对比解码差异法（CDD），这是一种灰盒方法，仅通过 logits 访问即可从 LLM 中恢复逐字微调数据，无需模型权重或激活值。CDD 在四个模型家族的 20 个生物体-模型对中的 19 对上实现了 4+/5 的逐字恢复分数，优于白盒方法激活差异透镜（ADL）。 这项工作凸显了 LLM 微调中重大的隐私和安全风险，因为它表明只需极少的访问权限即可提取敏感训练数据。同时，它为审计和理解模型在微调过程中学到了什么提供了强大工具，可能提高 AI 系统的透明度。 CDD 无需针对每个模型进行校准、无需选择层、无需探测语料库，在所有实验中使用单一默认配置。一个意外的发现是，在语义无关的微调领域中反复出现名字“Dr. Elena Rodriguez”，这追溯到 Claude Sonnet 3.6 在生成合成数据时对虚构科学家名字的偏好。
 
-hackernews · soheilpro · 7月2日 14:23 · [社区讨论](https://news.ycombinator.com/item?id=48762098)
+reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
 
-**背景**: Podman 是一个开源、无守护进程的容器引擎，无需中央守护进程即可运行容器，并提供无根模式以增强安全性。它常被比作 Docker，被视为更安全、更原生集成 systemd 的替代方案。
+**背景**: 模型差异分析旨在检测微调模型相对于基础模型学到了什么。先前的工作激活差异透镜（ADL）需要完整的权重访问，且只能恢复模糊的领域级描述。CDD 在 logits 分布上操作，使其成为一种灰盒方法，既更易访问又更有效。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://docs.podman.io/">What is Podman? — Podman documentation</a></li>
-<li><a href="https://podman.io/">Podman</a></li>
-<li><a href="https://www.redhat.com/en/topics/containers/what-is-podman">What is Podman? - Red Hat</a></li>
+<li><a href="https://arxiv.org/abs/2605.25902">Reading the Finetuning Prior: Verbatim Content Recovery via Contrastive ...</a></li>
+<li><a href="https://arxiv.org/html/2605.25902v2">Reading the Finetuning Prior: Verbatim Content Recovery via Contrastive ...</a></li>
+<li><a href="https://www.machinebrief.com/news/unlocking-ais-hidden-memories-with-contrastive-decoding-9a3m">Unlocking AI's Hidden Memories with Contrastive Decoding</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反馈褒贬不一：一些用户称赞从 Docker 迁移的简便性和 Quadlet，而另一些用户则批评对发行版（如 Ubuntu）的支持有限以及 Docker 不兼容的小问题。
-
-**标签**: `#Podman`, `#containers`, `#Docker alternative`, `#open source`, `#DevOps`
+**标签**: `#LLM`, `#privacy`, `#model diffing`, `#finetuning`, `#security`
 
 ---
 
 <a id="item-4"></a>
-## [Immich 3.0 发布：自托管照片管理重大更新](https://github.com/immich-app/immich/discussions/29439) ⭐️ 8.0/10
-
-Immich 3.0 已发布，在移动端、网页端、备份、自动化和库管理方面进行了重大升级，进一步巩固了其作为领先的自托管 Google Photos 替代品的地位。 此次发布意义重大，因为 Immich 是最受欢迎的开源照片管理平台之一，3.0 更新使其在功能上更接近商业服务，同时为用户保持完全的隐私和控制权。 该项目仍处于非常活跃的开发阶段，并警告可能存在错误和破坏性变更；建议用户对其照片和视频遵循 3-2-1 备份计划。
-
-hackernews · hashier · 7月2日 14:13 · [社区讨论](https://news.ycombinator.com/item?id=48761944)
-
-**背景**: Immich 是一个自托管的照片和视频管理解决方案，提供 AI 驱动的功能，如人脸识别、智能搜索和自动移动上传，同时将数据置于用户控制之下。它被设计为 Google Photos 等云服务的注重隐私的替代品。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://immich.app/">Immich</a></li>
-<li><a href="https://github.com/immich-app/immich">GitHub - immich-app/immich: High performance self-hosted ... Immich Complete Self-Hosting Guide: From Installation to ... Self-Hosting Your Photos with Immich — HomeLab Starter Download | Immich Immich 3.0 Released with Big Upgrades for Self-Hosted Photo ... How to Install Immich for Self-Hosted Photo Management on Ubuntu</a></li>
-<li><a href="https://aicybr.com/blog/immich-complete-self-hosting-guide">Immich Complete Self-Hosting Guide: From Installation to ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区非常兴奋，用户分享了从 Google Photos 迁移的成功故事，并讨论了加密设置。一些人争论端到端加密的必要性，有用户认为物理服务器被盗是不太可能的威胁，而其他人则分享了他们的全盘加密和备份策略。
-
-**标签**: `#self-hosting`, `#photo management`, `#open source`, `#immich`
-
----
-
-<a id="item-5"></a>
-## [美国禁止人口普查数据使用差分隐私](https://scottaaronson.blog/?p=9902) ⭐️ 8.0/10
-
-2026 年 6 月 4 日，美国商务部长发布了 DAO 216-26 号指令，禁止人口普查局和经济分析局在所有统计产品中使用差分隐私和噪声注入技术。 该指令消除了保护人口普查数据中个人隐私的主要数学框架，可能暴露敏感信息并削弱公众对政府统计数据的信任。 该指令将披露避免技术限制为仅使用“粗化”，明确禁止任何向数据添加随机噪声的方法，而这是差分隐私的核心机制。
-
-hackernews · flowercalled · 7月3日 00:01 · [社区讨论](https://news.ycombinator.com/item?id=48768992)
-
-**背景**: 差分隐私是一种数学上严谨的框架，通过向统计输出中添加精心校准的噪声来保护个人隐私，同时保持数据效用。自 2020 年人口普查以来，人口普查局一直使用该技术防止受访者被重新识别。新指令用“粗化”取代了该技术，粗化将数据聚合到更宽泛的类别中，但可能无法提供同等水平的隐私保护。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.npr.org/2026/06/12/nx-s1-5855734/census-bureau-data-differential-privacy">A Trump push to cut 'statistical noise' could mean less data from the Census Bureau</a></li>
-<li><a href="https://www.404media.co/census-data-privacy-trump-policy-change-noise-infusion/">The Trump Administration’s New Census Data Rules Are a Policy Disaster</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Differential_privacy">Differential privacy</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者对指令背后的政治动机表示困惑，有人猜测其目的是降低数据准确性或允许滥用。其他人则质疑“粗化”作为替代方案的有效性，并呼吁联系立法者反对这一变更。
-
-**标签**: `#privacy`, `#differential privacy`, `#census`, `#government policy`, `#statistics`
-
----
-
-<a id="item-6"></a>
-## [理解才能参与：AI 辅助编程的新范式](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
-
-Geoffrey Litt 在 AIE 大会上提出了“理解才能参与”的概念，认为开发者在与 AI 编程代理协作时必须保持对代码的深度理解，以避免认知债务。 这一框架解决了 AI 辅助编程中的关键挑战：随着代理生成更多代码，开发者可能失去理解，导致认知债务。它强调理解对于有效协作和创造性参与至关重要。 Litt 的演讲是 AIE World's Fair 2026 的一部分，Twitter 上有其线程版本。该概念建立在认知债务的基础上，认知债务指的是软件系统中共享理解随时间侵蚀的现象。
-
-rss · Simon Willison · 7月2日 17:07
-
-**背景**: AI 编程代理是能够自主编写和修改代码的工具，但它们常常产生开发者不完全理解的变更。认知债务是一种团队级现象，实际代码与开发者心智模型之间的差距扩大，使得系统更难安全地维护和演进。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">Understanding is the new bottleneck</a></li>
-<li><a href="https://x.com/geoffreylitt/status/2072522251300409556">Geoffrey Litt on X: "Hot take: I think it's still important to understand the code that our agents write! In this mega thread (based on my AIE talk today), I will explain why that's the case, and show some ideas for how to efficiently understand code. Alright, let's dive in. 1/ https://t.co/765DNZh6LN" / X</a></li>
-<li><a href="https://arxiv.org/abs/2603.22106">From Technical Debt to Cognitive and Intent Debt: Rethinking ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Twitter 上的社区讨论包括对 Litt 线程的反应，一些人好奇如何处理代理通过测验但仍出错的情况。总体情绪积极，许多人赞赏将理解作为关键技能的关注。
-
-**标签**: `#AI-assisted coding`, `#cognitive debt`, `#software engineering`, `#developer experience`, `#code comprehension`
-
----
-
-<a id="item-7"></a>
-## [ECTC 2026 综述：EMIB-T、定制 HBM、光子互连与冷却技术](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
-
-ECTC 2026 的综述涵盖了 Intel 的 EMIB-T 路线图、SK 海力士/三星/美光的定制 HBM、HBM4 封装挑战、微软的微流体冷却技术以及 Lightmatter 等公司的光子互连技术。 这些进展解决了 AI/HPC 硬件中的关键瓶颈：带宽、功耗、热管理和互连密度。定制 HBM、先进封装和光子学的融合将塑造下一代加速器和数据中心基础设施。 Intel 的 EMIB-T 在 EMIB 桥接器中增加了 TSV，支持 HBM4 集成和更高的 UCIe 带宽。微流体冷却通过芯片内部的微通道循环冷却液，而光子互连则利用光进行芯片间数据传输。
-
-rss · Semianalysis · 7月2日 17:25
-
-**背景**: 像 EMIB 和微流体冷却这样的先进封装技术对于超越摩尔定律扩展性能至关重要。EMIB 是一种使用嵌入式桥接器的 2.5D 互连技术，而微流体冷却将液体通道直接嵌入硅中以更有效地散热。光子互连用光路取代电线，以降低功耗并增加带宽。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-07/emib-product-brief.pdf">Intel Foundry EMIB Technology Brief</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T ...</a></li>
-<li><a href="https://www.datacenterdynamics.com/en/analysis/microfluidics-cooling-inside-the-chip/">Microfluidics: Cooling inside the chip - DCD</a></li>
-
-</ul>
-</details>
-
-**标签**: `#semiconductor packaging`, `#HBM`, `#photonic interconnects`, `#cooling`, `#advanced packaging`
-
----
-
-<a id="item-8"></a>
 ## [Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击](https://t.me/zaihuapd/42327) ⭐️ 8.0/10
 
-Anthropic 指控阿里巴巴通过约 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互，试图非法提取该模型的能力，发动了大规模“蒸馏攻击”。 这一事件凸显了人工智能知识产权保护领域日益紧张的局势，可能为如何从法律和技术层面应对模型蒸馏攻击树立先例，影响全球 AI 安全实践。 Anthropic 声称这是针对该公司“迄今已知最大规模的蒸馏攻击”，涉及阿里巴巴及其 AI 实验室 Qwen。作为回应，阿里巴巴据报道下令员工卸载所有 Anthropic 产品，包括 Claude Code，禁令于 7 月 10 日生效。
+Anthropic 指控阿里巴巴利用约 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互，发动大规模“蒸馏攻击”以窃取其 AI 模型能力。 此事件凸显了 AI 模型安全和知识产权盗窃日益增长的担忧，对中美科技竞争以及先进 AI 技术出口管制的执行具有重大影响。 Anthropic 声称这是针对该公司迄今已知最大规模的蒸馏攻击，涉及阿里巴巴及其 AI 实验室 Qwen。作为回应，阿里巴巴据报道下令员工卸载所有 Anthropic 产品，包括 Claude 模型和 Claude Code，禁令于 2026 年 7 月 10 日生效。
 
 telegram · zaihuapd · 7月3日 06:21
 
-**背景**: 模型蒸馏是一种技术，通过训练较小的“学生”模型模仿较大“教师”模型的输出，常用于模型压缩。蒸馏攻击则是指通过未经授权的查询窃取教师模型的能力，这被视为对专有 AI 系统的安全威胁。
+**背景**: 模型蒸馏是一种让较弱模型通过学习较强模型的输出来复制其能力的技术。在未经授权的情况下对专有模型使用该技术构成知识产权盗窃。Anthropic 一直支持出口管制以维持美国在 AI 领域的领先地位，而蒸馏攻击可能通过让外国实体获取先进能力来破坏这些管制。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
-<li><a href="https://medium.com/@tahirbalarabe2/understanding-llm-distillation-attacks-929306ca38cd">Understanding LLM Distillation Attacks | by Tahir | Medium</a></li>
 <li><a href="https://www.mindstudio.ai/blog/ai-model-distillation-attacks-explained">AI Model Distillation Attacks: What They Are and Why They Matter | MindStudio</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Hacker News 上的评论对指控表示怀疑，有人指出 Anthropic 此前曾对竞争对手的使用情况进行过激进的监控。其他人则强调远程 AI 服务对企业构成安全风险的更广泛担忧，尤其是涉及专有代码暴露的问题。
-
-**标签**: `#AI`, `#security`, `#model distillation`, `#Anthropic`, `#Alibaba`
+**标签**: `#AI security`, `#model distillation`, `#Anthropic`, `#Alibaba`, `#intellectual property`
 
 ---
 
-<a id="item-9"></a>
-## [华为发布 Atlas 350 加速卡，搭载昇腾 950PR，性能达 H20 的 2.87 倍](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [华为发布搭载昇腾 950PR 的 Atlas 350 加速卡](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
 
-在 2026 年华为中国合作伙伴大会上，华为正式发布并上市了搭载全新昇腾 950PR 处理器的 Atlas 350 加速卡，宣称其单卡算力达到英伟达 H20 的 2.87 倍，并支持 FP4 低精度推理。 这标志着华为 AI 硬件生态的重要里程碑，在中国市场为英伟达 H20 提供了有竞争力的替代方案。Atlas 350 的高性能和 FP4 支持可降低大语言模型的推理成本，推动国产 AI 基础设施建设。 昇腾 950PR 芯片在 FP8 下提供 1 PFLOPS 算力，FP4 下为 2 PFLOPS，配备 128 GB HBM 内存和 1.6 TB/s 带宽。Atlas 350 加速卡拥有 112 GB HBM，单卡可加载 70B 参数模型。
+在华为中国合作伙伴大会 2026 上，华为正式发布并上市了搭载全新昇腾 950PR 处理器的 AI 训练推理加速卡 Atlas 350，声称其算力达到英伟达 H20 的 2.87 倍，并支持 FP4 精度。 这一发布标志着华为在 AI 加速器市场的强势进军，以国产芯片提供更高性能和更低成本挑战英伟达的主导地位，可能重塑中国的 AI 硬件格局。 Atlas 350 配备 112 GB HBM 内存，支持 FP4 低精度推理，单卡可加载 70B 参数模型，显著降低推理延迟和投资成本。
 
 telegram · zaihuapd · 7月3日 08:35
 
-**背景**: 华为昇腾系列是面向训练和推理的 AI 加速器产品线，与英伟达 GPU 系列竞争。Atlas 350 是最新产品，面向推荐推理、多模态生成和 LLM 推理场景。FP4 是一种低精度数据格式，可在保持模型精度的同时减少内存占用并加速推理。
+**背景**: 华为昇腾 950PR 芯片基于 SIMD 架构，算力达 1 PFLOPS（FP8）/ 2 PFLOPS（FP4），支持多种数据格式。其定价为 7 万元人民币，约为英伟达 H200 在中国市场报价的三分之一，性能达到其近 80%。该芯片是华为 AI 芯片路线图的一部分，后续还有 950DT、960 等型号。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://wallstreetcn.com/articles/3755816">华为昇腾AI芯片路线图公布：明年Q1推出昇腾950PR，采用自研HBM</a></li>
 <li><a href="https://cloud.tencent.com/developer/article/2652707">昇腾950PR加持！华为Atlas 350上市：算力是H20的3倍-腾讯云开发者社区-腾讯云</a></li>
-<li><a href="https://www.ithome.com/0/931/355.htm">华为 Atlas 350 加速卡上市，搭载全新昇腾 950PR 处理器 - IT之家</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/2026893491125467122">华为昇腾950PR正式量产！7万定价打穿英伟达，国产AI芯片终于站起来了 - 知乎</a></li>
 
 </ul>
 </details>
 
-**标签**: `#hardware`, `#AI`, `#Huawei`, `#accelerator`, `#deep learning`
+**标签**: `#AI hardware`, `#Huawei`, `#accelerator`, `#FP4`, `#deep learning`
 
 ---
 
-<a id="item-10"></a>
-## [极客湾评测：Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
 
-极客湾对华为 Mate 80 Pro 系列的评测显示，得益于原生鸿蒙优化，麒麟 9030 和 9030 Pro 芯片在游戏能效上超越了骁龙 8 Gen3，其中 Mate 80 Pro Max 运行《原神》60 帧时整机功耗仅 4.9W。 这表明深度的软硬件协同优化可以弥补理论性能的不足，可能重塑移动芯片格局，挑战高通在游戏能效上的主导地位。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU（支持硬件光追），基于 5nm 工艺。尽管其多核能效介于骁龙 8 Gen2 和 8 Gen3 之间，但得益于鸿蒙原生优化，实际游戏表现超越了 8 Gen3。
+极客湾评测显示，搭载麒麟 9030 芯片的华为 Mate 80 Pro 系列，凭借原生鸿蒙优化，游戏能效超越了骁龙 8 Gen3。 这表明软硬件协同优化可以克服理论硬件劣势，可能重塑移动芯片市场的竞争格局。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿。在《原神》最高画质 60 帧下，Mate 80 Pro Max 整机功耗仅 4.9W，能效优于骁龙 8 Gen3。
 
 telegram · zaihuapd · 7月3日 13:27
 
-**背景**: 华为的麒麟芯片一直受到美国制裁的限制，无法获得先进制程。麒麟 9030 系列代表了华为继续推进自主可控的努力，采用 5nm 工艺和自研 CPU/GPU 架构。鸿蒙是华为的专有操作系统，允许软硬件深度集成，实现安卓无法做到的优化。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://nanoreview.net/en/soc/hisilicon-kirin-9030">HiSilicon Kirin 9030 Pro: specs and benchmarks - NanoReview</a></li>
-<li><a href="https://www.gsmarena.com/key_differences_between_kirin_9030_and_9030_pro_revealed_-news-70449.php">Key differences between Kirin 9030 and 9030 Pro revealed</a></li>
-<li><a href="https://www.163.com/dy/article/KH64DMU605523V44.html">数码：从Mali到马良，手机芯片GPU模块实现自研|显卡|gpu|马良 (青海)_...</a></li>
-
-</ul>
-</details>
+**背景**: 华为麒麟芯片面临美国制裁，限制了其获取先进制程的能力。鸿蒙是华为专为多设备无缝协同设计的操作系统。该评测凸显了原生应用优化如何弥补硬件局限。
 
 **标签**: `#Huawei`, `#Kirin 9030`, `#HarmonyOS`, `#mobile chips`, `#gaming performance`
+
+---
+
+<a id="item-7"></a>
+## [NASA 发射救援卫星拯救老化雨燕望远镜](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 8.0/10
+
+7 月 3 日，NASA 发射了名为 LINK 的私人救援卫星，将与老化的雨燕空间望远镜会合，并将其轨道抬升约 240 公里，防止其最早在今年 10 月坠入大气层。 这次任务标志着私人航天器首次尝试捕获并服务美国政府的无人卫星，可能开启在轨服务和太空碎片减缓的新时代。 LINK 航天器将使用机械臂抓住雨燕望远镜，然后通过推进器缓慢抬升其轨道。如果成功，雨燕最快可于 9 月恢复观测。
+
+telegram · zaihuapd · 7月3日 15:43
+
+**背景**: 雨燕空间望远镜于 2004 年发射，已研究伽马射线暴和其他宇宙现象超过 20 年。由于太阳活动增强，其轨道衰减速度快于预期，威胁到任务寿命。在轨服务——即一艘航天器为另一艘加油或抬升轨道——是一个新兴领域，旨在延长卫星寿命并减少太空碎片。
+
+**标签**: `#space`, `#NASA`, `#satellite servicing`, `#space debris`, `#astronomy`
+
+---
+
+<a id="item-8"></a>
+## [腾讯阿图因 AI 在 CyberGym 测试中击败 Mythos](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 8.0/10
+
+腾讯玄武实验室的阿图因 AI 在 CyberGym 网络安全基准测试中获得 84.0%的得分，超过 Anthropic 的 Claude Mythos Preview，且消耗预算不到 Mythos 的 0.1%。它还在 curl、OpenSSL、Python cryptography 等项目中发现了多个 Mythos 未检出的高危漏洞。 这表明开源、低成本的 AI 模型在漏洞检测方面可以超越专有模型，可能推动高级网络安全工具的普及。同时，它也凸显了 AI 在广泛使用的开源软件中发现关键漏洞方面的作用日益增强。 阿图因 AI 基于开源模型 GLM-5.1 构建，可本地部署。它在伯克利 BVI 真实世界漏洞榜单中严重程度排名第 1，总数排名第 5。
+
+telegram · zaihuapd · 7月3日 16:12
+
+**背景**: CyberGym 是由加州大学伯克利分校主导的网络安全基准测试，用于评估 AI 系统的漏洞检测能力。Mythos 是 Anthropic 在“玻璃翼计划”下开发的网络安全 AI 系统。这一对比凸显了开源模型相对于专有模型的效率优势。
+
+**标签**: `#AI`, `#cybersecurity`, `#vulnerability detection`, `#open-source`, `#benchmark`
 
 ---
