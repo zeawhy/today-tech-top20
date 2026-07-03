@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today Tech Top 20 - AI 科技新闻每日精选</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo-area">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <h1>TODAY TECH <span>TOP 20</span></h1>
+            <p>AI 自动抓取 · 去重 · 评分 · 每日中文总结</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Dashboard -->
+      <div class="header-stats">
+        <div class="stat-item">
+          <span class="stat-label">今日扫描</span>
+          <span class="stat-val" id="stat-total-scanned">128</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-label">精选新闻</span>
+          <span class="stat-val" id="stat-selected">8</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-label">平均评分</span>
+          <span class="stat-val" id="stat-avg-score">9.1</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <!-- Bookmark Toggle -->
+        <button id="bookmark-filter-btn" class="btn-icon" title="查看收藏">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span class="badge" id="bookmark-count">0</span>
+        </button>
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="btn-icon" title="切换主题">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Toolbar: Search, Filters & Sort -->
+    <section class="app-toolbar">
+      <!-- Search Input -->
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="输入关键词检索新闻标题或总结...">
+        <button id="clear-search-btn" class="clear-btn">&times;</button>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="filter-categories-container">
+        <div class="filter-categories" id="categories-list">
+          <button class="category-tab active" data-category="all">全部</button>
+          <button class="category-tab" data-category="AI">AI与机器学习</button>
+          <button class="category-tab" data-category="Dev">开发与工具</button>
+          <button class="category-tab" data-category="Startup">商业与初创</button>
+          <button class="category-tab" data-category="Hardware">前沿硬件</button>
+          <button class="category-tab" data-category="Science">前沿科学</button>
+        </div>
+      </div>
+
+      <!-- Sort Controls -->
+      <div class="sort-wrapper">
+        <span class="sort-label">排序方式:</span>
+        <div class="sort-buttons">
+          <button id="sort-score-btn" class="sort-btn active" data-sort="score">重要性评分</button>
+          <button id="sort-time-btn" class="sort-btn" data-sort="time">发布时间</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Filters Alert -->
+    <div id="active-filters-bar" class="active-filters-bar hidden">
+      <span class="filter-status-text">正在筛选: <strong>收藏夹</strong></span>
+      <button id="reset-filters-btn" class="btn-text">清除筛选</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+      <!-- Skeleton Loading -->
+      <div id="skeleton-container" class="news-grid">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <!-- Real News Grid -->
+      <div id="news-grid-container" class="news-grid hidden">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state hidden">
+        <div class="empty-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+        </div>
+        <h3>没有找到匹配的新闻</h3>
+        <p>请尝试调整搜索词或分类筛选条件</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer-info">
+      <p>© 2026 Today Tech Top 20. Powered by Horizon & GitHub Actions & Vercel.</p>
+    </footer>
+
+    <!-- Side Drawer (AI Details Pane) -->
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    
+    <aside id="side-drawer" class="side-drawer">
+      <div class="drawer-header">
+        <button id="close-drawer-btn" class="btn-close" title="关闭">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="drawer-header-actions">
+          <button id="drawer-bookmark-btn" class="btn-secondary" title="加入收藏">
+            <svg class="bookmark-icon-empty" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>收藏</span>
+          </button>
+          <button id="drawer-share-btn" class="btn-secondary" title="复制总结">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>复制</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="drawer-body" id="drawer-content">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </aside>
+
+  </div>
+  
+  <!-- JavaScript Link -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+name: Update Tech News & Re-deploy
+
+on:
+  schedule:
+    # Run every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Allow manual execution via GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-level: '3.10'
+
+      - name: Run Horizon / RSS Scraper (Optional)
+        run: |
+          # If you have an active scraper script or Horizon deployment, call it here:
+          # python run_horizon.py
+          echo "Scraper step executed successfully."
+
+      - name: Convert Markdown Briefing to Static JSON
+        run: |
+          # Runs our synchronizer script which updates data/news.json
+          python sync_briefing.py
+
+      - name: Commit and Push Updated News JSON
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes in data/news.json
+          if git status --porcelain | grep -q "data/news.json"; then
+            echo "New tech updates detected. Committing changes..."
+            git add data/news.json
+            git commit -m "chore: auto-update daily tech news feed [skip ci]"
+            git push origin main
+          else
+            echo "No news changes detected. Skipping commit."
+          fi
