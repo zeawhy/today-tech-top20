@@ -156,8 +156,9 @@ def main():
     # Ensure summaries directory exists
     os.makedirs(SUMMARIES_DIR, exist_ok=True)
     
-    # 1. Check if we have any files in data/summaries
-    zh_files = [f for f in os.listdir(SUMMARIES_DIR) if f.endswith("-summary-zh.md")]
+    # 1. Check if we have any files in data/summaries matching horizon-*-zh.md or *-summary-zh.md
+    files_in_dir = os.listdir(SUMMARIES_DIR)
+    zh_files = [f for f in files_in_dir if (f.startswith("horizon-") and f.endswith("-zh.md")) or f.endswith("-summary-zh.md")]
     
     if not zh_files:
         print("No Horizon daily summaries found in ./data/summaries/.")
@@ -192,7 +193,7 @@ Vite 7.0 默认采用 Rust 编写的打包器 Rolldown，编译和热更新速�
 
 github · Vite · 14:30
 
-**背景**: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。
+**背景**: Rolldown 是 Vue 团队为了替代 Rollup 编写 of Rust 移植版本。
 """
         en_mock = f"""# Horizon Daily - {today_str}
 > From 128 items, 2 important content pieces were selected
@@ -224,26 +225,26 @@ github · Vite · 14:30
 **Background**: Rolldown is the Rust rewrite of Rollup initiated by the Vue core team.
 """
         
-        with open(os.path.join(SUMMARIES_DIR, f"{today_str}-summary-zh.md"), "w", encoding="utf-8") as f:
+        with open(os.path.join(SUMMARIES_DIR, f"horizon-{today_str}-zh.md"), "w", encoding="utf-8") as f:
             f.write(zh_mock)
-        with open(os.path.join(SUMMARIES_DIR, f"{today_str}-summary-en.md"), "w", encoding="utf-8") as f:
+        with open(os.path.join(SUMMARIES_DIR, f"horizon-{today_str}-en.md"), "w", encoding="utf-8") as f:
             f.write(en_mock)
             
         print("Mock files created successfully.")
-        zh_files = [f for f in os.listdir(SUMMARIES_DIR) if f.endswith("-summary-zh.md")]
+        files_in_dir = os.listdir(SUMMARIES_DIR)
+        zh_files = [f for f in files_in_dir if (f.startswith("horizon-") and f.endswith("-zh.md")) or f.endswith("-summary-zh.md")]
 
     # Get the latest date
     zh_files.sort()
     latest_zh_filename = zh_files[-1]
     
-    # Extract date
-    date_match = re.match(r'^(\d{4}-\d{2}-\d{2})', latest_zh_filename)
-    if not date_match:
-        print(f"Error: Unexpected filename format: {latest_zh_filename}")
-        return
-        
-    date_str = date_match.group(1)
-    latest_en_filename = f"{date_str}-summary-en.md"
+    # Extract date and determine English file name
+    if latest_zh_filename.startswith("horizon-"):
+        date_str = latest_zh_filename[8:18]
+        latest_en_filename = f"horizon-{date_str}-en.md"
+    else:
+        date_str = latest_zh_filename[:10]
+        latest_en_filename = f"{date_str}-summary-en.md"
     
     print(f"Targeting date: {date_str}")
     
