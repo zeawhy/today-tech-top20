@@ -3,204 +3,333 @@ import os
 import re
 import json
 import datetime
+from pathlib import Path
 
 # Configuration
-BRIEFINGS_DIR = "./briefings"
+SUMMARIES_DIR = "./data/summaries"
 OUTPUT_JSON_PATH = "./data/news.json"
 
-def parse_briefing_markdown(md_content):
+def parse_horizon_markdown(filepath):
     """
-    Parses Horizon-style markdown briefings into a list of structured news dicts.
-    
-    Expected format in Markdown:
-    ## [Score] Title
-    - Source: Source Name
-    - URL: https://example.com
-    - Category: AI / Dev / Startup / Hardware / Science
-    - Publish Time: ISO string (optional)
-    
-    ### Core Takeaways
-    - Bullet point 1
-    - Bullet point 2
-    
-    ### AI Summary (ZH)
-    Chinese summary text...
-    
-    ### AI Summary (EN)
-    English summary text...
-    
-    ---
+    Parses a single Horizon daily summary markdown file (ZH or EN).
+    Returns a list of dicts: {url, title, score, source_line, summary, background, discussion}
     """
+    if not os.path.exists(filepath):
+        return []
+        
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+        
     articles = []
     
-    # Split by horizontal rule separator (or double line breaks followed by headers)
-    raw_sections = re.split(r'\n---\n|\n###+ ---\n', md_content)
+    # Split content by the article marker, which is <a id="item-..."></a> followed by ##
+    # Or simply split by the ## headers since each article starts with ##
+    raw_sections = re.split(r'(?=<a id="item-\d+"></a>\n##|##\s*\[)', content)
     
-    article_id_counter = 1
-    for section in raw_sections:
+    # The first section is the header and table of contents, we skip it
+    for section in raw_sections[1:]:
         section = section.strip()
         if not section:
             continue
             
-        # Match header: ## [Score] Title
-        header_match = re.search(r'^##\s*\[([0-9.]+)\]\s*(.*)', section, re.MULTILINE)
+        # Match title, url and score from header: ## [Title](URL) ⭐️ Score/10
+        # Example: ## [OpenAI GPT-5](https://openai.com) ⭐️ 9.9/10
+        header_match = re.search(
+            r'^##\s*\[(.*?)\]\((.*?)\)\s*(?:⭐|⭐️)\s*([0-9.]+)/10', 
+            section, 
+            re.MULTILINE
+        )
+        if not header_match:
+            # Try alternate match if the ⭐️ symbol is missing or different
+            header_match = re.search(r'^##\s*\[(.*?)\]\((.*?)\)\s*.*?([0-9.]+)/10', section, re.MULTILINE)
+            
         if not header_match:
             continue
             
-        score = float(header_match.group(1))
-        title = header_match.group(2).strip()
+        title = header_match.group(1).strip()
+        url = header_match.group(2).strip()
+        score = float(header_match.group(3))
         
-        # Match metadata lines
-        source_match = re.search(r'^-\s*Source:\s*(.*)', section, re.MULTILINE | re.IGNORECASE)
-        url_match = re.search(r'^-\s*URL:\s*(.*)', section, re.MULTILINE | re.IGNORECASE)
-        category_match = re.search(r'^-\s*Category:\s*(.*)', section, re.MULTILINE | re.IGNORECASE)
-        time_match = re.search(r'^-\s*Publish\s*Time:\s*(.*)', section, re.MULTILINE | re.IGNORECASE)
+        # Split section into lines to parse details
+        lines = section.split("\n")
         
-        source = source_match.group(1).strip() if source_match else "Unknown"
-        url = url_match.group(1).strip() if url_match else "#"
-        category = category_match.group(1).strip() if category_match else "AI"
+        # Extract metadata and text sections
+        summary_lines = []
+        source_line = ""
+        background = ""
+        discussion = ""
         
-        # Categories mapping to standard front-end values (AI, Dev, Startup, Hardware, Science)
-        cat_upper = category.upper()
-        if "AI" in cat_upper or "MACHINE" in cat_upper:
-            category = "AI"
-        elif "DEV" in cat_upper or "TOOL" in cat_upper or "COD" in cat_upper:
-            category = "Dev"
-        elif "STARTUP" in cat_upper or "BUSINESS" in cat_upper or "FIN" in cat_upper or "CORP" in cat_upper:
-            category = "Startup"
-        elif "HARD" in cat_upper or "CHIP" in cat_upper or "DEVICE" in cat_upper or "VR" in cat_upper:
-            category = "Hardware"
-        elif "SCI" in cat_upper or "BIO" in cat_upper or "CHEM" in cat_upper or "PHYS" in cat_upper:
-            category = "Science"
-        else:
-            category = "AI" # default fallback
-            
-        publish_time = time_match.group(1).strip() if time_match else datetime.datetime.utcnow().isoformat() + "Z"
+        # State machine for parsing section body
+        in_summary = True
         
-        # Parse bullet points / takeaways
-        takeaways = []
-        takeaways_match = re.search(r'###\s*(?:Core Takeaways|核心要点|要点)(.*?)(?=###|\Z)', section, re.DOTALL | re.IGNORECASE)
-        if takeaways_match:
-            pts = re.findall(r'^\s*[-*+]\s*(.*)', takeaways_match.group(1), re.MULTILINE)
-            takeaways = [p.strip() for p in pts if p.strip()]
-            
-        # Parse Chinese summary
-        summary_zh = ""
-        summary_zh_match = re.search(r'###\s*(?:AI Summary \(ZH\)|AI 总结|中文总结)(.*?)(?=###|\Z)', section, re.DOTALL | re.IGNORECASE)
-        if summary_zh_match:
-            summary_zh = summary_zh_match.group(1).strip()
-            
-        # Parse English summary
-        summary_en = ""
-        summary_en_match = re.search(r'###\s*(?:AI Summary \(EN\)|英文总结|英文摘要)(.*?)(?=###|\Z)', section, re.DOTALL | re.IGNORECASE)
-        if summary_en_match:
-            summary_en = summary_en_match.group(1).strip()
-            
-        # Fallback if specific sections are missing but we have body text
-        if not summary_zh and not summary_en:
-            # Look for generic body content
-            body_match = re.search(r'-\s*Category:.*?\n\n(.*)', section, re.DOTALL)
-            if body_match:
-                summary_zh = body_match.group(1).strip()
+        for line in lines[1:]: # Skip the header line
+            line_str = line.strip()
+            if not line_str:
+                if summary_lines and in_summary:
+                    # Let's keep empty lines in summary if they are not trailing
+                    summary_lines.append("")
+                continue
                 
-        # Clean up summaries (remove markdown bolding or references if any)
-        summary_zh = re.sub(r'\n+', '\n', summary_zh)
-        summary_en = re.sub(r'\n+', '\n', summary_en)
+            # Check for source line (contains U+00B7 middle dot separator ' · ')
+            if " · " in line_str and not line_str.startswith("**") and not line_str.startswith("-"):
+                source_line = line_str
+                in_summary = False
+                continue
+                
+            # Check for Background section
+            # English: **Background**: ...
+            # Chinese: **背景**: ... or **背景信息**: ...
+            bg_match = re.match(r'^\*\*(?:Background|背景|背景信息)\*\*:\s*(.*)', line_str, re.IGNORECASE)
+            if bg_match:
+                background = bg_match.group(1).strip()
+                in_summary = False
+                continue
+                
+            # Check for Discussion section
+            # English: **Discussion**: ...
+            # Chinese: **社区讨论**: ...
+            disc_match = re.match(r'^\*\*(?:Discussion|社区讨论)\*\*:\s*(.*)', line_str, re.IGNORECASE)
+            if disc_match:
+                discussion = disc_match.group(1).strip()
+                in_summary = False
+                continue
+                
+            # Check for reference list (ignore details tag)
+            if line_str.startswith("<details>") or line_str.startswith("</details>") or line_str.startswith("<li>"):
+                in_summary = False
+                continue
+                
+            # If we are still in summary, collect text
+            if in_summary:
+                summary_lines.append(line)
+                
+        # Clean up summary lines
+        summary = "\n".join(summary_lines).strip()
         
         articles.append({
-          "id": str(article_id_counter),
-          "title": title,
-          "importance_score": score,
-          "source": source,
-          "url": url,
-          "category": category,
-          "publish_time": publish_time,
-          "summary_zh": summary_zh or "无中文总结",
-          "summary_en": summary_en or title,
-          "takeaways": takeaways or ["核心要点已在文章中包含。"]
+            "title": title,
+            "url": url,
+            "score": score,
+            "source_line": source_line,
+            "summary": summary,
+            "background": background,
+            "discussion": discussion
         })
-        article_id_counter += 1
         
     return articles
 
-def write_demo_markdown():
-    """Generates a demo markdown file in the briefings folder for test run."""
-    os.makedirs(BRIEFINGS_DIR, exist_ok=True)
-    demo_md_content = """# Horizon Daily Tech Briefing - 2026-07-03
+def detect_category(title, summary, source_line):
+    """Smart category detection based on content keywords and source."""
+    text = (title + " " + summary + " " + source_line).lower()
+    
+    if any(k in text for k in ["ai", "llm", "gpt", "model", "transformer", "neural", "deep learning", "agent", "claude", "llama", "deepseek"]):
+        return "AI"
+    elif any(k in text for k in ["rust", "golang", "typescript", "npm", "vite", "git", "cli", "compiler", "bundler", "developer", "framework", "api", "docker"]):
+        return "Dev"
+    elif any(k in text for k in ["ipo", "funding", "arr", "acquisition", "venture capital", "startup", "ceo", "dollar", "sec", "finance", "business"]):
+        return "Startup"
+    elif any(k in text for k in ["chip", "hardware", "cpu", "gpu", "oled", "display", "headset", "apple vision", "nvidia", "amd", "intel", "quantum"]):
+        return "Hardware"
+    elif any(k in text for k in ["physics", "biology", "alphafold", "chemistry", "ion", "rna", "dna", "science", "nature", "cell", "scientific"]):
+        return "Science"
+        
+    return "AI" # Default
 
-## [9.9] OpenAI Announces 'GPT-5' with Native Autonomy and Web Interactions
-- Source: OpenAI Blog
-- URL: https://openai.com/blog/gpt-5-announcement
-- Category: AI
-- Publish Time: 2026-07-03T16:00:00Z
-
-### Core Takeaways
-- GPT-5 introduces full agentic autonomy out of the box, executing code local-first.
-- Achieved a 95% success rate on complex web-navigation and multi-app tasks.
-- Released via a public beta program starting today with reduced token pricing.
-
-### AI Summary (ZH)
-OpenAI 今日正式公布了其下一代旗舰大模型 GPT-5。该模型在自主执行能力和网页交互层面实现了质的突破，支持跨软件和网页环境下的多步骤规划与执行。OpenAI 称，GPT-5 能无缝使用本地终端、主流开发工具并自主完成复杂的系统调试任务，标志着人工智能从“对话助手”迈向了“自主智能体”时代。
-
-### AI Summary (EN)
-OpenAI has officially introduced GPT-5, demonstrating significant advances in autonomous task completion and browser interaction. The new flagship model excels at complex planning, tool invocation, and terminal execution, shifting the paradigm from conversation to proactive action.
-
----
-
-## [8.8] Next.js 16 Drops: Complete Dynamic Routing Overhaul and React 20 Stable support
-- Source: Vercel
-- URL: https://nextjs.org/blog/next-16
-- Category: Dev
-- Publish Time: 2026-07-03T14:30:00Z
-
-### Core Takeaways
-- Unveiled a revamped routing paradigm featuring zero-runtime dynamic rendering rules.
-- Native build step integration with Rolldown, cutting dev compile times by 70%.
-- Full out-of-the-box compatibility with React 20 Server Components features.
-
-### AI Summary (ZH)
-Vercel 团队发布了 Next.js 16 版本，完成了自 App Router 推出以来最大幅度的动态路由重构。新版本引入了零运行时动态渲染系统，并在底层全面整合了 Rolldown 以加速编译，开发环境启动速度提升近 3 倍。此外，新版也率先支持了 React 20 稳定版的最新特性。
-
-### AI Summary (EN)
-Vercel has released Next.js 16, which completely redesigns its routing engine and natively utilizes Rolldown for bundler tooling. This update dramatically reduces startup delays and fully integrates React 20 stable features.
-"""
-    test_filepath = os.path.join(BRIEFINGS_DIR, "briefing_latest.md")
-    with open(test_filepath, "w", encoding="utf-8") as f:
-        f.write(demo_md_content)
-    print(f"Created demo markdown briefing at: {test_filepath}")
+def parse_source_name(source_line):
+    """Extracts a neat source name from a source line (e.g. 'rss · Simon Willison' -> 'Simon Willison')."""
+    if not source_line:
+        return "Horizon"
+    parts = [p.strip() for p in source_line.split("·")]
+    if len(parts) >= 2:
+        # Check if first part is 'rss' or 'github' or 'reddit' and return the second part
+        first = parts[0].lower()
+        if first in ["rss", "github", "reddit"] and parts[1]:
+            return parts[1]
+        return parts[0].capitalize()
+    return parts[0]
 
 def main():
     print("=" * 60)
-    print("           TODAY TECH TOP 20 - DATA SYNC PIPELINE            ")
+    print("           TODAY TECH TOP 20 - HORIZON INTEGRATION           ")
     print("=" * 60)
     
-    # 1. Generate demo markdown if briefing directory doesn't exist
-    if not os.path.exists(BRIEFINGS_DIR) or not os.listdir(BRIEFINGS_DIR):
-        print("Briefings directory empty or missing. Writing a demo briefing for testing...")
-        write_demo_markdown()
+    # Ensure summaries directory exists
+    os.makedirs(SUMMARIES_DIR, exist_ok=True)
+    
+    # 1. Check if we have any files in data/summaries
+    zh_files = [f for f in os.listdir(SUMMARIES_DIR) if f.endswith("-summary-zh.md")]
+    
+    if not zh_files:
+        print("No Horizon daily summaries found in ./data/summaries/.")
+        print("Creating mock daily summaries for testing...")
         
-    # 2. Find latest markdown file in briefings/
-    files = [os.path.join(BRIEFINGS_DIR, f) for f in os.listdir(BRIEFINGS_DIR) if f.endswith(".md")]
-    if not files:
-        print("Error: No markdown files found to sync.")
+        # Create a mock zh summary
+        today_str = datetime.date.today().isoformat()
+        zh_mock = f"""# Horizon 每日速递 - {today_str}
+> 从 128 条内容中筛选出 2 条重要资讯。
+
+1. [OpenAI 发布 GPT-5 模型](#item-1) ⭐️ 9.9/10
+2. [Vite 7.0 正式版发布](#item-2) ⭐️ 8.9/10
+
+---
+
+<a id="item-1"></a>
+## [OpenAI 发布 GPT-5 模型](https://openai.com) ⭐️ 9.9/10
+
+OpenAI 今日发布了其下一代大模型 GPT-5。该模型在逻辑推理和多步骤自主执行（Agent）层面实现了飞跃。
+
+rss · OpenAI Blog · 16:00
+
+**背景**: GPT-5 解决了大语言模型无法自主进行深度思考的顽疾。
+**社区讨论**: 网友普遍对于其自主执行代码的能力感到兴奋，但也有安全担忧。
+
+---
+
+<a id="item-2"></a>
+## [Vite 7.0 正式版发布](https://vite.dev) ⭐️ 8.9/10
+
+Vite 7.0 默认采用 Rust 编写的打包器 Rolldown，编译和热更新速度提升高达 5 倍。
+
+github · Vite · 14:30
+
+**背景**: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。
+"""
+        en_mock = f"""# Horizon Daily - {today_str}
+> From 128 items, 2 important content pieces were selected
+
+1. [OpenAI Releases GPT-5 Model](#item-1) ⭐️ 9.9/10
+2. [Vite 7.0 Released](#item-2) ⭐️ 8.9/10
+
+---
+
+<a id="item-1"></a>
+## [OpenAI Releases GPT-5 Model](https://openai.com) ⭐️ 9.9/10
+
+OpenAI officially unveiled GPT-5, showing massive improvements in reasoning and autonomous agent planning.
+
+rss · OpenAI Blog · 16:00
+
+**Background**: GPT-5 addresses the limitations of previous models in deep multi-step planning.
+**Discussion**: Users are generally excited about local-first execution, though safety is still debated.
+
+---
+
+<a id="item-2"></a>
+## [Vite 7.0 Released](https://vite.dev) ⭐️ 8.9/10
+
+Vite 7.0 now uses Rust-based bundler Rolldown by default, achieving up to 5x faster hot reload times.
+
+github · Vite · 14:30
+
+**Background**: Rolldown is the Rust rewrite of Rollup initiated by the Vue core team.
+"""
+        
+        with open(os.path.join(SUMMARIES_DIR, f"{today_str}-summary-zh.md"), "w", encoding="utf-8") as f:
+            f.write(zh_mock)
+        with open(os.path.join(SUMMARIES_DIR, f"{today_str}-summary-en.md"), "w", encoding="utf-8") as f:
+            f.write(en_mock)
+            
+        print("Mock files created successfully.")
+        zh_files = [f for f in os.listdir(SUMMARIES_DIR) if f.endswith("-summary-zh.md")]
+
+    # Get the latest date
+    zh_files.sort()
+    latest_zh_filename = zh_files[-1]
+    
+    # Extract date
+    date_match = re.match(r'^(\d{4}-\d{2}-\d{2})', latest_zh_filename)
+    if not date_match:
+        print(f"Error: Unexpected filename format: {latest_zh_filename}")
         return
         
-    latest_file = max(files, key=os.path.getmtime)
-    print(f"Processing latest briefing: {latest_file}")
+    date_str = date_match.group(1)
+    latest_en_filename = f"{date_str}-summary-en.md"
     
-    # 3. Parse content
-    with open(latest_file, "r", encoding="utf-8") as f:
-        md_content = f.read()
+    print(f"Targeting date: {date_str}")
+    
+    zh_filepath = os.path.join(SUMMARIES_DIR, latest_zh_filename)
+    en_filepath = os.path.join(SUMMARIES_DIR, latest_en_filename)
+    
+    # Parse files
+    zh_items = parse_horizon_markdown(zh_filepath)
+    en_items = parse_horizon_markdown(en_filepath)
+    
+    print(f"Parsed {len(zh_items)} Chinese articles.")
+    print(f"Parsed {len(en_items)} English articles.")
+    
+    # Combine results by URL
+    combined_articles = []
+    
+    # Map English articles by URL for quick lookup
+    en_by_url = {item["url"]: item for item in en_items}
+    
+    article_id = 1
+    for zh_item in zh_items:
+        url = zh_item["url"]
+        en_item = en_by_url.get(url, None)
         
-    articles_list = parse_briefing_markdown(md_content)
-    
-    # 4. Save to json
+        title_zh = zh_item["title"]
+        title_en = en_item["title"] if en_item else title_zh
+        
+        summary_zh = zh_item["summary"]
+        summary_en = en_item["summary"] if en_item else summary_zh
+        
+        # Build clean takeaways from the summary or background
+        takeaways = []
+        if zh_item["background"]:
+            takeaways.append(f"背景信息: {zh_item['background']}")
+        if zh_item["discussion"]:
+            takeaways.append(f"社区反馈: {zh_item['discussion']}")
+            
+        # If no bullet points yet, split summary into sentences and use first two
+        if not takeaways:
+            sentences = [s.strip() for s in re.split(r'[。！；!?;]', summary_zh) if s.strip()]
+            takeaways = sentences[:3]
+            
+        # Compose full detailed HTML/Markdown summary
+        full_zh = summary_zh
+        if zh_item["background"]:
+            full_zh += f"\n\n**背景**: {zh_item['background']}"
+        if zh_item["discussion"]:
+            full_zh += f"\n\n**社区讨论**: {zh_item['discussion']}"
+            
+        full_en = summary_en
+        if en_item and en_item["background"]:
+            full_en += f"\n\n**Background**: {en_item['background']}"
+        if en_item and en_item["discussion"]:
+            full_en += f"\n\n**Discussion**: {en_item['discussion']}"
+            
+        category = detect_category(title_zh, summary_zh, zh_item["source_line"])
+        source_name = parse_source_name(zh_item["source_line"])
+        
+        # ISO timestamp
+        publish_time = f"{date_str}T12:00:00Z"
+        # If time is in source line (e.g. 14:30), parse it
+        time_match = re.search(r'(\d{2}:\d{2})', zh_item["source_line"])
+        if time_match:
+            publish_time = f"{date_str}T{time_match.group(1)}:00Z"
+            
+        combined_articles.append({
+            "id": str(article_id),
+            "title": title_zh,
+            "importance_score": zh_item["score"],
+            "source": source_name,
+            "url": url,
+            "category": category,
+            "publish_time": publish_time,
+            "summary_zh": full_zh,
+            "summary_en": full_en,
+            "takeaways": takeaways
+        })
+        article_id += 1
+        
+    # Write output JSON
     os.makedirs(os.path.dirname(OUTPUT_JSON_PATH), exist_ok=True)
     with open(OUTPUT_JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump(articles_list, f, ensure_ascii=False, indent=2)
+        json.dump(combined_articles, f, ensure_ascii=False, indent=2)
         
-    print(f"Successfully compiled {len(articles_list)} articles into {OUTPUT_JSON_PATH}!")
-    print("Done! Web dashboard is now updated.")
+    print(f"Successfully compiled {len(combined_articles)} articles into {OUTPUT_JSON_PATH}!")
+    print("Done!")
 
 if __name__ == "__main__":
     main()

@@ -1,34 +1,31 @@
 [
   {
     "id": "1",
-    "title": "OpenAI Announces 'GPT-5' with Native Autonomy and Web Interactions",
+    "title": "OpenAI 发布 GPT-5 模型",
     "importance_score": 9.9,
     "source": "OpenAI Blog",
-    "url": "https://openai.com/blog/gpt-5-announcement",
+    "url": "https://openai.com",
     "category": "AI",
     "publish_time": "2026-07-03T16:00:00Z",
-    "summary_zh": "OpenAI 今日正式公布了其下一代旗舰大模型 GPT-5。该模型在自主执行能力和网页交互层面实现了质的突破，支持跨软件和网页环境下的多步骤规划与执行。OpenAI 称，GPT-5 能无缝使用本地终端、主流开发工具并自主完成复杂的系统调试任务，标志着人工智能从“对话助手”迈向了“自主智能体”时代。",
-    "summary_en": "OpenAI has officially introduced GPT-5, demonstrating significant advances in autonomous task completion and browser interaction. The new flagship model excels at complex planning, tool invocation, and terminal execution, shifting the paradigm from conversation to proactive action.",
+    "summary_zh": "OpenAI 今日发布了其下一代大模型 GPT-5。该模型在逻辑推理和多步骤自主执行（Agent）层面实现了飞跃。\n\n**背景**: GPT-5 解决了大语言模型无法自主进行深度思考的顽疾。\n\n**社区讨论**: 网友普遍对于其自主执行代码的能力感到兴奋，但也有安全担忧。",
+    "summary_en": "OpenAI officially unveiled GPT-5, showing massive improvements in reasoning and autonomous agent planning.\n\n**Background**: GPT-5 addresses the limitations of previous models in deep multi-step planning.\n\n**Discussion**: Users are generally excited about local-first execution, though safety is still debated.",
     "takeaways": [
-      "GPT-5 introduces full agentic autonomy out of the box, executing code local-first.",
-      "Achieved a 95% success rate on complex web-navigation and multi-app tasks.",
-      "Released via a public beta program starting today with reduced token pricing."
+      "背景信息: GPT-5 解决了大语言模型无法自主进行深度思考的顽疾。",
+      "社区反馈: 网友普遍对于其自主执行代码的能力感到兴奋，但也有安全担忧。"
     ]
   },
   {
     "id": "2",
-    "title": "Next.js 16 Drops: Complete Dynamic Routing Overhaul and React 20 Stable support",
-    "importance_score": 8.8,
-    "source": "Vercel",
-    "url": "https://nextjs.org/blog/next-16",
+    "title": "Vite 7.0 正式版发布",
+    "importance_score": 8.9,
+    "source": "Vite",
+    "url": "https://vite.dev",
     "category": "Dev",
     "publish_time": "2026-07-03T14:30:00Z",
-    "summary_zh": "Vercel 团队发布了 Next.js 16 版本，完成了自 App Router 推出以来最大幅度的动态路由重构。新版本引入了零运行时动态渲染系统，并在底层全面整合了 Rolldown 以加速编译，开发环境启动速度提升近 3 倍。此外，新版也率先支持了 React 20 稳定版的最新特性。",
-    "summary_en": "Vercel has released Next.js 16, which completely redesigns its routing engine and natively utilizes Rolldown for bundler tooling. This update dramatically reduces startup delays and fully integrates React 20 stable features.",
+    "summary_zh": "Vite 7.0 默认采用 Rust 编写的打包器 Rolldown，编译和热更新速度提升高达 5 倍。\n\n**背景**: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。",
+    "summary_en": "Vite 7.0 now uses Rust-based bundler Rolldown by default, achieving up to 5x faster hot reload times.\n\n**Background**: Rolldown is the Rust rewrite of Rollup initiated by the Vue core team.",
     "takeaways": [
-      "Unveiled a revamped routing paradigm featuring zero-runtime dynamic rendering rules.",
-      "Native build step integration with Rolldown, cutting dev compile times by 70%.",
-      "Full out-of-the-box compatibility with React 20 Server Components features."
+      "背景信息: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。"
     ]
   }
 ]
