@@ -5,74 +5,108 @@ date: 2026-07-04
 lang: zh
 ---
 
-> 从 53 条内容中筛选出 9 条重要资讯。
+> 从 57 条内容中筛选出 10 条重要资讯。
 
 ---
 
-1. [室内二氧化碳浓度可能影响决策能力](#item-1) ⭐️ 8.0/10
-2. [揭秘制造业：工厂不过是房间](#item-2) ⭐️ 8.0/10
-3. [开源 AI 差距地图发布](#item-3) ⭐️ 8.0/10
-4. [BaryGraph：将关系作为知识图谱中的一等文档](#item-4) ⭐️ 8.0/10
-5. [CDD 无需权重访问即可从 logits 恢复微调数据](#item-5) ⭐️ 8.0/10
-6. [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-6) ⭐️ 8.0/10
-7. [NASA 发射救援卫星抢救坠落太空望远镜](#item-7) ⭐️ 8.0/10
-8. [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](#item-8) ⭐️ 8.0/10
-9. [华为提出“韬定律”，以时间缩微延续摩尔定律](#item-9) ⭐️ 8.0/10
+1. [YouTube Studio 提示注入漏洞泄露私密视频标题](#item-1) ⭐️ 9.0/10
+2. [LLM 实例会话/缓存泄漏潜在问题被报告](#item-2) ⭐️ 8.0/10
+3. [室内二氧化碳浓度可能损害决策能力](#item-3) ⭐️ 8.0/10
+4. [开源 AI 差距图发布](#item-4) ⭐️ 8.0/10
+5. [BaryGraph：将关系作为嵌入文档的知识图谱](#item-5) ⭐️ 8.0/10
+6. [CDD 仅从 logits 恢复微调数据](#item-6) ⭐️ 8.0/10
+7. [谷歌发布 TabFM：零样本表格基础模型](#item-7) ⭐️ 8.0/10
+8. [本地 LLM 基准测试揭示代理性能不均衡](#item-8) ⭐️ 8.0/10
+9. [华为提出“韬定律”，以时间缩微引领半导体新路径](#item-9) ⭐️ 8.0/10
+10. [iOS 27 将加入 Trust Insights 设备端反诈功能](#item-10) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [室内二氧化碳浓度可能影响决策能力](https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/) ⭐️ 8.0/10
+## [YouTube Studio 提示注入漏洞泄露私密视频标题](https://javoriuski.com/post/youtube) ⭐️ 9.0/10
 
-一项个人实验和社区讨论指出，通风不良房间中升高的二氧化碳浓度会显著损害决策能力和生产力，教室中的浓度常超过 2000 ppm。 这很重要，因为二氧化碳积累是一个常见但被忽视的因素，影响办公室、学校和家庭中的认知表现，可能降低数百万人的生产力和学习效果。 研究表明，在约 950 ppm 的二氧化碳浓度下认知功能就会下降，这一浓度在室内很常见，且被 ASHRAE 等通风标准视为可接受。复杂任务比简单任务受影响更大，且在低于 2500 ppm 时已观察到影响。
+一名安全研究人员发现，YouTube Studio 的 AI 评论建议功能存在提示注入漏洞，攻击者可通过构造恶意评论，诱使 AI 泄露创作者的私密视频标题和元数据。 该漏洞影响数百万使用 AI 评论回复建议功能的 YouTube 创作者，可能泄露其未公开或私密视频内容。这凸显了 AI 集成平台中用户输入可操纵模型行为这一日益严重的安全风险。 攻击需要创作者在查看恶意评论后点击 AI 建议的提示，该提示会注入指令，使 AI 在其回复中包含私密视频标题。研究人员于 2024 年 5 月向 Google 报告了该漏洞，但最初被归类为功能请求而非安全问题。
 
-hackernews · gslin · 7月4日 06:32 · [社区讨论](https://news.ycombinator.com/item?id=48783117)
+hackernews · javxfps · 7月4日 16:45 · [社区讨论](https://news.ycombinator.com/item?id=48786781)
 
-**背景**: 二氧化碳（CO2）是人类呼吸的自然副产品。在通风不良的空间中，呼出的 CO2 会积累到影响认知表现的水平。室内 CO2 浓度常被用作通风充分性的指标；根据 NIOSH，超过 1000 ppm 表明通风不足。
+**背景**: 提示注入是一种安全漏洞，攻击者通过构造输入来操纵 AI 模型的行为，通常是通过覆盖系统指令。YouTube Studio 的 AI 评论建议功能使用大语言模型根据评论生成回复建议。由于模型无法区分用户评论和系统提示，精心构造的评论可以注入指令，改变 AI 的输出。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4892924/">Associations of Cognitive Function Scores with Carbon Dioxide, Ventilation, and Volatile Organic Compound Exposures in Office Workers: A Controlled Exposure Study of Green and Conventional Office Environments - PMC</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S036013232300358X">Short-term exposure to indoor carbon dioxide and cognitive task performance: A systematic review and meta-analysis - ScienceDirect</a></li>
-<li><a href="https://www.nature.com/articles/s41526-019-0071-6">Effects of acute exposures to carbon dioxide on decision making and cognition in astronaut-like subjects | npj Microgravity</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
+<li><a href="https://support.google.com/youtube/answer/10357396?hl=en-EN&co=GENIE.Platform=Desktop">Use comment reply suggestions - Computer - YouTube Help</a></li>
+<li><a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/">LLM01:2025 Prompt Injection - OWASP Gen AI Security Project</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论反应不一：有人主张在消费设备中集成 CO2 监测器以提高意识，也有人质疑这些说法的科学严谨性，引用潜艇研究显示高 CO2 下无缺陷。一位教师的课堂实测数据提供了实际证据。
+**社区讨论**: 社区讨论中，一位前 Google 员工解释了 YouTube 可能因内部流程将漏洞归类为功能请求的原因。部分用户尝试复现攻击，但指出仅凭未公开视频可能无法成功。总体而言，评论者对 YouTube 未将提示注入视为安全漏洞表示担忧。
 
-**标签**: `#productivity`, `#health`, `#CO2 monitoring`, `#ventilation`, `#cognitive performance`
+**标签**: `#security`, `#youtube`, `#prompt injection`, `#privacy`, `#bug`
 
 ---
 
 <a id="item-2"></a>
-## [揭秘制造业：工厂不过是房间](https://interconnected.org/home/2026/07/03/factories) ⭐️ 8.0/10
+## [LLM 实例会话/缓存泄漏潜在问题被报告](https://github.com/anthropics/claude-code/issues/74066) ⭐️ 8.0/10
 
-一篇随笔指出，基础制造过程简单且可触及，这与现代软件工程中普遍存在的抽象化形成对比。 这种观点使个人能够理解并参与物理生产，可能弥合数字技能与实体技能之间的鸿沟。 文章以搅拌花生制作花生酱为例，说明制造可以如此简单，突显了动手知识与现代 IT 工作之间的脱节。
+用户报告多个提供商的 LLM 实例之间可能存在会话或缓存泄漏，包括 Claude 和 GPT 模型，其中响应似乎属于其他用户。Anthropic 的 Claude Code 团队正在调查这些说法，表示确信这是幻觉，但会认真对待这些报告。 此问题引发了 LLM API 用户的重大安全和隐私担忧，因为它可能跨会话暴露敏感信息。如果得到确认，将突显多租户 LLM 基础设施中的关键漏洞，需要立即关注。 一位用户报告了两次响应交换实例，一次涉及 Claude，一次涉及 GPT，其中一家提供商的故障分析指出 HTTP 100 状态码处理不当导致差一错误。另一位用户报告在 Gemini 中遇到类似行为，在研究无关主题时收到数学辅导响应。
 
-hackernews · arbesman · 7月3日 15:13 · [社区讨论](https://news.ycombinator.com/item?id=48776035)
+hackernews · chatmasta · 7月4日 14:03 · [社区讨论](https://news.ycombinator.com/item?id=48785485)
 
-**背景**: 制造业常常显得复杂且难以触及，但许多过程其实很简单。文章借鉴了创客文化和《万物运转的秘密》等教育资源来揭秘生产。
+**背景**: LLM API 通常使用缓存和会话管理来提高性能并降低成本。跨会话泄漏是指一个用户会话的响应或缓存数据被错误地提供给另一个用户，可能暴露私人信息。工作空间隔离和严格的会话边界是多租户 AI 系统中的关键安全措施。
 
-**社区讨论**: 评论者分享个人经历：有人提到 Reddit 上关于发现搅拌花生就能做花生酱的帖子；另一位有工业工程背景的人对比了动手制造与 IT 工作；还有人称经营小工厂的经历非常有成就感。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=48785485">Potential session/cache leakage between workspace instances or consumer accounts | Hacker News</a></li>
+<li><a href="https://www.giskard.ai/knowledge/cross-session-leak-when-your-ai-assistant-becomes-a-data-breach">Cross Session Leak: LLM security vulnerability & detection guide</a></li>
+<li><a href="https://www.ai21.com/glossary/ai-agent/what-is-workspace-isolation/">What is Workspace Isolation? | AI21</a></li>
 
-**标签**: `#manufacturing`, `#engineering`, `#software engineering`, `#education`, `#maker culture`
+</ul>
+</details>
+
+**社区讨论**: 社区意见分歧：一些用户怀疑是幻觉而非实际泄漏，指出 LLM 可能产生看似合理但不正确的响应。其他人报告在不同提供商处遇到类似经历，暗示存在系统性问题。Claude Code 团队正在调查并将反馈结果。
+
+**标签**: `#LLM`, `#security`, `#cache leakage`, `#Anthropic`, `#API`
 
 ---
 
 <a id="item-3"></a>
-## [开源 AI 差距地图发布](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
+## [室内二氧化碳浓度可能损害决策能力](https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/) ⭐️ 8.0/10
 
-非营利组织 Current AI（于 2025 年 2 月巴黎 AI 行动峰会上成立）发布了开源 AI 差距地图 v0.1，索引了 421 个开源 AI 产品，涵盖软件、模型、数据集和硬件。 该地图提供了开源 AI 生态系统的结构化概览，有助于识别投资和开发中的空白与机遇，并获得了 4 亿美元的承诺资金支持。 该地图详细列出了来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目，按三个堆栈层的 14 个类别组织，底层数据以 MIT 许可证发布在 GitHub 上。
+一篇博客文章指出，常被忽视的室内二氧化碳浓度会显著损害决策能力，并引用了科学研究和社区轶事。该文章引发了关于二氧化碳认知影响研究有效性的高度关注和辩论。 这很重要，因为不良的室内空气质量可能正在悄无声息地降低办公室、学校和家庭的生产力和认知表现。提高认识可能有助于改善通风实践，并将二氧化碳监测仪集成到消费设备中。 研究表明，二氧化碳浓度超过 1000 ppm 会降低战略思维和注意力，最佳表现区间为 420 至 800 ppm。然而，一些研究人员质疑这些发现的可重复性，指出在 2012 年的一项研究之前，典型办公室水平的二氧化碳并未观察到认知影响。
 
-rss · Simon Willison · 7月3日 22:04
+hackernews · gslin · 7月4日 06:32 · [社区讨论](https://news.ycombinator.com/item?id=48783117)
 
-**背景**: Current AI 是一个全球性非营利合作伙伴关系，旨在构建 AI 的公共选项。差距地图是基于哥伦比亚会议、MOF、Hugging Face 等机构的工作，对开源 AI 领域进行系统编目的初步尝试。
+**背景**: 室内二氧化碳浓度因人类呼吸在通风不良的空间中上升。室外二氧化碳约为 420 ppm，而室内在拥挤房间中可超过 2000 ppm。二氧化碳与认知表现之间的联系已被研究数十年，但结果仍存在争议，一些荟萃分析显示负面影响，另一些则发现中等浓度下无显著影响。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://map.currentai.org/">Current AI – Open Source AI Gap Map</a></li>
-<li><a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/">Open Source AI Gap Map</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S036013232300358X">Short-term exposure to indoor carbon dioxide and cognitive task ...</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0360132324005298">The impact of indoor carbon dioxide exposure on human brain activity: A ...</a></li>
+<li><a href="https://www.expertsinvacuum.com/co2-vs-cognitive-performance/">CO2 vs. Cognitive Performance: The data behind fresh air and brain power</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者意见分歧：一些人主张在设备中集成二氧化碳监测仪以提高认识，而另一些人则质疑科学依据，指出可重复性问题，并提到潜艇在高二氧化碳环境下运行并未出现明显的认知缺陷。一位高中教师分享了教室二氧化碳浓度达到 2000 ppm 的个人经历，支持了这一担忧。
+
+**标签**: `#CO2`, `#cognitive performance`, `#indoor air quality`, `#productivity`, `#ventilation`
+
+---
+
+<a id="item-4"></a>
+## [开源 AI 差距图发布](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
+
+Current AI（一个在 2025 年 2 月巴黎 AI 行动峰会上成立、已承诺 4 亿美元资金的非营利组织）发布了开源 AI 差距图 v0.1，深度索引了 421 个开源 AI 产品，包括来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目。 该地图提供了开源 AI 生态系统的全面、结构化概览，帮助研究人员、开发者和政策制定者识别差距和机会。底层数据以 MIT 许可证发布，支持进一步分析和社区贡献。 该地图将产品按堆栈的三个层次（模型组件、产品/用户体验和基础设施）分为 14 个类别。此外，项目还追踪了 24,400 个未分类的长尾工件，数据以 1,184 个 YAML 文件以及笔记本和模式文件的形式在 GitHub 上提供。
+
+rss · Simon Willison · 7月3日 22:04
+
+**背景**: Current AI 是一个全球性的非营利合作伙伴关系，于 2025 年 2 月在巴黎 AI 行动峰会上启动，已承诺 4 亿美元资金。开源 AI 差距图旨在系统性地编目开源 AI 领域，该领域发展迅速但缺乏集中索引。该地图是一个动态资源，将随着生态系统的发展而更新。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.currentai.org/blogs/introducing-the-gap-map-v0-1">Introducing the Gap Map v0.1</a></li>
+<li><a href="https://simonwillison.net/2026/jul/3/open-source-ai-gap-map/">Open Source AI Gap Map | Simon Willison’s Weblog</a></li>
 <li><a href="https://en.wikipedia.org/wiki/AI_Action_Summit">AI Action Summit 2025 - Wikipedia</a></li>
 
 </ul>
@@ -82,135 +116,141 @@ rss · Simon Willison · 7月3日 22:04
 
 ---
 
-<a id="item-4"></a>
-## [BaryGraph：将关系作为知识图谱中的一等文档](https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [BaryGraph：将关系作为嵌入文档的知识图谱](https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/) ⭐️ 8.0/10
 
-BaryGraph 引入了 BaryEdge，将知识图谱中的每个关系作为一等文档进行嵌入，拥有自己的向量，并通过递归的 MetaBary 三元组揭示远距离概念之间的结构桥梁。该系统在本地运行，基于 MongoDB Community + mongot + nomic-embed-text，覆盖整个英语维基词典（660 万文档）。 该方法解决了平面向量搜索的一个根本性局限——它将关系视为点接近的副产品，无法捕捉跨域连接。通过直接嵌入关系，BaryGraph 可以显著改进需要类比或结构推理的检索增强生成（RAG）和基于图的检索任务。 BaryEdge 向量计算公式为 bary_vector = normalize(q·v(CM1) + q·v(CM2) + (1−q)·v(type))，其中 q 是连接质量，v(type) 是关系类型的上下文嵌入。该系统使用 nomic-embed-text（768 维），在配备 8–16GB VRAM 的单台工作站上构建完整图谱需要 8–14 小时。
+BaryGraph 提出了 BaryEdge 概念，将知识图谱中的每个关系作为独立的向量文档进行嵌入，而非简单的边，并通过递归的 MetaBary 三元组发现相距遥远的概念之间的结构桥梁。 该方法解决了平面向量搜索的一个根本局限——将关系视为点接近的副产品，从而遗漏跨域连接。它通过揭示不同领域间隐藏的结构类比，有望显著改进检索增强生成（RAG）系统。 该系统在本地运行，使用 MongoDB Community + mongot 和 nomic-embed-text（768 维），覆盖整个英文维基词典（660 万文档）。BaryEdge 向量通过实体嵌入和上下文关系类型嵌入的加权组合计算，递归过程在基础层之外无需额外的嵌入调用。
 
 reddit · r/MachineLearning · /u/adseipsum · 7月4日 08:24
 
-**背景**: 知识图谱嵌入（KGE）通常学习实体和关系的低维表示，但大多数方法将关系视为连接节点嵌入的边。平面向量搜索基于嵌入的余弦相似度检索文档，无法捕捉未在嵌入邻近度中反映的结构关系。BaryGraph 则将每个关系作为独立文档嵌入，通过递归组合发现高阶结构桥梁。
+**背景**: 传统知识图谱将事实表示为三元组（头实体、关系、尾实体），边仅作为连接。在向量搜索中，关系通过嵌入的接近度推断，但当相关概念在嵌入空间中相距很远时，这种方法会失效。BaryGraph 则将每个关系作为一等文档嵌入，从而能够检索平面搜索无法产生的结构桥梁。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Knowledge_graph_embedding">Knowledge graph embedding - Wikipedia</a></li>
-<li><a href="https://www.ontotext.com/knowledgehub/fundamentals/what-are-knowledge-graph-embeddings/">What Are Knowledge Graph Embeddings? | Ontotext</a></li>
-<li><a href="https://www.mongodb.com/docs/search/self-managed/current/configuration/automated-embedding/">Configure mongot for MongoDB Vector Search ... - MongoDB Docs</a></li>
+<li><a href="https://www.ostberg.dev/work/2025/10/12/mongodb-community-vector-search.html">MongoDB Community Edition: Vector Search for Everyone</a></li>
+<li><a href="https://www.geeksforgeeks.org/mongodb/power-your-ai-application-with-mongodb-vector-search/">Power Your AI Application with MongoDB Vector Search</a></li>
 
 </ul>
 </details>
 
-**标签**: `#knowledge graph`, `#embedding`, `#RAG`, `#vector search`, `#graph database`
-
----
-
-<a id="item-5"></a>
-## [CDD 无需权重访问即可从 logits 恢复微调数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
-
-研究人员提出了对比解码差异法（CDD），这是一种灰盒方法，通过对比基模型和微调模型的 logits 来从 LLM 中恢复逐字微调数据，无需权重或激活即可在多个模型家族上获得高恢复分数。 CDD 以最小访问权限实现模型审计和数据泄露检测，解决了 LLM 中的关键隐私问题，其性能优于需要完全权重访问的先前白盒方法（如激活差异透镜 ADL）。 CDD 使用单一默认配置，无需逐模型校准或层选择，在 SDF 基准测试中，跨四个模型家族（1B 到 32B 参数）的 20 个模型对中的 19 个上实现了 4+/5 的逐字恢复分数，而 ADL 从未超过 3/5。
-
-reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
-
-**背景**: 模型差异分析旨在识别基模型与其微调版本之间的差异。先前的工作——激活差异透镜（ADL）——使用激活差异来引导生成，但需要完全权重访问且仅能恢复模糊的领域描述。对比解码（CD）是一种通过最大化强模型与弱模型之间似然差异来生成文本的技术。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2510.13900">Narrow Finetuning Leaves Clearly Readable Traces in Activation ...</a></li>
-<li><a href="https://www.emergentmind.com/topics/model-diffing">Model Diffing : Techniques & Applications</a></li>
-<li><a href="https://arxiv.org/abs/2309.09117">[2309.09117] Contrastive Decoding Improves Reasoning in Large Language Models</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 社区称赞 CDD 的创新性及其对隐私审计的实际意义，一些人讨论了令人惊讶的发现：由于 LLM 生成的合成数据，虚构人物“Dr. Elena Rodriguez”出现在不相关的微调领域中。评论者还指出该方法相比 ADL 的简单性和有效性。
-
-**标签**: `#LLM`, `#model diffing`, `#privacy`, `#finetuning`, `#machine learning`
+**标签**: `#knowledge graph`, `#embedding`, `#RAG`, `#vector search`, `#machine learning`
 
 ---
 
 <a id="item-6"></a>
-## [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
+## [CDD 仅从 logits 恢复微调数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
 
-极客湾评测显示，搭载麒麟 9030 芯片的华为 Mate 80 Pro 系列在原生鸿蒙应用中游戏能效超越骁龙 8 Gen3，其中 Mate 80 Pro Max 运行《原神》60 帧时整机功耗仅 4.9W。 这表明深度的软硬件协同优化可以弥补理论硬件劣势，可能重塑移动芯片竞争格局，并凸显鸿蒙生态的日益增长的优势。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿，CPU 多核能效介于骁龙 8 Gen2 和 8 Gen3 之间。在《王者荣耀》120 帧下平均功耗约 3W。
+对比解码差异分析（CDD）仅通过 logits 访问即可从大型语言模型中逐字恢复微调数据，无需模型权重或激活，性能优于先前的白盒方法如激活差异透镜（ADL）。 这项工作暴露了 LLM 中重大的隐私和安全漏洞，因为只需极少的访问权限即可提取微调数据，引发了对专有模型和数据机密性的担忧。 在 SDF 基准测试中，CDD 在四个模型家族（1B 到 32B 参数）的 19/20 个生物体×模型对上实现了 4+/5 的逐字恢复分数，而 ADL 尽管需要完全权重访问，却从未超过 3/5。
 
-telegram · zaihuapd · 7月3日 13:27
+reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
 
-**背景**: 华为麒麟芯片因美国制裁面临先进制程限制。HarmonyOS NEXT 是华为完全自研的操作系统，支持原生应用优化和深度软硬芯云协同，使其能在理论规格较低的情况下发挥出极致性能。
+**背景**: 模型差异分析比较基础模型及其微调版本以识别差异。先前的工作，激活差异透镜（ADL），使用激活差异来引导生成，但需要白盒访问且仅恢复模糊的领域描述。CDD 则直接对比 logits，仅需灰盒 logits 访问。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.vgover.com/news/223579">极客湾华为Mate80Pro评测，原生鸿蒙 优 化 下游戏能效超越骁龙8Gen3</a></li>
-<li><a href="https://m.21jingji.com/article/20250905/8366e6bc1a9f6e118efc85158706411e.html">华为三折叠携麒麟9020亮相 折叠屏市场竞争迈向 软 硬 协 同 阶段 - 21财经</a></li>
+<li><a href="https://arxiv.org/abs/2510.13900">[2510.13900] Narrow Finetuning Leaves Clearly Readable Traces ... Narrow Finetuning Leaves Clearly Readable Traces in ... Photochromic Lens Guide — Transitions vs Sensity vs ... Narrow Finetuning Leaves Clearly Readable Traces in ... ICLR Poster Narrow Finetuning Leaves Clearly Readable Traces ...</a></li>
+<li><a href="https://www.lesswrong.com/posts/sBSjEBykQkmSfqrwt/narrow-finetuning-leaves-clearly-readable-traces-in">Narrow Finetuning Leaves Clearly Readable Traces in Activation</a></li>
+<li><a href="https://github.com/science-of-finetuning/diffing-toolkit">science-of-finetuning/diffing-toolkit - GitHub</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Huawei`, `#Kirin 9030`, `#HarmonyOS`, `#mobile chips`, `#gaming performance`
+**社区讨论**: Reddit 评论强调了令人惊讶的发现：一个虚构角色“Elena Rodriguez 博士”出现在多个不相关的微调领域中，表明 LLM 生成的合成数据可能嵌入持久性伪影。一些人讨论了数据隐私的影响以及需要更好的数据清理。
+
+**标签**: `#LLM`, `#privacy`, `#model diffing`, `#finetuning`, `#security`
 
 ---
 
 <a id="item-7"></a>
-## [NASA 发射救援卫星抢救坠落太空望远镜](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 8.0/10
+## [谷歌发布 TabFM：零样本表格基础模型](https://www.reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100/) ⭐️ 8.0/10
 
-NASA 于 7 月 3 日发射了 LINK 航天器，将与老化的 Swift 天文台会合，并将其轨道抬升约 240 公里，以防止其失控坠入地球大气层。 这次任务标志着私人航天器首次尝试捕获并维护美国政府卫星，可能延长这一宝贵科学天文台的寿命，并展示轨道服务的新能力。 LINK 航天器将使用机械臂抓住 Swift 望远镜，然后缓慢将其抬升至更高轨道。如果成功，Swift 最早可在 9 月恢复观测。
+谷歌研究院发布了 TabFM（表格基础模型），这是一个用于表格数据的零样本基础模型，能够处理混合数值和类别列的分类与回归任务，无需任何微调或超参数搜索。 TabFM 通过消除手动模型训练和特征工程简化了表格机器学习流程，使非专家也能使用，并且在基准数据集上可能超越经过调优的模型（如 XGBoost）。 TabFM 采用上下文学习：训练示例作为上下文传入，预测在一次前向传播中完成。它提供与 scikit-learn 兼容的 API（在 GitHub 上），并通过 Hugging Face 权重可用，即将集成 BigQuery AI.PREDICT。
 
-telegram · zaihuapd · 7月3日 15:43
+reddit · r/LocalLLaMA · /u/Balance- · 7月4日 10:20
 
-**背景**: Swift 天文台于 2004 年发射，用于研究伽马射线暴和其他宇宙现象。由于太阳活动增强，其轨道衰减速度超出预期，若不干预，最早可能在 10 月坠入大气层烧毁。
+**背景**: 表格数据是企业应用中最常见的数据形式，用于客户流失预测和欺诈检测等任务。传统方法需要仔细的特征工程和超参数调优。TabFM 是新一波表格基础模型的一部分，这些模型利用上下文学习（类似于大型语言模型）来做出预测，而无需针对特定任务进行训练。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.space.com/space-exploration/launches-spacecraft/nasa-successfully-launches-rescue-mission-to-save-swift-space-telescope-from-burning-up-in-earths-atmosphere">NASA launches rescue mission to save Swift space telescope... | Space</a></li>
-<li><a href="https://skyandtelescope.org/astronomy-news/mission-launches-to-rescue-swift-observatory/">Mission Launches to Rescue Swift Observatory - Sky & Telescope</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Swift_Boost_Mission">Swift reboost mission - Wikipedia</a></li>
+<li><a href="https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/">Introducing TabFM: A zero-shot foundation model for tabular data</a></li>
+<li><a href="https://github.com/google-research/tabfm">GitHub - google-research/tabfm</a></li>
+<li><a href="https://www.explainx.ai/blog/google-tabfm-zero-shot-tabular-foundation-model-2026">Google TabFM: Zero-Shot Foundation Model for Tabular ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#space`, `#NASA`, `#satellite rescue`, `#astronomy`, `#spacecraft`
+**社区讨论**: Reddit 上的讨论很活跃，用户对 TabFM 的零样本能力及其简化表格机器学习的潜力表示兴奋。一些评论者将其与 TabPFN 进行比较，并讨论其在小型数据集上的表现，而另一些人则提出关于可扩展性和实际部署的问题。
+
+**标签**: `#tabular data`, `#foundation model`, `#Google Research`, `#zero-shot learning`, `#machine learning`
 
 ---
 
 <a id="item-8"></a>
-## [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 8.0/10
+## [本地 LLM 基准测试揭示代理性能不均衡](https://www.reddit.com/r/LocalLLaMA/comments/1unbm45/ran_a_classicmedival_europe_fantasy_rpagentic/) ⭐️ 8.0/10
 
-腾讯玄武实验室宣布，其基于开源模型 GLM-5.1 构建的阿图因 AI 在加州大学伯克利分校主导的 CyberGym 网络安全基准测试中获得 84.0%的得分，超过了 Anthropic 的 Claude Mythos Preview。阿图因 AI 还在 curl、OpenSSL、Python cryptography 等重要项目中发现了多个 Mythos 未检出的高危逻辑漏洞。 这表明开源 AI 模型在特定网络安全任务上能以极低成本超越专有模型，可能推动高级漏洞发现能力的普及。同时，它也凸显了 AI 在攻击者利用之前发现关键软件缺陷方面日益重要的作用。 阿图因 AI 消耗的预算不到 Mythos“玻璃翼计划”的 0.1%。在伯克利 BVI 真实世界漏洞榜单中，阿图因 AI 的严重漏洞严重程度排名第 1，总数排名第 5。
+一位 Reddit 用户对 8 个本地 LLM 进行了中世纪奇幻角色扮演和代理任务套件的基准测试，发现 Qwen3.6-27B 的整体通过率为 82%，仅次于排名第一的 Gemma-4-31B（87%）。 该基准测试表明，整体通过率可能掩盖特定类别中的显著性能悬崖，这对于在代理或角色扮演应用中部署本地 LLM 的开发者至关重要。 基准测试包括任务完成、场景结局、物品/时间追踪、角色检测、故事叙述和草稿等类别，并使用外部 LLM 评分器进行评估。
 
-telegram · zaihuapd · 7月3日 16:12
+reddit · r/LocalLLaMA · /u/UsedMorning9886 · 7月4日 15:15
 
-**背景**: CyberGym 是一个评估 AI 代理在端到端网络安全任务（从漏洞检测到修复）中表现的基准测试。GLM-5.1 是 Z.AI 推出的开源大语言模型，专为长周期代理任务设计。Anthropic 的“玻璃翼计划”使用 Claude Mythos Preview 自主寻找主流软件中的零日漏洞。
+**背景**: 本地 LLM 是运行在用户硬件上而非云 API 上的大型语言模型，提供隐私保护和更低延迟。代理基准测试评估模型自主执行多步骤任务的能力，这对实际应用越来越重要。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://llm-stats.com/benchmarks/cybergym">CyberGym Benchmark Leaderboard | LLM Stats</a></li>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.1">GLM - 5 . 1 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
-<li><a href="https://www.anthropic.com/glasswing">Project Glasswing : Securing critical software for the AI era \ Anthropic</a></li>
+<li><a href="https://github.com/QwenLM/Qwen3.6">GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model ...</a></li>
+<li><a href="https://qwen.ai/blog?id=qwen3.6-27b">Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model</a></li>
+<li><a href="https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/">Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#cybersecurity`, `#open-source`, `#benchmark`, `#vulnerability discovery`
+**社区讨论**: Reddit 帖子引发了关于类别级性能悬崖的讨论，用户分享了他们自己评估中的类似观察，并讨论了基于 LLM 的评分器的可靠性。
+
+**标签**: `#LLM benchmarking`, `#local LLMs`, `#agentic AI`, `#role-playing`, `#model evaluation`
 
 ---
 
 <a id="item-9"></a>
-## [华为提出“韬定律”，以时间缩微延续摩尔定律](https://t.me/zaihuapd/42346) ⭐️ 8.0/10
+## [华为提出“韬定律”，以时间缩微引领半导体新路径](https://t.me/zaihuapd/42346) ⭐️ 8.0/10
 
-在近日于上海举行的 2026 国际电路与系统研讨会上，华为发表了“韬定律”，提出以“时间缩微”替代“几何缩微”来延续摩尔定律。华为声称过去六年已据此设计量产了 381 款芯片，今年秋季将推出采用逻辑折叠技术的新麒麟手机芯片。 “韬定律”可能代表半导体缩微的范式转变，为超越传统晶体管微型化的物理极限提供了一条路径。如果得到验证，它可能减少对极紫外光刻技术的依赖，重塑全球芯片产业，尤其有利于像华为这样面临出口限制的公司。 该定律通过逻辑折叠和多层级协同优化，降低器件、电路、芯片到系统的时间常数。华为预计，到 2031 年基于该定律的芯片晶体管密度可达 1.4 纳米制程同等水平。
+在 2026 年于上海举办的 IEEE 国际电路与系统研讨会上，华为正式提出“韬定律”（τ定律），以“时间缩微”替代传统的“几何缩微”作为半导体演进的核心原则。过去六年，华为已基于该定律设计并量产了 381 款芯片，并计划于今年秋季推出采用逻辑折叠技术的新麒麟手机芯片。 随着摩尔定律逼近物理极限，“韬定律”通过聚焦降低时间常数（τ）而非缩小晶体管尺寸，提供了潜在的范式转变，通过多层级优化实现持续性能提升。这可能减少行业对极紫外光刻技术的依赖，为芯片设计开辟新途径，尤其对面临出口限制的公司意义重大。 该定律强调在器件、电路、芯片和系统层面系统性降低时间常数τ，逻辑折叠技术是其关键实现路径之一。华为预计，到 2031 年，基于该定律的高端芯片晶体管密度可达 1.4 纳米制程同等水平。
 
 telegram · zaihuapd · 7月4日 04:56
 
-**背景**: 摩尔定律预测晶体管密度大约每两年翻一番，但由于原子尺度的限制正逼近物理极限。传统的几何缩微缩小晶体管尺寸，而时间缩微则通过减少信号传播延迟来提升性能和密度。逻辑折叠是一种设计技术，通过重新配置电路布局来缩短关键路径，无需物理堆叠即可实现类似 3D 集成的效果。
+**背景**: 传统半导体缩放遵循摩尔定律，依赖几何缩微——通过缩小晶体管尺寸来提升密度和性能。然而，这一方法正面临物理和经济极限。时间缩微则通过改进材料、电路设计和架构来优化时间常数τ，该常数决定了电路切换速度。逻辑折叠是一种三维集成电路技术，将逻辑电路折叠成多层，以减少互连延迟并提升性能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.peopleapp.com/column/30052254360-500007517346">“ 韬 定 律 ”，做 时 间 的朋友_人民日报</a></li>
-<li><a href="https://www.msn.com/zh-cn/news/other/究竟-韬定律-将如何影响半导体产业演进路径/ar-AA243zka">究竟｜“ 韬 定 律 ”将如何影响 半 导 体 产业演进路径</a></li>
-<li><a href="https://news.qq.com/rain/a/20260527A0AA4G00">news.qq.com/rain/a/20260527A0AA4G00</a></li>
+<li><a href="https://baike.baidu.com/item/韬(τ)定律/67846419">韬 (τ)定律（半导体领域定律）_百度百科</a></li>
+<li><a href="https://baike.baidu.com/item/逻辑折叠技术/67870423">逻辑折叠技术_百度百科</a></li>
+<li><a href="https://www.zhihu.com/question/2042175008198357766">如何评价华为发表的半导体领域新定律“韬（τ）定律”？</a></li>
 
 </ul>
 </details>
 
-**标签**: `#semiconductors`, `#Moore's Law`, `#Huawei`, `#chip design`, `#scaling`
+**社区讨论**: 知乎等平台上的社区评论表现出兴奋与怀疑并存。许多人称赞华为的创新及其绕过传统缩放挑战的潜力，而另一些人则质疑技术细节和长期可行性，指出时间缩微并非全新概念，而是已知原理的系统性应用。一些人还对缺乏独立验证以及开放生态的必要性表示担忧。
+
+**标签**: `#semiconductor`, `#Huawei`, `#chip design`, `#Moore's law`, `#time scaling`
+
+---
+
+<a id="item-10"></a>
+## [iOS 27 将加入 Trust Insights 设备端反诈功能](https://www.cultofmac.com/news/ios-27-trust-insights-feature) ⭐️ 8.0/10
+
+苹果宣布 iOS 27 将引入 Trust Insights 功能，这是一个设备端反诈特性，通过分析用户行为模式来检测并警告受诈骗诱导的操作，同时注重隐私保护并需要开发者接入。 这标志着苹果进入设备端行为反诈领域，紧随谷歌和金融机构的步伐，有望在保护用户隐私的同时大幅减少 iPhone 上的社会工程诈骗。 Trust Insights 使用设备端机器学习分析用户行为模式、时机、上下文和传感器数据，不会读取信息、邮件或照片；原始数据会立即删除，仅向服务器发送单一输出值。
+
+telegram · zaihuapd · 7月4日 14:30
+
+**背景**: 社会工程诈骗通常涉及诈骗分子通过电话指导受害者转账或更改账户设置。设备端反诈功能旨在通过分析行为异常来检测此类胁迫，苹果的实现强调隐私，在本地处理数据并最小化服务器通信。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://forgeeks.dev/apple-ios-27-introduces-trust-insights-to-detect-social-engineering-scams/">Apple iOS 27 introduces Trust Insights to detect social... - forgeeks</a></li>
+<li><a href="https://applemagazine.com/ios-27-trust-insights/">iOS 27 Trust Insights Helps Apps Detect Scam... - AppleMagazine</a></li>
+<li><a href="https://www.youtube.com/watch?v=jY-_rqz_VEM">WWDC26: Meet Trust Insights | Apple - YouTube</a></li>
+
+</ul>
+</details>
+
+**标签**: `#iOS`, `#anti-fraud`, `#privacy`, `#mobile security`, `#Apple`
 
 ---
