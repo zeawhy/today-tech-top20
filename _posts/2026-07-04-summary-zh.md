@@ -5,109 +5,75 @@ date: 2026-07-04
 lang: zh
 ---
 
-> 从 51 条内容中筛选出 12 条重要资讯。
+> 从 53 条内容中筛选出 9 条重要资讯。
 
 ---
 
-1. [华为提出“韬定律”：以时间缩微替代几何缩微](#item-1) ⭐️ 9.0/10
-2. [Jamesob 的本地运行顶级大模型指南](#item-2) ⭐️ 8.0/10
-3. [飞马间谍软件入侵欧盟议会调查员手机](#item-3) ⭐️ 8.0/10
-4. [Current AI 发布开源 AI 差距地图](#item-4) ⭐️ 8.0/10
-5. [课程创作者报告因 AI 导致销售额下降超 50%](#item-5) ⭐️ 8.0/10
-6. [CDD 仅凭 logits 恢复微调数据原文](#item-6) ⭐️ 8.0/10
-7. [BaryGraph：将关系嵌入为文档的知识图谱](#item-7) ⭐️ 8.0/10
-8. [华为发布 Atlas 350 加速卡，性能达 H20 的 2.87 倍](#item-8) ⭐️ 8.0/10
-9. [阿里下令全员卸载 Claude，7 月 10 日生效](#item-9) ⭐️ 8.0/10
-10. [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-10) ⭐️ 8.0/10
-11. [NASA 发射救援卫星拯救坠落太空望远镜](#item-11) ⭐️ 8.0/10
-12. [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](#item-12) ⭐️ 8.0/10
+1. [室内二氧化碳浓度可能影响决策能力](#item-1) ⭐️ 8.0/10
+2. [揭秘制造业：工厂不过是房间](#item-2) ⭐️ 8.0/10
+3. [开源 AI 差距地图发布](#item-3) ⭐️ 8.0/10
+4. [BaryGraph：将关系作为知识图谱中的一等文档](#item-4) ⭐️ 8.0/10
+5. [CDD 无需权重访问即可从 logits 恢复微调数据](#item-5) ⭐️ 8.0/10
+6. [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-6) ⭐️ 8.0/10
+7. [NASA 发射救援卫星抢救坠落太空望远镜](#item-7) ⭐️ 8.0/10
+8. [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](#item-8) ⭐️ 8.0/10
+9. [华为提出“韬定律”，以时间缩微延续摩尔定律](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [华为提出“韬定律”：以时间缩微替代几何缩微](https://t.me/zaihuapd/42346) ⭐️ 9.0/10
+## [室内二氧化碳浓度可能影响决策能力](https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/) ⭐️ 8.0/10
 
-在近日于上海举行的 2026 国际电路与系统研讨会上，华为发表了“韬定律”，提出以“时间缩微”（τ缩微）替代传统的“几何缩微”作为半导体演进新原则。过去六年，华为已据此设计并量产了 381 款芯片，今年秋季将推出采用逻辑折叠技术的新麒麟芯片。 “韬定律”通过聚焦降低信号传播时延（时间常数）而非缩小晶体管尺寸，为延续摩尔定律提供了潜在路径。这可能重塑半导体产业格局，尤其对那些受限于先进光刻技术的公司意义重大，并有望在 AI、移动和高性能计算领域持续提升性能。 华为预计，到 2031 年，基于“韬定律”的芯片晶体管密度可达 1.4 纳米制程同等水平。即将推出的麒麟芯片采用的逻辑折叠技术并非传统 3D 堆叠，而是一种通过垂直折叠关键路径来降低 RC 延迟和时钟偏斜的设计技术。
+一项个人实验和社区讨论指出，通风不良房间中升高的二氧化碳浓度会显著损害决策能力和生产力，教室中的浓度常超过 2000 ppm。 这很重要，因为二氧化碳积累是一个常见但被忽视的因素，影响办公室、学校和家庭中的认知表现，可能降低数百万人的生产力和学习效果。 研究表明，在约 950 ppm 的二氧化碳浓度下认知功能就会下降，这一浓度在室内很常见，且被 ASHRAE 等通风标准视为可接受。复杂任务比简单任务受影响更大，且在低于 2500 ppm 时已观察到影响。
 
-telegram · zaihuapd · 7月4日 04:56
+hackernews · gslin · 7月4日 06:32 · [社区讨论](https://news.ycombinator.com/item?id=48783117)
 
-**背景**: 摩尔定律预测晶体管密度每两年翻一番，但随着几何缩微日益困难，该定律正逼近物理和经济极限。传统半导体进步依赖于缩小晶体管尺寸（几何缩微）来提升性能和密度。“韬定律”提出了一种范式转变：不再追求晶体管更小，而是通过器件、电路、芯片到系统的多层级协同优化，降低时间常数（τ）——即信号传播时延。这种方法无需极紫外（EUV）光刻技术即可提升晶体管密度和系统性能。
+**背景**: 二氧化碳（CO2）是人类呼吸的自然副产品。在通风不良的空间中，呼出的 CO2 会积累到影响认知表现的水平。室内 CO2 浓度常被用作通风充分性的指标；根据 NIOSH，超过 1000 ppm 表明通风不足。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://m.thepaper.cn/newsDetail_forward_33228813">究竟｜“韬定律”将如何影响半导体产业演进路径</a></li>
-<li><a href="https://article.pchome.net/info/13712.html">华为发表半导体韬定律，提出以时间（τ）缩微替代传统的几何缩微</a></li>
-<li><a href="https://www.huxiu.com/article/4861142.html">华为发布"韬定律"半导体新理论 提出以时间缩微替代几何缩微</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4892924/">Associations of Cognitive Function Scores with Carbon Dioxide, Ventilation, and Volatile Organic Compound Exposures in Office Workers: A Controlled Exposure Study of Green and Conventional Office Environments - PMC</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S036013232300358X">Short-term exposure to indoor carbon dioxide and cognitive task performance: A systematic review and meta-analysis - ScienceDirect</a></li>
+<li><a href="https://www.nature.com/articles/s41526-019-0071-6">Effects of acute exposures to carbon dioxide on decision making and cognition in astronaut-like subjects | npj Microgravity</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 在知乎和虎嗅等平台上的社区评论表达了谨慎乐观，许多人称赞这一创新思路，但也质疑缺乏详细技术规格和独立验证。一些专家指出，逻辑折叠不同于 3D 堆叠，在先进光刻工具受限的背景下，可能成为中国半导体产业的可行路径。
+**社区讨论**: 评论反应不一：有人主张在消费设备中集成 CO2 监测器以提高意识，也有人质疑这些说法的科学严谨性，引用潜艇研究显示高 CO2 下无缺陷。一位教师的课堂实测数据提供了实际证据。
 
-**标签**: `#semiconductor`, `#Moore's Law`, `#Huawei`, `#chip design`, `#hardware innovation`
+**标签**: `#productivity`, `#health`, `#CO2 monitoring`, `#ventilation`, `#cognitive performance`
 
 ---
 
 <a id="item-2"></a>
-## [Jamesob 的本地运行顶级大模型指南](https://github.com/jamesob/local-llm) ⭐️ 8.0/10
+## [揭秘制造业：工厂不过是房间](https://interconnected.org/home/2026/07/03/factories) ⭐️ 8.0/10
 
-Jamesob 在 GitHub 上发布了一份详尽指南，详细说明了如何构建和本地运行最先进的大语言模型，包括硬件推荐和成本分解。 该指南凸显了本地与云端大模型推理之间的权衡，引发了关于成本效益、性能以及个人和组织可行性的讨论。 该指南的顶级配置使用 4 块 RTX PRO 6000 Blackwell GPU（每块约 1.2 万美元），总价约 5 万至 5.5 万美元，并依赖量化与剪枝技术（如 REAP）来缩小模型规模。
+一篇随笔指出，基础制造过程简单且可触及，这与现代软件工程中普遍存在的抽象化形成对比。 这种观点使个人能够理解并参与物理生产，可能弥合数字技能与实体技能之间的鸿沟。 文章以搅拌花生制作花生酱为例，说明制造可以如此简单，突显了动手知识与现代 IT 工作之间的脱节。
 
-hackernews · livestyle · 7月3日 15:03 · [社区讨论](https://news.ycombinator.com/item?id=48775921)
+hackernews · arbesman · 7月3日 15:13 · [社区讨论](https://news.ycombinator.com/item?id=48776035)
 
-**背景**: 本地运行大语言模型需要强大的硬件，尤其是大显存的 GPU，以处理数千亿参数的模型。量化通过降低模型精度来适配可用内存，而剪枝则移除不重要的参数。云端 API（如 Claude 或 GPT）提供便捷访问，但会产生持续订阅费用并引发隐私担忧。
+**背景**: 制造业常常显得复杂且难以触及，但许多过程其实很简单。文章借鉴了创客文化和《万物运转的秘密》等教育资源来揭秘生产。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/jamesob/local-llm">Jamesob's guide to running SOTA LLMs locally - GitHub</a></li>
-<li><a href="https://explainx.ai/blog/running-sota-llms-locally-jamesob-rtx-6000-pro-2026">Jamesob’s Guide to Running SOTA LLMs Locally - explainx.ai</a></li>
-<li><a href="https://www.sitepoint.com/local-llms-vs-cloud-api-cost-analysis-2026/">Local LLMs vs Cloud APIs: 2026 Total Cost of Ownership Analysis | SitePoint</a></li>
+**社区讨论**: 评论者分享个人经历：有人提到 Reddit 上关于发现搅拌花生就能做花生酱的帖子；另一位有工业工程背景的人对比了动手制造与 IT 工作；还有人称经营小工厂的经历非常有成就感。
 
-</ul>
-</details>
-
-**社区讨论**: 社区评论指出，本地配置仍然极其昂贵，且质量通常低于云服务，有用户提到 4 万美元足以支付 16.8 年的 Claude Opus。其他人则对量化与剪枝的实用性展开辩论，质疑其在基准测试之外的真实性能。
-
-**标签**: `#LLM`, `#local inference`, `#hardware`, `#cost analysis`, `#open source`
+**标签**: `#manufacturing`, `#engineering`, `#software engineering`, `#education`, `#maker culture`
 
 ---
 
 <a id="item-3"></a>
-## [飞马间谍软件入侵欧盟议会调查员手机](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/) ⭐️ 8.0/10
+## [开源 AI 差距地图发布](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
 
-公民实验室确认，一名参与调查间谍软件的欧洲议会议员在 2022 年和 2023 年多次被飞马间谍软件感染。 这一事件表明，国家支持的监控活动正在针对欧盟机构，破坏民主进程和民选官员的安全。 感染发生在 2022 年 10 月 21 日和 2023 年 3 月 6 日至 7 日，首次感染与针对欧洲的俄罗斯和白俄罗斯流亡记者的活动有关。
-
-hackernews · ledoge · 7月3日 20:38 · [社区讨论](https://news.ycombinator.com/item?id=48779683)
-
-**背景**: 飞马是由 NSO 集团开发的强大间谍软件，能够远程入侵移动设备以提取数据和监控通信。公民实验室是研究数字威胁对人权影响的领先研究机构。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">Pegasus (spyware)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Citizen_Lab">Citizen Lab</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者指出，其他欧洲议会议员也曾被飞马软件攻击但未产生后果，并质疑为何欧盟议会没有区分工作与个人设备。一些人认为智能手机架构的漏洞使得此类攻击成为可能。
-
-**标签**: `#cybersecurity`, `#surveillance`, `#Pegasus`, `#European Parliament`, `#spyware`
-
----
-
-<a id="item-4"></a>
-## [Current AI 发布开源 AI 差距地图](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
-
-Current AI（一家于 2025 年 2 月在巴黎 AI 行动峰会上成立的非营利组织）发布了开源 AI 差距地图 v0.1，索引了 421 个产品，涵盖软件、模型、数据集和硬件，以及 24,400 个未分类的工件。 这份全面的地图提供了开源 AI 生态系统的结构化概览，有助于识别投资和开发方面的差距与机遇，对于推进开源 AI 基础设施至关重要。 该地图详细列出了来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目，分为三个层次的 14 个类别：模型组件、产品/用户体验和基础设施。底层数据以 MIT 许可证发布在 GitHub 上。
+非营利组织 Current AI（于 2025 年 2 月巴黎 AI 行动峰会上成立）发布了开源 AI 差距地图 v0.1，索引了 421 个开源 AI 产品，涵盖软件、模型、数据集和硬件。 该地图提供了开源 AI 生态系统的结构化概览，有助于识别投资和开发中的空白与机遇，并获得了 4 亿美元的承诺资金支持。 该地图详细列出了来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目，按三个堆栈层的 14 个类别组织，底层数据以 MIT 许可证发布在 GitHub 上。
 
 rss · Simon Willison · 7月3日 22:04
 
-**背景**: Current AI 是一个全球性的非营利合作伙伴关系，已获得 4 亿美元的承诺资金，旨在为 AI 构建一个公共选项。差距地图是一个动态的可视化工具，旨在跟踪和分析开源 AI 格局，帮助利益相关者了解资源集中在哪里以及存在哪些差距。
+**背景**: Current AI 是一个全球性非营利合作伙伴关系，旨在构建 AI 的公共选项。差距地图是基于哥伦比亚会议、MOF、Hugging Face 等机构的工作，对开源 AI 领域进行系统编目的初步尝试。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.currentai.org/blogs/introducing-the-gap-map-v0-1">Introducing the Gap Map v0.1</a></li>
-<li><a href="https://simonwillison.net/2026/jul/3/open-source-ai-gap-map/">Open Source AI Gap Map | Simon Willison’s Weblog</a></li>
+<li><a href="https://map.currentai.org/">Current AI – Open Source AI Gap Map</a></li>
+<li><a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/">Open Source AI Gap Map</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_Action_Summit">AI Action Summit 2025 - Wikipedia</a></li>
 
 </ul>
 </details>
@@ -116,173 +82,135 @@ rss · Simon Willison · 7月3日 22:04
 
 ---
 
+<a id="item-4"></a>
+## [BaryGraph：将关系作为知识图谱中的一等文档](https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/) ⭐️ 8.0/10
+
+BaryGraph 引入了 BaryEdge，将知识图谱中的每个关系作为一等文档进行嵌入，拥有自己的向量，并通过递归的 MetaBary 三元组揭示远距离概念之间的结构桥梁。该系统在本地运行，基于 MongoDB Community + mongot + nomic-embed-text，覆盖整个英语维基词典（660 万文档）。 该方法解决了平面向量搜索的一个根本性局限——它将关系视为点接近的副产品，无法捕捉跨域连接。通过直接嵌入关系，BaryGraph 可以显著改进需要类比或结构推理的检索增强生成（RAG）和基于图的检索任务。 BaryEdge 向量计算公式为 bary_vector = normalize(q·v(CM1) + q·v(CM2) + (1−q)·v(type))，其中 q 是连接质量，v(type) 是关系类型的上下文嵌入。该系统使用 nomic-embed-text（768 维），在配备 8–16GB VRAM 的单台工作站上构建完整图谱需要 8–14 小时。
+
+reddit · r/MachineLearning · /u/adseipsum · 7月4日 08:24
+
+**背景**: 知识图谱嵌入（KGE）通常学习实体和关系的低维表示，但大多数方法将关系视为连接节点嵌入的边。平面向量搜索基于嵌入的余弦相似度检索文档，无法捕捉未在嵌入邻近度中反映的结构关系。BaryGraph 则将每个关系作为独立文档嵌入，通过递归组合发现高阶结构桥梁。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_graph_embedding">Knowledge graph embedding - Wikipedia</a></li>
+<li><a href="https://www.ontotext.com/knowledgehub/fundamentals/what-are-knowledge-graph-embeddings/">What Are Knowledge Graph Embeddings? | Ontotext</a></li>
+<li><a href="https://www.mongodb.com/docs/search/self-managed/current/configuration/automated-embedding/">Configure mongot for MongoDB Vector Search ... - MongoDB Docs</a></li>
+
+</ul>
+</details>
+
+**标签**: `#knowledge graph`, `#embedding`, `#RAG`, `#vector search`, `#graph database`
+
+---
+
 <a id="item-5"></a>
-## [课程创作者报告因 AI 导致销售额下降超 50%](https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything) ⭐️ 8.0/10
+## [CDD 无需权重访问即可从 logits 恢复微调数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
 
-Josh W. Comeau 报告称，他的新课程发布预计销量仅为通常的三分之一，现有课程销售额也大幅下降，多位课程创作者的收入下降了 50%以上。 这标志着开发者教育领域的重大转变，AI 不仅通过提供免费个性化辅导减少了对付费课程的需求，还因就业稳定性担忧抑制了学习意愿，可能重塑整个在线学习行业。 Comeau 提到‘双重打击’：开发者质疑近期内工作是否还存在，以及 LLM 提供个性化辅导，降低了购买课程的动机。他指出 LLM 未经同意或补偿就吞噬了创作者的作品。
+研究人员提出了对比解码差异法（CDD），这是一种灰盒方法，通过对比基模型和微调模型的 logits 来从 LLM 中恢复逐字微调数据，无需权重或激活即可在多个模型家族上获得高恢复分数。 CDD 以最小访问权限实现模型审计和数据泄露检测，解决了 LLM 中的关键隐私问题，其性能优于需要完全权重访问的先前白盒方法（如激活差异透镜 ADL）。 CDD 使用单一默认配置，无需逐模型校准或层选择，在 SDF 基准测试中，跨四个模型家族（1B 到 32B 参数）的 20 个模型对中的 19 个上实现了 4+/5 的逐字恢复分数，而 ADL 从未超过 3/5。
 
-rss · Simon Willison · 7月3日 21:25
+reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
 
-**背景**: Josh W. Comeau 是一位知名的前端开发者和教育者，创作了关于 React 和 CSS 的热门课程。开发者在线课程市场曾快速增长，但像 ChatGPT 和 Claude 这样的生成式 AI 工具现在提供交互式学习体验，直接与结构化课程竞争。
+**背景**: 模型差异分析旨在识别基模型与其微调版本之间的差异。先前的工作——激活差异透镜（ADL）——使用激活差异来引导生成，但需要完全权重访问且仅能恢复模糊的领域描述。对比解码（CD）是一种通过最大化强模型与弱模型之间似然差异来生成文本的技术。
 
-**标签**: `#AI impact`, `#developer education`, `#course creators`, `#software industry trends`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/html/2510.13900">Narrow Finetuning Leaves Clearly Readable Traces in Activation ...</a></li>
+<li><a href="https://www.emergentmind.com/topics/model-diffing">Model Diffing : Techniques & Applications</a></li>
+<li><a href="https://arxiv.org/abs/2309.09117">[2309.09117] Contrastive Decoding Improves Reasoning in Large Language Models</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 社区称赞 CDD 的创新性及其对隐私审计的实际意义，一些人讨论了令人惊讶的发现：由于 LLM 生成的合成数据，虚构人物“Dr. Elena Rodriguez”出现在不相关的微调领域中。评论者还指出该方法相比 ADL 的简单性和有效性。
+
+**标签**: `#LLM`, `#model diffing`, `#privacy`, `#finetuning`, `#machine learning`
 
 ---
 
 <a id="item-6"></a>
-## [CDD 仅凭 logits 恢复微调数据原文](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
+## [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
 
-研究人员提出了对比解码差异分析（CDD），这是一种灰盒方法，通过对比基础模型和微调模型的 logits 来恢复 LLM 中的逐字微调数据，在 SDF 基准测试中，跨四个模型家族（1B 到 32B 参数）的 19/20 个生物体×模型对上实现了 4+/5 的逐字恢复分数，且无需权重访问。 CDD 暴露了模型构建者面临的重大隐私和知识产权风险，因为它仅通过 logits 访问就能从微调 LLM 中提取逐字训练数据，这比白盒方法的假设弱得多。这一突破还通过揭示微调所学内容增强了模型可解释性。 CDD 使用单一默认配置，无需逐生物体校准或层选择，其性能优于白盒激活差异透镜（ADL）方法，后者在同一基准测试中从未超过 3/5。一个意外发现是，虚构人物“Elena Rodriguez 博士”出现在四个语义无关的微调领域中，追溯发现这是由于 Claude Sonnet 3.6 在生成合成数据时存在偏见。
+极客湾评测显示，搭载麒麟 9030 芯片的华为 Mate 80 Pro 系列在原生鸿蒙应用中游戏能效超越骁龙 8 Gen3，其中 Mate 80 Pro Max 运行《原神》60 帧时整机功耗仅 4.9W。 这表明深度的软硬件协同优化可以弥补理论硬件劣势，可能重塑移动芯片竞争格局，并凸显鸿蒙生态的日益增长的优势。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿，CPU 多核能效介于骁龙 8 Gen2 和 8 Gen3 之间。在《王者荣耀》120 帧下平均功耗约 3W。
 
-reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
+telegram · zaihuapd · 7月3日 13:27
 
-**背景**: 模型差异分析旨在识别基础模型与其微调版本之间的变化。先前的工作，激活差异透镜（ADL），需要完全的白盒访问（权重和激活），且仅能恢复模糊的领域级描述。CDD 在灰盒设置下运行，仅需 logits 输出，并能恢复精确文本。
+**背景**: 华为麒麟芯片因美国制裁面临先进制程限制。HarmonyOS NEXT 是华为完全自研的操作系统，支持原生应用优化和深度软硬芯云协同，使其能在理论规格较低的情况下发挥出极致性能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://tools4all.ai/trends/contrastive-decoding-diffing-recovers-verbatim-finetuning-data">Contrastive Decoding Diffing Recovers Verbatim Finetuning ...</a></li>
-<li><a href="https://www.emergentmind.com/papers/2605.25902">CDD: Verbatim Content Recovery via Diffing</a></li>
-<li><a href="https://www.machinebrief.com/news/unlocking-ais-hidden-memories-with-contrastive-decoding-9a3m">Unlocking AI's Hidden Memories with Contrastive Decoding</a></li>
+<li><a href="https://www.vgover.com/news/223579">极客湾华为Mate80Pro评测，原生鸿蒙 优 化 下游戏能效超越骁龙8Gen3</a></li>
+<li><a href="https://m.21jingji.com/article/20250905/8366e6bc1a9f6e118efc85158706411e.html">华为三折叠携麒麟9020亮相 折叠屏市场竞争迈向 软 硬 协 同 阶段 - 21财经</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 上的讨论内容充实，用户就方法的局限性和潜在防御措施提出了技术问题。作者回应了疑问，指出 CDD 在窄微调模型上效果最佳，而输出扰动等防御措施可能会降低其有效性。总体情绪积极，人们对模型安全的影响感兴趣。
-
-**标签**: `#LLM`, `#model diffing`, `#finetuning`, `#interpretability`, `#security`
+**标签**: `#Huawei`, `#Kirin 9030`, `#HarmonyOS`, `#mobile chips`, `#gaming performance`
 
 ---
 
 <a id="item-7"></a>
-## [BaryGraph：将关系嵌入为文档的知识图谱](https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/) ⭐️ 8.0/10
+## [NASA 发射救援卫星抢救坠落太空望远镜](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 8.0/10
 
-BaryGraph 提出了 BaryEdge，将知识图谱中的每个关系嵌入为拥有自身向量的独立文档，而非表示为节点间的边。它还递归构建 MetaBary 三元组，以发现远距离概念之间的结构桥梁。 该方法解决了平面向量搜索的一个关键局限——将关系视为点邻近的副产品，从而遗漏跨域连接。BaryGraph 通过揭示隐藏的结构相似性，可能显著改进检索增强生成（RAG）和基于图的检索。 BaryEdge 向量计算公式为 bary_vector = normalize(q·v(CM1) + q·v(CM2) + (1−q)·v(type))，其中 q 是连接质量，v(type) 是关系类型的上下文嵌入。该系统在本地运行于 MongoDB Community + mongot 上，使用 nomic-embed-text 处理整个英文维基词典（660 万文档），并提供 MCP 服务器供探测。
+NASA 于 7 月 3 日发射了 LINK 航天器，将与老化的 Swift 天文台会合，并将其轨道抬升约 240 公里，以防止其失控坠入地球大气层。 这次任务标志着私人航天器首次尝试捕获并维护美国政府卫星，可能延长这一宝贵科学天文台的寿命，并展示轨道服务的新能力。 LINK 航天器将使用机械臂抓住 Swift 望远镜，然后缓慢将其抬升至更高轨道。如果成功，Swift 最早可在 9 月恢复观测。
 
-reddit · r/MachineLearning · /u/adseipsum · 7月4日 08:24
+telegram · zaihuapd · 7月3日 15:43
 
-**背景**: 传统知识图谱将关系表示为连接节点的边，向量搜索通过比较点的嵌入相似度来检索信息。然而，平面向量搜索无法捕捉跨越远距离概念的结构关系。BaryGraph 将关系视为拥有自身嵌入的一等文档，并通过 MetaBary 三元组实现递归抽象。
+**背景**: Swift 天文台于 2004 年发射，用于研究伽马射线暴和其他宇宙现象。由于太阳活动增强，其轨道衰减速度超出预期，若不干预，最早可能在 10 月坠入大气层烧毁。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Knowledge_graph">Knowledge graph - Wikipedia</a></li>
-<li><a href="https://www.geeksforgeeks.org/mongodb/power-your-ai-application-with-mongodb-vector-search/">Power Your AI Application with MongoDB Vector Search</a></li>
-<li><a href="https://www.baeldung.com/cs/ml-knowledge-graphs">How to Build a Knowledge Graph? | Baeldung on Computer Science Guide to Creating Knowledge Graph Visualizations 7 Knowledge Graph Examples of 2026 Knowledge Graphs Knowledge graph - Wikipedia Neo4j LLM Knowledge Graph Builder - Extract Nodes and ...</a></li>
+<li><a href="https://www.space.com/space-exploration/launches-spacecraft/nasa-successfully-launches-rescue-mission-to-save-swift-space-telescope-from-burning-up-in-earths-atmosphere">NASA launches rescue mission to save Swift space telescope... | Space</a></li>
+<li><a href="https://skyandtelescope.org/astronomy-news/mission-launches-to-rescue-swift-observatory/">Mission Launches to Rescue Swift Observatory - Sky & Telescope</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Swift_Boost_Mission">Swift reboost mission - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论包含实质性的技术评论，对该方法的新颖性和有效性进行了辩论。一些评论者质疑跨域桥梁是否真实或源于模式匹配，而另一些则欣赏其数学严谨性及在 RAG 中的潜力。
-
-**标签**: `#knowledge graph`, `#vector search`, `#RAG`, `#embedding`, `#graph database`
+**标签**: `#space`, `#NASA`, `#satellite rescue`, `#astronomy`, `#spacecraft`
 
 ---
 
 <a id="item-8"></a>
-## [华为发布 Atlas 350 加速卡，性能达 H20 的 2.87 倍](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
-
-在 2026 年华为中国合作伙伴大会上，华为正式发布并上市搭载全新昇腾 950PR 处理器的 Atlas 350 加速卡，宣称其单卡算力达到英伟达 H20 的 2.87 倍，并支持 FP4 低精度推理。 这一发布标志着华为在 AI 加速器市场迈出重要一步，提供了性能远超受限英伟达 H20 芯片的国产替代方案，可能影响中国及全球的 AI 基础设施选择。 Atlas 350 是国内首款支持 FP4 推理的加速卡，配备 112 GB HBM 内存，单卡可加载 70B 参数模型，大幅降低推理延迟与投资成本。
-
-telegram · zaihuapd · 7月3日 08:35
-
-**背景**: 昇腾 950PR 是华为最新的 AI 推理芯片，专为加速大语言模型推理工作负载（尤其是预填充阶段）而设计。英伟达 H20 是面向中国市场的合规 GPU，性能低于 H100/H200，是中国市场的主要竞争对手。FP4 是一种 4 位浮点格式，能以更低的内存和带宽需求实现高效推理。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.omniyq.com/en/sys-nd/501.html">Ascend 950 : A Milestone for Domestic AI Compute - Shenzhen Cloud...</a></li>
-<li><a href="https://spoonai.me/posts/2026-04-13-huawei-950pr-ai-chip-en">Huawei Ascend 950 PR — 2.8x H20 FP4, and ByteDance... | spoonai</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Nvidia_H20">Nvidia H20</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI hardware`, `#Huawei`, `#Ascend`, `#accelerator`, `#FP4`
-
----
-
-<a id="item-9"></a>
-## [阿里下令全员卸载 Claude，7 月 10 日生效](https://t.me/zaihuapd/42334) ⭐️ 8.0/10
-
-阿里巴巴内部宣布禁止使用 Anthropic 产品，包括 Claude、Sonnet、Opus 和 Claude Code，要求所有员工在 2025 年 7 月 10 日前卸载。此前 Anthropic 指控阿里在 4 月 22 日至 6 月 5 日期间使用约 2.5 万个虚假账号与 Claude 交互超过 2800 万次。 这标志着中国一家大型科技公司重大政策转变，可能影响中国 AI 模型使用的竞争格局。该禁令还可能加剧美国 Anthropic 与中国企业之间关于安全和滥用的紧张关系。 禁令涵盖所有 Anthropic 产品，包括 Claude 模型（Sonnet、Opus、Fable）和 Claude Code 等 Agent 产品。此前阿里曾报销员工使用 Claude、GPT、Gemini 等外部模型的费用。Anthropic 在指控后收紧了风控策略。
-
-telegram · zaihuapd · 7月3日 13:00
-
-**背景**: Claude 是由美国 AI 安全公司 Anthropic 开发的 AI 助手。Anthropic 使用“宪法 AI”技术训练 Claude 以确保伦理合规。Claude Code 是一个智能编码工具，可以读取代码库、编辑文件和运行命令。阿里的禁令是“反向禁用”——阻止内部使用竞争对手的产品。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
-<li><a href="https://claude.com/product/overview">The AI for Problem Solvers | Claude by Anthropic</a></li>
-<li><a href="https://www.anthropic.com/product/claude-code">Claude Code | Anthropic's agentic coding system \ Anthropic</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Alibaba`, `#Claude`, `#Anthropic`, `#AI regulation`, `#corporate policy`
-
----
-
-<a id="item-10"></a>
-## [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
-
-极客湾对华为 Mate 80 Pro 系列的评测显示，原生鸿蒙优化使游戏能效超越骁龙 8 Gen3，尽管麒麟 9030 的理论性能仍落后。 这表明深度的软硬件协同可以弥补硬件本身的劣势，可能重塑移动芯片竞争格局，并凸显生态优化的重要性。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿。在《原神》最高画质 60 帧下，Mate 80 Pro Max 整机功耗仅 4.9W，能效优于骁龙 8 Gen3。
-
-telegram · zaihuapd · 7月3日 13:27
-
-**背景**: 华为的麒麟芯片历史上一直具有竞争力，但受到美国制裁的限制。HarmonyOS NEXT 是完全自研的操作系统，允许对原生应用进行深度优化，通过软硬芯云协同实现更好的性能和能效。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://baike.baidu.com/item/麒麟9030/66925509">麒麟9030 - 百度百科</a></li>
-<li><a href="https://baike.baidu.com/item/麒麟9030+Pro/67025907">麒麟9030 Pro - 百度百科</a></li>
-<li><a href="https://www.sohu.com/a/954749456_546984">满血版麒麟9030架构曝光：超大核9宽+GPU 800MHz，Mate80系列却全系“残...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Huawei`, `#chipset`, `#HarmonyOS`, `#gaming`, `#energy efficiency`
-
----
-
-<a id="item-11"></a>
-## [NASA 发射救援卫星拯救坠落太空望远镜](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 8.0/10
-
-NASA 于 2026 年 7 月 3 日发射了 LINK 航天器，与老化的 Swift 太空望远镜会合，并将其轨道抬升约 240 公里，防止其最早在 2026 年 10 月发生失控再入。 此次任务是私人航天器首次尝试抓取并抬升美国政府卫星，展示了在轨服务和太空碎片减缓的关键能力。 由 Katalyst Space Technologies 建造的 LINK 航天器将使用机械臂抓住 Swift，然后通过推进器抬升其轨道。如果成功，Swift 最早可在 2026 年 9 月恢复科学观测。
-
-telegram · zaihuapd · 7月3日 15:43
-
-**背景**: Neil Gehrels Swift 天文台于 2004 年发射，用于探测伽马射线暴等高能宇宙事件。由于太阳活动加剧，其轨道衰减速度快于预期，可能终结其任务。NASA 于 2024 年雇佣 Katalyst 在不到一年内建造救援航天器。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://spaceeyenews.com/nasa-swift-rescue-mission/">NASA Swift Rescue Mission: A Robot Races to Save... - SpaceEyeNews</a></li>
-<li><a href="https://www.space.com/space-exploration/launches-spacecraft/nasa-successfully-launches-rescue-mission-to-save-swift-space-telescope-from-burning-up-in-earths-atmosphere">NASA launches rescue mission to save Swift space telescope... | Space</a></li>
-<li><a href="https://www.science.org/content/article/space-telescope-falling-earth-nasa-racing-rescue-it">A space telescope is falling to Earth. NASA is racing ... - AAAS</a></li>
-
-</ul>
-</details>
-
-**标签**: `#space`, `#NASA`, `#satellite servicing`, `#space debris`, `#private space`
-
----
-
-<a id="item-12"></a>
 ## [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 8.0/10
 
-腾讯玄武实验室的阿图因 AI 在 CyberGym 网络安全基准测试中获得 84.0% 的得分，超越 Anthropic 的 Claude Mythos Preview，且消耗预算不到 Mythos 的 0.1%。 这表明可本地部署的开源模型能以极低成本在网络安全领域超越前沿 AI，可能推动高级漏洞发现能力的普及。 阿图因 AI 基于开源模型 GLM-5.1 构建，在 curl、OpenSSL、Python cryptography 等项目中发现了多个 Mythos 未检出的高危逻辑漏洞（最高评分 9.3）。
+腾讯玄武实验室宣布，其基于开源模型 GLM-5.1 构建的阿图因 AI 在加州大学伯克利分校主导的 CyberGym 网络安全基准测试中获得 84.0%的得分，超过了 Anthropic 的 Claude Mythos Preview。阿图因 AI 还在 curl、OpenSSL、Python cryptography 等重要项目中发现了多个 Mythos 未检出的高危逻辑漏洞。 这表明开源 AI 模型在特定网络安全任务上能以极低成本超越专有模型，可能推动高级漏洞发现能力的普及。同时，它也凸显了 AI 在攻击者利用之前发现关键软件缺陷方面日益重要的作用。 阿图因 AI 消耗的预算不到 Mythos“玻璃翼计划”的 0.1%。在伯克利 BVI 真实世界漏洞榜单中，阿图因 AI 的严重漏洞严重程度排名第 1，总数排名第 5。
 
 telegram · zaihuapd · 7月3日 16:12
 
-**背景**: CyberGym 是加州大学伯克利分校推出的网络安全基准测试，用于评估 AI 智能体在真实世界任务中的表现。Claude Mythos 是 Anthropic 的专用网络安全模型，而 GLM-5.1 是 Z.AI 的开源旗舰模型，专为长周期智能体任务设计。
+**背景**: CyberGym 是一个评估 AI 代理在端到端网络安全任务（从漏洞检测到修复）中表现的基准测试。GLM-5.1 是 Z.AI 推出的开源大语言模型，专为长周期代理任务设计。Anthropic 的“玻璃翼计划”使用 Claude Mythos Preview 自主寻找主流软件中的零日漏洞。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://llm-stats.com/benchmarks/cybergym">CyberGym Benchmark Leaderboard | LLM Stats</a></li>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.1">GLM-5.1 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Mythos_AI">Mythos AI</a></li>
+<li><a href="https://docs.z.ai/guides/llm/glm-5.1">GLM - 5 . 1 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
+<li><a href="https://www.anthropic.com/glasswing">Project Glasswing : Securing critical software for the AI era \ Anthropic</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#cybersecurity`, `#benchmark`, `#vulnerability discovery`, `#Tencent`
+**标签**: `#AI`, `#cybersecurity`, `#open-source`, `#benchmark`, `#vulnerability discovery`
+
+---
+
+<a id="item-9"></a>
+## [华为提出“韬定律”，以时间缩微延续摩尔定律](https://t.me/zaihuapd/42346) ⭐️ 8.0/10
+
+在近日于上海举行的 2026 国际电路与系统研讨会上，华为发表了“韬定律”，提出以“时间缩微”替代“几何缩微”来延续摩尔定律。华为声称过去六年已据此设计量产了 381 款芯片，今年秋季将推出采用逻辑折叠技术的新麒麟手机芯片。 “韬定律”可能代表半导体缩微的范式转变，为超越传统晶体管微型化的物理极限提供了一条路径。如果得到验证，它可能减少对极紫外光刻技术的依赖，重塑全球芯片产业，尤其有利于像华为这样面临出口限制的公司。 该定律通过逻辑折叠和多层级协同优化，降低器件、电路、芯片到系统的时间常数。华为预计，到 2031 年基于该定律的芯片晶体管密度可达 1.4 纳米制程同等水平。
+
+telegram · zaihuapd · 7月4日 04:56
+
+**背景**: 摩尔定律预测晶体管密度大约每两年翻一番，但由于原子尺度的限制正逼近物理极限。传统的几何缩微缩小晶体管尺寸，而时间缩微则通过减少信号传播延迟来提升性能和密度。逻辑折叠是一种设计技术，通过重新配置电路布局来缩短关键路径，无需物理堆叠即可实现类似 3D 集成的效果。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.peopleapp.com/column/30052254360-500007517346">“ 韬 定 律 ”，做 时 间 的朋友_人民日报</a></li>
+<li><a href="https://www.msn.com/zh-cn/news/other/究竟-韬定律-将如何影响半导体产业演进路径/ar-AA243zka">究竟｜“ 韬 定 律 ”将如何影响 半 导 体 产业演进路径</a></li>
+<li><a href="https://news.qq.com/rain/a/20260527A0AA4G00">news.qq.com/rain/a/20260527A0AA4G00</a></li>
+
+</ul>
+</details>
+
+**标签**: `#semiconductors`, `#Moore's Law`, `#Huawei`, `#chip design`, `#scaling`
 
 ---
