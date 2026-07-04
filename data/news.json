@@ -1,116 +1,175 @@
 [
   {
     "id": "1",
-    "title": "Wordgard：ProseMirror 创建者推出的新富文本编辑器",
+    "title": "本地运行 SOTA 大模型指南引发成本讨论",
     "importance_score": 8.0,
-    "source": "Hackernews",
-    "url": "https://wordgard.net/",
-    "category": "Dev",
-    "publish_time": "2026-07-03T08:50:00Z",
-    "summary_zh": "Wordgard 是 ProseMirror 创建者发布的一款新的浏览器内富文本编辑器，提供了改进的开发者体验和静态类型支持。 这很重要，因为它提供了 ProseMirror 的现代替代方案，具有更好的 TypeScript 集成，可能简化需要静态类型文档模型的团队的开发工作。 Wordgard 与 ProseMirror 共享许多概念，但并非升级路径；切换需要大量重写。该编辑器专注于开发者体验和静态类型。\n\n**背景**: ProseMirror 是一个广泛使用的开源 Web 富文本编辑器框架，但缺乏内置的静态类型支持。Wordgard 旨在通过从头提供静态类型 API 来解决这一问题。\n\n**社区讨论**: 社区对新编辑器感到兴奋，许多人称赞其设计和技术深度。一些用户对缺乏从 ProseMirror 的升级路径以及切换所需的工作量表示担忧。",
-    "summary_en": "Wordgard is a new in-browser rich-text editor released by the creator of ProseMirror, offering improved developer experience and static typing support. This matters because it provides a modern alternative to ProseMirror with better TypeScript integration, potentially simplifying development for teams that need statically-typed document models. Wordgard shares many concepts with ProseMirror but is not an upgrade path; switching requires significant rework. The editor is designed with a focus on developer experience and static typing.\n\n**Background**: ProseMirror is a widely-used open-source rich-text editor framework for the web, but it lacks built-in static typing support. Wordgard aims to address this by providing a statically-typed API from the ground up.\n\n**Discussion**: The community is excited about the new editor, with many praising its design and technical depth. Some users express concerns about the lack of an upgrade path from ProseMirror and the effort required to switch.",
+    "source": "<li><a href=\"https://github.com/jamesob/local-llm\">github - jamesob/local-llm: everything i know about running llms locally",
+    "url": "https://github.com/jamesob/local-llm",
+    "category": "AI",
+    "publish_time": "2026-07-04T12:00:00Z",
+    "summary_zh": "Jamesob 在 GitHub 上发布了一份全面指南，详细介绍了如何构建昂贵的本地设备来运行最先进的大语言模型，包括成本达 4 万美元或更高的配置。 该指南凸显了本地大模型推理的高昂前期成本与用户对隐私、控制权及摆脱云服务依赖的渴望之间的持续矛盾，引发了关于成本效益和可行性的讨论。 指南中的顶级配置包括四块每块 12000 美元的 GPU，总价达 5 万至 5.5 万美元，并依赖量化和剪枝技术将修改后的 GLM-5.2（594B 参数）等模型装入可用显存。\n\n**背景**: 本地运行大语言模型需要大量硬件资源，尤其是显存，用于加载模型权重和执行推理。量化通过降低模型精度来减少内存占用，而剪枝则移除不重要的参数。基于云的 LLM（如 Claude Opus）以订阅费用提供高性能，但本地设置能提供隐私和离线能力。\n\n**社区讨论**: 评论者普遍认为，本地设置仍然比云替代方案昂贵得多且质量更低，有人指出 4 万美元足以支付 16.8 年的 Claude Opus 订阅费用。其他人则建议采用中间方案，如 128GB 统一内存系统来运行 DeepSeek V4，并警告量化模型在基准测试之外可能表现不佳。",
+    "summary_en": "Jamesob published a comprehensive guide on GitHub detailing how to build expensive local setups for running state-of-the-art large language models, including configurations costing $40,000 or more. This guide highlights the ongoing tension between the high upfront cost of local LLM inference and the desire for privacy, control, and independence from cloud services, sparking debate about cost-effectiveness and feasibility. The guide's top-tier build includes four GPUs at $12,000 each, totaling $50,000–$55,000, and relies on quantization and pruning techniques to fit models like a modified GLM-5.2 with 594B parameters into available VRAM.\n\n**Background**: Running large language models locally requires significant hardware, especially VRAM, to load model weights and perform inference. Quantization reduces model precision to lower memory usage, while pruning removes less important parameters. Cloud-based LLMs like Claude Opus offer high performance at a subscription cost, but local setups provide privacy and offline capability.\n\n**Discussion**: Commenters widely agree that local setups are still far more expensive and lower quality than cloud alternatives, with one noting that $40,000 could pay for 16.8 years of Claude Opus subscription. Others suggest intermediate options like 128GB unified memory systems for running DeepSeek V4, and warn that quantized models may behave poorly outside benchmarks.",
     "takeaways": [
-      "背景信息: ProseMirror 是一个广泛使用的开源 Web 富文本编辑器框架，但缺乏内置的静态类型支持。Wordgard 旨在通过从头提供静态类型 API 来解决这一问题。",
-      "社区反馈: 社区对新编辑器感到兴奋，许多人称赞其设计和技术深度。一些用户对缺乏从 ProseMirror 的升级路径以及切换所需的工作量表示担忧。"
+      "背景信息: 本地运行大语言模型需要大量硬件资源，尤其是显存，用于加载模型权重和执行推理。量化通过降低模型精度来减少内存占用，而剪枝则移除不重要的参数。基于云的 LLM（如 Claude Opus）以订阅费用提供高性能，但本地设置能提供隐私和离线能力。",
+      "社区反馈: 评论者普遍认为，本地设置仍然比云替代方案昂贵得多且质量更低，有人指出 4 万美元足以支付 16.8 年的 Claude Opus 订阅费用。其他人则建议采用中间方案，如 128GB 统一内存系统来运行 DeepSeek V4，并警告量化模型在基准测试之外可能表现不佳。"
     ]
   },
   {
     "id": "2",
-    "title": "Crustc：将整个 Rust 编译器翻译为 C 语言",
+    "title": "欧盟议会间谍调查成员遭飞马间谍软件入侵",
     "importance_score": 8.0,
     "source": "Hackernews",
-    "url": "https://github.com/FractalFir/crustc",
-    "category": "Dev",
-    "publish_time": "2026-07-03T22:57:00Z",
-    "summary_zh": "一个名为 crustc 的项目成功将整个 Rust 编译器（rustc）翻译为 C 语言，从而能够在没有 LLVM 或 GCC 支持的平台上进行引导编译。 这一突破显著提升了编译器的可移植性，使 Rust 能够在缺乏 LLVM 或 GCC 后端的旧式或小众硬件上运行，并且通过多样双重编译提供了一种验证官方 Rust 编译器是否存在后门的新方法。 该项目是已知的第 14 次将 Rust 编译为 C 的尝试，它翻译了整个 rustc 代码库，而不仅仅是子集。作者指出，翻译为 C 比翻译为 LLVM IR 更容易，并且让 GCC 进行优化可能带来实用的性能。\n\n**背景**: Rust 的主要编译器 rustc 使用 LLVM 作为后端，这限制了其对 LLVM 目标平台的支持。从源代码引导编译 Rust 通常需要已有的 Rust 编译器，这为新平台带来了先有鸡还是先有蛋的问题。将 rustc 翻译为 C 打破了这种依赖，因为 C 编译器几乎在所有平台上都可用。\n\n**社区讨论**: 社区对该项目的技术新颖性和奉献精神表示高度赞赏，有评论者称其为“原创艺术品”。几位用户讨论了使用 crustc 进行多样双重编译以测试官方 Rust 编译器中的后门，其他人则提到了 LLVM 的 C 后端被移除后又恢复的历史背景。",
-    "summary_en": "A project called crustc has successfully translated the entirety of the Rust compiler (rustc) into C, enabling bootstrapping on platforms without LLVM or GCC support. This breakthrough significantly improves compiler portability, allowing Rust to run on old or obscure hardware that lacks LLVM or GCC backends, and also provides a new way to verify the official Rust compiler for backdoors via diverse double-compiling. The project is the 14th known attempt to compile Rust to C, and it transpiles the entire rustc codebase rather than just a subset. The author notes that transpiling to C is easier than to LLVM IR, and letting GCC optimize may yield practical performance.\n\n**Background**: Rust's primary compiler, rustc, uses LLVM as its backend, which limits its support to platforms that LLVM targets. Bootstrapping Rust from source typically requires an existing Rust compiler, creating a chicken-and-egg problem for new platforms. Translating rustc to C breaks this dependency, as C compilers are available on virtually every platform.\n\n**Discussion**: The community expressed strong admiration for the project's technical novelty and dedication, with one commenter calling it an 'original work of art.' Several users discussed using crustc for diverse double-compiling to test for backdoors in the official Rust compiler, and others noted the historical context of LLVM's C backend being removed and later revived.",
+    "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
+    "category": "AI",
+    "publish_time": "2026-07-04T20:38:00Z",
+    "summary_zh": "公民实验室调查发现，正在调查间谍软件的欧洲议会议员斯特利奥斯·库洛格卢的 iPhone 在 2022 年和 2023 年至少三次被飞马间谍软件感染。 这表明存在针对欧盟议会议员的协调间谍活动，可能由有权在多个欧洲国家进行监视的国家行为者实施，破坏了民主制度。 2022 年 10 月的首次感染与针对俄罗斯和白俄罗斯流亡记者的飞马行动重叠，表明同一飞马客户跨境操作。同一部手机还包含机密医疗和政府文件。\n\n**背景**: 飞马是由以色列公司 NSO Group 开发的间谍软件，能够通过零点击漏洞远程入侵移动设备。它被多国政府滥用于监视记者、活动家和政治家。公民实验室是多伦多大学的研究小组，专门调查数字威胁。\n\n**社区讨论**: 评论者争论此次攻击是针对欧盟议会还是希腊国内丑闻，有人指出希腊和其他欧盟国家滥用飞马。还有人质疑欧盟议会缺乏设备分离政策。",
+    "summary_en": "Citizen Lab investigation found that Stelios Kouloglou, a European Parliament member investigating spyware, had his iPhone infected with Pegasus spyware on at least three occasions in 2022 and 2023. This indicates a coordinated espionage campaign targeting EU parliament members, potentially by a state actor with authorization to spy across multiple European countries, undermining democratic institutions. The first infection in October 2022 overlaps with a Pegasus campaign targeting Russian and Belarusian exiled journalists, suggesting a single Pegasus customer operated across borders. The same phone also contained confidential medical and government documents.\n\n**Background**: Pegasus is spyware developed by Israeli firm NSO Group, capable of remotely compromising mobile devices via zero-click exploits. It has been widely abused by governments to surveil journalists, activists, and politicians. Citizen Lab is a University of Toronto research group that investigates digital threats.\n\n**Discussion**: Commenters debated whether the attack was against the EU parliament or a domestic Greek scandal, with some noting that Greece and other EU states have abused Pegasus. Others questioned the lack of device separation policies in the EU parliament.",
     "takeaways": [
-      "背景信息: Rust 的主要编译器 rustc 使用 LLVM 作为后端，这限制了其对 LLVM 目标平台的支持。从源代码引导编译 Rust 通常需要已有的 Rust 编译器，这为新平台带来了先有鸡还是先有蛋的问题。将 rustc 翻译为 C 打破了这种依赖，因为 C 编译器几乎在所有平台上都可用。",
-      "社区反馈: 社区对该项目的技术新颖性和奉献精神表示高度赞赏，有评论者称其为“原创艺术品”。几位用户讨论了使用 crustc 进行多样双重编译以测试官方 Rust 编译器中的后门，其他人则提到了 LLVM 的 C 后端被移除后又恢复的历史背景。"
+      "背景信息: 飞马是由以色列公司 NSO Group 开发的间谍软件，能够通过零点击漏洞远程入侵移动设备。它被多国政府滥用于监视记者、活动家和政治家。公民实验室是多伦多大学的研究小组，专门调查数字威胁。",
+      "社区反馈: 评论者争论此次攻击是针对欧盟议会还是希腊国内丑闻，有人指出希腊和其他欧盟国家滥用飞马。还有人质疑欧盟议会缺乏设备分离政策。"
     ]
   },
   {
     "id": "3",
-    "title": "CDD 仅通过 logits 恢复 LLM 微调数据",
+    "title": "Wordgard：ProseMirror 创建者推出的新富文本编辑器",
     "importance_score": 8.0,
-    "source": "r/MachineLearning",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
-    "category": "AI",
-    "publish_time": "2026-07-03T19:01:00Z",
-    "summary_zh": "研究人员提出了对比解码差异法（CDD），这是一种灰盒方法，仅通过 logits 访问即可从 LLM 中恢复逐字微调数据，无需模型权重或激活值。CDD 在四个模型家族的 20 个生物体-模型对中的 19 对上实现了 4+/5 的逐字恢复分数，优于白盒方法激活差异透镜（ADL）。 这项工作凸显了 LLM 微调中重大的隐私和安全风险，因为它表明只需极少的访问权限即可提取敏感训练数据。同时，它为审计和理解模型在微调过程中学到了什么提供了强大工具，可能提高 AI 系统的透明度。 CDD 无需针对每个模型进行校准、无需选择层、无需探测语料库，在所有实验中使用单一默认配置。一个意外的发现是，在语义无关的微调领域中反复出现名字“Dr. Elena Rodriguez”，这追溯到 Claude Sonnet 3.6 在生成合成数据时对虚构科学家名字的偏好。\n\n**背景**: 模型差异分析旨在检测微调模型相对于基础模型学到了什么。先前的工作激活差异透镜（ADL）需要完整的权重访问，且只能恢复模糊的领域级描述。CDD 在 logits 分布上操作，使其成为一种灰盒方法，既更易访问又更有效。",
-    "summary_en": "Researchers introduce Contrastive Decoding Diffing (CDD), a grey-box method that recovers verbatim finetuning data from LLMs using only logit access, without needing model weights or activations. CDD achieves a verbatim recovery score of 4+/5 on 19 out of 20 organism-model pairs across four model families, outperforming the white-box Activation Difference Lens (ADL) method. This work highlights a significant privacy and security risk in LLM finetuning, as it demonstrates that sensitive training data can be extracted with minimal access. It also provides a powerful tool for auditing and understanding what models have learned during finetuning, potentially improving transparency in AI systems. CDD requires no per-model calibration, no layer selection, and no probe corpus, using a single default configuration across all experiments. An unexpected finding was that the name 'Dr. Elena Rodriguez' appeared across semantically unrelated finetuning domains, traced back to Claude Sonnet 3.6's bias in generating fictional scientists for synthetic data.\n\n**Background**: Model diffing aims to detect what a finetuned model has learned compared to its base model. Prior work, Activation Difference Lens (ADL), required full weight access and only recovered vague domain-level descriptions. CDD operates on logit distributions, making it a grey-box method that is both more accessible and more effective.",
+    "source": "<li><a href=\"https://github.com/prosemirror\">prosemirror",
+    "url": "https://wordgard.net/",
+    "category": "Dev",
+    "publish_time": "2026-07-04T12:00:00Z",
+    "summary_zh": "Wordgard 是 ProseMirror 创建者 Marijn Haverbeke 发布的一款新的浏览器内富文本编辑器，它提供了一种全新的文档编辑方法，与 ProseMirror 共享概念，但没有升级路径。 这一发布意义重大，因为它来自富文本编辑器领域备受尊敬的创建者，社区正在积极讨论采用没有迁移路径的新编辑器的技术权衡和实际考虑。 Wordgard 与 ProseMirror 共享许多概念，但不向后兼容，这意味着切换需要大量重做。该编辑器专为现代 Web 应用程序设计，强调清晰、语义化的文档模型。\n\n**背景**: ProseMirror 是一个经过实战考验的富文本编辑器框架，被 Tiptap 等许多项目使用。它提供了强大的核心，但学习曲线陡峭。由于缺乏 Web 标准，浏览器内富文本编辑器长期以来一直是一个挑战，存在许多解决方案，如 Quill 和 TinyMCE。\n\n**社区讨论**: 社区对 Wordgard 背后的“为什么”感到好奇，并指出缺乏从 ProseMirror 升级的路径。一些用户对现有编辑器的复杂性表示沮丧，并称赞 Wordgard 的设计，而另一些用户则讨论技术挑战，例如 ProseMirror 的静态类型问题。",
+    "summary_en": "Wordgard is a new in-browser rich-text editor released by Marijn Haverbeke, the creator of ProseMirror, offering a fresh approach to document editing with shared concepts but no upgrade path from ProseMirror. This release is significant because it comes from a highly respected creator in the rich-text editor space, and the community is actively discussing the technical trade-offs and practical considerations of adopting a new editor without a migration path. Wordgard shares many concepts with ProseMirror but is not backward-compatible, meaning switching requires significant rework. The editor is designed for modern web applications and emphasizes a clean, semantic document model.\n\n**Background**: ProseMirror is a battle-tested rich-text editor framework used by many projects like Tiptap. It provides a powerful core but has a steep learning curve. In-browser rich-text editors have long been a challenge due to lack of a web standard, with many solutions like Quill and TinyMCE existing.\n\n**Discussion**: The community is curious about the 'why' behind Wordgard and notes the lack of an upgrade path from ProseMirror. Some users express frustration with the complexity of existing editors and praise Wordgard's design, while others discuss technical challenges like static typing with ProseMirror.",
     "takeaways": [
-      "背景信息: 模型差异分析旨在检测微调模型相对于基础模型学到了什么。先前的工作激活差异透镜（ADL）需要完整的权重访问，且只能恢复模糊的领域级描述。CDD 在 logits 分布上操作，使其成为一种灰盒方法，既更易访问又更有效。"
+      "背景信息: ProseMirror 是一个经过实战考验的富文本编辑器框架，被 Tiptap 等许多项目使用。它提供了强大的核心，但学习曲线陡峭。由于缺乏 Web 标准，浏览器内富文本编辑器长期以来一直是一个挑战，存在许多解决方案，如 Quill 和 TinyMCE。",
+      "社区反馈: 社区对 Wordgard 背后的“为什么”感到好奇，并指出缺乏从 ProseMirror 升级的路径。一些用户对现有编辑器的复杂性表示沮丧，并称赞 Wordgard 的设计，而另一些用户则讨论技术挑战，例如 ProseMirror 的静态类型问题。"
     ]
   },
   {
     "id": "4",
+    "title": "Ubicloud 倡导 PostgreSQL 使用严格内存过量提交",
+    "importance_score": 8.0,
+    "source": "Hackernews",
+    "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
+    "category": "AI",
+    "publish_time": "2026-07-04T13:00:00Z",
+    "summary_zh": "Ubicloud 发布了一篇博客文章，解释了他们为何对 PostgreSQL 使用严格内存过量提交（vm.overcommit_memory=2）以避免 OOM killer 问题，这是基于他们大规模运营托管 PostgreSQL 的经验。 这很重要，因为 OOM killer 中断是 PostgreSQL 运维人员的常见痛点，严格过量提交提供了一种显著减少这些崩溃的方法，尽管它需要仔细测试，并且可能不适合所有工作负载。 严格过量提交（模式 2）根据 swap + RAM * overcommit_ratio 强制执行 CommitLimit，拒绝超出该限制的分配。Ubicloud 指出，他们最初启用后遇到了故障，但最终发现它有利于稳定性。\n\n**背景**: Linux OOM killer 是一种在系统内存耗尽时终止进程的机制。PostgreSQL 可能为查询分配大量内存，因此经常成为目标。内核的默认内存过量提交行为（模式 0 或 1）可能导致过量承诺并随后触发 OOM 终止。\n\n**社区讨论**: 社区评论指出，Linux VM 默认设置被认为有问题，并建议在切换到模式 2 时谨慎，特别是如果已经调整了过量提交比例。Ubicloud 的一位评论者同意技术内容，但认为标题过于强烈，指出严格过量提交在许多场景下可能产生未预料的副作用。",
+    "summary_en": "Ubicloud published a blog post explaining why they use strict memory overcommit (vm.overcommit_memory=2) for PostgreSQL to avoid OOM killer issues, based on their experience operating managed PostgreSQL at scale. This matters because OOM killer disruptions are a common pain point for PostgreSQL operators, and strict overcommit offers a way to significantly reduce those crashes, though it requires careful testing and may not suit all workloads. Strict overcommit (mode 2) enforces a CommitLimit based on swap + RAM * overcommit_ratio, refusing allocations that exceed it. Ubicloud notes that they initially ran into failures after enabling it, but eventually found it beneficial for stability.\n\n**Background**: The Linux OOM killer is a mechanism that terminates processes when the system runs out of memory. PostgreSQL, which can allocate large amounts of memory for queries, is often a target. The kernel's default memory overcommit behavior (mode 0 or 1) can lead to overcommitment and subsequent OOM kills.\n\n**Discussion**: Community comments highlight that Linux VM defaults are considered problematic, and caution is advised when switching to mode 2, especially if overcommit ratios have been adjusted. One commenter from Ubicloud agrees with the technical content but feels the title was too strong, noting that strict overcommit may have unanticipated side-effects in many scenarios.",
+    "takeaways": [
+      "背景信息: Linux OOM killer 是一种在系统内存耗尽时终止进程的机制。PostgreSQL 可能为查询分配大量内存，因此经常成为目标。内核的默认内存过量提交行为（模式 0 或 1）可能导致过量承诺并随后触发 OOM 终止。",
+      "社区反馈: 社区评论指出，Linux VM 默认设置被认为有问题，并建议在切换到模式 2 时谨慎，特别是如果已经调整了过量提交比例。Ubicloud 的一位评论者同意技术内容，但认为标题过于强烈，指出严格过量提交在许多场景下可能产生未预料的副作用。"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Current AI 发布开源 AI 差距地图",
+    "importance_score": 8.0,
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+    "category": "AI",
+    "publish_time": "2026-07-04T22:04:00Z",
+    "summary_zh": "Current AI 是一家于 2025 年 2 月在巴黎人工智能行动峰会上成立的非营利组织，它发布了开源 AI 差距地图 v0.1，索引了 421 个产品，涵盖软件、模型、数据集和硬件，以识别开源 AI 生态系统中的空白。 该地图提供了一次全面且资金充足的系统性尝试，以绘制开源 AI 领域的地图，帮助开发者、研究人员和资助者了解资源缺乏之处以及下一步的投资方向。 该地图详细列出了来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目，按三个堆栈层的 14 个类别组织；底层数据以 MIT 许可证发布在 GitHub 上。\n\n**背景**: Current AI 是一个全球性的非营利合作伙伴关系，已承诺投入 4 亿美元资金，旨在为 AI 构建一个公共选项。差距地图建立在哥伦比亚会议、MOF、Hugging Face 等机构的工作基础上，以绘制开源 AI 堆栈并识别缺失的组件。",
+    "summary_en": "Current AI, a non-profit founded at the AI Action Summit in Paris in February 2025, launched the Open Source AI Gap Map v0.1, indexing 421 products across software, models, datasets, and hardware to identify gaps in the open source AI ecosystem. This map provides a comprehensive, well-funded attempt to systematically map the open source AI landscape, helping developers, researchers, and funders understand where resources are lacking and where to invest next. The map details 266 software tools, 85 models, 50 datasets, and 20 hardware projects from 228 organizations, organized into 14 categories across three stack layers; the underlying data is released under an MIT license on GitHub.\n\n**Background**: Current AI is a global non-profit partnership backed by $400 million in committed capital, aiming to build a public option for AI. The Gap Map builds on work from the Columbia Convening, MOF, Hugging Face, and others to map the open source AI stack and identify missing components.",
+    "takeaways": [
+      "背景信息: Current AI 是一个全球性的非营利合作伙伴关系，已承诺投入 4 亿美元资金，旨在为 AI 构建一个公共选项。差距地图建立在哥伦比亚会议、MOF、Hugging Face 等机构的工作基础上，以绘制开源 AI 堆栈并识别缺失的组件。"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "课程创作者报告收入因 AI 下降超 50%",
+    "importance_score": 8.0,
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
+    "category": "AI",
+    "publish_time": "2026-07-04T21:25:00Z",
+    "summary_zh": "知名课程创作者 Josh W. Comeau 报告称，其新课程销量约为正常水平的 1/3，现有课程收入下降超过 50%。他将此归因于 AI 引发的开发者就业不确定性，以及 LLM 取代付费课程的趋势。 多位课程创作者的第一手反馈表明，开发者教育正经历结构性转变——AI 工具降低了付费课程的感知价值，并引发职业不确定性。这凸显了内容创作者面临的更广泛挑战：他们的作品被用于训练 LLM 却未获报酬。 Comeau 推出的第三门课程“Whimsical Animations”销量约为正常水平的 1/3。他指出其他课程创作者也面临类似趋势：收入下降超 50%，用户参与度降低。\n\n**背景**: 面向开发者的在线课程曾是许多创作者的重要收入来源，但 GPT-4 等大型语言模型（LLM）的兴起改变了这一格局。LLM 能提供个性化辅导和代码解释，降低了对付费课程的需求。此外，AI 引发的开发者就业不确定性也抑制了学习新技能的投入。",
+    "summary_en": "Josh W. Comeau, a well-known course creator, reported that sales for his new course are roughly one-third of typical launches, and his existing courses have seen revenue declines of over 50%. He attributes this to AI-driven uncertainty about developer jobs and the replacement of paid courses by LLMs. This firsthand account from multiple course creators signals a structural shift in developer education, as AI tools reduce the perceived value of paid courses and create career uncertainty. It highlights a broader challenge for content creators whose work is used to train LLMs without compensation. Comeau launched his third course, Whimsical Animations, and it is on track to sell roughly one-third as many copies as a typical launch. He notes that other course creators are seeing similar trends, with revenue down 50%+ and fewer people engaging with their content.\n\n**Background**: Online courses for developers have been a significant revenue source for many creators, but the rise of large language models (LLMs) like GPT-4 has changed the landscape. LLMs can provide personalized tutoring and generate code explanations, reducing the need for paid courses. Additionally, AI-driven uncertainty about the future of developer jobs discourages investment in learning new skills.",
+    "takeaways": [
+      "背景信息: 面向开发者的在线课程曾是许多创作者的重要收入来源，但 GPT-4 等大型语言模型（LLM）的兴起改变了这一格局。LLM 能提供个性化辅导和代码解释，降低了对付费课程的需求。此外，AI 引发的开发者就业不确定性也抑制了学习新技能的投入。"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "CDD 仅从 logits 恢复微调数据",
+    "importance_score": 8.0,
+    "source": "r/MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
+    "category": "AI",
+    "publish_time": "2026-07-04T19:01:00Z",
+    "summary_zh": "研究人员提出了对比解码差异（CDD），该方法仅通过 logits 访问即可从大语言模型中恢复逐字微调数据，无需模型权重或激活。CDD 在四个模型家族的 20 个模型对中的 19 个上达到了 4+/5 的逐字恢复分数，优于之前的白盒方法 Activation Difference Lens（ADL）。 这项工作揭示了大语言模型中一个重大的隐私漏洞，因为它表明仅需最少的访问权限（仅 logits）即可提取微调数据。同时，它展示了由 LLM 生成的合成数据可能留下意外的指纹，引发了对数据泄露和模型审计的担忧。 CDD 使用单一默认配置，无需逐模型校准或层选择，却优于需要完全权重访问的 ADL。一个意外的发现是，虚构名称“Dr. Elena Rodriguez”出现在多个无关的微调领域中，追溯发现这是 Claude Sonnet 3.6 在生成合成数据时偏好的名字。\n\n**背景**: 模型差异分析旨在识别基础模型与微调版本之间的差异。先前的工作 Activation Difference Lens（ADL）需要白盒访问（权重和激活），且仅能恢复模糊的领域描述。对比解码是一种通过对比两个模型输出来选择 token 的技术；CDD 将这一思想应用于模型差异分析，直接对比 logits。\n\n**社区讨论**: Reddit 讨论中包含关于该方法在更大模型上的适用性以及潜在防御措施的技术问题。一些评论者对隐私影响表示担忧，而另一些则称赞该方法的巧妙之处以及关于合成数据指纹的偶然发现。",
+    "summary_en": "Researchers introduce Contrastive Decoding Diffing (CDD), a method that recovers verbatim finetuning data from LLMs using only logit access, without needing model weights or activations. CDD achieves a verbatim recovery score of 4+/5 on 19/20 model pairs across four model families, outperforming the prior whitebox method Activation Difference Lens (ADL). This work highlights a significant privacy vulnerability in LLMs, as it shows that finetuning data can be extracted with minimal access (only logits). It also demonstrates that synthetic data generated by LLMs can leave unintended fingerprints, raising concerns about data leakage and model auditing. CDD uses a single default configuration without per-model calibration or layer selection, yet outperforms ADL which requires full weight access. An unexpected finding was that the fictional name \"Dr. Elena Rodriguez\" appeared across multiple unrelated finetuning domains, traced back to Claude Sonnet 3.6's preference in synthetic data generation.\n\n**Background**: Model diffing aims to identify differences between a base model and a finetuned version. Prior work, Activation Difference Lens (ADL), required whitebox access (weights and activations) and only recovered vague domain descriptions. Contrastive decoding is a technique that selects tokens by contrasting outputs from two models; CDD applies this idea to model diffing by contrasting logits directly.\n\n**Discussion**: The Reddit discussion includes technical questions about the method's applicability to larger models and potential defenses. Some commenters express concern about privacy implications, while others praise the cleverness of the approach and the serendipitous finding about synthetic data fingerprints.",
+    "takeaways": [
+      "背景信息: 模型差异分析旨在识别基础模型与微调版本之间的差异。先前的工作 Activation Difference Lens（ADL）需要白盒访问（权重和激活），且仅能恢复模糊的领域描述。对比解码是一种通过对比两个模型输出来选择 token 的技术；CDD 将这一思想应用于模型差异分析，直接对比 logits。",
+      "社区反馈: Reddit 讨论中包含关于该方法在更大模型上的适用性以及潜在防御措施的技术问题。一些评论者对隐私影响表示担忧，而另一些则称赞该方法的巧妙之处以及关于合成数据指纹的偶然发现。"
+    ]
+  },
+  {
+    "id": "8",
     "title": "Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://t.me/zaihuapd/42327",
     "category": "AI",
-    "publish_time": "2026-07-03T06:21:00Z",
-    "summary_zh": "Anthropic 指控阿里巴巴利用约 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互，发动大规模“蒸馏攻击”以窃取其 AI 模型能力。 此事件凸显了 AI 模型安全和知识产权盗窃日益增长的担忧，对中美科技竞争以及先进 AI 技术出口管制的执行具有重大影响。 Anthropic 声称这是针对该公司迄今已知最大规模的蒸馏攻击，涉及阿里巴巴及其 AI 实验室 Qwen。作为回应，阿里巴巴据报道下令员工卸载所有 Anthropic 产品，包括 Claude 模型和 Claude Code，禁令于 2026 年 7 月 10 日生效。\n\n**背景**: 模型蒸馏是一种让较弱模型通过学习较强模型的输出来复制其能力的技术。在未经授权的情况下对专有模型使用该技术构成知识产权盗窃。Anthropic 一直支持出口管制以维持美国在 AI 领域的领先地位，而蒸馏攻击可能通过让外国实体获取先进能力来破坏这些管制。",
-    "summary_en": "Anthropic has accused Alibaba of orchestrating a massive 'distillation attack' using approximately 25,000 fraudulent accounts to extract capabilities from its Claude AI model, with over 28.8 million interactions between April 22 and June 5, 2026. This incident highlights growing concerns over AI model security and intellectual property theft, with significant implications for US-China tech competition and the enforcement of export controls on advanced AI technologies. Anthropic claims this is the largest known distillation attack against the company, involving Alibaba and its AI lab Qwen. In response, Alibaba reportedly ordered employees to uninstall all Anthropic products, including Claude models and Claude Code, effective July 10, 2026.\n\n**Background**: Model distillation is a technique where a weaker model learns from a stronger model's outputs to replicate its capabilities. While legitimate when authorized, using it on proprietary models without permission constitutes intellectual property theft. Anthropic has consistently supported export controls to maintain America's lead in AI, and distillation attacks can undermine those controls by allowing foreign entities to acquire advanced capabilities.",
+    "publish_time": "2026-07-04T06:21:00Z",
+    "summary_zh": "Anthropic 指控阿里巴巴通过约 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 模型进行了超过 2880 万次交互，试图非法提取其能力，这是一次大规模的“蒸馏攻击”。 此事件凸显了模型蒸馏攻击对 AI 公司商业模式的日益威胁，这些公司投入巨资训练前沿模型并依赖 API 访问实现盈利。涉及 Qwen 等中国主要 AI 实验室也引发了关于知识产权盗窃和竞争间谍活动的地缘政治担忧。 Anthropic 声称这是针对该公司迄今已知最大规模的蒸馏攻击，涉及阿里巴巴及其 AI 实验室 Qwen。据称，在指控之后，阿里巴巴下令所有员工卸载 Anthropic 产品，包括 Claude Sonnet、Opus、Fable 以及 Claude Code，禁令于 2026 年 7 月 10 日生效。\n\n**背景**: 模型蒸馏是一种让较弱模型通过学习较强模型的输出来复制其能力的技术。蒸馏攻击则通过大量未经授权的 API 查询来提取模型知识，对投入巨资训练前沿模型的 AI 公司构成生存威胁。",
+    "summary_en": "Anthropic has accused Alibaba of orchestrating a massive 'distillation attack' using approximately 25,000 fraudulent accounts to interact with its Claude AI model over 28.8 million times between April 22 and June 5, 2026, in an attempt to extract its capabilities. This incident highlights the growing threat of model distillation attacks to AI companies' business models, as they invest heavily in training frontier models and rely on API access for monetization. The involvement of a major Chinese AI lab like Qwen also raises geopolitical concerns about intellectual property theft and competitive espionage. Anthropic claims this is the largest known distillation attack against the company, involving Alibaba and its AI lab Qwen. Following the accusation, Alibaba reportedly ordered all employees to uninstall Anthropic products, including Claude Sonnet, Opus, Fable, and Claude Code, effective July 10, 2026.\n\n**Background**: Model distillation is a technique where a weaker model learns from the outputs of a stronger model to replicate its capabilities. Distillation attacks involve unauthorized extraction of a model's knowledge through excessive API queries, posing an existential threat to AI companies that invest heavily in training frontier models.",
     "takeaways": [
-      "背景信息: 模型蒸馏是一种让较弱模型通过学习较强模型的输出来复制其能力的技术。在未经授权的情况下对专有模型使用该技术构成知识产权盗窃。Anthropic 一直支持出口管制以维持美国在 AI 领域的领先地位，而蒸馏攻击可能通过让外国实体获取先进能力来破坏这些管制。"
+      "背景信息: 模型蒸馏是一种让较弱模型通过学习较强模型的输出来复制其能力的技术。蒸馏攻击则通过大量未经授权的 API 查询来提取模型知识，对投入巨资训练前沿模型的 AI 公司构成生存威胁。"
     ]
   },
   {
-    "id": "5",
-    "title": "华为发布搭载昇腾 950PR 的 Atlas 350 加速卡",
+    "id": "9",
+    "title": "华为发布 Atlas 350 加速卡，搭载昇腾 950PR，算力达 H20 的 2.87 倍",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://t.me/zaihuapd/42329",
     "category": "AI",
-    "publish_time": "2026-07-03T08:35:00Z",
-    "summary_zh": "在华为中国合作伙伴大会 2026 上，华为正式发布并上市了搭载全新昇腾 950PR 处理器的 AI 训练推理加速卡 Atlas 350，声称其算力达到英伟达 H20 的 2.87 倍，并支持 FP4 精度。 这一发布标志着华为在 AI 加速器市场的强势进军，以国产芯片提供更高性能和更低成本挑战英伟达的主导地位，可能重塑中国的 AI 硬件格局。 Atlas 350 配备 112 GB HBM 内存，支持 FP4 低精度推理，单卡可加载 70B 参数模型，显著降低推理延迟和投资成本。\n\n**背景**: 华为昇腾 950PR 芯片基于 SIMD 架构，算力达 1 PFLOPS（FP8）/ 2 PFLOPS（FP4），支持多种数据格式。其定价为 7 万元人民币，约为英伟达 H200 在中国市场报价的三分之一，性能达到其近 80%。该芯片是华为 AI 芯片路线图的一部分，后续还有 950DT、960 等型号。",
-    "summary_en": "At the Huawei China Partner Conference 2026, Huawei officially launched and released the Atlas 350 AI training and inference accelerator card, powered by the new ShengTeng 950PR processor, claiming 2.87 times the compute power of NVIDIA's H20 and supporting FP4 precision. This announcement signals Huawei's aggressive push into the AI accelerator market, challenging NVIDIA's dominance with a domestically produced chip that offers higher performance and lower cost, which could reshape the AI hardware landscape in China. The Atlas 350 features 112 GB of HBM memory, supports FP4 low-precision inference, and can load a 70B-parameter model on a single card, significantly reducing inference latency and investment costs.\n\n**Background**: Huawei's ShengTeng 950PR chip, based on a SIMD architecture, delivers 1 PFLOPS (FP8) / 2 PFLOPS (FP4) and supports multiple data formats. It is priced at 70,000 RMB, about one-third the cost of NVIDIA's H200 in China, while achieving nearly 80% of its performance. This chip is part of Huawei's broader AI chip roadmap, which includes future models like the 950DT and 960.",
+    "publish_time": "2026-07-04T08:35:00Z",
+    "summary_zh": "在 2026 年华为中国合作伙伴大会上，华为正式发布并上市了搭载全新昇腾 950PR 处理器的 Atlas 350 AI 加速卡，声称其单卡算力达到英伟达 H20 的 2.87 倍，并支持 FP4 低精度推理。 这意义重大，因为它为中国市场提供了英伟达受限 H20 芯片的高性能国产替代方案，可能减少对美进口 AI 基础设施的依赖。FP4 支持和 112 GB 大容量 HBM 使其在大语言模型推理方面具有竞争力。 Atlas 350 是国内首款支持 FP4 精度的加速卡，其 112 GB HBM 可单卡加载 70B 参数模型。华为声称在向量算力、互联带宽和自研 HBM 方面较前代有显著提升。\n\n**背景**: 英伟达 H20 是为中国市场设计的 GPU，因美国出口限制而性能降低，比 H100/H200 更慢。FP4 是一种低精度浮点格式，通过减少内存带宽和计算需求来加速 AI 推理，但可能影响精度。华为昇腾系列是中国推动国产 AI 芯片独立的关键力量。",
+    "summary_en": "At the 2026 Huawei China Partners Conference, Huawei announced and launched the Atlas 350 AI accelerator card powered by the new Ascend 950PR processor, claiming 2.87 times the compute of Nvidia's H20 and support for FP4 low-precision inference. This is significant because it provides a high-performance domestic alternative to Nvidia's restricted H20 chip in China, potentially reducing reliance on U.S. imports for AI infrastructure. The FP4 support and large HBM capacity (112 GB) make it competitive for large language model inference. The Atlas 350 is the first domestic accelerator card to support FP4 precision, and its 112 GB HBM allows single-card loading of 70B-parameter models. Huawei claims improvements in vector compute, interconnect bandwidth, and self-developed HBM over previous generations.\n\n**Background**: The Nvidia H20 is a GPU designed for the Chinese market with reduced performance due to U.S. export restrictions, making it slower than the H100/H200. FP4 is a low-precision floating-point format that can accelerate AI inference by reducing memory bandwidth and compute requirements, though it may impact accuracy. Huawei's Ascend series is a key player in China's push for domestic AI chip independence.",
     "takeaways": [
-      "背景信息: 华为昇腾 950PR 芯片基于 SIMD 架构，算力达 1 PFLOPS（FP8）/ 2 PFLOPS（FP4），支持多种数据格式。其定价为 7 万元人民币，约为英伟达 H200 在中国市场报价的三分之一，性能达到其近 80%。该芯片是华为 AI 芯片路线图的一部分，后续还有 950DT、960 等型号。"
+      "背景信息: 英伟达 H20 是为中国市场设计的 GPU，因美国出口限制而性能降低，比 H100/H200 更慢。FP4 是一种低精度浮点格式，通过减少内存带宽和计算需求来加速 AI 推理，但可能影响精度。华为昇腾系列是中国推动国产 AI 芯片独立的关键力量。"
     ]
   },
   {
-    "id": "6",
+    "id": "10",
     "title": "华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.bilibili.com/video/BV1F7T46wEyT",
     "category": "AI",
-    "publish_time": "2026-07-03T13:27:00Z",
-    "summary_zh": "极客湾评测显示，搭载麒麟 9030 芯片的华为 Mate 80 Pro 系列，凭借原生鸿蒙优化，游戏能效超越了骁龙 8 Gen3。 这表明软硬件协同优化可以克服理论硬件劣势，可能重塑移动芯片市场的竞争格局。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿。在《原神》最高画质 60 帧下，Mate 80 Pro Max 整机功耗仅 4.9W，能效优于骁龙 8 Gen3。\n\n**背景**: 华为麒麟芯片面临美国制裁，限制了其获取先进制程的能力。鸿蒙是华为专为多设备无缝协同设计的操作系统。该评测凸显了原生应用优化如何弥补硬件局限。",
-    "summary_en": "Geekerwan's review shows that the Huawei Mate 80 Pro series, powered by the Kirin 9030 chip, achieves better gaming energy efficiency than the Snapdragon 8 Gen3 due to native HarmonyOS optimizations. This demonstrates that software-hardware co-optimization can overcome theoretical hardware disadvantages, potentially reshaping competition in the mobile chip market. The Kirin 9030 Pro features a 9-core, 14-thread CPU and a 6-core Maliang 935 GPU with ~15 billion transistors. In Genshin Impact at max settings 60fps, the Mate 80 Pro Max consumes only 4.9W, outperforming Snapdragon 8 Gen3 in efficiency.\n\n**Background**: Huawei's Kirin chips have faced US sanctions, limiting their access to advanced manufacturing. HarmonyOS is Huawei's proprietary operating system designed for seamless multi-device integration. This review highlights how native app optimizations can compensate for hardware limitations.",
+    "publish_time": "2026-07-04T13:27:00Z",
+    "summary_zh": "极客湾评测显示，搭载麒麟 9030 和 9030 Pro 芯片的华为 Mate 80 Pro 系列，凭借原生鸿蒙优化，游戏能效超越骁龙 8 Gen3。在《原神》极高画质 60 帧下，Mate 80 Pro Max 整机功耗仅 4.9W，能效优于骁龙 8 Gen3。 这表明软硬件协同优化可以克服理论性能劣势，可能重塑移动 SoC 竞争格局。同时凸显华为在自研芯片和鸿蒙生态方面的进展，可能影响消费者选择和行业趋势。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿。其 CPU 多核能效介于骁龙 8 Gen2 和 8 Gen3 之间，但实际游戏性能得益于鸿蒙原生应用优化和智能调度。\n\n**背景**: 华为海思麒麟芯片自 2020 年起面临美国制裁，限制了先进制程获取。麒麟 9030 采用 5nm 工艺制造，标志着国内芯片生产的持续进步。鸿蒙是华为专为无缝多设备协同设计的操作系统，原生应用经过优化以充分利用软硬件整合。",
+    "summary_en": "Geekerwan's review reveals that the Huawei Mate 80 Pro series, powered by the Kirin 9030 and 9030 Pro chips, achieves better gaming efficiency than the Snapdragon 8 Gen3, thanks to native HarmonyOS optimizations. In Genshin Impact at max settings 60fps, the Mate 80 Pro Max consumes only 4.9W, outperforming the Snapdragon 8 Gen3 in energy efficiency. This demonstrates that software-hardware co-optimization can overcome theoretical performance disadvantages, potentially reshaping the mobile SoC competitive landscape. It also highlights Huawei's progress in self-developed chips and HarmonyOS ecosystem, which may influence consumer choices and industry trends. The Kirin 9030 Pro features a 9-core, 14-thread CPU and a 6-core Maleoon 935 GPU with approximately 15 billion transistors. Its CPU multi-core efficiency lies between Snapdragon 8 Gen2 and 8 Gen3, but real-world gaming performance benefits from HarmonyOS native app optimizations and intelligent scheduling.\n\n**Background**: Huawei's HiSilicon Kirin chips have faced US sanctions since 2020, limiting access to advanced fabrication. The Kirin 9030 is manufactured on a 5nm process, marking continued progress in domestic chip production. HarmonyOS is Huawei's proprietary operating system designed for seamless multi-device collaboration, and native apps are optimized to leverage the hardware-software integration.",
     "takeaways": [
-      "背景信息: 华为麒麟芯片面临美国制裁，限制了其获取先进制程的能力。鸿蒙是华为专为多设备无缝协同设计的操作系统。该评测凸显了原生应用优化如何弥补硬件局限。"
+      "背景信息: 华为海思麒麟芯片自 2020 年起面临美国制裁，限制了先进制程获取。麒麟 9030 采用 5nm 工艺制造，标志着国内芯片生产的持续进步。鸿蒙是华为专为无缝多设备协同设计的操作系统，原生应用经过优化以充分利用软硬件整合。"
     ]
   },
   {
-    "id": "7",
-    "title": "NASA 发射救援卫星拯救老化雨燕望远镜",
+    "id": "11",
+    "title": "NASA 发射救援卫星拯救老化太空望远镜",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a",
     "category": "AI",
-    "publish_time": "2026-07-03T15:43:00Z",
-    "summary_zh": "7 月 3 日，NASA 发射了名为 LINK 的私人救援卫星，将与老化的雨燕空间望远镜会合，并将其轨道抬升约 240 公里，防止其最早在今年 10 月坠入大气层。 这次任务标志着私人航天器首次尝试捕获并服务美国政府的无人卫星，可能开启在轨服务和太空碎片减缓的新时代。 LINK 航天器将使用机械臂抓住雨燕望远镜，然后通过推进器缓慢抬升其轨道。如果成功，雨燕最快可于 9 月恢复观测。\n\n**背景**: 雨燕空间望远镜于 2004 年发射，已研究伽马射线暴和其他宇宙现象超过 20 年。由于太阳活动增强，其轨道衰减速度快于预期，威胁到任务寿命。在轨服务——即一艘航天器为另一艘加油或抬升轨道——是一个新兴领域，旨在延长卫星寿命并减少太空碎片。",
-    "summary_en": "On July 3, NASA launched the LINK spacecraft, a private rescue satellite, to rendezvous with the aging Swift space telescope and boost its orbit by about 240 kilometers, preventing its imminent atmospheric reentry as early as October. This mission marks the first time a private spacecraft will attempt to capture and service an uncrewed U.S. government satellite, potentially opening a new era of on-orbit servicing and space debris mitigation. The LINK spacecraft will use a robotic arm to grab the Swift telescope and then slowly raise its orbit using thrusters. If successful, Swift could resume observations as early as September.\n\n**Background**: The Swift space telescope, launched in 2004, has been studying gamma-ray bursts and other cosmic phenomena for over 20 years. Due to increased solar activity, its orbit has been decaying faster than expected, threatening its mission. On-orbit servicing, where one spacecraft refuels or reboosts another, is a growing field aimed at extending satellite lifetimes and reducing space debris.",
+    "publish_time": "2026-07-04T15:43:00Z",
+    "summary_zh": "7 月 3 日，NASA 发射了 LINK 航天器，它将尝试捕获老化的“雨燕”空间望远镜，并将其轨道抬升约 240 公里，以防止其在大气层中烧毁。 此次任务标志着私人航天器首次尝试捕获美国政府卫星，为未来的卫星维修和太空碎片减缓工作开创了先例。 LINK 航天器将使用机械臂抓住望远镜，然后通过推进器缓慢抬升其轨道。如果成功，“雨燕”最快可于 9 月恢复观测。\n\n**背景**: 尼尔·格雷尔斯“雨燕”天文台于 2004 年发射，用于研究伽马射线暴及其他宇宙现象。由于太阳活动加剧，其轨道衰减速度加快，若不干预，最早可能在 2025 年 10 月再入地球大气层。",
+    "summary_en": "On July 3, NASA launched the LINK spacecraft, which will attempt to capture the aging Swift space telescope and boost its orbit by about 240 kilometers to prevent it from burning up in the atmosphere. This mission marks the first time a private spacecraft will attempt to capture a U.S. government satellite, setting a precedent for future satellite servicing and space debris mitigation efforts. The LINK spacecraft will use a robotic arm to grab the telescope and then slowly raise its orbit using thrusters. If successful, Swift could resume observations as early as September.\n\n**Background**: The Neil Gehrels Swift Observatory, launched in 2004, studies gamma-ray bursts and other cosmic phenomena. Its orbit has been decaying faster due to increased solar activity, and without intervention, it could re-enter Earth's atmosphere as early as October 2025.",
     "takeaways": [
-      "背景信息: 雨燕空间望远镜于 2004 年发射，已研究伽马射线暴和其他宇宙现象超过 20 年。由于太阳活动增强，其轨道衰减速度快于预期，威胁到任务寿命。在轨服务——即一艘航天器为另一艘加油或抬升轨道——是一个新兴领域，旨在延长卫星寿命并减少太空碎片。"
+      "背景信息: 尼尔·格雷尔斯“雨燕”天文台于 2004 年发射，用于研究伽马射线暴及其他宇宙现象。由于太阳活动加剧，其轨道衰减速度加快，若不干预，最早可能在 2025 年 10 月再入地球大气层。"
     ]
   },
   {
-    "id": "8",
-    "title": "腾讯阿图因 AI 在 CyberGym 测试中击败 Mythos",
+    "id": "12",
+    "title": "腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg",
     "category": "AI",
-    "publish_time": "2026-07-03T16:12:00Z",
-    "summary_zh": "腾讯玄武实验室的阿图因 AI 在 CyberGym 网络安全基准测试中获得 84.0%的得分，超过 Anthropic 的 Claude Mythos Preview，且消耗预算不到 Mythos 的 0.1%。它还在 curl、OpenSSL、Python cryptography 等项目中发现了多个 Mythos 未检出的高危漏洞。 这表明开源、低成本的 AI 模型在漏洞检测方面可以超越专有模型，可能推动高级网络安全工具的普及。同时，它也凸显了 AI 在广泛使用的开源软件中发现关键漏洞方面的作用日益增强。 阿图因 AI 基于开源模型 GLM-5.1 构建，可本地部署。它在伯克利 BVI 真实世界漏洞榜单中严重程度排名第 1，总数排名第 5。\n\n**背景**: CyberGym 是由加州大学伯克利分校主导的网络安全基准测试，用于评估 AI 系统的漏洞检测能力。Mythos 是 Anthropic 在“玻璃翼计划”下开发的网络安全 AI 系统。这一对比凸显了开源模型相对于专有模型的效率优势。",
-    "summary_en": "Tencent Xuanwu Lab's Atuin AI scored 84.0% on the CyberGym cybersecurity benchmark, surpassing Anthropic's Claude Mythos Preview, while costing less than 0.1% of Mythos's budget. It also discovered multiple high-severity vulnerabilities in projects like curl, OpenSSL, and Python cryptography that Mythos missed. This demonstrates that open-source, cost-effective AI models can outperform proprietary ones in vulnerability detection, potentially democratizing advanced cybersecurity tools. It also highlights the growing role of AI in finding critical bugs in widely-used open-source software. Atuin AI is built on the open-source GLM-5.1 model and can be deployed locally. It achieved a severity rank of #1 on the Berkeley BVI real-world vulnerability list and #5 in total vulnerabilities found.\n\n**Background**: CyberGym is a cybersecurity benchmark led by UC Berkeley that evaluates AI systems on vulnerability detection tasks. Mythos is Anthropic's AI system under the 'Glass Wing Project' for cybersecurity. The comparison highlights the efficiency of open-source models versus proprietary ones.",
+    "publish_time": "2026-07-04T16:12:00Z",
+    "summary_zh": "腾讯玄武实验室的阿图因 AI 在加州大学伯克利分校主导的 CyberGym 网络安全基准测试中获得 84.0%的得分，超过了 Anthropic 的 Claude Mythos Preview。该工具基于开源模型 GLM-5.1 构建，消耗的预算不到 Mythos“玻璃翼计划”的 0.1%。 这表明一个可本地部署的开源 AI 在漏洞检测方面能以极低的成本超越前沿模型，可能使高级网络安全能力更加普及。同时，这也凸显了中国 AI 实验室在专业领域日益增长的竞争力。 阿图因 AI 在 curl、OpenSSL、Python cryptography 等项目中发现了多个 Mythos 未检出的高危逻辑漏洞，评分最高达 9.3。在伯克利 BVI 真实世界漏洞榜单中，阿图因 AI 的严重漏洞严重程度排名第 1，总数排名第 5。\n\n**背景**: CyberGym 是一个评估 AI 代理发现和利用真实软件漏洞能力的基准测试。Claude Mythos Preview 是 Anthropic 最先进的网络安全模型，但由于安全担忧尚未公开发布。GLM-5.1 是智谱 AI 开发的开源模型，专为长周期代理任务设计。",
+    "summary_en": "Tencent Xuanwu Lab's Atuin AI achieved a score of 84.0% on the UC Berkeley-led CyberGym cybersecurity benchmark, surpassing Anthropic's Claude Mythos Preview. Atuin AI is built on the open-source GLM-5.1 model and consumed less than 0.1% of Mythos's Project Glasswing budget. This demonstrates that a locally deployable, open-source AI can outperform a frontier model in vulnerability detection at a fraction of the cost, potentially democratizing advanced cybersecurity capabilities. It also highlights the growing competitiveness of Chinese AI labs in specialized domains. Atuin AI discovered multiple high-severity logic vulnerabilities in projects like curl, OpenSSL, and Python cryptography that Mythos missed, with severity scores up to 9.3. On the Berkeley BVI real-world vulnerability list, Atuin AI ranked 1st in severity and 5th in total count.\n\n**Background**: CyberGym is a benchmark for evaluating AI agents' ability to discover and exploit real-world software vulnerabilities. Claude Mythos Preview is Anthropic's most advanced cybersecurity model, but it remains unreleased to the public due to safety concerns. GLM-5.1 is an open-source model from Z.AI designed for long-horizon agentic tasks.",
     "takeaways": [
-      "背景信息: CyberGym 是由加州大学伯克利分校主导的网络安全基准测试，用于评估 AI 系统的漏洞检测能力。Mythos 是 Anthropic 在“玻璃翼计划”下开发的网络安全 AI 系统。这一对比凸显了开源模型相对于专有模型的效率优势。"
+      "背景信息: CyberGym 是一个评估 AI 代理发现和利用真实软件漏洞能力的基准测试。Claude Mythos Preview 是 Anthropic 最先进的网络安全模型，但由于安全担忧尚未公开发布。GLM-5.1 是智谱 AI 开发的开源模型，专为长周期代理任务设计。"
     ]
   }
 ]
