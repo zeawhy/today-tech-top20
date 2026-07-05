@@ -1,177 +1,145 @@
 [
   {
     "id": "1",
-    "title": "提示注入泄露 YouTube 创作者的私密视频",
+    "title": "F-Droid 将 Google ADV 定性为恶意软件，已预装于 40 亿设备",
     "importance_score": 9.0,
-    "source": "Hackernews",
-    "url": "https://javoriuski.com/post/youtube",
+    "source": "Telegram",
+    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
     "category": "AI",
-    "publish_time": "2026-07-05T16:45:00Z",
-    "summary_zh": "一名安全研究人员发现，YouTube 的 AI 评论摘要功能存在提示注入漏洞，攻击者可通过构造恶意评论泄露私密视频的标题和元数据。 该漏洞暴露了 AI 系统处理用户输入时的关键缺陷，可能危及创作者隐私并削弱对 YouTube 平台安全的信任。 攻击需要创作者打开 YouTube Studio 的评论标签页并点击建议的 AI 提示，从而触发注入并在响应中返回攻击者控制的内容。\n\n**背景**: 提示注入是一种网络安全利用手段，通过恶意输入使 AI 模型产生非预期行为。YouTube 的 AI 评论系统使用大语言模型来总结评论，但未能区分用户评论和系统指令，从而使得攻击成为可能。\n\n**社区讨论**: 社区普遍验证了该漏洞的严重性，一位前谷歌内部人士解释了 YouTube 可能处理缓慢的原因。一些用户尝试复现攻击但发现仅对未公开视频无效，而其他人则称赞文章清晰且不煽情。",
-    "summary_en": "A security researcher discovered that YouTube's AI comment summarization feature is vulnerable to prompt injection, allowing attackers to leak private video titles and metadata by crafting malicious comments. This vulnerability exposes a critical flaw in how AI systems handle user input, potentially compromising creator privacy and undermining trust in YouTube's platform security. The attack requires the creator to open YouTube Studio's comment tab and click a suggested AI prompt, which triggers the injection and returns attacker-controlled content in the response.\n\n**Background**: Prompt injection is a cybersecurity exploit where malicious inputs cause AI models to behave unintendedly. YouTube's AI comment system uses large language models to summarize comments, but fails to distinguish between user comments and system instructions, enabling the attack.\n\n**Discussion**: The community largely validated the severity of the bug, with an ex-Google insider explaining why YouTube might handle it slowly. Some users attempted to reproduce the attack but found it didn't work with only unlisted videos, while others praised the article's clarity and lack of sensationalism.",
+    "publish_time": "2026-07-05T00:41:00Z",
+    "summary_zh": "F-Droid 正式将 Google 的 Android 开发者验证（ADV）定性为恶意软件，称其是一个拥有 root 权限且无法移除的系统进程，已预装在约 40 亿台安卓设备上。自 2026 年 9 月 30 日起，ADV 将在巴西、印尼、新加坡和泰国首批激活，阻止用户安装未经 Google 批准的软件。 此举威胁到安卓生态系统的开放性和用户自由，可能使 Google 能够阻止任何未经批准的软件，包括广告拦截器和自由开源软件。它已引发 EFF、FSF、ACLU 等数字权利组织的广泛反对，并可能为平台控制开创先例。 F-Droid 指出，Google 在开发者服务条款中刻意不对“恶意软件”下定义，从而可任意将不喜欢的软件归类。尽管已有数十万人联署反对、超过 70 个组织签署公开信谴责，Google 仍在推进全球推广，计划于 2027 年及以后实施。\n\n**背景**: F-Droid 是一个免费开源的安卓应用商店，仅托管自由开源软件。Google Play Protect 是内置的安全服务，用于扫描应用。ADV 是 Google 引入的新系统进程，作为额外的安全层，但批评者认为它赋予 Google 对用户安装软件的过度控制，损害了安卓的开放性。",
+    "summary_en": "F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, stating it is a system process with root privileges that cannot be removed and is pre-installed on approximately 4 billion Android devices. Starting September 30, 2026, ADV will be activated in Brazil, Indonesia, Singapore, and Thailand, blocking users from installing software not approved by Google. This move threatens the openness of the Android ecosystem and user freedom, potentially allowing Google to block any unapproved software, including ad blockers and FOSS apps. It has sparked widespread opposition from digital rights organizations like EFF, FSF, and ACLU, and could set a precedent for platform control. F-Droid notes that Google deliberately avoids defining 'malware' in its developer terms, allowing it to arbitrarily classify disliked software. Despite a petition with hundreds of thousands of signatures and an open letter signed by over 70 organizations, Google is proceeding with the global rollout planned for 2027 and beyond.\n\n**Background**: F-Droid is a free and open-source app store for Android that hosts only FOSS applications. Google Play Protect is a built-in security service that scans apps. ADV is a new system process introduced by Google as an extra security layer, but critics argue it gives Google excessive control over what software users can install, undermining Android's open nature.",
     "takeaways": [
-      "背景信息: 提示注入是一种网络安全利用手段，通过恶意输入使 AI 模型产生非预期行为。YouTube 的 AI 评论系统使用大语言模型来总结评论，但未能区分用户评论和系统指令，从而使得攻击成为可能。",
-      "社区反馈: 社区普遍验证了该漏洞的严重性，一位前谷歌内部人士解释了 YouTube 可能处理缓慢的原因。一些用户尝试复现攻击但发现仅对未公开视频无效，而其他人则称赞文章清晰且不煽情。"
+      "背景信息: F-Droid 是一个免费开源的安卓应用商店，仅托管自由开源软件。Google Play Protect 是内置的安全服务，用于扫描应用。ADV 是 Google 引入的新系统进程，作为额外的安全层，但批评者认为它赋予 Google 对用户安装软件的过度控制，损害了安卓的开放性。"
     ]
   },
   {
     "id": "2",
-    "title": "GPT-5.5 Codex 出现推理令牌在 516 处聚集的 bug",
+    "title": "Shadcn/UI 默认组件从 Radix 切换到 Base UI",
+    "importance_score": 8.0,
+    "source": "<li><a href=\"https://github.com/mui/base-ui\">github - mui/base-ui: unstyled ui components for building accessible web apps and design systems. from the creators of radix, floating ui, and material ui.",
+    "url": "https://ui.shadcn.com/docs/changelog",
+    "category": "AI",
+    "publish_time": "2026-07-05T12:00:00Z",
+    "summary_zh": "Shadcn/UI 已将其默认组件库从 Radix UI 切换为 Base UI，后者是由 Radix、Floating UI 和 Material UI 的创建者开发的新无样式组件库。 这一转变影响了数千个使用 Shadcn/UI 的项目，并引发了关于迁移策略（包括使用 codemods 与 LLM）以及复制粘贴方法可维护性的讨论。 Base UI 是一个无样式、无头组件库，提供对样式和可访问性的完全控制，与 Radix 类似但 API 不同。这一变化反映了 Shadcn/UI 的持续演进和社区反馈。\n\n**背景**: Shadcn/UI 是一个流行的可复用 React 组件集合，基于 Radix UI 和 Tailwind CSS 构建，通过 CLI 分发以实现完全代码所有权。Radix UI 是一个专注于可访问性的低级无样式组件库。Base UI 来自同一团队，以全新方法提供类似理念。\n\n**社区讨论**: 社区评论表达了复杂情绪：一些人认为复制粘贴方法带来了升级挑战，而另一些人则欢迎摆脱过度设计的解决方案。关于使用 LLM 而非传统 codemods 进行迁移也存在争论。",
+    "summary_en": "Shadcn/UI has changed its default component library from Radix UI to Base UI, a new unstyled component library from the creators of Radix, Floating UI, and Material UI. This shift affects thousands of projects using Shadcn/UI and sparks debate about migration strategies, including the use of codemods versus LLMs, and the maintainability of the copy-paste approach. Base UI is an unstyled, headless component library that provides complete control over styling and accessibility, similar to Radix but with a different API. The change reflects Shadcn/UI's ongoing evolution and community feedback.\n\n**Background**: Shadcn/UI is a popular collection of reusable React components built on Radix UI and Tailwind CSS, distributed via CLI for full code ownership. Radix UI is a low-level, unstyled component library focused on accessibility. Base UI, from the same team, offers a similar philosophy with a fresh approach.\n\n**Discussion**: Community comments express mixed feelings: some find the copy-paste approach creates upgrade challenges, while others welcome the move away from over-engineered solutions. There is also debate about using LLMs for migration instead of traditional codemods.",
+    "takeaways": [
+      "背景信息: Shadcn/UI 是一个流行的可复用 React 组件集合，基于 Radix UI 和 Tailwind CSS 构建，通过 CLI 分发以实现完全代码所有权。Radix UI 是一个专注于可访问性的低级无样式组件库。Base UI 来自同一团队，以全新方法提供类似理念。",
+      "社区反馈: 社区评论表达了复杂情绪：一些人认为复制粘贴方法带来了升级挑战，而另一些人则欢迎摆脱过度设计的解决方案。关于使用 LLM 而非传统 codemods 进行迁移也存在争论。"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "GPT-5.5 Codex 516 Token 推理聚类导致性能下降",
     "importance_score": 8.0,
     "source": "Hackernews",
     "url": "https://github.com/openai/codex/issues/30364",
     "category": "AI",
     "publish_time": "2026-07-05T21:51:00Z",
-    "summary_zh": "OpenAI 的 GPT-5.5 Codex 中出现了一个可复现的 bug，导致推理令牌精确地在 516 个令牌处聚集，从而在复杂任务上产生错误结果。该问题于 2026 年 6 月 27 日在 GitHub issue #30364 中被报告，来自 390,195 条令牌计数记录的证据显示在 516、1034 和 1552 个令牌处出现峰值。 这个 bug 降低了依赖 Codex 进行编码任务的许多用户的性能，引发不满，并促使一些人转向 Claude 等替代品。它还引发了对 AI 模型静默服务器端更改以及基于云的 AI 服务可靠性的担忧。 这种聚集现象似乎是模型特有的，并且与整体推理令牌强度降低同时发生，这可能解释了复杂任务上的性能下降。作者指出，这些数据并不能证明隐藏的思维链截断，因此应将其视为遥测异常，而非确认的模型缺陷。\n\n**背景**: Codex 是 OpenAI 的 AI 编码助手，使用大型语言模型帮助开发者编写代码。推理令牌是模型在生成最终答案之前用于思考问题的内部令牌。推理令牌在固定边界处聚集表明模型可能过早停止其推理过程，从而导致错误的输出。\n\n**社区讨论**: 社区成员报告几乎每天都会经历质量下降的阶梯式跳跃，一些人因沮丧而转向 Claude。其他人指出这与过去 Claude Code 的性能回归相似，并赞赏 Codex 是开源的，使得此类问题能够被公开发现和解决。",
-    "summary_en": "A reproducible bug in OpenAI's GPT-5.5 Codex causes reasoning token clustering at exactly 516 tokens, leading to incorrect results on complex tasks. The issue was reported on GitHub issue #30364 on June 27, 2026, with evidence from 390,195 token-count records showing spikes at 516, 1034, and 1552 tokens. This bug degrades performance for many users relying on Codex for coding tasks, causing frustration and prompting some to switch to alternatives like Claude. It also raises concerns about silent server-side changes in AI models and the reliability of cloud-based AI services. The clustering appears model-specific and coincides with lower overall reasoning-token intensity, which may explain degraded performance on complex tasks. The author notes the data does not prove hidden chain-of-thought truncation, so it should be treated as a telemetry anomaly rather than a confirmed model defect.\n\n**Background**: Codex is OpenAI's AI-powered coding assistant that uses large language models to help developers write code. Reasoning tokens are internal tokens used by the model to think through problems before generating a final answer. A clustering of reasoning tokens at fixed boundaries suggests the model may be prematurely stopping its reasoning process, leading to incorrect outputs.\n\n**Discussion**: Community members report experiencing step jumps in quality degradation on an almost daily basis, with some switching to Claude due to frustration. Others note similarities to a past Claude Code performance regression and express appreciation that Codex is open source, allowing such issues to be surfaced and addressed publicly.",
+    "summary_zh": "用户报告称，GPT-5.5 Codex 的推理 token 聚类在恰好 516 个 token 时会导致性能下降和错误答案，社区提供了可复现该问题的脚本。 该 bug 影响广泛使用的 AI 编码工具，可能影响依赖 Codex 进行代码生成和推理任务的众多开发者，并引发对静默服务端更改的担忧。 聚类发生在 516 的倍数 token 处（516、1034、1552），当模型恰好停在 516 个 token 时，通常返回错误结果；使用更多 token（6000-8000）则能得到正确答案。\n\n**背景**: GPT-5.5 Codex 是 OpenAI 于 2026 年发布的最新专注编码的模型，是 GPT-5.3 Codex 的升级版。推理 token 是模型在生成最终答案前用于思考问题的内部 token。Token 聚类指模型不成比例地停在特定 token 数量，表明自适应思考机制存在 bug。\n\n**社区讨论**: 社区情绪普遍负面，用户报告每日质量下降并转向 Claude 等替代品。有人将其与 4 月 Claude Code 的类似回归问题相提并论，也有人建议使用本地模型以避免服务端更改。",
+    "summary_en": "Users report that GPT-5.5 Codex's reasoning token clustering at exactly 516 tokens causes degraded performance and incorrect answers, with community-provided scripts to reproduce the issue. This bug affects a widely-used AI coding tool, potentially impacting many developers who rely on Codex for code generation and reasoning tasks, and highlights concerns about silent server-side changes. The clustering occurs at multiples of 516 tokens (516, 1034, 1552), and when the model stops reasoning at exactly 516 tokens, it often returns wrong results; using more tokens (6000-8000) yields correct answers.\n\n**Background**: GPT-5.5 Codex is OpenAI's latest coding-focused model, released in 2026 as an upgrade to GPT-5.3 Codex. Reasoning tokens are internal tokens the model uses to think through problems before generating a final answer. Token clustering refers to the model disproportionately stopping at specific token counts, suggesting a bug in the adaptive thinking mechanism.\n\n**Discussion**: Community sentiment is largely negative, with users reporting daily quality drops and switching to alternatives like Claude. Some draw parallels to a similar Claude Code regression in April, and others suggest using local models to avoid server-side changes.",
     "takeaways": [
-      "背景信息: Codex 是 OpenAI 的 AI 编码助手，使用大型语言模型帮助开发者编写代码。推理令牌是模型在生成最终答案之前用于思考问题的内部令牌。推理令牌在固定边界处聚集表明模型可能过早停止其推理过程，从而导致错误的输出。",
-      "社区反馈: 社区成员报告几乎每天都会经历质量下降的阶梯式跳跃，一些人因沮丧而转向 Claude。其他人指出这与过去 Claude Code 的性能回归相似，并赞赏 Codex 是开源的，使得此类问题能够被公开发现和解决。"
-    ]
-  },
-  {
-    "id": "3",
-    "title": "安娜档案悬赏 20 万美元获取谷歌图书扫描件",
-    "importance_score": 8.0,
-    "source": "Hackernews",
-    "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
-    "category": "AI",
-    "publish_time": "2026-07-05T16:51:00Z",
-    "summary_zh": "影子图书馆元搜索引擎安娜档案宣布悬赏 20 万美元，以获取谷歌图书的所有扫描件，旨在保存知识并提供开放获取，特别是为服务不足的地区。 这笔悬赏可能大幅扩大数字化图书的可获取性，挑战当前的版权和访问障碍，并有可能创建历史上最大的开放数字图书馆。 悬赏发布在安娜档案的工作项页面上，该项目旨在编录所有现存书籍。扫描件将通过该档案的搜索引擎免费提供。\n\n**背景**: 谷歌图书自 2002 年开始扫描大学图书馆的数百万册图书，但由于版权问题，全文访问通常受到限制。安娜档案聚合了来自 Z-Library、Sci-Hub 和 Library Genesis 等影子图书馆的记录，并因侵犯版权面临法律挑战。\n\n**社区讨论**: 社区评论对安娜档案在提供稀有和绝版书籍访问方面的作用表示感谢，用户分享了找到原本无法获取的资源的个人故事。一些人讨论了针对其他数据（如互联网档案）悬赏的可能性，并对项目的法律地位提出质疑。",
-    "summary_en": "Anna's Archive, a shadow library metasearch engine, has announced a $200,000 bounty for obtaining all book scans from Google Books, aiming to preserve and provide open access to knowledge, especially for underserved regions. This bounty could significantly expand the availability of digitized books, challenging the current copyright and access barriers, and potentially creating the largest open digital library in history. The bounty is posted on Anna's Archive's work items page, and the project aims to catalog all books in existence. The scans would be made freely available through the archive's search engine.\n\n**Background**: Google Books began scanning millions of books from university libraries in 2002, but access to full texts is often restricted due to copyright. Anna's Archive aggregates records from shadow libraries like Z-Library, Sci-Hub, and Library Genesis, and has faced legal challenges for copyright infringement.\n\n**Discussion**: Community comments express gratitude for Anna's Archive's role in providing access to rare and out-of-print books, with users sharing personal stories of finding otherwise unavailable resources. Some discuss the potential for bounties on other data, like internet archives, and question the project's legal standing.",
-    "takeaways": [
-      "背景信息: 谷歌图书自 2002 年开始扫描大学图书馆的数百万册图书，但由于版权问题，全文访问通常受到限制。安娜档案聚合了来自 Z-Library、Sci-Hub 和 Library Genesis 等影子图书馆的记录，并因侵犯版权面临法律挑战。",
-      "社区反馈: 社区评论对安娜档案在提供稀有和绝版书籍访问方面的作用表示感谢，用户分享了找到原本无法获取的资源的个人故事。一些人讨论了针对其他数据（如互联网档案）悬赏的可能性，并对项目的法律地位提出质疑。"
+      "背景信息: GPT-5.5 Codex 是 OpenAI 于 2026 年发布的最新专注编码的模型，是 GPT-5.3 Codex 的升级版。推理 token 是模型在生成最终答案前用于思考问题的内部 token。Token 聚类指模型不成比例地停在特定 token 数量，表明自适应思考机制存在 bug。",
+      "社区反馈: 社区情绪普遍负面，用户报告每日质量下降并转向 Claude 等替代品。有人将其与 4 月 Claude Code 的类似回归问题相提并论，也有人建议使用本地模型以避免服务端更改。"
     ]
   },
   {
     "id": "4",
-    "title": "Zig 将包管理功能从编译器移至构建系统",
+    "title": "sqlite-utils 4.0rc2：Claude Fable 发现关键漏洞",
     "importance_score": 8.0,
-    "source": "<li><a href=\"https://github.com/ziglang/zig/issues/20630\">move `@cimport` to the build system",
-    "url": "https://ziglang.org/devlog/2026/#2026-06-30",
-    "category": "Dev",
-    "publish_time": "2026-07-05T12:00:00Z",
-    "summary_zh": "Zig 已将所有包管理功能从编译器移至构建系统，这是一项重要的架构变更，将两者解耦。 这一变化提高了可维护性，并支持未来将构建系统运行在 WebAssembly VM 中，但移除了便捷的 @cImport 内置功能，而该功能是 C 语言互操作的关键特性。 @cImport 内置功能已被移除；用户现在必须使用构建系统的 TranslateC 步骤。这减少了编译器对 libclang 的依赖。\n\n**背景**: Zig 是一种系统编程语言，旨在成为 C 语言的现代替代品。其包管理器之前集成在编译器中，但这种耦合增加了维护难度。现在构建系统负责依赖获取和 C 代码翻译。\n\n**社区讨论**: 社区成员反应不一：一些人称赞架构改进，而另一些人则对失去 @cImport 这一关键用户体验功能感到惋惜。此外，对于将构建系统运行在 WebAssembly VM 中的长期计划，社区也感到兴奋。",
-    "summary_en": "Zig has moved all package management functionality from the compiler into the build system, a significant architectural change that decouples the two components. This change improves maintainability and enables future innovations like running the build system in a WebAssembly VM, but it removes the convenient @cImport builtin, which was a key feature for C interop. The @cImport builtin has been removed; users must now use the build system's TranslateC step instead. This reduces the compiler's dependency on libclang.\n\n**Background**: Zig is a systems programming language that aims to be a modern alternative to C. Its package manager was previously integrated into the compiler, but this coupling made maintenance harder. The build system now handles dependency fetching and C translation.\n\n**Discussion**: Community members expressed mixed feelings: some praised the architectural improvement, while others lamented the loss of @cImport as a key UX feature. There was also excitement about the long-term plan to run the build system in a WebAssembly VM.",
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+    "category": "AI",
+    "publish_time": "2026-07-05T01:00:00Z",
+    "summary_zh": "Simon Willison 使用 Claude Fable 审查 sqlite-utils 4.0rc1，发现了五个发布阻塞漏洞，其中包括 delete_where() 中的数据丢失漏洞。经过 37 次提示和 34 次提交，修复后发布了 sqlite-utils 4.0rc2。 这展示了 AI 辅助代码审查如何在重大发布前捕获细微但影响严重的漏洞，提升软件质量并减少紧急补丁的需求。同时，它展示了一种将 LLM 集成到开源维护中的实用工作流程。 发现的最严重漏洞是 Table.delete_where() 从未提交，导致连接处于中毒状态，后续写入操作被静默丢失。审查花费了约 149.25 美元的 Claude API 使用费，整个过程涉及 37 次提示和 34 次提交，跨越 30 个文件。\n\n**背景**: sqlite-utils 是一个用于操作 SQLite 数据库的 Python 库和 CLI 工具。语义化版本控制（SemVer）使用三位版本号（主版本号.次版本号.修订号），其中破坏性变更需要增加主版本号。Claude Fable 是 Anthropic 为复杂编码任务设计的高级 AI 模型。",
+    "summary_en": "Simon Willison used Claude Fable to review sqlite-utils 4.0rc1, leading to the discovery of five release-blocking bugs, including a data loss bug in delete_where(). After 37 prompts and 34 commits, the fixes resulted in sqlite-utils 4.0rc2. This demonstrates how AI-assisted code review can catch subtle, high-impact bugs before a major release, improving software quality and reducing the need for emergency patches. It also showcases a practical workflow for integrating LLMs into open-source maintenance. The worst bug found was that Table.delete_where() never committed and left the connection in a poisoned state, causing subsequent writes to be silently lost. The review cost approximately $149.25 in Claude API usage, and the entire process spanned 37 prompts and 34 commits across 30 files.\n\n**Background**: sqlite-utils is a Python library and CLI tool for manipulating SQLite databases. Semantic versioning (SemVer) uses a three-part version number (Major.Minor.Patch) where breaking changes require a major version bump. Claude Fable is Anthropic's advanced AI model designed for complex coding tasks.",
     "takeaways": [
-      "背景信息: Zig 是一种系统编程语言，旨在成为 C 语言的现代替代品。其包管理器之前集成在编译器中，但这种耦合增加了维护难度。现在构建系统负责依赖获取和 C 代码翻译。",
-      "社区反馈: 社区成员反应不一：一些人称赞架构改进，而另一些人则对失去 @cImport 这一关键用户体验功能感到惋惜。此外，对于将构建系统运行在 WebAssembly VM 中的长期计划，社区也感到兴奋。"
+      "背景信息: sqlite-utils 是一个用于操作 SQLite 数据库的 Python 库和 CLI 工具。语义化版本控制（SemVer）使用三位版本号（主版本号.次版本号.修订号），其中破坏性变更需要增加主版本号。Claude Fable 是 Anthropic 为复杂编码任务设计的高级 AI 模型。"
     ]
   },
   {
     "id": "5",
-    "title": "LLM 实例间潜在的会话/缓存泄漏",
-    "importance_score": 8.0,
-    "source": "Hackernews",
-    "url": "https://github.com/anthropics/claude-code/issues/74066",
-    "category": "AI",
-    "publish_time": "2026-07-05T14:03:00Z",
-    "summary_zh": "用户报告多个提供商的 LLM 实例之间可能存在会话或缓存泄漏，涉及 Claude 和 GPT 模型，其中一位用户指出 API 网关错误处理 HTTP 100 状态码是根本原因。 如果得到确认，这可能表明多租户 LLM 基础设施存在严重安全漏洞，可能跨会话暴露用户提示或响应。关于幻觉与实际泄漏的争论凸显了诊断此类问题的挑战。 一位用户描述了 API 网关处理 HTTP 100 状态码时出现差一错误，导致响应交换。Claude Code 团队回应称，他们确信这是幻觉，但正在调查。\n\n**背景**: LLM 提供商通常使用响应缓存和多租户服务来降低成本和延迟，但这些优化可能引入跨租户泄漏等安全风险。幻觉是指 AI 生成虚假信息，可能模仿真实系统行为，使诊断复杂化。\n\n**社区讨论**: 社区评论意见不一：一些用户报告在 Gemini 和其他模型上遇到类似情况，而另一些用户则怀疑是幻觉。Claude Code 团队成员确认了报告并承诺调查，但倾向于认为是幻觉。",
-    "summary_en": "Users report possible session or cache leakage between LLM instances from multiple providers, including Claude and GPT models, with one user citing an API gateway mishandling HTTP 100 status codes as a root cause. If confirmed, this could indicate a serious security flaw in multi-tenant LLM infrastructure, potentially exposing user prompts or responses across sessions. The debate between hallucination and real leakage highlights the challenge of diagnosing such issues. A user described an off-by-one error in API gateway handling of HTTP 100 status codes leading to swapped responses. The Claude Code team responded, stating they are confident it's a hallucination but are investigating.\n\n**Background**: LLM providers often use response caching and multi-tenant serving to reduce costs and latency, but these optimizations can introduce security risks like cross-tenant leakage. Hallucinations occur when AI generates false information, which can mimic real system behavior and complicate diagnosis.\n\n**Discussion**: Community comments are mixed: some users report similar experiences with Gemini and other models, while others suspect hallucination. A Claude Code team member acknowledged the report and promised investigation, but leaned toward hallucination.",
-    "takeaways": [
-      "背景信息: LLM 提供商通常使用响应缓存和多租户服务来降低成本和延迟，但这些优化可能引入跨租户泄漏等安全风险。幻觉是指 AI 生成虚假信息，可能模仿真实系统行为，使诊断复杂化。",
-      "社区反馈: 社区评论意见不一：一些用户报告在 Gemini 和其他模型上遇到类似情况，而另一些用户则怀疑是幻觉。Claude Code 团队成员确认了报告并承诺调查，但倾向于认为是幻觉。"
-    ]
-  },
-  {
-    "id": "6",
-    "title": "仅用 500 字节构建世界地图",
-    "importance_score": 8.0,
-    "source": "Simon Willison",
-    "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
-    "category": "Dev",
-    "publish_time": "2026-07-05T23:09:00Z",
-    "summary_zh": "Iwo Kadziela（在 Codex 辅助下）仅用 445 字节数据创建了一个可信的 ASCII 世界地图，利用 deflate 压缩和 JavaScript 的 fetch 与 data URI 在浏览器中解压并渲染地图。 这展示了一种极端数据压缩的巧妙技术以及对现代浏览器 API 的创造性使用，激励开发者思考最小化数据表示和高效的网络传输。 该技术使用 DecompressionStream API 的'deflate-raw'格式，压缩数据以 base64 编码的 data URI 嵌入在 fetch 调用中，使得整个地图在 500 字节以内交付。\n\n**背景**: Deflate 是一种结合 LZ77 和霍夫曼编码的无损压缩算法，广泛用于 ZIP 和 PNG 等格式。DecompressionStream API 为流提供浏览器原生解压功能。Data URI 允许将数据直接嵌入 URL 中，避免单独的 HTTP 请求。\n\n**社区讨论**: Hacker News 上的讨论称赞了这种方法的巧妙和极简，一些用户注意到使用 fetch 与 data URI 以及 DecompressionStream 的新颖性。少数评论讨论了可能的改进或替代压缩方法。",
-    "summary_en": "Iwo Kadziela (assisted by Codex) created a credible ASCII world map using only 445 bytes of data, leveraging deflate compression and a JavaScript fetch with data URIs to decompress and render the map in the browser. This demonstrates a clever technique for extreme data compression and creative use of modern browser APIs, inspiring developers to think about minimalistic data representation and efficient web delivery. The technique uses the DecompressionStream API with 'deflate-raw' format, and the compressed data is embedded as a base64-encoded data URI in the fetch call, allowing the entire map to be delivered in under 500 bytes.\n\n**Background**: Deflate is a lossless compression algorithm combining LZ77 and Huffman coding, widely used in formats like ZIP and PNG. The DecompressionStream API provides native browser decompression for streams. Data URIs allow embedding data directly in URLs, avoiding separate HTTP requests.\n\n**Discussion**: The Hacker News discussion praised the cleverness and minimalism of the approach, with some users noting the novelty of using fetch with data URIs and DecompressionStream. A few comments discussed potential improvements or alternative compression methods.",
-    "takeaways": [
-      "背景信息: Deflate 是一种结合 LZ77 和霍夫曼编码的无损压缩算法，广泛用于 ZIP 和 PNG 等格式。DecompressionStream API 为流提供浏览器原生解压功能。Data URI 允许将数据直接嵌入 URL 中，避免单独的 HTTP 请求。",
-      "社区反馈: Hacker News 上的讨论称赞了这种方法的巧妙和极简，一些用户注意到使用 fetch 与 data URI 以及 DecompressionStream 的新颖性。少数评论讨论了可能的改进或替代压缩方法。"
-    ]
-  },
-  {
-    "id": "7",
-    "title": "更好的模型，更差的工具调用",
+    "title": "新 Claude 模型工具调用模式遵守更差",
     "importance_score": 8.0,
     "source": "Simon Willison",
     "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
     "category": "AI",
     "publish_time": "2026-07-05T22:53:00Z",
-    "summary_zh": "Armin Ronacher 报告称，较新的 Claude 模型（Opus 4.8 和 Sonnet 5）有时会生成带有额外虚构字段的无效工具调用参数，导致 Pi 的编辑工具拒绝这些调用，而旧模型则没有出现此问题。 这种退化突显了一种反直觉的权衡：针对特定内置工具的模型改进可能会降低第三方工具的性能，从而引发对依赖精确模式匹配的生产系统可靠性的担忧。 该问题特定于 Pi 编辑工具模式中的嵌套 `edits[]` 数组，较新的模型会发明诸如 `new_text_x` 之类的键，从而违反模式。Armin 推测，Anthropic 针对 Claude Code 内置编辑工具的强化学习可能导致此行为。\n\n**背景**: 像 Claude 这样的大型语言模型（LLM）可以被赋予工具模式（函数的 JSON 描述），并期望生成有效的调用。Pi 是一个第三方编码工具，使用自定义编辑工具。Anthropic 的 Claude Code 有自己的内置编辑工具，较新的模型可能被训练为偏好该工具的模式，导致在与 Pi 的不同模式一起使用时产生混淆。\n\n**社区讨论**: Pi 的 GitHub 问题显示用户确认了该问题并讨论了解决方法，例如为每个模型实现多个编辑工具。总体情绪是对模型可靠性的担忧，以及在生产环境中需要更好的模式匹配。",
-    "summary_en": "Armin Ronacher reported that newer Claude models (Opus 4.8 and Sonnet 5) sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them, while older models did not exhibit this issue. This regression highlights a counterintuitive trade-off where model improvements for specific built-in tools can degrade performance for third-party tools, raising reliability concerns for production systems that depend on precise schema adherence. The issue is specific to the nested `edits[]` array in Pi's edit tool schema, where newer models invent keys like `new_text_x` that violate the schema. Armin theorizes that Anthropic's reinforcement learning for Claude Code's built-in edit tool may cause this behavior.\n\n**Background**: Large language models (LLMs) like Claude can be given tool schemas (JSON descriptions of functions) and are expected to generate valid calls. Pi is a third-party coding harness that uses a custom edit tool. Anthropic's Claude Code has its own built-in edit tool, and newer models may have been trained to favor that tool's schema, causing confusion when used with Pi's different schema.\n\n**Discussion**: The GitHub issue for Pi shows users confirming the problem and discussing workarounds, such as implementing multiple edit tools per model. The overall sentiment is concern about model reliability and the need for better schema adherence in production.",
+    "summary_zh": "Armin Ronacher 于 2026 年 7 月 4 日报道，包括 Opus 4.8 和 Sonnet 5 在内的新 Claude 模型有时会生成带有额外虚构字段的无效工具调用参数，导致 Pi 的编辑工具拒绝这些调用。旧版 Claude 模型未出现此退化。 这种退化削弱了依赖精确工具调用模式的 AI 编码代理的可靠性，影响了使用 Pi 等第三方工具链的开发者。它凸显了模型针对特定工具的训练与通用工具使用之间的张力。 额外字段由模型虚构，可能包括'new_text_x'、'type'、'in_file'或'closeenough'等键。据报道，在 Claude 的 API 中启用严格模式可解决部分用户的问题。\n\n**背景**: 像 Claude 这样的大语言模型（LLM）可以被赋予工具定义，并期望输出符合 JSON 模式的调用。Pi 是一个使用自定义编辑工具的编码工具链；Claude Code 有其内置的编辑工具。新模型可能通过强化学习训练，倾向于 Claude Code 的内部工具格式，导致在使用不同模式时虚构字段。\n\n**社区讨论**: 问题追踪器（GitHub issue #6278）上的社区讨论显示，开发者确认了该问题并分享了额外字段的示例。一些用户建议启用严格模式作为变通方案，而另一些用户则争论第三方工具是否应适应模型特定的怪癖。",
+    "summary_en": "Armin Ronacher reported on July 4, 2026 that newer Claude models, including Opus 4.8 and Sonnet 5, sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them. This regression was not observed in older Claude models. This regression undermines the reliability of AI coding agents that rely on precise tool call schemas, affecting developers using third-party harnesses like Pi. It highlights a tension between model training for specific tools and general-purpose tool use. The extra fields are invented by the model and can include keys like 'new_text_x', 'type', 'in_file', or 'closeenough'. Enabling strict mode in Claude's API reportedly fixes the issue for some users.\n\n**Background**: Large language models (LLMs) like Claude can be given tool definitions and are expected to output calls matching a JSON schema. Pi is a coding harness that uses custom edit tools; Claude Code has its own built-in edit tools. The newer models may have been trained via reinforcement learning to favor Claude Code's internal tool format, causing them to hallucinate fields when used with different schemas.\n\n**Discussion**: The community discussion on the issue tracker (GitHub issue #6278) shows developers confirming the problem and sharing examples of extra fields. Some users suggest enabling strict mode as a workaround, while others debate whether third-party tools should adapt to model-specific quirks.",
     "takeaways": [
-      "背景信息: 像 Claude 这样的大型语言模型（LLM）可以被赋予工具模式（函数的 JSON 描述），并期望生成有效的调用。Pi 是一个第三方编码工具，使用自定义编辑工具。Anthropic 的 Claude Code 有自己的内置编辑工具，较新的模型可能被训练为偏好该工具的模式，导致在与 Pi 的不同模式一起使用时产生混淆。",
-      "社区反馈: Pi 的 GitHub 问题显示用户确认了该问题并讨论了解决方法，例如为每个模型实现多个编辑工具。总体情绪是对模型可靠性的担忧，以及在生产环境中需要更好的模式匹配。"
+      "背景信息: 像 Claude 这样的大语言模型（LLM）可以被赋予工具定义，并期望输出符合 JSON 模式的调用。Pi 是一个使用自定义编辑工具的编码工具链；Claude Code 有其内置的编辑工具。新模型可能通过强化学习训练，倾向于 Claude Code 的内部工具格式，导致在使用不同模式时虚构字段。",
+      "社区反馈: 问题追踪器（GitHub issue #6278）上的社区讨论显示，开发者确认了该问题并分享了额外字段的示例。一些用户建议启用严格模式作为变通方案，而另一些用户则争论第三方工具是否应适应模型特定的怪癖。"
     ]
   },
   {
-    "id": "8",
-    "title": "能力门：基于内部置信度控制工具使用",
+    "id": "6",
+    "title": "能力门控：基于内部置信信号控制工具使用",
     "importance_score": 8.0,
-    "source": "r/MachineLearning",
+    "source": "<li><a href=\"https://huggingface.co/qwen/qwen3.5-4b\">qwen/qwen3.5-4b",
     "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
     "category": "AI",
-    "publish_time": "2026-07-05T07:49:00Z",
-    "summary_zh": "一个 10MB 的 LoRA 适配器用于 Qwen3.5-4B，基于内部置信度信号控制工具使用，提升了错误检测能力并减少了幻觉。它可在 Apple Silicon 上本地运行，并通过 GGUF 支持 llama.cpp/Ollama。 该方法通过利用内部激活状态，解决了小型指令模型的一个关键局限——口头置信度差——从而实现了更可靠的工具使用和隐私保护。它为本地部署提供了实用、开源的解决方案，并支持可追溯的答案。 该门控将错误检测的 d′提升了 0.46（95%置信区间[0.01, 0.89]），且门控标记而基础模型未标记的案例中，87%确实是错误答案。双信号版本将发送到公共搜索的私人查询从 22%降至 10%。\n\n**背景**: 小型语言模型通常难以准确口头表达其置信度，倾向于过度自信。然而，内部激活状态包含更丰富的不确定性信息。LoRA（低秩适配）是一种参数高效的微调方法，仅更新小矩阵，适合轻量级适配器。信号检测理论中的 d′衡量区分正确与错误输出的灵敏度。",
-    "summary_en": "A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon and via GGUF for llama.cpp/Ollama. This approach addresses a key limitation of small instruct models—poor verbalized confidence—by leveraging internal activations, enabling more reliable tool use and privacy protection. It offers a practical, open-source solution for local deployment with traceable answers. The gate improved error detection by d′ = 0.46 (95% CI [0.01, 0.89]), and 87% of cases flagged by the gate but missed by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.\n\n**Background**: Small language models often struggle to accurately express their confidence verbally, tending to overstate it. Internal activations, however, contain richer uncertainty information. LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that updates only small matrices, making it suitable for lightweight adapters. Signal detection theory's d′ measures sensitivity in distinguishing correct from incorrect outputs.",
+    "publish_time": "2026-07-05T12:00:00Z",
+    "summary_zh": "一个 10MB 的 LoRA 适配器，通过内部置信信号控制 Qwen3.5-4B 的工具使用，提升了错误检测能力并减少了幻觉。它可在 Apple Silicon 上通过 MLX 本地运行，也可通过 GGUF 在 llama.cpp/Ollama 上运行。 该方法解决了小型语言模型的一个关键局限：无法准确表达置信度，导致过度自信的错误回答。通过基于内部信号控制工具使用，它减少了幻觉，并保护隐私数据不被泄露到公共搜索引擎。 该门控在错误检测上比基础模型的工具调用提升了 0.46 的 d′值，门控标记而基础模型未标记的案例中 87%确实是错误答案。双信号版本将发送到公共搜索的私人查询从 22%降低到 10%。\n\n**背景**: LoRA（低秩适应）是一种参数高效的微调方法，向冻结的基础模型添加小型可训练适配器，以最小的开销实现任务特定定制。内部置信信号指模型隐藏状态激活中与其确定性相关的信号，这些信号比模型口头表达的置信度更可靠。",
+    "summary_en": "A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon via MLX and on llama.cpp/Ollama via GGUF. This approach addresses a key limitation of small language models: their inability to accurately verbalize confidence, leading to overconfident incorrect answers. By gating tool use on internal signals, it reduces hallucinations and protects private data from being leaked to public search engines. The gate achieved a d′ improvement of 0.46 in error detection over the base model's tool calling, and 87% of cases flagged by the gate but not by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.\n\n**Background**: LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that adds small trainable adapters to a frozen base model, enabling task-specific customization with minimal overhead. Internal confidence signals refer to the model's hidden state activations that correlate with its certainty, which can be more reliable than the model's verbalized confidence statements.",
     "takeaways": [
-      "背景信息: 小型语言模型通常难以准确口头表达其置信度，倾向于过度自信。然而，内部激活状态包含更丰富的不确定性信息。LoRA（低秩适配）是一种参数高效的微调方法，仅更新小矩阵，适合轻量级适配器。信号检测理论中的 d′衡量区分正确与错误输出的灵敏度。"
+      "背景信息: LoRA（低秩适应）是一种参数高效的微调方法，向冻结的基础模型添加小型可训练适配器，以最小的开销实现任务特定定制。内部置信信号指模型隐藏状态激活中与其确定性相关的信号，这些信号比模型口头表达的置信度更可靠。"
     ]
   },
   {
-    "id": "9",
-    "title": "USAF：在消费级 GPU 上微调 MoE 模型",
+    "id": "7",
+    "title": "USAF：在消费级 GPU 上对 MoE 模型进行稀疏微调",
     "importance_score": 8.0,
     "source": "<li><a href=\"https://github.com/tsuyu122/usaf/blob/master/readme.md\">usaf/readme.md at master",
     "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
     "category": "Dev",
     "publish_time": "2026-07-05T12:00:00Z",
-    "summary_zh": "一种名为 USAF（Ultra Sparse Adaptive Fine-Tuning）的新型稀疏微调方法，允许在用于推理的同一 GPU 上微调混合专家（MoE）模型，已在 12GB AMD RX 6750 XT 上成功微调 Qwen3-30B-A3B。 这一突破消除了对高端 GPU 的需求，使消费级硬件的用户也能微调大型 MoE 模型，从而推动了微调技术的普及。 USAF 仅训练 48 亿参数中的 2600 万，通过更新稀疏专家权重和路由器，而非使用适配器。该项目完全开源（Apache 2.0），并声称是唯一支持 AMD GPU 的方法。\n\n**背景**: 混合专家（MoE）模型每个 token 仅激活部分参数，从而在降低推理成本的同时实现大模型规模。然而，全参数微调需要巨大内存（例如 Qwen3-30B-A3B 需要 120GB 以上），远超消费级 GPU。现有方法如 LoRA 虽能减少内存需求，但仍需较高资源。",
-    "summary_en": "A new sparse fine-tuning method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on the same GPU used for inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This breakthrough democratizes fine-tuning of large MoE models by eliminating the need for high-end GPUs, making it accessible to researchers and hobbyists with consumer hardware. USAF trains only 26 million out of 4.8 billion parameters by updating sparse expert weights and the router, instead of using adapters. It is fully open source under Apache 2.0 and claims to be the only method that works on AMD GPUs.\n\n**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, enabling large model sizes with lower inference cost. However, full fine-tuning requires massive memory (e.g., 120GB+ for Qwen3-30B-A3B), far exceeding consumer GPUs. Existing methods like LoRA reduce memory but still require significant resources.",
+    "summary_zh": "一种名为 USAF（超稀疏自适应微调）的新开源方法，使得之前只能运行推理的 GPU 也能对混合专家（MoE）模型进行微调，已在 12GB AMD RX 6750 XT 上使用 Qwen3-30B-A3B 得到验证。 这一突破大幅降低了微调大型 MoE 模型的硬件门槛，使拥有消费级 GPU 的研究人员和爱好者能够定制最先进的模型，而无需昂贵的云或企业级硬件。 USAF 在 12GB GPU 上仅训练 48 亿参数中的 2600 万（稀疏专家权重和路由器），而全量微调需要超过 120GB。它是唯一能在 AMD GPU 上工作的方法，也是唯一同时训练专家权重和路由器的方法。\n\n**背景**: 混合专家（MoE）模型使用多个由路由器激活的专门子网络（专家），从而在降低推理成本的同时实现大模型容量。然而，微调此类模型通常需要巨大的 GPU 内存，因为所有参数都会被更新。像 USAF 这样的稀疏微调方法仅更新一小部分参数，从而大幅降低内存需求。",
+    "summary_en": "A new open-source method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on GPUs that previously could only run inference, demonstrated on a 12GB AMD RX 6750 XT with Qwen3-30B-A3B. This breakthrough dramatically lowers the hardware barrier for fine-tuning large MoE models, allowing researchers and hobbyists with consumer GPUs to customize state-of-the-art models without expensive cloud or enterprise hardware. USAF trains only 26 million out of 4.8 billion parameters (sparse expert weights and the router) on a 12GB GPU, whereas full fine-tuning would require over 120GB. It is the only method that works on AMD GPUs and the only one that trains both expert weights and the router.\n\n**Background**: Mixture-of-Experts (MoE) models use multiple specialized subnetworks (experts) activated by a router, enabling large model capacity with lower inference cost. However, fine-tuning such models typically requires massive GPU memory because all parameters are updated. Sparse fine-tuning methods like USAF update only a small subset of parameters, drastically reducing memory needs.",
     "takeaways": [
-      "背景信息: 混合专家（MoE）模型每个 token 仅激活部分参数，从而在降低推理成本的同时实现大模型规模。然而，全参数微调需要巨大内存（例如 Qwen3-30B-A3B 需要 120GB 以上），远超消费级 GPU。现有方法如 LoRA 虽能减少内存需求，但仍需较高资源。"
+      "背景信息: 混合专家（MoE）模型使用多个由路由器激活的专门子网络（专家），从而在降低推理成本的同时实现大模型容量。然而，微调此类模型通常需要巨大的 GPU 内存，因为所有参数都会被更新。像 USAF 这样的稀疏微调方法仅更新一小部分参数，从而大幅降低内存需求。"
     ]
   },
   {
-    "id": "10",
-    "title": "iOS 27 将加入 Trust Insights 设备端反诈功能",
+    "id": "8",
+    "title": "iOS 27 将推出 Trust Insights 反诈功能",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.cultofmac.com/news/ios-27-trust-insights-feature",
     "category": "AI",
     "publish_time": "2026-07-05T14:30:00Z",
-    "summary_zh": "苹果宣布在 iOS 27 中引入 Trust Insights 框架，该功能在设备端分析用户操作模式、时机、上下文和传感器数据，以识别通话或信息中可能的社会工程诈骗。 该功能填补了移动安全的关键空白，能够实时检测诱骗用户授权欺诈交易的社会工程诈骗，同时不损害隐私。 Trust Insights 不会读取信息、邮件或照片内容；原始数据会立即删除，仅向服务器发送单一输出值。该功能可关闭，但设有冷却期，防止诈骗分子在通话中诱导用户立即关闭。\n\n**背景**: 社会工程诈骗（诈骗者冒充可信实体操纵受害者转账或分享凭证）日益常见。传统安全措施往往失效，因为用户是自愿执行操作。Trust Insights 利用设备端行为分析检测此类诈骗的异常迹象，而苹果的隐私保护设计确保不访问个人内容。",
-    "summary_en": "Apple announced Trust Insights, a new on-device fraud detection framework in iOS 27, which analyzes user behavior patterns, timing, context, and sensor data to identify potential social engineering scams during calls or messages. This feature addresses a critical gap in mobile security by detecting real-time social engineering scams that trick users into authorizing fraudulent transactions, without compromising privacy. Trust Insights does not read message, email, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. The feature can be disabled but has a cooldown period to prevent scammers from turning it off during a call.\n\n**Background**: Social engineering scams, where fraudsters impersonate trusted entities to manipulate victims into transferring money or sharing credentials, are increasingly common. Traditional security measures often fail because the user voluntarily performs the action. Trust Insights uses on-device behavioral analysis to detect anomalies indicative of such scams, while Apple's privacy-focused design ensures no personal content is accessed.",
+    "summary_zh": "Apple 宣布为 iOS 27 推出 Trust Insights，这是一个新的设备端反诈框架，通过分析用户操作模式、时机、上下文和传感器数据，检测被诈骗分子诱导的转账或改账户等行为。 这标志着移动设备主动防诈迈出重要一步，利用保护隐私的设备端 AI 来保护用户免受社会工程诈骗，同时不泄露个人数据。 该功能不会读取信息、邮件或照片内容；原始数据会立即删除，仅向服务器发送单一输出值。开发者需主动接入才能将 Trust Insights 集成到应用中。\n\n**背景**: 社会工程诈骗（诈骗分子诱骗用户进行转账或更改账户凭证等操作）日益猖獗。传统的反诈措施通常依赖服务器端分析或用户举报，往往为时已晚。Trust Insights 利用设备端机器学习实时检测可疑行为，在用户完成诈骗者要求的操作前增加一层保护。",
+    "summary_en": "Apple announced Trust Insights, a new on-device anti-fraud framework for iOS 27 that analyzes user behavior patterns, timing, context, and sensor data to detect scam-induced actions like coerced transfers or account changes. This marks a significant step in proactive fraud prevention on mobile devices, using privacy-preserving on-device AI to protect users from social engineering scams without compromising personal data. The feature does not read messages, emails, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. Developers must opt in to integrate Trust Insights into their apps.\n\n**Background**: Social engineering scams, where fraudsters trick users into performing actions like transferring money or changing account credentials, are a growing threat. Traditional anti-fraud measures often rely on server-side analysis or user reports, which can be too late. Trust Insights uses on-device machine learning to detect suspicious behavior in real time, adding a layer of protection before the user completes the scammer's requested action.",
     "takeaways": [
-      "背景信息: 社会工程诈骗（诈骗者冒充可信实体操纵受害者转账或分享凭证）日益常见。传统安全措施往往失效，因为用户是自愿执行操作。Trust Insights 利用设备端行为分析检测此类诈骗的异常迹象，而苹果的隐私保护设计确保不访问个人内容。"
+      "背景信息: 社会工程诈骗（诈骗分子诱骗用户进行转账或更改账户凭证等操作）日益猖獗。传统的反诈措施通常依赖服务器端分析或用户举报，往往为时已晚。Trust Insights 利用设备端机器学习实时检测可疑行为，在用户完成诈骗者要求的操作前增加一层保护。"
     ]
   },
   {
-    "id": "11",
-    "title": "F-Droid：Google ADV 是预装在 40 亿设备上的恶意软件",
+    "id": "9",
+    "title": "卫报调查：OpenAI 从未实地考察英国星际之门核心选址",
     "importance_score": 8.0,
     "source": "Telegram",
-    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
+    "url": "https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project",
     "category": "AI",
-    "publish_time": "2026-07-05T00:41:00Z",
-    "summary_zh": "F-Droid 正式将 Google 的 Android 开发者验证（ADV）归类为恶意软件，声称该程序已预装在约 40 亿台安卓设备上，并将从 2026 年起阻止未经批准的软件运行。 此举通过限制用户只能使用 Google 批准的应用程序，威胁到安卓生态系统的开放性，可能损害应用多样性、用户自由以及 F-Droid 等替代应用商店的生存能力。 ADV 是一个拥有 root 权限且无法移除的系统进程，将于 2026 年 9 月 30 日在巴西、印尼、新加坡和泰国首批激活，全球推广计划在 2027 年及以后。\n\n**背景**: Android 开发者验证（ADV）是 Google 的一项安全举措，要求开发者验证身份并注册包名。F-Droid 是一个流行的开源应用商店，仅分发自由开源软件，常与 Google 的政策相悖。争议焦点在于 ADV 是合法的安全措施，还是 Google 用来加强对应用分发控制的工具。",
-    "summary_en": "F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, claiming it is pre-installed on approximately 4 billion Android devices and will block unapproved software starting in 2026. This move threatens the open nature of the Android ecosystem by restricting users to only Google-approved apps, potentially harming app diversity, user freedom, and the viability of alternative app stores like F-Droid. ADV is a system process with root privileges that cannot be removed, and it will first activate in Brazil, Indonesia, Singapore, and Thailand on September 30, 2026, with global rollout planned for 2027 and beyond.\n\n**Background**: Android Developer Verification (ADV) is a Google initiative aimed at enhancing security by requiring developers to verify their identity and register package names. F-Droid is a popular open-source app store that distributes only free and open-source software, often in opposition to Google's policies. The controversy centers on whether ADV is a legitimate security measure or a tool to enforce Google's control over app distribution.",
+    "publish_time": "2026-07-05T05:09:00Z",
+    "summary_zh": "《卫报》调查发现，OpenAI 从未实地造访位于北泰恩赛德 Cobalt Park 的拟建数据中心选址，当地官员也从未与 OpenAI 或其合作伙伴 Nscale 会面。该项目于 2025 年 9 月作为英美 AI 合作旗舰工程高调宣布，但已于 2026 年 4 月因监管和能源成本问题暂停。 调查结果表明，300 亿美元的 Stargate UK 承诺可能只是一场公关噱头，而非真实投资，这削弱了人们对重大 AI 基础设施公告的信任，并引发了对政府科技合作透明度的质疑。 Stargate UK 项目于 2025 年 9 月宣布，合作伙伴包括 Nvidia 和 Nscale，计划在英格兰东北部建设大型数据中心。该项目于 2026 年 4 月暂停，当地保守党议员表示项目落地“看起来极不可能”。\n\n**背景**: Stargate UK 是 OpenAI 全球 Stargate 计划的一部分，旨在建设大规模 AI 基础设施。该项目被宣传为英国 AI 机遇行动计划的关键组成部分，承诺为敏感 AI 工作负载提供本地算力。Cobalt Park 是英国最大的商业园区之一，但 OpenAI 从未派代表前往该选址。",
+    "summary_en": "A Guardian investigation reveals that OpenAI never visited the Cobalt Park site in North Tyneside, the proposed location for its Stargate UK data center, and local officials never met with OpenAI or partner Nscale. The project, announced in September 2025 as a flagship UK-US AI collaboration, was paused in April 2026 due to regulatory and energy cost concerns. The findings suggest the $30 billion Stargate UK pledge may have been a PR stunt rather than a genuine investment, undermining trust in major AI infrastructure announcements and raising questions about government transparency in tech partnerships. The Stargate UK project was announced in September 2025 with partners Nvidia and Nscale, aiming to build a large data centre in north-east England. It was paused in April 2026, with a local Conservative MP stating the project 'looks extremely unlikely' to proceed.\n\n**Background**: Stargate UK was part of OpenAI's broader Stargate initiative to build massive AI infrastructure globally. The UK project was touted as a key component of the UK's AI Opportunities Action Plan, promising local computing power for sensitive AI workloads. Cobalt Park is one of the largest business parks in the UK, but OpenAI never sent representatives to the site.",
     "takeaways": [
-      "背景信息: Android 开发者验证（ADV）是 Google 的一项安全举措，要求开发者验证身份并注册包名。F-Droid 是一个流行的开源应用商店，仅分发自由开源软件，常与 Google 的政策相悖。争议焦点在于 ADV 是合法的安全措施，还是 Google 用来加强对应用分发控制的工具。"
+      "背景信息: Stargate UK 是 OpenAI 全球 Stargate 计划的一部分，旨在建设大规模 AI 基础设施。该项目被宣传为英国 AI 机遇行动计划的关键组成部分，承诺为敏感 AI 工作负载提供本地算力。Cobalt Park 是英国最大的商业园区之一，但 OpenAI 从未派代表前往该选址。"
     ]
   },
   {
-    "id": "12",
-    "title": "学生出题考 AI，复旦期末考改革",
+    "id": "10",
+    "title": "复旦期末考：学生出题难倒 AI，仅 4 人得零分",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw",
     "category": "AI",
     "publish_time": "2026-07-05T08:40:00Z",
-    "summary_zh": "复旦大学将传统的数据挖掘期末考试改为“人考 AI”测试，51 名学生每人出 10 道有唯一答案的计算题来挑战三个 AI 模型；50 名学生至少难倒过某个模型一次，但仅有 4 人能让任一模型得零分，最强模型 Claude 未被完全考倒。 这一实验凸显了 AI 时代教育改革的必要性，将重点从记忆和算法执行转向评估 AI 输出、批判性思维以及人机协作。 测试涉及三个未具名的 AI 模型，其中 Anthropic 公司的 Claude 最为稳健；全班平均分 85.7 分，表明大多数学生无法持续骗过所有模型。\n\n**背景**: 传统的数据挖掘课程考试通常测试算法知识和记忆，而 AI 现在可以轻松处理这些。由授课教师肖仰华主导的这一改革旨在让学生为未来做好准备，那时他们需要指挥和评判 AI 的输出，而不是执行 AI 能完成的任务。",
-    "summary_en": "Fudan University replaced its traditional data mining exam with a 'human vs AI' test where 51 students each created 10 calculation questions to challenge three AI models; 50 students managed to stump at least one model, but only 4 achieved a zero score on any model, and the strongest model, Claude, remained undefeated. This experiment highlights the need for education reform in the AI era, shifting focus from memorization and algorithm execution to evaluating AI outputs, critical thinking, and human-AI collaboration. The test involved three unnamed AI models, with Claude (by Anthropic) being the most robust; the class average score was 85.7 out of 100, indicating that most students could not consistently fool all models.\n\n**Background**: Traditional exams in data mining courses often test algorithmic knowledge and memory, which AI can now easily handle. This reform, led by instructor Xiao Yanghua, aims to prepare students for a future where they must direct and judge AI outputs rather than perform tasks AI can do.",
+    "summary_zh": "复旦大学“数据挖掘技术”课程将期末考试改为“人考 AI”：51 名学生各出 10 道有唯一答案的计算题来难倒三个 AI 模型，结果仅有 4 人能让任一模型得零分，最强模型 Claude 未被完全考倒。 这种创新考核方式将重点从死记硬背转向评估 AI 输出，反映了 AI 能力提升下教育改革的必要性。它凸显了一种新范式：学生学习如何指挥和评判 AI，为 AI 融合的职场做好准备。 考试涉及三个未具名的 AI 模型，其中 Claude 最为稳健。全班平均分 85.7 分（满分 100），意味着大多数学生成功在某道题上难倒了至少一个模型，但只有四人让某个模型整张试卷得零分。\n\n**背景**: 随着 AI 能轻松解决传统算法和记忆类问题，这类考试正变得过时。由肖仰华教授讲授的这门课程代表了向培养学生批判性思维、评估能力和创造性解决问题的转变——这些是 AI 难以复制的技能。",
+    "summary_en": "In a Fudan University data mining course, the final exam was redesigned so that 51 students each created 10 calculation questions to stump three AI models; only 4 students succeeded in making any AI score zero, and the strongest model, Claude, was never completely defeated. This innovative assessment shifts focus from rote memorization to evaluating AI outputs, reflecting a necessary reform in education as AI capabilities advance. It highlights a new paradigm where students learn to command and judge AI, preparing them for an AI-integrated workforce. The exam involved three unnamed AI models, with Claude being the most robust. The class average score was 85.7 out of 100, meaning most students successfully stumped at least one model on some questions, but only four achieved a perfect zero on any model's entire paper.\n\n**Background**: Traditional exams that test algorithmic recall and memorization are becoming obsolete as AI can easily solve such problems. This course, taught by Professor Xiao Yanghua, represents a shift toward training students in critical thinking, evaluation, and creative problem-solving—skills that AI cannot easily replicate.",
     "takeaways": [
-      "背景信息: 传统的数据挖掘课程考试通常测试算法知识和记忆，而 AI 现在可以轻松处理这些。由授课教师肖仰华主导的这一改革旨在让学生为未来做好准备，那时他们需要指挥和评判 AI 的输出，而不是执行 AI 能完成的任务。"
+      "背景信息: 随着 AI 能轻松解决传统算法和记忆类问题，这类考试正变得过时。由肖仰华教授讲授的这门课程代表了向培养学生批判性思维、评估能力和创造性解决问题的转变——这些是 AI 难以复制的技能。"
     ]
   }
 ]
