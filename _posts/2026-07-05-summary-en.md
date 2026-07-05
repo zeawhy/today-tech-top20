@@ -5,36 +5,36 @@ date: 2026-07-05
 lang: en
 ---
 
-> From 39 items, 10 important content pieces were selected
+> From 30 items, 9 important content pieces were selected
 
 ---
 
-1. [F-Droid Declares Google ADV Malware, Pre-installed on 4 Billion Devices](#item-1) ⭐️ 9.0/10
+1. [F-Droid Declares Google ADV Malware on 4 Billion Devices](#item-1) ⭐️ 9.0/10
 2. [Shadcn/UI switches default from Radix to Base UI](#item-2) ⭐️ 8.0/10
-3. [GPT-5.5 Codex 516-Token Bug Causes Reasoning Failures](#item-3) ⭐️ 8.0/10
-4. [sqlite-utils 4.0rc2: Claude Fable Catches Critical Bugs](#item-4) ⭐️ 8.0/10
-5. [Newer Claude Models Worse at Tool Schema Adherence](#item-5) ⭐️ 8.0/10
-6. [Competence Gate: Gating Tool Use via Internal Confidence](#item-6) ⭐️ 8.0/10
-7. [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](#item-7) ⭐️ 8.0/10
-8. [iOS 27 Introduces Trust Insights Anti-Fraud Feature](#item-8) ⭐️ 8.0/10
-9. [OpenAI Never Visited Key UK Stargate Site, Guardian Finds](#item-9) ⭐️ 8.0/10
-10. [Fudan Exam: Students Stump AI, Only 4 Get Zero](#item-10) ⭐️ 8.0/10
+3. [EU Council Fast-Tracks Chat Control 1.0](#item-3) ⭐️ 8.0/10
+4. [Newer Claude Models Worse at Tool Call Schema Adherence](#item-4) ⭐️ 8.0/10
+5. [Competence Gate: Gating Tool Use via Internal Confidence](#item-5) ⭐️ 8.0/10
+6. [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](#item-6) ⭐️ 8.0/10
+7. [Guardian: OpenAI Never Visited Key Stargate UK Site, $30B Pledge a Stunt](#item-7) ⭐️ 8.0/10
+8. [Fudan Exam: Students Stump AI to Test Critical Thinking](#item-8) ⭐️ 8.0/10
+9. [SpaceX Shows Investors Thinner-than-iPhone Prototype](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [F-Droid Declares Google ADV Malware, Pre-installed on 4 Billion Devices](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 9.0/10
+## [F-Droid Declares Google ADV Malware on 4 Billion Devices](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 9.0/10
 
-F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, stating it is a system process with root privileges that cannot be removed and is pre-installed on approximately 4 billion Android devices. Starting September 30, 2026, ADV will be activated in Brazil, Indonesia, Singapore, and Thailand, blocking users from installing software not approved by Google. This move threatens the openness of the Android ecosystem and user freedom, potentially allowing Google to block any unapproved software, including ad blockers and FOSS apps. It has sparked widespread opposition from digital rights organizations like EFF, FSF, and ACLU, and could set a precedent for platform control. F-Droid notes that Google deliberately avoids defining 'malware' in its developer terms, allowing it to arbitrarily classify disliked software. Despite a petition with hundreds of thousands of signatures and an open letter signed by over 70 organizations, Google is proceeding with the global rollout planned for 2027 and beyond.
+F-Droid has officially classified Google's Android Developer Verifier (ADV) as malware, stating it is pre-installed on approximately 4 billion Android devices and will begin restricting unapproved software installations in select countries starting September 2026. This marks a significant escalation in the conflict between Google's centralized control over Android and the open-source community, potentially threatening user freedom and the viability of alternative app stores like F-Droid. ADV runs as a system service with root privileges and cannot be removed; it will first activate in Brazil, Indonesia, Singapore, and Thailand on September 30, 2026, with global rollout planned for 2027 and beyond.
 
 telegram · zaihuapd · Jul 5, 00:41
 
-**Background**: F-Droid is a free and open-source app store for Android that hosts only FOSS applications. Google Play Protect is a built-in security service that scans apps. ADV is a new system process introduced by Google as an extra security layer, but critics argue it gives Google excessive control over what software users can install, undermining Android's open nature.
+**Background**: F-Droid is a free and open-source app repository for Android, offering only libre software. Google Play Protect is a built-in security service that scans apps for malware. ADV is a new Google system service that verifies developer identities and can block apps not approved by Google, which F-Droid argues gives Google arbitrary power to label any unwanted software as malware.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://f-droid.org/2026/07/01/adv-malware.html">What We Talk About When We Talk About Malware | F-Droid - Free and Open Source Android App Repository</a></li>
+<li><a href="https://android-developers.googleblog.com/2026/03/android-developer-verification-rolling-out-to-all-developers.html">Android Developers Blog: Android developer verification: Rolling out to all developers on Play Console and Android Developer Console</a></li>
 <li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
-<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid</a></li>
 
 </ul>
 </details>
@@ -46,200 +46,178 @@ telegram · zaihuapd · Jul 5, 00:41
 <a id="item-2"></a>
 ## [Shadcn/UI switches default from Radix to Base UI](https://ui.shadcn.com/docs/changelog) ⭐️ 8.0/10
 
-Shadcn/UI has changed its default component library from Radix UI to Base UI, a new unstyled component library from the creators of Radix, Floating UI, and Material UI. This shift affects thousands of projects using Shadcn/UI and sparks debate about migration strategies, including the use of codemods versus LLMs, and the maintainability of the copy-paste approach. Base UI is an unstyled, headless component library that provides complete control over styling and accessibility, similar to Radix but with a different API. The change reflects Shadcn/UI's ongoing evolution and community feedback.
+Shadcn/UI, a popular React component library, has changed its default underlying UI library from Radix to Base UI, as announced in its changelog. This shift affects the default components provided by the library. This change impacts a large developer community that relies on Shadcn/UI for building React applications, as it alters the default component architecture and may require migration efforts. It also signals a broader trend in the UI library ecosystem toward Base UI, which is built by contributors from MUI, Radix, and Floating UI. Base UI is an unstyled, accessible React component library, while Radix UI also provides unstyled primitives. The migration from Radix to Base UI may involve changes in component APIs and behavior, and the community discussion highlights concerns about AI-generated announcements, div overuse, and the shift from codemods to LLMs for migration.
 
 hackernews · dabinat · Jul 5, 04:46 · [Discussion](https://news.ycombinator.com/item?id=48791328)
 
-**Background**: Shadcn/UI is a popular collection of reusable React components built on Radix UI and Tailwind CSS, distributed via CLI for full code ownership. Radix UI is a low-level, unstyled component library focused on accessibility. Base UI, from the same team, offers a similar philosophy with a fresh approach.
+**Background**: Shadcn/UI is a widely-used React component library that provides beautifully-designed, accessible components via a copy-paste or CLI installation approach. It originally used Radix UI as its default primitive library for unstyled, accessible components. Base UI is a newer alternative, also unstyled and accessible, built by a team including former contributors to MUI, Radix, and Floating UI.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ui.shadcn.com/docs">Introduction - shadcn/ui</a></li>
+<li><a href="https://github.com/shadcn-ui/ui">GitHub - shadcn-ui/ui: A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code. · GitHub</a></li>
 <li><a href="https://base-ui.com/">Unstyled UI components for accessible design systems · Base UI</a></li>
-<li><a href="https://github.com/mui/base-ui">GitHub - mui/base-ui: Unstyled UI components for building accessible web apps and design systems. From the creators of Radix, Floating UI, and Material UI. · GitHub</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express mixed feelings: some find the copy-paste approach creates upgrade challenges, while others welcome the move away from over-engineered solutions. There is also debate about using LLMs for migration instead of traditional codemods.
+**Discussion**: Community comments express mixed reactions: some find the AI-generated announcement tone off-putting, others question the copy-paste approach versus traditional libraries like Mantine, and there are concerns about div overuse in Base UI components. A notable point is the shift from codemods to LLMs for migration, with speculation that codemods may become obsolete.
 
-**Tags**: `#UI Libraries`, `#React`, `#Frontend Development`, `#Open Source`
+**Tags**: `#React`, `#UI Libraries`, `#Web Development`, `#Open Source`
 
 ---
 
 <a id="item-3"></a>
-## [GPT-5.5 Codex 516-Token Bug Causes Reasoning Failures](https://github.com/openai/codex/issues/30364) ⭐️ 8.0/10
+## [EU Council Fast-Tracks Chat Control 1.0](https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html) ⭐️ 8.0/10
 
-Users report that GPT-5.5 Codex's reasoning token clustering at exactly 516 tokens causes degraded performance and incorrect answers, with community-provided scripts to reproduce the issue. This bug affects a widely-used AI coding tool, potentially impacting many developers who rely on Codex for code generation and reasoning tasks, and highlights concerns about silent server-side changes. The clustering occurs at multiples of 516 tokens (516, 1034, 1552), and when the model stops reasoning at exactly 516 tokens, it often returns wrong results; using more tokens (6000-8000) yields correct answers.
+The EU Council has fast-tracked Chat Control 1.0, a regulation that would require messaging providers to scan chats for harmful content, bypassing the usual legislative process. This move raises serious concerns about digital privacy and the future of encryption in the EU, as it could mandate mass surveillance of private communications and undermine end-to-end encryption. Chat Control 1.0 is a temporary derogation from the ePrivacy Directive that was set to expire on April 4, 2026, but the Council's fast-track aims to extend it. Critics argue that there is no technological way to detect child sexual abuse material without high error rates and false positives.
 
-hackernews · maille · Jul 4, 21:51 · [Discussion](https://news.ycombinator.com/item?id=48789428)
+hackernews · stavros · Jul 5, 11:44 · [Discussion](https://news.ycombinator.com/item?id=48793393)
 
-**Background**: GPT-5.5 Codex is OpenAI's latest coding-focused model, released in 2026 as an upgrade to GPT-5.3 Codex. Reasoning tokens are internal tokens the model uses to think through problems before generating a final answer. Token clustering refers to the model disproportionately stopping at specific token counts, suggesting a bug in the adaptive thinking mechanism.
+**Background**: Chat Control refers to a set of EU regulations proposed to combat child sexual abuse online. The first iteration, Chat Control 1.0, was a temporary measure allowing voluntary scanning, while the more controversial Chat Control 2.0 would mandate scanning of encrypted messages. The European Parliament had previously rejected extending Chat Control 1.0.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://explainx.ai/blog/gpt-5-5-codex-reasoning-token-clustering-bug-2026">GPT-5.5 Codex 516- Token Bug: Evidence and Theories... | explainx.ai</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT - 5 . 5 | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control_1.0">Chat Control 1.0</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
+<li><a href="https://cdt.org/insights/cdt-europes-response-to-the-european-parliament-rejection-of-the-chat-control-1-0s-extension/">CDT Europe’s Response to the European Parliament Rejection of the Chat Control 1.0's Extension - Center for Democracy and Technology</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is largely negative, with users reporting daily quality drops and switching to alternatives like Claude. Some draw parallels to a similar Claude Code regression in April, and others suggest using local models to avoid server-side changes.
+**Discussion**: Community comments express concern about the fast-track process and the erosion of privacy, with some noting that Chat Control 1.0 is less dangerous than Chat Control 2.0 but still problematic. Others criticize the EU institutions for questionable decision-making and highlight the need for more investigation.
 
-**Tags**: `#AI`, `#LLM`, `#Codex`, `#bug`, `#performance`
+**Tags**: `#privacy`, `#EU legislation`, `#encryption`, `#surveillance`, `#technology policy`
 
 ---
 
 <a id="item-4"></a>
-## [sqlite-utils 4.0rc2: Claude Fable Catches Critical Bugs](https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything) ⭐️ 8.0/10
+## [Newer Claude Models Worse at Tool Call Schema Adherence](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything) ⭐️ 8.0/10
 
-Simon Willison used Claude Fable to review sqlite-utils 4.0rc1, leading to the discovery of five release-blocking bugs, including a data loss bug in delete_where(). After 37 prompts and 34 commits, the fixes resulted in sqlite-utils 4.0rc2. This demonstrates how AI-assisted code review can catch subtle, high-impact bugs before a major release, improving software quality and reducing the need for emergency patches. It also showcases a practical workflow for integrating LLMs into open-source maintenance. The worst bug found was that Table.delete_where() never committed and left the connection in a poisoned state, causing subsequent writes to be silently lost. The review cost approximately $149.25 in Claude API usage, and the entire process spanned 37 prompts and 34 commits across 30 files.
+Armin Ronacher reports that newer Claude models (Opus 4.8, Sonnet 5) sometimes add extra, invented fields to tool call arguments, causing Pi to reject the calls, while older models do not exhibit this issue. This regression undermines the reliability of LLM-based coding agents that depend on strict schema adherence, and highlights a tension between model training for specific tools and general tool-use capability. The issue appears only with newer Anthropic models, suggesting reinforcement learning for Claude's built-in edit tools may have inadvertently harmed performance on custom schemas. Pi uses its own edit tool schema, which the newer models fail to follow correctly.
 
-rss · Simon Willison · Jul 5, 01:00
+rss · Simon Willison · Jul 4, 22:53
 
-**Background**: sqlite-utils is a Python library and CLI tool for manipulating SQLite databases. Semantic versioning (SemVer) uses a three-part version number (Major.Minor.Patch) where breaking changes require a major version bump. Claude Fable is Anthropic's advanced AI model designed for complex coding tasks.
+**Background**: LLM tool calling allows models to invoke external functions by generating structured JSON arguments matching a provided schema. Coding harnesses like Pi define custom edit tools with specific schemas; if the model produces invalid arguments, the call is rejected. Anthropic and OpenAI train their models to use their own built-in editing tools effectively, which may bias the model against third-party schemas.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/simonw/sqlite-utils">GitHub - simonw/sqlite-utils: Python CLI utility and library for ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_Fable">Claude Fable</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SemVer">SemVer</a></li>
+<li><a href="https://letsdatascience.com/news/newer-claude-models-show-tool-calling-regression-6f029d5f">Newer Claude Models Show Tool-Calling Regression | Let's Data Science</a></li>
+<li><a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling">Programmatic tool calling - Claude Platform Docs</a></li>
+<li><a href="https://ai-sdk.dev/docs/ai-sdk-core/tools-and-tool-calling">Tool Calling - AI SDK Core</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI-assisted development`, `#open source`, `#Python`, `#sqlite-utils`, `#Claude`
+**Tags**: `#LLM`, `#tool calling`, `#Anthropic`, `#AI reliability`, `#regression`
 
 ---
 
 <a id="item-5"></a>
-## [Newer Claude Models Worse at Tool Schema Adherence](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything) ⭐️ 8.0/10
-
-Armin Ronacher reported on July 4, 2026 that newer Claude models, including Opus 4.8 and Sonnet 5, sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them. This regression was not observed in older Claude models. This regression undermines the reliability of AI coding agents that rely on precise tool call schemas, affecting developers using third-party harnesses like Pi. It highlights a tension between model training for specific tools and general-purpose tool use. The extra fields are invented by the model and can include keys like 'new_text_x', 'type', 'in_file', or 'closeenough'. Enabling strict mode in Claude's API reportedly fixes the issue for some users.
-
-rss · Simon Willison · Jul 4, 22:53
-
-**Background**: Large language models (LLMs) like Claude can be given tool definitions and are expected to output calls matching a JSON schema. Pi is a coding harness that uses custom edit tools; Claude Code has its own built-in edit tools. The newer models may have been trained via reinforcement learning to favor Claude Code's internal tool format, causing them to hallucinate fields when used with different schemas.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/">Better Models: Worse Tools | Armin Ronacher's Thoughts and ...</a></li>
-<li><a href="https://github.com/earendil-works/pi/issues/6278">New Claude models work poorly with the current Pi 's edit tool , failing...</a></li>
-<li><a href="https://chatforest.com/builders-log/opus-4-8-sonnet-5-tool-schema-hallucination-strict-mode-fix-builder-guide/">Better Models, Worse Tools: Opus 4.8 and Sonnet 5 Hallucinate ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community discussion on the issue tracker (GitHub issue #6278) shows developers confirming the problem and sharing examples of extra fields. Some users suggest enabling strict mode as a workaround, while others debate whether third-party tools should adapt to model-specific quirks.
-
-**Tags**: `#LLM`, `#tool calling`, `#AI reliability`, `#Claude`, `#regression`
-
----
-
-<a id="item-6"></a>
 ## [Competence Gate: Gating Tool Use via Internal Confidence](https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/) ⭐️ 8.0/10
 
-A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon via MLX and on llama.cpp/Ollama via GGUF. This approach addresses a key limitation of small language models: their inability to accurately verbalize confidence, leading to overconfident incorrect answers. By gating tool use on internal signals, it reduces hallucinations and protects private data from being leaked to public search engines. The gate achieved a d′ improvement of 0.46 in error detection over the base model's tool calling, and 87% of cases flagged by the gate but not by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.
+A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. This approach addresses a key limitation of small LLMs—poor verbalized confidence—by reading internal activations, enabling more reliable tool use and privacy protection for local deployment. The gate improves d′ by 0.46 (95% CI [0.01, 0.89]) and reduces private query leakage from 22% to 10%. It runs locally on Apple Silicon via MLX or GGUF for llama.cpp/Ollama.
 
 reddit · r/MachineLearning · /u/Synthium- · Jul 5, 07:49
 
-**Background**: LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that adds small trainable adapters to a frozen base model, enabling task-specific customization with minimal overhead. Internal confidence signals refer to the model's hidden state activations that correlate with its certainty, which can be more reliable than the model's verbalized confidence statements.
+**Background**: Small instruct models often fail to accurately express their confidence, leading to overconfident incorrect answers. LoRA adapters are lightweight fine-tuning modules that can be added to base models without full retraining. Internal confidence signals refer to hidden-state patterns that correlate with answer correctness, which can be extracted via probing.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://huggingface.co/learn/llm-course/chapter11/4">LoRA (Low-Rank Adaptation) · Hugging Face</a></li>
-<li><a href="https://huggingface.co/Qwen/Qwen3.5-4B">Qwen/Qwen3.5-4B · Hugging Face</a></li>
-<li><a href="https://arxiv.org/abs/2604.22271">[2604.22271] How LLMs Detect and Correct Their Own Errors ...</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/features/lora.html">LoRA Adapters — vLLM</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#machine learning`, `#LLM`, `#tool use`, `#confidence calibration`, `#open source`
+**Discussion**: The community discussion is not provided, but the post author invites critique and notes the approach is open-source and extendable to other models.
+
+**Tags**: `#LLM`, `#tool use`, `#confidence estimation`, `#LoRA`, `#local AI`
+
+---
+
+<a id="item-6"></a>
+## [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/) ⭐️ 8.0/10
+
+A new sparse fine-tuning method called USAF enables fine-tuning of Mixture-of-Experts (MoE) models on GPUs that previously could only run inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This method lowers the hardware barrier for fine-tuning large MoE models, allowing researchers and hobbyists with consumer GPUs to adapt state-of-the-art models without expensive hardware. USAF trains only sparse expert weights and the router, avoiding full-weight or adapter-based updates, and is released under Apache 2.0 license on GitHub.
+
+reddit · r/MachineLearning · /u/tsuyu122 · Jul 4, 21:56
+
+**Background**: Mixture-of-Experts (MoE) models use multiple specialized sub-networks (experts) and a router to select which experts to activate per input, enabling larger model capacity with lower computational cost. Traditional fine-tuning methods like LoRA add adapter modules, which still require significant memory. Sparse fine-tuning updates only a small subset of weights, reducing memory usage.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#fine-tuning`, `#MoE`, `#sparse training`, `#open source`, `#GPU optimization`
 
 ---
 
 <a id="item-7"></a>
-## [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/) ⭐️ 8.0/10
+## [Guardian: OpenAI Never Visited Key Stargate UK Site, $30B Pledge a Stunt](https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project) ⭐️ 8.0/10
 
-A new open-source method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on GPUs that previously could only run inference, demonstrated on a 12GB AMD RX 6750 XT with Qwen3-30B-A3B. This breakthrough dramatically lowers the hardware barrier for fine-tuning large MoE models, allowing researchers and hobbyists with consumer GPUs to customize state-of-the-art models without expensive cloud or enterprise hardware. USAF trains only 26 million out of 4.8 billion parameters (sparse expert weights and the router) on a 12GB GPU, whereas full fine-tuning would require over 120GB. It is the only method that works on AMD GPUs and the only one that trains both expert weights and the router.
+A Guardian investigation revealed that OpenAI never visited the primary site for its Stargate UK project, Cobalt Park in North Tyneside, and local government never met with OpenAI or partner Nscale. The project was suspended in April 2026, with insiders calling it a PR stunt. This story undermines the credibility of high-profile AI infrastructure investments and raises questions about the sincerity of tech giants' commitments to UK tech policy. It could affect public trust and future investment in the UK's AI sector. The Stargate UK project was announced during a Trump visit to the UK as a flagship UK-US AI collaboration, but was suspended in April 2026 citing regulatory environment and high energy costs. A local Conservative MP stated the project's realization 'looks extremely unlikely.'
 
-reddit · r/MachineLearning · /u/tsuyu122 · Jul 4, 21:56
+telegram · zaihuapd · Jul 5, 05:09
 
-**Background**: Mixture-of-Experts (MoE) models use multiple specialized subnetworks (experts) activated by a router, enabling large model capacity with lower inference cost. However, fine-tuning such models typically requires massive GPU memory because all parameters are updated. Sparse fine-tuning methods like USAF update only a small subset of parameters, drastically reducing memory needs.
+**Background**: Stargate UK was a proposed AI infrastructure partnership between OpenAI, NVIDIA, and Nscale to build sovereign compute capabilities in the UK, allowing AI models to run on local data centers. Cobalt Park is one of the largest business parks in the UK, located in North Tyneside. The project's suspension and lack of site visits suggest it may have been more about political optics than actual investment.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/tsuyu122/usaf/blob/master/README.md">usaf/README.md at master · tsuyu122/usaf · GitHub</a></li>
-<li><a href="https://github.com/tsuyu122/usaf/blob/master">GitHub - tsuyu122/usaf</a></li>
+<li><a href="https://openai.com/index/introducing-stargate-uk/">Introducing Stargate UK | OpenAI</a></li>
+<li><a href="https://www.theguardian.com/technology/2026/apr/09/openai-pulls-out-of-landmark-31bn-uk-investment">OpenAI shelves Stargate UK in blow to Britain’s AI ambitions | OpenAI | The Guardian</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#fine-tuning`, `#MoE`, `#sparse training`, `#open source`, `#GPU`
+**Discussion**: The Telegram source indicates community discussion, but no specific comments were provided in the input. The high score suggests significant interest and likely skepticism about OpenAI's claims.
+
+**Tags**: `#OpenAI`, `#Stargate UK`, `#AI infrastructure`, `#investigative journalism`, `#UK tech policy`
 
 ---
 
 <a id="item-8"></a>
-## [iOS 27 Introduces Trust Insights Anti-Fraud Feature](https://www.cultofmac.com/news/ios-27-trust-insights-feature) ⭐️ 8.0/10
+## [Fudan Exam: Students Stump AI to Test Critical Thinking](https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw) ⭐️ 8.0/10
 
-Apple announced Trust Insights, a new on-device anti-fraud framework for iOS 27 that analyzes user behavior patterns, timing, context, and sensor data to detect scam-induced actions like coerced transfers or account changes. This marks a significant step in proactive fraud prevention on mobile devices, using privacy-preserving on-device AI to protect users from social engineering scams without compromising personal data. The feature does not read messages, emails, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. Developers must opt in to integrate Trust Insights into their apps.
+Fudan University replaced its traditional 'Data Mining Techniques' final exam with a 'Human vs. AI' challenge, where 51 students each designed 10 calculation problems to test three AI models; students scored higher when AI answered incorrectly. This novel assessment reflects a paradigm shift in education for the AI era, moving from rote memorization to evaluating AI literacy, critical thinking, and the ability to judge AI outputs, which could influence pedagogy worldwide. 50 out of 51 students managed to stump at least one AI model, but only 4 students achieved a perfect zero score on any model; the strongest model, Claude, was never completely stumped, and the class average score was 85.7 out of 100.
 
-telegram · zaihuapd · Jul 4, 14:30
+telegram · zaihuapd · Jul 5, 08:40
 
-**Background**: Social engineering scams, where fraudsters trick users into performing actions like transferring money or changing account credentials, are a growing threat. Traditional anti-fraud measures often rely on server-side analysis or user reports, which can be too late. Trust Insights uses on-device machine learning to detect suspicious behavior in real time, adding a layer of protection before the user completes the scammer's requested action.
+**Background**: The course 'Data Mining Techniques' traditionally tests algorithmic knowledge and memory, but instructor Xiao Yanghua argued that such methods are obsolete in the AI era. The new exam format trains students to command AI and evaluate its results, emphasizing higher-order thinking skills.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=jY-_rqz_VEM">WWDC26: Meet Trust Insights | Apple - YouTube</a></li>
-<li><a href="https://www.ithinkdiff.com/ios-27-trust-insights-scam-detection-framework/">iOS 27 Adds Trust Insights to Detect Scams Before They Happen</a></li>
-<li><a href="https://www.newsy-today.com/real-time-social-engineering-detection-how-trust-insights-stops-fraud-before-it-starts/">Real-Time Social Engineering Detection: How Trust Insights Stops...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude ( AI ) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#iOS`, `#security`, `#anti-fraud`, `#privacy`, `#Apple`
+**Tags**: `#AI in Education`, `#Assessment Reform`, `#AI Evaluation`, `#Pedagogy`, `#Critical Thinking`
 
 ---
 
 <a id="item-9"></a>
-## [OpenAI Never Visited Key UK Stargate Site, Guardian Finds](https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project) ⭐️ 8.0/10
+## [SpaceX Shows Investors Thinner-than-iPhone Prototype](https://www.wsj.com/tech/spacexs-telecom-dreams-d461e568) ⭐️ 8.0/10
 
-A Guardian investigation reveals that OpenAI never visited the Cobalt Park site in North Tyneside, the proposed location for its Stargate UK data center, and local officials never met with OpenAI or partner Nscale. The project, announced in September 2025 as a flagship UK-US AI collaboration, was paused in April 2026 due to regulatory and energy cost concerns. The findings suggest the $30 billion Stargate UK pledge may have been a PR stunt rather than a genuine investment, undermining trust in major AI infrastructure announcements and raising questions about government transparency in tech partnerships. The Stargate UK project was announced in September 2025 with partners Nvidia and Nscale, aiming to build a large data centre in north-east England. It was paused in April 2026, with a local Conservative MP stating the project 'looks extremely unlikely' to proceed.
+SpaceX has shown investors a prototype smartphone that is thinner than an iPhone and runs its own operating system, as part of its plan to expand Starlink into mobile communications. This move could disrupt the telecom industry by integrating satellite connectivity directly into a custom device, potentially reducing reliance on traditional carriers and enabling global coverage. The prototype is reportedly thinner than an iPhone and runs its own OS; SpaceX President Gwynne Shotwell also mentioned plans to build ground networks and partner with cellular carriers.
 
-telegram · zaihuapd · Jul 5, 05:09
+telegram · zaihuapd · Jul 5, 14:10
 
-**Background**: Stargate UK was part of OpenAI's broader Stargate initiative to build massive AI infrastructure globally. The UK project was touted as a key component of the UK's AI Opportunities Action Plan, promising local computing power for sensitive AI workloads. Cobalt Park is one of the largest business parks in the UK, but OpenAI never sent representatives to the site.
+**Background**: SpaceX's Starlink currently provides broadband internet via satellite and has launched a Direct to Cell service for 4G LTE phones. The prototype represents a step toward a dedicated device that could fully leverage Starlink's satellite network for mobile communication.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/introducing-stargate-uk/">Introducing Stargate UK - OpenAI</a></li>
-<li><a href="https://www.bbc.com/news/articles/clyd032ej70o">OpenAI pauses UK data centre deal over energy costs and ... - BBC</a></li>
+<li><a href="https://starlink.com/public-files/DIRECT_TO_CELL_SERVICE_FEB_25.pdf">STARLINK DIRECT TO CELL SERVICE NOW AVAILABLE</a></li>
+<li><a href="https://winbuzzer.com/2026/07/03/musk-denies-reported-spacex-handset-like-ai-prototype-xcxwbn/">Elon Musk Denies Rumors of SpaceX Handset-Like AI Device Prototype</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#OpenAI`, `#Stargate`, `#AI infrastructure`, `#investigative journalism`, `#UK`
+**Discussion**: Elon Musk denied rumors of a SpaceX handset-like AI device prototype, creating some confusion. However, the WSJ report suggests the prototype exists, sparking debate about Musk's ecosystem ambitions.
 
----
-
-<a id="item-10"></a>
-## [Fudan Exam: Students Stump AI, Only 4 Get Zero](https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw) ⭐️ 8.0/10
-
-In a Fudan University data mining course, the final exam was redesigned so that 51 students each created 10 calculation questions to stump three AI models; only 4 students succeeded in making any AI score zero, and the strongest model, Claude, was never completely defeated. This innovative assessment shifts focus from rote memorization to evaluating AI outputs, reflecting a necessary reform in education as AI capabilities advance. It highlights a new paradigm where students learn to command and judge AI, preparing them for an AI-integrated workforce. The exam involved three unnamed AI models, with Claude being the most robust. The class average score was 85.7 out of 100, meaning most students successfully stumped at least one model on some questions, but only four achieved a perfect zero on any model's entire paper.
-
-telegram · zaihuapd · Jul 5, 08:40
-
-**Background**: Traditional exams that test algorithmic recall and memorization are becoming obsolete as AI can easily solve such problems. This course, taught by Professor Xiao Yanghua, represents a shift toward training students in critical thinking, evaluation, and creative problem-solving—skills that AI cannot easily replicate.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview - Claude Platform Docs</a></li>
-<li><a href="https://www.science.org/doi/10.1126/science.aec5115">Generative AI use and misuse call for assessment reform in higher education | Science</a></li>
-<li><a href="https://www.unesco.org/en/articles/whats-worth-measuring-future-assessment-ai-age">What's worth measuring? The future of assessment in the AI age</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI in Education`, `#Assessment Reform`, `#LLM Evaluation`, `#Pedagogy`, `#AI Safety`
+**Tags**: `#SpaceX`, `#Starlink`, `#mobile`, `#telecom`, `#hardware`
 
 ---
