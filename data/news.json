@@ -1,148 +1,177 @@
 [
   {
     "id": "1",
-    "title": "提示注入漏洞泄露 YouTube 创作者的私密视频",
+    "title": "提示注入泄露 YouTube 创作者的私密视频",
     "importance_score": 9.0,
     "source": "Hackernews",
     "url": "https://javoriuski.com/post/youtube",
     "category": "AI",
     "publish_time": "2026-07-05T16:45:00Z",
-    "summary_zh": "一名安全研究人员发现 YouTube Studio 的 AI 评论建议功能存在提示注入漏洞，攻击者通过在评论中嵌入恶意指令，可以泄露创作者的私密和未公开视频。 该漏洞影响数百万依赖平台 AI 工具的 YouTube 创作者，可能泄露未发布内容并削弱对 YouTube 安全性的信任。它凸显了 AI 集成应用中提示注入风险的日益增长。 攻击过程是：创作者在 YouTube Studio 中打开评论标签页并点击一个建议的 AI 提示，被注入的评论就会导致 AI 在其回复中包含一个私密视频的链接。研究人员于 2024 年 7 月向谷歌报告了该问题，但最初被归类为低严重性的“垃圾邮件”问题。\n\n**背景**: 提示注入是一种安全漏洞，攻击者通过精心构造输入来操纵 AI 模型的行为，通常绕过预设指令。YouTube Studio 的 AI 评论建议功能使用大语言模型为创作者生成回复建议，但可能被恶意评论欺骗。随着 AI 功能被集成到更多应用中，这类攻击越来越常见。\n\n**社区讨论**: 社区讨论中，一位前谷歌工程师解释了 YouTube 可能处理缓慢的原因，还有用户尝试复现攻击但发现仅有一个未公开视频时无效。总体情绪对 YouTube 的回应持批评态度，许多人呼吁将提示注入视为严重的安全漏洞。",
-    "summary_en": "A security researcher discovered a prompt injection vulnerability in YouTube Studio's AI comment suggestion feature that allows attackers to leak creators' private and unlisted videos by embedding malicious instructions in comments. This vulnerability affects millions of YouTube creators who rely on the platform's AI tools, potentially exposing unpublished content and undermining trust in YouTube's security. It highlights the growing risk of prompt injection in AI-integrated applications. The attack works when a creator opens the comments tab in YouTube Studio and clicks a suggested AI prompt; the injected comment then causes the AI to include a link to a private video in its response. The researcher reported the issue to Google in July 2024, but it was initially classified as a low-severity 'spam' issue.\n\n**Background**: Prompt injection is a security vulnerability where an attacker crafts input that manipulates an AI model's behavior, often bypassing intended instructions. YouTube Studio's AI comment suggestions use large language models to generate reply suggestions for creators, but they can be tricked by malicious comments. This type of attack is increasingly common as AI features are integrated into more applications.\n\n**Discussion**: The community discussion includes a former Google engineer who explains why YouTube may have handled the bug slowly, and a user who attempted to reproduce the attack but found it didn't work with only one unlisted video. Overall sentiment is critical of YouTube's response, with many calling for prompt injection to be treated as a serious security bug.",
+    "summary_zh": "一名安全研究人员发现，YouTube 的 AI 评论摘要功能存在提示注入漏洞，攻击者可通过构造恶意评论泄露私密视频的标题和元数据。 该漏洞暴露了 AI 系统处理用户输入时的关键缺陷，可能危及创作者隐私并削弱对 YouTube 平台安全的信任。 攻击需要创作者打开 YouTube Studio 的评论标签页并点击建议的 AI 提示，从而触发注入并在响应中返回攻击者控制的内容。\n\n**背景**: 提示注入是一种网络安全利用手段，通过恶意输入使 AI 模型产生非预期行为。YouTube 的 AI 评论系统使用大语言模型来总结评论，但未能区分用户评论和系统指令，从而使得攻击成为可能。\n\n**社区讨论**: 社区普遍验证了该漏洞的严重性，一位前谷歌内部人士解释了 YouTube 可能处理缓慢的原因。一些用户尝试复现攻击但发现仅对未公开视频无效，而其他人则称赞文章清晰且不煽情。",
+    "summary_en": "A security researcher discovered that YouTube's AI comment summarization feature is vulnerable to prompt injection, allowing attackers to leak private video titles and metadata by crafting malicious comments. This vulnerability exposes a critical flaw in how AI systems handle user input, potentially compromising creator privacy and undermining trust in YouTube's platform security. The attack requires the creator to open YouTube Studio's comment tab and click a suggested AI prompt, which triggers the injection and returns attacker-controlled content in the response.\n\n**Background**: Prompt injection is a cybersecurity exploit where malicious inputs cause AI models to behave unintendedly. YouTube's AI comment system uses large language models to summarize comments, but fails to distinguish between user comments and system instructions, enabling the attack.\n\n**Discussion**: The community largely validated the severity of the bug, with an ex-Google insider explaining why YouTube might handle it slowly. Some users attempted to reproduce the attack but found it didn't work with only unlisted videos, while others praised the article's clarity and lack of sensationalism.",
     "takeaways": [
-      "背景信息: 提示注入是一种安全漏洞，攻击者通过精心构造输入来操纵 AI 模型的行为，通常绕过预设指令。YouTube Studio 的 AI 评论建议功能使用大语言模型为创作者生成回复建议，但可能被恶意评论欺骗。随着 AI 功能被集成到更多应用中，这类攻击越来越常见。",
-      "社区反馈: 社区讨论中，一位前谷歌工程师解释了 YouTube 可能处理缓慢的原因，还有用户尝试复现攻击但发现仅有一个未公开视频时无效。总体情绪对 YouTube 的回应持批评态度，许多人呼吁将提示注入视为严重的安全漏洞。"
+      "背景信息: 提示注入是一种网络安全利用手段，通过恶意输入使 AI 模型产生非预期行为。YouTube 的 AI 评论系统使用大语言模型来总结评论，但未能区分用户评论和系统指令，从而使得攻击成为可能。",
+      "社区反馈: 社区普遍验证了该漏洞的严重性，一位前谷歌内部人士解释了 YouTube 可能处理缓慢的原因。一些用户尝试复现攻击但发现仅对未公开视频无效，而其他人则称赞文章清晰且不煽情。"
     ]
   },
   {
     "id": "2",
-    "title": "华为提出“韬定律”：以时间缩微延续摩尔定律",
-    "importance_score": 9.0,
-    "source": "Telegram",
-    "url": "https://t.me/zaihuapd/42346",
-    "category": "AI",
-    "publish_time": "2026-07-05T04:56:00Z",
-    "summary_zh": "在上海举行的 2026 国际电路与系统研讨会上，华为宣布了“韬定律”，这是一项以“时间缩微”替代“几何缩微”的半导体演进新原则。过去六年，华为已据此设计并量产了 381 款芯片，并计划今年秋季推出采用逻辑折叠技术的新麒麟手机芯片。 “韬定律”通过降低时间常数实现器件、电路、芯片到系统的多层级协同优化，为逼近物理极限的摩尔定律提供了潜在延续路径。这一突破可能维持半导体进步并影响整个行业，华为预计到 2031 年基于该定律的高端芯片晶体管密度可达 1.4 纳米制程同等水平。 新款麒麟芯片将首次实施逻辑折叠技术，该技术将芯片内部二维平面分布的电路单元进行分层折叠排布，在单颗芯片内搭建多层逻辑通道，大幅提升晶体管密度而不增加芯片体积。华为何庭波在中国科学院预发布平台上发表了题为《多层电子系统的时间缩微理论》的详细论文。\n\n**背景**: 摩尔定律指出芯片上晶体管密度大约每两年翻一番，数十年来推动了半导体进步，但如今因物理极限而放缓。传统的几何缩微通过缩小晶体管尺寸来提升密度，而时间缩微则通过创新电路设计和架构来减少信号传播延迟。逻辑折叠是一种特定技术，将电路重新排列为单颗芯片内的多层结构，在不依赖先进制程节点的情况下提升性能。\n\n**社区讨论**: 提供的内容中不包含社区评论，因此无法总结讨论内容。",
-    "summary_en": "At the 2026 International Symposium on Circuits and Systems in Shanghai, Huawei announced 'Tao's Law', a new semiconductor scaling principle that replaces geometric scaling with time scaling. Over the past six years, Huawei has designed and mass-produced 381 chips based on this principle, and plans to release a new Kirin smartphone chip using logic folding technology this autumn. Tao's Law offers a potential path beyond Moore's Law, which is approaching physical limits, by optimizing time constants across devices, circuits, chips, and systems. This breakthrough could sustain semiconductor advancement and impact the entire industry, with Huawei predicting that high-end chips based on this law could achieve transistor density equivalent to 1.4nm process by 2031. The new Kirin chip will be the first to implement logic folding technology, which restructures logic circuits from a 2D plane into layered channels within a single chip, significantly boosting transistor density without increasing chip size. Huawei's He Tingbo published a detailed paper titled 'A Time Scaling Theory for Multi-Layer Electronic Systems' on the Chinese Academy of Sciences preprint platform.\n\n**Background**: Moore's Law, which states that transistor density on a chip doubles approximately every two years, has driven semiconductor progress for decades but is now slowing due to physical limits. Traditional geometric scaling shrinks transistor dimensions, while time scaling focuses on reducing signal propagation delays through innovative circuit design and architecture. Logic folding is a specific technique that rearranges circuits into multiple layers within a single chip, improving performance without relying on advanced fabrication nodes.\n\n**Discussion**: The provided content does not include community comments, so no discussion summary is available.",
-    "takeaways": [
-      "背景信息: 摩尔定律指出芯片上晶体管密度大约每两年翻一番，数十年来推动了半导体进步，但如今因物理极限而放缓。传统的几何缩微通过缩小晶体管尺寸来提升密度，而时间缩微则通过创新电路设计和架构来减少信号传播延迟。逻辑折叠是一种特定技术，将电路重新排列为单颗芯片内的多层结构，在不依赖先进制程节点的情况下提升性能。",
-      "社区反馈: 提供的内容中不包含社区评论，因此无法总结讨论内容。"
-    ]
-  },
-  {
-    "id": "3",
-    "title": "GPT-5.5 Codex 因令牌聚类导致推理性能下降",
+    "title": "GPT-5.5 Codex 出现推理令牌在 516 处聚集的 bug",
     "importance_score": 8.0,
     "source": "Hackernews",
     "url": "https://github.com/openai/codex/issues/30364",
     "category": "AI",
     "publish_time": "2026-07-05T21:51:00Z",
-    "summary_zh": "用户报告称，GPT-5.5 Codex 出现推理性能下降，模型有时会短路，仅使用恰好 516 个思考令牌就得出错误结果，而使用 6000-8000 个令牌时则能给出正确答案。 这一性能退化损害了用户对 OpenAI 旗舰编程助手的信任，尤其是在复杂推理任务中，可能促使用户转向 Claude 或本地模型等替代方案。 该问题似乎是一个令牌聚类错误，导致模型在固定数量的令牌后过早停止推理，从而产生错误输出。社区成员指出其他模型也曾出现类似退化，例如四月份的 Claude Code。\n\n**背景**: GPT-5.5 Codex 是 OpenAI 于 2026 年 4 月 23 日发布的最新编程与推理模型，专为自主编程任务设计。令牌聚类是一种通过分组相似令牌来减少推理时间的技术，但若配置不当，可能导致模型过早截断推理过程。\n\n**社区讨论**: 社区情绪普遍负面，用户对静默退化表示沮丧，并将其与其他模型的类似问题进行比较。部分用户已转向 Claude，或计划混合使用多种模型以缓解该问题。",
-    "summary_en": "Users report that GPT-5.5 Codex exhibits degraded reasoning performance, with the model sometimes short-circuiting and using exactly 516 thinking tokens to produce incorrect results on puzzles, while using 6000-8000 tokens yields correct answers. This regression undermines trust in OpenAI's flagship coding assistant, especially for complex reasoning tasks, and may drive users to competing models like Claude or local alternatives. The issue appears to be a token clustering bug where the model prematurely stops reasoning after a fixed number of tokens, leading to incorrect outputs. Community members note similar regressions in other models, such as Claude Code in April.\n\n**Background**: GPT-5.5 Codex is OpenAI's latest coding and reasoning model, released on April 23, 2026, designed for agentic coding tasks. Token clustering is a technique used to reduce inference time by grouping similar tokens, but when misconfigured, it can cause the model to truncate reasoning prematurely.\n\n**Discussion**: Community sentiment is largely negative, with users expressing frustration over the silent regression and comparing it to similar issues in other models. Some users have switched to Claude or plan to use a mix of models to mitigate the problem.",
+    "summary_zh": "OpenAI 的 GPT-5.5 Codex 中出现了一个可复现的 bug，导致推理令牌精确地在 516 个令牌处聚集，从而在复杂任务上产生错误结果。该问题于 2026 年 6 月 27 日在 GitHub issue #30364 中被报告，来自 390,195 条令牌计数记录的证据显示在 516、1034 和 1552 个令牌处出现峰值。 这个 bug 降低了依赖 Codex 进行编码任务的许多用户的性能，引发不满，并促使一些人转向 Claude 等替代品。它还引发了对 AI 模型静默服务器端更改以及基于云的 AI 服务可靠性的担忧。 这种聚集现象似乎是模型特有的，并且与整体推理令牌强度降低同时发生，这可能解释了复杂任务上的性能下降。作者指出，这些数据并不能证明隐藏的思维链截断，因此应将其视为遥测异常，而非确认的模型缺陷。\n\n**背景**: Codex 是 OpenAI 的 AI 编码助手，使用大型语言模型帮助开发者编写代码。推理令牌是模型在生成最终答案之前用于思考问题的内部令牌。推理令牌在固定边界处聚集表明模型可能过早停止其推理过程，从而导致错误的输出。\n\n**社区讨论**: 社区成员报告几乎每天都会经历质量下降的阶梯式跳跃，一些人因沮丧而转向 Claude。其他人指出这与过去 Claude Code 的性能回归相似，并赞赏 Codex 是开源的，使得此类问题能够被公开发现和解决。",
+    "summary_en": "A reproducible bug in OpenAI's GPT-5.5 Codex causes reasoning token clustering at exactly 516 tokens, leading to incorrect results on complex tasks. The issue was reported on GitHub issue #30364 on June 27, 2026, with evidence from 390,195 token-count records showing spikes at 516, 1034, and 1552 tokens. This bug degrades performance for many users relying on Codex for coding tasks, causing frustration and prompting some to switch to alternatives like Claude. It also raises concerns about silent server-side changes in AI models and the reliability of cloud-based AI services. The clustering appears model-specific and coincides with lower overall reasoning-token intensity, which may explain degraded performance on complex tasks. The author notes the data does not prove hidden chain-of-thought truncation, so it should be treated as a telemetry anomaly rather than a confirmed model defect.\n\n**Background**: Codex is OpenAI's AI-powered coding assistant that uses large language models to help developers write code. Reasoning tokens are internal tokens used by the model to think through problems before generating a final answer. A clustering of reasoning tokens at fixed boundaries suggests the model may be prematurely stopping its reasoning process, leading to incorrect outputs.\n\n**Discussion**: Community members report experiencing step jumps in quality degradation on an almost daily basis, with some switching to Claude due to frustration. Others note similarities to a past Claude Code performance regression and express appreciation that Codex is open source, allowing such issues to be surfaced and addressed publicly.",
     "takeaways": [
-      "背景信息: GPT-5.5 Codex 是 OpenAI 于 2026 年 4 月 23 日发布的最新编程与推理模型，专为自主编程任务设计。令牌聚类是一种通过分组相似令牌来减少推理时间的技术，但若配置不当，可能导致模型过早截断推理过程。",
-      "社区反馈: 社区情绪普遍负面，用户对静默退化表示沮丧，并将其与其他模型的类似问题进行比较。部分用户已转向 Claude，或计划混合使用多种模型以缓解该问题。"
+      "背景信息: Codex 是 OpenAI 的 AI 编码助手，使用大型语言模型帮助开发者编写代码。推理令牌是模型在生成最终答案之前用于思考问题的内部令牌。推理令牌在固定边界处聚集表明模型可能过早停止其推理过程，从而导致错误的输出。",
+      "社区反馈: 社区成员报告几乎每天都会经历质量下降的阶梯式跳跃，一些人因沮丧而转向 Claude。其他人指出这与过去 Claude Code 的性能回归相似，并赞赏 Codex 是开源的，使得此类问题能够被公开发现和解决。"
     ]
   },
   {
-    "id": "4",
-    "title": "安娜档案悬赏 20 万美元征集谷歌图书扫描件",
+    "id": "3",
+    "title": "安娜档案悬赏 20 万美元获取谷歌图书扫描件",
     "importance_score": 8.0,
     "source": "Hackernews",
     "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
     "category": "AI",
     "publish_time": "2026-07-05T16:51:00Z",
-    "summary_zh": "安娜档案宣布悬赏 20 万美元，征集谷歌图书的全部扫描件，旨在获取完整数据集以实现开放获取。 这一悬赏凸显了开放获取倡导者与版权持有者之间的持续斗争，可能使数百万册数字化图书免费向公众开放，尤其是在获取受限的地区。 该悬赏是安娜档案更广泛使命的一部分，旨在编录所有现存书籍，此前谷歌图书扫描项目曾面临法律挑战，但美国法院裁定其合法。\n\n**背景**: 谷歌图书是一项服务，扫描并索引来自图书馆和出版商的书籍全文，使用 OCR 将图像转换为文本。安娜档案是一个针对 Z-Library 和 Sci-Hub 等影子图书馆的元搜索引擎，聚合了超过 9700 万本书的元数据。该项目因侵犯版权面临法律诉讼，但作为非营利开源平台运营。\n\n**社区讨论**: 社区评论表达了对安娜档案的感激，用户分享了获取稀有或绝版书籍的个人故事。一些人讨论了相关项目如 SourceLibrary.org，另一些人则对互联网爬取和 Cloudflare 验证码表示担忧。此外，还有关于悬赏描述中恶意链接的更正。",
-    "summary_en": "Anna's Archive has announced a $200,000 bounty for a complete collection of all book scans from Google Books, aiming to acquire the full dataset for open access. This bounty underscores the ongoing struggle between open access advocates and copyright holders, potentially making millions of digitized books freely available to the public, especially in regions with limited access. The bounty is part of Anna's Archive's broader mission to catalog all books in existence, and it follows previous legal challenges to Google's book scanning project, which was deemed legal by U.S. courts.\n\n**Background**: Google Books is a service that scans and indexes the full text of books from libraries and publishers, using OCR to convert images to text. Anna's Archive is a metasearch engine for shadow libraries like Z-Library and Sci-Hub, aggregating metadata for over 97 million books. The project has faced legal actions for copyright infringement but operates as a non-profit, open-source platform.\n\n**Discussion**: Community comments express gratitude for Anna's Archive, with users sharing personal stories of accessing rare or out-of-print books. Some discuss related projects like SourceLibrary.org, while others raise concerns about internet scraping and Cloudflare captchas. There is also a correction about a malicious link in the bounty description.",
+    "summary_zh": "影子图书馆元搜索引擎安娜档案宣布悬赏 20 万美元，以获取谷歌图书的所有扫描件，旨在保存知识并提供开放获取，特别是为服务不足的地区。 这笔悬赏可能大幅扩大数字化图书的可获取性，挑战当前的版权和访问障碍，并有可能创建历史上最大的开放数字图书馆。 悬赏发布在安娜档案的工作项页面上，该项目旨在编录所有现存书籍。扫描件将通过该档案的搜索引擎免费提供。\n\n**背景**: 谷歌图书自 2002 年开始扫描大学图书馆的数百万册图书，但由于版权问题，全文访问通常受到限制。安娜档案聚合了来自 Z-Library、Sci-Hub 和 Library Genesis 等影子图书馆的记录，并因侵犯版权面临法律挑战。\n\n**社区讨论**: 社区评论对安娜档案在提供稀有和绝版书籍访问方面的作用表示感谢，用户分享了找到原本无法获取的资源的个人故事。一些人讨论了针对其他数据（如互联网档案）悬赏的可能性，并对项目的法律地位提出质疑。",
+    "summary_en": "Anna's Archive, a shadow library metasearch engine, has announced a $200,000 bounty for obtaining all book scans from Google Books, aiming to preserve and provide open access to knowledge, especially for underserved regions. This bounty could significantly expand the availability of digitized books, challenging the current copyright and access barriers, and potentially creating the largest open digital library in history. The bounty is posted on Anna's Archive's work items page, and the project aims to catalog all books in existence. The scans would be made freely available through the archive's search engine.\n\n**Background**: Google Books began scanning millions of books from university libraries in 2002, but access to full texts is often restricted due to copyright. Anna's Archive aggregates records from shadow libraries like Z-Library, Sci-Hub, and Library Genesis, and has faced legal challenges for copyright infringement.\n\n**Discussion**: Community comments express gratitude for Anna's Archive's role in providing access to rare and out-of-print books, with users sharing personal stories of finding otherwise unavailable resources. Some discuss the potential for bounties on other data, like internet archives, and question the project's legal standing.",
     "takeaways": [
-      "背景信息: 谷歌图书是一项服务，扫描并索引来自图书馆和出版商的书籍全文，使用 OCR 将图像转换为文本。安娜档案是一个针对 Z-Library 和 Sci-Hub 等影子图书馆的元搜索引擎，聚合了超过 9700 万本书的元数据。该项目因侵犯版权面临法律诉讼，但作为非营利开源平台运营。",
-      "社区反馈: 社区评论表达了对安娜档案的感激，用户分享了获取稀有或绝版书籍的个人故事。一些人讨论了相关项目如 SourceLibrary.org，另一些人则对互联网爬取和 Cloudflare 验证码表示担忧。此外，还有关于悬赏描述中恶意链接的更正。"
+      "背景信息: 谷歌图书自 2002 年开始扫描大学图书馆的数百万册图书，但由于版权问题，全文访问通常受到限制。安娜档案聚合了来自 Z-Library、Sci-Hub 和 Library Genesis 等影子图书馆的记录，并因侵犯版权面临法律挑战。",
+      "社区反馈: 社区评论对安娜档案在提供稀有和绝版书籍访问方面的作用表示感谢，用户分享了找到原本无法获取的资源的个人故事。一些人讨论了针对其他数据（如互联网档案）悬赏的可能性，并对项目的法律地位提出质疑。"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Zig 将包管理功能从编译器移至构建系统",
+    "importance_score": 8.0,
+    "source": "<li><a href=\"https://github.com/ziglang/zig/issues/20630\">move `@cimport` to the build system",
+    "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+    "category": "Dev",
+    "publish_time": "2026-07-05T12:00:00Z",
+    "summary_zh": "Zig 已将所有包管理功能从编译器移至构建系统，这是一项重要的架构变更，将两者解耦。 这一变化提高了可维护性，并支持未来将构建系统运行在 WebAssembly VM 中，但移除了便捷的 @cImport 内置功能，而该功能是 C 语言互操作的关键特性。 @cImport 内置功能已被移除；用户现在必须使用构建系统的 TranslateC 步骤。这减少了编译器对 libclang 的依赖。\n\n**背景**: Zig 是一种系统编程语言，旨在成为 C 语言的现代替代品。其包管理器之前集成在编译器中，但这种耦合增加了维护难度。现在构建系统负责依赖获取和 C 代码翻译。\n\n**社区讨论**: 社区成员反应不一：一些人称赞架构改进，而另一些人则对失去 @cImport 这一关键用户体验功能感到惋惜。此外，对于将构建系统运行在 WebAssembly VM 中的长期计划，社区也感到兴奋。",
+    "summary_en": "Zig has moved all package management functionality from the compiler into the build system, a significant architectural change that decouples the two components. This change improves maintainability and enables future innovations like running the build system in a WebAssembly VM, but it removes the convenient @cImport builtin, which was a key feature for C interop. The @cImport builtin has been removed; users must now use the build system's TranslateC step instead. This reduces the compiler's dependency on libclang.\n\n**Background**: Zig is a systems programming language that aims to be a modern alternative to C. Its package manager was previously integrated into the compiler, but this coupling made maintenance harder. The build system now handles dependency fetching and C translation.\n\n**Discussion**: Community members expressed mixed feelings: some praised the architectural improvement, while others lamented the loss of @cImport as a key UX feature. There was also excitement about the long-term plan to run the build system in a WebAssembly VM.",
+    "takeaways": [
+      "背景信息: Zig 是一种系统编程语言，旨在成为 C 语言的现代替代品。其包管理器之前集成在编译器中，但这种耦合增加了维护难度。现在构建系统负责依赖获取和 C 代码翻译。",
+      "社区反馈: 社区成员反应不一：一些人称赞架构改进，而另一些人则对失去 @cImport 这一关键用户体验功能感到惋惜。此外，对于将构建系统运行在 WebAssembly VM 中的长期计划，社区也感到兴奋。"
     ]
   },
   {
     "id": "5",
-    "title": "LLM 工作空间会话/缓存泄露报告",
+    "title": "LLM 实例间潜在的会话/缓存泄漏",
     "importance_score": 8.0,
     "source": "Hackernews",
     "url": "https://github.com/anthropics/claude-code/issues/74066",
     "category": "AI",
     "publish_time": "2026-07-05T14:03:00Z",
-    "summary_zh": "用户报告 LLM 工作空间实例之间可能存在会话或缓存泄露，一家提供商的事后分析指出 HTTP 100 状态码处理不当是根本原因。 此问题引发了对 LLM 服务的重大安全和隐私担忧，可能导致跨账户数据泄露。如果得到确认，将削弱对基于云的 AI 平台的信任。 该漏洞表现为用户收到看似属于其他会话的回复，例如无关的 Minecraft 建筑建议。Anthropic 的 Claude Code 团队表示他们认为这是幻觉，但正在调查。\n\n**背景**: LLM 工作空间实例是用于与 AI 模型交互的隔离环境，通常具有特定于会话的上下文和缓存。HTTP 100 Continue 是一个信息性状态码，如果 API 网关处理不当，可能导致请求路由错误，进而可能造成响应混淆。\n\n**社区讨论**: 社区评论包括跨提供商（如 Gemini）类似问题的报告，一些用户怀疑是缓存冲突。一位有内部知识的评论者提到两次响应交换事件，其中一次涉及 HTTP 100 处理不当。存在怀疑态度，一些人将这种行为归因于幻觉。",
-    "summary_en": "Users report potential session or cache leakage between LLM workspace instances, with one provider postmortem citing HTTP 100 status code mishandling as a root cause. This issue raises significant security and privacy concerns for LLM services, as it could lead to cross-account data exposure. If confirmed, it would undermine trust in cloud-based AI platforms. The bug manifests as users receiving responses that appear to belong to other sessions, such as unrelated Minecraft building suggestions. Anthropic's Claude Code team has stated they believe it is a hallucination but are investigating.\n\n**Background**: LLM workspace instances are isolated environments for interacting with AI models, typically with session-specific context and caching. HTTP 100 Continue is an informational status code that can cause request routing errors if mishandled by API gateways, potentially leading to response mix-ups.\n\n**Discussion**: Community comments include reports of similar issues across providers like Gemini, with some users suspecting cache collisions. A commenter with insider knowledge mentioned two instances of response swapping, one involving HTTP 100 mishandling. Skepticism exists, with some attributing the behavior to hallucinations.",
+    "summary_zh": "用户报告多个提供商的 LLM 实例之间可能存在会话或缓存泄漏，涉及 Claude 和 GPT 模型，其中一位用户指出 API 网关错误处理 HTTP 100 状态码是根本原因。 如果得到确认，这可能表明多租户 LLM 基础设施存在严重安全漏洞，可能跨会话暴露用户提示或响应。关于幻觉与实际泄漏的争论凸显了诊断此类问题的挑战。 一位用户描述了 API 网关处理 HTTP 100 状态码时出现差一错误，导致响应交换。Claude Code 团队回应称，他们确信这是幻觉，但正在调查。\n\n**背景**: LLM 提供商通常使用响应缓存和多租户服务来降低成本和延迟，但这些优化可能引入跨租户泄漏等安全风险。幻觉是指 AI 生成虚假信息，可能模仿真实系统行为，使诊断复杂化。\n\n**社区讨论**: 社区评论意见不一：一些用户报告在 Gemini 和其他模型上遇到类似情况，而另一些用户则怀疑是幻觉。Claude Code 团队成员确认了报告并承诺调查，但倾向于认为是幻觉。",
+    "summary_en": "Users report possible session or cache leakage between LLM instances from multiple providers, including Claude and GPT models, with one user citing an API gateway mishandling HTTP 100 status codes as a root cause. If confirmed, this could indicate a serious security flaw in multi-tenant LLM infrastructure, potentially exposing user prompts or responses across sessions. The debate between hallucination and real leakage highlights the challenge of diagnosing such issues. A user described an off-by-one error in API gateway handling of HTTP 100 status codes leading to swapped responses. The Claude Code team responded, stating they are confident it's a hallucination but are investigating.\n\n**Background**: LLM providers often use response caching and multi-tenant serving to reduce costs and latency, but these optimizations can introduce security risks like cross-tenant leakage. Hallucinations occur when AI generates false information, which can mimic real system behavior and complicate diagnosis.\n\n**Discussion**: Community comments are mixed: some users report similar experiences with Gemini and other models, while others suspect hallucination. A Claude Code team member acknowledged the report and promised investigation, but leaned toward hallucination.",
     "takeaways": [
-      "背景信息: LLM 工作空间实例是用于与 AI 模型交互的隔离环境，通常具有特定于会话的上下文和缓存。HTTP 100 Continue 是一个信息性状态码，如果 API 网关处理不当，可能导致请求路由错误，进而可能造成响应混淆。",
-      "社区反馈: 社区评论包括跨提供商（如 Gemini）类似问题的报告，一些用户怀疑是缓存冲突。一位有内部知识的评论者提到两次响应交换事件，其中一次涉及 HTTP 100 处理不当。存在怀疑态度，一些人将这种行为归因于幻觉。"
+      "背景信息: LLM 提供商通常使用响应缓存和多租户服务来降低成本和延迟，但这些优化可能引入跨租户泄漏等安全风险。幻觉是指 AI 生成虚假信息，可能模仿真实系统行为，使诊断复杂化。",
+      "社区反馈: 社区评论意见不一：一些用户报告在 Gemini 和其他模型上遇到类似情况，而另一些用户则怀疑是幻觉。Claude Code 团队成员确认了报告并承诺调查，但倾向于认为是幻觉。"
     ]
   },
   {
     "id": "6",
-    "title": "模型更强，工具调用反而更差",
+    "title": "仅用 500 字节构建世界地图",
+    "importance_score": 8.0,
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+    "category": "Dev",
+    "publish_time": "2026-07-05T23:09:00Z",
+    "summary_zh": "Iwo Kadziela（在 Codex 辅助下）仅用 445 字节数据创建了一个可信的 ASCII 世界地图，利用 deflate 压缩和 JavaScript 的 fetch 与 data URI 在浏览器中解压并渲染地图。 这展示了一种极端数据压缩的巧妙技术以及对现代浏览器 API 的创造性使用，激励开发者思考最小化数据表示和高效的网络传输。 该技术使用 DecompressionStream API 的'deflate-raw'格式，压缩数据以 base64 编码的 data URI 嵌入在 fetch 调用中，使得整个地图在 500 字节以内交付。\n\n**背景**: Deflate 是一种结合 LZ77 和霍夫曼编码的无损压缩算法，广泛用于 ZIP 和 PNG 等格式。DecompressionStream API 为流提供浏览器原生解压功能。Data URI 允许将数据直接嵌入 URL 中，避免单独的 HTTP 请求。\n\n**社区讨论**: Hacker News 上的讨论称赞了这种方法的巧妙和极简，一些用户注意到使用 fetch 与 data URI 以及 DecompressionStream 的新颖性。少数评论讨论了可能的改进或替代压缩方法。",
+    "summary_en": "Iwo Kadziela (assisted by Codex) created a credible ASCII world map using only 445 bytes of data, leveraging deflate compression and a JavaScript fetch with data URIs to decompress and render the map in the browser. This demonstrates a clever technique for extreme data compression and creative use of modern browser APIs, inspiring developers to think about minimalistic data representation and efficient web delivery. The technique uses the DecompressionStream API with 'deflate-raw' format, and the compressed data is embedded as a base64-encoded data URI in the fetch call, allowing the entire map to be delivered in under 500 bytes.\n\n**Background**: Deflate is a lossless compression algorithm combining LZ77 and Huffman coding, widely used in formats like ZIP and PNG. The DecompressionStream API provides native browser decompression for streams. Data URIs allow embedding data directly in URLs, avoiding separate HTTP requests.\n\n**Discussion**: The Hacker News discussion praised the cleverness and minimalism of the approach, with some users noting the novelty of using fetch with data URIs and DecompressionStream. A few comments discussed potential improvements or alternative compression methods.",
+    "takeaways": [
+      "背景信息: Deflate 是一种结合 LZ77 和霍夫曼编码的无损压缩算法，广泛用于 ZIP 和 PNG 等格式。DecompressionStream API 为流提供浏览器原生解压功能。Data URI 允许将数据直接嵌入 URL 中，避免单独的 HTTP 请求。",
+      "社区反馈: Hacker News 上的讨论称赞了这种方法的巧妙和极简，一些用户注意到使用 fetch 与 data URI 以及 DecompressionStream 的新颖性。少数评论讨论了可能的改进或替代压缩方法。"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "更好的模型，更差的工具调用",
     "importance_score": 8.0,
     "source": "Simon Willison",
     "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
     "category": "AI",
     "publish_time": "2026-07-05T22:53:00Z",
-    "summary_zh": "更新的 Claude 模型（Opus 4.8、Sonnet 5）更可能在工具调用参数中发明额外字段，导致 Pi 等自定义编码工具拒绝调用，而旧模型没有此问题。 这一退化损害了基于 LLM 的编码代理的可靠性，迫使第三方工具构建者要么适应模型特有的怪癖，要么承担工作流中断的风险。 问题出现的原因是 Anthropic 通过强化学习训练新模型使用 Claude Code 内置的编辑工具，这无意中使它们对第三方模式产生偏差。Pi 的编辑工具使用嵌套的 'edits[]' 数组，模型会发明模式中不存在的键，如 'search' 或 'replace'。\n\n**背景**: LLM 工具调用允许模型通过生成与提供的模式匹配的结构化参数来调用外部函数。像 Pi 和 Claude Code 这样的编码工具使用编辑工具修改代码文件。Anthropic 和 OpenAI 训练模型以擅长自己的工具格式，这可能会损害与其他工具的兼容性。",
-    "summary_en": "Newer Claude models (Opus 4.8, Sonnet 5) are more likely to invent extra fields in tool call arguments, causing rejection by custom coding harnesses like Pi, while older models did not exhibit this issue. This regression undermines the reliability of LLM-based coding agents, forcing third-party tool builders to either adapt to model-specific quirks or risk broken workflows. The issue appears because Anthropic trains newer models via reinforcement learning to use Claude Code's built-in edit tools, which inadvertently biases them against third-party schemas. Pi's edit tool uses a nested 'edits[]' array where models invent keys like 'search' or 'replace' that don't exist in the schema.\n\n**Background**: LLM tool calling allows models to invoke external functions by generating structured arguments matching a provided schema. Coding harnesses like Pi and Claude Code use edit tools to modify code files. Anthropic and OpenAI train their models to excel at their own tool formats, which can hurt compatibility with others.",
+    "summary_zh": "Armin Ronacher 报告称，较新的 Claude 模型（Opus 4.8 和 Sonnet 5）有时会生成带有额外虚构字段的无效工具调用参数，导致 Pi 的编辑工具拒绝这些调用，而旧模型则没有出现此问题。 这种退化突显了一种反直觉的权衡：针对特定内置工具的模型改进可能会降低第三方工具的性能，从而引发对依赖精确模式匹配的生产系统可靠性的担忧。 该问题特定于 Pi 编辑工具模式中的嵌套 `edits[]` 数组，较新的模型会发明诸如 `new_text_x` 之类的键，从而违反模式。Armin 推测，Anthropic 针对 Claude Code 内置编辑工具的强化学习可能导致此行为。\n\n**背景**: 像 Claude 这样的大型语言模型（LLM）可以被赋予工具模式（函数的 JSON 描述），并期望生成有效的调用。Pi 是一个第三方编码工具，使用自定义编辑工具。Anthropic 的 Claude Code 有自己的内置编辑工具，较新的模型可能被训练为偏好该工具的模式，导致在与 Pi 的不同模式一起使用时产生混淆。\n\n**社区讨论**: Pi 的 GitHub 问题显示用户确认了该问题并讨论了解决方法，例如为每个模型实现多个编辑工具。总体情绪是对模型可靠性的担忧，以及在生产环境中需要更好的模式匹配。",
+    "summary_en": "Armin Ronacher reported that newer Claude models (Opus 4.8 and Sonnet 5) sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them, while older models did not exhibit this issue. This regression highlights a counterintuitive trade-off where model improvements for specific built-in tools can degrade performance for third-party tools, raising reliability concerns for production systems that depend on precise schema adherence. The issue is specific to the nested `edits[]` array in Pi's edit tool schema, where newer models invent keys like `new_text_x` that violate the schema. Armin theorizes that Anthropic's reinforcement learning for Claude Code's built-in edit tool may cause this behavior.\n\n**Background**: Large language models (LLMs) like Claude can be given tool schemas (JSON descriptions of functions) and are expected to generate valid calls. Pi is a third-party coding harness that uses a custom edit tool. Anthropic's Claude Code has its own built-in edit tool, and newer models may have been trained to favor that tool's schema, causing confusion when used with Pi's different schema.\n\n**Discussion**: The GitHub issue for Pi shows users confirming the problem and discussing workarounds, such as implementing multiple edit tools per model. The overall sentiment is concern about model reliability and the need for better schema adherence in production.",
     "takeaways": [
-      "背景信息: LLM 工具调用允许模型通过生成与提供的模式匹配的结构化参数来调用外部函数。像 Pi 和 Claude Code 这样的编码工具使用编辑工具修改代码文件。Anthropic 和 OpenAI 训练模型以擅长自己的工具格式，这可能会损害与其他工具的兼容性。"
-    ]
-  },
-  {
-    "id": "7",
-    "title": "USAF：在消费级 GPU 上对 MoE 模型进行稀疏微调",
-    "importance_score": 8.0,
-    "source": "r/MachineLearning",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
-    "category": "Hardware",
-    "publish_time": "2026-07-05T21:56:00Z",
-    "summary_zh": "这大大降低了微调大型 MoE 模型的硬件门槛，使拥有消费级 GPU 的用户也能进行微调，可能加速社区驱动的 MoE 模型定制。 USAF 仅训练稀疏专家权重和路由器，避免全模型更新或适配器，并以 Apache 2.0 许可证发布，无商业意图。\n\n**背景**: 混合专家（MoE）模型使用多个专门的子网络（专家）按输入稀疏激活，从而在降低推理成本的同时实现大模型容量。微调此类模型通常需要大量 GPU 内存，往往超出消费级硬件的能力。",
-    "summary_en": "A new sparse fine-tuning method called USAF enables fine-tuning of Mixture-of-Experts (MoE) models on the same GPU used for inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This significantly lowers the hardware barrier for fine-tuning large MoE models, making it accessible to users with consumer-grade GPUs and potentially accelerating community-driven customization of MoE models. USAF trains only sparse expert weights and the router, avoiding full model updates or adapters, and is released under Apache 2.0 license with no commercial intent.\n\n**Background**: Mixture-of-Experts (MoE) models use multiple specialized sub-networks (experts) activated sparsely per input, enabling large model capacity with lower inference cost. Fine-tuning such models typically requires significant GPU memory, often beyond consumer hardware.",
-    "takeaways": [
-      "背景信息: 混合专家（MoE）模型使用多个专门的子网络（专家）按输入稀疏激活，从而在降低推理成本的同时实现大模型容量。微调此类模型通常需要大量 GPU 内存，往往超出消费级硬件的能力。"
+      "背景信息: 像 Claude 这样的大型语言模型（LLM）可以被赋予工具模式（函数的 JSON 描述），并期望生成有效的调用。Pi 是一个第三方编码工具，使用自定义编辑工具。Anthropic 的 Claude Code 有自己的内置编辑工具，较新的模型可能被训练为偏好该工具的模式，导致在与 Pi 的不同模式一起使用时产生混淆。",
+      "社区反馈: Pi 的 GitHub 问题显示用户确认了该问题并讨论了解决方法，例如为每个模型实现多个编辑工具。总体情绪是对模型可靠性的担忧，以及在生产环境中需要更好的模式匹配。"
     ]
   },
   {
     "id": "8",
-    "title": "BaryGraph：将关系作为知识图谱中的一等文档",
+    "title": "能力门：基于内部置信度控制工具使用",
     "importance_score": 8.0,
     "source": "r/MachineLearning",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
     "category": "AI",
-    "publish_time": "2026-07-05T08:24:00Z",
-    "summary_zh": "BaryGraph 提出了一种知识图谱，其中每个关系都被嵌入为具有自身向量的第一类文档（BaryEdge），而不是节点之间的简单边。它递归地堆叠 BaryEdge 形成 MetaBary 三元组，从而揭示远距离概念之间的结构桥梁，并在完整的英语维基词典上进行了演示。 这种方法解决了标准向量搜索和 RAG 系统的一个根本性局限，即它们将关系视为点接近的副产品，从而遗漏了跨域连接。通过将关系嵌入为可检索的文档，BaryGraph 能够揭示来自不同领域的概念之间的结构桥梁，例如将轨道力学与恒星动力学联系起来，或将胶原蛋白折叠与语言句法联系起来。 BaryGraph 在本地运行于 MongoDB Community + mongot 和 nomic-embed-text（768 维）上，在单台工作站上 8-14 小时内处理了来自英语维基词典的 660 万个文档。BaryEdge 向量计算为 bary_vector = normalize(q·v(CM1) + q·v(CM2) + (1−q)·v(type))，其中 q 是连接质量，v(type) 是关系类型的上下文嵌入。\n\n**背景**: 传统知识图谱将关系表示为节点之间的边，而向量搜索将相似性视为嵌入空间中的接近度。这无法捕捉嵌入空间中相距很远但共享关系模式的概念之间的结构连接。BaryGraph 引入了 BaryEdge 作为第一类文档，可以递归组合成 MetaBary 三元组，形成无需额外嵌入调用的抽象层次结构。",
-    "summary_en": "BaryGraph introduces a knowledge graph where every relationship is embedded as a first-class document (BaryEdge) with its own vector, rather than a simple edge between nodes. It recursively stacks BaryEdges to form MetaBary triads that surface structural bridges between distant concepts, demonstrated on the full English Wiktionary. This approach addresses a fundamental limitation of standard vector search and RAG systems, which treat relationships as byproducts of point proximity and miss cross-domain connections. By embedding relationships as retrievable documents, BaryGraph can surface structural bridges between concepts from different domains, such as linking orbital mechanics to stellar dynamics or collagen folding to linguistic syntax. BaryGraph runs locally on MongoDB Community + mongot with nomic-embed-text (768-dim), processing 6.6 million documents from English Wiktionary in 8–14 hours on a single workstation. The BaryEdge vector is computed as bary_vector = normalize(q·v(CM1) + q·v(CM2) + (1−q)·v(type)), where q is connection quality and v(type) is a contextual embedding of the relationship type.\n\n**Background**: Traditional knowledge graphs represent relationships as edges between nodes, and vector search treats similarity as proximity in embedding space. This fails to capture structural connections between concepts that are far apart in embedding space but share relational patterns. BaryGraph introduces BaryEdges as first-class documents that can be recursively composed into MetaBary triads, forming an abstraction hierarchy without additional embedding calls.",
+    "publish_time": "2026-07-05T07:49:00Z",
+    "summary_zh": "一个 10MB 的 LoRA 适配器用于 Qwen3.5-4B，基于内部置信度信号控制工具使用，提升了错误检测能力并减少了幻觉。它可在 Apple Silicon 上本地运行，并通过 GGUF 支持 llama.cpp/Ollama。 该方法通过利用内部激活状态，解决了小型指令模型的一个关键局限——口头置信度差——从而实现了更可靠的工具使用和隐私保护。它为本地部署提供了实用、开源的解决方案，并支持可追溯的答案。 该门控将错误检测的 d′提升了 0.46（95%置信区间[0.01, 0.89]），且门控标记而基础模型未标记的案例中，87%确实是错误答案。双信号版本将发送到公共搜索的私人查询从 22%降至 10%。\n\n**背景**: 小型语言模型通常难以准确口头表达其置信度，倾向于过度自信。然而，内部激活状态包含更丰富的不确定性信息。LoRA（低秩适配）是一种参数高效的微调方法，仅更新小矩阵，适合轻量级适配器。信号检测理论中的 d′衡量区分正确与错误输出的灵敏度。",
+    "summary_en": "A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon and via GGUF for llama.cpp/Ollama. This approach addresses a key limitation of small instruct models—poor verbalized confidence—by leveraging internal activations, enabling more reliable tool use and privacy protection. It offers a practical, open-source solution for local deployment with traceable answers. The gate improved error detection by d′ = 0.46 (95% CI [0.01, 0.89]), and 87% of cases flagged by the gate but missed by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.\n\n**Background**: Small language models often struggle to accurately express their confidence verbally, tending to overstate it. Internal activations, however, contain richer uncertainty information. LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that updates only small matrices, making it suitable for lightweight adapters. Signal detection theory's d′ measures sensitivity in distinguishing correct from incorrect outputs.",
     "takeaways": [
-      "背景信息: 传统知识图谱将关系表示为节点之间的边，而向量搜索将相似性视为嵌入空间中的接近度。这无法捕捉嵌入空间中相距很远但共享关系模式的概念之间的结构连接。BaryGraph 引入了 BaryEdge 作为第一类文档，可以递归组合成 MetaBary 三元组，形成无需额外嵌入调用的抽象层次结构。"
+      "背景信息: 小型语言模型通常难以准确口头表达其置信度，倾向于过度自信。然而，内部激活状态包含更丰富的不确定性信息。LoRA（低秩适配）是一种参数高效的微调方法，仅更新小矩阵，适合轻量级适配器。信号检测理论中的 d′衡量区分正确与错误输出的灵敏度。"
     ]
   },
   {
     "id": "9",
-    "title": "Linux 登顶 2026 CVE 榜单，内核维护者称这是好事",
+    "title": "USAF：在消费级 GPU 上微调 MoE 模型",
     "importance_score": 8.0,
-    "source": "Telegram",
-    "url": "https://linuxiac.com/linux-tops-2026-cve-charts/",
-    "category": "AI",
-    "publish_time": "2026-07-05T16:00:00Z",
-    "summary_zh": "2026 年上半年，Linux 以 2308 个 CVE 漏洞数量位居所有厂商首位，超过 Google（1752）、微软（843）和苹果（284）。内核维护者 Greg Kroah-Hartman 表示，这并非安全性更差，而是漏洞报告更完整、更透明的体现。 这一消息挑战了“CVE 数量多即安全性差”的普遍认知，凸显了开源项目在透明度上的优势，同时也促使商业厂商采取更全面的漏洞披露实践。 Greg Kroah-Hartman 指出，苹果、微软等商业厂商通常只上报被归类为“高危”的漏洞，而开源项目因无法预知下游使用场景，不得不报告所有问题。Linux 运行在数十亿台设备上，包括服务器、手机、嵌入式系统和云基础设施。\n\n**背景**: CVE（Common Vulnerabilities and Exposures）是识别和编录公开披露的网络安全漏洞的全球标准。较高的 CVE 数量常被误解为不安全的标志，但也可能意味着更彻底的报告。像 Linux 这样的开源项目因其代码公开审计而天生更透明，导致更多漏洞被发现和报告。",
-    "summary_en": "In the first half of 2026, Linux led all vendors with 2,308 CVEs, surpassing Google (1,752), Microsoft (843), and Apple (284). Kernel maintainer Greg Kroah-Hartman argued this reflects more complete and transparent vulnerability reporting, not worse security. This news challenges the common perception that a high CVE count indicates poor security, highlighting the transparency advantage of open-source projects. It also pressures commercial vendors to adopt more comprehensive vulnerability disclosure practices. Greg Kroah-Hartman noted that commercial vendors like Apple and Microsoft often only report vulnerabilities classified as 'high severity,' while open-source projects report all issues because they cannot predict downstream usage. Linux runs on billions of devices including servers, phones, embedded systems, and cloud infrastructure.\n\n**Background**: CVE (Common Vulnerabilities and Exposures) is a global standard for identifying and cataloging publicly disclosed cybersecurity vulnerabilities. A higher CVE count is often misinterpreted as a sign of insecurity, but it can also indicate more thorough reporting. Open-source projects like Linux are inherently more transparent because their code is publicly audited, leading to more vulnerabilities being discovered and reported.",
+    "source": "<li><a href=\"https://github.com/tsuyu122/usaf/blob/master/readme.md\">usaf/readme.md at master",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
+    "category": "Dev",
+    "publish_time": "2026-07-05T12:00:00Z",
+    "summary_zh": "一种名为 USAF（Ultra Sparse Adaptive Fine-Tuning）的新型稀疏微调方法，允许在用于推理的同一 GPU 上微调混合专家（MoE）模型，已在 12GB AMD RX 6750 XT 上成功微调 Qwen3-30B-A3B。 这一突破消除了对高端 GPU 的需求，使消费级硬件的用户也能微调大型 MoE 模型，从而推动了微调技术的普及。 USAF 仅训练 48 亿参数中的 2600 万，通过更新稀疏专家权重和路由器，而非使用适配器。该项目完全开源（Apache 2.0），并声称是唯一支持 AMD GPU 的方法。\n\n**背景**: 混合专家（MoE）模型每个 token 仅激活部分参数，从而在降低推理成本的同时实现大模型规模。然而，全参数微调需要巨大内存（例如 Qwen3-30B-A3B 需要 120GB 以上），远超消费级 GPU。现有方法如 LoRA 虽能减少内存需求，但仍需较高资源。",
+    "summary_en": "A new sparse fine-tuning method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on the same GPU used for inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This breakthrough democratizes fine-tuning of large MoE models by eliminating the need for high-end GPUs, making it accessible to researchers and hobbyists with consumer hardware. USAF trains only 26 million out of 4.8 billion parameters by updating sparse expert weights and the router, instead of using adapters. It is fully open source under Apache 2.0 and claims to be the only method that works on AMD GPUs.\n\n**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, enabling large model sizes with lower inference cost. However, full fine-tuning requires massive memory (e.g., 120GB+ for Qwen3-30B-A3B), far exceeding consumer GPUs. Existing methods like LoRA reduce memory but still require significant resources.",
     "takeaways": [
-      "背景信息: CVE（Common Vulnerabilities and Exposures）是识别和编录公开披露的网络安全漏洞的全球标准。较高的 CVE 数量常被误解为不安全的标志，但也可能意味着更彻底的报告。像 Linux 这样的开源项目因其代码公开审计而天生更透明，导致更多漏洞被发现和报告。"
+      "背景信息: 混合专家（MoE）模型每个 token 仅激活部分参数，从而在降低推理成本的同时实现大模型规模。然而，全参数微调需要巨大内存（例如 Qwen3-30B-A3B 需要 120GB 以上），远超消费级 GPU。现有方法如 LoRA 虽能减少内存需求，但仍需较高资源。"
     ]
   },
   {
     "id": "10",
-    "title": "F-Droid 将 Google ADV 标记为恶意软件，影响 40 亿设备",
+    "title": "iOS 27 将加入 Trust Insights 设备端反诈功能",
+    "importance_score": 8.0,
+    "source": "Telegram",
+    "url": "https://www.cultofmac.com/news/ios-27-trust-insights-feature",
+    "category": "AI",
+    "publish_time": "2026-07-05T14:30:00Z",
+    "summary_zh": "苹果宣布在 iOS 27 中引入 Trust Insights 框架，该功能在设备端分析用户操作模式、时机、上下文和传感器数据，以识别通话或信息中可能的社会工程诈骗。 该功能填补了移动安全的关键空白，能够实时检测诱骗用户授权欺诈交易的社会工程诈骗，同时不损害隐私。 Trust Insights 不会读取信息、邮件或照片内容；原始数据会立即删除，仅向服务器发送单一输出值。该功能可关闭，但设有冷却期，防止诈骗分子在通话中诱导用户立即关闭。\n\n**背景**: 社会工程诈骗（诈骗者冒充可信实体操纵受害者转账或分享凭证）日益常见。传统安全措施往往失效，因为用户是自愿执行操作。Trust Insights 利用设备端行为分析检测此类诈骗的异常迹象，而苹果的隐私保护设计确保不访问个人内容。",
+    "summary_en": "Apple announced Trust Insights, a new on-device fraud detection framework in iOS 27, which analyzes user behavior patterns, timing, context, and sensor data to identify potential social engineering scams during calls or messages. This feature addresses a critical gap in mobile security by detecting real-time social engineering scams that trick users into authorizing fraudulent transactions, without compromising privacy. Trust Insights does not read message, email, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. The feature can be disabled but has a cooldown period to prevent scammers from turning it off during a call.\n\n**Background**: Social engineering scams, where fraudsters impersonate trusted entities to manipulate victims into transferring money or sharing credentials, are increasingly common. Traditional security measures often fail because the user voluntarily performs the action. Trust Insights uses on-device behavioral analysis to detect anomalies indicative of such scams, while Apple's privacy-focused design ensures no personal content is accessed.",
+    "takeaways": [
+      "背景信息: 社会工程诈骗（诈骗者冒充可信实体操纵受害者转账或分享凭证）日益常见。传统安全措施往往失效，因为用户是自愿执行操作。Trust Insights 利用设备端行为分析检测此类诈骗的异常迹象，而苹果的隐私保护设计确保不访问个人内容。"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "F-Droid：Google ADV 是预装在 40 亿设备上的恶意软件",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://f-droid.org/2026/07/01/adv-malware.html",
     "category": "AI",
     "publish_time": "2026-07-05T00:41:00Z",
-    "summary_zh": "F-Droid 正式将 Google 的 Android 开发者验证（ADV）标记为恶意软件，称其是一个拥有 root 权限且无法移除的系统进程，已预装在约 40 亿台安卓设备上。该程序将于 2026 年 9 月 30 日起在巴西、印度尼西亚、新加坡和泰国首批激活，阻止未经批准的软件，全球推广计划在 2027 年及以后。 此举凸显了 Google 对安卓的集中控制与开源社区对用户自由的承诺之间的重大冲突。如果 ADV 在全球推广，它可能有效扼杀 F-Droid 等替代应用商店和侧载功能，影响数十亿依赖未经批准应用的用户和开发者。 F-Droid 指出，Google 在开发者服务条款中刻意不对“恶意软件”下定义，从而可任意将不喜欢的软件（如广告拦截器）归入此类，并封禁开发者。尽管包括 EFF、FSF 和 ACLU 在内的超过 70 个组织签署了反对 ADV 的公开信，并有数十万人联署反对，Google 仍在推进该计划。\n\n**背景**: F-Droid 是一个免费开源的安卓应用商店，仅托管开源应用并标记跟踪等反特性。Android 开发者验证（ADV）是 Google 通过 Play Protect 植入的一项计划，旨在限制安装未经 Google 批准的应用，从而有效控制侧载和第三方应用商店。\n\n**社区讨论**: Hacker News 的讨论称 ADV 对 F-Droid 和其他竞争对手是“死刑判决”。Reddit 用户正在讨论对抗 ADV 的方法，例如启用开发者模式和未验证应用，但总体情绪是担忧和反对。",
-    "summary_en": "F-Droid has officially labeled Google's Android Developer Verification (ADV) as malware, claiming it is a system process with root privileges that cannot be removed and is pre-installed on approximately 4 billion Android devices. The program is set to activate in Brazil, Indonesia, Singapore, and Thailand starting September 30, 2026, blocking unapproved apps, with global rollout planned for 2027 and beyond. This move highlights a major conflict between Google's centralized control over Android and the open-source community's commitment to user freedom. If ADV rolls out globally, it could effectively kill alternative app stores like F-Droid and sideloading, affecting billions of users and developers who rely on unapproved apps. F-Droid points out that Google deliberately avoids defining 'malware' in its developer terms, allowing it to arbitrarily classify unwanted software like ad blockers as malware and ban developers. Despite over 70 organizations including EFF, FSF, and ACLU signing an open letter against ADV, and hundreds of thousands of signatures opposing it, Google is proceeding with the plan.\n\n**Background**: F-Droid is a free and open-source (FOSS) app store for Android that only hosts open-source apps and flags anti-features like tracking. Android Developer Verification (ADV) is a Google initiative embedded via Play Protect that aims to restrict installation of apps not approved by Google, effectively controlling sideloading and third-party app stores.\n\n**Discussion**: The Hacker News discussion calls ADV a 'death sentence' for F-Droid and other competitors. Reddit users are discussing ways to fight ADV, such as enabling developer mode and unverified apps, but the overall sentiment is one of concern and opposition.",
+    "summary_zh": "F-Droid 正式将 Google 的 Android 开发者验证（ADV）归类为恶意软件，声称该程序已预装在约 40 亿台安卓设备上，并将从 2026 年起阻止未经批准的软件运行。 此举通过限制用户只能使用 Google 批准的应用程序，威胁到安卓生态系统的开放性，可能损害应用多样性、用户自由以及 F-Droid 等替代应用商店的生存能力。 ADV 是一个拥有 root 权限且无法移除的系统进程，将于 2026 年 9 月 30 日在巴西、印尼、新加坡和泰国首批激活，全球推广计划在 2027 年及以后。\n\n**背景**: Android 开发者验证（ADV）是 Google 的一项安全举措，要求开发者验证身份并注册包名。F-Droid 是一个流行的开源应用商店，仅分发自由开源软件，常与 Google 的政策相悖。争议焦点在于 ADV 是合法的安全措施，还是 Google 用来加强对应用分发控制的工具。",
+    "summary_en": "F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, claiming it is pre-installed on approximately 4 billion Android devices and will block unapproved software starting in 2026. This move threatens the open nature of the Android ecosystem by restricting users to only Google-approved apps, potentially harming app diversity, user freedom, and the viability of alternative app stores like F-Droid. ADV is a system process with root privileges that cannot be removed, and it will first activate in Brazil, Indonesia, Singapore, and Thailand on September 30, 2026, with global rollout planned for 2027 and beyond.\n\n**Background**: Android Developer Verification (ADV) is a Google initiative aimed at enhancing security by requiring developers to verify their identity and register package names. F-Droid is a popular open-source app store that distributes only free and open-source software, often in opposition to Google's policies. The controversy centers on whether ADV is a legitimate security measure or a tool to enforce Google's control over app distribution.",
     "takeaways": [
-      "背景信息: F-Droid 是一个免费开源的安卓应用商店，仅托管开源应用并标记跟踪等反特性。Android 开发者验证（ADV）是 Google 通过 Play Protect 植入的一项计划，旨在限制安装未经 Google 批准的应用，从而有效控制侧载和第三方应用商店。",
-      "社区反馈: Hacker News 的讨论称 ADV 对 F-Droid 和其他竞争对手是“死刑判决”。Reddit 用户正在讨论对抗 ADV 的方法，例如启用开发者模式和未验证应用，但总体情绪是担忧和反对。"
+      "背景信息: Android 开发者验证（ADV）是 Google 的一项安全举措，要求开发者验证身份并注册包名。F-Droid 是一个流行的开源应用商店，仅分发自由开源软件，常与 Google 的政策相悖。争议焦点在于 ADV 是合法的安全措施，还是 Google 用来加强对应用分发控制的工具。"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "学生出题考 AI，复旦期末考改革",
+    "importance_score": 8.0,
+    "source": "Telegram",
+    "url": "https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw",
+    "category": "AI",
+    "publish_time": "2026-07-05T08:40:00Z",
+    "summary_zh": "复旦大学将传统的数据挖掘期末考试改为“人考 AI”测试，51 名学生每人出 10 道有唯一答案的计算题来挑战三个 AI 模型；50 名学生至少难倒过某个模型一次，但仅有 4 人能让任一模型得零分，最强模型 Claude 未被完全考倒。 这一实验凸显了 AI 时代教育改革的必要性，将重点从记忆和算法执行转向评估 AI 输出、批判性思维以及人机协作。 测试涉及三个未具名的 AI 模型，其中 Anthropic 公司的 Claude 最为稳健；全班平均分 85.7 分，表明大多数学生无法持续骗过所有模型。\n\n**背景**: 传统的数据挖掘课程考试通常测试算法知识和记忆，而 AI 现在可以轻松处理这些。由授课教师肖仰华主导的这一改革旨在让学生为未来做好准备，那时他们需要指挥和评判 AI 的输出，而不是执行 AI 能完成的任务。",
+    "summary_en": "Fudan University replaced its traditional data mining exam with a 'human vs AI' test where 51 students each created 10 calculation questions to challenge three AI models; 50 students managed to stump at least one model, but only 4 achieved a zero score on any model, and the strongest model, Claude, remained undefeated. This experiment highlights the need for education reform in the AI era, shifting focus from memorization and algorithm execution to evaluating AI outputs, critical thinking, and human-AI collaboration. The test involved three unnamed AI models, with Claude (by Anthropic) being the most robust; the class average score was 85.7 out of 100, indicating that most students could not consistently fool all models.\n\n**Background**: Traditional exams in data mining courses often test algorithmic knowledge and memory, which AI can now easily handle. This reform, led by instructor Xiao Yanghua, aims to prepare students for a future where they must direct and judge AI outputs rather than perform tasks AI can do.",
+    "takeaways": [
+      "背景信息: 传统的数据挖掘课程考试通常测试算法知识和记忆，而 AI 现在可以轻松处理这些。由授课教师肖仰华主导的这一改革旨在让学生为未来做好准备，那时他们需要指挥和评判 AI 的输出，而不是执行 AI 能完成的任务。"
     ]
   }
 ]
