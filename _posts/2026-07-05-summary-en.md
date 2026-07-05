@@ -5,225 +5,172 @@ date: 2026-07-05
 lang: en
 ---
 
-> From 41 items, 12 important content pieces were selected
+> From 39 items, 10 important content pieces were selected
 
 ---
 
-1. [Prompt Injection Leaks YouTube Creators' Private Videos](#item-1) ⭐️ 9.0/10
-2. [GPT-5.5 Codex Bug Causes Reasoning Token Clustering at 516](#item-2) ⭐️ 8.0/10
-3. [Anna's Archive Offers $200k Bounty for Google Books Scans](#item-3) ⭐️ 8.0/10
-4. [Zig Moves Package Management from Compiler to Build System](#item-4) ⭐️ 8.0/10
-5. [Potential Session/Cache Leakage in LLM Instances](#item-5) ⭐️ 8.0/10
-6. [World Map in 500 Bytes Using Deflate and Data URIs](#item-6) ⭐️ 8.0/10
-7. [Better Models, Worse Tool Calling](#item-7) ⭐️ 8.0/10
-8. [Competence Gate: Gating Tool-Use via Internal Confidence](#item-8) ⭐️ 8.0/10
-9. [USAF: Fine-Tune MoE Models on Consumer GPUs](#item-9) ⭐️ 8.0/10
-10. [iOS 27 Adds Trust Insights for On-Device Fraud Detection](#item-10) ⭐️ 8.0/10
-11. [F-Droid: Google ADV Is Malware Pre-Installed on 4 Billion Devices](#item-11) ⭐️ 8.0/10
-12. [Students Design Questions to Stump AI in Exam](#item-12) ⭐️ 8.0/10
+1. [F-Droid Declares Google ADV Malware, Pre-installed on 4 Billion Devices](#item-1) ⭐️ 9.0/10
+2. [Shadcn/UI switches default from Radix to Base UI](#item-2) ⭐️ 8.0/10
+3. [GPT-5.5 Codex 516-Token Bug Causes Reasoning Failures](#item-3) ⭐️ 8.0/10
+4. [sqlite-utils 4.0rc2: Claude Fable Catches Critical Bugs](#item-4) ⭐️ 8.0/10
+5. [Newer Claude Models Worse at Tool Schema Adherence](#item-5) ⭐️ 8.0/10
+6. [Competence Gate: Gating Tool Use via Internal Confidence](#item-6) ⭐️ 8.0/10
+7. [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](#item-7) ⭐️ 8.0/10
+8. [iOS 27 Introduces Trust Insights Anti-Fraud Feature](#item-8) ⭐️ 8.0/10
+9. [OpenAI Never Visited Key UK Stargate Site, Guardian Finds](#item-9) ⭐️ 8.0/10
+10. [Fudan Exam: Students Stump AI, Only 4 Get Zero](#item-10) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Prompt Injection Leaks YouTube Creators' Private Videos](https://javoriuski.com/post/youtube) ⭐️ 9.0/10
+## [F-Droid Declares Google ADV Malware, Pre-installed on 4 Billion Devices](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 9.0/10
 
-A security researcher discovered that YouTube's AI comment summarization feature is vulnerable to prompt injection, allowing attackers to leak private video titles and metadata by crafting malicious comments. This vulnerability exposes a critical flaw in how AI systems handle user input, potentially compromising creator privacy and undermining trust in YouTube's platform security. The attack requires the creator to open YouTube Studio's comment tab and click a suggested AI prompt, which triggers the injection and returns attacker-controlled content in the response.
+F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, stating it is a system process with root privileges that cannot be removed and is pre-installed on approximately 4 billion Android devices. Starting September 30, 2026, ADV will be activated in Brazil, Indonesia, Singapore, and Thailand, blocking users from installing software not approved by Google. This move threatens the openness of the Android ecosystem and user freedom, potentially allowing Google to block any unapproved software, including ad blockers and FOSS apps. It has sparked widespread opposition from digital rights organizations like EFF, FSF, and ACLU, and could set a precedent for platform control. F-Droid notes that Google deliberately avoids defining 'malware' in its developer terms, allowing it to arbitrarily classify disliked software. Despite a petition with hundreds of thousands of signatures and an open letter signed by over 70 organizations, Google is proceeding with the global rollout planned for 2027 and beyond.
 
-hackernews · javxfps · Jul 4, 16:45 · [Discussion](https://news.ycombinator.com/item?id=48786781)
+telegram · zaihuapd · Jul 5, 00:41
 
-**Background**: Prompt injection is a cybersecurity exploit where malicious inputs cause AI models to behave unintendedly. YouTube's AI comment system uses large language models to summarize comments, but fails to distinguish between user comments and system instructions, enabling the attack.
+**Background**: F-Droid is a free and open-source app store for Android that hosts only FOSS applications. Google Play Protect is a built-in security service that scans apps. ADV is a new system process introduced by Google as an extra security layer, but critics argue it gives Google excessive control over what software users can install, undermining Android's open nature.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
+<li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community largely validated the severity of the bug, with an ex-Google insider explaining why YouTube might handle it slowly. Some users attempted to reproduce the attack but found it didn't work with only unlisted videos, while others praised the article's clarity and lack of sensationalism.
-
-**Tags**: `#security`, `#prompt injection`, `#YouTube`, `#AI`, `#vulnerability`
+**Tags**: `#Android`, `#malware`, `#F-Droid`, `#Google`, `#digital rights`
 
 ---
 
 <a id="item-2"></a>
-## [GPT-5.5 Codex Bug Causes Reasoning Token Clustering at 516](https://github.com/openai/codex/issues/30364) ⭐️ 8.0/10
+## [Shadcn/UI switches default from Radix to Base UI](https://ui.shadcn.com/docs/changelog) ⭐️ 8.0/10
 
-A reproducible bug in OpenAI's GPT-5.5 Codex causes reasoning token clustering at exactly 516 tokens, leading to incorrect results on complex tasks. The issue was reported on GitHub issue #30364 on June 27, 2026, with evidence from 390,195 token-count records showing spikes at 516, 1034, and 1552 tokens. This bug degrades performance for many users relying on Codex for coding tasks, causing frustration and prompting some to switch to alternatives like Claude. It also raises concerns about silent server-side changes in AI models and the reliability of cloud-based AI services. The clustering appears model-specific and coincides with lower overall reasoning-token intensity, which may explain degraded performance on complex tasks. The author notes the data does not prove hidden chain-of-thought truncation, so it should be treated as a telemetry anomaly rather than a confirmed model defect.
+Shadcn/UI has changed its default component library from Radix UI to Base UI, a new unstyled component library from the creators of Radix, Floating UI, and Material UI. This shift affects thousands of projects using Shadcn/UI and sparks debate about migration strategies, including the use of codemods versus LLMs, and the maintainability of the copy-paste approach. Base UI is an unstyled, headless component library that provides complete control over styling and accessibility, similar to Radix but with a different API. The change reflects Shadcn/UI's ongoing evolution and community feedback.
 
-hackernews · maille · Jul 4, 21:51 · [Discussion](https://news.ycombinator.com/item?id=48789428)
+hackernews · dabinat · Jul 5, 04:46 · [Discussion](https://news.ycombinator.com/item?id=48791328)
 
-**Background**: Codex is OpenAI's AI-powered coding assistant that uses large language models to help developers write code. Reasoning tokens are internal tokens used by the model to think through problems before generating a final answer. A clustering of reasoning tokens at fixed boundaries suggests the model may be prematurely stopping its reasoning process, leading to incorrect outputs.
+**Background**: Shadcn/UI is a popular collection of reusable React components built on Radix UI and Tailwind CSS, distributed via CLI for full code ownership. Radix UI is a low-level, unstyled component library focused on accessibility. Base UI, from the same team, offers a similar philosophy with a fresh approach.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/openai/codex/issues/30364">GPT-5.5 Codex reasoning-token clustering at 516/1034/1552 may ...</a></li>
-<li><a href="https://letsdatascience.com/news/gpt-55-exhibits-reasoning-token-clustering-at-fixed-boundari-63ae3735">GPT-5.5 Exhibits Reasoning-Token Clustering at Fixed ...</a></li>
-<li><a href="https://explainx.ai/blog/gpt-5-5-codex-reasoning-token-clustering-bug-2026">GPT-5.5 Codex's "516 Bug": Reasoning-Token Clustering Explained</a></li>
+<li><a href="https://ui.shadcn.com/docs">Introduction - shadcn/ui</a></li>
+<li><a href="https://base-ui.com/">Unstyled UI components for accessible design systems · Base UI</a></li>
+<li><a href="https://github.com/mui/base-ui">GitHub - mui/base-ui: Unstyled UI components for building accessible web apps and design systems. From the creators of Radix, Floating UI, and Material UI. · GitHub</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members report experiencing step jumps in quality degradation on an almost daily basis, with some switching to Claude due to frustration. Others note similarities to a past Claude Code performance regression and express appreciation that Codex is open source, allowing such issues to be surfaced and addressed publicly.
+**Discussion**: Community comments express mixed feelings: some find the copy-paste approach creates upgrade challenges, while others welcome the move away from over-engineered solutions. There is also debate about using LLMs for migration instead of traditional codemods.
 
-**Tags**: `#AI`, `#OpenAI`, `#Codex`, `#performance regression`, `#LLM`
+**Tags**: `#UI Libraries`, `#React`, `#Frontend Development`, `#Open Source`
 
 ---
 
 <a id="item-3"></a>
-## [Anna's Archive Offers $200k Bounty for Google Books Scans](https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234) ⭐️ 8.0/10
+## [GPT-5.5 Codex 516-Token Bug Causes Reasoning Failures](https://github.com/openai/codex/issues/30364) ⭐️ 8.0/10
 
-Anna's Archive, a shadow library metasearch engine, has announced a $200,000 bounty for obtaining all book scans from Google Books, aiming to preserve and provide open access to knowledge, especially for underserved regions. This bounty could significantly expand the availability of digitized books, challenging the current copyright and access barriers, and potentially creating the largest open digital library in history. The bounty is posted on Anna's Archive's work items page, and the project aims to catalog all books in existence. The scans would be made freely available through the archive's search engine.
+Users report that GPT-5.5 Codex's reasoning token clustering at exactly 516 tokens causes degraded performance and incorrect answers, with community-provided scripts to reproduce the issue. This bug affects a widely-used AI coding tool, potentially impacting many developers who rely on Codex for code generation and reasoning tasks, and highlights concerns about silent server-side changes. The clustering occurs at multiples of 516 tokens (516, 1034, 1552), and when the model stops reasoning at exactly 516 tokens, it often returns wrong results; using more tokens (6000-8000) yields correct answers.
 
-hackernews · Cider9986 · Jul 4, 16:51 · [Discussion](https://news.ycombinator.com/item?id=48786838)
+hackernews · maille · Jul 4, 21:51 · [Discussion](https://news.ycombinator.com/item?id=48789428)
 
-**Background**: Google Books began scanning millions of books from university libraries in 2002, but access to full texts is often restricted due to copyright. Anna's Archive aggregates records from shadow libraries like Z-Library, Sci-Hub, and Library Genesis, and has faced legal challenges for copyright infringement.
+**Background**: GPT-5.5 Codex is OpenAI's latest coding-focused model, released in 2026 as an upgrade to GPT-5.3 Codex. Reasoning tokens are internal tokens the model uses to think through problems before generating a final answer. Token clustering refers to the model disproportionately stopping at specific token counts, suggesting a bug in the adaptive thinking mechanism.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Anna's_Archive">Anna's Archive</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Google_Books">Google Books - Wikipedia</a></li>
-<li><a href="https://support.google.com/websearch/answer/9690276?hl=en">About the Library Project - Google Search Help</a></li>
+<li><a href="https://explainx.ai/blog/gpt-5-5-codex-reasoning-token-clustering-bug-2026">GPT-5.5 Codex 516- Token Bug: Evidence and Theories... | explainx.ai</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT - 5 . 5 | OpenAI</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express gratitude for Anna's Archive's role in providing access to rare and out-of-print books, with users sharing personal stories of finding otherwise unavailable resources. Some discuss the potential for bounties on other data, like internet archives, and question the project's legal standing.
+**Discussion**: Community sentiment is largely negative, with users reporting daily quality drops and switching to alternatives like Claude. Some draw parallels to a similar Claude Code regression in April, and others suggest using local models to avoid server-side changes.
 
-**Tags**: `#digital libraries`, `#open access`, `#book scanning`, `#bounty`, `#knowledge preservation`
+**Tags**: `#AI`, `#LLM`, `#Codex`, `#bug`, `#performance`
 
 ---
 
 <a id="item-4"></a>
-## [Zig Moves Package Management from Compiler to Build System](https://ziglang.org/devlog/2026/#2026-06-30) ⭐️ 8.0/10
+## [sqlite-utils 4.0rc2: Claude Fable Catches Critical Bugs](https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything) ⭐️ 8.0/10
 
-Zig has moved all package management functionality from the compiler into the build system, a significant architectural change that decouples the two components. This change improves maintainability and enables future innovations like running the build system in a WebAssembly VM, but it removes the convenient @cImport builtin, which was a key feature for C interop. The @cImport builtin has been removed; users must now use the build system's TranslateC step instead. This reduces the compiler's dependency on libclang.
+Simon Willison used Claude Fable to review sqlite-utils 4.0rc1, leading to the discovery of five release-blocking bugs, including a data loss bug in delete_where(). After 37 prompts and 34 commits, the fixes resulted in sqlite-utils 4.0rc2. This demonstrates how AI-assisted code review can catch subtle, high-impact bugs before a major release, improving software quality and reducing the need for emergency patches. It also showcases a practical workflow for integrating LLMs into open-source maintenance. The worst bug found was that Table.delete_where() never committed and left the connection in a poisoned state, causing subsequent writes to be silently lost. The review cost approximately $149.25 in Claude API usage, and the entire process spanned 37 prompts and 34 commits across 30 files.
 
-hackernews · tosh · Jul 4, 16:30 · [Discussion](https://news.ycombinator.com/item?id=48786638)
+rss · Simon Willison · Jul 5, 01:00
 
-**Background**: Zig is a systems programming language that aims to be a modern alternative to C. Its package manager was previously integrated into the compiler, but this coupling made maintenance harder. The build system now handles dependency fetching and C translation.
+**Background**: sqlite-utils is a Python library and CLI tool for manipulating SQLite databases. Semantic versioning (SemVer) uses a three-part version number (Major.Minor.Patch) where breaking changes require a major version bump. Claude Fable is Anthropic's advanced AI model designed for complex coding tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/ziglang/zig/issues/20630">move `@cImport` to the build system · Issue #20630 · ziglang/zig</a></li>
-<li><a href="https://zig.guide/working-with-c/c-import/">cImport | zig.guide</a></li>
+<li><a href="https://github.com/simonw/sqlite-utils">GitHub - simonw/sqlite-utils: Python CLI utility and library for ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Fable">Claude Fable</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SemVer">SemVer</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members expressed mixed feelings: some praised the architectural improvement, while others lamented the loss of @cImport as a key UX feature. There was also excitement about the long-term plan to run the build system in a WebAssembly VM.
-
-**Tags**: `#Zig`, `#package management`, `#build systems`, `#programming languages`
+**Tags**: `#AI-assisted development`, `#open source`, `#Python`, `#sqlite-utils`, `#Claude`
 
 ---
 
 <a id="item-5"></a>
-## [Potential Session/Cache Leakage in LLM Instances](https://github.com/anthropics/claude-code/issues/74066) ⭐️ 8.0/10
+## [Newer Claude Models Worse at Tool Schema Adherence](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything) ⭐️ 8.0/10
 
-Users report possible session or cache leakage between LLM instances from multiple providers, including Claude and GPT models, with one user citing an API gateway mishandling HTTP 100 status codes as a root cause. If confirmed, this could indicate a serious security flaw in multi-tenant LLM infrastructure, potentially exposing user prompts or responses across sessions. The debate between hallucination and real leakage highlights the challenge of diagnosing such issues. A user described an off-by-one error in API gateway handling of HTTP 100 status codes leading to swapped responses. The Claude Code team responded, stating they are confident it's a hallucination but are investigating.
-
-hackernews · chatmasta · Jul 4, 14:03 · [Discussion](https://news.ycombinator.com/item?id=48785485)
-
-**Background**: LLM providers often use response caching and multi-tenant serving to reduce costs and latency, but these optimizations can introduce security risks like cross-tenant leakage. Hallucinations occur when AI generates false information, which can mimic real system behavior and complicate diagnosis.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.meritshot.com/blog/llm-cache-session-leak-security">The LLM Response Your Cache Stored Is Now Leaking to the ...</a></li>
-<li><a href="https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/">I Know What You Asked: Prompt Leakage via KV-Cache Sharing in ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">Hallucination (artificial intelligence) - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments are mixed: some users report similar experiences with Gemini and other models, while others suspect hallucination. A Claude Code team member acknowledged the report and promised investigation, but leaned toward hallucination.
-
-**Tags**: `#LLM`, `#security`, `#cache leakage`, `#API infrastructure`, `#hallucination`
-
----
-
-<a id="item-6"></a>
-## [World Map in 500 Bytes Using Deflate and Data URIs](https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything) ⭐️ 8.0/10
-
-Iwo Kadziela (assisted by Codex) created a credible ASCII world map using only 445 bytes of data, leveraging deflate compression and a JavaScript fetch with data URIs to decompress and render the map in the browser. This demonstrates a clever technique for extreme data compression and creative use of modern browser APIs, inspiring developers to think about minimalistic data representation and efficient web delivery. The technique uses the DecompressionStream API with 'deflate-raw' format, and the compressed data is embedded as a base64-encoded data URI in the fetch call, allowing the entire map to be delivered in under 500 bytes.
-
-rss · Simon Willison · Jul 4, 23:09
-
-**Background**: Deflate is a lossless compression algorithm combining LZ77 and Huffman coding, widely used in formats like ZIP and PNG. The DecompressionStream API provides native browser decompression for streams. Data URIs allow embedding data directly in URLs, avoiding separate HTTP requests.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/DEFLATE_compression_algorithm">DEFLATE compression algorithm</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DecompressionStream">DecompressionStream</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Data_URI_scheme">Data URI scheme</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Hacker News discussion praised the cleverness and minimalism of the approach, with some users noting the novelty of using fetch with data URIs and DecompressionStream. A few comments discussed potential improvements or alternative compression methods.
-
-**Tags**: `#compression`, `#JavaScript`, `#ASCII art`, `#data URIs`, `#creative coding`
-
----
-
-<a id="item-7"></a>
-## [Better Models, Worse Tool Calling](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything) ⭐️ 8.0/10
-
-Armin Ronacher reported that newer Claude models (Opus 4.8 and Sonnet 5) sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them, while older models did not exhibit this issue. This regression highlights a counterintuitive trade-off where model improvements for specific built-in tools can degrade performance for third-party tools, raising reliability concerns for production systems that depend on precise schema adherence. The issue is specific to the nested `edits[]` array in Pi's edit tool schema, where newer models invent keys like `new_text_x` that violate the schema. Armin theorizes that Anthropic's reinforcement learning for Claude Code's built-in edit tool may cause this behavior.
+Armin Ronacher reported on July 4, 2026 that newer Claude models, including Opus 4.8 and Sonnet 5, sometimes generate invalid tool call arguments with extra invented fields, causing Pi's edit tool to reject them. This regression was not observed in older Claude models. This regression undermines the reliability of AI coding agents that rely on precise tool call schemas, affecting developers using third-party harnesses like Pi. It highlights a tension between model training for specific tools and general-purpose tool use. The extra fields are invented by the model and can include keys like 'new_text_x', 'type', 'in_file', or 'closeenough'. Enabling strict mode in Claude's API reportedly fixes the issue for some users.
 
 rss · Simon Willison · Jul 4, 22:53
 
-**Background**: Large language models (LLMs) like Claude can be given tool schemas (JSON descriptions of functions) and are expected to generate valid calls. Pi is a third-party coding harness that uses a custom edit tool. Anthropic's Claude Code has its own built-in edit tool, and newer models may have been trained to favor that tool's schema, causing confusion when used with Pi's different schema.
+**Background**: Large language models (LLMs) like Claude can be given tool definitions and are expected to output calls matching a JSON schema. Pi is a coding harness that uses custom edit tools; Claude Code has its own built-in edit tools. The newer models may have been trained via reinforcement learning to favor Claude Code's internal tool format, causing them to hallucinate fields when used with different schemas.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/">Better Models: Worse Tools | Armin Ronacher's Thoughts and ...</a></li>
-<li><a href="https://github.com/earendil-works/pi/issues/6278">New Claude models work poorly with the current Pi's edit tool ...</a></li>
-<li><a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/">Better Models: Worse Tools - simonwillison.net</a></li>
+<li><a href="https://github.com/earendil-works/pi/issues/6278">New Claude models work poorly with the current Pi 's edit tool , failing...</a></li>
+<li><a href="https://chatforest.com/builders-log/opus-4-8-sonnet-5-tool-schema-hallucination-strict-mode-fix-builder-guide/">Better Models, Worse Tools: Opus 4.8 and Sonnet 5 Hallucinate ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The GitHub issue for Pi shows users confirming the problem and discussing workarounds, such as implementing multiple edit tools per model. The overall sentiment is concern about model reliability and the need for better schema adherence in production.
+**Discussion**: The community discussion on the issue tracker (GitHub issue #6278) shows developers confirming the problem and sharing examples of extra fields. Some users suggest enabling strict mode as a workaround, while others debate whether third-party tools should adapt to model-specific quirks.
 
-**Tags**: `#AI`, `#LLM`, `#tool calling`, `#Anthropic`, `#regression`
+**Tags**: `#LLM`, `#tool calling`, `#AI reliability`, `#Claude`, `#regression`
 
 ---
 
-<a id="item-8"></a>
-## [Competence Gate: Gating Tool-Use via Internal Confidence](https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [Competence Gate: Gating Tool Use via Internal Confidence](https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/) ⭐️ 8.0/10
 
-A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon and via GGUF for llama.cpp/Ollama. This approach addresses a key limitation of small instruct models—poor verbalized confidence—by leveraging internal activations, enabling more reliable tool use and privacy protection. It offers a practical, open-source solution for local deployment with traceable answers. The gate improved error detection by d′ = 0.46 (95% CI [0.01, 0.89]), and 87% of cases flagged by the gate but missed by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.
+A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon via MLX and on llama.cpp/Ollama via GGUF. This approach addresses a key limitation of small language models: their inability to accurately verbalize confidence, leading to overconfident incorrect answers. By gating tool use on internal signals, it reduces hallucinations and protects private data from being leaked to public search engines. The gate achieved a d′ improvement of 0.46 in error detection over the base model's tool calling, and 87% of cases flagged by the gate but not by the base model were genuinely wrong. A two-signal version reduced private queries sent to public search from 22% to 10%.
 
 reddit · r/MachineLearning · /u/Synthium- · Jul 5, 07:49
 
-**Background**: Small language models often struggle to accurately express their confidence verbally, tending to overstate it. Internal activations, however, contain richer uncertainty information. LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that updates only small matrices, making it suitable for lightweight adapters. Signal detection theory's d′ measures sensitivity in distinguishing correct from incorrect outputs.
+**Background**: LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method that adds small trainable adapters to a frozen base model, enabling task-specific customization with minimal overhead. Internal confidence signals refer to the model's hidden state activations that correlate with its certainty, which can be more reliable than the model's verbalized confidence statements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.databricks.com/blog/efficient-fine-tuning-lora-guide-llms">Efficient Fine-Tuning with LoRA: A Guide to Optimal Parameter Selection for Large Language Models</a></li>
-<li><a href="https://arxiv.org/html/2510.13750v1">Improving LLM Trustworthiness via Activation-Based Uncertainty ... - arXiv</a></li>
-<li><a href="https://wise.cgu.edu/wise-tutorials/tutorial-signal-detection-theory/signal-detection-d-defined-2/">WISE » Signal Detection: d’ Defined</a></li>
+<li><a href="https://huggingface.co/learn/llm-course/chapter11/4">LoRA (Low-Rank Adaptation) · Hugging Face</a></li>
+<li><a href="https://huggingface.co/Qwen/Qwen3.5-4B">Qwen/Qwen3.5-4B · Hugging Face</a></li>
+<li><a href="https://arxiv.org/abs/2604.22271">[2604.22271] How LLMs Detect and Correct Their Own Errors ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#tool-use`, `#confidence estimation`, `#LoRA`, `#open-source`
+**Tags**: `#machine learning`, `#LLM`, `#tool use`, `#confidence calibration`, `#open source`
 
 ---
 
-<a id="item-9"></a>
-## [USAF: Fine-Tune MoE Models on Consumer GPUs](https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [USAF: Sparse Fine-Tuning for MoE on Consumer GPUs](https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/) ⭐️ 8.0/10
 
-A new sparse fine-tuning method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on the same GPU used for inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This breakthrough democratizes fine-tuning of large MoE models by eliminating the need for high-end GPUs, making it accessible to researchers and hobbyists with consumer hardware. USAF trains only 26 million out of 4.8 billion parameters by updating sparse expert weights and the router, instead of using adapters. It is fully open source under Apache 2.0 and claims to be the only method that works on AMD GPUs.
+A new open-source method called USAF (Ultra Sparse Adaptive Fine-Tuning) enables fine-tuning of Mixture-of-Experts (MoE) models on GPUs that previously could only run inference, demonstrated on a 12GB AMD RX 6750 XT with Qwen3-30B-A3B. This breakthrough dramatically lowers the hardware barrier for fine-tuning large MoE models, allowing researchers and hobbyists with consumer GPUs to customize state-of-the-art models without expensive cloud or enterprise hardware. USAF trains only 26 million out of 4.8 billion parameters (sparse expert weights and the router) on a 12GB GPU, whereas full fine-tuning would require over 120GB. It is the only method that works on AMD GPUs and the only one that trains both expert weights and the router.
 
 reddit · r/MachineLearning · /u/tsuyu122 · Jul 4, 21:56
 
-**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, enabling large model sizes with lower inference cost. However, full fine-tuning requires massive memory (e.g., 120GB+ for Qwen3-30B-A3B), far exceeding consumer GPUs. Existing methods like LoRA reduce memory but still require significant resources.
+**Background**: Mixture-of-Experts (MoE) models use multiple specialized subnetworks (experts) activated by a router, enabling large model capacity with lower inference cost. However, fine-tuning such models typically requires massive GPU memory because all parameters are updated. Sparse fine-tuning methods like USAF update only a small subset of parameters, drastically reducing memory needs.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://github.com/tsuyu122/usaf/blob/master/README.md">usaf/README.md at master · tsuyu122/usaf · GitHub</a></li>
-<li><a href="https://langdb.ai/app/providers/openrouter/qwen3-30b-a3b">qwen 3 - 30 b - a 3 b | Model Details</a></li>
+<li><a href="https://github.com/tsuyu122/usaf/blob/master">GitHub - tsuyu122/usaf</a></li>
 
 </ul>
 </details>
@@ -232,68 +179,67 @@ reddit · r/MachineLearning · /u/tsuyu122 · Jul 4, 21:56
 
 ---
 
-<a id="item-10"></a>
-## [iOS 27 Adds Trust Insights for On-Device Fraud Detection](https://www.cultofmac.com/news/ios-27-trust-insights-feature) ⭐️ 8.0/10
+<a id="item-8"></a>
+## [iOS 27 Introduces Trust Insights Anti-Fraud Feature](https://www.cultofmac.com/news/ios-27-trust-insights-feature) ⭐️ 8.0/10
 
-Apple announced Trust Insights, a new on-device fraud detection framework in iOS 27, which analyzes user behavior patterns, timing, context, and sensor data to identify potential social engineering scams during calls or messages. This feature addresses a critical gap in mobile security by detecting real-time social engineering scams that trick users into authorizing fraudulent transactions, without compromising privacy. Trust Insights does not read message, email, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. The feature can be disabled but has a cooldown period to prevent scammers from turning it off during a call.
+Apple announced Trust Insights, a new on-device anti-fraud framework for iOS 27 that analyzes user behavior patterns, timing, context, and sensor data to detect scam-induced actions like coerced transfers or account changes. This marks a significant step in proactive fraud prevention on mobile devices, using privacy-preserving on-device AI to protect users from social engineering scams without compromising personal data. The feature does not read messages, emails, or photo content; raw data is immediately deleted, and only a single output value is sent to the server. Developers must opt in to integrate Trust Insights into their apps.
 
 telegram · zaihuapd · Jul 4, 14:30
 
-**Background**: Social engineering scams, where fraudsters impersonate trusted entities to manipulate victims into transferring money or sharing credentials, are increasingly common. Traditional security measures often fail because the user voluntarily performs the action. Trust Insights uses on-device behavioral analysis to detect anomalies indicative of such scams, while Apple's privacy-focused design ensures no personal content is accessed.
+**Background**: Social engineering scams, where fraudsters trick users into performing actions like transferring money or changing account credentials, are a growing threat. Traditional anti-fraud measures often rely on server-side analysis or user reports, which can be too late. Trust Insights uses on-device machine learning to detect suspicious behavior in real time, adding a layer of protection before the user completes the scammer's requested action.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://9to5mac.com/2026/07/02/ios-27-helps-apps-detect-when-a-user-may-be-getting-scammed-in-real-time/">iOS 27 helps apps detect when a user may be getting scammed in real time - 9to5Mac</a></li>
-<li><a href="https://meteoraweb.com/en/news/ios-27-introduces-trust-insights-to-detect-scams-in-real-time-during-calls-and-messages">iOS 27 Trust Insights: real-time scam detection • Meteora Web Agency</a></li>
-<li><a href="https://applemagazine.com/ios-27-trust-insights/">iOS 27 Trust Insights Helps Apps Detect Scam Coaching - AppleMagazine</a></li>
+<li><a href="https://www.youtube.com/watch?v=jY-_rqz_VEM">WWDC26: Meet Trust Insights | Apple - YouTube</a></li>
+<li><a href="https://www.ithinkdiff.com/ios-27-trust-insights-scam-detection-framework/">iOS 27 Adds Trust Insights to Detect Scams Before They Happen</a></li>
+<li><a href="https://www.newsy-today.com/real-time-social-engineering-detection-how-trust-insights-stops-fraud-before-it-starts/">Real-Time Social Engineering Detection: How Trust Insights Stops...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#iOS`, `#fraud detection`, `#privacy`, `#Apple`, `#security`
+**Tags**: `#iOS`, `#security`, `#anti-fraud`, `#privacy`, `#Apple`
 
 ---
 
-<a id="item-11"></a>
-## [F-Droid: Google ADV Is Malware Pre-Installed on 4 Billion Devices](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
+<a id="item-9"></a>
+## [OpenAI Never Visited Key UK Stargate Site, Guardian Finds](https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project) ⭐️ 8.0/10
 
-F-Droid has officially classified Google's Android Developer Verification (ADV) as malware, claiming it is pre-installed on approximately 4 billion Android devices and will block unapproved software starting in 2026. This move threatens the open nature of the Android ecosystem by restricting users to only Google-approved apps, potentially harming app diversity, user freedom, and the viability of alternative app stores like F-Droid. ADV is a system process with root privileges that cannot be removed, and it will first activate in Brazil, Indonesia, Singapore, and Thailand on September 30, 2026, with global rollout planned for 2027 and beyond.
+A Guardian investigation reveals that OpenAI never visited the Cobalt Park site in North Tyneside, the proposed location for its Stargate UK data center, and local officials never met with OpenAI or partner Nscale. The project, announced in September 2025 as a flagship UK-US AI collaboration, was paused in April 2026 due to regulatory and energy cost concerns. The findings suggest the $30 billion Stargate UK pledge may have been a PR stunt rather than a genuine investment, undermining trust in major AI infrastructure announcements and raising questions about government transparency in tech partnerships. The Stargate UK project was announced in September 2025 with partners Nvidia and Nscale, aiming to build a large data centre in north-east England. It was paused in April 2026, with a local Conservative MP stating the project 'looks extremely unlikely' to proceed.
 
-telegram · zaihuapd · Jul 5, 00:41
+telegram · zaihuapd · Jul 5, 05:09
 
-**Background**: Android Developer Verification (ADV) is a Google initiative aimed at enhancing security by requiring developers to verify their identity and register package names. F-Droid is a popular open-source app store that distributes only free and open-source software, often in opposition to Google's policies. The controversy centers on whether ADV is a legitimate security measure or a tool to enforce Google's control over app distribution.
+**Background**: Stargate UK was part of OpenAI's broader Stargate initiative to build massive AI infrastructure globally. The UK project was touted as a key component of the UK's AI Opportunities Action Plan, promising local computing power for sensitive AI workloads. Cobalt Park is one of the largest business parks in the UK, but OpenAI never sent representatives to the site.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.android.com/developer-verification/guides">Android developer verification</a></li>
-<li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
-<li><a href="https://support.google.com/android-developer-console/answer/16561738?hl=en">Understanding Android developer verification - Android ...</a></li>
+<li><a href="https://openai.com/index/introducing-stargate-uk/">Introducing Stargate UK - OpenAI</a></li>
+<li><a href="https://www.bbc.com/news/articles/clyd032ej70o">OpenAI pauses UK data centre deal over energy costs and ... - BBC</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Android`, `#malware`, `#F-Droid`, `#Google`, `#privacy`
+**Tags**: `#OpenAI`, `#Stargate`, `#AI infrastructure`, `#investigative journalism`, `#UK`
 
 ---
 
-<a id="item-12"></a>
-## [Students Design Questions to Stump AI in Exam](https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw) ⭐️ 8.0/10
+<a id="item-10"></a>
+## [Fudan Exam: Students Stump AI, Only 4 Get Zero](https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw) ⭐️ 8.0/10
 
-Fudan University replaced its traditional data mining exam with a 'human vs AI' test where 51 students each created 10 calculation questions to challenge three AI models; 50 students managed to stump at least one model, but only 4 achieved a zero score on any model, and the strongest model, Claude, remained undefeated. This experiment highlights the need for education reform in the AI era, shifting focus from memorization and algorithm execution to evaluating AI outputs, critical thinking, and human-AI collaboration. The test involved three unnamed AI models, with Claude (by Anthropic) being the most robust; the class average score was 85.7 out of 100, indicating that most students could not consistently fool all models.
+In a Fudan University data mining course, the final exam was redesigned so that 51 students each created 10 calculation questions to stump three AI models; only 4 students succeeded in making any AI score zero, and the strongest model, Claude, was never completely defeated. This innovative assessment shifts focus from rote memorization to evaluating AI outputs, reflecting a necessary reform in education as AI capabilities advance. It highlights a new paradigm where students learn to command and judge AI, preparing them for an AI-integrated workforce. The exam involved three unnamed AI models, with Claude being the most robust. The class average score was 85.7 out of 100, meaning most students successfully stumped at least one model on some questions, but only four achieved a perfect zero on any model's entire paper.
 
 telegram · zaihuapd · Jul 5, 08:40
 
-**Background**: Traditional exams in data mining courses often test algorithmic knowledge and memory, which AI can now easily handle. This reform, led by instructor Xiao Yanghua, aims to prepare students for a future where they must direct and judge AI outputs rather than perform tasks AI can do.
+**Background**: Traditional exams that test algorithmic recall and memorization are becoming obsolete as AI can easily solve such problems. This course, taught by Professor Xiao Yanghua, represents a shift toward training students in critical thinking, evaluation, and creative problem-solving—skills that AI cannot easily replicate.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview - Claude Platform Docs</a></li>
-<li><a href="https://www.scirp.org/journal/paperinformation?paperid=142367">Exploration of Teaching Reform in Big Data and Data Mining Course under the Background of New Engineering Education Initiatives</a></li>
-<li><a href="https://testquality.com/manual-vs-ai-test-case-design-efficiency-breakdown/">Manual vs AI Test Case Design: Efficiency Breakdown</a></li>
+<li><a href="https://www.science.org/doi/10.1126/science.aec5115">Generative AI use and misuse call for assessment reform in higher education | Science</a></li>
+<li><a href="https://www.unesco.org/en/articles/whats-worth-measuring-future-assessment-ai-age">What's worth measuring? The future of assessment in the AI age</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI in Education`, `#AI Evaluation`, `#Human-AI Collaboration`, `#Assessment Reform`, `#Large Language Models`
+**Tags**: `#AI in Education`, `#Assessment Reform`, `#LLM Evaluation`, `#Pedagogy`, `#AI Safety`
 
 ---
