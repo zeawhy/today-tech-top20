@@ -5,195 +5,166 @@ date: 2026-07-06
 lang: zh
 ---
 
-> 从 27 条内容中筛选出 8 条重要资讯。
+> 从 34 条内容中筛选出 7 条重要资讯。
 
 ---
 
 1. [数字游戏 vs 实体游戏：核心问题是所有权](#item-1) ⭐️ 8.0/10
-2. [为突尼斯达里加（阿拉伯字母）构建开源机器翻译管道和语料库](#item-2) ⭐️ 8.0/10
-3. [能力门控：基于内部置信信号控制工具使用](#item-3) ⭐️ 8.0/10
-4. [香港处理中国过半芯片进口，创历史新高](#item-4) ⭐️ 8.0/10
-5. [卫报：OpenAI 从未到访星际之门英国选址，300 亿承诺或为公关噱头](#item-5) ⭐️ 8.0/10
-6. [复旦期末考：学生出题难倒 AI，考核人类判断力](#item-6) ⭐️ 8.0/10
-7. [SpaceX 向投资者展示比 iPhone 更薄的手机原型](#item-7) ⭐️ 8.0/10
-8. [中国拟削减 SCI 发表激励以防止技术泄密](#item-8) ⭐️ 8.0/10
+2. [突尼斯达里加语（Arabizi）开源机器翻译管道](#item-2) ⭐️ 8.0/10
+3. [EchoCreep：AI 模型输出的逐渐同质化](#item-3) ⭐️ 8.0/10
+4. [SpaceX 向投资者展示比 iPhone 更薄的手机原型](#item-4) ⭐️ 8.0/10
+5. [中国拟削减 SCI 发表激励以防技术泄密](#item-5) ⭐️ 8.0/10
+6. [微软 GDID 设备标识符被用于追踪青少年黑客](#item-6) ⭐️ 8.0/10
+7. [B 站向开源项目 BiliRoaming 发律师函](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [数字游戏 vs 实体游戏：核心问题是所有权](https://popcar.bearblog.dev/its-about-ownership/) ⭐️ 8.0/10
 
-一篇博客文章指出，数字游戏与实体游戏争论的核心并非格式问题，而是所有权问题，呼吁通过法律保护确保买家对数字购买拥有产权。 随着数字游戏销售占据主导地位，平台可以撤销访问权限或关闭服务，导致买家失去真正的所有权，这一讨论凸显了日益增长的消费者担忧。它可能影响未来关于数字权利和 DRM 的监管。 文章强调数字购买应包含转让、转售和离线使用且不被撤销的权利。它指出 Steam 的 DRM 可以被绕过，但许多平台施加了严格的 DRM，威胁到游戏保存。
+一篇博客文章指出，数字游戏与实体游戏之间的根本冲突不在于便利性，而在于所有权，主张消费者有权转让和永久使用已购买的数字商品。 这场争论影响着数百万玩家和更广泛的数字市场，因为公司越来越多地转向订阅模式和 DRM，限制了消费者的控制权。社区的高度参与（499 分，371 条评论）表明人们对失去所有权权利的广泛担忧。 文章指出，Steam 并未施加严格的 DRM，允许离线游玩，但许多其他平台会撤销访问权限。社区评论强调需要监管，以确保数字购买包含可转让性和永久使用权。
 
 hackernews · popcar2 · 7月5日 14:56 · [社区讨论](https://news.ycombinator.com/item?id=48794750)
 
-**背景**: 数字版权管理（DRM）是游戏公司用于防止未经授权分发的复制保护措施。然而，如果服务器关闭或许可证被撤销，DRM 也可能限制合法所有者访问游戏。与实体商品所有权明确不同，数字所有权的概念在法律上仍然模糊。
+**背景**: 数字版权管理（DRM）是一种控制对受版权保护的数字内容访问的技术，通常限制消费者使用已购买媒体的方式。随着游戏向数字发行和订阅服务发展，消费者面临失去转售、出借或永久拥有已付费游戏的能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.pcgamingwiki.com/wiki/Digital_rights_management_(DRM)">Digital rights management ( DRM ) - PCGamingWiki PCGW - bugs...</a></li>
-<li><a href="https://www.scoredetect.com/blog/posts/drm-in-gaming-challenges-for-game-preservation">DRM in Gaming : Challenges for Game Preservation | ScoreDetect Blog</a></li>
-<li><a href="https://d3.harvard.edu/rethinking-digital-ownership-rights-governance-and-the-path-forward/">Rethinking Digital Ownership: Rights, Governance, and the Path Forward | Harvard Business School AI Institute</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Digital_rights_management">Digital rights management - Wikipedia</a></li>
+<li><a href="https://consumer.ftc.gov/consumer-alerts/2024/04/do-you-really-own-digital-items-you-paid">Do you really own the digital items you paid for? | Consumer Advice</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者普遍认为所有权应包括可转让性和离线使用。一些人指出盗版提供了安心，而另一些人质疑为何公司现在无视消费者的反对。少数人建议未来强制要求数字转售进行 KYC（身份验证）可能是一个解决方案。
+**社区讨论**: 评论者普遍支持文章立场，jbombadil 呼吁监管以确保数字购买是真正的财产。hx8 指出自《魔兽世界》成功以来，行业向订阅模式转变。beloch 指出，当 DRM 失效时，破解和盗版提供了安心。mattgreenrocks 质疑为什么公司现在无视消费者的反对。
 
-**标签**: `#digital ownership`, `#gaming`, `#DRM`, `#regulation`, `#consumer rights`
+**标签**: `#digital ownership`, `#gaming`, `#DRM`, `#consumer rights`, `#regulation`
 
 ---
 
 <a id="item-2"></a>
-## [为突尼斯达里加（阿拉伯字母）构建开源机器翻译管道和语料库](https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/) ⭐️ 8.0/10
+## [突尼斯达里加语（Arabizi）开源机器翻译管道](https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/) ⭐️ 8.0/10
 
-一位 18 岁的突尼斯学生构建并发布了针对用阿拉伯字母书写的突尼斯达里加语的开源机器翻译管道和平行语料库，包括自定义的 SentencePiece BPE 分词器和从头训练的 Transformer 模型。 这填补了突尼斯达里加语（一种资源匮乏的方言）在自然语言处理资源方面的关键空白，并提供了一个诚实的基线（BLEU 3.89），社区可以在此基础上改进，促进协作开发。 该管道使用一个感知阿拉伯字母的分词器，将数字 3、7、9、5 作为符号保护；一个约 1560 万参数的编码器-解码器 Transformer，通过从摩洛哥达里加语迁移学习训练；以及约 553 条手工制作的平行句子语料库。
+一名 18 岁学生构建并开源了针对用 Arabizi 书写的突尼斯达里加语的完整机器翻译管道和平行语料库，包括自定义 SentencePiece BPE 分词器和 1560 万参数的 Transformer 模型，并诚实地报告了 3.89 的 BLEU 分数。 这填补了几乎没有任何开放资源的低资源语言在自然语言处理中的关键空白，提供了可复现的基线，并邀请社区合作以扩充语料库并提高翻译质量。 该管道使用感知 Arabizi 的 SentencePiece BPE 分词器，保护用于阿拉伯语音素的数字（3,7,9,5），模型从摩洛哥达里加语迁移学习，然后在约 553 个人工制作的突尼斯语对上进行微调。作者计划通过符合伦理的实地数据收集将语料库扩展到 3000-5000 对。
 
 reddit · r/MachineLearning · /u/Dhiadev-tn · 7月5日 18:08
 
-**背景**: 突尼斯达里加语是一种口语化的阿拉伯方言，没有标准正字法，常使用阿拉伯字母（拉丁字母和数字）书写。现有的阿拉伯语自然语言处理工具通常将其通过现代标准阿拉伯语处理，无法正确处理该方言的独特特征。BLEU 是一种通过比较 n-gram 与人工参考译文来衡量翻译质量的指标。
+**背景**: 突尼斯达里加语是一种口语阿拉伯方言，没有标准正字法，通常用 Arabizi（拉丁字母加数字）非正式书写。现有的阿拉伯语自然语言处理工具通常将其通过现代标准阿拉伯语处理，这无法正确处理该方言独特的音系和正字法。BLEU 是一种衡量机器翻译与人工翻译之间 n-gram 重叠的指标，通常 30 分以上表示质量良好；3.89 分非常低，但可作为诚实的基线。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Tunisian_Arabic">Tunisian Arabic - Wikipedia</a></li>
+<li><a href="https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english">Dhiadev-tn/ tunisian - darija -english · Datasets at Hugging Face</a></li>
+<li><a href="https://github.com/google/sentencepiece">GitHub - google/sentencepiece: Unsupervised text tokenizer for Neural Network-based text generation. · GitHub</a></li>
 <li><a href="https://en.wikipedia.org/wiki/BLEU">BLEU - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#NLP`, `#Machine Translation`, `#Low-Resource Languages`, `#Open Source`, `#Tunisian Darija`
+**社区讨论**: 社区赞扬了作者的透明度和主动性，许多人表示愿意贡献数据和技术建议。一些人指出，鉴于语料库极小，低 BLEU 分数是意料之中的，并鼓励专注于数据收集而非模型调优。少数人建议使用像 mT5 这样的预训练多语言模型以获得更好结果。
+
+**标签**: `#NLP`, `#machine translation`, `#low-resource languages`, `#Tunisian Darija`, `#open source`
 
 ---
 
 <a id="item-3"></a>
-## [能力门控：基于内部置信信号控制工具使用](https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/) ⭐️ 8.0/10
+## [EchoCreep：AI 模型输出的逐渐同质化](https://www.reddit.com/r/MachineLearning/comments/1uon503/does_anyone_have_a_name_for_that_subtle_sameness/) ⭐️ 8.0/10
 
-一个 10MB 的 LoRA 适配器，用于 Qwen3.5-4B，基于内部置信信号控制工具使用，提高了错误检测能力并减少了幻觉。它可在 Apple Silicon 上本地运行，并支持 GGUF 格式用于 llama.cpp/Ollama。 这种方法解决了小型语言模型的一个关键局限：无法准确表达置信度。通过基于内部信号控制工具使用，它减少了幻觉和私人数据泄露，使本地 AI 在敏感任务中更加可靠。 该门控将错误检测能力提高了 d'=0.46（95%置信区间[0.01, 0.89]），其中 87%被标记的错误确实是错误的。双信号版本将私人查询泄露到公共搜索的比例从 22%降低到 10%。然而，该门控在 SQuAD 2.0 上并未改善基于文档的问答，因为参数化能力和证据基础是不同的信号。
+一位 Reddit 用户提出了术语'EchoCreep'，用于描述因共享合成数据谱系导致的模型输出逐渐同质化现象，并呼吁建立正式指标和缓解策略。 这一现象标志着 AI 社区面临模型崩溃之外的新挑战：合成数据飞轮可能侵蚀模型的输出多样性和原创性，影响研究、创造力及对 AI 系统的信任。 用户指出，EchoCreep 表现为在多次交互或进入小众领域后，节奏、模糊措辞和盲点趋于一致，并询问完全基于人工精选数据的微调能否消除该现象。
 
-reddit · r/MachineLearning · /u/Synthium- · 7月5日 07:49
+reddit · r/MachineLearning · /u/BCondor3 · 7月6日 04:27
 
-**背景**: 小型语言模型通常难以表达其真实的不确定性，导致过度自信的错误答案。LoRA（低秩适配）是一种在冻结基础模型的同时微调少量参数的技术，能够实现高效的适配。内部置信信号指的是模型隐藏层激活中反映其确定性的信息，这比口头表达的置信度更可靠。
+**背景**: 模型崩溃是一个已知风险，指 AI 模型在合成数据上训练后失去多样性并最终失效。合成数据飞轮是指模型生成数据用于训练后续模型的循环，可能放大偏差。EchoCreep 是这种同质化的温和、渐进版本，与灾难性崩溃不同。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://medium.com/@shelikohan/low-rank-adapter-lora-explained-0d3677395639">Low-Rank Adapter (LoRA) Explained | by Sheli Kohan | Medium</a></li>
-<li><a href="https://arxiv.org/abs/2106.09685">[2106.09685] LoRA: Low-Rank Adaptation of Large Language Models</a></li>
-<li><a href="https://brics-econ.org/how-large-language-models-handle-what-they-don-t-know-communicating-uncertainty">How Large Language Models Handle What They Don't Know...</a></li>
+<li><a href="https://medium.com/@aftab001x/agentic-slms-synthetic-data-the-quiet-revolution-reshaping-ai-in-2025-511d13de7060">Agentic SLMs + Synthetic Data : The quiet revolution... | Medium</a></li>
+<li><a href="https://embeddedai.buzzsprout.com/2429696/episodes/18155819-the-ai-paradox-homogenization-blandness-and-model-collapse">The AI Paradox: Homogenization , Blandness, and Model Collapse</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论中包含关于门控实现的技术问题以及作者的澄清。一些用户对将该方法扩展到更大模型表示兴趣，而另一些用户则指出了在基于文档的问答任务上的局限性。总体情绪积极，人们对该开源研究发布表示赞赏。
+**社区讨论**: Reddit 帖子引发了实质性讨论，用户分享了类似观察，并讨论了输出熵或 n-gram 多样性等潜在指标。一些人担心 EchoCreep 可能已影响基准分数，另一些人则质疑它是否与模型崩溃有本质区别。
 
-**标签**: `#LoRA`, `#small language models`, `#tool use`, `#confidence calibration`, `#local AI`
+**标签**: `#machine learning`, `#model collapse`, `#synthetic data`, `#homogenization`, `#evaluation`
 
 ---
 
 <a id="item-4"></a>
-## [香港处理中国过半芯片进口，创历史新高](https://thenextweb.com/news/hong-kong-china-ai-chip-trade-hub) ⭐️ 8.0/10
+## [SpaceX 向投资者展示比 iPhone 更薄的手机原型](https://www.wsj.com/tech/spacexs-telecom-dreams-d461e568) ⭐️ 8.0/10
 
-2026 年前五个月，香港经手了中国逾半数的芯片进口，转口至内地的芯片价值约 1240 亿美元，占中国同期芯片采购总额的 52%。这一比例十年前仅为三分之一，创历史新高。 这一转变凸显了香港凭借自由港地位和物流优势，在亚洲 AI 贸易中日益重要的枢纽作用。然而，这也使香港在中美半导体贸易紧张局势中面临显著的地缘政治风险。 AI 相关电子产品已占香港出口的 57%至 70%，香港贸发局因此将 2026 年出口增长预测上调至逾 20%。香港的优势包括零关税、无资本管制以及发达的航空货运网络。
+SpaceX 向投资者展示了一款比 iPhone 更薄、运行自有操作系统的智能手机原型，计划整合 Starlink 卫星连接功能用于移动设备。 此举可能通过将卫星连接与专有智能手机相结合，颠覆移动通信行业，有望在不依赖传统蜂窝网络的情况下提供全球覆盖。 据报道，该原型集成了 Elon Musk 的 AI 公司 xAI 的人工智能技术，SpaceX 还在考虑建设地面网络或与蜂窝运营商合作提供移动服务。
 
-telegram · zaihuapd · 7月5日 02:45
+telegram · zaihuapd · 7月5日 14:10
 
-**背景**: 香港是自由港，货物可免关税进口和转口，非常适合半导体等高价值、低重量的商品。转口贸易指货物从生产国经香港中转至最终消费国，相关文件由中间商处理。
+**背景**: SpaceX 于 2019 年启动的 Starlink 卫星星座旨在提供全球宽带互联网。该公司通过与 T-Mobile 等合作伙伴扩展直连手机卫星服务，使标准手机在无蜂窝信号时能连接卫星。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://zh.wikipedia.org/zh-hk/自由港">自由港 - 維基百科，自由的百科全書</a></li>
-<li><a href="https://zh.wikipedia.org/zh-hans/自由貿易園區">自由贸易园区 - 维基百科，自由的百科全书</a></li>
-<li><a href="https://wiki.mbalib.com/zh-tw/自由港">自由港 - MBA智库百科</a></li>
+<li><a href="https://www.techspot.com/news/112997-spacex-reportedly-showing-investors-phone-prototype-months-after.html">SpaceX is reportedly showing investors a phone prototype ...</a></li>
+<li><a href="https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/">SpaceX has an AI device prototype, and it sure sounds phone ...</a></li>
+<li><a href="https://www.usmobile.com/blog/starlink-satellite-phone-calls/">Starlink Satellite Calls On Your Phone: Complete Direct-to-Cell Guide (2026) | US Mobile</a></li>
 
 </ul>
 </details>
 
-**标签**: `#semiconductors`, `#AI trade`, `#Hong Kong`, `#geopolitics`, `#supply chain`
+**标签**: `#SpaceX`, `#satellite communication`, `#smartphone`, `#Starlink`, `#telecom`
 
 ---
 
 <a id="item-5"></a>
-## [卫报：OpenAI 从未到访星际之门英国选址，300 亿承诺或为公关噱头](https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project) ⭐️ 8.0/10
+## [中国拟削减 SCI 发表激励以防技术泄密](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
 
-《卫报》调查发现，OpenAI 从未实地造访其“星际之门”英国项目的核心选址——北泰恩赛德的 Cobalt Park 商业园区，当地政府也从未与 OpenAI 或合作方 Nscale 举行过任何会议。该项目在特朗普访英期间高调宣布，但已于 2026 年 4 月以监管环境和能源成本过高为由暂停。 这一发现削弱了 OpenAI 投资承诺的可信度，并对英国大规模 AI 基础设施项目的可行性提出严重质疑。它可能损害科技公司与政府之间的信任，并影响未来的 AI 政策和投资决策。 “星际之门”英国项目曾被标榜为英美 AI 合作的旗舰工程，但知情人士称它从来就不是一个真实存在的项目，不过是政府的公关噱头。当地保守党议员表示，项目落地“看起来极不可能”。
+中国政策制定者正讨论削减科研人员向国际期刊投稿的激励，包括降低 SCI 论文在学术晋升和终身教职评定中的权重，理由是国家安全担忧技术泄密。 这一政策转变可能重塑中国的学术评价体系，减少国际科学合作，影响全球出版业，同时也引发对学术自由和审查的担忧。 国家自然科学基金委现要求受资助项目至少 20%的代表性论文发表于中文期刊。一名材料学学者因安全审查标准模糊且趋严，已停止向外国期刊投稿。
 
-telegram · zaihuapd · 7月5日 05:09
+telegram · zaihuapd · 7月6日 01:03
 
-**背景**: “星际之门”项目最初由 OpenAI 宣布为美国大规模 AI 基础设施建设计划，后来扩展至英国。Cobalt Park 是英国最大的商业园区之一，入驻了埃森哲等全球企业。Nscale 是一家全栈 AI 云平台提供商。
+**背景**: SCI（科学引文索引）论文长期以来是中国学术评价的关键指标，促使研究人员在高影响力国际期刊上发表论文。然而，人们日益担心此类出版物可能无意中泄露敏感技术。为此，中国一直在推广国内期刊并收紧对学术投稿的安全审查。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2ktanZIc0VCSDUxWDBxdEVIc2lpZ0FQAQ?hl=en-GB&gl=GB&ceid=GB:en">Google News - OpenAI puts Stargate UK project on hold - Overview</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Cobalt_Park">Cobalt Park - Wikipedia</a></li>
+**社区讨论**: 有群友表示此举旨在打击学术造假，暗示降低 SCI 权重可能遏制不端行为。讨论反映了对该政策意图和后果的不同看法。
 
-</ul>
-</details>
-
-**标签**: `#OpenAI`, `#Stargate`, `#AI infrastructure`, `#investigative journalism`, `#UK tech policy`
+**标签**: `#science policy`, `#national security`, `#academic publishing`, `#China`, `#technology transfer`
 
 ---
 
 <a id="item-6"></a>
-## [复旦期末考：学生出题难倒 AI，考核人类判断力](https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw) ⭐️ 8.0/10
+## [微软 GDID 设备标识符被用于追踪青少年黑客](https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148) ⭐️ 8.0/10
 
-复旦大学“数据挖掘技术”课程将传统期末考试改为“人考 AI”形式：51 名学生每人出 10 道有唯一答案的计算题，挑战三个 AI 模型，AI 答错越多学生得分越高。结果有 4 名学生成功让某个模型得零分，但最强模型 Claude 从未被完全难倒。 这种新颖的考核方式将重点从死记硬背转向评估人类的判断力、创造力以及指挥和评判 AI 的能力，反映了 AI 时代教育改革的更广泛趋势。同时，它也为当前大语言模型的局限性和人机交互动态提供了实践洞察。 考试涉及 51 名学生，每人提交 10 道有唯一答案的计算题，对三个未具名的 AI 模型进行测试（其中 Claude 最强）。全班平均分 85.7 分（满分 100 分），50 名学生至少有一次难倒了某个模型。
+19 岁黑客 Peter Stokes 被逮捕，此前微软向 FBI 提供了其全球设备标识符（GDID）数据，该标识符在嫌疑人使用 VPN 时仍然保持不变。 此案表明，微软的 GDID 是一种持久的设备标识符，执法部门即使在使用 VPN 的情况下也能追踪用户，这引发了 Windows 用户的重大隐私担忧。 GDID 是分配给每个 Windows 安装的唯一标识符，不会因 Windows 更新或使用 VPN 而改变，用户也无法通过常规设置轻易修改。
 
-telegram · zaihuapd · 7月5日 08:40
+telegram · zaihuapd · 7月6日 04:15
 
-**背景**: 数据挖掘等领域的传统考试通常测试算法知识和记忆力，而 AI 可以轻松复制这些能力。课程授课教师肖仰华教授认为，这类考核在 AI 时代已经过时，未来的教育应强调评估 AI 输出和创造性解决问题等技能。
+**背景**: 微软的全球设备标识符（GDID）是一种内部遥测标识符，用于跟踪 Windows 更新和许可的设备特定数据。它在 Windows 安装时生成，并在网络变化后仍然存在，因此可能成为将在线活动与特定设备关联的工具。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (AI) - Wikipedia</a></li>
-<li><a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview - Claude Platform Docs</a></li>
+<li><a href="https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148">Microsoft device telemetry key to unmasking alleged... - iTnews</a></li>
+<li><a href="https://www.tomshardware.com/software/windows-11-identifier-used-to-track-scattered-spider-perp-after-microsoft-shared-info-with-fbi-19-year-old-us-estonian-hacker-arrested-over-alleged-ties-to-infamous-extortion-group">Windows 11 identifier code used to track Scattered... | Tom's Hardware</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/update-compliance-schema-waasupdatestatus?source=recommendations">Update Compliance Schema - WaaSUpdateStatus - Windows ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI evaluation`, `#education reform`, `#human-AI interaction`, `#LLM limitations`, `#creative assessment`
+**标签**: `#privacy`, `#security`, `#Microsoft`, `#device tracking`, `#law enforcement`
 
 ---
 
 <a id="item-7"></a>
-## [SpaceX 向投资者展示比 iPhone 更薄的手机原型](https://www.wsj.com/tech/spacexs-telecom-dreams-d461e568) ⭐️ 8.0/10
+## [B 站向开源项目 BiliRoaming 发律师函](https://github.com/yujincheng08/BiliRoaming) ⭐️ 8.0/10
 
-SpaceX 已向投资者展示了一款比 iPhone 更薄、运行自有操作系统的手机原型，标志着其业务从卫星宽带向移动通信领域拓展。 这可能颠覆电信行业，通过将 Starlink 卫星连接直接集成到消费设备中，提供不依赖传统蜂窝网络的全球无缝覆盖。 据报道，该原型机采用高通骁龙芯片，并集成了马斯克旗下 AI 公司 xAI 的技术。SpaceX 总裁 Gwynne Shotwell 还提到计划建设地面网络或与蜂窝运营商合作。
+B 站委托律师事务所向开源项目 BiliRoaming 发出侵权告知函，要求其停止对非公开接口、认证体系、访问控制和付费内容保护机制进行逆向分析与适配，并删除或回滚相关代码。 此次法律行动凸显了平台版权保护与开源逆向工程之间的紧张关系，可能为国内类似项目的处理开创先例。 函件具体提到的行为包括播放鉴权 Hook、将付费番剧改写为可观看、绕过安全传输锁定和改写 CDN 回源等，项目方被要求在 2 日内回复。
 
-telegram · zaihuapd · 7月5日 14:10
+telegram · zaihuapd · 7月6日 08:21
 
-**背景**: SpaceX 目前运营着 Starlink 卫星互联网星座，为偏远地区提供宽带服务。该公司还与 T-Mobile 合作提供直连手机卫星短信服务。开发自有手机可以实现与 Starlink 更紧密的集成，减少对现有运营商的依赖。
+**背景**: BiliRoaming 是一个用于 Android 的 Xposed 模块，用于解除 B 站番剧内容的区域限制并提供其他小功能。B 站是中国主要的视频平台，根据地理位置限制某些内容并提供付费内容。逆向工程此类保护通常被视为违反服务条款和版权法。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.techspot.com/news/112997-spacex-reportedly-showing-investors-phone-prototype-months-after.html">SpaceX is reportedly showing investors a phone prototype, months after Musk said "we are not developing a phone" | TechSpot</a></li>
-<li><a href="https://www.cnet.com/tech/services-and-software/spacex-shows-new-ai-device-investors-phone-rumor/">SpaceX Secretly Unveiled New AI Device to Investors. Is It a Phone or Not? - CNET</a></li>
-<li><a href="https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/">SpaceX has an AI device prototype, and it sure sounds phone-ish | TechCrunch</a></li>
+<li><a href="https://sourceforge.net/projects/biliroaming.mirror/">BiliRoaming download | SourceForge.net</a></li>
+<li><a href="https://modules.lsposed.org/module/me.iacn.biliroaming/">哔哩漫游/ BiliRoaming · Xposed Module Repository</a></li>
 
 </ul>
 </details>
 
-**标签**: `#SpaceX`, `#mobile`, `#satellite`, `#Starlink`, `#telecom`
-
----
-
-<a id="item-8"></a>
-## [中国拟削减 SCI 发表激励以防止技术泄密](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-中国政策制定者正讨论削减科研人员向 SCI 期刊投稿的激励，考虑降低 SCI 论文在学术晋升和终身教职评定中的权重，原因是担心技术泄密的国家安全考量。 这一政策转变可能显著改变全球学术出版格局，减少中国对国际期刊的依赖，并可能影响中国研究的全球可见度。 国家自然科学基金委现要求受资助项目至少 20%的代表性论文发表于中文期刊。一名材料学学者表示，因安全审查标准模糊且趋严，他已停止向外国期刊投稿。
-
-telegram · zaihuapd · 7月6日 01:03
-
-**背景**: SCI（科学引文索引）是一个用于评估期刊质量和研究者绩效的权威引文数据库。在中国，发表 SCI 论文在职业晋升中受到大力激励，但出于国家安全和学术诚信的担忧，这一政策正被重新评估。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.biomart.cn/news/16/3241989.htm">WoS已踢！“on hold”等高风险 SCI 期 刊 清单来了！ - 企业动态 - 丁香通</a></li>
-<li><a href="https://fanpusci.blog.caixin.com/archives/278929">fanpusci.blog.caixin.com/archives/278929</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 一位群友表示此举旨在打击学术造假，暗示减少对 SCI 的重视可能遏制论文工厂等不道德行为。
-
-**标签**: `#academic publishing`, `#research policy`, `#national security`, `#China`, `#SCI`
+**标签**: `#open-source`, `#legal`, `#reverse-engineering`, `#copyright`, `#Bilibili`
 
 ---
