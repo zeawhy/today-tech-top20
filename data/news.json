@@ -1,133 +1,117 @@
 [
   {
     "id": "1",
-    "title": "F-Droid 宣布 Google ADV 为恶意软件，影响 40 亿设备",
-    "importance_score": 9.0,
-    "source": "Telegram",
-    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
+    "title": "数字游戏 vs 实体游戏：核心问题是所有权",
+    "importance_score": 8.0,
+    "source": "Hackernews",
+    "url": "https://popcar.bearblog.dev/its-about-ownership/",
     "category": "AI",
-    "publish_time": "2026-07-05T00:41:00Z",
-    "summary_zh": "F-Droid 正式将 Google 的 Android 开发者验证（ADV）归类为恶意软件，称其已预装在约 40 亿台安卓设备上，并计划从 2026 年 9 月起在部分国家开始限制未经批准的软件安装。 这标志着 Google 对安卓的集中控制与开源社区之间的冲突显著升级，可能威胁用户自由以及 F-Droid 等替代应用商店的生存能力。 ADV 以系统服务形式运行，拥有 root 权限且无法移除；它将于 2026 年 9 月 30 日在巴西、印尼、新加坡和泰国首批激活，全球推广计划在 2027 年及以后。\n\n**背景**: F-Droid 是一个免费开源的安卓应用仓库，仅提供自由软件。Google Play Protect 是内置的安全服务，用于扫描恶意应用。ADV 是 Google 的新系统服务，用于验证开发者身份并可阻止未经 Google 批准的应用，F-Droid 认为这赋予了 Google 任意将不受欢迎的软件标记为恶意软件的权力。",
-    "summary_en": "F-Droid has officially classified Google's Android Developer Verifier (ADV) as malware, stating it is pre-installed on approximately 4 billion Android devices and will begin restricting unapproved software installations in select countries starting September 2026. This marks a significant escalation in the conflict between Google's centralized control over Android and the open-source community, potentially threatening user freedom and the viability of alternative app stores like F-Droid. ADV runs as a system service with root privileges and cannot be removed; it will first activate in Brazil, Indonesia, Singapore, and Thailand on September 30, 2026, with global rollout planned for 2027 and beyond.\n\n**Background**: F-Droid is a free and open-source app repository for Android, offering only libre software. Google Play Protect is a built-in security service that scans apps for malware. ADV is a new Google system service that verifies developer identities and can block apps not approved by Google, which F-Droid argues gives Google arbitrary power to label any unwanted software as malware.",
+    "publish_time": "2026-07-06T14:56:00Z",
+    "summary_zh": "一篇博客文章指出，数字游戏与实体游戏争论的核心并非格式问题，而是所有权问题，呼吁通过法律保护确保买家对数字购买拥有产权。 随着数字游戏销售占据主导地位，平台可以撤销访问权限或关闭服务，导致买家失去真正的所有权，这一讨论凸显了日益增长的消费者担忧。它可能影响未来关于数字权利和 DRM 的监管。 文章强调数字购买应包含转让、转售和离线使用且不被撤销的权利。它指出 Steam 的 DRM 可以被绕过，但许多平台施加了严格的 DRM，威胁到游戏保存。\n\n**背景**: 数字版权管理（DRM）是游戏公司用于防止未经授权分发的复制保护措施。然而，如果服务器关闭或许可证被撤销，DRM 也可能限制合法所有者访问游戏。与实体商品所有权明确不同，数字所有权的概念在法律上仍然模糊。\n\n**社区讨论**: 评论者普遍认为所有权应包括可转让性和离线使用。一些人指出盗版提供了安心，而另一些人质疑为何公司现在无视消费者的反对。少数人建议未来强制要求数字转售进行 KYC（身份验证）可能是一个解决方案。",
+    "summary_en": "A blog post argues that the core debate around digital versus physical games is not about format but about ownership, calling for legal protections to ensure buyers have property rights over digital purchases. This discussion highlights a growing consumer concern as digital game sales dominate, where platforms can revoke access or shut down, leaving buyers without true ownership. It could influence future regulation on digital rights and DRM. The post emphasizes that digital purchases should include rights to transfer, resell, and use offline without revocation. It notes that Steam's DRM can be bypassed, but many platforms impose hard DRM that threatens game preservation.\n\n**Background**: Digital rights management (DRM) is copy protection used by game companies to prevent unauthorized distribution. However, DRM can also restrict legitimate owners from accessing games if servers shut down or licenses are revoked. The concept of digital ownership is still legally ambiguous, unlike physical goods where ownership is clear.\n\n**Discussion**: Commenters largely agree that ownership should include transferability and offline use. Some note that piracy provides peace of mind, while others question why companies now ignore consumer backlash. A few suggest that mandatory KYC for digital resales could be a future solution.",
     "takeaways": [
-      "背景信息: F-Droid 是一个免费开源的安卓应用仓库，仅提供自由软件。Google Play Protect 是内置的安全服务，用于扫描恶意应用。ADV 是 Google 的新系统服务，用于验证开发者身份并可阻止未经 Google 批准的应用，F-Droid 认为这赋予了 Google 任意将不受欢迎的软件标记为恶意软件的权力。"
+      "背景信息: 数字版权管理（DRM）是游戏公司用于防止未经授权分发的复制保护措施。然而，如果服务器关闭或许可证被撤销，DRM 也可能限制合法所有者访问游戏。与实体商品所有权明确不同，数字所有权的概念在法律上仍然模糊。",
+      "社区反馈: 评论者普遍认为所有权应包括可转让性和离线使用。一些人指出盗版提供了安心，而另一些人质疑为何公司现在无视消费者的反对。少数人建议未来强制要求数字转售进行 KYC（身份验证）可能是一个解决方案。"
     ]
   },
   {
     "id": "2",
-    "title": "Shadcn/UI 默认从 Radix 切换到 Base UI",
+    "title": "为突尼斯达里加（阿拉伯字母）构建开源机器翻译管道和语料库",
     "importance_score": 8.0,
-    "source": "<li><a href=\"https://base-ui.com/\">unstyled ui components for accessible design systems",
-    "url": "https://ui.shadcn.com/docs/changelog",
+    "source": "r/MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/",
     "category": "AI",
-    "publish_time": "2026-07-05T12:00:00Z",
-    "summary_zh": "流行的 React 组件库 Shadcn/UI 已将其默认底层 UI 库从 Radix 切换为 Base UI，这一变化在其更新日志中公布，影响了库提供的默认组件。 这一变化影响了依赖 Shadcn/UI 构建 React 应用的大量开发者社区，因为它改变了默认组件架构，可能需要迁移工作。这也标志着 UI 库生态系统中向 Base UI 发展的更广泛趋势，Base UI 由来自 MUI、Radix 和 Floating UI 的贡献者构建。 Base UI 是一个无样式、可访问的 React 组件库，而 Radix UI 也提供无样式原语。从 Radix 迁移到 Base UI 可能涉及组件 API 和行为的变化，社区讨论中提到了对 AI 生成公告、过度使用 div 以及从 codemods 转向 LLM 进行迁移的担忧。\n\n**背景**: Shadcn/UI 是一个广泛使用的 React 组件库，通过复制粘贴或 CLI 安装方式提供设计精美、可访问的组件。它最初使用 Radix UI 作为默认的无样式、可访问组件原语库。Base UI 是一个较新的替代方案，同样无样式且可访问，由包括前 MUI、Radix 和 Floating UI 贡献者在内的团队构建。\n\n**社区讨论**: 社区评论反应不一：一些人认为 AI 生成的公告语气令人不适，另一些人质疑复制粘贴方法相对于 Mantine 等传统库的优劣，还有人对 Base UI 组件中过度使用 div 表示担忧。一个值得注意的观点是从 codemods 转向 LLM 进行迁移，有人猜测 codemods 可能会被淘汰。",
-    "summary_en": "Shadcn/UI, a popular React component library, has changed its default underlying UI library from Radix to Base UI, as announced in its changelog. This shift affects the default components provided by the library. This change impacts a large developer community that relies on Shadcn/UI for building React applications, as it alters the default component architecture and may require migration efforts. It also signals a broader trend in the UI library ecosystem toward Base UI, which is built by contributors from MUI, Radix, and Floating UI. Base UI is an unstyled, accessible React component library, while Radix UI also provides unstyled primitives. The migration from Radix to Base UI may involve changes in component APIs and behavior, and the community discussion highlights concerns about AI-generated announcements, div overuse, and the shift from codemods to LLMs for migration.\n\n**Background**: Shadcn/UI is a widely-used React component library that provides beautifully-designed, accessible components via a copy-paste or CLI installation approach. It originally used Radix UI as its default primitive library for unstyled, accessible components. Base UI is a newer alternative, also unstyled and accessible, built by a team including former contributors to MUI, Radix, and Floating UI.\n\n**Discussion**: Community comments express mixed reactions: some find the AI-generated announcement tone off-putting, others question the copy-paste approach versus traditional libraries like Mantine, and there are concerns about div overuse in Base UI components. A notable point is the shift from codemods to LLMs for migration, with speculation that codemods may become obsolete.",
+    "publish_time": "2026-07-06T18:08:00Z",
+    "summary_zh": "一位 18 岁的突尼斯学生构建并发布了针对用阿拉伯字母书写的突尼斯达里加语的开源机器翻译管道和平行语料库，包括自定义的 SentencePiece BPE 分词器和从头训练的 Transformer 模型。 这填补了突尼斯达里加语（一种资源匮乏的方言）在自然语言处理资源方面的关键空白，并提供了一个诚实的基线（BLEU 3.89），社区可以在此基础上改进，促进协作开发。 该管道使用一个感知阿拉伯字母的分词器，将数字 3、7、9、5 作为符号保护；一个约 1560 万参数的编码器-解码器 Transformer，通过从摩洛哥达里加语迁移学习训练；以及约 553 条手工制作的平行句子语料库。\n\n**背景**: 突尼斯达里加语是一种口语化的阿拉伯方言，没有标准正字法，常使用阿拉伯字母（拉丁字母和数字）书写。现有的阿拉伯语自然语言处理工具通常将其通过现代标准阿拉伯语处理，无法正确处理该方言的独特特征。BLEU 是一种通过比较 n-gram 与人工参考译文来衡量翻译质量的指标。",
+    "summary_en": "An 18-year-old Tunisian student has built and released an open-source machine translation pipeline and parallel corpus for Tunisian Darija written in Arabizi, including a custom SentencePiece BPE tokenizer and a from-scratch Transformer model. This addresses a critical gap in NLP resources for Tunisian Darija, an under-resourced dialect, and provides an honest baseline (BLEU 3.89) that the community can improve upon, fostering collaborative development. The pipeline uses an Arabizi-aware tokenizer that protects numerals 3,7,9,5 as symbols, a ~15.6M-parameter encoder-decoder Transformer trained via transfer learning from Moroccan Darija, and a corpus of ~553 hand-crafted parallel sentences.\n\n**Background**: Tunisian Darija is a spoken Arabic dialect with no standard orthography; it is often written in Arabizi (Latin letters and numerals). Existing Arabic NLP tools typically route it through Modern Standard Arabic (MSA), which mishandles the dialect's unique features. BLEU is a metric that measures translation quality by comparing n-grams to human references.",
     "takeaways": [
-      "背景信息: Shadcn/UI 是一个广泛使用的 React 组件库，通过复制粘贴或 CLI 安装方式提供设计精美、可访问的组件。它最初使用 Radix UI 作为默认的无样式、可访问组件原语库。Base UI 是一个较新的替代方案，同样无样式且可访问，由包括前 MUI、Radix 和 Floating UI 贡献者在内的团队构建。",
-      "社区反馈: 社区评论反应不一：一些人认为 AI 生成的公告语气令人不适，另一些人质疑复制粘贴方法相对于 Mantine 等传统库的优劣，还有人对 Base UI 组件中过度使用 div 表示担忧。一个值得注意的观点是从 codemods 转向 LLM 进行迁移，有人猜测 codemods 可能会被淘汰。"
+      "背景信息: 突尼斯达里加语是一种口语化的阿拉伯方言，没有标准正字法，常使用阿拉伯字母（拉丁字母和数字）书写。现有的阿拉伯语自然语言处理工具通常将其通过现代标准阿拉伯语处理，无法正确处理该方言的独特特征。BLEU 是一种通过比较 n-gram 与人工参考译文来衡量翻译质量的指标。"
     ]
   },
   {
     "id": "3",
-    "title": "欧盟理事会快速推进聊天控制 1.0",
+    "title": "能力门控：基于内部置信信号控制工具使用",
     "importance_score": 8.0,
-    "source": "Hackernews",
-    "url": "https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html",
+    "source": "r/MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
     "category": "AI",
-    "publish_time": "2026-07-05T11:44:00Z",
-    "summary_zh": "欧盟理事会快速推进了聊天控制 1.0 法规，该法规要求消息服务提供商扫描聊天内容以查找有害信息，绕过了常规立法程序。 此举引发了对数字隐私和欧盟加密技术未来的严重担忧，因为它可能强制对私人通信进行大规模监控，并削弱端到端加密。 聊天控制 1.0 是对 ePrivacy 指令的临时豁免，原定于 2026 年 4 月 4 日到期，但理事会的快速推进旨在延长该豁免。批评者认为，目前没有技术手段能在不产生高错误率和误报的情况下检测儿童性虐待材料。\n\n**背景**: 聊天控制是指欧盟为打击网络儿童性虐待而提出的一系列法规。第一版聊天控制 1.0 是一项临时措施，允许自愿扫描；而更具争议的聊天控制 2.0 将强制扫描加密消息。欧洲议会此前曾拒绝延长聊天控制 1.0。\n\n**社区讨论**: 社区评论对快速推进程序和隐私侵蚀表示担忧，一些人指出聊天控制 1.0 虽不如聊天控制 2.0 危险，但仍存在问题。其他人批评欧盟机构决策可疑，并强调需要更多调查。",
-    "summary_en": "The EU Council has fast-tracked Chat Control 1.0, a regulation that would require messaging providers to scan chats for harmful content, bypassing the usual legislative process. This move raises serious concerns about digital privacy and the future of encryption in the EU, as it could mandate mass surveillance of private communications and undermine end-to-end encryption. Chat Control 1.0 is a temporary derogation from the ePrivacy Directive that was set to expire on April 4, 2026, but the Council's fast-track aims to extend it. Critics argue that there is no technological way to detect child sexual abuse material without high error rates and false positives.\n\n**Background**: Chat Control refers to a set of EU regulations proposed to combat child sexual abuse online. The first iteration, Chat Control 1.0, was a temporary measure allowing voluntary scanning, while the more controversial Chat Control 2.0 would mandate scanning of encrypted messages. The European Parliament had previously rejected extending Chat Control 1.0.\n\n**Discussion**: Community comments express concern about the fast-track process and the erosion of privacy, with some noting that Chat Control 1.0 is less dangerous than Chat Control 2.0 but still problematic. Others criticize the EU institutions for questionable decision-making and highlight the need for more investigation.",
+    "publish_time": "2026-07-06T07:49:00Z",
+    "summary_zh": "一个 10MB 的 LoRA 适配器，用于 Qwen3.5-4B，基于内部置信信号控制工具使用，提高了错误检测能力并减少了幻觉。它可在 Apple Silicon 上本地运行，并支持 GGUF 格式用于 llama.cpp/Ollama。 这种方法解决了小型语言模型的一个关键局限：无法准确表达置信度。通过基于内部信号控制工具使用，它减少了幻觉和私人数据泄露，使本地 AI 在敏感任务中更加可靠。 该门控将错误检测能力提高了 d'=0.46（95%置信区间[0.01, 0.89]），其中 87%被标记的错误确实是错误的。双信号版本将私人查询泄露到公共搜索的比例从 22%降低到 10%。然而，该门控在 SQuAD 2.0 上并未改善基于文档的问答，因为参数化能力和证据基础是不同的信号。\n\n**背景**: 小型语言模型通常难以表达其真实的不确定性，导致过度自信的错误答案。LoRA（低秩适配）是一种在冻结基础模型的同时微调少量参数的技术，能够实现高效的适配。内部置信信号指的是模型隐藏层激活中反映其确定性的信息，这比口头表达的置信度更可靠。\n\n**社区讨论**: Reddit 讨论中包含关于门控实现的技术问题以及作者的澄清。一些用户对将该方法扩展到更大模型表示兴趣，而另一些用户则指出了在基于文档的问答任务上的局限性。总体情绪积极，人们对该开源研究发布表示赞赏。",
+    "summary_en": "A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. It runs locally on Apple Silicon and supports GGUF for llama.cpp/Ollama. This approach addresses a key limitation of small language models: their inability to accurately verbalize confidence. By gating tool use on internal signals, it reduces hallucination and private data leakage, making local AI more reliable for sensitive tasks. The gate improved error detection by d'=0.46 (95% CI [0.01, 0.89]), and 87% of flagged errors were genuinely wrong. A two-signal version reduced private query leakage to public search from 22% to 10%. However, the gate did not improve grounded document QA on SQuAD 2.0, as parametric competence and evidential grounding are distinct signals.\n\n**Background**: Small language models often struggle to express their true uncertainty, leading to overconfident incorrect answers. LoRA (Low-Rank Adaptation) is a technique that fine-tunes a small number of parameters while freezing the base model, enabling efficient adaptation. Internal confidence signals refer to the model's hidden activations that indicate its certainty, which can be more reliable than verbalized confidence.\n\n**Discussion**: The Reddit discussion includes technical questions about the gate's implementation and the author's clarifications. Some users expressed interest in extending the approach to larger models, while others noted the limitations on grounded QA tasks. Overall sentiment is positive, with appreciation for the open research release.",
     "takeaways": [
-      "背景信息: 聊天控制是指欧盟为打击网络儿童性虐待而提出的一系列法规。第一版聊天控制 1.0 是一项临时措施，允许自愿扫描；而更具争议的聊天控制 2.0 将强制扫描加密消息。欧洲议会此前曾拒绝延长聊天控制 1.0。",
-      "社区反馈: 社区评论对快速推进程序和隐私侵蚀表示担忧，一些人指出聊天控制 1.0 虽不如聊天控制 2.0 危险，但仍存在问题。其他人批评欧盟机构决策可疑，并强调需要更多调查。"
+      "背景信息: 小型语言模型通常难以表达其真实的不确定性，导致过度自信的错误答案。LoRA（低秩适配）是一种在冻结基础模型的同时微调少量参数的技术，能够实现高效的适配。内部置信信号指的是模型隐藏层激活中反映其确定性的信息，这比口头表达的置信度更可靠。",
+      "社区反馈: Reddit 讨论中包含关于门控实现的技术问题以及作者的澄清。一些用户对将该方法扩展到更大模型表示兴趣，而另一些用户则指出了在基于文档的问答任务上的局限性。总体情绪积极，人们对该开源研究发布表示赞赏。"
     ]
   },
   {
     "id": "4",
-    "title": "新版 Claude 模型在工具调用模式遵守上表现更差",
+    "title": "香港处理中国过半芯片进口，创历史新高",
     "importance_score": 8.0,
-    "source": "Simon Willison",
-    "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+    "source": "Telegram",
+    "url": "https://thenextweb.com/news/hong-kong-china-ai-chip-trade-hub",
     "category": "AI",
-    "publish_time": "2026-07-05T22:53:00Z",
-    "summary_zh": "Armin Ronacher 报告称，较新的 Claude 模型（Opus 4.8、Sonnet 5）有时会在工具调用参数中添加额外的、虚构的字段，导致 Pi 拒绝这些调用，而旧模型则没有此问题。 这种退化破坏了依赖严格模式遵守的基于 LLM 的编码代理的可靠性，并凸显了针对特定工具的训练与通用工具使用能力之间的紧张关系。 该问题仅出现在较新的 Anthropic 模型中，表明针对 Claude 内置编辑工具的强化学习可能无意中损害了自定义模式上的性能。Pi 使用自己的编辑工具模式，而新模型未能正确遵循。\n\n**背景**: LLM 工具调用允许模型通过生成与提供模式匹配的结构化 JSON 参数来调用外部函数。像 Pi 这样的编码工具定义了具有特定模式的自定义编辑工具；如果模型生成无效参数，调用将被拒绝。Anthropic 和 OpenAI 训练其模型有效使用自己的内置编辑工具，这可能会使模型偏向于第三方模式。",
-    "summary_en": "Armin Ronacher reports that newer Claude models (Opus 4.8, Sonnet 5) sometimes add extra, invented fields to tool call arguments, causing Pi to reject the calls, while older models do not exhibit this issue. This regression undermines the reliability of LLM-based coding agents that depend on strict schema adherence, and highlights a tension between model training for specific tools and general tool-use capability. The issue appears only with newer Anthropic models, suggesting reinforcement learning for Claude's built-in edit tools may have inadvertently harmed performance on custom schemas. Pi uses its own edit tool schema, which the newer models fail to follow correctly.\n\n**Background**: LLM tool calling allows models to invoke external functions by generating structured JSON arguments matching a provided schema. Coding harnesses like Pi define custom edit tools with specific schemas; if the model produces invalid arguments, the call is rejected. Anthropic and OpenAI train their models to use their own built-in editing tools effectively, which may bias the model against third-party schemas.",
+    "publish_time": "2026-07-06T02:45:00Z",
+    "summary_zh": "2026 年前五个月，香港经手了中国逾半数的芯片进口，转口至内地的芯片价值约 1240 亿美元，占中国同期芯片采购总额的 52%。这一比例十年前仅为三分之一，创历史新高。 这一转变凸显了香港凭借自由港地位和物流优势，在亚洲 AI 贸易中日益重要的枢纽作用。然而，这也使香港在中美半导体贸易紧张局势中面临显著的地缘政治风险。 AI 相关电子产品已占香港出口的 57%至 70%，香港贸发局因此将 2026 年出口增长预测上调至逾 20%。香港的优势包括零关税、无资本管制以及发达的航空货运网络。\n\n**背景**: 香港是自由港，货物可免关税进口和转口，非常适合半导体等高价值、低重量的商品。转口贸易指货物从生产国经香港中转至最终消费国，相关文件由中间商处理。",
+    "summary_en": "In the first five months of 2026, Hong Kong handled over half of China's chip imports, with transshipments worth about $124 billion, accounting for 52% of China's total chip procurement during the period. This is a record high, up from one-third a decade ago. This shift highlights Hong Kong's growing role as a critical AI trade hub in Asia, leveraging its free-port status and logistics advantages. However, it also exposes Hong Kong to significant geopolitical risks amid US-China tensions over semiconductor trade. AI-related electronics now account for 57% to 70% of Hong Kong's exports, prompting the Hong Kong Trade Development Council to raise its 2026 export growth forecast to over 20%. Hong Kong's advantages include zero tariffs, no capital controls, and a well-developed air cargo network.\n\n**Background**: Hong Kong is a free port where goods can be imported and re-exported without customs duties, making it ideal for high-value, low-weight items like semiconductors. Transshipment involves goods passing through Hong Kong en route from the producer to the final consumer, with documentation handled by intermediaries.",
     "takeaways": [
-      "背景信息: LLM 工具调用允许模型通过生成与提供模式匹配的结构化 JSON 参数来调用外部函数。像 Pi 这样的编码工具定义了具有特定模式的自定义编辑工具；如果模型生成无效参数，调用将被拒绝。Anthropic 和 OpenAI 训练其模型有效使用自己的内置编辑工具，这可能会使模型偏向于第三方模式。"
+      "背景信息: 香港是自由港，货物可免关税进口和转口，非常适合半导体等高价值、低重量的商品。转口贸易指货物从生产国经香港中转至最终消费国，相关文件由中间商处理。"
     ]
   },
   {
     "id": "5",
-    "title": "能力门控：基于内部置信度控制工具使用",
-    "importance_score": 8.0,
-    "source": "<li><a href=\"https://huggingface.co/learn/llm-course/chapter11/4\">lora (low-rank adaptation)",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
-    "category": "AI",
-    "publish_time": "2026-07-05T12:00:00Z",
-    "summary_zh": "一个 10MB 的 LoRA 适配器用于 Qwen3.5-4B，基于内部置信度信号控制工具使用，提升了错误检测能力并减少了幻觉。 该方法通过读取内部激活状态，解决了小型 LLM 在口头表达置信度方面的关键局限，从而实现了更可靠的工具使用和本地部署中的隐私保护。 该门控将 d′提升了 0.46（95%置信区间[0.01, 0.89]），并将私有查询泄露率从 22%降至 10%。它通过 MLX 或 GGUF 在 Apple Silicon 上本地运行，支持 llama.cpp/Ollama。\n\n**背景**: 小型指令模型通常无法准确表达其置信度，导致过度自信的错误答案。LoRA 适配器是轻量级微调模块，可添加到基础模型中而无需完全重新训练。内部置信度信号指与答案正确性相关的隐藏状态模式，可通过探针提取。\n\n**社区讨论**: 未提供社区讨论内容，但帖子作者邀请批评意见，并指出该方法开源且可扩展到其他模型。",
-    "summary_en": "A 10MB LoRA adapter for Qwen3.5-4B gates tool use based on internal confidence signals, improving error detection and reducing hallucination. This approach addresses a key limitation of small LLMs—poor verbalized confidence—by reading internal activations, enabling more reliable tool use and privacy protection for local deployment. The gate improves d′ by 0.46 (95% CI [0.01, 0.89]) and reduces private query leakage from 22% to 10%. It runs locally on Apple Silicon via MLX or GGUF for llama.cpp/Ollama.\n\n**Background**: Small instruct models often fail to accurately express their confidence, leading to overconfident incorrect answers. LoRA adapters are lightweight fine-tuning modules that can be added to base models without full retraining. Internal confidence signals refer to hidden-state patterns that correlate with answer correctness, which can be extracted via probing.\n\n**Discussion**: The community discussion is not provided, but the post author invites critique and notes the approach is open-source and extendable to other models.",
-    "takeaways": [
-      "背景信息: 小型指令模型通常无法准确表达其置信度，导致过度自信的错误答案。LoRA 适配器是轻量级微调模块，可添加到基础模型中而无需完全重新训练。内部置信度信号指与答案正确性相关的隐藏状态模式，可通过探针提取。",
-      "社区反馈: 未提供社区讨论内容，但帖子作者邀请批评意见，并指出该方法开源且可扩展到其他模型。"
-    ]
-  },
-  {
-    "id": "6",
-    "title": "USAF：面向 MoE 模型的稀疏微调方法，可在消费级 GPU 上运行",
-    "importance_score": 8.0,
-    "source": "r/MachineLearning",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
-    "category": "Dev",
-    "publish_time": "2026-07-05T21:56:00Z",
-    "summary_zh": "一种名为 USAF 的新型稀疏微调方法，使得原本只能运行推理的 GPU 也能对混合专家（MoE）模型进行微调，已在 12GB AMD RX 6750 XT 上成功微调 Qwen3-30B-A3B。 该方法降低了微调大型 MoE 模型的硬件门槛，使拥有消费级 GPU 的研究人员和爱好者无需昂贵硬件即可适配最先进的模型。 USAF 仅训练稀疏专家权重和路由器，避免全权重或基于适配器的更新，并以 Apache 2.0 许可证在 GitHub 上开源。\n\n**背景**: 混合专家（MoE）模型使用多个专门的子网络（专家）和一个路由器来决定每个输入激活哪些专家，从而以较低的计算成本实现更大的模型容量。传统的微调方法如 LoRA 会添加适配器模块，仍然需要大量内存。稀疏微调仅更新一小部分权重，从而降低内存使用。",
-    "summary_en": "A new sparse fine-tuning method called USAF enables fine-tuning of Mixture-of-Experts (MoE) models on GPUs that previously could only run inference, demonstrated by fine-tuning Qwen3-30B-A3B on a 12GB AMD RX 6750 XT. This method lowers the hardware barrier for fine-tuning large MoE models, allowing researchers and hobbyists with consumer GPUs to adapt state-of-the-art models without expensive hardware. USAF trains only sparse expert weights and the router, avoiding full-weight or adapter-based updates, and is released under Apache 2.0 license on GitHub.\n\n**Background**: Mixture-of-Experts (MoE) models use multiple specialized sub-networks (experts) and a router to select which experts to activate per input, enabling larger model capacity with lower computational cost. Traditional fine-tuning methods like LoRA add adapter modules, which still require significant memory. Sparse fine-tuning updates only a small subset of weights, reducing memory usage.",
-    "takeaways": [
-      "背景信息: 混合专家（MoE）模型使用多个专门的子网络（专家）和一个路由器来决定每个输入激活哪些专家，从而以较低的计算成本实现更大的模型容量。传统的微调方法如 LoRA 会添加适配器模块，仍然需要大量内存。稀疏微调仅更新一小部分权重，从而降低内存使用。"
-    ]
-  },
-  {
-    "id": "7",
-    "title": "卫报：OpenAI 从未到访星际之门英国核心选址，300 亿承诺或为噱头",
+    "title": "卫报：OpenAI 从未到访星际之门英国选址，300 亿承诺或为公关噱头",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.theguardian.com/technology/2026/jul/04/openai-apparent-failure-visit-key-site-questions-stargate-uk-project",
     "category": "AI",
-    "publish_time": "2026-07-05T05:09:00Z",
-    "summary_zh": "《卫报》调查发现，OpenAI 从未实地造访其“星际之门”英国项目的核心选址——北泰恩赛德的 Cobalt Park 商业园区，当地政府也从未与 OpenAI 或合作方 Nscale 举行过任何会议。该项目已于 2026 年 4 月暂停，知情人士称其为公关噱头。 这一报道削弱了高调的人工智能基础设施投资的可信度，并引发对科技巨头对英国科技政策承诺真诚性的质疑。它可能影响公众信任及未来对英国人工智能领域的投资。 星际之门英国项目在特朗普访英期间被宣布为英美人工智能合作的旗舰工程，但于 2026 年 4 月以监管环境和能源成本过高为由暂停。当地保守党议员表示，项目落地“看起来极不可能”。\n\n**背景**: 星际之门英国项目是 OpenAI、NVIDIA 和 Nscale 之间拟议的人工智能基础设施合作伙伴关系，旨在英国建设主权计算能力，使人工智能模型能够在本地数据中心运行。Cobalt Park 是英国最大的商业园区之一，位于北泰恩赛德。该项目暂停且缺乏实地考察，表明它可能更多关乎政治形象而非实际投资。\n\n**社区讨论**: Telegram 来源显示有社区讨论，但输入中未提供具体评论。高分表明关注度很高，且可能对 OpenAI 的说法持怀疑态度。",
-    "summary_en": "A Guardian investigation revealed that OpenAI never visited the primary site for its Stargate UK project, Cobalt Park in North Tyneside, and local government never met with OpenAI or partner Nscale. The project was suspended in April 2026, with insiders calling it a PR stunt. This story undermines the credibility of high-profile AI infrastructure investments and raises questions about the sincerity of tech giants' commitments to UK tech policy. It could affect public trust and future investment in the UK's AI sector. The Stargate UK project was announced during a Trump visit to the UK as a flagship UK-US AI collaboration, but was suspended in April 2026 citing regulatory environment and high energy costs. A local Conservative MP stated the project's realization 'looks extremely unlikely.'\n\n**Background**: Stargate UK was a proposed AI infrastructure partnership between OpenAI, NVIDIA, and Nscale to build sovereign compute capabilities in the UK, allowing AI models to run on local data centers. Cobalt Park is one of the largest business parks in the UK, located in North Tyneside. The project's suspension and lack of site visits suggest it may have been more about political optics than actual investment.\n\n**Discussion**: The Telegram source indicates community discussion, but no specific comments were provided in the input. The high score suggests significant interest and likely skepticism about OpenAI's claims.",
+    "publish_time": "2026-07-06T05:09:00Z",
+    "summary_zh": "《卫报》调查发现，OpenAI 从未实地造访其“星际之门”英国项目的核心选址——北泰恩赛德的 Cobalt Park 商业园区，当地政府也从未与 OpenAI 或合作方 Nscale 举行过任何会议。该项目在特朗普访英期间高调宣布，但已于 2026 年 4 月以监管环境和能源成本过高为由暂停。 这一发现削弱了 OpenAI 投资承诺的可信度，并对英国大规模 AI 基础设施项目的可行性提出严重质疑。它可能损害科技公司与政府之间的信任，并影响未来的 AI 政策和投资决策。 “星际之门”英国项目曾被标榜为英美 AI 合作的旗舰工程，但知情人士称它从来就不是一个真实存在的项目，不过是政府的公关噱头。当地保守党议员表示，项目落地“看起来极不可能”。\n\n**背景**: “星际之门”项目最初由 OpenAI 宣布为美国大规模 AI 基础设施建设计划，后来扩展至英国。Cobalt Park 是英国最大的商业园区之一，入驻了埃森哲等全球企业。Nscale 是一家全栈 AI 云平台提供商。",
+    "summary_en": "A Guardian investigation found that OpenAI never visited the key site for its Stargate UK project, Cobalt Park in North Tyneside, and local government never held any meetings with OpenAI or partner Nscale. The project was announced with great fanfare during a Trump visit to the UK but was suspended in April 2026 due to regulatory and energy cost concerns. This revelation undermines the credibility of OpenAI's investment promises and raises serious questions about the viability of large-scale AI infrastructure projects in the UK. It could damage trust between tech companies and governments, and affect future AI policy and investment decisions. The Stargate UK project was touted as a flagship UK-US AI collaboration, but insiders say it was never a real project and was merely a government PR stunt. The local Conservative MP stated that the project's realization now appears 'extremely unlikely'.\n\n**Background**: The Stargate project was originally announced by OpenAI as a massive AI infrastructure buildout in the US, and later expanded to the UK. Cobalt Park is one of the largest business parks in the UK, hosting global firms like Accenture. Nscale is a full-stack AI cloud platform provider.",
     "takeaways": [
-      "背景信息: 星际之门英国项目是 OpenAI、NVIDIA 和 Nscale 之间拟议的人工智能基础设施合作伙伴关系，旨在英国建设主权计算能力，使人工智能模型能够在本地数据中心运行。Cobalt Park 是英国最大的商业园区之一，位于北泰恩赛德。该项目暂停且缺乏实地考察，表明它可能更多关乎政治形象而非实际投资。",
-      "社区反馈: Telegram 来源显示有社区讨论，但输入中未提供具体评论。高分表明关注度很高，且可能对 OpenAI 的说法持怀疑态度。"
+      "背景信息: “星际之门”项目最初由 OpenAI 宣布为美国大规模 AI 基础设施建设计划，后来扩展至英国。Cobalt Park 是英国最大的商业园区之一，入驻了埃森哲等全球企业。Nscale 是一家全栈 AI 云平台提供商。"
     ]
   },
   {
-    "id": "8",
-    "title": "复旦期末考：学生出题难倒 AI，考核批判性思维",
+    "id": "6",
+    "title": "复旦期末考：学生出题难倒 AI，考核人类判断力",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://mp.weixin.qq.com/s/d53O-6mVFZqMa_Sti1yEPw",
     "category": "AI",
-    "publish_time": "2026-07-05T08:40:00Z",
-    "summary_zh": "复旦大学将“数据挖掘技术”课程的期末考试改为“人考 AI”挑战，51 名学生每人出 10 道有唯一答案的计算题来测试三个 AI 模型，AI 答错越多学生得分越高。 这种新颖的考核方式反映了 AI 时代教育的范式转变，从死记硬背转向评估 AI 素养、批判性思维和评判 AI 输出的能力，可能影响全球的教学方法。 51 名学生中有 50 人至少难倒过某个 AI 模型一次，但只有 4 人能让任一模型得零分；最强模型 Claude 从未被完全考倒，全班平均分 85.7 分。\n\n**背景**: “数据挖掘技术”课程传统上考核算法知识和记忆，但授课教师肖仰华认为这类方法在 AI 时代已失效。新考试形式训练学生指挥 AI 并评判其结果，强调高阶思维能力。",
-    "summary_en": "Fudan University replaced its traditional 'Data Mining Techniques' final exam with a 'Human vs. AI' challenge, where 51 students each designed 10 calculation problems to test three AI models; students scored higher when AI answered incorrectly. This novel assessment reflects a paradigm shift in education for the AI era, moving from rote memorization to evaluating AI literacy, critical thinking, and the ability to judge AI outputs, which could influence pedagogy worldwide. 50 out of 51 students managed to stump at least one AI model, but only 4 students achieved a perfect zero score on any model; the strongest model, Claude, was never completely stumped, and the class average score was 85.7 out of 100.\n\n**Background**: The course 'Data Mining Techniques' traditionally tests algorithmic knowledge and memory, but instructor Xiao Yanghua argued that such methods are obsolete in the AI era. The new exam format trains students to command AI and evaluate its results, emphasizing higher-order thinking skills.",
+    "publish_time": "2026-07-06T08:40:00Z",
+    "summary_zh": "复旦大学“数据挖掘技术”课程将传统期末考试改为“人考 AI”形式：51 名学生每人出 10 道有唯一答案的计算题，挑战三个 AI 模型，AI 答错越多学生得分越高。结果有 4 名学生成功让某个模型得零分，但最强模型 Claude 从未被完全难倒。 这种新颖的考核方式将重点从死记硬背转向评估人类的判断力、创造力以及指挥和评判 AI 的能力，反映了 AI 时代教育改革的更广泛趋势。同时，它也为当前大语言模型的局限性和人机交互动态提供了实践洞察。 考试涉及 51 名学生，每人提交 10 道有唯一答案的计算题，对三个未具名的 AI 模型进行测试（其中 Claude 最强）。全班平均分 85.7 分（满分 100 分），50 名学生至少有一次难倒了某个模型。\n\n**背景**: 数据挖掘等领域的传统考试通常测试算法知识和记忆力，而 AI 可以轻松复制这些能力。课程授课教师肖仰华教授认为，这类考核在 AI 时代已经过时，未来的教育应强调评估 AI 输出和创造性解决问题等技能。",
+    "summary_en": "Fudan University's 'Data Mining Techniques' course replaced traditional exams with a 'Human vs. AI' test where 51 students each created 10 calculation questions to challenge three AI models, scoring higher when AI answered incorrectly. Four students managed to make one model score zero, while the strongest model, Claude, was never completely stumped. This novel assessment shifts focus from rote memorization to evaluating human judgment, creativity, and the ability to direct and critique AI, reflecting a broader trend in education reform for the AI era. It also provides practical insights into current LLM limitations and human-AI interaction dynamics. The exam involved 51 students, each submitting 10 calculation problems with unique answers, tested against three unnamed AI models (with Claude being the strongest). The class average score was 85.7 out of 100, and 50 students managed to stump at least one model at least once.\n\n**Background**: Traditional exams in data mining and similar fields often test algorithmic knowledge and memory, which AI can easily replicate. Professor Xiao Yanghua, the course instructor, argued that such assessments are obsolete in the AI era, and future education should emphasize skills like evaluating AI outputs and creative problem-solving.",
     "takeaways": [
-      "背景信息: “数据挖掘技术”课程传统上考核算法知识和记忆，但授课教师肖仰华认为这类方法在 AI 时代已失效。新考试形式训练学生指挥 AI 并评判其结果，强调高阶思维能力。"
+      "背景信息: 数据挖掘等领域的传统考试通常测试算法知识和记忆力，而 AI 可以轻松复制这些能力。课程授课教师肖仰华教授认为，这类考核在 AI 时代已经过时，未来的教育应强调评估 AI 输出和创造性解决问题等技能。"
     ]
   },
   {
-    "id": "9",
+    "id": "7",
     "title": "SpaceX 向投资者展示比 iPhone 更薄的手机原型",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.wsj.com/tech/spacexs-telecom-dreams-d461e568",
     "category": "AI",
-    "publish_time": "2026-07-05T14:10:00Z",
-    "summary_zh": "SpaceX 向投资者展示了一款比 iPhone 更薄、运行自有操作系统的智能手机原型，这是其将 Starlink 扩展至移动通信计划的一部分。 此举可能通过将卫星连接直接集成到定制设备中，颠覆电信行业，可能减少对传统运营商的依赖，并实现全球覆盖。 据报道，该原型机比 iPhone 更薄，运行自有操作系统；SpaceX 总裁 Gwynne Shotwell 还提到计划建设地面网络并与蜂窝运营商合作。\n\n**背景**: SpaceX 的 Starlink 目前通过卫星提供宽带互联网，并已推出面向 4G LTE 手机的直接到蜂窝服务。该原型机代表了一步迈向专用设备，可充分利用 Starlink 卫星网络进行移动通信。\n\n**社区讨论**: 埃隆·马斯克否认了关于 SpaceX 手机式 AI 设备原型的传言，造成了一些困惑。然而，华尔街日报的报道表明该原型存在，引发了关于马斯克生态系统野心的讨论。",
-    "summary_en": "SpaceX has shown investors a prototype smartphone that is thinner than an iPhone and runs its own operating system, as part of its plan to expand Starlink into mobile communications. This move could disrupt the telecom industry by integrating satellite connectivity directly into a custom device, potentially reducing reliance on traditional carriers and enabling global coverage. The prototype is reportedly thinner than an iPhone and runs its own OS; SpaceX President Gwynne Shotwell also mentioned plans to build ground networks and partner with cellular carriers.\n\n**Background**: SpaceX's Starlink currently provides broadband internet via satellite and has launched a Direct to Cell service for 4G LTE phones. The prototype represents a step toward a dedicated device that could fully leverage Starlink's satellite network for mobile communication.\n\n**Discussion**: Elon Musk denied rumors of a SpaceX handset-like AI device prototype, creating some confusion. However, the WSJ report suggests the prototype exists, sparking debate about Musk's ecosystem ambitions.",
+    "publish_time": "2026-07-06T14:10:00Z",
+    "summary_zh": "SpaceX 已向投资者展示了一款比 iPhone 更薄、运行自有操作系统的手机原型，标志着其业务从卫星宽带向移动通信领域拓展。 这可能颠覆电信行业，通过将 Starlink 卫星连接直接集成到消费设备中，提供不依赖传统蜂窝网络的全球无缝覆盖。 据报道，该原型机采用高通骁龙芯片，并集成了马斯克旗下 AI 公司 xAI 的技术。SpaceX 总裁 Gwynne Shotwell 还提到计划建设地面网络或与蜂窝运营商合作。\n\n**背景**: SpaceX 目前运营着 Starlink 卫星互联网星座，为偏远地区提供宽带服务。该公司还与 T-Mobile 合作提供直连手机卫星短信服务。开发自有手机可以实现与 Starlink 更紧密的集成，减少对现有运营商的依赖。",
+    "summary_en": "SpaceX has shown investors a prototype mobile phone that is thinner than an iPhone and runs a proprietary operating system, signaling a move from satellite broadband into mobile communications. This could disrupt the telecom industry by integrating Starlink satellite connectivity directly into a consumer device, potentially offering seamless global coverage without relying on traditional cellular networks. The prototype reportedly uses a Qualcomm Snapdragon chip and integrates AI technology from xAI, Elon Musk's AI company. SpaceX president Gwynne Shotwell also mentioned plans to build terrestrial networks or partner with cellular operators.\n\n**Background**: SpaceX currently operates Starlink, a satellite internet constellation providing broadband to remote areas. The company has also partnered with T-Mobile to offer direct-to-cell satellite texting. Developing a proprietary phone would allow tighter integration with Starlink and reduce reliance on existing carriers.",
     "takeaways": [
-      "背景信息: SpaceX 的 Starlink 目前通过卫星提供宽带互联网，并已推出面向 4G LTE 手机的直接到蜂窝服务。该原型机代表了一步迈向专用设备，可充分利用 Starlink 卫星网络进行移动通信。",
-      "社区反馈: 埃隆·马斯克否认了关于 SpaceX 手机式 AI 设备原型的传言，造成了一些困惑。然而，华尔街日报的报道表明该原型存在，引发了关于马斯克生态系统野心的讨论。"
+      "背景信息: SpaceX 目前运营着 Starlink 卫星互联网星座，为偏远地区提供宽带服务。该公司还与 T-Mobile 合作提供直连手机卫星短信服务。开发自有手机可以实现与 Starlink 更紧密的集成，减少对现有运营商的依赖。"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "中国拟削减 SCI 发表激励以防止技术泄密",
+    "importance_score": 8.0,
+    "source": "Telegram",
+    "url": "https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1",
+    "category": "AI",
+    "publish_time": "2026-07-06T01:03:00Z",
+    "summary_zh": "中国政策制定者正讨论削减科研人员向 SCI 期刊投稿的激励，考虑降低 SCI 论文在学术晋升和终身教职评定中的权重，原因是担心技术泄密的国家安全考量。 这一政策转变可能显著改变全球学术出版格局，减少中国对国际期刊的依赖，并可能影响中国研究的全球可见度。 国家自然科学基金委现要求受资助项目至少 20%的代表性论文发表于中文期刊。一名材料学学者表示，因安全审查标准模糊且趋严，他已停止向外国期刊投稿。\n\n**背景**: SCI（科学引文索引）是一个用于评估期刊质量和研究者绩效的权威引文数据库。在中国，发表 SCI 论文在职业晋升中受到大力激励，但出于国家安全和学术诚信的担忧，这一政策正被重新评估。\n\n**社区讨论**: 一位群友表示此举旨在打击学术造假，暗示减少对 SCI 的重视可能遏制论文工厂等不道德行为。",
+    "summary_en": "Chinese policymakers are discussing reducing incentives for researchers to publish in SCI journals, considering lowering the weight of SCI papers in academic promotion and tenure decisions, due to national security concerns over technology leakage. This policy shift could significantly alter global academic publishing dynamics, reducing China's reliance on international journals and potentially impacting the visibility of Chinese research worldwide. The National Natural Science Foundation of China now requires at least 20% of representative papers from funded projects to be published in Chinese journals. A materials scientist reported stopping submissions to foreign journals due to vague and tightening security review standards.\n\n**Background**: SCI (Science Citation Index) is a prestigious citation database used to evaluate journal quality and researcher performance. In China, publishing in SCI journals has been heavily incentivized for career advancement, but concerns over national security and academic integrity have prompted a reevaluation.\n\n**Discussion**: One commenter suggested the move aims to combat academic fraud, implying that reducing SCI emphasis might curb unethical practices like paper mills.",
+    "takeaways": [
+      "背景信息: SCI（科学引文索引）是一个用于评估期刊质量和研究者绩效的权威引文数据库。在中国，发表 SCI 论文在职业晋升中受到大力激励，但出于国家安全和学术诚信的担忧，这一政策正被重新评估。",
+      "社区反馈: 一位群友表示此举旨在打击学术造假，暗示减少对 SCI 的重视可能遏制论文工厂等不道德行为。"
     ]
   }
 ]
