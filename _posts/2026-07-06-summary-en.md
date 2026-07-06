@@ -5,183 +5,144 @@ date: 2026-07-06
 lang: en
 ---
 
-> From 30 items, 9 important content pieces were selected
+> From 32 items, 7 important content pieces were selected
 
 ---
 
-1. [Cloudflare Launches Workers Cache API](#item-1) ⭐️ 8.0/10
-2. [Elm Progresses Toward 1.0 with Faster Builds](#item-2) ⭐️ 8.0/10
-3. [Study: Code Cleanliness Affects AI Coding Agents](#item-3) ⭐️ 8.0/10
-4. [TRACE: Open-source hierarchical memory boosts LLM agents to 82.5%](#item-4) ⭐️ 8.0/10
-5. [Open-source MT pipeline for Tunisian Darija (Arabizi)](#item-5) ⭐️ 8.0/10
-6. [China Plans to Cut SCI Publication Incentives to Prevent Tech Leaks](#item-6) ⭐️ 8.0/10
-7. [FBI Tracks Teen Hacker via Microsoft GDID Device ID](#item-7) ⭐️ 8.0/10
-8. [Bilibili Sends Legal Letter to BiliRoaming Open Source Project](#item-8) ⭐️ 8.0/10
-9. [Tencent Open-Sources Hy3 Preview MoE Model with 295B Parameters](#item-9) ⭐️ 8.0/10
+1. [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](#item-1) ⭐️ 8.0/10
+2. [TRACE: Hierarchical Memory Boosts LLM Agents to 82.5% F1](#item-2) ⭐️ 8.0/10
+3. [CPU TTS Benchmark: Kokoro, Supertonic, Inflect-Nano, Pocket TTS](#item-3) ⭐️ 8.0/10
+4. [China to Cut SCI Publication Incentives to Prevent Tech Leaks](#item-4) ⭐️ 8.0/10
+5. [Microsoft GDID Used to Track 19-Year-Old Hacker](#item-5) ⭐️ 8.0/10
+6. [Bilibili Sends Legal Letter to BiliRoaming Open-Source Project](#item-6) ⭐️ 8.0/10
+7. [Tencent Open-Sources Hy3 Preview MoE Model with 295B Parameters](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Cloudflare Launches Workers Cache API](https://blog.cloudflare.com/workers-cache/) ⭐️ 8.0/10
+## [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](https://www.reddit.com/r/MachineLearning/comments/1up4cjh/lingbotvision_masked_boundary_modeling_for/) ⭐️ 8.0/10
 
-Cloudflare announced a new caching API for Workers that aligns with the HTTP specification and supports cache tags, enabling efficient caching within Workers after years of demand. This API fills a long-standing gap in Cloudflare Workers, allowing developers to control caching behavior directly in serverless code, which can improve performance and reduce origin load for dynamic content. The API uses standard Cache-Control headers with stale-while-revalidate support and introduces cache tags for granular invalidation, but does not support ignoreSearch or ignoreVary options on match().
+LingBot-Vision introduces masked boundary modeling, where a teacher network generates dense boundary fields online and forces the student to reconstruct boundary regions, achieving a state-of-the-art NYUv2 linear-probe RMSE of 0.296 with a 1.1B parameter model, outperforming DINOv3-7B's 0.309. This method achieves competitive or superior results on dense prediction tasks like depth estimation and segmentation with significantly fewer parameters and training data (161M images vs. DINOv3's 500M+), potentially lowering the cost of high-quality visual pretraining. Boundary fields are modeled as per-pixel categorical distributions to leverage centering and sharpening techniques from self-distillation, and decoded segments are validated via an a-contrario test before supervising the student. The method trails DINOv3 on ImageNet classification and ADE20K segmentation but shows strong encoder initialization benefits in depth completion.
 
-hackernews · ilreb · Jul 6, 13:02 · [Discussion](https://news.ycombinator.com/item?id=48804014)
+reddit · r/MachineLearning · /u/StillThese3747 · Jul 6, 17:37
 
-**Background**: Cloudflare Workers is a serverless platform that runs JavaScript at the edge. Caching is a core CDN feature, but previously Workers could only interact with the cache indirectly via fetch(). The new Cache API gives direct programmatic control over caching behavior.
+**Background**: Self-supervised learning (SSL) for vision typically uses contrastive or masked image modeling (MIM) to learn representations without labels. DINOv3 is a leading SSL method that uses self-distillation and masking, but its dense features can degrade over long training schedules without techniques like Gram anchoring. LingBot-Vision extends MIM by explicitly focusing on boundary regions, which are critical for dense prediction tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developers.cloudflare.com/workers/runtime-apis/cache/">Cache · Cloudflare Workers docs</a></li>
-<li><a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-tags/">Purge cache by cache-tags · Cloudflare Cache (CDN) docs</a></li>
-<li><a href="https://medium.com/cloudflare-blog/introducing-the-workers-cache-api-giving-you-control-over-how-your-content-is-cached-5bfe8015218c">Introducing the Workers Cache API : Giving you control over... | Medium</a></li>
+<li><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Cheng_Boundary_IoU_Improving_Object-Centric_Image_Segmentation_Evaluation_CVPR_2021_paper.pdf">Boundary IoU: Improving Object-Centric Image Segmentation...</a></li>
+<li><a href="https://hal.science/hal-04550200/document">Cloud detection by inter-band parallax and a - contrario validation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean squared error - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community largely praised the API for adhering to HTTP standards and supporting cache tags, though some criticized the blog post for using AI-generated writing and questioned why it took nine years to deliver. Developers also appreciated the stale-while-revalidate support.
+**Discussion**: The community discussion is substantive, with the author noting that the 0.013 RMSE gap could be within probe hyperparameter sensitivity, and that comparisons against learned masking baselines (e.g., ADIOS/AttMask) are missing. Commenters also question whether boundary forcing is complementary to Gram anchoring, and suggest that independent verification of the numbers is needed given past controversies around Ant's Ling-1T release.
 
-**Tags**: `#Cloudflare`, `#caching`, `#serverless`, `#CDN`, `#API`
+**Tags**: `#self-supervised learning`, `#computer vision`, `#pretraining`, `#boundary detection`, `#transformer`
 
 ---
 
 <a id="item-2"></a>
-## [Elm Progresses Toward 1.0 with Faster Builds](https://elm-lang.org/news/faster-builds) ⭐️ 8.0/10
+## [TRACE: Hierarchical Memory Boosts LLM Agents to 82.5% F1](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
 
-Elm announced progress toward version 1.0, highlighting faster build times and compiler optimizations. This milestone signals renewed development for a niche but influential functional programming language, potentially boosting its adoption and community confidence. The improvements focus on compiler performance, with benchmarks showing significant speedups for large codebases. The update also addresses long-standing community requests for better JavaScript interop.
+TRACE is a new open-source hierarchical memory system for LLM agents that organizes conversation history into a topic tree with branches and summaries, achieving 82.5% F1 on MemoryAgentBench's EventQA using the gpt-oss-20B model. This result significantly outperforms existing memory systems like Mem0 (37.5%) and MemGPT (26.2%) on the same benchmark, demonstrating that hierarchical topic-tree retrieval can dramatically improve LLM agents' ability to recall and reason over long-term interactions. The comparison is not fully controlled because TRACE used open-weights gpt-oss models while Mem0 and MemGPT used GPT-4o-mini; the author attempted to run Mem0 on gpt-oss but faced JSON parsing issues common with open-source models.
 
-hackernews · wolfadex · Jul 6, 11:47 · [Discussion](https://news.ycombinator.com/item?id=48803364)
+reddit · r/MachineLearning · /u/PsychologicalDot7749 · Jul 6, 14:35
 
-**Background**: Elm is a purely functional language for building web user interfaces, known for its no-runtime-exceptions guarantee. It has been in development since 2012, with the last major version (0.19) released in 2018. The language has inspired many forks and spin-offs due to its focused design and limited community engagement.
+**Background**: LLM agents often struggle with long-term memory, relying on flat retrieval-augmented generation (RAG) that treats all past interactions as equal chunks. Hierarchical memory systems like TRACE instead build a topic tree, enabling more efficient and context-aware retrieval by summarizing and structuring information at multiple levels.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Elm_(programming_language)">Elm (programming language)</a></li>
-<li><a href="https://discourse.elm-lang.org/t/help-me-profile-elm-0-19-2-compiler-speed/10521">Help me profile Elm 0.19.2 compiler speed! - Request Feedback - Elm</a></li>
+<li><a href="https://pypi.org/project/trace-memory/">trace - memory · PyPI</a></li>
+<li><a href="https://huggingface.co/datasets/ai-hyz/MemoryAgentBench">ai-hyz/ MemoryAgentBench · Datasets at Hugging Face</a></li>
+<li><a href="https://github.com/openai/gpt-oss">GitHub - openai/ gpt - oss : gpt - oss -120b and gpt - oss -20b are two...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community expressed surprise and excitement, with many having assumed the project was dormant. Some users noted Elm's role as an influential research language and discussed its potential as an LLM-friendly platform, while others raised concerns about JavaScript interop restrictions.
-
-**Tags**: `#Elm`, `#programming languages`, `#functional programming`, `#web development`, `#compiler`
+**Tags**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical retrieval`
 
 ---
 
 <a id="item-3"></a>
-## [Study: Code Cleanliness Affects AI Coding Agents](https://arxiv.org/abs/2605.20049) ⭐️ 8.0/10
+## [CPU TTS Benchmark: Kokoro, Supertonic, Inflect-Nano, Pocket TTS](https://www.reddit.com/r/MachineLearning/comments/1up0azr/cpu_tts_benchmark_with_utmos_mos_scoring_kokoro/) ⭐️ 8.0/10
 
-A controlled minimal-pair study on arXiv (2605.20049) investigates whether code cleanliness impacts the performance of AI coding agents, using synthetically degraded and cleaned codebases. This research addresses a timely question as AI coding agents become more prevalent, potentially guiding best practices for codebase maintenance to optimize agent performance. The study uses Opus 4.6 to generate degraded and cleaned versions of codebases, but does not control for breaking existing tests, and some pairs are constructed via AI cleaning pipelines, raising concerns about representativeness.
+A new CPU benchmark compares four small TTS models—Kokoro, Supertonic, Inflect-Nano, and Kyutai's Pocket TTS—using UTMOS scoring, revealing trade-offs between speed and quality. This benchmark provides objective, reproducible comparisons for developers selecting small TTS models for CPU inference, highlighting that Pocket TTS offers flat latency scaling and zero-shot voice cloning, capabilities not captured by traditional metrics. Pocket TTS uses a streaming LM architecture with flat RTF (0.69–0.76) across text lengths, while Inflect-Nano has an undocumented ~15s output cap that inflates its RTF on long inputs. UTMOS fails to distinguish clean-but-mechanical from clean-and-natural speech on small vocoders.
 
-hackernews · softwaredoug · Jul 5, 23:03 · [Discussion](https://news.ycombinator.com/item?id=48798815)
+reddit · r/MachineLearning · /u/gvij · Jul 6, 15:17
 
-**Background**: AI coding agents are tools that autonomously write or modify code based on natural language instructions. Code cleanliness refers to factors like dead code, redundant code, and poor design patterns that may affect an agent's ability to understand and modify the codebase.
+**Background**: UTMOS is a non-intrusive neural metric for predicting Mean Opinion Score (MOS) of speech quality. Kokoro is a StyleTTS2-inspired model, while Pocket TTS uses Kyutai's Mimi neural audio codec for streaming audio token generation. CPU inference is critical for edge deployment where GPUs are unavailable.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2605.20049">[2605.20049] Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study</a></li>
-<li><a href="https://arxiv.org/html/2605.20049v1">Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study</a></li>
+<li><a href="https://www.emergentmind.com/topics/utmos">UTMOS Speech Quality Metric</a></li>
+<li><a href="https://huggingface.co/kyutai/mimi">kyutai / mimi · Hugging Face</a></li>
+<li><a href="https://styletts2.com/styletts2-internal-diffusion-architecture-style-modeling-system-and-speech-generation-pipeline-deep-technical-analysis/">StyleTTS 2 Internal Diffusion Architecture Style Modeling... - StyleTTS 2</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express skepticism about the experimental design, particularly the use of AI-generated degraded/cleaned codebases and the failure to control for test breakage. Some users share personal experiences that code cleanliness significantly impacts agent performance.
+**Discussion**: Reddit commenters praised the detailed methodology and noted the importance of pairing UTMOS with human listening. Some questioned the single-hardware limitation and suggested testing on ARM or with batched inference.
 
-**Tags**: `#AI coding agents`, `#code quality`, `#software engineering`, `#empirical study`
+**Tags**: `#TTS`, `#benchmark`, `#machine learning`, `#CPU inference`, `#speech synthesis`
 
 ---
 
 <a id="item-4"></a>
-## [TRACE: Open-source hierarchical memory boosts LLM agents to 82.5%](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
+## [China to Cut SCI Publication Incentives to Prevent Tech Leaks](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
 
-TRACE introduces a topic-tree memory system that organizes LLM agent conversation history into hierarchical branches with summaries, achieving 82.5% F1 on MemoryAgentBench's EventQA using the open-weights gpt-oss-20B model, significantly outperforming Mem0 (37.5%) and MemGPT (26.2%). This work demonstrates that hierarchical memory structures can dramatically improve long-term memory retrieval for LLM agents, potentially enabling more capable autonomous agents for complex, multi-turn tasks. The open-source release allows the community to build upon this approach. The comparison is not fully fair because TRACE used gpt-oss-20B locally while Mem0 and MemGPT used GPT-4o-mini; the author attempted to run Mem0 on gpt-oss-20B but faced JSON parsing issues. Full JSON logs are available in the repository for methodology inspection.
-
-reddit · r/MachineLearning · /u/PsychologicalDot7749 · Jul 6, 14:35
-
-**Background**: LLM agents often struggle with long-term memory, relying on flat retrieval-augmented generation (RAG) that loses context over many turns. MemoryAgentBench is a benchmark from ICLR 2026 that evaluates memory in LLM agents through incremental multi-turn interactions, with EventQA testing temporal event understanding. gpt-oss-20B is OpenAI's first open-source model since GPT-2, a 21B-parameter reasoning model with 3.6B active parameters, designed for local inference.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/HUST-AI-HYZ/MemoryAgentBench">GitHub - HUST-AI-HYZ/MemoryAgentBench: Open source code for ICLR 2026 Paper: Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions · GitHub</a></li>
-<li><a href="https://huggingface.co/openai/gpt-oss-20b">openai/ gpt - oss - 20 b · Hugging Face</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-oss/">Introducing gpt - oss | OpenAI</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community discussion on Reddit praised the novel hierarchical approach and strong results, but also raised fairness concerns about comparing different backbone models. Some commenters suggested running Mem0 with gpt-oss-20B using a different parsing method for a more equitable comparison.
-
-**Tags**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical memory`
-
----
-
-<a id="item-5"></a>
-## [Open-source MT pipeline for Tunisian Darija (Arabizi)](https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/) ⭐️ 8.0/10
-
-An 18-year-old student built and open-sourced a complete machine translation pipeline and parallel corpus for Tunisian Darija written in Arabizi, including a custom SentencePiece BPE tokenizer and a 15.6M-parameter Transformer model, achieving a baseline BLEU of 3.89. This addresses a critical gap in NLP for a low-resource language with almost no open resources, providing a transparent baseline and community-driven corpus that can accelerate research in dialectal Arabic MT. The tokenizer protects Arabizi numerals (3,7,9,5) as symbols, the model uses transfer learning from Moroccan Darija, and the corpus currently has ~553 hand-crafted sentence pairs with provenance tracking.
-
-reddit · r/MachineLearning · /u/Dhiadev-tn · Jul 5, 18:08
-
-**Background**: Tunisian Darija is a vernacular Arabic dialect spoken in Tunisia, often written in Arabizi (Latin letters + numerals). It has very few NLP resources compared to Modern Standard Arabic. BLEU is a metric that measures translation quality by comparing n-grams to human references; a score of 3.89 is low but serves as an honest baseline.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Tunisian_Arabic">Tunisian Arabic - Wikipedia</a></li>
-<li><a href="https://github.com/google/sentencepiece">GitHub - google/sentencepiece: Unsupervised text tokenizer for Neural Network-based text generation. · GitHub</a></li>
-<li><a href="https://en.wikipedia.org/wiki/BLEU">BLEU - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#machine translation`, `#low-resource NLP`, `#Tunisian Darija`, `#open source`, `#tokenization`
-
----
-
-<a id="item-6"></a>
-## [China Plans to Cut SCI Publication Incentives to Prevent Tech Leaks](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-Chinese policymakers are discussing reducing incentives for researchers to publish in international journals like SCI, and considering lowering the weight of SCI papers in academic promotions and tenure decisions. This shift is driven by national security concerns over technology leakage through academic publications. This policy shift could significantly alter global scientific publishing dynamics, reducing China's reliance on Western journals and potentially slowing the flow of Chinese research to the international community. It also raises concerns about academic integrity and openness, as researchers may face conflicting incentives between national security and scholarly communication. China's Ministry of State Security recently accused a researcher of leaking core equipment structures and key experimental data in a manuscript submitted to an international journal. Since August last year, the government has tightened oversight of foreign academic publishing, and the National Natural Science Foundation now requires that at least 20% of representative papers from funded projects be published in Chinese-language journals.
+Chinese policymakers are discussing reducing incentives for researchers to publish in international journals like SCI, and considering lowering the weight of SCI papers in academic promotions and tenure decisions. This move is driven by national security concerns that academic papers may leak industrial and technological innovations. This policy shift could significantly impact global scientific publishing, as China is a major contributor to SCI journals. It may also alter academic incentives, potentially reducing academic fraud but also limiting international collaboration and knowledge exchange. Since August last year, China has tightened regulation on foreign academic publishing. The National Natural Science Foundation now requires at least 20% of representative papers from funded projects to be published in Chinese journals. One materials scientist reported stopping submissions to foreign journals due to vague and increasingly strict security review standards.
 
 telegram · zaihuapd · Jul 6, 01:03
 
-**Background**: SCI (Science Citation Index) is a prestigious citation database that has long been used as a key metric for evaluating research output and academic performance in China. The Chinese government has historically encouraged publishing in SCI-indexed journals to boost international recognition, but recent national security concerns have prompted a reevaluation of this policy. The shift also aligns with broader efforts to promote domestic journals and reduce dependence on foreign publishing platforms.
+**Background**: SCI (Science Citation Index) is a widely used database for scientific literature, and publishing in SCI journals has long been a key metric for academic evaluation in China. The Chinese government has previously moved to reduce over-reliance on SCI papers, but this new discussion adds a national security dimension, linking publication to potential technology leakage.
 
-**Discussion**: The community discussion suggests that this policy may also be aimed at combating academic fraud, as some netizens speculated that reducing SCI incentives could help curb paper mills and fake research. However, no detailed comments were provided.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.bannedbook.org/bnews/itnews/20260706/2335387.html">中国拟削减 SCI 发表激励，防止技术泄密 - 禁闻网</a></li>
+<li><a href="https://acad.cumt.edu.cn/info/1053/1341.htm">破“SCI至上”后，科研评价体系如何立-中国矿业大学学术会员会</a></li>
+<li><a href="https://news.eol.cn/yaowen/202002/t20200226_1713720.shtml">为何"SCI论文至上"必须破除？新体系公正吗？ —中国教育在线</a></li>
+
+</ul>
+</details>
+
+**Discussion**: In the Telegram group, one user commented that this move might be aimed at cracking down on academic fraud. This reflects a sentiment that reducing SCI emphasis could help curb fraudulent practices in academia.
 
 **Tags**: `#science policy`, `#academic publishing`, `#national security`, `#China`
 
 ---
 
-<a id="item-7"></a>
-## [FBI Tracks Teen Hacker via Microsoft GDID Device ID](https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [Microsoft GDID Used to Track 19-Year-Old Hacker](https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148) ⭐️ 8.0/10
 
-The FBI arrested 19-year-old Peter Stokes, an alleged member of the Scattered Spider hacking group, by using Microsoft's Global Device Identifier (GDID) to track his Windows device even though he used a VPN. This case reveals that Microsoft's GDID is a persistent, unchangeable device identifier that can bypass VPN anonymity, raising significant privacy concerns and demonstrating a powerful new tool for law enforcement. GDID is generated during Windows installation and remains unchanged even after OS updates; users cannot easily modify or disable it. The FBI correlated GDID with ngrok access logs and login data from Snapchat, Apple, and Facebook to confirm the suspect's identity.
+A 19-year-old hacker, Peter Stokes, was arrested after Microsoft's Global Device Identifier (GDID) was used by law enforcement to track him across VPNs and OS reinstalls. This case reveals that Microsoft's GDID is a persistent device identifier that cannot be easily changed, posing significant privacy implications for users who rely on VPNs or anonymity tools. The GDID is tied to a specific Windows installation and persists across VPNs and Windows updates; only a full OS reinstall generates a new GDID. Investigators cross-referenced GDID logs with proxy access records and login data from Snapchat, Apple, and Facebook.
 
 telegram · zaihuapd · Jul 6, 04:15
 
-**Background**: GDID stands for Global Device Identifier, a unique identifier assigned to each Windows installation for telemetry purposes. It is sent to Microsoft during system updates and diagnostic data collection. Unlike IP addresses or browser fingerprints, GDID persists across network changes and cannot be easily rotated by users.
+**Background**: GDID (Global Device Identifier) is a unique identifier assigned to each Windows installation, used by Microsoft for telemetry and licensing. Unlike IP addresses or browser fingerprints, GDID cannot be easily spoofed or changed by users, making it a powerful tracking tool for law enforcement.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148">Microsoft device telemetry key to unmasking alleged... - iTnews</a></li>
-<li><a href="https://buynowkey.com/microsoft/windows-gdid-telemetry-tracking-audit/">Windows GDID Telemetry: What It Tracks & How to Stop It</a></li>
 <li><a href="https://www.tomshardware.com/software/windows-11-identifier-used-to-track-scattered-spider-perp-after-microsoft-shared-info-with-fbi-19-year-old-us-estonian-hacker-arrested-over-alleged-ties-to-infamous-extortion-group">Windows 11 identifier code used to track Scattered... | Tom's Hardware</a></li>
+<li><a href="https://hivesecurity.gitlab.io/blog/gdid-windows-telemetry-scattered-spider-arrest/">The VPN Was Never the Problem: How a Windows ... — Hive Security</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/update-compliance-schema-waasupdatestatus?source=recommendations">Update Compliance Schema - WaaSUpdateStatus - Windows ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#privacy`, `#tracking`, `#Microsoft`, `#cybersecurity`, `#law enforcement`
+**Tags**: `#privacy`, `#security`, `#Microsoft`, `#device tracking`, `#law enforcement`
 
 ---
 
-<a id="item-8"></a>
-## [Bilibili Sends Legal Letter to BiliRoaming Open Source Project](https://github.com/yujincheng08/BiliRoaming) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [Bilibili Sends Legal Letter to BiliRoaming Open-Source Project](https://github.com/yujincheng08/BiliRoaming) ⭐️ 8.0/10
 
-Bilibili sent a legal letter to the BiliRoaming open source project, demanding it stop reverse engineering and remove code that bypasses regional restrictions and authentication. The project is an Xposed module that unlocks region-locked anime content on Bilibili's Android app. This case highlights the tension between platform protection and open source reverse engineering, potentially setting a precedent for legal actions against similar projects. It affects developers and users who rely on such tools for cross-region access. The letter specifically cites actions including hooking playback authentication, rewriting paid anime to be viewable, bypassing secure transport locks, and altering CDN origin pull. The project was given 2 days to respond.
+Bilibili has sent a legal letter to the BiliRoaming open-source project, demanding it cease reverse engineering of non-public APIs, authentication systems, access controls, and paid content protection mechanisms, and delete or revert related code within two days. This legal action highlights the tension between platform control and open-source software that bypasses restrictions, potentially setting a precedent for how companies handle similar projects. It also raises ethical and legal questions about reverse engineering for user convenience. The letter specifically mentions behaviors such as hooking playback authentication, rewriting paid anime as viewable, bypassing secure transport locks, and altering CDN origin pull. BiliRoaming is an Xposed module that removes regional restrictions on Bilibili's anime content.
 
 telegram · zaihuapd · Jul 6, 08:21
 
-**Background**: BiliRoaming is an Xposed module for Android that removes regional restrictions on Bilibili's app, allowing users to access anime content blocked in their region. Reverse engineering involves analyzing an app's code to understand and modify its behavior, which often violates terms of service. Bilibili is a major Chinese video platform with region-locked content due to licensing agreements.
+**Background**: BiliRoaming is an open-source Xposed module for Android that allows users to bypass regional restrictions on Bilibili's anime content, including access to paid episodes. Xposed is a framework that enables modifications to apps without altering their APKs, often used for customization. CDN origin pull refers to the process where a CDN fetches content from the original server; altering it can redirect traffic or bypass restrictions.
 
 <details><summary>References</summary>
 <ul>
@@ -192,28 +153,27 @@ telegram · zaihuapd · Jul 6, 08:21
 </ul>
 </details>
 
-**Tags**: `#reverse engineering`, `#open source`, `#legal`, `#Bilibili`, `#Xposed`
+**Tags**: `#open-source`, `#legal`, `#reverse-engineering`, `#Bilibili`, `#copyright`
 
 ---
 
-<a id="item-9"></a>
+<a id="item-7"></a>
 ## [Tencent Open-Sources Hy3 Preview MoE Model with 295B Parameters](https://t.me/zaihuapd/42385) ⭐️ 8.0/10
 
-Tencent has officially released and open-sourced the Hy3 Preview language model, a Mixture-of-Experts (MoE) model with 295 billion total parameters and 21 billion active parameters, supporting a 256K context window. The model is optimized for complex reasoning and agent tasks, achieving a 54% reduction in first-token latency in products like CodeBuddy. This release marks a major contribution to the open-source AI community from a leading tech company, providing a high-performance MoE model that balances scale and efficiency. The significant latency reduction and focus on agent capabilities could accelerate the development of responsive, reasoning-intensive applications. The model uses a Mixture-of-Experts architecture where only 21 billion of the 295 billion parameters are activated per token, enabling efficient inference. It supports configurable reasoning levels (disabled, low, high) and includes features like hybrid thinking, native tool calling, and Multi-Token Prediction (MTP) for low-latency serving.
+Tencent has officially released and open-sourced the Hunyuan Hy3 preview language model, a Mixture-of-Experts (MoE) model with 295 billion total parameters and 21 billion active parameters, supporting a context length of 256K tokens. This release marks a significant contribution to the open-source LLM ecosystem from a major tech company, with strong improvements in reasoning and agent tasks, and a 54% reduction in first-token latency for products like CodeBuddy, potentially accelerating AI adoption in enterprise and developer tools. The model is built on a new architecture with deep co-optimization between model design and inference framework, achieving substantial inference performance gains. It is designed for complex reasoning and agent applications, with notable improvements in math, science, and code generation tasks.
 
 telegram · zaihuapd · Jul 6, 10:09
 
-**Background**: Mixture-of-Experts (MoE) is a neural network architecture that uses multiple specialized sub-networks (experts) and a gating mechanism to activate only a subset of experts per input, allowing models to scale parameters without proportional compute cost. First-token latency (time to first token, TTFT) is a key metric for user-perceived responsiveness in interactive AI applications, as it measures the delay from request arrival to the first output token.
+**Background**: Mixture-of-Experts (MoE) is a neural network architecture that activates only a subset of parameters per input, enabling larger total model sizes with lower computational cost. First-token latency refers to the time before the model generates its first output token, a critical metric for real-time applications. Tencent's CodeBuddy is an AI-powered code assistant based on the Hunyuan model.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://hy3ai.com/">Hy 3 Preview — Tencent Hunyuan 3 Open-Source Model</a></li>
-<li><a href="https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview">Hunyuan 3 Preview - SGLang Documentation</a></li>
-<li><a href="https://openrouter.ai/tencent/hy3-preview:free">Hy 3 preview - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://staging-codebuddy.tencent.com/">Tencent Cloud Code Assistant CodeBuddy – AI Code Editor</a></li>
+<li><a href="https://www.codebuddy.cn/">腾讯云代码助手 CodeBuddy - AI 时代的智能编程伙伴</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#LLM`, `#MoE`, `#open-source`, `#Tencent`
+**Tags**: `#LLM`, `#MoE`, `#Open Source`, `#Tencent`, `#AI`
 
 ---

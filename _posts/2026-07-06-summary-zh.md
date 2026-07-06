@@ -5,183 +5,144 @@ date: 2026-07-06
 lang: zh
 ---
 
-> 从 30 条内容中筛选出 9 条重要资讯。
+> 从 32 条内容中筛选出 7 条重要资讯。
 
 ---
 
-1. [Cloudflare 推出 Workers 缓存 API](#item-1) ⭐️ 8.0/10
-2. [Elm 通过更快的构建向 1.0 迈进](#item-2) ⭐️ 8.0/10
-3. [研究：代码整洁度影响 AI 编码智能体](#item-3) ⭐️ 8.0/10
-4. [TRACE：开源层次记忆将 LLM 智能体性能提升至 82.5%](#item-4) ⭐️ 8.0/10
-5. [突尼斯达里加语（Arabizi）开源机器翻译管道](#item-5) ⭐️ 8.0/10
-6. [中国拟削减 SCI 发表激励以防技术泄密](#item-6) ⭐️ 8.0/10
-7. [FBI 通过微软 GDID 设备标识追踪青少年黑客](#item-7) ⭐️ 8.0/10
-8. [B 站向 BiliRoaming 开源项目发律师函](#item-8) ⭐️ 8.0/10
-9. [腾讯开源混元 Hy3 Preview MoE 模型，295B 参数](#item-9) ⭐️ 8.0/10
+1. [LingBot-Vision：掩码边界建模实现自监督预训练](#item-1) ⭐️ 8.0/10
+2. [TRACE：层级记忆系统将 LLM 智能体 F1 分数提升至 82.5%](#item-2) ⭐️ 8.0/10
+3. [CPU TTS 基准测试：Kokoro、Supertonic、Inflect-Nano、Pocket TTS](#item-3) ⭐️ 8.0/10
+4. [中国拟削减 SCI 发表激励以防止技术泄密](#item-4) ⭐️ 8.0/10
+5. [微软 GDID 标识符助警方追踪 19 岁黑客](#item-5) ⭐️ 8.0/10
+6. [B 站向开源项目 BiliRoaming 发律师函](#item-6) ⭐️ 8.0/10
+7. [腾讯开源混元 Hy3 preview MoE 模型，295B 参数](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Cloudflare 推出 Workers 缓存 API](https://blog.cloudflare.com/workers-cache/) ⭐️ 8.0/10
+## [LingBot-Vision：掩码边界建模实现自监督预训练](https://www.reddit.com/r/MachineLearning/comments/1up4cjh/lingbotvision_masked_boundary_modeling_for/) ⭐️ 8.0/10
 
-Cloudflare 宣布为 Workers 推出新的缓存 API，该 API 符合 HTTP 规范并支持缓存标签，满足了多年来在 Workers 中实现高效缓存的需求。 该 API 填补了 Cloudflare Workers 长期存在的空白，使开发者能够直接在无服务器代码中控制缓存行为，从而提升动态内容的性能并减轻源站负载。 该 API 使用标准的 Cache-Control 标头并支持 stale-while-revalidate，同时引入缓存标签以实现精细的失效控制，但 match() 方法不支持 ignoreSearch 或 ignoreVary 选项。
+LingBot-Vision 提出了掩码边界建模方法，教师网络在线生成密集边界场，强制学生网络重建边界区域，以 1.1B 参数模型在 NYUv2 线性探测 RMSE 上达到 0.296 的领先水平，优于 DINOv3-7B 的 0.309。 该方法在深度估计和分割等密集预测任务上以更少的参数和训练数据（1.61 亿张图像 vs. DINOv3 的 5 亿+）取得了有竞争力甚至更优的结果，可能降低高质量视觉预训练的成本。 边界场被建模为逐像素分类分布，以利用自蒸馏中的中心化和锐化技术；解码后的片段需通过 a-contrario 验证测试后才能监督学生网络。该方法在 ImageNet 分类和 ADE20K 分割上落后于 DINOv3，但在深度补全中展现出强大的编码器初始化优势。
 
-hackernews · ilreb · 7月6日 13:02 · [社区讨论](https://news.ycombinator.com/item?id=48804014)
+reddit · r/MachineLearning · /u/StillThese3747 · 7月6日 17:37
 
-**背景**: Cloudflare Workers 是一个在边缘运行 JavaScript 的无服务器平台。缓存是 CDN 的核心功能，但此前 Workers 只能通过 fetch() 间接与缓存交互。新的 Cache API 提供了对缓存行为的直接编程控制。
+**背景**: 视觉自监督学习通常使用对比学习或掩码图像建模来无标签学习表征。DINOv3 是一种领先的自监督方法，采用自蒸馏和掩码策略，但若不使用 Gram 锚定等技术，其密集特征会在长时间训练中退化。LingBot-Vision 通过显式关注边界区域扩展了掩码图像建模，边界区域对密集预测任务至关重要。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developers.cloudflare.com/workers/runtime-apis/cache/">Cache · Cloudflare Workers docs</a></li>
-<li><a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-tags/">Purge cache by cache-tags · Cloudflare Cache (CDN) docs</a></li>
-<li><a href="https://medium.com/cloudflare-blog/introducing-the-workers-cache-api-giving-you-control-over-how-your-content-is-cached-5bfe8015218c">Introducing the Workers Cache API : Giving you control over... | Medium</a></li>
+<li><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Cheng_Boundary_IoU_Improving_Object-Centric_Image_Segmentation_Evaluation_CVPR_2021_paper.pdf">Boundary IoU: Improving Object-Centric Image Segmentation...</a></li>
+<li><a href="https://hal.science/hal-04550200/document">Cloud detection by inter-band parallax and a - contrario validation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean squared error - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区普遍称赞该 API 遵循 HTTP 标准并支持缓存标签，但有人批评博客文章使用了 AI 生成的内容，并质疑为何花了九年才推出。开发者也对 stale-while-revalidate 支持表示赞赏。
+**社区讨论**: 社区讨论内容充实，作者指出 0.013 的 RMSE 差距可能处于探测超参数敏感范围内，且缺少与学习型掩码基线（如 ADIOS/AttMask）的对比。评论者还质疑边界强制是否与 Gram 锚定互补，并建议独立验证这些数字，因为此前 Ant 的 Ling-1T 发布曾引发争议。
 
-**标签**: `#Cloudflare`, `#caching`, `#serverless`, `#CDN`, `#API`
+**标签**: `#self-supervised learning`, `#computer vision`, `#pretraining`, `#boundary detection`, `#transformer`
 
 ---
 
 <a id="item-2"></a>
-## [Elm 通过更快的构建向 1.0 迈进](https://elm-lang.org/news/faster-builds) ⭐️ 8.0/10
+## [TRACE：层级记忆系统将 LLM 智能体 F1 分数提升至 82.5%](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
 
-Elm 宣布向 1.0 版本迈进，重点展示了更快的构建时间和编译器优化。 这一里程碑标志着这一小众但有影响力的函数式编程语言重新活跃起来，可能提升其采用率和社区信心。 改进主要集中在编译器性能上，基准测试显示大型代码库的构建速度显著提升。此次更新还回应了社区长期以来的请求，改善了与 JavaScript 的互操作性。
+TRACE 是一个新的开源层级记忆系统，它将对话历史组织成带有分支和摘要的主题树，在使用 gpt-oss-20B 模型时，在 MemoryAgentBench 的 EventQA 任务上达到了 82.5%的 F1 分数。 这一结果在同一基准测试上显著优于现有记忆系统如 Mem0（37.5%）和 MemGPT（26.2%），表明层级主题树检索能大幅提升 LLM 智能体对长期交互的回忆和推理能力。 该对比并非完全受控，因为 TRACE 使用了开源权重的 gpt-oss 模型，而 Mem0 和 MemGPT 使用了 GPT-4o-mini；作者尝试在 gpt-oss 上运行 Mem0，但遇到了开源模型常见的 JSON 解析问题。
 
-hackernews · wolfadex · 7月6日 11:47 · [社区讨论](https://news.ycombinator.com/item?id=48803364)
+reddit · r/MachineLearning · /u/PsychologicalDot7749 · 7月6日 14:35
 
-**背景**: Elm 是一种用于构建 Web 用户界面的纯函数式语言，以其“无运行时异常”的保证而闻名。它自 2012 年开始开发，上一个主要版本（0.19）于 2018 年发布。由于其专注的设计和有限的社区参与，该语言催生了许多分支和衍生项目。
+**背景**: LLM 智能体常因依赖扁平化的检索增强生成（RAG）而难以处理长期记忆，这种 RAG 将所有历史交互视为同等块。像 TRACE 这样的层级记忆系统则构建主题树，通过多级摘要和结构化实现更高效、更具上下文感知的检索。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Elm_(programming_language)">Elm (programming language)</a></li>
-<li><a href="https://discourse.elm-lang.org/t/help-me-profile-elm-0-19-2-compiler-speed/10521">Help me profile Elm 0.19.2 compiler speed! - Request Feedback - Elm</a></li>
+<li><a href="https://pypi.org/project/trace-memory/">trace - memory · PyPI</a></li>
+<li><a href="https://huggingface.co/datasets/ai-hyz/MemoryAgentBench">ai-hyz/ MemoryAgentBench · Datasets at Hugging Face</a></li>
+<li><a href="https://github.com/openai/gpt-oss">GitHub - openai/ gpt - oss : gpt - oss -120b and gpt - oss -20b are two...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区表达了惊讶和兴奋，许多人曾以为该项目已停滞。一些用户指出 Elm 作为有影响力的研究语言的角色，并讨论了其作为 LLM 友好平台的潜力，而另一些人则对 JavaScript 互操作限制表示担忧。
-
-**标签**: `#Elm`, `#programming languages`, `#functional programming`, `#web development`, `#compiler`
+**标签**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical retrieval`
 
 ---
 
 <a id="item-3"></a>
-## [研究：代码整洁度影响 AI 编码智能体](https://arxiv.org/abs/2605.20049) ⭐️ 8.0/10
+## [CPU TTS 基准测试：Kokoro、Supertonic、Inflect-Nano、Pocket TTS](https://www.reddit.com/r/MachineLearning/comments/1up0azr/cpu_tts_benchmark_with_utmos_mos_scoring_kokoro/) ⭐️ 8.0/10
 
-arXiv 上的一项受控最小对研究（2605.20049）探讨了代码整洁度是否影响 AI 编码智能体的性能，该研究使用了合成降级和清理后的代码库。 随着 AI 编码智能体日益普及，这项研究探讨了一个及时的问题，可能为优化智能体性能的代码库维护提供最佳实践指导。 该研究使用 Opus 4.6 生成降级和清理后的代码库版本，但未控制对现有测试的破坏，且部分对子通过 AI 清理流水线构建，引发了关于代表性的担忧。
+一项新的 CPU 基准测试使用 UTMOS 评分比较了四个小型 TTS 模型——Kokoro、Supertonic、Inflect-Nano 和 Kyutai 的 Pocket TTS，揭示了速度与质量之间的权衡。 该基准测试为开发者在选择用于 CPU 推理的小型 TTS 模型时提供了客观、可复现的比较，突显了 Pocket TTS 具有平坦的延迟缩放和零样本语音克隆能力，而这些能力是传统指标无法捕捉的。 Pocket TTS 采用流式 LM 架构，在不同文本长度下具有平坦的 RTF（0.69–0.76），而 Inflect-Nano 存在未记录的约 15 秒输出上限，导致其在长输入上的 RTF 被夸大。UTMOS 无法在小声码器上区分“干净但机械”与“干净且自然”的语音。
 
-hackernews · softwaredoug · 7月5日 23:03 · [社区讨论](https://news.ycombinator.com/item?id=48798815)
+reddit · r/MachineLearning · /u/gvij · 7月6日 15:17
 
-**背景**: AI 编码智能体是根据自然语言指令自主编写或修改代码的工具。代码整洁度指死代码、冗余代码和不良设计模式等因素，这些因素可能影响智能体理解和修改代码库的能力。
+**背景**: UTMOS 是一种非侵入式神经指标，用于预测语音质量的平均意见得分 (MOS)。Kokoro 受 StyleTTS2 启发，而 Pocket TTS 使用 Kyutai 的 Mimi 神经音频编解码器进行流式音频令牌生成。CPU 推理对于无法使用 GPU 的边缘部署至关重要。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2605.20049">[2605.20049] Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study</a></li>
-<li><a href="https://arxiv.org/html/2605.20049v1">Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study</a></li>
+<li><a href="https://www.emergentmind.com/topics/utmos">UTMOS Speech Quality Metric</a></li>
+<li><a href="https://huggingface.co/kyutai/mimi">kyutai / mimi · Hugging Face</a></li>
+<li><a href="https://styletts2.com/styletts2-internal-diffusion-architecture-style-modeling-system-and-speech-generation-pipeline-deep-technical-analysis/">StyleTTS 2 Internal Diffusion Architecture Style Modeling... - StyleTTS 2</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对实验设计表示怀疑，特别是使用 AI 生成的降级/清理代码库以及未能控制测试破坏。一些用户分享个人经验，认为代码整洁度显著影响智能体性能。
+**社区讨论**: Reddit 评论者称赞了详细的方法论，并指出将 UTMOS 与人工听测相结合的重要性。有人质疑单一硬件平台的局限性，并建议在 ARM 上或使用批量推理进行测试。
 
-**标签**: `#AI coding agents`, `#code quality`, `#software engineering`, `#empirical study`
+**标签**: `#TTS`, `#benchmark`, `#machine learning`, `#CPU inference`, `#speech synthesis`
 
 ---
 
 <a id="item-4"></a>
-## [TRACE：开源层次记忆将 LLM 智能体性能提升至 82.5%](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
+## [中国拟削减 SCI 发表激励以防止技术泄密](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
 
-TRACE 引入了一种主题树记忆系统，将 LLM 智能体的对话历史组织成带有摘要的层次化分支，在使用开源权重模型 gpt-oss-20B 时，在 MemoryAgentBench 的 EventQA 任务上达到了 82.5% 的 F1 分数，显著优于 Mem0（37.5%）和 MemGPT（26.2%）。 这项工作表明，层次化记忆结构可以显著提升 LLM 智能体的长期记忆检索能力，有望为复杂多轮任务赋能更强大的自主智能体。开源发布使社区能够在此基础上进一步发展。 该对比并非完全公平，因为 TRACE 使用了本地运行的 gpt-oss-20B，而 Mem0 和 MemGPT 使用了 GPT-4o-mini；作者尝试在 gpt-oss-20B 上运行 Mem0 但遇到了 JSON 解析问题。完整 JSON 日志已在仓库中提供以供方法审查。
-
-reddit · r/MachineLearning · /u/PsychologicalDot7749 · 7月6日 14:35
-
-**背景**: LLM 智能体通常在长期记忆方面存在困难，依赖于平坦的检索增强生成（RAG），在多轮对话中容易丢失上下文。MemoryAgentBench 是 ICLR 2026 的一个基准测试，通过增量多轮交互评估 LLM 智能体的记忆能力，其中 EventQA 测试时间事件理解。gpt-oss-20B 是 OpenAI 自 GPT-2 以来的首个开源模型，是一个 210 亿参数（36 亿活跃参数）的推理模型，专为本地推理设计。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/HUST-AI-HYZ/MemoryAgentBench">GitHub - HUST-AI-HYZ/MemoryAgentBench: Open source code for ICLR 2026 Paper: Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions · GitHub</a></li>
-<li><a href="https://huggingface.co/openai/gpt-oss-20b">openai/ gpt - oss - 20 b · Hugging Face</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-oss/">Introducing gpt - oss | OpenAI</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 上的社区讨论赞扬了新颖的层次化方法和强劲的结果，但也提出了关于不同骨干模型对比的公平性问题。一些评论者建议使用不同的解析方法在 gpt-oss-20B 上运行 Mem0，以实现更公平的比较。
-
-**标签**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical memory`
-
----
-
-<a id="item-5"></a>
-## [突尼斯达里加语（Arabizi）开源机器翻译管道](https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/) ⭐️ 8.0/10
-
-一位 18 岁的学生构建并开源了针对用 Arabizi 书写的突尼斯达里加语的完整机器翻译管道和平行语料库，包括自定义的 SentencePiece BPE 分词器和 1560 万参数的 Transformer 模型，基线 BLEU 得分为 3.89。 这填补了低资源语言 NLP 的关键空白——该语言几乎没有开放资源，提供了透明的基线和社区驱动的语料库，可加速方言阿拉伯语机器翻译研究。 分词器将 Arabizi 数字（3,7,9,5）作为符号保护，模型使用从摩洛哥达里加语迁移学习，语料库目前约有 553 个手工制作的句子对，并带有来源追踪。
-
-reddit · r/MachineLearning · /u/Dhiadev-tn · 7月5日 18:08
-
-**背景**: 突尼斯达里加语是突尼斯使用的阿拉伯语方言，常以 Arabizi（拉丁字母+数字）书写。与现代标准阿拉伯语相比，其 NLP 资源极少。BLEU 是一种通过比较 n-gram 与人工参考来评估翻译质量的指标；3.89 分较低，但可作为诚实的基线。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Tunisian_Arabic">Tunisian Arabic - Wikipedia</a></li>
-<li><a href="https://github.com/google/sentencepiece">GitHub - google/sentencepiece: Unsupervised text tokenizer for Neural Network-based text generation. · GitHub</a></li>
-<li><a href="https://en.wikipedia.org/wiki/BLEU">BLEU - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**标签**: `#machine translation`, `#low-resource NLP`, `#Tunisian Darija`, `#open source`, `#tokenization`
-
----
-
-<a id="item-6"></a>
-## [中国拟削减 SCI 发表激励以防技术泄密](https://www.ft.com/content/64a811f1-b132-4211-8a8c-2252cf964039?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-中国政策制定者正讨论削减科研人员向国际期刊（如 SCI）投稿的激励，并考虑降低 SCI 论文在学术晋升和终身教职评定中的权重。这一转变源于对学术论文可能泄露工业和技术创新的国家安全担忧。 这一政策转变可能显著改变全球科学出版格局，减少中国对西方期刊的依赖，并可能减缓中国研究成果向国际社会的流动。同时，它也引发了对学术诚信和开放性的担忧，因为研究人员可能面临国家安全与学术交流之间的冲突激励。 中国国家安全部上月指控一名研究人员在向国际期刊投稿时泄露了核心装备结构和关键实验数据。自去年 8 月以来，政府加强了对国外学术出版的监管，国家自然科学基金委首次要求受资助项目至少 20%的代表性论文发表于中文期刊。
+中国政策制定者正讨论削减科研人员向国际期刊（如 SCI）投稿的激励，并考虑降低 SCI 论文在学术晋升和终身教职评定中的权重。此举出于国家安全考量，担心学术论文可能泄露工业和技术创新。 这一政策转变可能对全球科学出版产生重大影响，因为中国是 SCI 期刊的主要贡献者。它还可能改变学术激励，可能减少学术造假，但也可能限制国际合作和知识交流。 自去年 8 月以来，中国已加强对外国学术出版的监管。国家自然科学基金委要求受资助项目至少 20%的代表性论文发表于中文期刊。一名材料学学者表示，因安全审查标准模糊且趋严，他已停止向外国期刊投稿。
 
 telegram · zaihuapd · 7月6日 01:03
 
-**背景**: SCI（科学引文索引）是一个享有盛誉的引文数据库，长期以来被中国用作评估研究产出和学术表现的关键指标。中国政府历史上鼓励在 SCI 收录期刊上发表论文以提升国际认可度，但近期的国家安全担忧促使对这一政策进行重新评估。这一转变也与推广国内期刊、减少对外国出版平台依赖的更广泛努力相一致。
+**背景**: SCI（科学引文索引）是一个广泛使用的科学文献数据库，在 SCI 期刊上发表论文长期以来一直是中国学术评价的关键指标。中国政府此前已采取措施减少对 SCI 论文的过度依赖，但此次讨论增加了国家安全维度，将发表论文与潜在技术泄露联系起来。
 
-**社区讨论**: 社区讨论表明，这一政策可能也旨在打击学术造假，一些网友猜测减少 SCI 激励可能有助于遏制论文工厂和虚假研究。但未提供详细评论。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.bannedbook.org/bnews/itnews/20260706/2335387.html">中国拟削减 SCI 发表激励，防止技术泄密 - 禁闻网</a></li>
+<li><a href="https://acad.cumt.edu.cn/info/1053/1341.htm">破“SCI至上”后，科研评价体系如何立-中国矿业大学学术会员会</a></li>
+<li><a href="https://news.eol.cn/yaowen/202002/t20200226_1713720.shtml">为何"SCI论文至上"必须破除？新体系公正吗？ —中国教育在线</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 在 Telegram 群组中，有群友评论称此举可能是为了打击学术圈造假。这反映出一种观点，即降低 SCI 权重可能有助于遏制学术界的造假行为。
 
 **标签**: `#science policy`, `#academic publishing`, `#national security`, `#China`
 
 ---
 
-<a id="item-7"></a>
-## [FBI 通过微软 GDID 设备标识追踪青少年黑客](https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [微软 GDID 标识符助警方追踪 19 岁黑客](https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148) ⭐️ 8.0/10
 
-美国联邦调查局利用微软的全球设备标识符（GDID）追踪到 19 岁的 Peter Stokes（涉嫌 Scattered Spider 黑客组织成员），尽管他使用了 VPN，但仍被定位并逮捕。 此案揭示了微软的 GDID 是一种持久且不可更改的设备标识符，能够绕过 VPN 的匿名性，引发重大隐私担忧，同时也展示了执法部门的一个强大新工具。 GDID 在 Windows 安装时生成，即使系统更新也不会改变；用户无法轻易修改或禁用。FBI 将 GDID 与 ngrok 访问记录以及 Snapchat、苹果和 Facebook 的登录数据进行交叉比对，从而确认了嫌疑人身份。
+19 岁黑客 Peter Stokes 被逮捕，执法人员利用微软全球设备标识符（GDID）追踪到他，即使他使用了 VPN 和重装系统。 此案表明微软 GDID 是一种持久性设备标识符，用户难以更改，对依赖 VPN 或匿名工具的用户隐私构成重大影响。 GDID 与特定 Windows 安装绑定，跨 VPN 和 Windows 更新保持不变；只有完全重装系统才会生成新 GDID。调查人员将 GDID 日志与代理访问记录以及 Snapchat、苹果和 Facebook 的登录数据进行交叉比对。
 
 telegram · zaihuapd · 7月6日 04:15
 
-**背景**: GDID 代表全球设备标识符，是每个 Windows 安装用于遥测目的的唯一标识符。它在系统更新和诊断数据收集时发送给微软。与 IP 地址或浏览器指纹不同，GDID 在网络变化后仍然存在，用户无法轻易更改。
+**背景**: GDID（全球设备标识符）是每个 Windows 安装的唯一标识符，微软用于遥测和许可管理。与 IP 地址或浏览器指纹不同，GDID 不易被用户伪造或更改，因此成为执法部门强大的追踪工具。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.itnews.com.au/news/microsoft-device-telemetry-key-to-unmasking-alleged-scattered-spider-hacker-627148">Microsoft device telemetry key to unmasking alleged... - iTnews</a></li>
-<li><a href="https://buynowkey.com/microsoft/windows-gdid-telemetry-tracking-audit/">Windows GDID Telemetry: What It Tracks & How to Stop It</a></li>
 <li><a href="https://www.tomshardware.com/software/windows-11-identifier-used-to-track-scattered-spider-perp-after-microsoft-shared-info-with-fbi-19-year-old-us-estonian-hacker-arrested-over-alleged-ties-to-infamous-extortion-group">Windows 11 identifier code used to track Scattered... | Tom's Hardware</a></li>
+<li><a href="https://hivesecurity.gitlab.io/blog/gdid-windows-telemetry-scattered-spider-arrest/">The VPN Was Never the Problem: How a Windows ... — Hive Security</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/update-compliance-schema-waasupdatestatus?source=recommendations">Update Compliance Schema - WaaSUpdateStatus - Windows ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#privacy`, `#tracking`, `#Microsoft`, `#cybersecurity`, `#law enforcement`
+**标签**: `#privacy`, `#security`, `#Microsoft`, `#device tracking`, `#law enforcement`
 
 ---
 
-<a id="item-8"></a>
-## [B 站向 BiliRoaming 开源项目发律师函](https://github.com/yujincheng08/BiliRoaming) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [B 站向开源项目 BiliRoaming 发律师函](https://github.com/yujincheng08/BiliRoaming) ⭐️ 8.0/10
 
-B 站向开源项目 BiliRoaming 发出律师函，要求其停止逆向工程并删除绕过区域限制和认证的代码。该项目是一个 Xposed 模块，用于解锁 B 站安卓客户端上的区域限制番剧。 此案凸显了平台保护与开源逆向工程之间的紧张关系，可能为针对类似项目的法律行动开创先例。它影响了依赖此类工具进行跨区域访问的开发者和用户。 函件特别提及的行为包括播放鉴权 Hook、将付费番剧改写为可观看、绕过安全传输锁定和改写 CDN 回源。项目方被要求在 2 日内回复。
+B 站向开源项目 BiliRoaming 发出律师函，要求其停止对非公开接口、认证体系、访问控制和付费内容保护机制进行逆向分析，并在两天内删除或回滚相关代码。 这一法律行动凸显了平台控制与绕过限制的开源软件之间的紧张关系，可能为其他公司处理类似项目树立先例。同时，它也引发了关于为方便用户而进行逆向工程的伦理和法律问题。 函件特别提到了播放鉴权 Hook、将付费番剧改写为可观看、绕过安全传输锁定和改写 CDN 回源等行为。BiliRoaming 是一个 Xposed 模块，用于解除 B 站番剧的区域限制。
 
 telegram · zaihuapd · 7月6日 08:21
 
-**背景**: BiliRoaming 是一个安卓 Xposed 模块，用于解除 B 站客户端的区域限制，让用户可以访问被封锁的番剧内容。逆向工程涉及分析应用的代码以理解并修改其行为，这通常违反服务条款。B 站是中国主要的视频平台，由于版权协议，部分内容有区域限制。
+**背景**: BiliRoaming 是一个开源的 Android Xposed 模块，允许用户绕过 B 站番剧的区域限制，包括访问付费剧集。Xposed 是一个框架，可以在不修改 APK 的情况下修改应用，常用于定制化。CDN 回源是指 CDN 从原始服务器获取内容的过程；修改它可以重定向流量或绕过限制。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -192,28 +153,27 @@ telegram · zaihuapd · 7月6日 08:21
 </ul>
 </details>
 
-**标签**: `#reverse engineering`, `#open source`, `#legal`, `#Bilibili`, `#Xposed`
+**标签**: `#open-source`, `#legal`, `#reverse-engineering`, `#Bilibili`, `#copyright`
 
 ---
 
-<a id="item-9"></a>
-## [腾讯开源混元 Hy3 Preview MoE 模型，295B 参数](https://t.me/zaihuapd/42385) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [腾讯开源混元 Hy3 preview MoE 模型，295B 参数](https://t.me/zaihuapd/42385) ⭐️ 8.0/10
 
-腾讯正式发布并开源了混元 Hy3 Preview 语言模型，这是一个混合专家模型（MoE），总参数量达 295B，激活参数 21B，支持 256K 上下文长度。该模型针对复杂推理和智能体任务进行了优化，在 CodeBuddy 等产品中首 token 延迟降低了 54%。 此次发布标志着领先科技公司对开源 AI 社区的重大贡献，提供了一个平衡规模与效率的高性能 MoE 模型。显著的延迟降低和对智能体能力的关注，可能加速响应式、推理密集型应用的开发。 该模型采用混合专家架构，每个 token 仅激活 295B 参数中的 21B，从而实现高效推理。它支持可配置的推理级别（禁用、低、高），并包含混合思考、原生工具调用和多 token 预测（MTP）等功能，以实现低延迟服务。
+腾讯正式发布并开源混元 Hy3 preview 语言模型，这是一个混合专家（MoE）模型，总参数量达 295B，激活参数 21B，支持 256K 上下文长度。 此次发布标志着大型科技公司对开源 LLM 生态的重大贡献，在推理和智能体任务上显著提升，并将 CodeBuddy 等产品的首 token 延迟降低 54%，有望加速 AI 在企业及开发者工具中的应用。 该模型采用全新架构，模型设计与推理框架深度协同优化，实现了显著的推理性能提升。模型定位于复杂推理与智能体应用，在数学、科学和代码生成任务上表现突出。
 
 telegram · zaihuapd · 7月6日 10:09
 
-**背景**: 混合专家模型（MoE）是一种神经网络架构，它使用多个专门的子网络（专家）和一个门控机制，每个输入仅激活部分专家，从而使模型能够扩展参数量而不成比例地增加计算成本。首 token 延迟（TTFT）是衡量交互式 AI 应用中用户感知响应速度的关键指标，它测量从请求到达到输出第一个 token 的延迟。
+**背景**: 混合专家（MoE）是一种神经网络架构，每次输入只激活部分参数，从而在较低计算成本下实现更大的总模型规模。首 token 延迟是指模型生成第一个输出 token 之前的时间，是实时应用的关键指标。腾讯 CodeBuddy 是基于混元模型的 AI 代码助手。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://hy3ai.com/">Hy 3 Preview — Tencent Hunyuan 3 Open-Source Model</a></li>
-<li><a href="https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview">Hunyuan 3 Preview - SGLang Documentation</a></li>
-<li><a href="https://openrouter.ai/tencent/hy3-preview:free">Hy 3 preview - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://staging-codebuddy.tencent.com/">Tencent Cloud Code Assistant CodeBuddy – AI Code Editor</a></li>
+<li><a href="https://www.codebuddy.cn/">腾讯云代码助手 CodeBuddy - AI 时代的智能编程伙伴</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#LLM`, `#MoE`, `#open-source`, `#Tencent`
+**标签**: `#LLM`, `#MoE`, `#Open Source`, `#Tencent`, `#AI`
 
 ---
