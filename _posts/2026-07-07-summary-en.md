@@ -5,87 +5,66 @@ date: 2026-07-07
 lang: en
 ---
 
-> From 39 items, 16 important content pieces were selected
+> From 39 items, 17 important content pieces were selected
 
 ---
 
-1. [MIRA: 5B-Parameter Multiplayer World Model for Rocket League](#item-1) ⭐️ 9.0/10
-2. [China Plans $295B National Computing Network Over 5 Years](#item-2) ⭐️ 9.0/10
-3. [Anthropic Releases Claude Sonnet 5 with Stronger Agentic Abilities](#item-3) ⭐️ 9.0/10
-4. [OpenWrt One: Open Hardware Router Launches](#item-4) ⭐️ 8.0/10
-5. [GLM 5.2 and the Coming AI Margin Collapse](#item-5) ⭐️ 8.0/10
-6. [Anthropic Finds Global Workspace in Language Models](#item-6) ⭐️ 8.0/10
-7. [Learning to Code Still Worthwhile Despite AI Advances](#item-7) ⭐️ 8.0/10
-8. [Tencent Releases Hy3: 295B MoE Model, Apache 2.0](#item-8) ⭐️ 8.0/10
-9. [Nvidia GPU Debt Backstop Unleashes AI Project Trinity](#item-9) ⭐️ 8.0/10
-10. [Credit System Proposed to Fix ML Conference Reviews](#item-10) ⭐️ 8.0/10
-11. [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](#item-11) ⭐️ 8.0/10
-12. [TRACE: Open-Source Hierarchical Memory Boosts LLM Agent Recall](#item-12) ⭐️ 8.0/10
-13. [SpaceX Rocket Debris Causes Metal Pollution in Upper Atmosphere](#item-13) ⭐️ 8.0/10
-14. [China Plans Planetary Defense System Against Asteroids](#item-14) ⭐️ 8.0/10
+1. [MIRA: 5B-Parameter World Model for Multiplayer Rocket League](#item-1) ⭐️ 9.0/10
+2. [Anthropic Releases Claude Sonnet 5, Its Most Agentic Model Yet](#item-2) ⭐️ 9.0/10
+3. [16-Year-Old KVM Flaw Allows VM Escape on Intel and AMD](#item-3) ⭐️ 9.0/10
+4. [China Considers Restricting Exports of Top AI Models](#item-4) ⭐️ 9.0/10
+5. [OpenWrt One: Open Hardware Router Launches](#item-5) ⭐️ 8.0/10
+6. [GLM 5.2 and the Coming AI Margin Collapse](#item-6) ⭐️ 8.0/10
+7. [Microsoft Tracks Users via Windows Device ID](#item-7) ⭐️ 8.0/10
+8. [Ternlight: 7MB Embedding Model Runs in Browser via WASM](#item-8) ⭐️ 8.0/10
+9. [Anthropic Finds Global Workspace in Language Models](#item-9) ⭐️ 8.0/10
+10. [Tencent Releases Hy3: 295B MoE Model with Apache 2.0](#item-10) ⭐️ 8.0/10
+11. [Nvidia GPU Debt Backstop Fuels AI Infrastructure Boom](#item-11) ⭐️ 8.0/10
+12. [PhD Thesis on Differentiable Ray Tracing for Radio Propagation](#item-12) ⭐️ 8.0/10
+13. [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](#item-13) ⭐️ 8.0/10
+14. [TRACE: Open-Source Hierarchical Memory Boosts LLM Agent Recall](#item-14) ⭐️ 8.0/10
 15. [Elon Musk Dissolves xAI, Rebrands as SpaceXAI](#item-15) ⭐️ 8.0/10
-16. [New-api Fixes Billing Bug: Integer Overflow Causes Negative Charges](#item-16) ⭐️ 8.0/10
+16. [China Plans $295B National Computing Network with Domestic AI Chips](#item-16) ⭐️ 8.0/10
+17. [DeepSeek Develops Own AI Chip to Reduce Nvidia, Huawei Reliance](#item-17) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [MIRA: 5B-Parameter Multiplayer World Model for Rocket League](https://www.reddit.com/r/MachineLearning/comments/1upofuw/mira_multiplayer_interactive_world_models_trained/) ⭐️ 9.0/10
+## [MIRA: 5B-Parameter World Model for Multiplayer Rocket League](https://www.reddit.com/r/MachineLearning/comments/1upofuw/mira_multiplayer_interactive_world_models_trained/) ⭐️ 9.0/10
 
-MIRA is a 5-billion-parameter interactive world model trained on 10,000 hours of synthetic Rocket League data, capable of running a full 2v2 match at 20 FPS for four players on a single NVIDIA B200 GPU. The team released a playable demo, technical report, open-source code, and a 1,000-hour dataset of 4-player gameplay. This is the first multiplayer interactive world model for highly dynamic environments with complex physics, enabling real-time gameplay inside a learned simulation. It opens new possibilities for game AI, content generation, and robotics, and sets a benchmark for large-scale world models. The model uses a latent diffusion architecture with representation autoencoders to generate frames conditioned on all four players' actions. It runs at 20 FPS on a single B200 GPU, which is part of NVIDIA's Blackwell architecture and consumes up to 1000W per GPU.
+MIRA, a 5-billion-parameter world model trained on 10,000 hours of synthetic Rocket League data, has been released, enabling interactive 4-player simulation at 20 fps on a single NVIDIA B200 GPU. The project includes a playable online demo, a technical report, and a 1,000-hour dataset of 4-player gameplay. This release demonstrates that large-scale world models can run in real-time for multiplayer environments, potentially enabling new approaches to game AI, simulation, and reinforcement learning. It also sets a precedent for open-source, high-fidelity world models in complex interactive domains. The model uses a latent diffusion architecture to generate video frames conditioned on all four players' actions. It runs at 20 fps on a single B200 GPU, which is part of NVIDIA's Blackwell architecture with 208 billion transistors and FP4 Tensor Cores.
 
 reddit · r/MachineLearning · /u/MasterScrat · Jul 7, 07:59
 
-**Background**: World models are neural networks that learn to simulate an environment's dynamics from data, enabling agents to plan and reason internally. Previous world models were mostly single-player or limited to simple environments; MIRA extends this to multiplayer settings with complex physics like Rocket League, where multiple agents interact in real-time.
+**Background**: World models are generative neural networks that learn to simulate an environment's dynamics, enabling agents to plan and learn with fewer real interactions. They have been a key area in reinforcement learning research, but real-time simulation of complex multiplayer games has remained challenging. MIRA builds on this line of work by scaling up to 5B parameters and achieving interactive frame rates.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/mira-wm/mira">MIRA: Multiplayer Interactive World Models with ... - GitHub</a></li>
-<li><a href="https://arxiv.org/abs/2607.05352">[2607.05352] Multiplayer Interactive World Models with ...</a></li>
-<li><a href="https://blog.prompt20.com/posts/nvidia-ai-gpu-lineup/">NVIDIA AI GPU Lineup 2026: B 200 , H100, H200... — Prompt20 Blog</a></li>
+<li><a href="https://mira-wm.com/">MIRA</a></li>
+<li><a href="https://github.com/mira-wm/mira">mira -wm/ mira : Code for MIRA : Multiplayer Interactive World Models ...</a></li>
+<li><a href="https://www.nvidia.com/en-us/data-center/dgx-b200/">DGX B200: The Foundation for Your AI Factory | NVIDIA</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#world models`, `#multiplayer`, `#Rocket League`, `#deep learning`, `#interactive AI`
+**Tags**: `#world models`, `#reinforcement learning`, `#multiplayer`, `#Rocket League`, `#open-source`
 
 ---
 
 <a id="item-2"></a>
-## [China Plans $295B National Computing Network Over 5 Years](https://t.me/zaihuapd/42399) ⭐️ 9.0/10
+## [Anthropic Releases Claude Sonnet 5, Its Most Agentic Model Yet](https://t.me/zaihuapd/42404) ⭐️ 9.0/10
 
-China announced a plan to invest approximately 2 trillion yuan ($295 billion) over five years to build a nationwide interconnected data center network, with state-owned telecom operators managing major facilities. The plan prioritizes domestic AI chips from suppliers like Huawei, aiming for at least 80% local content to reduce reliance on US companies such as Nvidia and AMD. This massive investment signals China's strategic push to build sovereign AI infrastructure, reducing dependence on foreign technology and accelerating domestic AI adoption. It could reshape the global semiconductor and cloud computing landscape by creating a large, captive market for Chinese chipmakers. The network is part of Beijing's 'Six Networks' infrastructure plan, aiming to integrate fragmented regional computing resources into a unified national grid. Telecom operators like China Telecom and China Unicom have already launched 'token packages' that sell computing power like mobile data, paving the way for large-scale AI applications.
-
-telegram · zaihuapd · Jul 7, 04:45
-
-**Background**: China's national computing network concept, often compared to a 'computing power grid,' aims to allocate computing resources as efficiently as electricity. The plan builds on earlier initiatives like the 'East Data West Computing' project and the 2023 guidelines for a national integrated computing power network. Token-based pricing models for computing power are emerging, with operators offering monthly subscriptions for AI compute.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://tjdsj.tjcac.gov.cn/tjsg/hyzx/202507/t20250708_6975571.html">tjdsj.tjcac.gov.cn/tjsg/hyzx/202507/t20250708_6975571.html</a></li>
-<li><a href="https://m.ithome.com/tags/算力+Token+套餐">算 力 Token 套 餐 _ 算 力 Token 套 餐 最新动态_IT之家</a></li>
-<li><a href="https://static.cdsb.com/micropub/Articles/202605/8c5c1f14b83287b213bf34cead5f7b42.html">AI 算 力 时代到来？ 三大运营商 Token ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#China`, `#AI infrastructure`, `#computing network`, `#semiconductors`, `#policy`
-
----
-
-<a id="item-3"></a>
-## [Anthropic Releases Claude Sonnet 5 with Stronger Agentic Abilities](https://t.me/zaihuapd/42404) ⭐️ 9.0/10
-
-Anthropic has released Claude Sonnet 5, claiming it is the most capable Sonnet model for agentic tasks, with improvements in reasoning, tool use, coding, and knowledge work. It is available immediately across all plans and becomes the default model for Free and Pro tiers. Claude Sonnet 5 offers near-Opus 4.8 performance at a lower price, making advanced agentic capabilities more accessible to developers and enterprises. This release strengthens Anthropic's competitive position in the AI agent market against models like GPT-5.5. Claude Sonnet 5 is priced at $2 per million input tokens and a limited-time output token price until August 31, 2026. It also demonstrates lower rates of undesirable behaviors such as hallucination and sycophancy compared to Sonnet 4.6, though not yet at the level of Opus 4.8 or Claude Mythos Preview.
+Anthropic has released Claude Sonnet 5, which it claims is the most agentic Sonnet model to date, capable of planning, using browsers and terminals, and operating autonomously. It is now the default model for Free and Pro plans, with pricing at $2 per million input tokens and competitive output rates until August 31, 2026. This release marks a shift in the AI race from chat to agents, as Sonnet 5 offers near-Opus-level performance at a lower price, making advanced agentic capabilities more accessible. It could accelerate adoption of AI agents in coding, research, and automation tasks. Sonnet 5 outperforms Sonnet 4.6 in reasoning, tool use, coding, and knowledge work, and approaches Opus 4.8 in capability. It also shows lower rates of undesirable behaviors like hallucination and sycophancy, and is safer in agentic contexts, though not as robust as Opus 4.8 or Claude Mythos Preview.
 
 telegram · zaihuapd · Jul 7, 09:02
 
-**Background**: Anthropic's Claude model family includes Sonnet (mid-range) and Opus (flagship) tiers. Agentic capabilities refer to a model's ability to autonomously plan, use tools like browsers and terminals, and execute multi-step tasks. Sonnet 5 is designed to be a cost-effective option for running AI agents.
+**Background**: Anthropic's Claude model family includes Haiku, Sonnet, and Opus tiers, with Opus being the flagship. Sonnet models are designed as a balance of capability and cost. Agentic AI refers to systems that can autonomously plan and execute multi-step tasks using tools like browsers and code interpreters, moving beyond simple chat interactions.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.anthropic.com/news/claude-sonnet-5">Introducing Claude Sonnet 5 \ Anthropic</a></li>
 <li><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">Anthropic launches Claude Sonnet 5 as a cheaper way to run agents | TechCrunch</a></li>
-<li><a href="https://knightli.com/en/2026/07/02/claude-sonnet-5-agentic-model-release/">Claude Sonnet 5: Stronger Agent Capabilities at a More Usable Price</a></li>
+<li><a href="https://www.techradar.com/ai-platforms-assistants/claude/claude-sonnet-5-is-here-and-the-most-agentic-sonnet-model-yet-shows-that-the-ai-war-is-shifting-from-chat-to-agents">Claude Sonnet 5 is here, and the 'most agentic Sonnet model yet' shows that the AI war is shifting from chat to agents | TechRadar</a></li>
 
 </ul>
 </details>
@@ -94,289 +73,347 @@ telegram · zaihuapd · Jul 7, 09:02
 
 ---
 
-<a id="item-4"></a>
-## [OpenWrt One: Open Hardware Router Launches](https://openwrt.org/toh/openwrt/one) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [16-Year-Old KVM Flaw Allows VM Escape on Intel and AMD](https://github.com/V4bel/Januscape) ⭐️ 9.0/10
 
-OpenWrt has released the OpenWrt One, a fully open hardware router powered by MediaTek MT7981B SoC, supporting dual-band Wi-Fi 6, PoE, and dual Ethernet ports. This is the first router built with right-to-repair and software freedom in mind, giving users full control over hardware and firmware, and reducing e-waste by extending device lifespan. The OpenWrt One includes a mikroBUS expansion header for add-on modules, and the community is already working on a Wi-Fi 7 version (OpenWrt Two).
+Security researchers disclosed Januscape (CVE-2026-53359), the first KVM/x86 VM escape vulnerability that works on both Intel and AMD platforms, caused by a use-after-free bug in the shadow MMU. The flaw has been present in the Linux kernel for 16 years, and a proof-of-concept exploit has been released. This vulnerability directly threatens multi-tenant cloud isolation, as a malicious guest can escape to the host and gain root privileges. It affects all KVM-based cloud providers and enterprise virtualization environments using Linux kernels from 2010 to June 2026. The bug is a use-after-free in the shadow page table tracking structures, allowing guest-side actions to corrupt host kernel memory. The vulnerability was used as a 0-day in Google's kvmCTF competition, and on RHEL-like distributions, local unprivileged users can also exploit it for privilege escalation to root.
 
-hackernews · peter_d_sherman · Jul 6, 18:23 · [Discussion](https://news.ycombinator.com/item?id=48808482)
+telegram · zaihuapd · Jul 7, 10:14
 
-**Background**: OpenWrt is an open-source firmware project that runs on many routers, offering advanced features and long-term support beyond manufacturer updates. The OpenWrt One is the first official hardware reference design from the project itself.
+**Background**: KVM (Kernel-based Virtual Machine) is a Linux kernel module that turns the host into a hypervisor. The shadow MMU is used when hardware nested paging (EPT/NPT) is unavailable; it maintains shadow page tables that map guest virtual addresses to host physical addresses. A use-after-free occurs when the kernel frees a memory object while a pointer to it remains, leading to potential memory corruption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://1023jack.com/general/openwrt-one-open-hardware-router/">OpenWrt One – Open Hardware Router - 1023 Jack</a></li>
-<li><a href="https://linuxiac.com/openwrt-24-10-brings-kernel-6-6-and-initial-wifi-7-support/">OpenWrt 24.10 Brings Kernel 6.6 and Initial WiFi 7 Support</a></li>
+<li><a href="https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html">16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on ...</a></li>
+<li><a href="https://github.com/V4bel/Januscape">GitHub - V4bel/Januscape</a></li>
+<li><a href="https://darkwebinformer.com/a-long-lived-kvm-bug-resurfaces-shadow-paging-use-after-free-in-the-linux-kernel-cve-2026-53359/">A Long-Lived KVM Bug Resurfaces: Shadow Paging Use-After-Free in the Linux Kernel (CVE-2026-53359)</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members express strong interest, with some already purchasing the device. Users appreciate the open hardware approach and the planned Wi-Fi 7 upgrade, though some note that OpenWrt installation and documentation can be challenging.
+**Discussion**: The community is actively discussing the severity and implications, with many noting that this is the first cross-architecture KVM escape. Some express concern about the lack of a patch at disclosure time, while others praise the detailed PoC and analysis from the researcher.
 
-**Tags**: `#OpenWrt`, `#open hardware`, `#router`, `#networking`, `#Wi-Fi`
+**Tags**: `#KVM`, `#VM escape`, `#CVE-2026-53359`, `#Linux kernel`, `#security`
+
+---
+
+<a id="item-4"></a>
+## [China Considers Restricting Exports of Top AI Models](https://www.reuters.com/world/beijing-is-looking-curbing-overseas-access-chinas-top-ai-models-sources-say-2026-07-07/) ⭐️ 9.0/10
+
+China's Ministry of Commerce has held meetings with companies like Alibaba, ByteDance, and Zhipu AI to discuss restricting overseas access to the most advanced domestic AI models, including unreleased ones, and limiting foreign investment in AI startups. This policy could significantly alter global access to Chinese AI technology, potentially intensifying the technology rivalry between China and the West and affecting the competitive landscape of the AI industry worldwide. The restrictions may apply only to future models, and the final decision has not been made. The discussions also include classifying AI core technology leaks as a national security crime.
+
+telegram · zaihuapd · Jul 7, 11:42
+
+**Background**: China has been rapidly advancing in AI, with companies like Zhipu AI (founded by Tsinghua University alumni) developing large language models. The government is increasingly concerned about technology leakage and national security, leading to potential export controls similar to those imposed by the US on advanced chips.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://zh.wikipedia.org/zh-hans/智谱">智谱 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://www.datalearner.com/ai-organizations/zhipu-ai">智谱AI介绍及其成果简介 | DataLearnerAI</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#policy`, `#China`, `#technology export`, `#national security`
 
 ---
 
 <a id="item-5"></a>
-## [GLM 5.2 and the Coming AI Margin Collapse](https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/) ⭐️ 8.0/10
+## [OpenWrt One: Open Hardware Router Launches](https://openwrt.org/toh/openwrt/one) ⭐️ 8.0/10
 
-GLM 5.2, an open-weights model, has been released as a strong competitor to proprietary frontier models like GPT and Opus for agentic tasks, at roughly 15-20% of the cost. This has sparked analysis that AI inference margins for frontier labs are about to collapse. If open-source models like GLM 5.2 commoditize AI inference, frontier labs like OpenAI and Anthropic may face severe margin compression, reshaping the economics of the AI industry. This could accelerate adoption but also challenge the business models of current market leaders. GLM 5.2 features a 1M-token context window and substantial improvements in long-horizon tasks over its predecessor GLM 5.1. The article argues that the shift from training costs to inference costs makes open-weight models a disruptive force.
+The OpenWrt project has announced the OpenWrt One, the first fully open-source hardware router designed and supported by the OpenWrt community, now available for early adopters. This provides a reliable, community-backed alternative to commercial routers, ensuring long-term support and transparency. It empowers users to take full control of their network hardware and software. The OpenWrt One ships with open schematics, bootloader, and hardware design files under open licenses, allowing inspection, modification, and repair. It is designed specifically to run OpenWrt firmware.
 
-hackernews · martinald · Jul 6, 20:14 · [Discussion](https://news.ycombinator.com/item?id=48809877)
+hackernews · peter_d_sherman · Jul 6, 18:23 · [Discussion](https://news.ycombinator.com/item?id=48808482)
 
-**Background**: Frontier AI labs like OpenAI and Anthropic currently charge high prices for API access to their models, partly due to high training costs and market positioning. Open-source or open-weights models, which can be run at lower cost, threaten to undercut these prices. GLM 5.2 is one such model that demonstrates competitive performance at a fraction of the cost.
+**Background**: OpenWrt is a popular open-source Linux-based firmware for routers, extending device life and adding features beyond manufacturer support. The OpenWrt One is the project's first official hardware reference design, aiming to provide a stable, well-supported platform.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/">GLM 5.2 and the coming AI margin collapse (part 1)</a></li>
-<li><a href="https://huggingface.co/zai-org/GLM-5.2">zai-org/GLM-5.2 · Hugging Face</a></li>
-<li><a href="https://openlm.ai/glm-5.2/">GLM-5.2 - openlm.ai</a></li>
+<li><a href="https://eucloudservers.com/networking-performance/openwrt-one-open-hardware-router/">OpenWrt One – Open Hardware Router - EU Cloud Servers</a></li>
+<li><a href="https://www.banandre.com/blog/openwrt-one-open-hardware-router-architecture">The Router That Refuses to Phone Home: Inside the... - Banandre</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters are divided: some argue raw cost doesn't guarantee market dominance, citing examples like cloud computing and office suites, while others believe profit-seeking will drive prices down due to low marginal costs. A user noted that for many tasks, smaller models like Gemma4 or Qwen3.6 are sufficient, reducing reliance on expensive frontier models.
+**Discussion**: Community members express excitement, with one user noting they just received their OpenWrt One due to frustration with commercial router quality. Others discuss alternatives like Turris and OPNSense, and mention an upcoming OpenWrt Two with Wi-Fi 7.
 
-**Tags**: `#AI`, `#economics`, `#open-source`, `#LLMs`, `#market dynamics`
+**Tags**: `#OpenWrt`, `#open hardware`, `#router`, `#networking`, `#community`
 
 ---
 
 <a id="item-6"></a>
+## [GLM 5.2 and the Coming AI Margin Collapse](https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/) ⭐️ 8.0/10
+
+An analysis argues that open-weight models like GLM 5.2 will drive AI margins to zero, challenging the sustainability of proprietary AI businesses. This debate highlights the potential commoditization of AI, which could reshape the economics of the entire AI industry and affect investors, startups, and cloud providers. GLM 5.2 is a flagship open-weight model with a 1M-token context, released by z.ai in June 2026, showing strong coding and long-horizon task capabilities.
+
+hackernews · martinald · Jul 6, 20:14 · [Discussion](https://news.ycombinator.com/item?id=48809877)
+
+**Background**: Open-weight models allow anyone to download and run the model, reducing reliance on proprietary APIs. As training and inference costs fall while capabilities plateau, the argument goes that margins for AI services will collapse, similar to what happened with cloud computing.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://openlm.ai/glm-5.2/">GLM-5.2 - openlm.ai</a></li>
+<li><a href="https://z.ai/blog/glm-5.2">GLM-5.2: Built for Long-Horizon Tasks</a></li>
+<li><a href="https://www.richardewing.io/glossary/ai-margin-collapse-point">What is AI Margin Collapse Point? | Richard Ewing</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters are divided: some argue that raw costs don't determine market dominance (citing examples like cloud, office suites, and OS), while others share personal experiences of AI being extremely cheap and effective for their work. There is also discussion about potential Chinese regulations restricting overseas access to open-weight models.
+
+**Tags**: `#AI`, `#economics`, `#open-source`, `#regulation`, `#GLM`
+
+---
+
+<a id="item-7"></a>
+## [Microsoft Tracks Users via Windows Device ID](https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device) ⭐️ 8.0/10
+
+Microsoft used a Global Device Identifier (GDID) to track a hacker, revealing that the company can link a Windows installation to network activity and share that data with law enforcement. This raises significant privacy concerns because GDID is an OS-level persistent identifier that Microsoft can correlate with telemetry and browsing activity, potentially enabling surveillance without user consent. The GDID is a 64-bit Passport Unique ID assigned when a Windows installation registers with a Microsoft Account, stored in the device graph as "g:". It was used to link a suspect's computer to ngrok signup pages at a specific time.
+
+hackernews · ifh-hn · Jul 7, 08:54 · [Discussion](https://news.ycombinator.com/item?id=48815196)
+
+**Background**: Modern operating systems often include unique device identifiers for telemetry and licensing. However, the boundary between a local identifier and a remote tracking tool depends on whether the OS vendor can correlate it with network activity. Microsoft's GDID appears to be such a cross-boundary identifier, as it was used in a criminal investigation.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device">A Hacker's Arrest Reveals Microsoft Can Track Users Via a Windows Device ID | PCMag</a></li>
+<li><a href="https://github.com/SmtimesIWndr/gdid-reversal">GitHub - SmtimesIWndr/gdid-reversal · GitHub</a></li>
+<li><a href="https://www.tomshardware.com/software/windows-11-identifier-used-to-track-scattered-spider-perp-after-microsoft-shared-info-with-fbi-19-year-old-us-estonian-hacker-arrested-over-alleged-ties-to-infamous-extortion-group">Windows 11 identifier code used to track Scattered Spider perp after Microsoft shared info with FBI — 19-year-old US-Estonian hacker arrested over alleged ties to infamous extortion group | Tom's Hardware</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters noted that the existence of a machine identifier is not surprising, but the key issue is the boundary between local and remote tracking. Some expressed distrust in Microsoft's privacy practices, while others speculated that the tracking may be part of Microsoft Defender or MAPS (formerly SpyNet).
+
+**Tags**: `#privacy`, `#Microsoft`, `#Windows`, `#tracking`, `#security`
+
+---
+
+<a id="item-8"></a>
+## [Ternlight: 7MB Embedding Model Runs in Browser via WASM](https://ternlight-demo.vercel.app/) ⭐️ 8.0/10
+
+Ternlight is a 7MB sentence embedding model distilled from MiniLM with ternary quantization, running entirely in browser via Rust/WASM SIMD for client-side semantic similarity search. This enables fully client-side semantic search without server dependencies, reducing latency and privacy concerns. It opens up new possibilities for browser-based AI applications like offline document search and intelligent autocomplete. The model outputs 384-dimensional embeddings and uses ternary quantization (weights constrained to -1, 0, +1) to achieve a 7MB footprint. The inference engine is written in Rust and compiled to WebAssembly with SIMD instructions for performance.
+
+hackernews · soycaporal · Jul 6, 23:06 · [Discussion](https://news.ycombinator.com/item?id=48811644)
+
+**Background**: Sentence embedding models convert text into fixed-size vectors that capture semantic meaning, enabling similarity search via cosine distance. Ternary quantization reduces model size by representing weights with only three values, drastically shrinking memory footprint while preserving accuracy. WebAssembly SIMD allows parallel computation in the browser, making real-time inference feasible.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/abs/2303.01505">[2303.01505] Ternary Quantization: A Survey</a></li>
+<li><a href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2">sentence-transformers/all-MiniLM-L6-v2 · Hugging Face</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/SIMD">WebAssembly SIMD-specific instructions - WebAssembly | MDN</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters praised the project as innovative and useful for client-side semantic search, with suggestions for integrating with IndexedDB/SQLite for full offline search. Some noted demo limitations, such as unexpected fan noise on page load and imperfect similarity results for certain queries.
+
+**Tags**: `#embedding models`, `#WASM`, `#quantization`, `#browser ML`, `#semantic search`
+
+---
+
+<a id="item-9"></a>
 ## [Anthropic Finds Global Workspace in Language Models](https://www.anthropic.com/research/global-workspace) ⭐️ 8.0/10
 
-Anthropic's research identifies a 'global workspace' in language models, where certain layers integrate information across the model, analogous to a theory of conscious access in neuroscience. This finding advances interpretability by revealing how models process and integrate information, potentially leading to safer and more controllable AI systems. The research tests five functional properties of a global workspace in language models, inspired by the global workspace theory in neuroscience, and provides stylized experiments to demonstrate these properties.
+Anthropic published research on July 6, 2026, proposing that language models contain a global workspace—a small, sparse subspace of activations called J-space—that governs both verbal report and silent reasoning. This finding bridges AI interpretability and neuroscience, suggesting that language models may share functional properties with conscious access in humans, potentially leading to better model understanding and control. The J-space is identified using a Jacobian lens and exhibits five functional properties of a global workspace: availability, limited capacity, flexible routing, ignition, and broadcast.
 
 hackernews · in-silico · Jul 6, 17:44 · [Discussion](https://news.ycombinator.com/item?id=48808002)
 
-**Background**: Global workspace theory is a prominent neuroscience theory that explains conscious access by proposing a central workspace where information is globally available to many cognitive processes. Anthropic's interpretability team aims to understand how large language models work internally, using such theories as a comparison point to ground their investigations.
+**Background**: Global workspace theory, originally from neuroscience, posits that conscious contents correspond to information in a global workspace accessible to many brain modules. Anthropic's work tests whether language models exhibit similar properties, using interpretability techniques to probe internal representations.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.anthropic.com/research/global-workspace">A global workspace in language models \ Anthropic</a></li>
 <li><a href="https://transformer-circuits.pub/2026/workspace/index.html">Verbalizable Representations Form a Global Workspace in ...</a></li>
-<li><a href="https://www.lesswrong.com/posts/3PaLrzxagpbnNtPLT/a-global-workspace-in-language-models">A global workspace in language models — LessWrong</a></li>
+<li><a href="https://unfinishablemap.org/research/anthropic-global-workspace-j-space-2026-07-07/">Research Notes - Anthropic's Global Workspace / J-Space in ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight related experiments, such as improving math ability by duplicating layers, and discuss the implications of the global workspace for model interpretability. Some commenters caution against over-interpreting comparisons to human consciousness, preferring more direct technical explanations.
+**Discussion**: The community debated whether the J-space truly mirrors conscious awareness, with some commenters noting similarities to the Sapir-Whorf hypothesis and others calling for more direct claims. A user also recalled prior work on improving math ability by duplicating relevant layers, suggesting broader implications for model architecture.
 
-**Tags**: `#AI interpretability`, `#language models`, `#machine learning research`, `#Anthropic`
-
----
-
-<a id="item-7"></a>
-## [Learning to Code Still Worthwhile Despite AI Advances](https://stevekrouse.com/learn-to-code) ⭐️ 8.0/10
-
-A reflective essay by Steve Krouse argues that learning to code remains valuable despite advances in large language models (LLMs), sparking a high-engagement debate on Hacker News with 198 points and 204 comments. This debate is significant because it addresses a core concern for developers, educators, and career-changers: whether investing time in learning to code is still a wise decision in an era where LLMs can generate code. The discussion reflects broader industry anxiety about the future of programming jobs and skills. The essay compares coding to creative expression like literature or music, but commenters counter that most coding is more like plumbing, and that LLMs are good at generating boring, banal code. Some commenters warn that coding skills may atrophy over the next 10-20 years, leading to codebases full of low-quality LLM-generated code.
-
-hackernews · stevekrouse · Jul 6, 20:59 · [Discussion](https://news.ycombinator.com/item?id=48810439)
-
-**Background**: Large language models (LLMs) like GPT-4 have become increasingly capable of generating functional code from natural language prompts. This has led to debates about whether learning to code is still necessary for new entrants to the field, and whether experienced developers will see their skills devalued.
-
-**Discussion**: Community sentiment is mixed: some commenters argue that learning to code is still worthwhile for understanding and debugging LLM output, while others believe the skill is in atrophy and will become less valuable over time. A senior developer compares learning to code to 'making a living as a poet,' suggesting it's enjoyable but not a reliable career path.
-
-**Tags**: `#AI`, `#programming`, `#career`, `#LLM`, `#education`
-
----
-
-<a id="item-8"></a>
-## [Tencent Releases Hy3: 295B MoE Model, Apache 2.0](https://simonwillison.net/2026/Jul/6/hy3/#atom-everything) ⭐️ 8.0/10
-
-Tencent has released Hy3, a 295B-parameter Mixture-of-Experts model with 21B active parameters, under the Apache 2.0 license. It outperforms models 2-5x its size and supports a 256K context length. This release marks a significant open-source contribution from a major Chinese tech company, challenging the dominance of larger proprietary models. It could accelerate AI adoption in products and research by providing a high-performance, permissively licensed model. The full model is 598GB on Hugging Face, with an FP8 quantized version at 300GB. It is available for free on OpenRouter until July 21st, 2026.
-
-rss · Simon Willison · Jul 6, 23:57
-
-**Background**: Mixture-of-Experts (MoE) models use multiple specialized sub-networks (experts) and activate only a subset per input, enabling high capacity with lower computational cost. FP8 quantization reduces model memory by half with minimal accuracy loss, making deployment more practical.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://medium.com/ramses-engineering/not-one-brain-but-many-how-mixture-of-experts-moe-makes-ai-smarter-and-faster-568f41220852">Not One Brain, But Many: How Mixture of Experts ( MoE )... | Medium</a></li>
-<li><a href="https://docs.vllm.ai/en/v0.6.4/_sources/quantization/fp8.rst">docs.vllm.ai/en/v0.6.4/_sources/ quantization / fp 8 .rst</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#open-source`, `#LLM`, `#MoE`, `#Tencent`
-
----
-
-<a id="item-9"></a>
-## [Nvidia GPU Debt Backstop Unleashes AI Project Trinity](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) ⭐️ 8.0/10
-
-Nvidia has introduced a GPU backstop financing model where it guarantees residual value of GPUs, enabling neoclouds to secure debt financing for AI infrastructure, with projections of over $7 trillion in AI debt by 2029. This model broadens access to compute by making GPU clusters bankable, potentially accelerating AI infrastructure buildout and reshaping capital markets for AI, but also raises concerns about systemic debt risk. Nvidia collects standard product revenue plus a usage-linked percentage of cloud revenue, and backstops idle capacity to underwrite asset value. The trinity of capital, offtake agreements, and datacenters is essential for neocloud growth.
-
-rss · Semianalysis · Jul 6, 21:53
-
-**Background**: Neoclouds are GPU-first cloud providers offering lightweight virtualization and simple pricing. Offtake agreements are contracts where buyers commit to purchase a defined output, making projects financeable. Nvidia's backstop acts as a central bank for AI liquidity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes">Nvidia GPU Debt Backstop Unleashes the AI Project Trinity: Capital, Offtake and Datacenters</a></li>
-<li><a href="https://mlq.ai/news/nvidia-launches-gpu-backstop-financing-model-takes-cut-of-cloud-revenue-from-neocloud-partners/">Nvidia Launches GPU Backstop Financing Model, Takes Cut of Cloud Revenue From Neocloud Partners | MLQ News</a></li>
-<li><a href="https://memeburn.com/nvidia-ai-revenue-sharing-model-with-cloud-partners-explained/">Nvidia AI Revenue Sharing Model With Cloud Partners Explained - Memeburn</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Nvidia`, `#AI Infrastructure`, `#Debt Financing`, `#Neoclouds`, `#GPU Economics`
+**Tags**: `#AI research`, `#language models`, `#interpretability`, `#consciousness`, `#Anthropic`
 
 ---
 
 <a id="item-10"></a>
-## [Credit System Proposed to Fix ML Conference Reviews](https://www.reddit.com/r/MachineLearning/comments/1upjftu/icml_position_track_want_better_ml_reviews_stop/) ⭐️ 8.0/10
+## [Tencent Releases Hy3: 295B MoE Model with Apache 2.0](https://simonwillison.net/2026/Jul/6/hy3/#atom-everything) ⭐️ 8.0/10
 
-A position paper at ICML proposes replacing current review incentives with a credit system where reviewers earn points for good behavior and spend them on perks like free registration or requesting extra reviewers. This addresses a long-standing problem in ML conferences where reviewers lack accountability and good behavior goes unrewarded, potentially improving review quality and community trust. The system awards +1 for reviewing and +3 for outstanding reviews; points can be spent on perks like free registration or requesting an additional reviewer. It also supports refundable submission fees and mobilizing non-author reviewers.
+Tencent has released Hy3, a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, under the permissive Apache 2.0 license. The model supports a 256K context length and is available on Hugging Face and OpenRouter (free until July 21st). Hy3 outperforms similar-size models and rivals flagship open-source models with 2-5x its parameters, making it a significant addition to the open-source AI ecosystem. Its Apache 2.0 license encourages broad adoption and commercial use, potentially accelerating AI development in China and globally. The full-sized model is 598GB on Hugging Face, with an FP8 quantized version at 300GB. The model includes a 3.8B MTP (Multi-Token Prediction) layer, which enhances prediction efficiency.
 
-reddit · r/MachineLearning · /u/choHZ · Jul 7, 03:32
+rss · Simon Willison · Jul 6, 23:57
 
-**Background**: ML conference peer review relies on volunteer or conscripted reviewers, often leading to low engagement and inconsistent quality. Current attempts like reviewer guidelines or desk rejections have limited effect. A credit system introduces tangible incentives to align reviewer behavior with community goals.
+**Background**: Mixture-of-Experts (MoE) is a model architecture that uses multiple specialized sub-models (experts) and a gating mechanism to activate only a subset of parameters per input, improving efficiency. Multi-Token Prediction (MTP) is a technique where the model predicts multiple future tokens simultaneously, often used to enhance training and inference speed. FP8 quantization reduces model size and memory usage by representing weights and activations in 8-bit floating-point format.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://icml.cc/virtual/2026/poster/67135">ICML Poster Position: Want Better ML Reviews? Stop Asking ...</a></li>
-<li><a href="https://arxiv.org/html/2506.19882">Position: Machine Learning Conferences Should Establish...</a></li>
-<li><a href="https://github.com/henryzhongsc/position__credit_ml_review/tree/main">henryzhongsc/position__credit_ml_review - GitHub</a></li>
+<li><a href="https://medium.com/@cindyxiang232/moe-is-not-agentic-ai-clearing-up-a-common-confusion-in-modern-ai-b38b326792e3">MoE Is Not Agentic AI: Clearing Up a Common Confusion in... | Medium</a></li>
+<li><a href="https://deepwiki.com/deepseek-ai/DeepSeek-V3/4.4-multi-token-prediction-(mtp)">Multi-Token Prediction ( MTP ) | deepseek-ai/DeepSeek-V3 | DeepWiki</a></li>
+<li><a href="https://grokipedia.com/page/FP8_Quantization">FP8 Quantization</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion is substantive, with many commenters supporting the idea but raising concerns about implementation complexity, potential gaming of the system, and the need for careful design to avoid unintended consequences.
-
-**Tags**: `#ML conferences`, `#peer review`, `#incentive systems`, `#community governance`
+**Tags**: `#AI`, `#open-source`, `#large language model`, `#MoE`, `#Tencent`
 
 ---
 
 <a id="item-11"></a>
-## [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](https://www.reddit.com/r/MachineLearning/comments/1up4cjh/lingbotvision_masked_boundary_modeling_for/) ⭐️ 8.0/10
+## [Nvidia GPU Debt Backstop Fuels AI Infrastructure Boom](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) ⭐️ 8.0/10
 
-LingBot-Vision introduces masked boundary modeling, where a teacher network generates boundary masks to force the student to reconstruct hard regions, achieving state-of-the-art NYUv2 depth estimation with 0.296 RMSE at 1.1B parameters, outperforming DINOv3-7B's 0.309. This work advances self-supervised learning for dense prediction tasks like depth estimation and segmentation, showing that targeted masking of boundary regions can surpass random masking approaches, and it achieves competitive results with significantly fewer training images (161M vs DINOv3's 500M+). The boundary targets are derived from the teacher itself without external labels or edge detectors, and boundary fields are cast as per-pixel categorical distributions to prevent collapse via centering/sharpening. Decoded segments pass an a-contrario validation test before supervising the student.
+Nvidia is using GPU debt backstops and financing mechanisms to enable neoclouds and other AI compute providers to borrow massively, with projected AI-related debt exceeding $7 trillion by 2029. This strategy broadens access to AI compute, accelerates the buildout of AI data centers, and solidifies Nvidia's central role in the AI ecosystem, but also raises systemic financial risks if AI demand falters. The 'Trinity' refers to the combination of capital, offtake agreements, and datacenters that neoclouds must secure; Nvidia's backstop effectively guarantees GPU value, enabling lenders to provide debt financing against GPU collateral.
 
-reddit · r/MachineLearning · /u/StillThese3747 · Jul 6, 17:37
+rss · Semianalysis · Jul 6, 21:53
 
-**Background**: Masked image modeling (MIM) is a self-supervised learning paradigm where a model predicts missing parts of an image. DINOv3 is a recent strong MIM method that uses self-distillation and random masking. LingBot-Vision improves upon this by masking boundary regions that are harder to reconstruct, forcing the student to learn better representations.
+**Background**: Neoclouds are specialized cloud providers focused exclusively on GPU-as-a-Service for AI workloads, built from the ground up for high-performance computing. They require massive upfront capital to purchase GPUs and build datacenters, often relying on debt financing. Nvidia's backstop reduces lender risk by promising to buy back or repossess GPUs if borrowers default, making loans more accessible.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.emergentmind.com/topics/continuous-boundary-stitching">Continuous Boundary Stitching</a></li>
-<li><a href="https://pdfs.semanticscholar.org/6634/4ec05dac8f09408ab08feab3fd049c6d6c56.pdf">CLOUD DETECTION BY INTER-BAND PARALLAX AND A-CONTRARIO VALIDATION</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean squared error - Wikipedia</a></li>
+<li><a href="https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes">Nvidia GPU Debt Backstop Unleashes the AI Project Trinity ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neocloud">Neocloud</a></li>
+<li><a href="https://www.edwardconard.com/macro-roundup/paul-kedrosky-notes-that-the-flare-up-around-openais-proposed-debt-backstop-suggests-how-fragile-the-capital-structure-behind-this-compute-intensive-ecosystem-has-become/?view=detail">Four Things: OpenAI's Backstop , CoreWeave CDS, Oregon, and...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion is substantive, with users noting that the 0.013 RMSE delta is within probe hyperparameter variability and that comparisons against hard-masking baselines (ADIOS/AttMask) are missing. The author acknowledges these concerns and notes that checkpoints are public for verification.
-
-**Tags**: `#self-supervised learning`, `#computer vision`, `#masked image modeling`, `#depth estimation`, `#segmentation`
+**Tags**: `#Nvidia`, `#AI infrastructure`, `#debt financing`, `#neocloud`, `#datacenters`
 
 ---
 
 <a id="item-12"></a>
-## [TRACE: Open-Source Hierarchical Memory Boosts LLM Agent Recall](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
+## [PhD Thesis on Differentiable Ray Tracing for Radio Propagation](https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/) ⭐️ 8.0/10
 
-TRACE, a new open-source hierarchical memory system for LLM agents, organizes conversation history into a topic tree and achieves 82.5% F1 on MemoryAgentBench's EventQA using the open-weights gpt-oss-20B model, far surpassing Mem0 (37.5%) and MemGPT (26.2%). This demonstrates that hierarchical memory structures can dramatically improve long-term recall for LLM agents, potentially enabling more coherent and context-aware autonomous agents. The use of open-weights models also lowers the barrier for researchers and developers to build advanced memory systems. TRACE is available as a pip package (pip install trace-memory) and its full JSON logs are open-sourced on GitHub. The author notes the comparison is not apples-to-apples because TRACE used gpt-oss-20B while baselines used GPT-4o-mini, but attempts to run Mem0 on gpt-oss failed due to JSON parsing issues.
+A PhD thesis titled 'Differentiable Ray Tracing for Radio Propagation Modeling' has been published, presenting a self-contained textbook that integrates differentiable ray tracing with automatic differentiation using JAX for wireless communications. This work bridges differentiable simulation and radio propagation, enabling gradient-based optimization and ML training for inverse problems in next-generation wireless design, which is a hot topic in 5G/6G research. The thesis is split into three parts: physics fundamentals, algorithmic core with GPU-accelerated path tracing and discontinuity smoothing, and practical applications like channel modeling and material calibration. The open-source library DiffeRT2d is built on JAX.
 
-reddit · r/MachineLearning · /u/PsychologicalDot7749 · Jul 6, 14:35
+reddit · r/MachineLearning · /u/jeertmans · Jul 7, 13:45
 
-**Background**: LLM agents often struggle with long-term memory, relying on flat retrieval-augmented generation (RAG) that loses contextual structure. Hierarchical memory systems like TRACE organize information into topic trees with summaries, mimicking human memory organization. MemoryAgentBench is a benchmark suite for evaluating agent memory, with EventQA testing accurate event retrieval.
+**Background**: Radio propagation models predict how radio waves travel through environments, essential for wireless network planning. Differentiable ray tracing allows computing gradients through simulations, enabling optimization and machine learning integration. JAX is a library for high-performance numerical computing with automatic differentiation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2506.07398">G- Memory : Tracing Hierarchical Memory for Multi- Agent Systems</a></li>
-<li><a href="https://github.com/HUST-AI-HYZ/MemoryAgentBench">️ MemoryAgentBench: Evaluating Memory in LLM Agents via ... - GitHub</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-oss/">Introducing gpt - oss | OpenAI</a></li>
+<li><a href="https://github.com/jeertmans/DiffeRT2d">GitHub - jeertmans/DiffeRT2d: 2D Toolbox for Differentiable ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Radio_propagation">Radio propagation - Wikipedia</a></li>
+<li><a href="https://docs.jax.dev/en/latest/automatic-differentiation.html">Automatic differentiation — JAX documentation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical memory`
+**Discussion**: The Reddit community responded positively, with the author actively engaging in Q&A about differentiable simulation and ray tracing. Users appreciated the textbook-style presentation and the use of JAX for non-ML applications.
+
+**Tags**: `#differentiable ray tracing`, `#radio propagation`, `#automatic differentiation`, `#wireless communications`, `#JAX`
 
 ---
 
 <a id="item-13"></a>
-## [SpaceX Rocket Debris Causes Metal Pollution in Upper Atmosphere](https://t.me/zaihuapd/42387) ⭐️ 8.0/10
+## [LingBot-Vision: Masked Boundary Modeling for Self-Supervised Pretraining](https://www.reddit.com/r/MachineLearning/comments/1up4cjh/lingbotvision_masked_boundary_modeling_for/) ⭐️ 8.0/10
 
-German scientists detected a lithium atom plume at 96 km altitude using high-precision lidar, linked to the uncontrolled reentry of a SpaceX Falcon 9 rocket upper stage, with lithium concentrations spiking 10-fold. This is the first direct measurement of metal pollution from rocket reentry in the upper atmosphere, revealing a new environmental impact of space launches that could affect atmospheric chemistry and climate. The study was published in a Nature subjournal and used lidar to trace the plume back to a Falcon 9 first stage breakup over northern Europe. The lithium plume persisted for hours and was detected at altitudes where the atmosphere is particularly sensitive.
+LingBot-Vision introduces masked boundary modeling, where the teacher network predicts a dense boundary field online and forces the student to reconstruct boundary-bearing tokens, achieving state-of-the-art NYUv2 depth estimation with 0.296 RMSE at 1.1B parameters, outperforming DINOv3-7B's 0.309. This method advances self-supervised learning by explicitly guiding masking toward boundary regions, improving downstream tasks like depth estimation and segmentation with fewer training images (161M vs DINOv3's 500M+). Boundary fields are modeled as per-pixel categorical distributions to leverage centering/sharpening from self-distillation, and decoded segments undergo an a-contrario validation test before supervising. The method trails DINOv3 on ImageNet classification and ADE20K segmentation but shows strong encoder initialization benefits.
 
-telegram · zaihuapd · Jul 6, 11:17
+reddit · r/MachineLearning · /u/StillThese3747 · Jul 6, 17:37
 
-**Background**: Lidar (Light Detection and Ranging) uses laser pulses to measure distances and can detect trace elements in the atmosphere. Rocket reentry involves burning up metal components, which can vaporize and form plumes of metals like lithium, aluminum, and copper. Previous concerns about space debris focused on ground impact, not atmospheric pollution.
+**Background**: Self-supervised learning (SSL) trains models without human labels. Masked image modeling (MIM) is a popular SSL approach where parts of an image are masked and the model learns to reconstruct them. LingBot-Vision extends MIM by using the model's own predictions to identify and mask boundary regions, which are harder to infer from context.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://space4peace.org/lithium-plume-in-our-atmosphere-traced-back-to-returning-spacex-rocket/">Lithium Plume in Our Atmosphere Traced Back to Returning ...</a></li>
-<li><a href="https://www.clearskyscience.com/en/10.1038/s43247-025-03154-8/">Measurement of a lithium plume from the uncontrolled re-entry ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Lidar">Lidar</a></li>
+<li><a href="https://arxiv.org/abs/2401.00897">[2401.00897] Masked Modeling for Self-supervised ... - arXiv.org</a></li>
+<li><a href="https://arxiv.org/abs/2508.05369">[2508.05369] Cross-View Localization via Redundant Sliced ... [PDF] A psychophysical evaluation of the a contrario ... arXiv:2307.04159v1 [cs.CV] 9 Jul 2023 On salience and non-accidentalness : comparing human vision ... GitHub - bnothing/Slice-Loc: ISPRS-JPRS: Cross-View ... theses.fr – Samy Blusseau , On salience and non ... - Thèses Zhang, Yongjun; Xiong, Mingtao; Wan, Yi; Xia, Gui-Song (2026 ...</a></li>
+<li><a href="https://www.emergentmind.com/topics/linear-probes">Linear Probes: Neural Network Diagnostics</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#space pollution`, `#SpaceX`, `#environmental impact`, `#atmospheric science`, `#rocket reentry`
+**Discussion**: The Reddit discussion is substantive, with users questioning the comparison to DINOv3 due to potential probe hyperparameter sensitivity and the lack of ablations against learned masking baselines like ADIOS/AttMask. The author acknowledges these concerns and notes that checkpoints are public for verification.
+
+**Tags**: `#self-supervised learning`, `#computer vision`, `#masked image modeling`, `#depth estimation`, `#boundary detection`
 
 ---
 
 <a id="item-14"></a>
-## [China Plans Planetary Defense System Against Asteroids](http://paper.people.com.cn/rmrb/pc/content/202607/06/content_30166956.html) ⭐️ 8.0/10
+## [TRACE: Open-Source Hierarchical Memory Boosts LLM Agent Recall](https://www.reddit.com/r/MachineLearning/comments/1uoz5jo/trace_opensource_hierarchical_memory_for_llm/) ⭐️ 8.0/10
 
-China is officially planning a planetary defense system that combines ground-based telescopes and space-based constellations to detect and mitigate near-Earth asteroid threats. The system will use kinetic impact and gravity tractor technologies for deflection. This announcement marks a significant step in global planetary defense, as China joins the US and Europe in developing active mitigation capabilities. It could lead to international collaboration and improved detection of smaller, more hazardous asteroids. The system will feature an integrated ground-space monitoring network, with large ground telescopes and space-based constellations for continuous day-night observation. China has already developed a preliminary impact risk warning model and is building an operational warning system.
+TRACE, a new open-source hierarchical memory system for LLM agents, organizes conversation history into a topic tree with branches and summaries, achieving 82.5% F1 on MemoryAgentBench's EventQA using the gpt-oss-20B model. This demonstrates that hierarchical memory can significantly outperform flat RAG-based systems like Mem0 and MemGPT, even with smaller open-weight models, potentially making advanced agent memory more accessible and cost-effective. The benchmark comparison is not fully controlled: TRACE used gpt-oss-20B locally, while Mem0 and MemGPT results were from the paper using GPT-4o-mini. The author attempted fairer comparison but faced JSON parsing issues with gpt-oss for Mem0.
 
-telegram · zaihuapd · Jul 6, 13:36
+reddit · r/MachineLearning · /u/PsychologicalDot7749 · Jul 6, 14:35
 
-**Background**: Near-Earth asteroids (NEAs) pose a potential impact risk to Earth. While over 95% of asteroids larger than 1 km have been detected, only about 45% of those around 140 meters are known. Kinetic impact (e.g., NASA's DART mission) and gravity tractor are two proposed deflection methods.
+**Background**: LLM agents often need to retain and retrieve information from long conversations. Traditional flat RAG stores all chunks in a single pool, while hierarchical memory organizes information into a tree structure by topic, enabling more efficient retrieval. MemoryAgentBench is a benchmark suite for evaluating LLM agent memory, and EventQA tests understanding of temporal event chains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="http://news.china.com.cn/2026-07/06/content_118584269.shtml">天外来客 防 范有策 我国正在论证 小 行 星 防 御 系统_中国网</a></li>
-<li><a href="https://www.chinanews.com/gn/2026/07-06/10653371.shtml">天外来客 防 范有策 我国正在论证 小 行 星 防 御 系统-中新网</a></li>
-<li><a href="https://news.sciencenet.cn/htmlnews/2026/3/561220.shtm">DART 小 行 星 撞 击 实验表明，人们 能 够抵 御 未来威胁—新闻—科学网</a></li>
+<li><a href="https://huggingface.co/datasets/ai-hyz/MemoryAgentBench">ai-hyz/ MemoryAgentBench · Datasets at Hugging Face</a></li>
+<li><a href="https://huggingface.co/openai/gpt-oss-20b">openai/ gpt - oss - 20 b · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#planetary defense`, `#asteroid`, `#space technology`, `#China`, `#near-Earth objects`
+**Discussion**: The community discussion highlights the novel hierarchical approach and strong results, but also notes the lack of controlled comparison and the practical challenges of running Mem0 with open-weight models. Some commenters express interest in trying TRACE on other benchmarks.
+
+**Tags**: `#LLM agents`, `#memory systems`, `#open-source`, `#benchmarking`, `#hierarchical retrieval`
 
 ---
 
 <a id="item-15"></a>
 ## [Elon Musk Dissolves xAI, Rebrands as SpaceXAI](https://x.com/i/status/2074214064746832060) ⭐️ 8.0/10
 
-Elon Musk announced the dissolution of xAI, which will be rebranded as SpaceXAI and integrated into SpaceX. The company has already started using the new name, as seen in a computing partnership announcement with Anthropic. This restructuring consolidates Musk's AI efforts under SpaceX, potentially accelerating AI development for space exploration and other applications. It also marks the end of xAI as an independent entity, reshaping the competitive landscape of AI companies. xAI's flagship products include the Grok chatbot and the social network X, acquired in March 2025. The company also built the Colossus supercomputer and launched a data center business before being acquired by SpaceX in February 2026.
+Elon Musk announced the dissolution of xAI, which will be rebranded as SpaceXAI and fully integrated into SpaceX. The company has already started using the SpaceXAI name, as seen in a computing partnership announcement with Anthropic. This restructuring consolidates Musk's AI efforts under SpaceX, potentially accelerating AI development for space exploration and other SpaceX ventures. It also marks the end of xAI as an independent entity, reshaping competition in the AI industry. SpaceX acquired xAI in an all-stock transaction in February 2026, valuing SpaceX at $1 trillion and xAI at $250 billion. The combined entity retains the Grok chatbot and the social network X, which was acquired in March 2025.
 
 telegram · zaihuapd · Jul 7, 02:30
 
-**Background**: xAI was founded by Elon Musk and 11 researchers in 2023 as a standalone AI company. Its mission was to build artificial intelligence to accelerate scientific discovery. The integration into SpaceX signals a strategic shift to align AI development with SpaceX's space exploration goals.
+**Background**: xAI was founded by Elon Musk in 2023 to develop AI, notably the Grok chatbot. The company built the Colossus supercomputer and launched a data center business. The integration into SpaceX aims to leverage AI for SpaceX's mission of advancing space technology.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/XAI_(company)">XAI (company)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XAI_(company)">SpaceXAI - Wikipedia</a></li>
 <li><a href="https://en.wikipedia.org/wiki/SpaceXAI">SpaceXAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic</a></li>
+<li><a href="https://x.ai/company">Company: Accelerating Scientific Discovery | SpaceXAI</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express confusion and concern about the merger, with some noting that SpaceXAI is bleeding staff due to burnout and high expectations. Others question the computing partnership with Anthropic and its implications for future AI training.
-
-**Tags**: `#AI`, `#Elon Musk`, `#xAI`, `#SpaceX`, `#corporate restructuring`
+**Tags**: `#Elon Musk`, `#xAI`, `#SpaceX`, `#AI`, `#corporate restructuring`
 
 ---
 
 <a id="item-16"></a>
-## [New-api Fixes Billing Bug: Integer Overflow Causes Negative Charges](https://github.com/QuantumNous/new-api/commit/d0bd8aa) ⭐️ 8.0/10
+## [China Plans $295B National Computing Network with Domestic AI Chips](https://t.me/zaihuapd/42399) ⭐️ 8.0/10
 
-A critical billing vulnerability in the open-source project new-api has been fixed, where an integer overflow in quota calculation could result in negative charges, effectively giving users free credits. Two commits added boundary checks and saturation logic to prevent this. This vulnerability could have allowed attackers to exploit the billing system for financial gain, undermining trust in the platform. The fix protects users and the project's integrity, highlighting the importance of secure coding in payment systems. The vulnerability stemmed from user-controllable parameters lacking strict boundary validation, causing integer overflow when large values entered quota calculations. The fix introduces upper limit checks and saturation conversion to prevent wrap-around to negative numbers.
+China plans to invest approximately 2 trillion yuan ($295 billion) over five years to build a nationwide interconnected data center network, prioritizing domestic AI chips from Huawei and other local suppliers for at least 80% of the infrastructure. This massive investment aims to reduce reliance on U.S. companies like Nvidia and AMD, potentially reshaping global AI supply chains and accelerating China's self-sufficiency in AI infrastructure. The network is part of Beijing's 'Six Networks' infrastructure plan, integrating regional computing resources into a unified system. State-owned telecom operators like China Telecom and China Unicom have already launched token-based computing packages, selling computing power like mobile data.
 
-telegram · zaihuapd · Jul 7, 07:26
+telegram · zaihuapd · Jul 7, 04:45
 
-**Background**: Integer overflow occurs when an arithmetic operation exceeds the maximum value a data type can hold, causing it to wrap around to a negative or unexpected value. In billing systems, this can lead to incorrect charges. Saturation logic clamps the result to the maximum or minimum representable value instead of wrapping.
+**Background**: China's 'East Data West Computing' project and the national integrated computing network aim to address supply-demand imbalances and high costs. The 'Six Networks' plan includes water, power, communication, computing, underground pipelines, and logistics networks, representing a comprehensive infrastructure upgrade.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://senad-cavkusic.medium.com/understanding-integer-overflow-vulnerability-a-critical-api-security-threat-vulnerability-67223d949024">Understanding Integer Overflow Vulnerability : A Critical... | Medium</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/2023358290831111769">国家数据局最新部署：全国一体化算力网8大枢纽+10大集群最全梳理</a></li>
+<li><a href="https://www.gov.cn/zhengce/zhengceku/202401/content_6924596.htm">关于深入实施“东数西算”工程加快构建全国一体化算力网的实施意见_国务...</a></li>
+<li><a href="https://www.gov.cn/lianbo/202605/content_7070126.htm">统筹建设、动态推进“六张网” - 中国政府网</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#billing`, `#integer overflow`, `#open source`, `#bug fix`
+**Tags**: `#China`, `#AI infrastructure`, `#computing network`, `#semiconductors`, `#geopolitics`
+
+---
+
+<a id="item-17"></a>
+## [DeepSeek Develops Own AI Chip to Reduce Nvidia, Huawei Reliance](https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/) ⭐️ 8.0/10
+
+DeepSeek is developing its own AI chip focused on inference tasks, aiming to reduce dependence on Nvidia and Huawei chips. The project started about a year ago and is still in early stages, with the company recruiting chip design engineers and engaging with foundries and memory suppliers. This move could reshape the AI hardware landscape by reducing DeepSeek's vulnerability to US export controls and challenging Nvidia's dominance in AI inference chips. It also signals a broader trend of Chinese AI companies pursuing in-house chip development amid geopolitical tensions. The chip is designed specifically for inference, the phase where a trained model generates answers for users, rather than training. DeepSeek previously relied on Nvidia H800 and Huawei Ascend chips, and founder Liang Wenfeng acknowledged chip restrictions as a challenge in a rare 2024 interview.
+
+telegram · zaihuapd · Jul 7, 11:08
+
+**Background**: US export restrictions have limited Chinese companies' access to advanced Nvidia chips like the H100, pushing firms like DeepSeek to seek alternatives. Huawei's Ascend chips are a domestic option but also face performance and ecosystem limitations. Developing custom inference chips allows DeepSeek to optimize for its specific model workloads and reduce supply chain risks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://wccftech.com/deepseek-developing-custom-ai-chip-to-reduce-dependency-on-huawei-and-nvidia/">DeepSeek Looks To Sidestep Huawei As It Begins In-House AI Chip ...</a></li>
+<li><a href="https://www.zerohedge.com/ai/deepseek-developing-house-ai-chip-bid-cut-nvidia-reliance">DeepSeek Developing In-House AI Chip In Bid To Cut... | ZeroHedge</a></li>
+<li><a href="https://tech-insider.org/huawei-ascend-950pr-ai-chip-nvidia-china-2026/">Huawei Ascend 950PR: The 1.56 PFLOP AI Chip vs Nvidia [2026]</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI chips`, `#DeepSeek`, `#semiconductors`, `#US-China tech war`, `#inference`
 
 ---
