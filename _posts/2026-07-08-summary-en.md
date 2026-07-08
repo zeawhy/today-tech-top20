@@ -5,360 +5,282 @@ date: 2026-07-08
 lang: en
 ---
 
-> From 42 items, 15 important content pieces were selected
+> From 46 items, 14 important content pieces were selected
 
 ---
 
-1. [MIRA: 5B-Parameter World Model for Multiplayer Rocket League](#item-1) ⭐️ 9.0/10
-2. [Anthropic Releases Claude Sonnet 5 with Stronger Agentic Abilities](#item-2) ⭐️ 9.0/10
-3. [Januscape: 16-Year-Old KVM VM Escape Flaw Affects Intel & AMD](#item-3) ⭐️ 9.0/10
-4. [China Considers Restricting Exports of Top AI Models](#item-4) ⭐️ 9.0/10
-5. [Kokoro: CPU-Friendly, High-Quality Open-Source TTS](#item-5) ⭐️ 8.0/10
-6. [EU Chat Control Proposals Threaten Encryption](#item-6) ⭐️ 8.0/10
-7. [Microsoft lays off id Tech engine team at id Software](#item-7) ⭐️ 8.0/10
-8. [sqlite-utils 4.0 Introduces Schema Migrations](#item-8) ⭐️ 8.0/10
-9. [Ph.D. Thesis on Differentiable Ray Tracing for Radio Propagation](#item-9) ⭐️ 8.0/10
-10. [Mozilla CTO Raffi Krikorian AMA on Open Source AI Report](#item-10) ⭐️ 8.0/10
-11. [Constraining Fine-Tuning to Trusted LoRA Subspace](#item-11) ⭐️ 8.0/10
-12. [China Plans $295B National Computing Network Over 5 Years](#item-12) ⭐️ 8.0/10
-13. [new-api Fixes Billing Bug: Oversized Params Cause Negative Charges](#item-13) ⭐️ 8.0/10
-14. [Nvidia Blackwell Wafers Made in US, Still Packaged in Taiwan](#item-14) ⭐️ 8.0/10
-15. [DeepSeek Develops Own AI Chip to Reduce Reliance on NVIDIA and Huawei](#item-15) ⭐️ 8.0/10
+1. [Januscape: 16-Year-Old KVM VM Escape Flaw Disclosed](#item-1) ⭐️ 9.0/10
+2. [OpenAI Announces Public Release of GPT-5.6 This Thursday](#item-2) ⭐️ 9.0/10
+3. [Hidden Backdoor Found in Tenda Router Firmware](#item-3) ⭐️ 8.0/10
+4. [EU Chat Control Laws: Scanning Private Messages for CSAM](#item-4) ⭐️ 8.0/10
+5. [Kokoro: Local, CPU-Friendly High-Quality TTS](#item-5) ⭐️ 8.0/10
+6. [PgDog: A New Postgres Connection Pooler](#item-6) ⭐️ 8.0/10
+7. [sqlite-utils 4.0 adds schema migrations](#item-7) ⭐️ 8.0/10
+8. [Ph.D. Thesis on Differentiable Ray Tracing for Radio Propagation](#item-8) ⭐️ 8.0/10
+9. [Mozilla CTO AMA on Open Source AI Report](#item-9) ⭐️ 8.0/10
+10. [Constraining Fine-Tuning to Trusted LoRA Adapters Prevents Poisoning](#item-10) ⭐️ 8.0/10
+11. [DeepSeek Develops Own AI Chip to Reduce Reliance on NVIDIA, Huawei](#item-11) ⭐️ 8.0/10
+12. [China Considers Restricting Exports of Top AI Models](#item-12) ⭐️ 8.0/10
+13. [Claude Fable 5 Relaunch Sparks Developer Backlash](#item-13) ⭐️ 8.0/10
+14. [Claude Cowork Launches: AI Automates Complex Tasks in Background](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [MIRA: 5B-Parameter World Model for Multiplayer Rocket League](https://www.reddit.com/r/MachineLearning/comments/1upofuw/mira_multiplayer_interactive_world_models_trained/) ⭐️ 9.0/10
+## [Januscape: 16-Year-Old KVM VM Escape Flaw Disclosed](https://github.com/V4bel/Januscape) ⭐️ 9.0/10
 
-MIRA is a 5-billion-parameter world model trained on 10,000 hours of synthetic Rocket League data, enabling interactive 4-player simulation at 20 frames per second on a single NVIDIA B200 GPU. The team released a playable online demo, a technical report, and a 1,000-hour dataset of 4-player gameplay. This is a groundbreaking step toward large-scale interactive world models for multiplayer games, potentially transforming game AI, simulation, and reinforcement learning. The open-source release of code, dataset, and model lowers the barrier for researchers and developers to build on this work. The model runs at 20 fps for 4 players on a single B200 GPU, which is built on NVIDIA's Blackwell architecture with 208 billion transistors. The training data is entirely synthetic, generated using the Rocket League game engine, and the released dataset contains 1,000 hours of 4-player gameplay.
+Security researchers disclosed Januscape (CVE-2026-53359), the first KVM/x86 VM escape vulnerability affecting both Intel and AMD platforms, with proof-of-concept code released. This vulnerability breaks the isolation boundary between guest VMs and the host, directly threatening multi-tenant cloud environments and allowing guest-to-host escape or local privilege escalation. The flaw is a use-after-free in KVM's shadow MMU, present in the Linux kernel from 2010 to June 2026, and was previously used as a 0-day in Google's kvmCTF competition.
 
-reddit · r/MachineLearning · /u/MasterScrat · Jul 7, 07:59
+telegram · zaihuapd · Jul 7, 10:14
 
-**Background**: A world model in AI is a machine learning system that builds an internal representation of an environment and predicts how it changes in response to actions. Synthetic data, artificially generated rather than collected from real events, is often used to train AI models when real data is scarce or expensive. The B200 GPU is a high-end NVIDIA accelerator designed for AI workloads, offering significant performance improvements over previous generations.
+**Background**: KVM (Kernel-based Virtual Machine) is a Linux kernel module that allows a host to run multiple virtual machines. The shadow MMU is a component that manages guest page tables; a use-after-free bug can lead to memory corruption and code execution. VM escape vulnerabilities are critical because they allow a guest to break out of its virtualized environment and compromise the host.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence) - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/data-center/dgx-b200/">DGX B200: The Foundation for Your AI Factory | NVIDIA</a></li>
-<li><a href="https://medium.com/cdrin-cctt/the-power-of-synthetic-data-using-game-engines-to-improve-ai-67e872bab997">The Power of Synthetic Data: Using Game Engines to Improve AI | by CDRIN | CDRIN-CCTT | Medium</a></li>
+<li><a href="https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html">16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems</a></li>
+<li><a href="https://darkwebinformer.com/a-long-lived-kvm-bug-resurfaces-shadow-paging-use-after-free-in-the-linux-kernel-cve-2026-53359/">A Long-Lived KVM Bug Resurfaces: Shadow Paging Use-After-Free in the Linux Kernel (CVE-2026-53359)</a></li>
+<li><a href="https://www.cloudlinktech.com/news/januscape-kvm-escape-cve-2026-53359-intel-amd-hosts/">Januscape KVM Escape (CVE-2026-53359) Affects Intel, AMD Hosts</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#world models`, `#reinforcement learning`, `#multiplayer games`, `#large-scale models`, `#open source`
+**Tags**: `#KVM`, `#VM escape`, `#CVE-2026-53359`, `#security`, `#Linux kernel`
 
 ---
 
 <a id="item-2"></a>
-## [Anthropic Releases Claude Sonnet 5 with Stronger Agentic Abilities](https://t.me/zaihuapd/42404) ⭐️ 9.0/10
+## [OpenAI Announces Public Release of GPT-5.6 This Thursday](https://x.com/OpenAI/status/2074704958419792299) ⭐️ 9.0/10
 
-Anthropic has released Claude Sonnet 5, which it claims is the most agent-capable Sonnet model to date, able to plan and use tools like browsers and terminals autonomously. The model is available immediately across all plans and becomes the default for Free and Pro users. Claude Sonnet 5 offers near-Opus performance at a lower price point, making advanced agentic AI more accessible to developers and enterprises. Its enhanced reasoning, tool use, and coding abilities could accelerate the adoption of AI agents in real-world workflows. Claude Sonnet 5 outperforms Sonnet 4.6 in reasoning, tool use, coding, and knowledge tasks, and its performance is close to Opus 4.8. Pricing is set at $2 per million input tokens and a limited-time output token price until August 31, 2026.
+OpenAI announced that GPT-5.6 Sol, along with Terra and Luna, will be publicly released this Thursday, and is expanding preview access globally. This release marks a major milestone in AI, introducing a new generation of models with enhanced capabilities in coding, science, and cybersecurity, potentially reshaping enterprise and developer workflows. The GPT-5.6 family includes three tiers: Sol (flagship), Terra (balanced), and Luna (fast and affordable). The models are initially available via API and Codex to trusted partners, with broader public access starting Thursday.
 
-telegram · zaihuapd · Jul 7, 09:02
+telegram · zaihuapd · Jul 8, 04:17
 
-**Background**: Anthropic's Claude model family includes Opus (most capable), Sonnet (balanced), and Haiku (fast/cheap). Sonnet models are designed for a wide range of tasks including agentic workflows, where the model autonomously plans and executes multi-step actions using external tools. The new Sonnet 5 aims to bring stronger agentic capabilities at a lower cost than the top-tier Opus models.
+**Background**: OpenAI's GPT models are large language models (LLMs) that power a wide range of AI applications. The new naming scheme uses Sol, Terra, and Luna to denote capability tiers, replacing earlier suffixes like mini and nano. This release follows earlier previews and aims to advance the frontier of AI capabilities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/news/claude-sonnet-5">Introducing Claude Sonnet 5 \ Anthropic</a></li>
-<li><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">Anthropic launches Claude Sonnet 5 as a cheaper way to run ...</a></li>
-<li><a href="https://www.anthropic.com/claude/opus">Claude Opus \ Anthropic</a></li>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT-5.6 Sol: a next-generation model | OpenAI</a></li>
+<li><a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna">A preview of GPT-5.6 Sol, Terra, and Luna | OpenAI Help Center</a></li>
+<li><a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">OpenAI unveils GPT-5.6 Sol, Terra and Luna models — but only accessible to limited preview partners for now, per US Gov | VentureBeat</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Anthropic`, `#Claude`, `#LLM`, `#Agent`
+**Discussion**: Community comments are mixed: some users report strong performance improvements in agent loops and coding tasks, while others criticize the confusing naming scheme. Early access users praise the model's determination and orchestration abilities, noting it fixes many issues from GPT-5.5.
+
+**Tags**: `#OpenAI`, `#GPT-5.6`, `#AI`, `#LLM`, `#announcement`
 
 ---
 
 <a id="item-3"></a>
-## [Januscape: 16-Year-Old KVM VM Escape Flaw Affects Intel & AMD](https://github.com/V4bel/Januscape) ⭐️ 9.0/10
+## [Hidden Backdoor Found in Tenda Router Firmware](https://kb.cert.org/vuls/id/213560) ⭐️ 8.0/10
 
-Security researcher Hyunwoo Kim disclosed Januscape (CVE-2026-53359), the first KVM/x86 VM escape vulnerability that works on both Intel and AMD platforms, with a proof-of-concept causing host kernel panic. This flaw breaks multi-tenant isolation in cloud environments, allowing a malicious guest VM to compromise the host, affecting Linux kernels from 2010 to 2026 and potentially enabling full host takeover. The vulnerability is a use-after-free in the KVM shadow MMU, where a guest can corrupt the host's shadow page tables. A separate unreleased exploit reportedly achieves full host code execution.
+CERT/CC disclosed that multiple versions of Tenda firmware contain an undocumented authentication backdoor that grants administrative access to the device's web management interface. This backdoor poses a significant security risk to millions of Tenda devices, potentially allowing attackers to gain full control of routers, switches, and other network equipment. The backdoor password is reported to be "rzadmin", and the vulnerability affects multiple firmware versions across Tenda's product lines.
 
-telegram · zaihuapd · Jul 7, 10:14
+hackernews · miniBill · Jul 8, 00:08 · [Discussion](https://news.ycombinator.com/item?id=48825749)
 
-**Background**: KVM (Kernel-based Virtual Machine) is a Linux hypervisor that uses shadow MMU on older hardware to manage guest memory. A use-after-free occurs when a program accesses memory after it has been freed, potentially allowing an attacker to execute arbitrary code. This bug remained undetected for 16 years.
+**Background**: Tenda is a Chinese manufacturer of home and business networking devices. Authentication backdoors are hidden credentials that bypass normal login procedures, often left intentionally or accidentally by developers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html">16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on ...</a></li>
-<li><a href="https://www.csoonline.com/article/4194085/16-year-old-kvm-flaw-allows-attackers-to-escape-vms-and-take-over-linux-servers.html">16-year-old KVM flaw allows attackers to escape VMs and take ...</a></li>
-<li><a href="https://threat-modeling.com/cve-2026-53359-januscape-linux-kvm-vm-escape-intel-amd/">CVE-2026-53359 'Januscape': 16-Year-Old Linux KVM Guest-to ...</a></li>
+<li><a href="https://kb.cert.org/vuls/id/213560">VU#213560 - Tenda firmware (multiple versions) contains hidden authentication backdoor</a></li>
+<li><a href="https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html">CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/hidden-backdoor-in-tenda-router-firmware-grants-admin-access/">Hidden backdoor in Tenda router firmware grants admin access</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Telegram discussion highlights the severity and long latency of the bug, with some expressing concern about cloud provider response times and the need for immediate patching.
+**Discussion**: Commenters expressed frustration with the prevalence of such backdoors in networking hardware, with some attributing it to incompetence rather than malice. Others noted that recent Tenda firmware is encrypted, making auditing harder.
 
-**Tags**: `#KVM`, `#VM escape`, `#CVE`, `#Linux kernel`, `#security`
+**Tags**: `#security`, `#backdoor`, `#IoT`, `#firmware`, `#vulnerability`
 
 ---
 
 <a id="item-4"></a>
-## [China Considers Restricting Exports of Top AI Models](https://www.reuters.com/world/beijing-is-looking-curbing-overseas-access-chinas-top-ai-models-sources-say-2026-07-07/) ⭐️ 9.0/10
+## [EU Chat Control Laws: Scanning Private Messages for CSAM](https://fightchatcontrol.eu/chat-control-overview) ⭐️ 8.0/10
 
-China's Ministry of Commerce has held meetings with Alibaba, ByteDance, and Zhipu AI to discuss restricting overseas access to the country's most advanced AI models, including future releases, and potentially classifying AI technology leaks as national security crimes. This policy could significantly reshape the global AI landscape by limiting international access to cutting-edge Chinese AI models, affecting major tech companies and potentially accelerating the fragmentation of the global AI ecosystem. The restrictions are still under discussion and may only apply to future model releases; the final implementation remains uncertain. The talks also consider restricting foreign capital investment in Chinese AI startups.
+The EU is negotiating Chat Control 2.0, a permanent regulation that would mandate scanning of private communications for child sexual abuse material (CSAM), following the temporary Chat Control 1.0 which was rejected in March 2026. This legislation could fundamentally undermine end-to-end encryption and mass surveillance protections for all EU citizens, setting a precedent for global surveillance norms. Chat Control 2.0 is being negotiated in a trilogue based on a table comparing negotiating mandates, and it extends the temporary derogation until April 3, 2026. Expert assessments conclude there is currently no technological way to detect CSAM without unacceptably high error rates.
 
-telegram · zaihuapd · Jul 7, 11:42
+hackernews · gasull · Jul 7, 14:23 · [Discussion](https://news.ycombinator.com/item?id=48818311)
 
-**Background**: China has rapidly developed advanced AI models like Alibaba's Qwen series, ByteDance's Doubao, and Zhipu AI's GLM series. Export controls on AI models are a growing trend globally, with the US already imposing restrictions on advanced AI chips and model weights. This move mirrors similar concerns about national security and technological leadership.
+**Background**: Chat Control refers to proposed EU laws that would require service providers to scan private messages, including encrypted ones, for CSAM. Chat Control 1.0 was a temporary regulation that allowed bulk scanning without court order; it was rejected in March 2026. Chat Control 2.0 aims to make such scanning permanent.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zglg.work/ai/news/zh/2026-07-07-china-holds-talks-with-alibaba-and-bytedance-on-restricting-ai-model-exports">中国就限制 AI 模型出口与阿里巴巴和字节跳动展开磋商 | zglg.work</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/智谱">智谱 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
+<li><a href="https://www.patrick-breyer.de/en/posts/chat-control/">Chat Control: The EU's CSAM scanner proposal</a></li>
+<li><a href="https://fightchatcontrol.eu/chat-control-overview">Chat Control 1.0 vs 2.0 - Fight Chat Control</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI regulation`, `#China`, `#export control`, `#national security`, `#tech policy`
+**Discussion**: Commenters express strong opposition, arguing the law is a broad surveillance power grab that would undermine encryption and privacy. They question technical feasibility, such as how encrypted messages could be scanned without breaking encryption, and note that client-side scanning could be bypassed by sideloading open-source clients.
+
+**Tags**: `#privacy`, `#surveillance`, `#encryption`, `#EU legislation`, `#child safety`
 
 ---
 
 <a id="item-5"></a>
-## [Kokoro: CPU-Friendly, High-Quality Open-Source TTS](https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/) ⭐️ 8.0/10
+## [Kokoro: Local, CPU-Friendly High-Quality TTS](https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/) ⭐️ 8.0/10
 
-Kokoro, an open-source text-to-speech model with 82 million parameters, delivers high-quality speech synthesis that runs efficiently on CPU without requiring a GPU. It supports manual IPA pronunciation guides to correct homograph errors. This makes high-quality TTS accessible to users without powerful GPUs, democratizing voice synthesis for accessibility tools, content consumption, and more. The IPA support addresses a common pain point in TTS accuracy. Kokoro-82M is optimized for Apple Silicon via mlx-audio but also runs on other CPUs. Community members have built Chrome extensions and RSS-based podcast workflows using Kokoro.
+Kokoro, an open-weight TTS model with only 82 million parameters, has been released, offering high-quality speech synthesis that runs efficiently on CPU without requiring a GPU. This makes advanced TTS accessible to users without powerful GPUs, enabling offline, privacy-preserving speech synthesis for accessibility tools, content consumption, and more. Kokoro supports manual IPA pronunciation guides to correct homograph errors, but may struggle with single-word utterances. It has gained community traction with 390 points and 77 comments on Hacker News.
 
 hackernews · speckx · Jul 7, 18:24 · [Discussion](https://news.ycombinator.com/item?id=48821576)
 
-**Background**: Most high-quality TTS models require a GPU for real-time inference, limiting their use for users with modest hardware. Kokoro is an open-source model that achieves competitive quality with only 82 million parameters, making it lightweight enough for CPU inference. IPA (International Phonetic Alphabet) allows precise pronunciation control, useful for homographs or foreign words.
+**Background**: Text-to-speech (TTS) models convert written text into spoken audio. Many high-quality TTS models require powerful GPUs, limiting their use for local, offline applications. Kokoro's small size (82M parameters) and CPU-friendly design address this gap, making it suitable for integration into browser extensions, accessibility products, and personal projects.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Kokoro_TTS">Kokoro TTS</a></li>
-<li><a href="https://github.com/nazdridoy/kokoro-tts">GitHub - nazdridoy/kokoro-tts: A CLI text-to-speech tool ...</a></li>
+<li><a href="https://kokorottsai.com/">Kokoro TTS: Advanced AI Text-to-Speech Model with 82M parameters</a></li>
+<li><a href="https://github.com/hexgrad/kokoro">GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M · GitHub</a></li>
+<li><a href="https://huggingface.co/hexgrad/Kokoro-82M">hexgrad/Kokoro-82M · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community feedback is overwhelmingly positive, with users praising Kokoro's quality and CPU efficiency. Some note limitations with single-word utterances and homograph handling, but the IPA override feature mitigates this. Users have integrated Kokoro into accessibility products and podcast pipelines.
+**Discussion**: Community members praised Kokoro for its CPU efficiency and IPA pronunciation control, with one user integrating it into a Chrome extension for web reading. However, some noted limitations with single-word pronunciation and compared it to other models like WhisperX and Parakeet.
 
-**Tags**: `#TTS`, `#machine learning`, `#accessibility`, `#open source`, `#CPU`
+**Tags**: `#TTS`, `#open-source`, `#AI`, `#accessibility`, `#CPU`
 
 ---
 
 <a id="item-6"></a>
-## [EU Chat Control Proposals Threaten Encryption](https://fightchatcontrol.eu/chat-control-overview) ⭐️ 8.0/10
+## [PgDog: A New Postgres Connection Pooler](https://pgdog.dev/blog/why-yet-another-connection-pooler) ⭐️ 8.0/10
 
-The EU's Chat Control 1.0 and 2.0 proposals would mandate client-side scanning of encrypted messages to detect child sexual abuse material, effectively breaking end-to-end encryption. If enacted, these proposals would undermine digital privacy and security for all EU citizens, setting a dangerous precedent for mass surveillance and weakening encryption globally. Chat Control 1.0 allowed voluntary scanning under a temporary derogation from the ePrivacy Directive, while Chat Control 2.0 would make scanning mandatory. Both rely on client-side scanning, which scans content before encryption or after decryption on the user's device.
+PgDog is a new open-source PostgreSQL connection pooler that addresses prepared statement leakage and supports sharding, licensed under AGPL. This matters because existing poolers like PgBouncer lack proper prepared statement support, causing state leakage and performance issues. PgDog's sharding capability also enables multi-tenant architectures, potentially simplifying database scaling. PgDog uses a proxy-based architecture to handle prepared statements correctly across pooled connections, preventing state leakage. It also offers a plugin system for dynamic shard management, though the initial release focuses on static configuration.
 
-hackernews · gasull · Jul 7, 14:23 · [Discussion](https://news.ycombinator.com/item?id=48818311)
+hackernews · levkk · Jul 7, 15:36 · [Discussion](https://news.ycombinator.com/item?id=48819308)
 
-**Background**: Client-side scanning (CSS) is a technique that analyzes message content on the user's device before it is encrypted or after it is decrypted, bypassing end-to-end encryption. The EU's Chat Control proposals aim to combat child sexual abuse material (CSAM) but have been widely criticized by privacy advocates and security experts for creating vulnerabilities and enabling mass surveillance.
+**Background**: Connection poolers like PgBouncer reuse database connections among multiple clients to reduce overhead. However, they often fail to isolate session state—such as prepared statements—leading to 'state leakage' where one client's settings affect another. PgDog aims to solve this by tracking and restoring session state per client.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Regulation_to_Prevent_and_Combat_Child_Sexual_Abuse">Chat Control - Wikipedia</a></li>
-<li><a href="https://www.eff.org/deeplinks/2026/04/eu-parliament-blocks-mass-scanning-our-chats-whats-next">EU Parliament Blocks Mass-Scanning of Our Chats—What's Next? | Electronic Frontier Foundation</a></li>
-<li><a href="https://www.patrick-breyer.de/en/posts/chat-control/">Chat Control: The EU's CSAM scanner proposal</a></li>
+**Discussion**: The community praised the clear explanation of the problem and PgDog's prepared statement support. Some expressed interest in its sharding and plugin architecture for multi-tenancy, while others questioned the prevalence of state leakage in typical setups.
 
-</ul>
-</details>
-
-**Discussion**: Commenters express strong opposition, arguing the proposals are a broad surveillance power grab rather than a targeted measure. Some note that even voluntary scanning (Chat Control 1.0) continues despite legal expiration, and others highlight the risk to innocent content like baby photos.
-
-**Tags**: `#privacy`, `#encryption`, `#EU legislation`, `#surveillance`, `#cybersecurity`
+**Tags**: `#PostgreSQL`, `#connection pooling`, `#database`, `#open source`, `#sharding`
 
 ---
 
 <a id="item-7"></a>
-## [Microsoft lays off id Tech engine team at id Software](https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/) ⭐️ 8.0/10
+## [sqlite-utils 4.0 adds schema migrations](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) ⭐️ 8.0/10
 
-Microsoft has laid off the entire id Tech engine development team at id Software, the studio behind iconic game engines like id Tech 7 used in Doom Eternal. This move effectively ends internal engine development at id Software, shifting focus to external engines like Unreal Engine 5. This layoff signals a major consolidation in the game engine market, reducing competition and innovation as more studios abandon proprietary engines for Unreal Engine 5. It also raises concerns about Microsoft's long-term strategy for its acquired studios, potentially homogenizing game development and losing unique technical expertise. The id Tech team was responsible for developing and maintaining id Software's proprietary game engine, which has powered titles like Doom, Quake, and Rage. The layoffs are part of broader restructuring at Microsoft's Xbox division, affecting multiple studios.
+sqlite-utils 4.0 introduces database schema migrations, nested transactions via a new db.atomic() method, and support for compound foreign keys, marking the first major version bump since 2020. This release significantly enhances sqlite-utils as a tool for managing SQLite databases programmatically, making it easier to evolve schemas safely in production environments. The migration system fills a long-standing gap for Python developers working with SQLite. Migrations are defined in Python files using the sqlite-utils library, leveraging the powerful table.transform() method which implements SQLite's recommended pattern of creating a new table, copying data, and swapping. The release also includes breaking changes documented in an upgrade guide.
 
-hackernews · bauc · Jul 7, 15:33 · [Discussion](https://news.ycombinator.com/item?id=48819244)
+rss · Simon Willison · Jul 7, 19:32
 
-**Background**: id Software is a legendary game developer founded in 1991 by John Carmack and John Romero, known for pioneering first-person shooters and creating the id Tech engine series. The engines have been licensed to other developers and some versions were open-sourced. Microsoft acquired id Software's parent company ZeniMax Media in 2021.
+**Background**: sqlite-utils is a Python library and CLI tool for creating and manipulating SQLite databases. Schema migrations are a way to apply incremental changes to a database schema while tracking which changes have already been applied, which is essential for maintaining database consistency across deployments.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Id_Tech">id Tech - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Id_Software">id Software - Wikipedia</a></li>
-<li><a href="https://www.konvoy.vc/newsletters/the-great-unbundling-of-game-engines">The Great Unbundling of Game Engines - konvoy.vc</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community expressed deep disappointment and concern, with many lamenting the loss of id's engine expertise and warning that this move strengthens Epic Games' monopoly on game engines. Some commenters criticized Microsoft's short-term cost-cutting strategy, arguing it will harm long-term innovation and studio culture.
-
-**Tags**: `#gaming`, `#game engines`, `#Microsoft`, `#id Software`, `#layoffs`
+**Tags**: `#sqlite`, `#python`, `#database`, `#migrations`, `#open-source`
 
 ---
 
 <a id="item-8"></a>
-## [sqlite-utils 4.0 Introduces Schema Migrations](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) ⭐️ 8.0/10
-
-sqlite-utils 4.0, released on July 7, 2026, adds database schema migrations, nested transactions via a new db.atomic() method, and support for compound foreign keys. This major release significantly enhances sqlite-utils, a widely-used Python CLI and library for SQLite, making it easier for developers to manage schema changes and complex transactions without external tools. Migrations are defined in Python files using the sqlite-utils Python library, leveraging the powerful table.transform() method that implements the SQLite-recommended pattern of creating a new table, copying data, and renaming. The release also includes breaking changes detailed in an upgrade guide.
-
-rss · Simon Willison · Jul 7, 19:32
-
-**Background**: Schema migrations allow developers to apply a sequence of changes to a database schema while tracking which have been applied. SQLite's ALTER TABLE is limited, so tools like sqlite-utils provide enhanced capabilities. Nested transactions enable atomic operations within larger transactions, and compound foreign keys allow referencing multiple columns in a parent table.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://sqlite-utils.datasette.io/en/latest/migrations.html">Database migrations - sqlite-utils</a></li>
-<li><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/">sqlite-utils 4.0, now with database schema migrations</a></li>
-<li><a href="https://sqlite.org/foreignkeys.html">SQLite Foreign Key Support</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#sqlite`, `#python`, `#database`, `#migrations`, `#open source`
-
----
-
-<a id="item-9"></a>
 ## [Ph.D. Thesis on Differentiable Ray Tracing for Radio Propagation](https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/) ⭐️ 8.0/10
 
-A Ph.D. thesis titled 'Differentiable Ray Tracing for Radio Propagation Modeling' has been published, integrating differentiable ray tracing with automatic differentiation frameworks like JAX to compute exact gradients through physical environments for wireless communications. This work bridges radio propagation simulation and machine learning, enabling gradient-based optimization and direct ML training for inverse problems, which is crucial for next-generation wireless design such as 6G. The thesis is structured as a self-contained textbook with three parts: physics fundamentals, algorithmic core including GPU-accelerated path tracing and discontinuity smoothing, and practical applications like channel modeling and material calibration. The author provides open access and open-source libraries such as DiffeRT.
+A Ph.D. thesis integrates differentiable ray tracing with automatic differentiation frameworks like JAX for radio propagation modeling, enabling gradient computation through physical environments for inverse problems and ML training. This work bridges physics simulation and machine learning, offering a new tool for next-generation wireless design, such as channel modeling, localization, and material calibration. The thesis is structured into three parts: physics fundamentals, algorithmic core with GPU-accelerated path tracing and discontinuity smoothing, and practical applications including ML-assisted generative path sampling.
 
 reddit · r/MachineLearning · /u/jeertmans · Jul 7, 13:45
 
-**Background**: Differentiable ray tracing extends traditional ray tracing by enabling automatic differentiation through the rendering pipeline, allowing gradient computation with respect to scene parameters. JAX is a high-performance numerical computing library that supports automatic differentiation and GPU/TPU acceleration, commonly used in machine learning. Radio propagation modeling simulates how radio waves travel through environments, essential for wireless network planning.
+**Background**: Differentiable ray tracing extends traditional ray tracing by making the entire simulation pipeline differentiable, allowing gradients to flow through the scene geometry and material properties. This enables optimization and learning directly from physical simulations, which is particularly useful in wireless communications where accurate propagation models are critical.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://people.csail.mit.edu/tzumao/diffrt/">Differentiable Monte Carlo Ray Tracing through Edge Sampling</a></li>
-<li><a href="https://research.nvidia.com/publication/2024-10_learning-radio-environments-differentiable-ray-tracing">Learning Radio Environments by Differentiable Ray Tracing | Research</a></li>
-<li><a href="https://github.com/jax-ml/jax">GitHub - jax-ml/jax: Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more · GitHub</a></li>
-
-</ul>
-</details>
+**Discussion**: The Reddit community showed strong interest, with the author actively engaging in Q&A about differentiable simulation, ray tracing, and building ray tracing engines in JAX. The post received a high score (8.0/10) and positive comments, reflecting appreciation for the accessible textbook-style writing and open-source code.
 
 **Tags**: `#differentiable ray tracing`, `#radio propagation`, `#automatic differentiation`, `#JAX`, `#wireless communications`
 
 ---
 
-<a id="item-10"></a>
-## [Mozilla CTO Raffi Krikorian AMA on Open Source AI Report](https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/) ⭐️ 8.0/10
+<a id="item-9"></a>
+## [Mozilla CTO AMA on Open Source AI Report](https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/) ⭐️ 8.0/10
 
-Mozilla CTO Raffi Krikorian will host an AMA on July 14, 2025, to discuss the inaugural State of Open Source AI report, covering real-world costs, enterprise adoption, China's influence, and developer trust. This AMA provides a rare opportunity to hear directly from a major open-source advocate about the practical challenges and opportunities in open-source AI, which is increasingly critical for enterprise adoption and developer trust. The report is based on a survey of over 950 developers and focuses on production realities rather than common narratives. Key topics include the 'hidden tax' of free models, the 'agentic harness' layer, and the impact of Chinese open-source models.
+Mozilla CTO Raffi Krikorian will host an AMA on July 14 to discuss the inaugural State of Open Source AI report, covering hidden costs of free models, enterprise adoption realities, the impact of Chinese models, and developer trust. This AMA provides direct insight from a major open-source advocate on critical issues like the true cost of AI deployment and the shifting leverage in the AI ecosystem, which affects developers and enterprises worldwide. The report is based on a survey of over 950 developers and focuses on real-world production use, not just hype. Key topics include the 'hidden tax' on free models, enterprise adoption bottlenecks, and the 'agentic harness' layer above models.
 
 reddit · r/MachineLearning · /u/raffikrikorian · Jul 7, 14:51
 
-**Background**: Open-source AI refers to AI models and tools with publicly available source code, allowing modification and redistribution. Mozilla, known for the Firefox browser, has been advocating for open and trustworthy AI. The 'agentic harness' is the infrastructure layer that wraps AI models to enable agent-like behaviors, such as managing context and external interactions.
+**Background**: Open source AI refers to models and tools with publicly available source code, weights, and data, allowing anyone to inspect, modify, and deploy them. However, 'free' models often incur significant costs for deployment, maintenance, and integration, which the report calls the 'hidden tax'. The rise of capable Chinese models like DeepSeek has added competitive pressure and shifted leverage in the global AI landscape.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.mozilla.org/en-US/foundation/annualreport/2024/article/evolving-together-redefining-mozilla-in-the-ai-era/">Evolving Together: Redefining Mozilla in the AI Era</a></li>
-<li><a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness">The Anatomy of an Agent Harness</a></li>
-<li><a href="https://www.cio.com/article/4140634/the-hidden-tax-on-every-ai-initiative-and-how-to-stop-paying-it.html">The hidden tax on every AI initiative (and how to stop paying ...</a></li>
+<li><a href="https://www.seekr.com/resource/the-hallucination-tax-why-your-best-models-are-costing-you-the-most/">The Hallucination Tax: Why Your Best Models Are Costing You the Most</a></li>
+<li><a href="https://www.forbes.com/sites/workday/2026/06/01/the-hidden-tax-on-enterprise-ai-1-in-5-workers-lose-a-full-day-every-week/">The Hidden Tax On Enterprise AI: 1 In 5 Workers Lose A Full Day Every ...</a></li>
+<li><a href="https://www.truefoundry.com/blog/cost-of-generative-ai">The Hidden Costs of GenAI and How to Control Them - Truefoundry</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#open source`, `#AI`, `#Mozilla`, `#enterprise`, `#developer trust`
+**Tags**: `#Open Source AI`, `#Mozilla`, `#Enterprise AI`, `#AI Costs`, `#Developer Trust`
+
+---
+
+<a id="item-10"></a>
+## [Constraining Fine-Tuning to Trusted LoRA Adapters Prevents Poisoning](https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/) ⭐️ 8.0/10
+
+A new paper proposes constraining fine-tuning to a subspace learned from trusted LoRA adapters, preventing the model from learning malicious updates even if poisoned data is present. This offers a novel defense against fine-tuning poisoning attacks, which are a growing concern as models are fine-tuned on user-generated or external data. It could improve safety for on-device assistants and enterprise fine-tuning pipelines. The approach was tested on 196 public LoRA adapters, including adaptive attacks designed to bypass the defense, and showed sharp drops in attack success while preserving useful adaptation on tasks covered by the adapter pool.
+
+reddit · r/MachineLearning · /u/Bright_Warning_8406 · Jul 7, 20:00
+
+**Background**: Fine-tuning large language models on user data can introduce backdoors or poisoned behaviors triggered by specific inputs. Existing defenses focus on detecting malicious data or reducing its impact, but this work takes a different approach by geometrically constraining the update space.
+
+**Discussion**: The Reddit discussion includes thoughtful comments exploring limitations and extensions, such as the risk of the trusted adapter pool itself being poisoned and the need for diverse adapters to cover all useful behaviors.
+
+**Tags**: `#Machine Learning`, `#AI Safety`, `#Fine-tuning`, `#LoRA`, `#Poisoning Defense`
 
 ---
 
 <a id="item-11"></a>
-## [Constraining Fine-Tuning to Trusted LoRA Subspace](https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/) ⭐️ 8.0/10
+## [DeepSeek Develops Own AI Chip to Reduce Reliance on NVIDIA, Huawei](https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/) ⭐️ 8.0/10
 
-A new paper proposes constraining fine-tuning updates to a subspace learned from trusted LoRA adapters, preventing malicious updates even if poisoned data is present. This geometric defense addresses a critical gap in fine-tuning security by making certain malicious directions geometrically unreachable, offering a practical safeguard for deploying models that adapt from user data. The approach was tested on 196 public LoRA adapters, including adaptive attacks designed to bypass the defense, and showed sharp drops in attack success while preserving useful adaptation on tasks covered by the adapter pool.
+DeepSeek, a Chinese AI company, is developing its own AI chip focused on inference to reduce dependence on NVIDIA and Huawei, according to three sources. The effort began about a year ago and is still in early stages, with DeepSeek recruiting chip design engineers and engaging with design, foundry, and memory companies. This move could reshape the AI hardware supply chain in China, as DeepSeek seeks to circumvent US export restrictions that limit access to advanced chips. If successful, it may reduce China's reliance on foreign and domestic chip suppliers, potentially impacting NVIDIA's and Huawei's market positions. The chip is designed specifically for inference, the stage where a trained model generates answers for users, rather than for training. DeepSeek previously relied on NVIDIA H800 and Huawei Ascend chips, and founder Liang Wenfeng acknowledged chip restrictions as a challenge in a rare 2024 interview.
 
-reddit · r/MachineLearning · /u/Bright_Warning_8406 · Jul 7, 20:00
+telegram · zaihuapd · Jul 7, 11:08
 
-**Background**: LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that updates only a small set of low-rank matrices, reducing computational cost. Fine-tuning poisoning attacks inject hidden behaviors (backdoors) into models by manipulating training data. Existing defenses focus on detecting poisoned data or reducing its impact, but this work takes a different approach by restricting the space of possible updates.
+**Background**: DeepSeek is a Chinese AI company known for developing large language models. US export controls restrict the sale of advanced AI chips to China, prompting Chinese firms to develop their own hardware. Inference chips are less complex than training chips but still critical for deploying AI services at scale.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.geeksforgeeks.org/deep-learning/low-rank-adaptation-lora/">Low Rank Adaptation (LoRA) - GeeksforGeeks</a></li>
-<li><a href="https://arxiv.org/abs/2402.12168">[2402.12168] Defending Against Weight-Poisoning Backdoor ... Defending Against Weight-Poisoning Backdoor Attacks for ... Data Poisoning Attacks of Fine-Tuning for Large Language ... LLM Poisoning: Detection, Defense, and Prevention Strategies I Poisoned an AI Model to Sell You Software: Fine-Tuning ... GitHub - agw2005/pbp-reproduced: Reproduction of the novel ...</a></li>
-<li><a href="https://arxiv.org/pdf/2512.11760">SpectralKrum: A Spectral-Geometric Defense Against Byzantine ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#machine learning`, `#security`, `#LoRA`, `#fine-tuning`, `#adversarial robustness`
+**Tags**: `#AI chips`, `#DeepSeek`, `#export controls`, `#hardware`, `#China`
 
 ---
 
 <a id="item-12"></a>
-## [China Plans $295B National Computing Network Over 5 Years](https://t.me/zaihuapd/42399) ⭐️ 8.0/10
+## [China Considers Restricting Exports of Top AI Models](https://www.reuters.com/world/beijing-is-looking-curbing-overseas-access-chinas-top-ai-models-sources-say-2026-07-07/) ⭐️ 8.0/10
 
-China plans to invest approximately 2 trillion yuan ($295 billion) over the next five years to build a nationwide interconnected data center network, with state-owned telecom operators managing the core facilities. The plan prioritizes domestic AI chips from suppliers like Huawei, aiming for at least 80% domestic content to reduce reliance on US companies such as Nvidia and AMD. This massive investment could reshape the global AI hardware supply chain and cloud computing landscape, as China seeks technological self-sufficiency. It also signals a strategic shift toward integrating computing resources into a unified national network, making high-performance computing more accessible to businesses and public sectors. The plan is a key part of Beijing's 'Six Networks' infrastructure initiative, which aims to consolidate fragmented regional computing resources. Telecom operators like China Telecom and China Unicom have already launched 'token' packages that sell computing power like mobile data, paving the way for large-scale AI applications.
+China's Ministry of Commerce has held meetings with Alibaba, ByteDance, and startup Zhipu to discuss restricting overseas access to the most advanced domestic AI models, including future releases, and potentially classifying AI technology leaks as national security crimes. This move could significantly reshape the global AI landscape by limiting technology transfer from China, affecting international AI development and competition. It also signals a tightening of national security controls over emerging technologies. The restrictions may only apply to future model releases, and the final scope is still under discussion. The proposal also considers restricting foreign capital investment in Chinese AI startups.
 
-telegram · zaihuapd · Jul 7, 04:45
+telegram · zaihuapd · Jul 7, 11:42
 
-**Background**: China's 'Six Networks' infrastructure plan includes computing, energy, transportation, and other networks to support digital economy and AI development. The national computing network, also known as the 'East-to-West Computing Resources Transfer' project, aims to connect data centers across regions. Token-based pricing for computing power is a recent innovation by Chinese telecom operators, allowing users to purchase AI compute resources on demand.
+**Background**: China has been rapidly advancing in AI, with companies like Alibaba and ByteDance developing cutting-edge models. The Ministry of Commerce's move reflects growing concerns over technology security and geopolitical tensions, similar to US export controls on AI chips.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.gov.cn/lianbo/202605/content_7070126.htm">统筹建设、动态推进“六张网” - 中国政府网</a></li>
-<li><a href="https://www.nda.gov.cn/sjj/swdt/mtsy/0616/20260616182702649345771_pc.html">六网织就新未来丨支撑人工智能等高质量发展 算力网开启万亿级投资周期...</a></li>
-<li><a href="https://news.qq.com/rain/a/20260518A05V3X00">Token套餐全面上线!三大运营商悉数入局，算力进入“按Token收费”时代_...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#China`, `#AI infrastructure`, `#computing network`, `#semiconductors`, `#cloud computing`
+**Tags**: `#AI regulation`, `#China`, `#technology export control`, `#national security`, `#AI policy`
 
 ---
 
 <a id="item-13"></a>
-## [new-api Fixes Billing Bug: Oversized Params Cause Negative Charges](https://github.com/QuantumNous/new-api/commit/d0bd8aa) ⭐️ 8.0/10
+## [Claude Fable 5 Relaunch Sparks Developer Backlash](https://t.me/zaihuapd/42415) ⭐️ 8.0/10
 
-The QuantumNous/new-api project has fixed a critical billing vulnerability where oversized user-controllable parameters could trigger integer overflow, causing the quota calculation to produce negative values and effectively reverse-charge the user. This vulnerability could allow attackers to exploit the billing system to gain free credits or even increase their balance, posing a serious financial risk to service providers using new-api. The fix strengthens input validation and prevents integer overflow, ensuring billing integrity. The fix introduces upper-bound validation on quota-related parameters and uses saturating arithmetic to prevent wraparound when converting results to integers. A follow-up commit adds boundary checks at other entry points to block similar attacks on pre-deduction and settlement logic.
+Anthropic's flagship model Claude Fable 5 has been relaunched after US export controls were lifted, but users report degraded experience with excessive safety triggers and reduced capabilities. This incident highlights tensions between AI safety measures and developer usability, potentially eroding trust in Anthropic's model governance and affecting adoption among technical users. Pro and Max subscribers can only use 50% of their weekly quota for Fable 5 until July 7, after which the model will be charged per usage instead of being included in subscriptions. The model frequently downgrades when processing low-level code or keywords like 'vulnerability' and 'hook'.
 
-telegram · zaihuapd · Jul 7, 07:26
+telegram · zaihuapd · Jul 7, 18:01
 
-**Background**: Integer overflow occurs when an arithmetic operation produces a value outside the representable range of an integer type, causing it to wrap around (e.g., a large positive number becomes negative). In billing systems, such flaws can be exploited to manipulate charges. new-api is an open-source API gateway that handles quota and billing for AI services, making this fix critical for production deployments.
+**Background**: Claude Fable 5 is Anthropic's most advanced AI model, designed for complex reasoning and coding tasks. The model was previously restricted under US export controls, and its relaunch comes with tightened safety mechanisms that many developers find overly aggressive.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.comparitech.com/blog/information-security/integer-overflow-attack/">What is an Integer Overflow Attack (with Examples)? - Comparitech CWE - CWE-190: Integer Overflow or Wraparound (4.20) Understanding & Exploiting Integer Overflow Vulnerabilities ... Vulnerability: Integer Overflow and Underflow - OWASP Foundation NVD - CVE-2025-54091 What is Integer Overflow? Exploits & Impact - blogs.jsmon.sh NVD - CVE-2026-3536</a></li>
-<li><a href="https://deepwiki.com/QuantumNous/new-api/2.6-quota-and-billing-system">Quota & Billing System | QuantumNous/new-api | DeepWiki</a></li>
-<li><a href="https://deepwiki.com/QuantumNous/new-api/9.2-quota-calculation-and-consumption">Quota Calculation and Consumption | QuantumNous/new-api ...</a></li>
+**Discussion**: No community comments were provided.
 
-</ul>
-</details>
-
-**Tags**: `#security`, `#billing`, `#vulnerability`, `#open-source`, `#API`
+**Tags**: `#AI`, `#Claude`, `#safety`, `#developer experience`, `#model deployment`
 
 ---
 
 <a id="item-14"></a>
-## [Nvidia Blackwell Wafers Made in US, Still Packaged in Taiwan](https://www.tomshardware.com/tech-industry/nvidia-and-intel-tout-chips-built-in-america-but-every-arizona-made-blackwell-die-is-still-packaged-in-taiwan) ⭐️ 8.0/10
+## [Claude Cowork Launches: AI Automates Complex Tasks in Background](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) ⭐️ 8.0/10
 
-Nvidia's Blackwell wafers are now being mass-produced at TSMC's Fab 21 in Arizona using the custom 4NP process, but they must be shipped to Taiwan for advanced CoWoS-L packaging and HBM integration. This highlights a critical bottleneck in the US semiconductor supply chain: despite domestic wafer fabrication, advanced packaging capacity won't be fully available until 2028-2029, leaving reliance on Taiwan for the foreseeable future. The wafers travel over 7,000 miles from Arizona to Taiwan for dicing, stacking, and CoWoS-L packaging. Additionally, the US currently lacks facilities for HBM production and packaging, which are essential for AI accelerators.
+Anthropic has launched Claude Cowork, a new AI agent that can autonomously execute complex multi-step tasks in the background, including file organization, spreadsheet creation, and report generation. The feature is rolling out to Pro, Max, Team, and Enterprise users on desktop, web, and mobile platforms. Claude Cowork represents a significant advancement in AI agent capabilities, enabling asynchronous task execution that continues even when the user's device is offline. This could greatly enhance productivity for knowledge workers by automating time-consuming office tasks without requiring constant user supervision. The agent runs on Anthropic's servers, supports local file read/write on desktop, and can schedule recurring tasks. Users must explicitly authorize file deletion, and the feature is initially available to Max subscribers on web and mobile as a beta.
 
-telegram · zaihuapd · Jul 7, 09:47
+telegram · zaihuapd · Jul 8, 03:50
 
-**Background**: CoWoS (Chip-on-Wafer-on-Substrate) is an advanced 2.5D/3D packaging technology that interconnects logic dies and HBM stacks using a silicon interposer. TSMC's 4NP process is a custom 5nm-class node optimized for Nvidia. The US is investing in packaging fabs by Amkor, TSMC, and SK Hynix, but full supply chain independence is years away.
+**Background**: Claude is a series of large language models developed by Anthropic, trained using 'constitutional AI' to improve ethical compliance. Claude Cowork extends Claude's capabilities from conversational AI to autonomous task execution, competing with similar agent features from other AI providers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.csdn.net/u013669912/article/details/143434272">CoWoS 封装 | CoWoS-S / CoWoS-R / CoWoS-L-CSDN博客</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/688119389">RTX 50升级台积电4NP工艺：但其实还是5nm - 知乎</a></li>
-<li><a href="https://baike.baidu.com/item/HBM封装/68105001">HBM封装_百度百科</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Cowork">Claude Cowork</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#semiconductors`, `#supply chain`, `#Nvidia`, `#advanced packaging`, `#geopolitics`
-
----
-
-<a id="item-15"></a>
-## [DeepSeek Develops Own AI Chip to Reduce Reliance on NVIDIA and Huawei](https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/) ⭐️ 8.0/10
-
-DeepSeek is developing its own AI chip focused on inference, aiming to reduce dependence on NVIDIA and Huawei chips. The effort began about a year ago and is still in early stages, with the company recruiting chip design engineers and engaging with foundries and memory suppliers. This move signals a strategic shift in the AI hardware landscape, as DeepSeek seeks to circumvent US export controls that restrict access to advanced chips. If successful, it could reduce China's reliance on foreign chipmakers and accelerate the trend toward domestic AI chip development. The chip is designed specifically for inference, the stage where a trained model generates responses for users, rather than for training new models. DeepSeek previously relied on NVIDIA H800 and Huawei Ascend chips, and founder Liang Wenfeng acknowledged chip restrictions as a challenge in a rare 2024 interview.
-
-telegram · zaihuapd · Jul 7, 11:08
-
-**Background**: US export controls since 2018 have restricted China's access to advanced semiconductors and related technologies, impacting companies like DeepSeek that rely on high-performance AI chips. Inference computing is the fastest-growing segment of AI demand as applications spread, making inference-specific chips strategically important. DeepSeek's move mirrors a broader trend of Chinese firms shifting AI accelerator budgets to domestic suppliers.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/">EXCLUSIVE: China's DeepSeek developing its own AI chip ...</a></li>
-<li><a href="https://www.usnews.com/news/top-news/articles/2026-07-07/exclusive-chinas-deepseek-developing-its-own-ai-chip-sources-say">Exclusive-China's DeepSeek Developing Its Own AI Chip ...</a></li>
-<li><a href="https://www.cryptopolitan.com/deepseek-plans-its-own-inference-chip/">DeepSeek plans its own inference chip, a threat to Nvidia and ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI chips`, `#DeepSeek`, `#semiconductors`, `#export controls`, `#inference`
+**Tags**: `#AI`, `#Anthropic`, `#Productivity`, `#Automation`, `#Claude`
 
 ---
