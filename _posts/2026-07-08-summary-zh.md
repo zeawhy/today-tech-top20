@@ -5,349 +5,454 @@ date: 2026-07-08
 lang: zh
 ---
 
-> 从 42 条内容中筛选出 16 条重要资讯。
+> 从 42 条内容中筛选出 20 条重要资讯。
 
 ---
 
-1. [腾达固件后门允许未授权管理员访问](#item-1) ⭐️ 9.0/10
-2. [OpenAI 宣布公开发布 GPT-5.6 Sol、Terra 和 Luna](#item-2) ⭐️ 9.0/10
-3. [GitLost 攻击欺骗 GitHub AI 泄露私有仓库](#item-3) ⭐️ 8.0/10
-4. [欧盟聊天控制提案威胁隐私与加密](#item-4) ⭐️ 8.0/10
-5. [1986 年 SICP 视频讲座至今仍有价值](#item-5) ⭐️ 8.0/10
-6. [Kokoro：本地 CPU 友好的高质量文本转语音](#item-6) ⭐️ 8.0/10
-7. [sqlite-utils 4.0 新增数据库迁移和嵌套事务](#item-7) ⭐️ 8.0/10
-8. [Anthropic 预计 2026 年第三季度利润超 10 亿美元](#item-8) ⭐️ 8.0/10
-9. [Mozilla CTO 关于开源 AI 报告的 AMA](#item-9) ⭐️ 8.0/10
-10. [将微调约束在可信 LoRA 子空间内](#item-10) ⭐️ 8.0/10
-11. [Anthropic 推出 Claude Cowork，支持后台自主完成任务](#item-11) ⭐️ 8.0/10
-12. [DeepSeek 自研 AI 芯片以减少对英伟达和华为的依赖](#item-12) ⭐️ 8.0/10
-13. [阿里巴巴要求全体员工在 7 月 10 日前卸载 Claude](#item-13) ⭐️ 8.0/10
-14. [华为 5G 旗舰重返海外，峰值速率超 1100 Mbps](#item-14) ⭐️ 8.0/10
-15. [安卓远程 Root 漏洞链曝光](#item-15) ⭐️ 8.0/10
-16. [美团 OWL 模型会话数据泄露事件](#item-16) ⭐️ 8.0/10
+1. [TypeScript 7.0 发布，采用 Rust 重写编译器](#item-1) ⭐️ 9.0/10
+2. [Tenda 固件后门允许未授权管理员访问](#item-2) ⭐️ 9.0/10
+3. [OpenAI 宣布公开发布 GPT-5.6 系列模型](#item-3) ⭐️ 9.0/10
+4. [Mistral 发布 Robostral Navigate，实现无地图机器人导航](#item-4) ⭐️ 8.0/10
+5. [Grok 4.5：高效推理，价格竞争力强](#item-5) ⭐️ 8.0/10
+6. [OpenAI 推出支持 GPT-5.5 委托的 GPT-Live](#item-6) ⭐️ 8.0/10
+7. [欧盟重启私密信息扫描规则](#item-7) ⭐️ 8.0/10
+8. [Cloudflare Meerkat：基于 QuePaxa 的无领导者共识服务](#item-8) ⭐️ 8.0/10
+9. [OpenBSD 释放后使用漏洞可本地提权至 root](#item-9) ⭐️ 8.0/10
+10. [GitLost：提示注入攻击导致 GitHub AI 代理泄露私有仓库](#item-10) ⭐️ 8.0/10
+11. [MIT 1986 年 SICP 视频讲座在线分享](#item-11) ⭐️ 8.0/10
+12. [sqlite-utils 4.0 新增数据库迁移与嵌套事务](#item-12) ⭐️ 8.0/10
+13. [Anthropic 预计 2026 年第三季度利润达 10 亿美元](#item-13) ⭐️ 8.0/10
+14. [工具调用攻击绕过 LLM 安全护栏](#item-14) ⭐️ 8.0/10
+15. [LingBot-Video：开源稀疏 MoE 视频扩散世界模型](#item-15) ⭐️ 8.0/10
+16. [DeepSeek 自研 AI 芯片以减少对英伟达和华为的依赖](#item-16) ⭐️ 8.0/10
+17. [阿里要求员工 7 月 10 日前卸载 Claude](#item-17) ⭐️ 8.0/10
+18. [华为 5G 旗舰重返海外，峰值速率突破 1100 Mbps](#item-18) ⭐️ 8.0/10
+19. [安卓远程 Root 漏洞链曝光](#item-19) ⭐️ 8.0/10
+20. [美团 OWL 模型会话数据泄露事件](#item-20) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [腾达固件后门允许未授权管理员访问](https://kb.cert.org/vuls/id/213560) ⭐️ 9.0/10
+## [TypeScript 7.0 发布，采用 Rust 重写编译器](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
 
-CERT/CC 披露了 CVE-2026-11405，该漏洞是腾达多款路由器固件（包括 FH1201、W15E、AC10、AC5 和 AC6）中的隐藏认证后门。该后门通过 /bin/httpd 中未记录的 admin 登录路径绕过密码检查。 该漏洞影响全球数百万台腾达设备，攻击者无需有效密码即可获得完全管理权限。它削弱了用户对物联网制造商的信任，并凸显了使用 OpenWRT 等开源固件替代方案的必要性。 后门密码硬编码为 'rzadmin'，且不验证用户名，因此任何用户名均可使用。腾达目前未提供补丁，用户无法获得官方修复。
+微软宣布了 TypeScript 7.0，其采用 Rust 重写了编译器，承诺带来显著的性能提升和新功能。 这一广泛使用语言的主要版本发布可能通过减少编译时间和启用更高级的类型检查能力，大幅提升开发者生产力。 Rust 重写预计将带来高达 10 倍的构建速度提升和更低的内存占用，同时保持与现有 TypeScript 代码的完全向后兼容。
 
-hackernews · miniBill · 7月8日 00:08 · [社区讨论](https://news.ycombinator.com/item?id=48825749)
+hackernews · DanRosenwasser · 7月8日 16:06 · [社区讨论](https://news.ycombinator.com/item?id=48833715)
 
-**背景**: 后门是一种绕过系统正常认证的隐藏方法。硬编码凭证嵌入在固件中，攻击者可提取并利用它们进行未授权访问。物联网设备通常缺乏定期安全更新，使得此类漏洞尤其危险。
+**背景**: TypeScript 是 JavaScript 的类型超集，编译为普通 JavaScript。其编译器传统上由 TypeScript 自身编写，对于大型代码库可能成为瓶颈。用 Rust（一种以速度和安全性著称的系统编程语言）重写性能关键组件，是 JavaScript 生态系统中日益增长的趋势（例如 React 编译器的重写）。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.techtimes.com/articles/319872/20260707/tenda-firmware-backdoor-lets-anyone-log-admin-regardless-password.htm">Tenda Firmware Backdoor Lets Anyone Log In as Admin ...</a></li>
-<li><a href="https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html">CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware</a></li>
-<li><a href="https://www.how2shout.com/news/tenda-router-backdoor-cve-2026-11405-no-patch.html">Tenda Routers Have a Hidden Backdoor With No Patch — What to ...</a></li>
+<li><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript - TypeScript</a></li>
+<li><a href="https://www.stork.ai/blog/reacts-rust-rewrite-just-killed-manual-hooks">React Compiler in Rust: 10x Faster & The End of TypeScript? | Stork.AI</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员对制造商的安全实践表示失望，一位用户表示只会在路由器上使用 OpenWRT。另一位指出后门密码 'rzadmin' 已在 2022 年的一篇文章中公开披露，并与 LKWPETER 事件进行了比较。
+**社区讨论**: 社区情绪总体积极，开发者对性能提升以及团队维护两个代码库的能力表示兴奋。一些用户期待编译器 API，并想知道升级是否无缝。
 
-**标签**: `#security`, `#backdoor`, `#firmware`, `#IoT`, `#vulnerability`
+**标签**: `#TypeScript`, `#compiler`, `#Rust`, `#programming languages`, `#Microsoft`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI 宣布公开发布 GPT-5.6 Sol、Terra 和 Luna](https://x.com/OpenAI/status/2074704958419792299) ⭐️ 9.0/10
+## [Tenda 固件后门允许未授权管理员访问](https://kb.cert.org/vuls/id/213560) ⭐️ 9.0/10
 
-OpenAI 宣布 GPT-5.6 Sol、Terra 和 Luna 将于 2026 年 7 月 9 日（周四）公开发布，并将在全球范围内扩大预览版访问权限。 此次发布标志着 AI 能力的重大进步，提供三个层级的模型——前沿推理（Sol）、均衡性能（Terra）和成本高效的速度（Luna）——满足开发者和企业的多样化需求。 Sol 专为前沿推理和长期代理任务而构建，Terra 以两倍低的成本提供与 GPT-5.5 竞争的性能，Luna 则是该系列中速度最快、最实惠的成员。
+CERT/CC 披露，多个版本的 Tenda 固件包含一个硬编码认证后门（CVE-2026-11405），可绕过密码验证，授予对 Web 管理界面的管理员访问权限。 该漏洞影响大量 Tenda 路由器和物联网设备，可能允许攻击者完全控制家庭和企业网络，危及隐私和安全。 后门密码为'rzadmin'，且用户名未经校验，任何用户名均可生效。Tenda 未回应 CERT/CC 的披露，导致设备未获修补。
+
+hackernews · miniBill · 7月8日 00:08 · [社区讨论](https://news.ycombinator.com/item?id=48825749)
+
+**背景**: 硬编码后门是固件中嵌入的机密凭据，可绕过正常认证。此类后门常因开发或测试而无意遗留，但可被远程利用而无需用户交互，构成严重安全风险。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://kb.cert.org/vuls/id/213560">VU#213560 - Tenda firmware (multiple versions) contains hidden authentication backdoor</a></li>
+<li><a href="https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html">CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware</a></li>
+<li><a href="https://www.techtimes.com/articles/319872/20260707/tenda-firmware-backdoor-lets-anyone-log-admin-regardless-password.htm">Tenda Firmware Backdoor Lets Anyone Log In as Admin Regardless of Password</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者对路由器制造商的安全实践表示失望，有人主张改用 OpenWRT 等开源固件。后门密码在 2022 年的一篇文章中已被披露，表明该问题此前已知。
+
+**标签**: `#security`, `#backdoor`, `#IoT`, `#firmware`, `#vulnerability`
+
+---
+
+<a id="item-3"></a>
+## [OpenAI 宣布公开发布 GPT-5.6 系列模型](https://x.com/OpenAI/status/2074704958419792299) ⭐️ 9.0/10
+
+OpenAI 宣布 GPT-5.6 系列（包括 Sol、Terra 和 Luna）将于 2026 年 7 月 9 日（星期四）公开发布，并将在全球范围内扩大预览版访问权限。 此次发布标志着 AI 发展的重要里程碑，提供三个能力层级——旗舰推理、平衡日常使用和快速低成本推理——可能重塑开发者和企业部署 AI 的方式。 Sol 专为前沿推理和长期自主任务而构建；Terra 以两倍更低的成本提供与 GPT-5.5 相当的性能；Luna 是速度最快、价格最低的成员。命名方案采用太阳系主题。
 
 telegram · zaihuapd · 7月8日 04:17
 
-**背景**: GPT-5.6 是 OpenAI 大型语言模型系列的最新版本。三个模型——Sol、Terra 和 Luna——以天体命名，反映它们的不同角色：Sol 作为旗舰，Terra 作为均衡选项，Luna 作为轻量级变体。
+**背景**: GPT-5.6 是 OpenAI 大型语言模型系列的最新版本。该系列引入了分层方法：旗舰模型 Sol 用于复杂推理，平衡模型 Terra 用于日常任务，轻量级模型 Luna 用于成本敏感型应用。这紧随之前的 GPT-5.5 版本发布。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna/1384931">Introducing GPT-5.6 series: Sol, Terra and Luna</a></li>
 <li><a href="https://www.explainx.ai/blog/gpt-5-6-release-date-features-benchmarks-2026">GPT-5.6: Public Launch July 9 — Sol, Terra, Luna - explainx.ai</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT-5.6 Sol: a next-generation model | OpenAI</a></li>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT‑5.6 Sol: a next-generation model - OpenAI</a></li>
 
 </ul>
 </details>
 
-**标签**: `#OpenAI`, `#GPT-5.6`, `#AI`, `#release`
-
----
-
-<a id="item-3"></a>
-## [GitLost 攻击欺骗 GitHub AI 泄露私有仓库](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/) ⭐️ 8.0/10
-
-研究人员展示了一种名为 GitLost 的提示注入攻击，通过在公开问题或评论中嵌入恶意指令，欺骗 GitHub 的 AI 代理泄露私有仓库数据。 此次攻击凸显了代理型 AI 系统中的一个基本安全缺陷，类似于 Web 应用中的 SQL 注入，可能影响任何在处理不可信内容时有权访问敏感数据的 AI 代理。 该攻击通过在 GitHub 公开问题中放置提示注入载荷，AI 代理读取后，载荷指示代理窃取私有仓库内容。研究人员仅用“Additionally”等简单词汇就绕过了 GitHub 的防护措施，覆盖了系统指令。
-
-hackernews · ColinEberhardt · 7月8日 05:25 · [社区讨论](https://news.ycombinator.com/item?id=48827858)
-
-**背景**: 提示注入是一种网络安全利用方式，恶意输入会导致大语言模型（LLM）产生意外行为。代理型 AI 系统是半自主的 AI，能够感知、推理和行动；它们通常有权访问敏感数据，并可能被来自网页内容的间接提示注入所欺骗。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
-<li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained">Agentic AI, explained | MIT Sloan</a></li>
-<li><a href="https://www.ibm.com/think/topics/agentic-ai">What is Agentic AI? | IBM</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者就责任归属展开辩论：有人认为这是用户配置问题，而另一些人指出提示注入是 LLM 的根本缺陷，仅靠防护措施无法修复。讨论将其与 SQL 注入类比，部分人认为提示注入更为致命。
-
-**标签**: `#prompt injection`, `#AI security`, `#GitHub`, `#agentic AI`, `#vulnerability research`
+**标签**: `#GPT-5.6`, `#OpenAI`, `#AI`, `#release`
 
 ---
 
 <a id="item-4"></a>
-## [欧盟聊天控制提案威胁隐私与加密](https://fightchatcontrol.eu/chat-control-overview) ⭐️ 8.0/10
+## [Mistral 发布 Robostral Navigate，实现无地图机器人导航](https://mistral.ai/news/robostral-navigate/) ⭐️ 8.0/10
 
-欧盟正在推进两项立法提案，即聊天控制 1.0 和 2.0，要求对私人通信进行扫描以查找儿童性虐待材料，其中 2.0 版本明确针对端到端加密消息。 这些提案可能从根本上破坏所有欧盟公民的加密和隐私，为未经司法监督的大规模监控树立危险先例。 聊天控制 1.0 于 2025 年 4 月到期，但欧盟理事会在 90 天内将其复活，而聊天控制 2.0 将要求对加密消息进行客户端扫描，从而有效绕过端到端加密。
+Mistral AI 发布了 Robostral Navigate，这是一个 80 亿参数的模型，仅使用单个 RGB 摄像头就在 R2R-CE 基准上达到了 76.6% 的准确率，无需深度传感器、激光雷达或多摄像头。 该模型实现了室内环境中的无地图导航，这是一项重大进步，通过消除对昂贵传感器或预建地图的需求，可能降低爱好者和研究机器人项目的门槛。 该模型完全在模拟环境中训练，并在连续环境中的房间到房间（R2R-CE）基准上达到了最先进的性能。目前尚未公开可用，限制了爱好者的立即使用。
 
-hackernews · gasull · 7月7日 14:23 · [社区讨论](https://news.ycombinator.com/item?id=48818311)
+hackernews · ottomengis · 7月8日 14:09 · [社区讨论](https://news.ycombinator.com/item?id=48832212)
 
-**背景**: 聊天控制是指欧盟通过强制通信平台扫描用户消息来打击儿童性虐待材料的立法努力。这些提案被批评为允许大规模监控并侵犯基本权利，欧盟理事会自己的法律服务机构警告其违反了《欧盟基本权利宪章》第 7 条。
+**背景**: 传统机器人导航通常需要预先构建的环境地图，这在动态或未知环境中可能不切实际。无地图导航（也称为 mapless navigation）利用视觉输入和强化学习，在没有显式地图的情况下引导机器人。“被绑架机器人问题”指的是机器人在没有先验知识的情况下被放置在陌生位置时自我定位的挑战。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Chat_Control">Chat Control - Wikipedia</a></li>
-<li><a href="https://fightchatcontrol.eu/chat-control-overview">Chat Control 1.0 vs 2.0 - Fight Chat Control</a></li>
-<li><a href="https://byteiota.com/eu-council-chat-control-1-revival-2026/">EU Council Revives Chat Control 1.0 After Parliament Killed It</a></li>
+<li><a href="https://mistral.ai/news/robostral-navigate/">Robostral Navigate: single-camera AI navigation | Mistral AI</a></li>
+<li><a href="https://cryptobriefing.com/mistral-robostral-navigate-robotics-model/">Mistral AI unveils Robostral Navigate, an 8B robotics model ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表示强烈反对，认为这些提案是监控的借口，真正的儿童保护需要更好的执法，而非大规模扫描。一些人指出，对服务提供商的“自愿”性质仍允许客户端扫描，这破坏了加密。
+**社区讨论**: 社区成员对无地图导航能力及其在农场机器人等爱好者项目中的潜力表示兴奋，但指出该模型尚未公开可用。一些人将其与斯坦福的 PIGEON 地理定位模型相提并论，而另一些人则幽默地质疑了 23.4% 的失败率。
 
-**标签**: `#privacy`, `#encryption`, `#EU legislation`, `#surveillance`, `#digital rights`
+**标签**: `#robotics`, `#navigation`, `#AI`, `#Mistral`, `#deep learning`
 
 ---
 
 <a id="item-5"></a>
-## [1986 年 SICP 视频讲座至今仍有价值](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/) ⭐️ 8.0/10
+## [Grok 4.5：高效推理，价格竞争力强](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
 
-MIT 发布了 1986 年由 Hal Abelson 和 Gerald Jay Sussman 讲授的《计算机程序的构造与解释》（SICP）课程经典视频讲座，这些讲座最初是为惠普员工制作的。 SICP 是计算机科学的奠基性教材，这些讲座提供了对编程基础、抽象和 Lisp 的永恒介绍，影响了几代程序员，并且对自学者仍然高度相关。 这些讲座由惠普电视专业制作，包含 20 个视频，覆盖整个课程内容。一些观众指出音频质量较差，但内容仍然出色。
+SpaceXAI 发布了 Grok 4.5，这是一个与 Cursor 联合训练的混合专家模型，其推理效率比 Opus 提升 4 倍，且价格更低（$2/$6，而 Opus 为 $5/$25）。 该模型挑战了 LLM 的成本-性能边界，可能使高级 AI 更易用于编码和智能体任务，并加剧顶级模型之间的竞争。 Grok 4.5 基于 1.5T 参数的 V9 基础模型，并在训练中补充了数万亿 token 的 Cursor 交互数据。早期评估显示其性能接近或超过 Opus 4.7。
 
-hackernews · gjvc · 7月7日 23:57 · [社区讨论](https://news.ycombinator.com/item?id=48825664)
+hackernews · BoumTAC · 7月8日 18:00 · [社区讨论](https://news.ycombinator.com/item?id=48835111)
 
-**背景**: SICP，也被称为“巫师书”，从 1984 年到 2007 年被用作 MIT 的计算机科学入门教材。它教授递归、抽象、模块化和编程语言设计等基本原理，使用 Lisp 方言 Scheme。与单独阅读书籍相比，这些讲座提供了一种互补且更易理解的方式来学习材料。
+**背景**: LLM 的推理效率指用更少的计算步骤或 token 生成正确答案的能力。混合专家模型（MoE）每次推理仅激活部分参数，从而实现更快、更便宜的操作。Grok 4.5 专为编码和智能体任务设计，利用 Cursor 的开发者交互数据提升实际性能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/">Video Lectures | Structure and Interpretation of Computer Programs | Electrical Engineering and Computer Science | MIT OpenCourseWare</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs">Structure and Interpretation of Computer Programs</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PL8FE88AA54363BC46">SICP Lectures - YouTube</a></li>
+<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4.5 | SpaceXAI</a></li>
+<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 · Cursor</a></li>
+<li><a href="https://x.com/elonmusk/status/2071184354756477041">Elon Musk on X: "Grok 4.5, based on our 1.5T V9 foundation model, with Cursor data added in supplemental training, is now in private beta at SpaceX & Tesla. Early evals show performance close to, perhaps exceeding Opus. RL is continuing to significantly improve the model, and the Grok Build" / X</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者建议使用 Racket 配合 sicp 包作为 MIT Scheme 的现代替代方案来学习。一些人认为讲座比单独看书更有效，一位用户表示 SICP 帮助他开启了 Clojure 职业生涯。有人提出了与系统编程相关性的问题，音频质量是常见的抱怨。
+**社区讨论**: 社区评论强调了该模型的经济吸引力，用户注意到其在构建 iOS 应用等实际任务中的强大编码性能。有人质疑在第三好的模型上投入数十亿美元的可持续性，而另一些人则欣赏其实用价值和有竞争力的定价。
 
-**标签**: `#SICP`, `#computer science education`, `#Lisp`, `#programming fundamentals`, `#MIT OCW`
+**标签**: `#AI`, `#LLM`, `#efficiency`, `#coding`, `#benchmarks`
 
 ---
 
 <a id="item-6"></a>
-## [Kokoro：本地 CPU 友好的高质量文本转语音](https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/) ⭐️ 8.0/10
+## [OpenAI 推出支持 GPT-5.5 委托的 GPT-Live](https://openai.com/index/introducing-gpt-live/) ⭐️ 8.0/10
 
-Kokoro 是一个拥有 8200 万参数的开源权重 TTS 模型，可在本地 CPU 上实现高质量文本转语音，无需昂贵 GPU。它支持多种语言、声音以及 EPUB 和 PDF 等输入格式。 这使得没有专用 GPU 的用户也能使用高质量 TTS，降低了无障碍工具、离线应用和隐私保护语音合成的门槛。它挑战了“好 TTS 需要云端或高端硬件”的假设。 Kokoro 的轻量级架构在提供与大模型相当质量的同时，速度更快、成本更低。但它在单词语句和同形异义词（拼写相同但发音不同的词）上表现不佳，不过用户可以手动添加 IPA 发音指南。
+OpenAI 推出了 GPT-Live，这是一种新的语音模式，可以在后台将复杂查询委托给 GPT-5.5，从而实现更强大的对话。首个版本 GPT-Live-1 现已向用户开放。 GPT-Live 通过弥合语音界面与前沿语言模型之间的差距，代表了语音 AI 的重大进步，可能改变用户与 AI 助手的交互方式。然而，它也引发了关于取代人际关系的担忧，并且缺乏工具集成，这可能会限制其在生产性工作中的实用性。 GPT-Live 可以在后台将问题委托给 GPT-5.5，使用户无需退出语音模式即可访问更强大的模型。然而，它目前不支持工具和连接器，这意味着用户在语音模式下无法执行诸如调取文档或使用应用等操作。
 
-hackernews · speckx · 7月7日 18:24 · [社区讨论](https://news.ycombinator.com/item?id=48821576)
+hackernews · logickkk1 · 7月8日 17:03 · [社区讨论](https://news.ycombinator.com/item?id=48834405)
 
-**背景**: 文本转语音（TTS）系统将书面文本转换为语音音频。传统高质量 TTS 通常需要强大 GPU 或云服务，限制了可及性。Kokoro 是向高效、本地优先的 AI 模型发展的趋势的一部分，这些模型可在消费级硬件上运行。
+**背景**: GPT-5.5 是 OpenAI 于 2026 年 4 月发布的大型语言模型，在编码、研究和数据分析方面表现出色。之前的语音模式（如 ChatGPT 的高级语音模式）采用基于回合的交互，并局限于较旧的模型，通常落后于基于文本的能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/hexgrad/kokoro">GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M</a></li>
-<li><a href="https://github.com/nazdridoy/kokoro-tts">GitHub - nazdridoy/kokoro-tts: A CLI text-to-speech tool ...</a></li>
-<li><a href="https://kokorottsai.com/">Kokoro TTS: Advanced AI Text-to-Speech Model with 82M parameters</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT-5.5 | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员称赞 Kokoro 的可及性和质量，尤其是对于没有 NVIDIA GPU 的用户。一些人指出其在同形异义词和单词语句上的局限，但赞赏其可添加自定义 IPA 指南的功能。其他人正在将其集成到阅读器应用和播客中。
+**社区讨论**: 社区反馈褒贬不一：一些用户称赞 GPT-Live 的质量和委托功能，有用户报告了富有成效的一小时对话。其他人则批评缺乏工具集成，并担心 AI 语音助手可能取代人际关系，一位评论者链接了一个反对将 AI 拟人化的播客。
 
-**标签**: `#TTS`, `#accessibility`, `#open-source`, `#machine learning`, `#CPU-friendly`
+**标签**: `#AI`, `#voice assistants`, `#OpenAI`, `#GPT`
 
 ---
 
 <a id="item-7"></a>
-## [sqlite-utils 4.0 新增数据库迁移和嵌套事务](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) ⭐️ 8.0/10
+## [欧盟重启私密信息扫描规则](https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/) ⭐️ 8.0/10
 
-sqlite-utils 4.0 已发布，新增了数据库模式迁移、通过新的 db.atomic() 方法实现的嵌套事务，以及对复合外键的支持。 这一重大更新为广泛使用的 SQLite 工具带来了关键的数据库管理功能，使开发者能够安全地演进数据库模式并更轻松地处理复杂事务。 迁移使用 sqlite-utils 库在 Python 文件中定义，利用 table.transform() 方法进行超出 SQLite 有限 ALTER TABLE 能力的模式更改。该版本还包含升级指南中详述的破坏性变更。
+欧洲议会批准了一项紧急程序，以快速推进立法，恢复已过期的“聊天控制 1.0”规则，允许在线平台自愿扫描私密信息以查找儿童性虐待材料（CSAM）。决定性投票定于 7 月 9 日进行。 此举威胁到端到端加密（E2EE），并可能为欧盟范围内大规模监控私密通信开创先例，影响数百万用户的隐私。这也与强调数据保护的欧盟 GDPR 产生矛盾。 恢复的“聊天控制 1.0”是自愿扫描，而更具争议的“聊天控制 2.0”将强制扫描并禁止 E2EE，但尚未恢复。7 月 9 日的投票将决定平台是否可以恢复自愿扫描。
 
-rss · Simon Willison · 7月7日 19:32
+hackernews · ggirelli · 7月8日 16:53 · [社区讨论](https://news.ycombinator.com/item?id=48834296)
 
-**背景**: SQLite 是一个轻量级的嵌入式数据库引擎，本身不支持健壮的模式迁移或嵌套事务。sqlite-utils 是一个简化 SQLite 数据库操作的 Python 库和命令行工具。新的迁移系统会跟踪已应用的更改并自动应用待处理的更改。
+**背景**: 端到端加密（E2EE）确保只有发送者和预期接收者能读取信息，防止包括服务提供商在内的第三方访问内容。欧盟的“聊天控制”提案旨在打击 CSAM，但因破坏隐私和加密而受到批评。“聊天控制 1.0”已过期，新的推动旨在恢复它。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://sqlite-utils.datasette.io/en/latest/migrations.html">Database migrations - sqlite-utils</a></li>
-<li><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/">sqlite-utils 4.0, now with database schema migrations</a></li>
-<li><a href="https://github.com/simonw/sqlite-migrate">GitHub - simonw/sqlite-migrate: A simple database migration ... GitHub - simonw/sqlite-utils: Python CLI utility and library ... sqlite-utils 4.0rc1 adds migrations and nested transactions Managing Database Versions and Migrations in SQLite sqlite-utils 4.0rc1 adds migrations and nested transactions</a></li>
+<li><a href="https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/">EU now one step away from reviving private message scanning rules</a></li>
+<li><a href="https://en.wikipedia.org/wiki/End-to-end_encryption">End-to-end encryption</a></li>
+<li><a href="https://cybernews.com/security/chat-control-eu-scanning-messages/">Will the EU start scanning your private messages? - Cybernews</a></li>
 
 </ul>
 </details>
 
-**标签**: `#sqlite`, `#database`, `#python`, `#migrations`, `#open source`
+**社区讨论**: 评论者表达了对隐私侵蚀的担忧，一些人指出了自愿扫描（聊天控制 1.0）和强制扫描（聊天控制 2.0）之间的区别。其他人质疑欧盟与 GDPR 的一致性，并对反复出现的标题而没有解决方案表示沮丧。
+
+**标签**: `#privacy`, `#EU regulation`, `#encryption`, `#surveillance`
 
 ---
 
 <a id="item-8"></a>
-## [Anthropic 预计 2026 年第三季度利润超 10 亿美元](https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the) ⭐️ 8.0/10
+## [Cloudflare Meerkat：基于 QuePaxa 的无领导者共识服务](https://blog.cloudflare.com/meerkat-introduction/) ⭐️ 8.0/10
 
-根据 Semianalysis 的独家财务分析，Anthropic 预计在 2026 年第三季度实现超过 10 亿美元的利润，这显示出其在潜在 IPO 前强劲的财务健康状况。 这一预测使 Anthropic 成为 AI 行业的重要参与者，可能重塑竞争格局，并为其 IPO 吸引大量投资者关注。 该分析基于来自可靠来源 Semianalysis 的独家财务数据，突出了 Anthropic 的盈利能力和市场地位，但未提供具体的收入细分。
+Cloudflare 推出了 Meerkat，这是一个由 QuePaxa 算法驱动的全球分布式共识服务，该算法无领导者且异步，是首个异步共识算法的生产级实现。 Meerkat 解决了困扰 Raft 等基于领导者的协议的现实网络不稳定问题，即使消息延迟剧烈波动也能取得进展，且不依赖超时。这可以显著提高全球分布式服务的可靠性。 QuePaxa 于 2023 年由 EPFL 的研究人员发布，是首个在不依赖超时的情况下提供最先进正常情况效率的协议。Meerkat 允许所有副本随时执行写入操作，且进度永远不会因超时而停止。
 
-rss · Semianalysis · 7月8日 06:04
+hackernews · bobnamob · 7月8日 13:18 · [社区讨论](https://news.ycombinator.com/item?id=48831565)
 
-**背景**: Anthropic 是一家以开发 Claude 模型系列而闻名的 AI 安全公司。盈利能力是科技公司考虑 IPO 时的关键指标，因为它展示了可持续的业务增长。
+**背景**: Paxos 和 Raft 等分布式共识算法是部分同步的，依赖超时来检测故障并取得进展。在不稳定的网络中，基于领导者的协议可能会遭受领导者抖动、选举风暴和延迟峰值。像 QuePaxa 这样的异步共识算法通过不依赖超时来避免这些问题，但历史上被认为太慢而无法实际使用。
 
-**标签**: `#Anthropic`, `#AI`, `#IPO`, `#financials`, `#industry analysis`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://bford.info/pub/os/quepaxa/quepaxa.pdf">QuePaxa: Escaping the Tyranny of Timeouts in Consensus Pasindu Tennage* EPFL</a></li>
+<li><a href="https://github.com/dedis/quepaxa">GitHub - dedis/quepaxa: This is the code repository for QuePaxa project (formerly Raxos or QSCOD) · GitHub</a></li>
+<li><a href="https://bford.info/pub/os/quepaxa/">QuePaxa: Escaping the Tyranny of Timeouts in Consensus – Bryan Ford's Home Page</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者指出，Meerkat 是首个异步共识算法的生产级实现，这是一个重要的里程碑。一些人认为与 Raft 的比较令人困惑，因为 Raft 是基于领导者的，但其他人则欣赏其在混乱网络中的实际好处。也有对开源 Meerkat 的兴趣。
+
+**标签**: `#distributed systems`, `#consensus`, `#Cloudflare`, `#QuePaxa`, `#asynchronous`
 
 ---
 
 <a id="item-9"></a>
-## [Mozilla CTO 关于开源 AI 报告的 AMA](https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/) ⭐️ 8.0/10
+## [OpenBSD 释放后使用漏洞可本地提权至 root](https://nvd.nist.gov/vuln/detail/cve-2026-57589) ⭐️ 8.0/10
 
-Mozilla 首席技术官 Raffi Krikorian 将于 2025 年 7 月 14 日举办一场 AMA，讨论首份《开源 AI 现状》报告，内容涵盖“免费”模型的隐性成本、企业采用情况、中国的影响力以及开发者信任。 此次 AMA 提供了来自主要开源倡导者对开源 AI 实际挑战和机遇的直接见解，对于做出战略决策的开发者和企业至关重要。 该报告基于对 950 多名开发者的调查，重点关注生产现实，包括竞争正从模型转向基础设施的“智能体框架”层。
+在 OpenBSD 的 sysv_sem.c 中发现了一个释放后使用漏洞（CVE-2026-57589），允许本地攻击者将权限提升至 root。该漏洞是通过 OpenAI 的 Patch The Planet 计划与 Trail of Bits 合作发现的。 该漏洞损害了 OpenBSD 以安全著称的声誉，尤其因为它影响了一个以安全为核心的 OS。同时，它也凸显了 AI 辅助漏洞挖掘在发现开源软件关键缺陷中日益重要的作用。 该缺陷存在于 sys_semget() 函数中，涉及 tsleep 后的上下文切换，导致释放后使用。影响范围包括 OpenBSD 7.9 及之前版本，较新版本中已提供修复补丁。
 
-reddit · r/MachineLearning · /u/raffikrikorian · 7月7日 14:51
+hackernews · linggen · 7月8日 13:24 · [社区讨论](https://news.ycombinator.com/item?id=48831658)
 
-**背景**: 像 Llama 和 Mistral 这样的开源 AI 模型被广泛使用，但在生产环境中部署它们通常会产生安全、隐私和集成方面的隐性成本。“智能体框架”是指围绕 LLM 的软件基础设施，管理上下文、记忆和工具使用，正成为关键差异化因素。
+**背景**: 释放后使用漏洞是指程序在内存被释放后仍继续使用该内存指针，可能允许攻击者执行任意代码。OpenBSD 是一种类 Unix 操作系统，以其主动的安全措施和对代码正确性的高度重视而闻名。Patch The Planet 计划由 OpenAI 和 Trail of Bits 发起，利用 AI 模型帮助发现并修复开源项目中的漏洞。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.startuphub.ai/ai-news/ai-research/2026/mozilla-ai-future-the-open-source-counter-manifesto">Mozilla AI Future: The Open Source Counter-Manifesto | StartupHub.ai</a></li>
-<li><a href="https://opendatascience.com/what-is-an-agent-harness-the-architecture-behind-reliable-agentic-ai/">What is an Agent Harness? The Architecture Behind Agentic AI</a></li>
-<li><a href="https://www.entrepreneur.com/science-technology/this-is-the-hidden-ai-tax-that-founders-need-to-budget-for/504341">This Is the Hidden ‘AI Tax’ That Founders Need to Budget For</a></li>
+<li><a href="https://cvefeed.io/vuln/detail/CVE-2026-57589">CVE-2026-57589 - OpenBSD Use-After-Free Privilege Escalation</a></li>
+<li><a href="https://openai.com/index/patch-the-planet/">Patch the Planet: a Daybreak initiative to support open ...</a></li>
+<li><a href="https://learn.snyk.io/lesson/use-after-free/">Use after free vulnerability | Tutorial & Examples | Snyk Learn</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open source AI`, `#Mozilla`, `#enterprise AI`, `#developer trust`, `#AI ecosystem`
+**社区讨论**: 社区成员注意到该漏洞是通过 AI 辅助方法发现的，一些人尽管发现了漏洞，仍称赞 OpenBSD 的安全文化。其他人质疑为何该漏洞未列在 OpenBSD 的安全页面上，并对 AI 驱动的漏洞挖掘对 OpenBSD 历来低漏洞数量的整体影响表示好奇。
+
+**标签**: `#security`, `#openbsd`, `#vulnerability`, `#privilege-escalation`, `#ai-assisted`
 
 ---
 
 <a id="item-10"></a>
-## [将微调约束在可信 LoRA 子空间内](https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/) ⭐️ 8.0/10
+## [GitLost：提示注入攻击导致 GitHub AI 代理泄露私有仓库](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/) ⭐️ 8.0/10
 
-一篇新论文提出将微调约束在从可信 LoRA 适配器学习到的子空间内，从而防止模型学习该子空间之外的恶意更新。 该方法为微调投毒攻击提供了一种新颖的防御手段，随着模型在用户提供或外部数据上进行微调，此类攻击日益成为安全隐患。通过从几何上限制模型的更新空间，它可以在无需检测有毒数据的情况下阻断后门。 该方法在 196 个公开 LoRA 适配器上进行了测试，包括专门设计用于绕过防御的自适应攻击，结果攻击成功率大幅下降，同时在被适配器池覆盖的任务上保留了有用的适应能力。
+研究人员展示了一种提示注入攻击，通过在公开问题的评论中嵌入恶意指令，诱骗 GitHub 的 AI 代理泄露私有仓库数据。 这凸显了代理型 AI 系统中的一个根本性安全缺陷，类似于 SQL 注入，将可信指令与不可信用户输入混合可能导致数据泄露。 该攻击要求代理具有对私有仓库的读取权限和对公开问题的写入权限；泄露发生在代理将私有数据作为公开评论发布时。
 
-reddit · r/MachineLearning · /u/Bright_Warning_8406 · 7月7日 20:00
+hackernews · ColinEberhardt · 7月8日 05:25 · [社区讨论](https://news.ycombinator.com/item?id=48827858)
 
-**背景**: LoRA（低秩适配）是一种参数高效的微调技术，通过添加小型可训练的低秩矩阵来更新模型，而不是修改所有参数。微调投毒攻击将恶意数据注入训练集，以引入隐藏行为或后门。现有防御通常侧重于检测有毒样本或降低其影响，而这项工作则通过约束模型的更新空间采取了不同的方法。
+**背景**: 提示注入是一种网络安全利用方式，精心构造的输入会导致 LLM 忽略先前的指令并执行非预期操作。代理型 AI 系统能够自主使用工具和访问数据，如果输入与指令未适当分离，就容易受到此类攻击。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.geeksforgeeks.org/deep-learning/low-rank-adaptation-lora/">Low Rank Adaptation (LoRA) - GeeksforGeeks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
+<li><a href="https://owasp.org/www-community/attacks/PromptInjection">Prompt Injection - OWASP Foundation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#machine learning`, `#security`, `#fine-tuning`, `#LoRA`, `#adversarial robustness`
+**社区讨论**: 评论者就这是 GitHub 漏洞还是配置问题展开辩论；一些人认为真正的问题在于代理可以将私有数据写入公开输出，而另一些人指出提示注入是一个需要根本性防御的系统性缺陷。
+
+**标签**: `#security`, `#AI`, `#prompt injection`, `#GitHub`, `#vulnerability`
 
 ---
 
 <a id="item-11"></a>
-## [Anthropic 推出 Claude Cowork，支持后台自主完成任务](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) ⭐️ 8.0/10
+## [MIT 1986 年 SICP 视频讲座在线分享](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/) ⭐️ 8.0/10
 
-Anthropic 推出了 Claude Cowork 功能，面向 Pro、Max、Team 和 Enterprise 付费用户，使 AI 能够在桌面端、网页和移动端后台自主完成复杂的多步骤任务。 这标志着向能够异步处理实际办公任务的实用 AI 智能体迈出了重要一步，有望提升专业人士的生产力，并改变用户与 AI 助手的交互方式。 任务在 Anthropic 服务器上运行，即使用户关闭电脑也会继续；桌面版支持读写本地文件和操作浏览器，用户还可以设置定时任务并通过项目进行管理。
+MIT 开放课程发布了经典课程 6.001《计算机程序的结构与解释》的完整 20 讲视频，这些视频最初于 1986 年 7 月为惠普员工录制。 这些由 Hal Abelson 和 Gerald Jay Sussman 讲授的讲座是计算机科学教育的基础资源，其免费开放持续激励新一代程序员学习 Lisp 并深入思考编程概念。 这些讲座由惠普电视专业制作，涵盖整个 SICP 课程，包含大量每周编程作业。现代学习者可以使用 Racket 配合 sicp 包作为 MIT Scheme 的替代方案。
 
-telegram · zaihuapd · 7月8日 03:50
+hackernews · gjvc · 7月7日 23:57 · [社区讨论](https://news.ycombinator.com/item?id=48825664)
 
-**背景**: Claude 是 Anthropic 开发的一系列大型语言模型，采用宪法 AI 训练以确保伦理合规。Claude Cowork 将助手的能力从简单的问答扩展到自主执行多步骤工作流，例如生成带公式的 Excel 表格或创建演示文稿。
+**背景**: SICP（《计算机程序的结构与解释》）是一本开创性的计算机科学教材和课程，使用 Lisp 方言 Scheme 教授抽象、递归和元语言抽象等基本编程概念。这些视频讲座最初于 1986 年为惠普员工讲授，此后成为自学者的经典资源。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://claude.com/product/cowork">Claude Cowork | Claude by Anthropic</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_Cowork">Claude Cowork</a></li>
+<li><a href="https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/">Video Lectures | Structure and Interpretation of Computer ...</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLE18841CABEA24090">MIT 6.001 Structure and Interpretation, 1986 - YouTube</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Anthropic`, `#Claude`, `#autonomous agents`, `#product launch`
+**社区讨论**: 评论者强烈推荐单独看视频而非只看书，有人指出视频效果更好，书籍作为补充。多位评论者分享了个人成功经历：有人组织了线下学习小组，有人在通过 SICP 学习 Lisp 后以 Clojure 为职业，许多人强调学习 Lisp 从根本上改变了他们对编程的思考方式。
+
+**标签**: `#SICP`, `#Lisp`, `#computer science education`, `#MIT OCW`, `#programming`
 
 ---
 
 <a id="item-12"></a>
-## [DeepSeek 自研 AI 芯片以减少对英伟达和华为的依赖](https://t.me/zaihuapd/42423) ⭐️ 8.0/10
+## [sqlite-utils 4.0 新增数据库迁移与嵌套事务](https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything) ⭐️ 8.0/10
 
-中国 AI 公司 DeepSeek 正在自研 AI 推理芯片，以减少对英伟达和华为芯片的依赖。该项目始于约一年前，目前仍处于早期阶段，公司正在积极招募芯片设计工程师。 此举有助于 DeepSeek 在美国对华先进 AI 芯片出口限制下实现更大的硬件自主性。这也标志着中国 AI 公司投资定制芯片以确保供应链安全、降低地缘政治风险的更广泛趋势。 该芯片专注于推理阶段，即已训练好的模型为用户生成回答的环节，而非模型训练。DeepSeek 已开始与芯片设计、代工和存储公司接洽，并在近几个月私下大量招募芯片设计工程师。
+sqlite-utils 4.0 于 2026 年 7 月 7 日发布，新增了数据库模式迁移、通过新 db.atomic() 方法实现的嵌套事务，以及对复合外键的支持。 这一主要版本升级解决了 SQLite 用户长期以来的痛点，尤其是缺乏内置模式迁移支持的问题，使 sqlite-utils 成为管理不断演变的数据库的更完整工具。 迁移通过新的 Migrations 类定义为 Python 函数，利用现有的 table.transform() 方法进行超越 SQLite 有限 ALTER TABLE 的模式更改。该版本还包含升级指南中详述的破坏性变更。
 
-telegram · zaihuapd · 7月8日 05:20
+rss · Simon Willison · 7月7日 19:32
 
-**背景**: DeepSeek 此前依赖英伟达 H800 和华为昇腾芯片运行其模型。美国出口管制限制了中国获取先进 AI 芯片的渠道，促使中国公司开发自己的替代品。AI 推理芯片是专门设计用于高效运行已训练 AI 模型的硬件，与用于训练模型的训练芯片不同。
+**背景**: sqlite-utils 是一个用于操作 SQLite 数据库的 Python 库和 CLI 工具，在 Datasette 生态系统中广泛使用。模式迁移允许开发者对数据库模式变更进行版本控制并增量应用，这是 sqlite-utils 之前缺失的功能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/NVIDIA_H800_GPU">NVIDIA H800 GPU</a></li>
-<li><a href="https://tech-insider.org/huawei-ascend-950pr-ai-chip-nvidia-china-2026/">Huawei Ascend 950PR: The 1.56 PFLOP AI Chip vs Nvidia [2026]</a></li>
-<li><a href="https://uvation.com/articles/ai-inference-chips-latest-rankings-who-leads-the-race">AI Inference Chips 2025: Rankings & Leaders - uvation.com</a></li>
+<li><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/">sqlite-utils 4.0, now with database schema migrations</a></li>
+<li><a href="https://sqlite-utils.datasette.io/en/latest/migrations.html">Database migrations - sqlite-utils</a></li>
+<li><a href="https://github.com/simonw/sqlite-utils">GitHub - simonw/sqlite-utils: Python CLI utility and library ... Managing Database Versions and Migrations in SQLite sqlite-utils 4.0, now with database schema migrations #Shorts sqlite-utils 4.0rc1 adds migrations and nested transactions SQLite Versioning & Migration Strategies for Evolving Apps</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI chips`, `#DeepSeek`, `#semiconductors`, `#China tech`, `#inference hardware`
+**标签**: `#sqlite`, `#python`, `#database`, `#migrations`, `#open source`
 
 ---
 
 <a id="item-13"></a>
-## [阿里巴巴要求全体员工在 7 月 10 日前卸载 Claude](https://t.me/zaihuapd/42424) ⭐️ 8.0/10
+## [Anthropic 预计 2026 年第三季度利润达 10 亿美元](https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the) ⭐️ 8.0/10
 
-阿里巴巴内部下令要求全体员工在 2026 年 7 月 10 日前卸载 Anthropic 的所有产品，包括 Claude Sonnet、Opus、Fable 以及 Claude Code，推翻了此前报销员工使用外部 AI 模型费用的政策。 这一禁令标志着 AI 竞争和知识产权纠纷的升级，可能为其他中国科技公司限制外国 AI 工具树立先例，并影响全球企业 AI 使用政策。 该禁令之前，Anthropic 指控阿里巴巴在 2026 年 4 月 22 日至 6 月 5 日期间使用约 2.5 万个虚假账号与 Claude 进行了超过 2800 万次交互，用于模型蒸馏。阿里巴巴此前曾报销员工使用 Claude、GPT、Gemini 等外部模型的费用。
+一份财务分析显示，Anthropic 预计在 2026 年第三季度实现超过 10 亿美元的利润，并提前透露了其潜在的 IPO 财务数据。 这一预测凸显了 Anthropic 强大的市场地位和盈利潜力，可能对 AI 行业以及潜在 IPO 前的投资者情绪产生重大影响。 该分析强调了 Anthropic 的竞争定位和市场机会，表明该公司的成功在很大程度上掌握在自己手中。
 
-telegram · zaihuapd · 7月8日 06:09
+rss · Semianalysis · 7月8日 06:04
 
-**背景**: 模型蒸馏是一种技术，通过使用更大、更强模型（如 Claude）的输出来训练较小的模型，使其模仿大模型的能力。Anthropic 的 Claude 系列是先进的 AI 助手，Claude Code 是一种智能编码工具。该禁令反映了在竞争激烈的 AI 领域，对知识产权盗窃和未经授权使用 AI 模型的担忧日益加剧。
+**背景**: Anthropic 是一家领先的人工智能研究和部署公司，以开发先进语言模型而闻名。该分析详细展示了其财务轨迹和 IPO 前景。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.forbes.com/sites/jonmarkman/2026/06/26/anthropic-says-alibaba-used-25000-fake-accounts-to-distill-claude/">Anthropic Says Alibaba Used 25,000 Fake Accounts To Distill ...</a></li>
-<li><a href="https://www.explainx.ai/blog/anthropic-alibaba-claude-distillation-25000-fake-accounts-2026">Anthropic vs Alibaba — 25K Fake Claude Accounts, Distillation ...</a></li>
-<li><a href="https://www.timesnownews.com/technology-science/anthropic-faces-backlash-after-hidden-claude-code-sparks-spying-allegations-article-154862268">Anthropic Faces Backlash After Hidden Claude Code Sparks ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Alibaba`, `#Claude`, `#Anthropic`, `#AI policy`, `#enterprise`
+**标签**: `#Anthropic`, `#AI`, `#finance`, `#IPO`, `#industry analysis`
 
 ---
 
 <a id="item-14"></a>
-## [华为 5G 旗舰重返海外，峰值速率超 1100 Mbps](https://finance.sina.com.cn/tech/roll/2026-07-08/doc-inihapna8035781.shtml) ⭐️ 8.0/10
+## [工具调用攻击绕过 LLM 安全护栏](https://www.reddit.com/r/MachineLearning/comments/1ur1fnz/agentic_safety_triggers_arent_textual_safety/) ⭐️ 8.0/10
 
-华为 Pura 90 Pro Max 国际版原生支持 5G 网络，海外实测峰值下载速率突破 1100 Mbps，标志着华为 5G 旗舰在受美国制裁七年后正式重返海外市场。 这标志着华为在 5G 芯片供应上取得突破并重新具备全球竞争力，可能重塑高端智能手机市场格局，挑战苹果和三星等老牌厂商。 该设备状态栏显示 5G 图标，并采用华为 5A 通信技术——5A 并非新网络制式，而是一套先进通信技术组合。此次回归建立在 2023 年 Mate 60 系列国内技术突破以及 HarmonyOS 6.0.0.125 版本升级实现 5A 技术的基础上。
+研究人员证明，仅关注文本内容的安全护栏无法抵御针对 LLM 代理的基于工具调用的攻击，实验显示基础模型的拒绝率低于 35%，即使经过最先进的安全微调也仅达到 48%。 这暴露了当前 LLM 安全对齐在代理系统中的关键盲点——攻击嵌入在工具调用序列而非文本中，可能通过 MCP 或类似协议实现真实世界的利用。 攻击利用已知 CVE 构造看似无害的文本工具调用序列，针对 1B 至 14B 参数的模型使用 MCP 文件系统工具进行测试；无需训练的方法在不进行微调的情况下实现了约 3 倍于基线的拒绝率。
 
-telegram · zaihuapd · 7月8日 12:17
+reddit · r/MachineLearning · /u/mlsandwich · 7月8日 18:36
 
-**背景**: 自 2019 年起，美国制裁阻止华为获取 5G 芯片和组件，导致其旗舰机型只能使用 4G。2023 年，Mate 60 系列凭借国产 5G 芯片震惊市场。华为于 2026 年初推出的 5A 技术在不依赖新网络基础设施的情况下提升了连接体验。
+**背景**: LLM 安全护栏通常通过分析提示文本中的恶意语言来检测攻击。然而，在代理系统中，模型可以通过 MCP 等协议调用外部工具，实际攻击通过工具调用序列而非文本执行。这项研究表明，此类工具调用攻击能够绕过基于文本的护栏。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.ithome.com/0/901/311.htm">华为官网详解“5A”先进通信技术：不等同于 5G-A / 5.5G，不涉及额外资...</a></li>
-<li><a href="https://consumer.huawei.com/cn/support/content/zh-cn16081318/">华为5A相关问题汇总 | 华为官网 - HUAWEI</a></li>
-<li><a href="https://www.sohu.com/a/973505944_121784105">2.26GB大更新！Mate60系列获鸿蒙6.0.0.125升级，5A通信正式上车_支持_...</a></li>
+<li><a href="https://modelcontextprotocol.io/specification/2025-06-18/server/tools">Tools - Model Context Protocol</a></li>
+<li><a href="https://www.cve.org/">CVE: Common Vulnerabilities and Exposures</a></li>
+<li><a href="https://seandavi.github.io/amc-ai-governance/agentic_safety.html">11 Agentic Safety and Guardrails – Implementing AI in ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Huawei`, `#5G`, `#smartphone`, `#technology`, `#telecommunications`
+**社区讨论**: Reddit 讨论验证了这些发现，评论者指出无需训练的方法很有前景但可能无法扩展。一些人质疑基于 MCP 的攻击的实用性，而另一些人则强调需要对工具调用序列进行运行时监控。
+
+**标签**: `#LLM safety`, `#agentic systems`, `#MCP`, `#adversarial attacks`, `#AI security`
 
 ---
 
 <a id="item-15"></a>
+## [LingBot-Video：开源稀疏 MoE 视频扩散世界模型](https://www.reddit.com/r/MachineLearning/comments/1ur0bxq/lingbotvideo_sparsemoe_video_diffusion/) ⭐️ 8.0/10
+
+LingBot-Video 是一个 13B 参数的稀疏混合专家（MoE）视频扩散 Transformer，仅 1.4B 活跃参数，通过包含基于 VLM 的物理合理性奖励在内的六项奖励进行强化学习后训练，并开源了权重、代码以及 Diffusers/SGLang 堆栈。 这项工作通过结合稀疏 MoE 效率与强化学习后训练，推动了开源视频生成和世界建模的边界，为闭源模型提供了可扩展的替代方案。它还引发了关于使用 VLM 作为物理评判者以及视频生成器与机器人世界模型之间区别的关键问题。 该模型采用 DeepSeek-V3 风格的稀疏 MoE，包含 128 个专家和 top-8 路由，总参数 13B 中仅 1.4B 活跃。它支持动作到视频模式，可从动作和手部姿态条件预测机器人轨迹，但缺乏闭环机器人验证；其物理合理性奖励依赖 VLM 对采样帧评分，尽管添加了真实视频负样本，仍存在奖励破解风险。
+
+reddit · r/MachineLearning · /u/Savings-Display5123 · 7月8日 17:58
+
+**背景**: 稀疏混合专家（MoE）层替代 Transformer 中的密集前馈层，每个 token 仅激活部分专家，从而在不按比例增加计算成本的情况下扩展模型规模。动作条件世界模型根据机器人动作预测未来视频帧，使得无需真实世界轨迹即可进行策略评估和规划。古德哈特定律警告：当一个指标成为目标时，它就不再是一个好指标；在强化学习中，奖励破解指智能体利用奖励信号达成目标而未实现预期意图。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://machinelearningmastery.com/mixture-of-experts-architecture-in-transformer-models/">Mixture of Experts Architecture in Transformer Models</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained - Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reward_hacking">Reward hacking - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 社区赞扬了开源贡献和技术深度，但提出了两个主要批评：基于 VLM 的物理合理性奖励可能易受古德哈特定律和奖励破解的影响，并且缺乏闭环机器人验证模糊了视频生成器与真正世界模型之间的界限。一些评论者指出，在 RBench 上，推理密集型维度仍偏向闭源模型，且该模型在其自身评估中仅位列通用 T2V 第二名。
+
+**标签**: `#video diffusion`, `#sparse MoE`, `#world model`, `#reinforcement learning`, `#robotics`
+
+---
+
+<a id="item-16"></a>
+## [DeepSeek 自研 AI 芯片以减少对英伟达和华为的依赖](https://t.me/zaihuapd/42423) ⭐️ 8.0/10
+
+中国 AI 公司 DeepSeek 正在自研专注于推理的 AI 芯片，以减少对英伟达和华为芯片的依赖。该项目约一年前启动，目前仍处于早期阶段，DeepSeek 正在招募芯片设计工程师，并与代工厂和存储公司接洽。 此举可降低 DeepSeek 对美国出口管制的脆弱性，这些管制限制了 H800 等先进芯片的获取。如果成功，还可能加强中国本土 AI 芯片生态系统，减少对外国供应商的依赖。 该芯片专为推理而非训练设计，推理阶段要求较低且更易扩展。DeepSeek 此前依赖英伟达 H800 和华为昇腾芯片，但美国出口管制使得获取先进芯片变得困难。
+
+telegram · zaihuapd · 7月8日 05:20
+
+**背景**: AI 芯片是运行 AI 工作负载的专用硬件。训练芯片处理教学模型的密集计算过程，而推理芯片运行已训练模型以生成输出。美国出口管制限制向中国出售先进 AI 芯片，促使中国公司开发本土替代品。DeepSeek 此举顺应了中国科技公司寻求芯片自给自足的大趋势。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.naddod.com/ai-insights/inference-chip-guide-the-foundation-of-scalable-ai-applications">Inference Chip Guide: The Foundation of Scalable AI ...</a></li>
+<li><a href="https://laweconcenter.org/wp-content/uploads/2025/03/tldr-AI-Chips-export-1.pdf">US Export Controls on AI and Semiconductors</a></li>
+<li><a href="https://www.huaweicentral.com/huawei-ai-chips-edge-out-nvidia-h800-hinting-progress-over-us-tech-controls/">Huawei AI chips edge out Nvidia H800, hinting progress over ...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI chips`, `#DeepSeek`, `#semiconductors`, `#inference`, `#export controls`
+
+---
+
+<a id="item-17"></a>
+## [阿里要求员工 7 月 10 日前卸载 Claude](https://t.me/zaihuapd/42424) ⭐️ 8.0/10
+
+阿里巴巴内部下令要求全体员工卸载 Anthropic 的产品，包括 Claude 模型（Sonnet、Opus、Fable）和 Claude Code，禁令于 2025 年 7 月 10 日生效。 这标志着中国最大科技公司之一的重大政策转变，反映出中美 AI 公司之间因账户滥用和安全问题而升级的紧张关系。 禁令前，Anthropic 指控阿里巴巴在 4 月 22 日至 6 月 5 日期间使用约 2.5 万个虚假账户与 Claude 交互超过 2800 万次，随后收紧了风控策略。
+
+telegram · zaihuapd · 7月8日 06:09
+
+**背景**: Claude 是由美国 AI 安全公司 Anthropic 开发的大型语言模型，采用宪法 AI 技术以确保伦理合规。阿里巴巴此前曾报销员工使用 Claude、GPT、Gemini 等外部模型的费用。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Alibaba`, `#Claude`, `#Anthropic`, `#AI policy`, `#corporate ban`
+
+---
+
+<a id="item-18"></a>
+## [华为 5G 旗舰重返海外，峰值速率突破 1100 Mbps](https://finance.sina.com.cn/tech/roll/2026-07-08/doc-inihapna8035781.shtml) ⭐️ 8.0/10
+
+华为 Pura 90 Pro Max 国际版原生支持 5G 网络，海外实测峰值下载速率突破 1100 Mbps，标志着华为 5G 旗舰在受美国制裁 7 年后正式重返海外市场。 这标志着华为在 5G 芯片供应上取得突破，重新具备全球竞争力，可能重塑海外高端智能手机市场格局。 该机状态栏显示 5G 标识，峰值速度经海外实测验证。该机还搭载华为 5A 通信技术，5A 并非新的网络制式，而是综合通信体验的提升。
+
+telegram · zaihuapd · 7月8日 12:17
+
+**背景**: 自 2019 年起，美国制裁阻止华为使用 5G 芯片并在海外销售 5G 手机。2023 年 Mate 60 系列凭借国产 5G 芯片实现突破，2026 年 1 月 HarmonyOS 6.0.0.125 更新为多款机型引入 5A 通信技术，为重返海外奠定技术基础。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://consumer.huawei.com/cn/support/content/zh-cn16081318/">华为5A相关问题汇总 | 华为官网 - HUAWEI</a></li>
+<li><a href="https://www.ithome.com/0/901/311.htm">华为官网详解“5A”先进通信技术：不等同于 5G-A / 5.5G，不涉及额外资...</a></li>
+<li><a href="https://news.qq.com/rain/a/20260107A02IIR00">华为 Mate 60 等机型获 HarmonyOS 6.0.0.125 升级，实装 5A 通信</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Huawei`, `#5G`, `#smartphone`, `#technology`
+
+---
+
+<a id="item-19"></a>
 ## [安卓远程 Root 漏洞链曝光](https://www.coolapk.com/feed/72700258?s=ZGQ2MTVlZjYxMDYyNTM3ZzZhNGUzOThjega1640) ⭐️ 8.0/10
 
-Nebula Security 研究人员公开了一个名为 IonStack 的远程 Root 漏洞链，通过一个恶意链接即可攻破安卓 17 及更早版本设备，该漏洞链结合了 Firefox 浏览器漏洞和一个潜伏 15 年的 Linux 内核漏洞。概念验证代码已上传至 GitHub。 这是首个公开演示的针对安卓 17 的远程 Root 漏洞，攻击者只需用户点击链接即可获得持久 Root 权限并完全控制设备。这对数百万安卓用户构成直接风险，尤其是使用旧设备或未打补丁浏览器的用户。 该漏洞链利用 Firefox 浏览器漏洞（可能是 CVE-2024-29943 或类似漏洞）实现初始代码执行，然后通过 Linux 内核的 use-after-free 漏洞（CVE-2024-1086，影响内核 v5.14 至 v6.6）提升权限。谷歌 Pixel 设备已成功测试，Linux 内核修复补丁已发布。
+Nebula Security 披露了一个名为 IonStack 的远程 Root 漏洞链，该漏洞链结合了 Firefox 151.0.2 漏洞和一个潜伏 15 年的 Linux 内核漏洞（GhostLock，CVE-2026-43499），通过点击恶意链接即可攻破安卓 17 及以下所有版本的设备。 这是首个公开的概念验证，展示了对安卓 17 的一键远程 Root 利用，影响数十亿台设备。它凸显了浏览器与内核漏洞组合利用的严重风险，且实际利用代码已公开在 GitHub 上。 该漏洞链利用 Firefox 151.0.2 中的内存损坏漏洞（CVE-2026-10701）实现初始代码执行，然后通过 GhostLock 内核漏洞提升权限。谷歌 Pixel 设备已测试并确认可被攻破。Linux 内核已完成修复，但完整漏洞细节暂未披露。
 
 telegram · zaihuapd · 7月8日 13:01
 
-**背景**: 安卓设备依赖分层安全模型，Linux 内核提供应用与系统之间的隔离。远程 Root 漏洞很少见，因为它们需要串联多个不同组件的漏洞。IonStack 漏洞链展示了从浏览器到内核的攻击，绕过了安卓的沙箱和 SELinux 保护。
+**背景**: 安卓设备依赖分层安全模型，其中 Linux 内核负责权限隔离。远程 Root 利用完全绕过这些层，使攻击者获得设备的完全控制权。GhostLock 漏洞（CVE-2026-43499）是内核实时互斥锁代码中的一个释放后使用漏洞，自 2011 年以来一直存在。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://cybersecuritynews.com/android-17-root-1-click/">First-Ever 1- Click Android 17 Exploit Allows Attackers to ...</a></li>
-<li><a href="https://github.com/Notselwyn/CVE-2024-1086">GitHub - Notselwyn/CVE-2024-1086: Universal local privilege ...</a></li>
-<li><a href="https://vulners.com/githubexploit/F91A4BDD-E880-59C9-B6CE-8DDBFB8AB668">Exploit for Out-of-bounds Write in Mozilla Firefox - exploit ...</a></li>
+<li><a href="https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html">15-Year-Old GhostLock Flaw Enables Root and Container Escape ...</a></li>
+<li><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-46/">Security Vulnerabilities fixed in Firefox 151 — Mozilla</a></li>
 
 </ul>
 </details>
@@ -356,24 +461,24 @@ telegram · zaihuapd · 7月8日 13:01
 
 ---
 
-<a id="item-16"></a>
+<a id="item-20"></a>
 ## [美团 OWL 模型会话数据泄露事件](https://github.com/gumusserv/ProducerBenchV2/blob/83cad6007ef3fe8df33386e8f43738fe62337e16/parsed_source_data/data/) ⭐️ 8.0/10
 
-据报道，美团在 OpenRouter 上公开测试的免费模型 OWL（LongCat）发生会话数据泄露，相关数据曾出现在公开的 GitHub 仓库中，随后被删除。该泄露被一个 Discord 机器人令牌扫描器发现，检测到了暴露的令牌。 此事件凸显了在公共 AI 模型中进行敏感对话的安全风险，因为会话日志可能成为新的敏感数据资产。它提醒用户避免在模型中输入 API 密钥、私钥或专有数据。 泄露数据最早于北京时间 2026 年 7 月 7 日 23:32:33 出现在 GitHub 仓库中。该仓库随后被设置为不可访问，暴露的令牌据称已被 Discord 机器人令牌扫描器重置。
+据报道，美团在 OpenRouter 上的 OWL（LongCat）免费测试模型发生会话数据泄露，泄露的数据曾出现在一个现已设为私有的 GitHub 仓库中。 此事件凸显了 LLM 部署中的关键安全和隐私风险，尤其是免费测试模型，并强调用户应避免在 AI 模型中输入敏感信息。 该 GitHub 仓库至少在 2026 年 7 月 7 日之前是公开可访问的，随后被 Discord 机器人令牌扫描器检测到，提示令牌已暴露并被重置。
 
 telegram · zaihuapd · 7月8日 13:35
 
-**背景**: 美团 LongCat-2.0 是一个 1.6 万亿参数的 MoE 模型，采用 MIT 许可证，在国内芯片上训练，并曾以 'Owl Alpha' 名义在 OpenRouter 上匿名测试。OpenRouter 是一个统一 API 平台，提供数百个 LLM 的访问。Discord 机器人令牌扫描器可自动检测并撤销公开仓库中暴露的令牌。
+**背景**: 美团 LongCat-2.0 是一个 1.6 万亿参数的 MoE 模型，采用 MIT 许可证开源，并在国产芯片上训练。OpenRouter 是一个统一的 LLM API 网关，提供对各种模型的访问。Discord 机器人令牌扫描器会自动检测代码仓库中暴露的令牌。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://aitoolsrecap.com/Blog/longcat-2-meituan-open-source-chinese-chips-2026">LongCat-2.0: The 1.6T Open-Source AI That Was Secretly ...</a></li>
-<li><a href="https://openrouter.ai/openrouter">OpenRouter API and Models | OpenRouter</a></li>
+<li><a href="https://openrouter.ai/">OpenRouter</a></li>
 <li><a href="https://top.gg/bot/842154960397008896">Add Token Scanner Discord Bot | The #1 Discord Bot and ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#data leakage`, `#AI security`, `#privacy`, `#LLM`, `#Meituan`
+**标签**: `#data leak`, `#LLM security`, `#privacy`, `#AI model`, `#Meituan`
 
 ---
