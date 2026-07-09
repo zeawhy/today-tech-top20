@@ -5,272 +5,252 @@ date: 2026-07-09
 lang: en
 ---
 
-> From 35 items, 11 important content pieces were selected
+> From 33 items, 13 important content pieces were selected
 
 ---
 
-1. [OpenAI Launches GPT-Live with GPT-5.5 Delegation](#item-1) ⭐️ 9.0/10
-2. [TypeScript 7.0 Announced with Go Rewrite, Up to 12x Faster](#item-2) ⭐️ 9.0/10
+1. [EU Parliament Passes Chat Control 1.0, Allowing Warrantless Message Scanning](#item-1) ⭐️ 9.0/10
+2. [TypeScript 7.0 Released with Go Rewrite, Up to 12x Faster](#item-2) ⭐️ 9.0/10
 3. [Ant Group Open-Sources LingBot-Video, First MoE Embodied Video Model](#item-3) ⭐️ 9.0/10
-4. [John Deere Settles Right-to-Repair with FTC](#item-4) ⭐️ 8.0/10
-5. [Microsoft Releases Flint: A Visualization Language for AI Agents](#item-5) ⭐️ 8.0/10
-6. [xAI Releases Grok 4.5 with Cost Efficiency](#item-6) ⭐️ 8.0/10
-7. [Bun Rewrites in Rust with AI Assistance](#item-7) ⭐️ 8.0/10
-8. [Cloudflare and OpenAI Partner to Boost AI Search with Network Data](#item-8) ⭐️ 8.0/10
-9. [Researchers identify apps via EM signals with 99% accuracy](#item-9) ⭐️ 8.0/10
-10. [DJI EV50 Drone Reaches 8,861m on Mount Everest](#item-10) ⭐️ 8.0/10
-11. [China's Supercomputing Internet Core Node Goes Live in Zhengzhou](#item-11) ⭐️ 8.0/10
+4. [John Deere Owners Win Right to Repair in FTC Settlement](#item-4) ⭐️ 8.0/10
+5. [xAI Releases Grok 4.5 with 4x Efficiency](#item-5) ⭐️ 8.0/10
+6. [Microsoft Releases Flint, a Visualization Language for AI Agents](#item-6) ⭐️ 8.0/10
+7. [OpenAI Analyzes Flaws in Coding Evaluations](#item-7) ⭐️ 8.0/10
+8. [Bun Rewritten from Zig to Rust](#item-8) ⭐️ 8.0/10
+9. [OpenAI Introduces GPT-Live Voice Mode with GPT-5.5 Delegation](#item-9) ⭐️ 8.0/10
+10. [LineageOS Launches Web-Based Flashing Tool](#item-10) ⭐️ 8.0/10
+11. [DJI EV50 Drone Flies to 8,861m on Everest](#item-11) ⭐️ 8.0/10
+12. [National Supercomputing Internet Core Node Launches in Zhengzhou](#item-12) ⭐️ 8.0/10
+13. [OpenAI and US War Department Revise AI Contract to Ban Citizen Surveillance](#item-13) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI Launches GPT-Live with GPT-5.5 Delegation](https://openai.com/index/introducing-gpt-live/) ⭐️ 9.0/10
+## [EU Parliament Passes Chat Control 1.0, Allowing Warrantless Message Scanning](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 9.0/10
 
-OpenAI launched GPT-Live on July 8, 2026, a full-duplex voice mode for ChatGPT that can delegate complex queries to GPT-5.5 in the background, enabling more productive and extended conversations. This bridges the gap between voice assistants and frontier AI models, allowing users to have natural, real-time conversations while still accessing top-tier reasoning and tool use. It could redefine how people interact with AI assistants for both casual and professional tasks. GPT-Live uses a full-duplex architecture, meaning it can listen and speak simultaneously, and includes two tiers: GPT-Live-1 (paid) and GPT-Live-1 mini (free). The delegation to GPT-5.5 happens seamlessly in the background, so users are not limited to a less capable voice model.
+On July 9, 2026, the European Parliament allowed Chat Control 1.0 to pass, permitting US tech companies to scan private messages without a warrant or prior suspicion, despite having rejected the measure twice in March. This legislation undermines end-to-end encryption and privacy rights, setting a precedent for mass surveillance that could affect all EU citizens and weaken trust in digital communications. The motion to reject the regulation failed to secure the required absolute majority of 361 votes, with 314 against, 276 in favor, 17 abstentions, and 113 absent; the scanning is now permitted until 2028.
 
-hackernews · logickkk1 · Jul 8, 17:03 · [Discussion](https://news.ycombinator.com/item?id=48834405)
+hackernews · rapnie · Jul 9, 11:03 · [Discussion](https://news.ycombinator.com/item?id=48843923)
 
-**Background**: Previous voice modes in ChatGPT and other assistants were often limited to older, less capable models, restricting their usefulness for complex tasks. GPT-5.5, launched in April 2026, is OpenAI's most advanced model, excelling at coding, research, and data analysis. GPT-Live combines the natural interaction of voice with the power of GPT-5.5, addressing a key limitation of earlier voice assistants.
+**Background**: Chat Control 1.0, formally the Child Sexual Abuse Regulation (CSAR), was proposed in May 2022 to combat child sexual abuse online by requiring platforms to scan all private communications. Critics argue that no current technology can detect such material without high error rates, leading to false positives and privacy violations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
-<li><a href="https://www.explainx.ai/blog/gpt-live-openai-chatgpt-voice-july-2026">GPT-Live: OpenAI Full-Duplex ChatGPT Voice | explainx.ai Blog</a></li>
-<li><a href="https://mer.vin/2026/07/gpt-live-explained-full-duplex-chatgpt-voice-with-gpt-5-5-delegation/">GPT-Live Explained: Full-Duplex ChatGPT Voice With GPT-5.5 ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control_1.0">Chat Control 1.0</a></li>
+<li><a href="https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/">EU Parliament greenlights Chat Control 1.0 – Breyer: "Our children lose out"</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reactions are mixed: some users with preview access praise the long conversation capability and GPT-5.5 delegation, while others express philosophical concerns about replacing human relationships or note the lack of tool/connector support in voice mode. A blind user highlighted the potential for assistive technology when combined with video and glasses.
+**Discussion**: Commenters expressed outrage over the parliamentary procedure, noting that the vote was forced under urgency rules just before the summer break, with many MEPs absent. They highlighted that a majority of voting MEPs opposed the measure, but it passed due to the absolute majority requirement for rejection, calling it a democratic failure.
 
-**Tags**: `#OpenAI`, `#voice AI`, `#GPT-5.5`, `#AI assistants`, `#product launch`
+**Tags**: `#privacy`, `#EU legislation`, `#surveillance`, `#encryption`, `#civil liberties`
 
 ---
 
 <a id="item-2"></a>
-## [TypeScript 7.0 Announced with Go Rewrite, Up to 12x Faster](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
+## [TypeScript 7.0 Released with Go Rewrite, Up to 12x Faster](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
 
-Microsoft announced TypeScript 7.0, a major version featuring a complete rewrite of the compiler in Go, delivering up to 11.9x faster compilation on large codebases like VS Code. This dramatic performance improvement makes TypeScript significantly more practical for large-scale projects, potentially accelerating developer workflows and CI pipelines across the JavaScript ecosystem. The new compiler supports shared-memory multithreading with --checkers and --builders flags to customize parallelism, and a compatibility package allows coexistence with TypeScript 6. However, embedded language toolchains for Vue and Svelte are not yet supported.
+Microsoft has officially released TypeScript 7.0, a native version rewritten in Go that achieves 8-12x faster full builds and supports shared-memory multithreading. Users can install it via npm, and editors can use the new language server through LSP. This rewrite marks the most significant performance breakthrough in TypeScript's history, dramatically reducing build times for large codebases. It sets a new standard for compiler performance in the JavaScript ecosystem and may influence other tools to consider native language rewrites. The new version introduces --checkers and --builders flags to customize parallelism, and provides a compatibility package for coexistence with TypeScript 6. However, embedded language toolchains like Vue and Svelte still require the old version due to unfinished API support.
 
-hackernews · DanRosenwasser · Jul 8, 16:06 · [Discussion](https://news.ycombinator.com/item?id=48833715)
+telegram · zaihuapd · Jul 9, 04:01
 
-**Background**: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Its previous compiler, tsc, was written in TypeScript itself, which limited performance. The Go-based rewrite, codenamed tsgo, leverages native compilation and multithreading to achieve order-of-magnitude speedups.
+**Background**: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. The previous compiler was written in TypeScript itself, which limited performance. By rewriting in Go, a compiled language with efficient concurrency, Microsoft achieved native machine code execution and multithreading, leading to the dramatic speed improvements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript - TypeScript - devblogs.microsoft.com</a></li>
-<li><a href="https://github.com/microsoft/typescript-go">GitHub - microsoft/typescript-go: Staging repo for development of ...</a></li>
+<li><a href="https://visualstudiomagazine.com/articles/2026/06/22/typescript-7-0-rc-moves-microsofts-go-rewrite-into-the-mainline-compiler.aspx">TypeScript 7.0 RC Moves Microsoft's Go Rewrite Into the Mainline Compiler -- Visual Studio Magazine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community reaction is overwhelmingly positive, with many praising the performance gains and the team's ability to maintain two codebases. Some users expressed interest in similar typed language efforts for other ecosystems like PHP, while others humorously anticipated a future Rust rewrite.
-
-**Tags**: `#TypeScript`, `#programming languages`, `#performance`, `#compiler`, `#Microsoft`
+**Tags**: `#TypeScript`, `#compiler`, `#performance`, `#Go`, `#Microsoft`
 
 ---
 
 <a id="item-3"></a>
 ## [Ant Group Open-Sources LingBot-Video, First MoE Embodied Video Model](https://www.qbitai.com/2026/07/446458.html) ⭐️ 9.0/10
 
-Ant Group's robotics unit, Ant LingBot, has open-sourced LingBot-Video, the world's first Mixture-of-Experts (MoE) based embodied video foundation model, under the Apache 2.0 license. The model achieves 3x inference efficiency over dense models and scores 0.620 on the RBench benchmark, surpassing models like Wan2.6 and Seedance1.5 Pro. This release marks a significant milestone in embodied AI by combining MoE efficiency with video generation for robotics, potentially accelerating research in robot action prediction, simulation data generation, and world models. The open-source nature lowers barriers for the community to build upon state-of-the-art technology. LingBot-Video has 30B total parameters but activates only about 3B per inference, using a DiT+MoE architecture with 128 experts and top-8 routing. It incorporates a multi-reward RL post-training system including physical plausibility, and supports action-to-video generation conditioned on robot actions and hand poses.
+Ant Group's robotics unit LingBot has open-sourced LingBot-Video, the world's first Mixture-of-Experts (MoE) embodied video generation foundation model, with 30 billion total parameters and 3 billion activated parameters, achieving state-of-the-art results on the RBench benchmark. This model significantly improves inference efficiency (3x faster than dense models of similar scale) and sets a new standard for embodied video generation, enabling more realistic robot simulation and world model research. The open-source release under Apache 2.0 lowers the barrier for researchers and developers in robotics and AI. LingBot-Video uses a DiT+MoE architecture with 128 experts and top-8 routing, and employs a six-reward reinforcement learning post-training that includes a physical-plausibility reward graded by a VLM. The model supports action-to-video prediction from robot action and hand-pose conditions.
 
 telegram · zaihuapd · Jul 9, 04:30
 
-**Background**: MoE (Mixture of Experts) is an AI architecture that uses multiple specialized submodels (experts) and a routing mechanism to activate only a subset for each input, improving efficiency without sacrificing capacity. Embodied video foundation models aim to generate realistic videos of robots performing tasks, serving as world models or policy evaluators. RBench is a benchmark for evaluating robot-oriented video generation across five task domains and four robot embodiments.
+**Background**: Mixture-of-Experts (MoE) is a machine learning approach that divides a model into separate sub-networks (experts), each specializing in different data subsets, and activates only relevant experts per input, improving efficiency. Embodied video generation models aim to produce realistic videos of robots interacting with the physical world, which is crucial for training and evaluating robotic policies without real-world trials.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/glossary/mixture-of-experts/">What Is Mixture of Experts (MoE) and How It Works? | NVIDIA Glossary</a></li>
-<li><a href="https://huggingface.co/datasets/DAGroup-PKU/RBench">DAGroup-PKU/RBench · Datasets at Hugging Face</a></li>
+<li><a href="https://www.ibm.com/think/topics/mixture-of-experts">What is mixture of experts? | IBM</a></li>
+<li><a href="https://arxiv.org/abs/2601.15282">[2601.15282] Rethinking Video Generation Model for the Embodied World</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community expressed interest but raised critical questions: whether a VLM can reliably judge physical plausibility (risk of Goodhart's law), and whether the model is truly a world model or just a video generator, as no closed-loop robot results were provided. Some noted that while it tops RBench average, reasoning-heavy dimensions still favor closed models, and it ranks second on general T2V in its own evaluation.
+**Discussion**: The Reddit community discussion raises critical questions about the physical-plausibility reward being graded by a VLM, suggesting potential Goodhart's law issues, and notes that the model is evaluated only on video quality metrics without closed-loop robot performance numbers, blurring the line between video generation and world models.
 
-**Tags**: `#embodied AI`, `#MoE`, `#video generation`, `#open-source`, `#robotics`
+**Tags**: `#MoE`, `#embodied AI`, `#video generation`, `#open source`, `#robotics`
 
 ---
 
 <a id="item-4"></a>
-## [John Deere Settles Right-to-Repair with FTC](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
+## [John Deere Owners Win Right to Repair in FTC Settlement](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
 
-John Deere has reached a settlement with the Federal Trade Commission and five states, agreeing to allow farmers and independent repair shops to fix its equipment. The settlement requires Deere to provide diagnostic tools, manuals, and parts for 10 years. This settlement marks a major victory for the right-to-repair movement, potentially setting a precedent for other manufacturers. It empowers farmers to repair their own equipment, reducing costs and downtime, and challenges repair monopolies in agriculture. John Deere must pay $1 million collectively to five states for antitrust enforcement costs and is subject to strict compliance oversight for 10 years. The settlement does not include a monetary fine to the FTC, and the $1 million is relatively small compared to Deere's profits.
+John Deere has agreed to a settlement with the FTC and five states, allowing farmers and independent repair shops to repair their own equipment, ending years of restrictive practices. This settlement marks a major victory for the right-to-repair movement, potentially lowering costs for farmers and setting a precedent for other industries like consumer electronics. John Deere must pay $1 million collectively to five states for antitrust enforcement costs and will be subject to strict compliance oversight for 10 years.
 
 hackernews · djoldman · Jul 8, 23:37 · [Discussion](https://news.ycombinator.com/item?id=48838876)
 
-**Background**: The right-to-repair movement advocates for consumers' legal right to maintain, repair, or modify products they own, including farm equipment. Manufacturers like John Deere have historically restricted access to diagnostic tools, software, and parts, forcing farmers to use authorized dealers for repairs. This has led to higher costs and delays for farmers, especially during critical planting and harvest seasons.
+**Background**: The right-to-repair movement advocates for consumers and independent repair shops to have access to parts, tools, and software needed to repair products they own. John Deere had been criticized for using software locks and proprietary tools to prevent farmers from repairing their own tractors.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Right_to_repair_movement">Right to repair movement</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Right_to_repair">Right to repair - Wikipedia</a></li>
+**Discussion**: Commenters praised Louis Rossmann for his advocacy and noted the fine is small relative to Deere's profits, but the compliance oversight is significant. Some expressed frustration that such basic rights require litigation.
 
-</ul>
-</details>
-
-**Discussion**: Commenters praised right-to-repair activist Louis Rossmann for his work, and noted that the $1 million fine is trivial compared to Deere's profits. Some expressed frustration that such basic rights require litigation, while others pointed out cognitive dissonance in the tech industry's opposition to repair rights.
-
-**Tags**: `#right-to-repair`, `#consumer rights`, `#antitrust`, `#agriculture`, `#FTC`
+**Tags**: `#right to repair`, `#FTC`, `#consumer rights`, `#regulation`, `#agriculture`
 
 ---
 
 <a id="item-5"></a>
-## [Microsoft Releases Flint: A Visualization Language for AI Agents](https://microsoft.github.io/flint-chart/#/) ⭐️ 8.0/10
+## [xAI Releases Grok 4.5 with 4x Efficiency](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
 
-Microsoft has open-sourced Flint, a visualization intermediate language that allows AI agents to generate high-quality charts from simple, semantic-type-based specifications, offloading visual decisions to a compiler. Flint addresses a key limitation in current chart DSLs by balancing reliability and expressiveness, enabling AI agents to produce polished visualizations without verbose low-level parameters. This could significantly improve the quality of AI-generated data visualizations in agentic systems. Flint supports 46 chart types and can compile a single specification into multiple industry-standard formats including Vega-Lite, Apache ECharts, and Chart.js. It also provides an MCP server for easy integration with existing agent applications.
+xAI has released Grok 4.5, a new frontier AI model that claims 4x better reasoning efficiency compared to Opus, with competitive pricing at $2/$6 per million tokens. This release intensifies competition in the AI model market, offering a cost-effective alternative to models like GPT-5 and Opus, potentially lowering barriers for enterprise adoption of advanced reasoning capabilities. Grok 4.5 was trained on trillions of tokens of Cursor data, capturing developer-agent interactions, and operates at approximately 80 tokens per second while maintaining advanced reasoning.
 
-hackernews · chenglong-hn · Jul 8, 17:46 · [Discussion](https://news.ycombinator.com/item?id=48834924)
+hackernews · BoumTAC · Jul 8, 18:00 · [Discussion](https://news.ycombinator.com/item?id=48835111)
 
-**Background**: Data visualizations are crucial for human-data interaction, but AI agents struggle with current visualization languages: simple specs yield low-quality charts, while detailed specs are verbose and error-prone. An intermediate language (IR) is a representation used internally by compilers to enable optimization and translation between source and target languages. Flint applies this concept to visualization, letting the compiler handle layout and styling decisions.
+**Background**: Grok 4.5 is the latest model from xAI, a company founded by Elon Musk. It competes with models like OpenAI's GPT-5 and Anthropic's Claude Opus. The model supports a reasoning_effort parameter to control thinking time.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/">Flint: A visualization language for the AI era - Microsoft ...</a></li>
-<li><a href="https://microsoft.github.io/flint-chart/">Flint: A Visualization Language for the AI Era</a></li>
-<li><a href="https://github.com/microsoft/flint-chart">GitHub - microsoft/flint-chart: Flint is a visualization ...</a></li>
+<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4.5 | SpaceXAI</a></li>
+<li><a href="https://www.digitalapplied.com/blog/grok-4-5-vs-opus-4-8-vs-gpt-5-5-best-frontier-model-2026">Grok 4.5 vs Opus 4.8 vs GPT-5.5: Which Model Wins?</a></li>
+<li><a href="https://www.1950.ai/post/grok-4-5-raises-the-bar-for-frontier-ai-with-high-speed-reasoning-token-efficiency-and-real-world">Grok 4.5 Raises the Bar for Frontier AI With High-Speed Reasoning, Token Efficiency, and Real-World Enterprise Automation by Dr. Julie Butenko</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are generally positive, with users appreciating the deterministic compiler layer for AI agents. Some raised concerns about accessibility and comparisons to Vega, questioning how Flint differs from existing DSLs like Vega. Others expressed excitement about using Flint with tools like Claude Code for personalized visualizations.
+**Discussion**: Community comments are mixed: some users praise the model's cost-efficiency and benchmark performance, while others express distrust due to political concerns about xAI's content moderation and Musk's influence.
 
-**Tags**: `#visualization`, `#AI agents`, `#DSL`, `#Microsoft`, `#data visualization`
+**Tags**: `#AI`, `#LLM`, `#Grok`, `#xAI`, `#benchmarks`
 
 ---
 
 <a id="item-6"></a>
-## [xAI Releases Grok 4.5 with Cost Efficiency](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
+## [Microsoft Releases Flint, a Visualization Language for AI Agents](https://microsoft.github.io/flint-chart/#/) ⭐️ 8.0/10
 
-xAI has released Grok 4.5, a mixture-of-experts model trained jointly with Cursor using trillions of tokens of developer interaction data, achieving frontier performance at a significantly lower cost than competitors. Grok 4.5 offers 4x better reasoning efficiency than Opus while being priced at $2/$6 per million tokens, making advanced AI more accessible for developers and businesses. However, ongoing political bias and trust concerns may limit its adoption in enterprise settings. Grok 4.5 is priced at $2 per million input tokens and $6 per million output tokens, compared to GPT-5.4 at $2.5/$15 and Opus 4.8 at $5/$25. Benchmarks suggest it performs at roughly Opus 4.7 level, though some question benchmark integrity.
+Microsoft has open-sourced Flint, a visualization intermediate language that allows AI agents to generate high-quality charts from simple, human-editable specifications. Flint abstracts low-level visual decisions and includes a layout optimization engine to produce polished visualizations. Flint addresses a key limitation in AI agent reliability for data visualization by providing a deterministic intermediate layer, reducing the need for agents to make low-level visual decisions. This could improve the quality and consistency of AI-generated charts, benefiting developers and data analysts using agentic systems. Flint uses a semantic-type-based specification and a layout optimization engine to derive low-level details from high-level specs. It also provides an MCP server for easy integration into agent applications, and powers Microsoft's Data Formulator project.
 
-hackernews · BoumTAC · Jul 8, 18:00 · [Discussion](https://news.ycombinator.com/item?id=48835111)
+hackernews · chenglong-hn · Jul 8, 17:46 · [Discussion](https://news.ycombinator.com/item?id=48834924)
 
-**Background**: Grok is xAI's series of large language models, with Grok 4.5 being the latest release. xAI has faced criticism over political bias in its models and safety practices, including a lost US government contract due to antisemitic outputs. The model was trained using data from Cursor, an AI-powered code editor, to improve coding and agent interaction capabilities.
+**Background**: Data visualization languages like Vega are expressive but require explicit low-level details, making them difficult for AI agents to generate reliably. Flint offers a middle ground: a compact, high-level specification that a compiler can expand into detailed charts, similar to how intermediate representations (IR) work in compilers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 · Cursor</a></li>
-<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus ...</a></li>
-<li><a href="https://aimagazine.com/news/revealed-how-groks-antisemitism-lost-xai-a-key-us-contract">Why xAI Loses US Deal After Grok Sparks Political AI Scandal</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/">Flint : A visualization language for the AI era - Microsoft Research</a></li>
+<li><a href="https://github.com/microsoft/flint-chart">GitHub - microsoft/ flint -chart: 🪄 Flint is a visualization language ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are highly polarized: some users praise the model's cost efficiency and performance, while others express distrust due to xAI's political bias and safety concerns. Several commenters lament the non-technical political debates dominating the discussion.
+**Discussion**: Commenters noted that Flint exemplifies an emerging pattern of using deterministic layers (like compilers) in agentic systems. Some compared it to Vega, questioning its advantages, while others raised concerns about accessibility and composability for layered charts.
 
-**Tags**: `#AI`, `#LLM`, `#xAI`, `#Grok`, `#machine learning`
+**Tags**: `#AI agents`, `#data visualization`, `#Microsoft`, `#intermediate language`, `#Hacker News`
 
 ---
 
 <a id="item-7"></a>
-## [Bun Rewrites in Rust with AI Assistance](https://bun.com/blog/bun-in-rust) ⭐️ 8.0/10
+## [OpenAI Analyzes Flaws in Coding Evaluations](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) ⭐️ 8.0/10
 
-Bun's blog details their AI-assisted rewrite of the JavaScript runtime from Zig to Rust, emphasizing memory safety and performance improvements. This rewrite showcases a novel use of AI for large-scale code migration, potentially reducing software engineering costs and influencing how projects approach language transitions. The rewrite was performed with human oversight to ensure correctness, and the blog discusses challenges like lifetime errors and the use of TigerBeetle's style guide for static memory allocation.
+OpenAI published an analysis identifying common flaws in coding evaluations, such as overly strict tests and underspecified prompts, and proposed better benchmarking practices. This matters because flawed benchmarks can mislead the AI community about model capabilities, and improving evaluation practices will lead to more reliable comparisons and progress in AI coding. The analysis covers four flaw types: overly strict tests, underspecified prompts, low-coverage tests, and misleading prompts, and suggests using human judgment to validate benchmarks.
 
-hackernews · afturner · Jul 8, 21:49 · [Discussion](https://news.ycombinator.com/item?id=48837877)
+hackernews · sk4rekr0w · Jul 8, 21:03 · [Discussion](https://news.ycombinator.com/item?id=48837396)
 
-**Background**: Bun is a fast JavaScript runtime, package manager, and test runner designed as a drop-in replacement for Node.js, using JavaScriptCore engine. Zig is a system programming language focused on robustness and performance, while Rust is known for memory safety without garbage collection.
+**Background**: Coding evaluations are used to measure AI models' ability to write code, but many existing benchmarks contain flaws that can produce misleading results. OpenAI's work aims to improve the reliability of these evaluations.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
-<li><a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime</a></li>
+**Discussion**: Community comments highlight additional issues like efficiency metrics, cheating, and the need for human oversight, with some skepticism about whether benchmarks can ever fully capture real-world software development.
 
-</ul>
-</details>
-
-**Discussion**: Community comments express cautious optimism about AI-assisted rewrites, with some noting the cost savings compared to hiring engineers. Others criticize the transition handling, citing abandoned bugs in the Zig version and lack of LTS support.
-
-**Tags**: `#Rust`, `#AI-assisted development`, `#memory safety`, `#software engineering`, `#Bun`
+**Tags**: `#AI benchmarks`, `#coding evaluations`, `#software engineering`, `#AI evaluation`
 
 ---
 
 <a id="item-8"></a>
-## [Cloudflare and OpenAI Partner to Boost AI Search with Network Data](https://36kr.com/newsflashes/3886946347694593) ⭐️ 8.0/10
+## [Bun Rewritten from Zig to Rust](https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything) ⭐️ 8.0/10
 
-On July 8, Cloudflare and OpenAI announced a research pilot to use real-time website insights from Cloudflare's global network—which carries over 20% of global internet traffic—to help AI search engines index and crawl web content more efficiently, improving the freshness and accuracy of AI answers. This partnership addresses a key challenge in AI search: keeping indexes up-to-date with real-time web signals, which could significantly improve the timeliness and reliability of AI-generated answers. It also marks a shift as Cloudflare, previously known for blocking AI crawlers, now actively supports AI indexing. The pilot leverages Cloudflare's network data including content freshness, traffic quality, and actual page changes to guide AI indexing. OpenAI is building its own web index to reduce dependency on Google, and this partnership could accelerate that effort.
+Jarred Sumner announced that Bun, the JavaScript runtime, has been rewritten from Zig to Rust, citing memory safety issues. The rewrite was largely automated using AI coding agents and cost approximately $165,000 in API tokens. This rewrite demonstrates that AI-powered coding agents can now enable large-scale rewrites that were previously considered too risky. It also highlights Rust's growing dominance for systems programming where memory safety is critical. The rewrite took 11 days and involved 5.9 billion uncached input tokens and 690 million output tokens. The new Rust-based Bun has been live in Claude Code since June 17, 2026, with 10% faster startup on Linux.
 
-telegram · zaihuapd · Jul 8, 15:27
+rss · Simon Willison · Jul 8, 23:57
 
-**Background**: AI search engines like ChatGPT rely on web indexes to retrieve information, but traditional indexes may not reflect real-time changes. Cloudflare's network handles a significant portion of global traffic, providing unique signals about content updates. This pilot aims to combine Cloudflare's infrastructure with OpenAI's models to create a more dynamic indexing system.
+**Background**: Bun is a fast JavaScript runtime and toolkit, originally written in Zig. Memory safety bugs like use-after-free and double-free were common due to mixing garbage collection with manual memory management. Rust's ownership model and Drop trait prevent such bugs at compile time.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://finance.biggo.com/news/ecf54939-d973-4d0f-887d-cc266dde2056">Cloudflare Partners with OpenAI to Reshape AI Search, Injecting Real-Time Indexing into 20% of Global Traffic — BigGo Finance</a></li>
-<li><a href="https://thenextweb.com/news/cloudflare-openai-research-pilot-ai-search">Cloudflare and OpenAI pilot to make AI search fresher - TNW</a></li>
-<li><a href="https://seosherpa.com/openai-is-building-its-own-web-index/">OpenAI Is Building It's Own Web Index • SEO SHERPA™</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#search`, `#Cloudflare`, `#OpenAI`, `#web indexing`
+**Tags**: `#Bun`, `#Rust`, `#Zig`, `#runtime`, `#rewrite`
 
 ---
 
 <a id="item-9"></a>
-## [Researchers identify apps via EM signals with 99% accuracy](https://www.scmp.com/news/china/science/article/3359688/chinese-researchers-find-peephole-any-smartphone-its-leaked-radio-signal) ⭐️ 8.0/10
+## [OpenAI Introduces GPT-Live Voice Mode with GPT-5.5 Delegation](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
 
-Chinese researchers have developed a non-contact forensic technique that identifies smartphone apps by analyzing leaked low-frequency electromagnetic signals, achieving up to 99.07% accuracy on devices like iPhone 15 Pro, Xiaomi 15 Pro, and OPPO Reno 13. This side-channel attack works even when the phone is offline, in airplane mode, encrypted, or locked, posing a significant privacy threat as it can reveal app usage without any access to the device's system or data. The technique targets low-frequency electromagnetic emissions (below 1 MHz) that are not typically shielded, and uses machine learning to classify apps such as Douyin, WeChat video calls, Baidu Maps, SMS, browser, camera, and cloud storage.
+OpenAI has launched GPT-Live, a new voice mode model for ChatGPT that can delegate complex tasks to GPT-5.5 while maintaining conversation flow. The model replaces the older GPT-4o era voice model and is available in the iPhone app. This upgrade significantly improves ChatGPT's voice mode capabilities, making it a more useful brainstorming partner with access to a frontier model for heavy lifting. It signals OpenAI's continued investment in conversational AI and multimodal interaction. GPT-Live uses GPT-5.5 as the backend model for tasks requiring web search, deeper reasoning, or complex work, and will be updated as new frontier models are released. The author noted an early bug where the model interrupted with laughter at non-jokes, which OpenAI reportedly tweaked.
 
-telegram · zaihuapd · Jul 8, 16:05
+rss · Simon Willison · Jul 8, 23:20
 
-**Background**: Side-channel attacks exploit physical emissions like power consumption or electromagnetic radiation to infer sensitive information. Electromagnetic (EM) side-channel attacks are non-invasive and have been used to break encryption keys. This research extends EM attacks to identify specific apps, even on encrypted or offline devices.
+**Background**: GPT-5.5 is a large language model released by OpenAI on April 23, 2026, also known by its codename 'Spud'. It achieved notable benchmark scores and has been used in projects like Codex and Patch the Planet. The previous ChatGPT voice mode was based on a GPT-4o era model with a 2024 knowledge cutoff, limiting its usefulness.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/646255118">电磁侧信道攻击破解密码 - 知乎 - 知乎专栏 电磁信息泄露检测与侧信道攻击防御技术详解_百度文库 手机关机也没用？中国科学家发现新型电磁“透视术”让隐私无处遁形 16、电磁侧信道攻击的预测与防范 - CSDN博客 密码学侧信道攻击（Side-channel Attack）：从物理泄露中窃取密钥 - ... 一种古老而有效的攻击方式-侧信道攻击：是什么、为什么以及如何实现侧...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#privacy`, `#side-channel attack`, `#mobile`, `#research`
+**Tags**: `#OpenAI`, `#GPT-Live`, `#voice mode`, `#AI`, `#ChatGPT`
 
 ---
 
 <a id="item-10"></a>
-## [DJI EV50 Drone Reaches 8,861m on Mount Everest](https://www.163.com/dy/article/L1CUCV940514R9OJ.html) ⭐️ 8.0/10
+## [LineageOS Launches Web-Based Flashing Tool](https://www.androidauthority.com/lineageos-summertime-update-2026-3685112/) ⭐️ 8.0/10
 
-DJI's unreleased EV50 vertical takeoff and landing (VTOL) drone reached an altitude of 8,861 meters on Mount Everest during the "Peak Mission" scientific expedition, setting a world record for the highest flight altitude among similar publicly tested drones. This achievement demonstrates the EV50's exceptional high-altitude performance and reliability, which could revolutionize logistics in extreme environments such as high-altitude research, disaster relief, and remote area supply delivery. The EV50 is a composite-wing drone that can vertically take off and land, then switch to fixed-wing cruise. During the 12-day mission, it completed 32 sorties, climbed 3,730 meters continuously, and still had 30% battery remaining on return.
+LineageOS has officially launched Lineage Flash Tools, a web-based tool that allows users to flash ROMs directly from a browser without installing adb and fastboot locally. The tool supports Fastboot, ADB, and Samsung Odin protocols, and requires a WebUSB-compatible browser like Chrome or Edge. This innovation significantly lowers the barrier to flashing custom ROMs, making the process more accessible to casual users and potentially expanding the LineageOS user base. It also demonstrates the growing adoption of WebUSB technology for device-level operations. The tool cannot fully replace traditional flashing methods and must be used alongside device-specific Wiki installation guides. Additionally, LineageOS updated the Updater app with a Material 3 Expressive interface and confirmed that LineageOS 24 based on Android 17 is under development.
+
+telegram · zaihuapd · Jul 9, 01:46
+
+**Background**: LineageOS is a popular open-source custom ROM for Android devices, offering enhanced features and extended software support. Traditionally, flashing a custom ROM requires installing command-line tools like adb and fastboot, which can be intimidating for beginners. WebUSB allows web applications to communicate with USB devices, enabling browser-based flashing.
+
+**Tags**: `#LineageOS`, `#刷机工具`, `#Android`, `#WebUSB`, `#定制ROM`
+
+---
+
+<a id="item-11"></a>
+## [DJI EV50 Drone Flies to 8,861m on Everest](https://www.163.com/dy/article/L1CUCV940514R9OJ.html) ⭐️ 8.0/10
+
+DJI's unreleased EV50 VTOL cargo drone reached 8,861 meters on Mount Everest during the 'Peak Mission' scientific expedition, setting a world record for the highest altitude in public testing of its kind. This achievement demonstrates the drone's high-altitude capability and potential for low-altitude logistics, such as 100-kilometer cargo delivery, which could revolutionize transportation in challenging terrains. The EV50 is a hybrid-wing drone that can vertically take off and land, then switch to fixed-wing cruise. Over 12 days, it completed 32 sorties, climbed 3,730 meters continuously, and still had 30% battery remaining on return.
 
 telegram · zaihuapd · Jul 9, 06:00
 
-**Background**: Composite-wing drones combine the vertical takeoff and landing capability of multirotors with the long endurance and speed of fixed-wing aircraft. The "Peak Mission" is a comprehensive scientific expedition on Mount Everest that began in 2022, aiming to conduct high-altitude research above 8,000 meters.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://news.qq.com/rain/a/20260709A03DQ700">大疆近期发布新款无人机机型DJI EV50 可随时起降又能百公里级飞行_腾...</a></li>
-<li><a href="https://newuas.com/newrelease/87777.html">大疆发布首款垂直起降运载无人机DJI EV50-NEWUAS</a></li>
-<li><a href="https://www.stdaily.com/web/gdxw/2026-07/09/content_544642.html">最高飞至8861米 大疆披露首款垂直起降运载无人机</a></li>
-
-</ul>
-</details>
+**Background**: VTOL (Vertical Take-Off and Landing) drones combine the flexibility of helicopters with the efficiency of fixed-wing aircraft. High-altitude testing on Everest provides valuable data for drone performance in extreme conditions, relevant for logistics and scientific research.
 
 **Tags**: `#drones`, `#DJI`, `#high-altitude`, `#logistics`, `#technology`
 
 ---
 
-<a id="item-11"></a>
-## [China's Supercomputing Internet Core Node Goes Live in Zhengzhou](https://36kr.com/newsflashes/3887797387344387) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [National Supercomputing Internet Core Node Launches in Zhengzhou](https://36kr.com/newsflashes/3887797387344387) ⭐️ 8.0/10
 
-On July 9, 2026, the core node of China's National Supercomputing Internet officially went online in Zhengzhou, providing over 100,000 domestic AI computing cards. This is the largest single domestic AI computing resource pool ever connected to the platform. This milestone significantly boosts China's domestic AI computing capacity, reducing reliance on foreign hardware and supporting large-scale AI model training. It also strengthens the national computing infrastructure, enabling more efficient resource allocation across the country. The core node supports mixed deployment of multiple domestic accelerator brands and can flexibly scale to millions of cards. It has already connected over 30 supercomputing and AI computing centers nationwide, improving overall resource utilization through intelligent scheduling.
+On July 9, 2026, the core node of China's National Supercomputing Internet was officially launched in Zhengzhou, providing over 100,000 domestic AI computing cards. This marks a significant milestone in China's national computing infrastructure, enabling large-scale domestic AI compute resources and supporting the country's strategic AI development goals. The node is the largest single pool of domestic AI computing resources connected to the National Supercomputing Internet platform, and it will handle operations, resource scheduling, and supply-demand integration.
 
 telegram · zaihuapd · Jul 9, 07:00
 
-**Background**: The National Supercomputing Internet is a project initiated by China's Ministry of Science and Technology to connect supercomputing centers across the country into a unified computing service platform. It aims to break the single-center operation model and build a nationwide computing resource scheduling system. The core node in Zhengzhou serves as the operational hub for resource management and scheduling.
+**Background**: The National Supercomputing Internet is a national initiative to build a unified computing resource scheduling system across China. The Zhengzhou node serves as a core hub for coordinating computing power from various domestic sources, aiming to boost AI and scientific research capabilities.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.scnet.cn/home/subject/hxjd/index.html">国家超算互联网核心节点 - 超算互联网</a></li>
-<li><a href="https://baike.baidu.com/item/国家超算互联网核心节点/63648019">国家超算互联网核心节点 - 百度百科 核心节点用户手册 | 超算互联网 全国最大单体国产 AI 算力池落地郑州，国家超算互联网核心节点正式上... 国家超算互联网核心节点正式上线|运营|人工智能|工业互联网平台_网易... 郑州成为全国最大算力调度枢纽，国家超算互联网核心节点上线试运行_发... Top Stories</a></li>
-<li><a href="https://news.qq.com/rain/a/20260709A03VDU00">刚刚，国家超算互联网核心节点正式上线_腾讯新闻</a></li>
+**Tags**: `#supercomputing`, `#AI infrastructure`, `#China`, `#national strategy`, `#computing resources`
 
-</ul>
-</details>
+---
 
-**Tags**: `#supercomputing`, `#AI infrastructure`, `#China`, `#computing power`, `#national strategy`
+<a id="item-13"></a>
+## [OpenAI and US War Department Revise AI Contract to Ban Citizen Surveillance](https://t.me/zaihuapd/42459) ⭐️ 8.0/10
+
+OpenAI and the US Department of War (formerly the Department of Defense) have agreed to revise their AI cooperation contract to explicitly prohibit the use of AI systems for surveillance of American citizens, following a proposal by OpenAI CEO Sam Altman. This move sets a precedent for ethical AI use in military contexts, addressing public concerns about mass surveillance and potentially influencing future AI contracts with government agencies. The revised clause specifically prohibits deliberate surveillance of US citizens and the use of commercially obtained personally identifiable information for tracking or monitoring. The contract has not yet been formally signed.
+
+telegram · zaihuapd · Jul 9, 13:22
+
+**Background**: The US Department of War, formerly the Department of Defense, oversees military operations. AI companies like OpenAI and Anthropic have faced scrutiny over potential misuse of their technology in military applications, including surveillance. Anthropic's previous contract with the War Department was suspended due to similar concerns.
+
+**Tags**: `#AI ethics`, `#OpenAI`, `#military AI`, `#surveillance`, `#policy`
 
 ---

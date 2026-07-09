@@ -5,272 +5,252 @@ date: 2026-07-09
 lang: zh
 ---
 
-> 从 35 条内容中筛选出 11 条重要资讯。
+> 从 33 条内容中筛选出 13 条重要资讯。
 
 ---
 
-1. [OpenAI 推出 GPT-Live，支持 GPT-5.5 后台委派](#item-1) ⭐️ 9.0/10
-2. [TypeScript 7.0 发布：Go 重写带来最高 12 倍速度提升](#item-2) ⭐️ 9.0/10
-3. [蚂蚁集团开源全球首个 MoE 具身视频基模 LingBot-Video](#item-3) ⭐️ 9.0/10
-4. [约翰迪尔与 FTC 达成维修权和解](#item-4) ⭐️ 8.0/10
-5. [微软发布 Flint：面向 AI 代理的可视化语言](#item-5) ⭐️ 8.0/10
-6. [xAI 发布 Grok 4.5，成本效率提升](#item-6) ⭐️ 8.0/10
-7. [Bun 借助 AI 用 Rust 重写](#item-7) ⭐️ 8.0/10
-8. [Cloudflare 与 OpenAI 合作，用网络数据优化 AI 搜索](#item-8) ⭐️ 8.0/10
-9. [研究人员通过电磁信号识别应用，准确率达 99%](#item-9) ⭐️ 8.0/10
-10. [大疆 EV50 无人机飞越珠峰 8861 米](#item-10) ⭐️ 8.0/10
-11. [国家超算互联网核心节点在郑州上线](#item-11) ⭐️ 8.0/10
+1. [欧盟议会通过聊天控制 1.0，允许无证扫描私密信息](#item-1) ⭐️ 9.0/10
+2. [TypeScript 7.0 正式发布：Go 重写带来最高 12 倍速度提升](#item-2) ⭐️ 9.0/10
+3. [蚂蚁集团开源灵波视频，首个 MoE 具身视频模型](#item-3) ⭐️ 9.0/10
+4. [约翰迪尔车主在 FTC 和解中获得维修权](#item-4) ⭐️ 8.0/10
+5. [xAI 发布 Grok 4.5，效率提升 4 倍](#item-5) ⭐️ 8.0/10
+6. [微软发布面向 AI 代理的可视化语言 Flint](#item-6) ⭐️ 8.0/10
+7. [OpenAI 分析编程评估中的缺陷](#item-7) ⭐️ 8.0/10
+8. [Bun 从 Zig 重写为 Rust](#item-8) ⭐️ 8.0/10
+9. [OpenAI 推出 GPT-Live 语音模式，可委托 GPT-5.5 处理任务](#item-9) ⭐️ 8.0/10
+10. [LineageOS 推出网页刷机工具](#item-10) ⭐️ 8.0/10
+11. [大疆 EV50 无人机飞越珠峰 8861 米](#item-11) ⭐️ 8.0/10
+12. [国家超算互联网核心节点在郑州上线](#item-12) ⭐️ 8.0/10
+13. [OpenAI 与美国战争部修订 AI 合同，禁止监控公民](#item-13) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI 推出 GPT-Live，支持 GPT-5.5 后台委派](https://openai.com/index/introducing-gpt-live/) ⭐️ 9.0/10
+## [欧盟议会通过聊天控制 1.0，允许无证扫描私密信息](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 9.0/10
 
-OpenAI 于 2026 年 7 月 8 日推出了 GPT-Live，这是一种全双工语音模式，可在后台将复杂查询委派给 GPT-5.5，从而实现更高效、更长时间的对话。 这弥合了语音助手与前沿 AI 模型之间的差距，让用户既能进行自然的实时对话，又能访问顶级的推理和工具使用能力。它可能重新定义人们与 AI 助手在休闲和专业任务中的交互方式。 GPT-Live 采用全双工架构，即可以同时听和说，并包含两个层级：GPT-Live-1（付费）和 GPT-Live-1 mini（免费）。对 GPT-5.5 的委派在后台无缝进行，用户不会受限于能力较弱的语音模型。
+2026 年 7 月 9 日，欧洲议会通过了聊天控制 1.0，允许美国科技公司在没有搜查令或事先怀疑的情况下扫描私人信息，尽管该措施在 3 月份已被两次否决。 这项立法削弱了端到端加密和隐私权，为大规模监控开创了先例，可能影响所有欧盟公民，并削弱对数字通信的信任。 否决该法规的动议未能获得所需的 361 票绝对多数，结果为 314 票反对、276 票赞成、17 票弃权、113 票缺席；扫描现在被允许持续到 2028 年。
 
-hackernews · logickkk1 · 7月8日 17:03 · [社区讨论](https://news.ycombinator.com/item?id=48834405)
+hackernews · rapnie · 7月9日 11:03 · [社区讨论](https://news.ycombinator.com/item?id=48843923)
 
-**背景**: 以往的 ChatGPT 及其他助手的语音模式通常局限于较旧、能力较弱的模型，限制了其在复杂任务中的实用性。GPT-5.5 于 2026 年 4 月发布，是 OpenAI 最先进的模型，擅长编程、研究和数据分析。GPT-Live 将语音的自然交互与 GPT-5.5 的强大能力相结合，解决了早期语音助手的关键限制。
+**背景**: 聊天控制 1.0，正式名称为《儿童性虐待法规》（CSAR），于 2022 年 5 月提出，旨在通过要求平台扫描所有私人通信来打击在线儿童性虐待。批评者认为，目前没有技术能在不产生高错误率的情况下检测此类材料，导致误报和隐私侵犯。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
-<li><a href="https://www.explainx.ai/blog/gpt-live-openai-chatgpt-voice-july-2026">GPT-Live: OpenAI Full-Duplex ChatGPT Voice | explainx.ai Blog</a></li>
-<li><a href="https://mer.vin/2026/07/gpt-live-explained-full-duplex-chatgpt-voice-with-gpt-5-5-delegation/">GPT-Live Explained: Full-Duplex ChatGPT Voice With GPT-5.5 ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control_1.0">Chat Control 1.0</a></li>
+<li><a href="https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/">EU Parliament greenlights Chat Control 1.0 – Breyer: "Our children lose out"</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应不一：一些拥有预览权限的用户称赞其长对话能力和 GPT-5.5 委派功能，而另一些人则对取代人际关系表示哲学上的担忧，或指出语音模式下缺乏工具/连接器支持。一位盲人用户强调了结合视频和眼镜后在辅助技术方面的潜力。
+**社区讨论**: 评论者对议会程序表示愤怒，指出投票是在暑假前通过紧急程序强行进行的，许多欧洲议会议员缺席。他们强调，投票的多数议员反对该措施，但由于否决需要绝对多数，该措施得以通过，称这是民主的失败。
 
-**标签**: `#OpenAI`, `#voice AI`, `#GPT-5.5`, `#AI assistants`, `#product launch`
+**标签**: `#privacy`, `#EU legislation`, `#surveillance`, `#encryption`, `#civil liberties`
 
 ---
 
 <a id="item-2"></a>
-## [TypeScript 7.0 发布：Go 重写带来最高 12 倍速度提升](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
+## [TypeScript 7.0 正式发布：Go 重写带来最高 12 倍速度提升](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) ⭐️ 9.0/10
 
-微软正式发布 TypeScript 7.0，该主要版本将编译器完全用 Go 语言重写，在 VS Code 等大型代码库上实现了最高 11.9 倍的编译速度提升。 这一巨大的性能提升使 TypeScript 在大型项目中更加实用，有望加速整个 JavaScript 生态系统的开发者工作流和 CI 流水线。 新编译器支持共享内存多线程，可通过 --checkers 和 --builders 参数自定义并行度，并提供兼容包实现与 TypeScript 6 并存。但 Vue、Svelte 等嵌入式语言工具链目前尚不支持。
+微软正式发布 TypeScript 7.0，这是用 Go 语言重写的原生版本，完整构建速度比旧版快 8 到 12 倍，并支持共享内存多线程。用户可通过 npm 直接安装，编辑器可通过 LSP 使用新的语言服务器。 这次重写是 TypeScript 历史上最重大的性能突破，大幅缩短了大型代码库的构建时间。它为 JavaScript 生态系统的编译器性能树立了新标准，并可能影响其他工具考虑使用原生语言重写。 新版本引入了 --checkers 和 --builders 参数以自定义并行度，并提供兼容包实现与 TypeScript 6 并存。但 Vue、Svelte 等嵌入式语言工具链因 API 尚未就绪，目前仍需使用旧版本。
 
-hackernews · DanRosenwasser · 7月8日 16:06 · [社区讨论](https://news.ycombinator.com/item?id=48833715)
+telegram · zaihuapd · 7月9日 04:01
 
-**背景**: TypeScript 是 JavaScript 的类型超集，可编译为普通 JavaScript。其之前的编译器 tsc 本身用 TypeScript 编写，性能受限。基于 Go 的重写（代号 tsgo）利用原生编译和多线程实现了数量级的加速。
+**背景**: TypeScript 是 JavaScript 的类型超集，编译为纯 JavaScript。之前的编译器是用 TypeScript 本身编写的，这限制了性能。通过用 Go（一种具有高效并发能力的编译语言）重写，微软实现了原生机器码执行和多线程，从而带来了巨大的速度提升。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://devblogs.microsoft.com/typescript/typescript-native-port/">A 10x Faster TypeScript - TypeScript - devblogs.microsoft.com</a></li>
-<li><a href="https://github.com/microsoft/typescript-go">GitHub - microsoft/typescript-go: Staging repo for development of ...</a></li>
+<li><a href="https://visualstudiomagazine.com/articles/2026/06/22/typescript-7-0-rc-moves-microsofts-go-rewrite-into-the-mainline-compiler.aspx">TypeScript 7.0 RC Moves Microsoft's Go Rewrite Into the Mainline Compiler -- Visual Studio Magazine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">Language Server Protocol - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应极为积极，许多人称赞性能提升以及团队同时维护两个代码库的能力。一些用户表达了对其他生态系统（如 PHP）类似类型语言工作的兴趣，而另一些人则幽默地期待未来的 Rust 重写。
-
-**标签**: `#TypeScript`, `#programming languages`, `#performance`, `#compiler`, `#Microsoft`
+**标签**: `#TypeScript`, `#compiler`, `#performance`, `#Go`, `#Microsoft`
 
 ---
 
 <a id="item-3"></a>
-## [蚂蚁集团开源全球首个 MoE 具身视频基模 LingBot-Video](https://www.qbitai.com/2026/07/446458.html) ⭐️ 9.0/10
+## [蚂蚁集团开源灵波视频，首个 MoE 具身视频模型](https://www.qbitai.com/2026/07/446458.html) ⭐️ 9.0/10
 
-蚂蚁集团旗下蚂蚁灵波开源了全球首个基于 MoE 架构的具身视频基础模型 LingBot-Video，采用 Apache 2.0 许可证。该模型推理效率是同等规模稠密模型的 3 倍，在 RBench 基准上得分 0.620，超越了 Wan2.6、Seedance1.5 Pro 等模型。 此次发布将 MoE 的高效性与机器人视频生成相结合，是具身 AI 领域的重要里程碑，有望加速机器人动作预测、仿真数据生成和世界模型等方向的研究。开源特性降低了社区利用前沿技术的门槛。 LingBot-Video 总参数量 30B，但每次推理仅激活约 3B 参数，采用 DiT+MoE 架构，包含 128 个专家和 top-8 路由。它引入了包含物理合理性在内的多奖励强化学习后训练系统，并支持基于机器人动作和手部姿态的条件视频生成。
+蚂蚁集团旗下灵波机器人开源了全球首个基于 MoE 架构的具身视频生成基础模型 LingBot-Video，总参数量 300 亿，激活参数量仅 30 亿，在 RBench 评测基准上取得了最优结果。 该模型大幅提升推理效率（比同等规模稠密模型快 3 倍），为具身视频生成树立了新标杆，可实现更逼真的机器人仿真和世界模型研究。以 Apache 2.0 许可证开源，降低了机器人学和 AI 领域研究者的门槛。 LingBot-Video 采用 DiT+MoE 架构，包含 128 个专家和 top-8 路由，并采用六维奖励强化学习后训练，其中物理合理性奖励由 VLM 评分。该模型支持从机器人动作和手部姿态条件进行动作到视频的预测。
 
 telegram · zaihuapd · 7月9日 04:30
 
-**背景**: MoE（混合专家）是一种 AI 架构，使用多个专门的子模型（专家）和路由机制，每次只激活部分专家，从而在不牺牲容量的情况下提高效率。具身视频基础模型旨在生成机器人执行任务的逼真视频，可作为世界模型或策略评估器。RBench 是一个评估机器人视频生成的基准，涵盖五个任务领域和四种机器人形态。
+**背景**: 混合专家模型（MoE）是一种机器学习方法，将模型划分为多个子网络（专家），每个专家专注于不同数据子集，每次输入仅激活相关专家，从而提高效率。具身视频生成模型旨在生成机器人与物理世界交互的逼真视频，这对于无需真实试验即可训练和评估机器人策略至关重要。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/glossary/mixture-of-experts/">What Is Mixture of Experts (MoE) and How It Works? | NVIDIA Glossary</a></li>
-<li><a href="https://huggingface.co/datasets/DAGroup-PKU/RBench">DAGroup-PKU/RBench · Datasets at Hugging Face</a></li>
+<li><a href="https://www.ibm.com/think/topics/mixture-of-experts">What is mixture of experts? | IBM</a></li>
+<li><a href="https://arxiv.org/abs/2601.15282">[2601.15282] Rethinking Video Generation Model for the Embodied World</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 社区表达了兴趣，但提出了关键质疑：VLM 能否可靠地判断物理合理性（存在古德哈特定律风险），以及该模型究竟是世界模型还是单纯的视频生成器——因为未提供闭环机器人实验结果。有人指出，虽然它在 RBench 平均分上领先，但在推理密集型维度上仍不如闭源模型，且在其自身评估中通用文生视频仅排第二。
+**社区讨论**: Reddit 社区讨论提出了关键问题：物理合理性奖励由 VLM 评分，可能存在古德哈特定律风险；此外，模型仅在视频质量指标上评估，没有闭环机器人性能数据，模糊了视频生成与世界模型之间的界限。
 
-**标签**: `#embodied AI`, `#MoE`, `#video generation`, `#open-source`, `#robotics`
+**标签**: `#MoE`, `#embodied AI`, `#video generation`, `#open source`, `#robotics`
 
 ---
 
 <a id="item-4"></a>
-## [约翰迪尔与 FTC 达成维修权和解](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
+## [约翰迪尔车主在 FTC 和解中获得维修权](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02) ⭐️ 8.0/10
 
-约翰迪尔与联邦贸易委员会及五个州达成和解，同意允许农民和独立维修店修理其设备。和解协议要求迪尔在 10 年内提供诊断工具、手册和零件。 此次和解标志着维修权运动的重大胜利，可能为其他制造商树立先例。它赋予农民自行修理设备的能力，降低成本和停机时间，并挑战农业领域的维修垄断。 约翰迪尔必须向五个州共同支付 100 万美元的反垄断执法费用，并接受 10 年的严格合规监督。和解协议不包括对 FTC 的罚款，且 100 万美元相对于迪尔的利润而言较小。
+约翰迪尔已与美国联邦贸易委员会及五个州达成和解，允许农民和独立维修店自行修理设备，结束了多年的限制性做法。 这一和解标志着维修权运动的重大胜利，可能降低农民的成本，并为消费电子等其他行业树立先例。 约翰迪尔必须向五个州共同支付 100 万美元的反垄断执法费用，并在 10 年内接受严格的合规监督。
 
 hackernews · djoldman · 7月8日 23:37 · [社区讨论](https://news.ycombinator.com/item?id=48838876)
 
-**背景**: 维修权运动倡导消费者拥有维护、修理或修改其购买产品的合法权利，包括农业设备。像约翰迪尔这样的制造商历来限制诊断工具、软件和零件的获取，迫使农民只能使用授权经销商进行维修。这导致农民成本增加和延误，尤其是在关键的种植和收获季节。
+**背景**: 维修权运动倡导消费者和独立维修店能够获得维修其拥有产品所需的零件、工具和软件。约翰迪尔此前因使用软件锁和专有工具阻止农民自行修理拖拉机而受到批评。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Right_to_repair_movement">Right to repair movement</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Right_to_repair">Right to repair - Wikipedia</a></li>
+**社区讨论**: 评论者赞扬了 Louis Rossmann 的倡导，并指出罚款相对于迪尔的利润微不足道，但合规监督意义重大。一些人表达了对这种基本权利竟需要诉讼才能实现的沮丧。
 
-</ul>
-</details>
-
-**社区讨论**: 评论者赞扬了维修权活动家路易斯·罗斯曼的工作，并指出 100 万美元的罚款相对于迪尔的利润微不足道。一些人对此类基本权利需要通过诉讼来争取表示沮丧，而另一些人则指出了科技行业反对维修权的认知失调。
-
-**标签**: `#right-to-repair`, `#consumer rights`, `#antitrust`, `#agriculture`, `#FTC`
+**标签**: `#right to repair`, `#FTC`, `#consumer rights`, `#regulation`, `#agriculture`
 
 ---
 
 <a id="item-5"></a>
-## [微软发布 Flint：面向 AI 代理的可视化语言](https://microsoft.github.io/flint-chart/#/) ⭐️ 8.0/10
+## [xAI 发布 Grok 4.5，效率提升 4 倍](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
 
-微软开源了 Flint，这是一种可视化中间语言，允许 AI 代理从简单的基于语义类型的规范生成高质量图表，将视觉决策交给编译器处理。 Flint 通过平衡可靠性和表现力，解决了当前图表 DSL 的关键局限，使 AI 代理无需冗长的底层参数即可生成精美的可视化。这有望显著提升智能系统中 AI 生成数据可视化的质量。 Flint 支持 46 种图表类型，可将单一规范编译为多种行业标准格式，包括 Vega-Lite、Apache ECharts 和 Chart.js。它还提供了 MCP 服务器，便于与现有代理应用集成。
+xAI 发布了新一代前沿 AI 模型 Grok 4.5，声称其推理效率是 Opus 的 4 倍，定价为每百万 token $2/$6，极具竞争力。 此次发布加剧了 AI 模型市场的竞争，为 GPT-5 和 Opus 等模型提供了高性价比的替代方案，可能降低企业采用高级推理能力的门槛。 Grok 4.5 使用数万亿 token 的 Cursor 数据训练，捕捉了开发者与智能体的交互，并以约 80 token/秒的速度运行，同时保持高级推理能力。
 
-hackernews · chenglong-hn · 7月8日 17:46 · [社区讨论](https://news.ycombinator.com/item?id=48834924)
+hackernews · BoumTAC · 7月8日 18:00 · [社区讨论](https://news.ycombinator.com/item?id=48835111)
 
-**背景**: 数据可视化对人与数据的交互至关重要，但 AI 代理在当前可视化语言中面临困境：简单规范生成低质量图表，而详细规范则冗长且易出错。中间语言（IR）是编译器内部使用的表示形式，用于优化和在源语言与目标语言之间进行转换。Flint 将这一概念应用于可视化，让编译器处理布局和样式决策。
+**背景**: Grok 4.5 是 Elon Musk 创立的 xAI 公司的最新模型，与 OpenAI 的 GPT-5 和 Anthropic 的 Claude Opus 等模型竞争。该模型支持 reasoning_effort 参数，可控制思考时间。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/">Flint: A visualization language for the AI era - Microsoft ...</a></li>
-<li><a href="https://microsoft.github.io/flint-chart/">Flint: A Visualization Language for the AI Era</a></li>
-<li><a href="https://github.com/microsoft/flint-chart">GitHub - microsoft/flint-chart: Flint is a visualization ...</a></li>
+<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4.5 | SpaceXAI</a></li>
+<li><a href="https://www.digitalapplied.com/blog/grok-4-5-vs-opus-4-8-vs-gpt-5-5-best-frontier-model-2026">Grok 4.5 vs Opus 4.8 vs GPT-5.5: Which Model Wins?</a></li>
+<li><a href="https://www.1950.ai/post/grok-4-5-raises-the-bar-for-frontier-ai-with-high-speed-reasoning-token-efficiency-and-real-world">Grok 4.5 Raises the Bar for Frontier AI With High-Speed Reasoning, Token Efficiency, and Real-World Enterprise Automation by Dr. Julie Butenko</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论总体积极，用户赞赏为 AI 代理提供的确定性编译器层。有人提出了可访问性问题以及与 Vega 的比较，质疑 Flint 与 Vega 等现有 DSL 的区别。其他人则对将 Flint 与 Claude Code 等工具结合用于个性化可视化表示兴奋。
+**社区讨论**: 社区评论褒贬不一：一些用户称赞该模型的成本效益和基准测试表现，而另一些用户则因对 xAI 内容审核和 Musk 影响力的政治担忧而表示不信任。
 
-**标签**: `#visualization`, `#AI agents`, `#DSL`, `#Microsoft`, `#data visualization`
+**标签**: `#AI`, `#LLM`, `#Grok`, `#xAI`, `#benchmarks`
 
 ---
 
 <a id="item-6"></a>
-## [xAI 发布 Grok 4.5，成本效率提升](https://x.ai/news/grok-4-5) ⭐️ 8.0/10
+## [微软发布面向 AI 代理的可视化语言 Flint](https://microsoft.github.io/flint-chart/#/) ⭐️ 8.0/10
 
-xAI 发布了 Grok 4.5，这是一个与 Cursor 联合训练的混合专家模型，使用了数万亿 token 的开发者交互数据，以显著低于竞争对手的成本实现了前沿性能。 Grok 4.5 的推理效率是 Opus 的 4 倍，而定价仅为每百万 token $2/$6，使先进 AI 对开发者和企业更加可及。然而，持续的政治偏见和信任问题可能限制其在企业环境中的采用。 Grok 4.5 的定价为每百万输入 token $2、每百万输出 token $6，而 GPT-5.4 为 $2.5/$15，Opus 4.8 为 $5/$25。基准测试表明其性能大致相当于 Opus 4.7 水平，但有人质疑基准测试的公正性。
+微软开源了 Flint，这是一种可视化中间语言，允许 AI 代理从简单、可人工编辑的规范生成高质量图表。Flint 抽象了底层视觉决策，并包含一个布局优化引擎，以生成精美的可视化效果。 Flint 通过提供确定性的中间层，减少了 AI 代理进行底层视觉决策的需求，解决了 AI 代理在数据可视化中可靠性的关键限制。这可以提高 AI 生成图表的质量和一致性，惠及使用代理系统的开发者和数据分析师。 Flint 使用基于语义类型的规范和布局优化引擎，从高级规范推导出底层细节。它还提供了 MCP 服务器，便于集成到代理应用中，并为微软的 Data Formulator 项目提供支持。
 
-hackernews · BoumTAC · 7月8日 18:00 · [社区讨论](https://news.ycombinator.com/item?id=48835111)
+hackernews · chenglong-hn · 7月8日 17:46 · [社区讨论](https://news.ycombinator.com/item?id=48834924)
 
-**背景**: Grok 是 xAI 的一系列大型语言模型，Grok 4.5 是最新版本。xAI 因其模型的政治偏见和安全实践而受到批评，包括因反犹输出而失去一份美国政府合同。该模型使用了来自 AI 代码编辑器 Cursor 的数据进行训练，以提升编码和智能体交互能力。
+**背景**: 像 Vega 这样的数据可视化语言表达力强，但需要明确的底层细节，使得 AI 代理难以可靠生成。Flint 提供了一个中间方案：一种紧凑的高级规范，编译器可以将其扩展为详细的图表，类似于编译器中的中间表示（IR）的工作方式。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 · Cursor</a></li>
-<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus ...</a></li>
-<li><a href="https://aimagazine.com/news/revealed-how-groks-antisemitism-lost-xai-a-key-us-contract">Why xAI Loses US Deal After Grok Sparks Political AI Scandal</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/">Flint : A visualization language for the AI era - Microsoft Research</a></li>
+<li><a href="https://github.com/microsoft/flint-chart">GitHub - microsoft/ flint -chart: 🪄 Flint is a visualization language ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论高度两极分化：一些用户称赞该模型的成本效率和性能，而另一些用户则因 xAI 的政治偏见和安全问题表示不信任。几位评论者感叹非技术性的政治辩论主导了讨论。
+**社区讨论**: 评论者指出，Flint 体现了在代理系统中使用确定性层（如编译器）的新兴模式。一些人将其与 Vega 比较，质疑其优势，而另一些人则对可访问性和分层图表的可组合性提出了担忧。
 
-**标签**: `#AI`, `#LLM`, `#xAI`, `#Grok`, `#machine learning`
+**标签**: `#AI agents`, `#data visualization`, `#Microsoft`, `#intermediate language`, `#Hacker News`
 
 ---
 
 <a id="item-7"></a>
-## [Bun 借助 AI 用 Rust 重写](https://bun.com/blog/bun-in-rust) ⭐️ 8.0/10
+## [OpenAI 分析编程评估中的缺陷](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) ⭐️ 8.0/10
 
-Bun 的博客详细介绍了他们借助 AI 将 JavaScript 运行时从 Zig 重写为 Rust 的过程，强调了内存安全性和性能提升。 这次重写展示了 AI 在大规模代码迁移中的创新应用，可能降低软件工程成本，并影响项目处理语言转换的方式。 重写过程在人工监督下进行以确保正确性，博客讨论了生命周期错误等挑战，以及使用 TigerBeetle 的静态内存分配风格指南。
+OpenAI 发布了一项分析，指出了编程评估中的常见缺陷，如过于严格的测试和未明确说明的提示，并提出了更好的基准测试实践。 这很重要，因为有缺陷的基准测试可能会误导 AI 社区对模型能力的判断，改进评估实践将带来更可靠的比较和 AI 编程领域的进步。 该分析涵盖了四种缺陷类型：过于严格的测试、未明确说明的提示、低覆盖率的测试和误导性提示，并建议使用人工判断来验证基准测试。
 
-hackernews · afturner · 7月8日 21:49 · [社区讨论](https://news.ycombinator.com/item?id=48837877)
+hackernews · sk4rekr0w · 7月8日 21:03 · [社区讨论](https://news.ycombinator.com/item?id=48837396)
 
-**背景**: Bun 是一个快速的 JavaScript 运行时、包管理器和测试运行器，旨在作为 Node.js 的直接替代品，使用 JavaScriptCore 引擎。Zig 是一种专注于健壮性和性能的系统编程语言，而 Rust 则以无需垃圾回收的内存安全性著称。
+**背景**: 编程评估用于衡量 AI 模型编写代码的能力，但许多现有基准测试存在缺陷，可能产生误导性结果。OpenAI 的工作旨在提高这些评估的可靠性。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Bun_(software)">Bun (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
-<li><a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime</a></li>
+**社区讨论**: 社区评论强调了其他问题，如效率指标、作弊以及人工监督的必要性，一些人怀疑基准测试是否能够完全反映现实世界的软件开发。
 
-</ul>
-</details>
-
-**社区讨论**: 社区评论对 AI 辅助重写持谨慎乐观态度，一些人指出与雇佣工程师相比节省了成本。其他人则批评过渡处理方式，提到 Zig 版本中遗留的 bug 和缺乏 LTS 支持。
-
-**标签**: `#Rust`, `#AI-assisted development`, `#memory safety`, `#software engineering`, `#Bun`
+**标签**: `#AI benchmarks`, `#coding evaluations`, `#software engineering`, `#AI evaluation`
 
 ---
 
 <a id="item-8"></a>
-## [Cloudflare 与 OpenAI 合作，用网络数据优化 AI 搜索](https://36kr.com/newsflashes/3886946347694593) ⭐️ 8.0/10
+## [Bun 从 Zig 重写为 Rust](https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything) ⭐️ 8.0/10
 
-7 月 8 日，Cloudflare 与 OpenAI 宣布启动一项研究试点，利用 Cloudflare 全球网络（承载超过 20%的全球互联网流量）的实时网站洞察数据，帮助 AI 搜索引擎更高效地索引和抓取网页内容，从而提升 AI 回答的新鲜度和准确性。 此次合作解决了 AI 搜索的一个关键挑战：利用实时网络信号保持索引更新，有望显著提升 AI 生成答案的时效性和可靠性。这也标志着 Cloudflare 的转变——此前以阻止 AI 爬虫闻名，如今开始积极支持 AI 索引。 该试点利用 Cloudflare 的网络数据，包括内容新鲜度、流量质量和页面实际变动，来指导 AI 索引。OpenAI 正在构建自己的网页索引以减少对 Google 的依赖，此次合作可能加速这一进程。
+Jarred Sumner 宣布，JavaScript 运行时 Bun 已从 Zig 重写为 Rust，原因是内存安全问题。此次重写主要由 AI 编码代理自动完成，API 令牌成本约为 16.5 万美元。 此次重写表明，AI 驱动的编码代理如今能够实现以前被认为风险过大的大规模重写。它也凸显了 Rust 在内存安全至关重要的系统编程领域日益增长的主导地位。 重写耗时 11 天，涉及 59 亿未缓存输入令牌和 6.9 亿输出令牌。基于 Rust 的新版 Bun 自 2026 年 6 月 17 日起已在 Claude Code 中上线，Linux 上启动速度提升了 10%。
 
-telegram · zaihuapd · 7月8日 15:27
+rss · Simon Willison · 7月8日 23:57
 
-**背景**: 像 ChatGPT 这样的 AI 搜索引擎依赖网页索引来检索信息，但传统索引可能无法反映实时变化。Cloudflare 的网络处理全球流量的很大一部分，提供了关于内容更新的独特信号。该试点旨在将 Cloudflare 的基础设施与 OpenAI 的模型相结合，创建更动态的索引系统。
+**背景**: Bun 是一个快速的 JavaScript 运行时和工具包，最初用 Zig 编写。由于混合使用垃圾回收和手动内存管理，常见内存安全错误如释放后使用和双重释放。Rust 的所有权模型和 Drop trait 在编译时防止此类错误。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://finance.biggo.com/news/ecf54939-d973-4d0f-887d-cc266dde2056">Cloudflare Partners with OpenAI to Reshape AI Search, Injecting Real-Time Indexing into 20% of Global Traffic — BigGo Finance</a></li>
-<li><a href="https://thenextweb.com/news/cloudflare-openai-research-pilot-ai-search">Cloudflare and OpenAI pilot to make AI search fresher - TNW</a></li>
-<li><a href="https://seosherpa.com/openai-is-building-its-own-web-index/">OpenAI Is Building It's Own Web Index • SEO SHERPA™</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#search`, `#Cloudflare`, `#OpenAI`, `#web indexing`
+**标签**: `#Bun`, `#Rust`, `#Zig`, `#runtime`, `#rewrite`
 
 ---
 
 <a id="item-9"></a>
-## [研究人员通过电磁信号识别应用，准确率达 99%](https://www.scmp.com/news/china/science/article/3359688/chinese-researchers-find-peephole-any-smartphone-its-leaked-radio-signal) ⭐️ 8.0/10
+## [OpenAI 推出 GPT-Live 语音模式，可委托 GPT-5.5 处理任务](https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything) ⭐️ 8.0/10
 
-中国研究人员开发出一种非接触式取证技术，通过分析手机泄漏的低频电磁信号来识别正在使用的应用，在 iPhone 15 Pro、小米 15 Pro 和 OPPO Reno 13 等设备上准确率最高达 99.07%。 这种侧信道攻击即使在手机离线、飞行模式、加密或锁定状态下也能工作，无需访问设备系统或数据即可揭示应用使用情况，构成重大隐私威胁。 该技术针对通常未被屏蔽的低频电磁辐射（低于 1 MHz），并使用机器学习对抖音、微信视频通话、百度地图、短信、浏览器、相机和云存储等应用进行分类。
+OpenAI 推出了 GPT-Live，这是 ChatGPT 的新语音模式模型，可以在保持对话流畅的同时将复杂任务委托给 GPT-5.5。该模型取代了旧版 GPT-4o 时代的语音模型，已在 iPhone 应用中可用。 此次升级显著提升了 ChatGPT 的语音模式能力，使其成为更有用的头脑风暴伙伴，并能调用前沿模型处理繁重任务。这标志着 OpenAI 持续投入对话式 AI 和多模态交互。 GPT-Live 使用 GPT-5.5 作为后端模型来处理需要网络搜索、深度推理或复杂工作的任务，并将在新前沿模型发布时持续更新。作者注意到早期存在一个 bug，模型会在非笑话处打断并大笑，OpenAI 据称已进行调整。
 
-telegram · zaihuapd · 7月8日 16:05
+rss · Simon Willison · 7月8日 23:20
 
-**背景**: 侧信道攻击利用功耗或电磁辐射等物理发射来推断敏感信息。电磁侧信道攻击是非侵入性的，已被用于破解加密密钥。这项研究将电磁攻击扩展到识别特定应用，即使在加密或离线设备上也能进行。
+**背景**: GPT-5.5 是 OpenAI 于 2026 年 4 月 23 日发布的大型语言模型，代号 'Spud'。它在多项基准测试中取得了显著成绩，并已用于 Codex 和 Patch the Planet 等项目。之前的 ChatGPT 语音模式基于 GPT-4o 时代的模型，知识截止于 2024 年，限制了其实用性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/646255118">电磁侧信道攻击破解密码 - 知乎 - 知乎专栏 电磁信息泄露检测与侧信道攻击防御技术详解_百度文库 手机关机也没用？中国科学家发现新型电磁“透视术”让隐私无处遁形 16、电磁侧信道攻击的预测与防范 - CSDN博客 密码学侧信道攻击（Side-channel Attack）：从物理泄露中窃取密钥 - ... 一种古老而有效的攻击方式-侧信道攻击：是什么、为什么以及如何实现侧...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#privacy`, `#side-channel attack`, `#mobile`, `#research`
+**标签**: `#OpenAI`, `#GPT-Live`, `#voice mode`, `#AI`, `#ChatGPT`
 
 ---
 
 <a id="item-10"></a>
+## [LineageOS 推出网页刷机工具](https://www.androidauthority.com/lineageos-summertime-update-2026-3685112/) ⭐️ 8.0/10
+
+LineageOS 正式推出 Lineage Flash Tools，这是一款基于网页的刷机工具，用户无需本地安装 adb 和 fastboot，即可直接在浏览器中刷机。该工具支持 Fastboot、ADB 及三星 Odin 协议，需要使用 Chrome 或 Edge 等支持 WebUSB 的浏览器。 这一创新显著降低了刷入定制 ROM 的门槛，使普通用户更容易上手，有望扩大 LineageOS 的用户群体。同时，它也展示了 WebUSB 技术在设备级操作中的日益普及。 该工具不能完全替代传统刷机流程，必须配合设备专属 Wiki 安装指南使用。此外，LineageOS 更新了 Updater 应用，采用 Material 3 Expressive 界面，并确认基于 Android 17 的 LineageOS 24 正在开发中。
+
+telegram · zaihuapd · 7月9日 01:46
+
+**背景**: LineageOS 是一款流行的 Android 开源定制 ROM，提供增强功能和更长的软件支持。传统上，刷入定制 ROM 需要安装 adb 和 fastboot 等命令行工具，这对初学者来说可能比较困难。WebUSB 允许网页应用与 USB 设备通信，从而实现基于浏览器的刷机。
+
+**标签**: `#LineageOS`, `#刷机工具`, `#Android`, `#WebUSB`, `#定制ROM`
+
+---
+
+<a id="item-11"></a>
 ## [大疆 EV50 无人机飞越珠峰 8861 米](https://www.163.com/dy/article/L1CUCV940514R9OJ.html) ⭐️ 8.0/10
 
-大疆尚未发布的 EV50 垂直起降运载无人机在“巅峰使命”珠峰科考中飞至 8861 米高度，创下同类公开测试中的最高飞行升限纪录。 这一成就展示了 EV50 卓越的高海拔性能和可靠性，有望彻底改变高海拔科研、灾害救援及偏远地区物资运输等极端环境下的物流方式。 EV50 是一款复合翼无人机，可垂直起降并切换至固定翼巡航。在为期 12 天的任务中，它完成了 32 架次起降，连续爬升 3730 米，返程时仍剩 30%电量。
+大疆尚未发布的 EV50 垂直起降运载无人机在“巅峰使命”珠峰科考中飞越 8861 米，创下全球同类公开测试中的最高飞行升限。 这一成就展示了该无人机的高海拔能力以及低空物流的潜力，例如百公里级货物运输，可能彻底改变复杂地形的运输方式。 EV50 是一款复合翼无人机，可原地垂直起降，起飞后切换固定翼巡航。在 12 天的任务中，它累计完成 32 架次起降，连续爬升 3730 米，返程时仍剩 30%电量。
 
 telegram · zaihuapd · 7月9日 06:00
 
-**背景**: 复合翼无人机融合了多旋翼垂直起降和固定翼长航时、高速飞行的优点。“巅峰使命”珠峰科考始于 2022 年，是一项综合性科学考察活动，旨在开展 8000 米以上高海拔研究。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://news.qq.com/rain/a/20260709A03DQ700">大疆近期发布新款无人机机型DJI EV50 可随时起降又能百公里级飞行_腾...</a></li>
-<li><a href="https://newuas.com/newrelease/87777.html">大疆发布首款垂直起降运载无人机DJI EV50-NEWUAS</a></li>
-<li><a href="https://www.stdaily.com/web/gdxw/2026-07/09/content_544642.html">最高飞至8861米 大疆披露首款垂直起降运载无人机</a></li>
-
-</ul>
-</details>
+**背景**: VTOL（垂直起降）无人机结合了直升机的灵活性和固定翼飞机的效率。在珠峰的高海拔测试为无人机在极端条件下的性能提供了宝贵数据，对物流和科研具有重要意义。
 
 **标签**: `#drones`, `#DJI`, `#high-altitude`, `#logistics`, `#technology`
 
 ---
 
-<a id="item-11"></a>
+<a id="item-12"></a>
 ## [国家超算互联网核心节点在郑州上线](https://36kr.com/newsflashes/3887797387344387) ⭐️ 8.0/10
 
-2026 年 7 月 9 日，国家超算互联网核心节点在郑州正式上线，可提供超过 10 万张国产 AI 算力卡。这是该平台上线以来接入的最大规模单体国产 AI 算力资源池。 这一里程碑大幅提升了中国的国产 AI 算力能力，减少对外国硬件的依赖，并支持大规模 AI 模型训练。同时，它强化了国家计算基础设施，实现全国范围内更高效的资源调度。 该核心节点支持多品牌国产加速卡混合部署，并可灵活扩展至百万卡规模。目前已连接全国 30 余家超算与智算中心，通过智能调度提升整体资源利用率。
+2026 年 7 月 9 日，国家超算互联网核心节点在郑州正式上线，可提供超过 10 万张国产人工智能算力卡。 这标志着中国国家计算基础设施的重要里程碑，能够提供大规模国产 AI 算力资源，支持国家 AI 发展战略目标。 该节点是国家超算互联网平台接入的最大单体国产 AI 算力资源池，将承担运营管理、资源调度及供需对接等核心功能。
 
 telegram · zaihuapd · 7月9日 07:00
 
-**背景**: 国家超算互联网是中国科技部启动的项目，旨在将全国超算中心连接成统一的算力服务平台。它旨在打破单体运营模式，构建全国算力资源调度体系。郑州核心节点承担运营管理和资源调度等核心枢纽功能。
+**背景**: 国家超算互联网是一项国家级倡议，旨在构建覆盖全国的统一计算资源调度体系。郑州节点作为核心枢纽，协调来自国内各方的算力，旨在提升人工智能和科研能力。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.scnet.cn/home/subject/hxjd/index.html">国家超算互联网核心节点 - 超算互联网</a></li>
-<li><a href="https://baike.baidu.com/item/国家超算互联网核心节点/63648019">国家超算互联网核心节点 - 百度百科 核心节点用户手册 | 超算互联网 全国最大单体国产 AI 算力池落地郑州，国家超算互联网核心节点正式上... 国家超算互联网核心节点正式上线|运营|人工智能|工业互联网平台_网易... 郑州成为全国最大算力调度枢纽，国家超算互联网核心节点上线试运行_发... Top Stories</a></li>
-<li><a href="https://news.qq.com/rain/a/20260709A03VDU00">刚刚，国家超算互联网核心节点正式上线_腾讯新闻</a></li>
+**标签**: `#supercomputing`, `#AI infrastructure`, `#China`, `#national strategy`, `#computing resources`
 
-</ul>
-</details>
+---
 
-**标签**: `#supercomputing`, `#AI infrastructure`, `#China`, `#computing power`, `#national strategy`
+<a id="item-13"></a>
+## [OpenAI 与美国战争部修订 AI 合同，禁止监控公民](https://t.me/zaihuapd/42459) ⭐️ 8.0/10
+
+OpenAI 与美国战争部（原国防部）已同意修订双方的 AI 合作协议，明确禁止将 AI 系统用于监控美国公民，此举由 OpenAI 首席执行官 Sam Altman 主动提议。 此举为军事领域的 AI 伦理使用树立了先例，回应了公众对大规模监控的担忧，并可能影响未来与政府机构的 AI 合同。 修订后的条款明确禁止蓄意监控美国公民，并禁止利用商业获取的个人身份信息进行追踪或监测。该协议尚未正式签署。
+
+telegram · zaihuapd · 7月9日 13:22
+
+**背景**: 美国战争部（原国防部）负责军事行动。OpenAI 和 Anthropic 等 AI 公司因技术可能被用于军事监控等用途而受到审查。Anthropic 此前与战争部的合同因类似争议而中止。
+
+**标签**: `#AI ethics`, `#OpenAI`, `#military AI`, `#surveillance`, `#policy`
 
 ---
