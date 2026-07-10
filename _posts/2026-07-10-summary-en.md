@@ -5,213 +5,217 @@ date: 2026-07-10
 lang: en
 ---
 
-> From 36 items, 9 important content pieces were selected
+> From 31 items, 9 important content pieces were selected
 
 ---
 
-1. [OpenAI Releases GPT-5.6 with Three Model Sizes](#item-1) ⭐️ 9.0/10
+1. [OpenAI Releases GPT-5.6 with Enhanced Intent Understanding](#item-1) ⭐️ 9.0/10
 2. [Long March 10B achieves world's first net-based rocket recovery at sea](#item-2) ⭐️ 9.0/10
-3. [EU Parliament Passes Chat Control 1.0](#item-3) ⭐️ 8.0/10
-4. [Mitchell Hashimoto on Ghostty, Zig, and Rust Culture](#item-4) ⭐️ 8.0/10
-5. [Meta Launches Muse Spark 1.1 Agentic Model with API](#item-5) ⭐️ 8.0/10
-6. [Meta Superintelligence: 1-Year Progress Update](#item-6) ⭐️ 8.0/10
-7. [OpenAI and US War Department Amend AI Contract to Ban Domestic Surveillance](#item-7) ⭐️ 8.0/10
-8. [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](#item-8) ⭐️ 8.0/10
-9. [Tencent in Talks to Buy AI Startup Manus from Meta](#item-9) ⭐️ 8.0/10
+3. [Mitchell Hashimoto on Choosing Zig over Rust for Ghostty](#item-3) ⭐️ 8.0/10
+4. [Meta Releases Muse Spark 1.1 with API and Agentic Upgrades](#item-4) ⭐️ 8.0/10
+5. [Meta's Superintelligence Progress: RL Startups and Compute Scaling](#item-5) ⭐️ 8.0/10
+6. [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](#item-6) ⭐️ 8.0/10
+7. [Tencent in Talks to Acquire AI Startup Manus from Meta](#item-7) ⭐️ 8.0/10
+8. [OpenAI, Google reportedly serve AI models to blacklisted Chinese firms via Singapore](#item-8) ⭐️ 8.0/10
+9. [China Imposes Temporary Ban on Helium Exports](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI Releases GPT-5.6 with Three Model Sizes](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
+## [OpenAI Releases GPT-5.6 with Enhanced Intent Understanding](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
 
-OpenAI has released GPT-5.6, its latest flagship model, available in three sizes: Luna, Terra, and Sol. The largest variant, Sol, achieves a new state-of-the-art score of 7.8% on the ARC-AGI-3 benchmark, marking the first time a frontier model has beaten an ARC-AGI-3 game. This release pushes the frontier of AI reasoning and generalization, as ARC-AGI-3 is designed to measure an agent's ability to adapt to novel environments. The improved intent understanding and image preservation features also enhance practical usability for developers and end users. GPT-5.6 introduces intent understanding, allowing the model to infer the user's underlying goal without explicit step-by-step instructions, and preserves original image dimensions when processing images. The safety report is available at deploymentsafety.openai.com.
+OpenAI publicly released GPT-5.6 on July 9, 2026, featuring improved intent understanding and original image detail preservation. This release marks a significant step in AI's ability to infer user goals and handle visual data, potentially transforming workflows in coding, business, and creative tasks. GPT-5.6 preserves original image dimensions and can infer underlying user intent without explicit step-by-step instructions. It also sets a new state-of-the-art on ARC-AGI-3 with 7.8% accuracy.
 
 hackernews · logickkk1 · Jul 9, 17:04 · [Discussion](https://news.ycombinator.com/item?id=48849066)
 
-**Background**: ARC-AGI-3 is an interactive reasoning benchmark that challenges AI agents to explore novel environments, acquire goals on the fly, and build adaptable world models. Frontier models are the most capable general-purpose AI systems at the current edge of capability, such as GPT-4, Claude, and Gemini. GPT-5.6 continues OpenAI's series of large language models, with the Sol variant being the most capable.
+**Background**: GPT-5.6 is the latest large language model from OpenAI, building on GPT-5.5 which already improved intent understanding. The model is available via API and includes a variant called Sol for Codex.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arcprize.org/arc-agi/3">ARC - AGI - 3</a></li>
-<li><a href="https://docs.arcprize.org/">ARC - AGI - 3 Quickstart - ARC - AGI - 3 Docs</a></li>
-<li><a href="https://www.diuna.ae/post/frontier-model-definition">Frontier Model definition | Diuna Technologies</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.6">GPT-5.6 - Wikipedia</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT-5.5 | OpenAI</a></li>
+<li><a href="https://venturebeat.com/technology/openais-updated-gpt-5-5-instant-is-better-at-shopping-complex-constraints-and-understanding-user-intent-and-its-already-in-the-api">OpenAI's updated GPT-5.5 Instant is better at shopping, complex constraints, and understanding user intent — and it's already in the API | VentureBeat</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight the new SOTA on ARC-AGI-3 and the interesting semantic tips for using the model. Some users compare GPT-5.6 to other models like Claude Code and Sonnet 5, with mixed opinions on coding performance. One user notes that OpenAI excluded Fable 5 from comparisons because it refused most biology questions.
+**Discussion**: Community comments are mixed: some developers praise its intent understanding and bug-finding ability, while others question the reliance on AI for business creation. The Sol variant's ARC-AGI-3 performance is highlighted as impressive.
 
-**Tags**: `#AI`, `#OpenAI`, `#GPT-5.6`, `#machine learning`, `#frontier model`
+**Tags**: `#AI`, `#OpenAI`, `#GPT-5.6`, `#machine learning`, `#natural language processing`
 
 ---
 
 <a id="item-2"></a>
 ## [Long March 10B achieves world's first net-based rocket recovery at sea](https://weibo.com/7340734455/R814of1Ki) ⭐️ 9.0/10
 
-On July 10, 2026, China's Long March 10B rocket launched from Hainan Commercial Space Launch Site and successfully performed the world's first net-based recovery of its first stage at sea, approximately 6 minutes after stage separation. This marks China's first successful controlled recovery of a rocket first stage and a major breakthrough in reusable rocket technology, potentially reducing launch costs and increasing payload capacity by eliminating heavy landing legs. The net-based recovery system transfers deceleration and cushioning hardware from the rocket to the recovery platform, similar to aircraft carrier arresting gear, allowing the rocket to carry only lightweight arresting bars and save weight for payload.
+On July 10, 2026, China's Long March 10B rocket launched from Hainan Commercial Space Launch Site and successfully recovered its first stage via a net-based capture system on a sea platform, marking the world's first net-based recovery of a launch vehicle. This achievement establishes China as the second nation to successfully recover a rocket first stage, and the first to use a net-based system, potentially reducing recovery costs and expanding reusable rocket technology options for the global aerospace industry. The first stage separated about 6 minutes after liftoff, then performed a vertical return and was caught by a net on the recovery platform. Unlike SpaceX's landing legs, the net system uses arresting cables to hook the rocket's attachment points, eliminating the need for landing legs.
 
 telegram · zaihuapd · Jul 10, 04:36
 
-**Background**: Rocket recovery is key to reusability, which lowers launch costs. Traditional methods use landing legs on the rocket, adding weight. China's net-based approach moves the recovery hardware to a sea platform, improving payload efficiency.
+**Background**: Reusable rocket technology aims to reduce launch costs by recovering and reusing the most expensive part of the rocket—the first stage. SpaceX pioneered this with vertical landing legs, while China's Long March 10B now demonstrates an alternative net-based approach. The Long March 10B is derived from the Long March 10A, with modifications for commercial use.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.huxiu.com/article/4874211.html">我国大型火箭长征十号乙首飞成功 并完成世界首次芯一级网系回收</a></li>
-<li><a href="https://www.bilibili.com/video/BV1oSNL6QEoP/">历史性突破！中国实现全球首次运载火箭网系回收_哔哩哔哩_bilibili</a></li>
-<li><a href="https://www.163.com/dy/article/L1FPVTVN05198CJN.html">长征十号乙首飞告捷 全球首创海上网系回收成功 商业航天下半年迎三重共振|火箭|卫星|发射场|国际空间站_网易订阅</a></li>
+<li><a href="https://www.guancha.cn/kegongliliang/2026_07_10_823277.shtml">长10乙 回 收 成功：美国人做了和没做的事，我们都要做-科工力量</a></li>
+<li><a href="https://www.news.cn/20260710/699cccd9572b4c70a0c9eddc96b77eaf/c.html">新华鲜报丨长征十号乙首飞成功 我国运载火箭首次实现可控回收-新华网</a></li>
+<li><a href="https://www.stdaily.com/web/gdxw/2026-07/10/content_545323.html">历史性突破！长征十号乙运载火箭成功实现一子级可控回收</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments on social media express excitement and pride, with many highlighting the innovative net-based approach as a clever alternative to SpaceX's landing legs. Some discuss the potential for future commercial applications.
-
-**Tags**: `#aerospace`, `#rocket recovery`, `#China space program`, `#Long March 10B`
+**Tags**: `#aerospace`, `#rocket recovery`, `#reusable rockets`, `#China space program`, `#Long March 10B`
 
 ---
 
 <a id="item-3"></a>
-## [EU Parliament Passes Chat Control 1.0](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 8.0/10
+## [Mitchell Hashimoto on Choosing Zig over Rust for Ghostty](https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/) ⭐️ 8.0/10
 
-On July 9, 2026, the European Parliament allowed Chat Control 1.0 to pass, permitting warrantless mass scanning of private messages on platforms like Instagram, Discord, and Gmail until 2028. This decision undermines end-to-end encryption and privacy rights for EU citizens, setting a precedent for mass surveillance that could affect global tech companies and user trust. The measure passed despite a majority of voting MEPs opposing it (314 against, 276 in favor) because a rejection required an absolute majority of 361 votes, which was not achieved.
-
-hackernews · rapnie · Jul 9, 11:03 · [Discussion](https://news.ycombinator.com/item?id=48843923)
-
-**Background**: Chat Control 1.0 is a temporary EU regulation originally introduced in 2021 to combat child sexual abuse online by requiring platforms to scan private messages. Critics argue it mandates mass surveillance, undermines encryption, and violates fundamental rights. The vote was held on the last session before summer break, with many MEPs absent, and used a procedural rule requiring an absolute majority to reject.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Chat_Control_1.0">Chat Control 1.0</a></li>
-<li><a href="https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/">EU Parliament greenlights Chat Control 1.0 – Breyer: "Our children lose out"</a></li>
-<li><a href="https://www.techtimes.com/articles/320010/20260709/eu-parliament-passes-chat-control-default-314-meps-couldnt-block-scanning-law.htm">EU Parliament Passes Chat Control by Default: 314 MEPs...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments express outrage over the procedural manipulation, calling it a 'stupid parliamentary trick' and warning that the EU is becoming totalitarian. Many highlight that a majority of voting MEPs opposed the measure but were unable to block it due to the absolute majority rule.
-
-**Tags**: `#privacy`, `#EU legislation`, `#surveillance`, `#technology policy`, `#civil liberties`
-
----
-
-<a id="item-4"></a>
-## [Mitchell Hashimoto on Ghostty, Zig, and Rust Culture](https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/) ⭐️ 8.0/10
-
-Mitchell Hashimoto, creator of Ghostty, gave an interview discussing his terminal emulator built with Zig, his pragmatic design choices, and his candid critique of Rust's community culture compared to Zig's. This interview provides rare insight into the trade-offs between Zig and Rust from a high-profile developer, influencing how the programming community perceives these languages for systems programming. Ghostty is a fast, cross-platform terminal emulator using GPU acceleration and native UI. Hashimoto explains his preference for Zig's simplicity and criticizes Rust's culture as off-putting, while acknowledging Rust's technical merits.
+In a recent interview, Mitchell Hashimoto explained his decision to use Zig instead of Rust for building the Ghostty terminal emulator, citing Rust's culture and complexity as key reasons. This discussion highlights ongoing debates in systems programming about language choice, community culture, and pragmatism, influencing how developers approach new projects. Ghostty is a fast, cross-platform terminal emulator using GPU acceleration and native UI. Hashimoto emphasized that Zig's simplicity and control align better with his engineering philosophy than Rust's complex type system and community norms.
 
 hackernews · veqq · Jul 9, 17:17 · [Discussion](https://news.ycombinator.com/item?id=48849292)
 
-**Background**: Ghostty is a terminal emulator that uses platform-native UI and GPU acceleration for performance. Zig is a low-level systems programming language designed as an alternative to C, while Rust is a memory-safe systems language with a strong ecosystem. Hashimoto is known for creating Vagrant and has deep experience in infrastructure tooling.
+**Background**: Zig is a systems programming language designed as an improvement over C, focusing on simplicity and manual memory management. Rust, in contrast, emphasizes memory safety through its ownership system. Ghostty aims to provide a high-performance terminal experience across platforms.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ghostty.org/">Ghostty</a></li>
-<li><a href="https://github.com/ghostty-org/ghostty">GitHub - ghostty-org/ghostty: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.</a></li>
+<li><a href="https://ghostty.org/docs">Ghostty Docs</a></li>
+<li><a href="https://github.com/ghostty-org/ghostty">GitHub - ghostty -org/ ghostty : Ghostty is a fast, feature-rich, and...</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments show mixed reactions: some agree with Hashimoto's cultural critique of Rust, while others point out that negative interactions often come from a vocal minority. There is also debate about forking and maintenance burdens in open source.
+**Discussion**: Community comments reflect mixed reactions: some praise Hashimoto's pragmatic approach, while others defend Rust's community and language design. A user noted that negative interactions with Rust enthusiasts often occur in flame wars, not in constructive development contexts.
 
-**Tags**: `#Zig`, `#Ghostty`, `#Rust`, `#programming languages`, `#terminal emulator`
+**Tags**: `#Ghostty`, `#Zig`, `#Rust`, `#terminal emulator`, `#software engineering`
+
+---
+
+<a id="item-4"></a>
+## [Meta Releases Muse Spark 1.1 with API and Agentic Upgrades](https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything) ⭐️ 8.0/10
+
+Meta released Muse Spark 1.1 on July 9, 2026, the first version of the model to offer a public API, with significant improvements in agentic tool calling and computer use. This marks a major step for Meta in making its advanced AI models accessible to developers via API, enabling integration into applications and workflows, and showcasing progress in agentic capabilities. The evaluation report includes an intriguing section on 'Attractor States in Self-Conversation,' where two copies of the model produce existential statements. Simon Willison created a plugin 'llm-meta-ai' for the LLM CLI tool to access the model.
+
+rss · Simon Willison · Jul 9, 16:24
+
+**Background**: Muse Spark is Meta's multimodal reasoning model first released in April 2026, designed for agentic tasks. Agentic tool calling allows LLMs to autonomously select and execute external functions, bridging reasoning and action. The 'Attractor States' phenomenon refers to behavioral patterns that models converge to during self-interaction.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.datacamp.com/blog/muse-spark-1-1">Muse Spark 1.1: Meta's Agentic Model and API | DataCamp</a></li>
+<li><a href="https://www.lesswrong.com/posts/rvbjZMp6aEDn2jiyp/mapping-llm-attractor-states">Mapping LLM attractor states — LessWrong</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#Meta`, `#Muse Spark`, `#API`, `#agentic`
 
 ---
 
 <a id="item-5"></a>
-## [Meta Launches Muse Spark 1.1 Agentic Model with API](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) ⭐️ 8.0/10
+## [Meta's Superintelligence Progress: RL Startups and Compute Scaling](https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence) ⭐️ 8.0/10
 
-Meta announced Muse Spark 1.1, a multimodal reasoning model optimized for agentic tasks, alongside a public preview of the Meta Model API for developers. The model features a 1 million token context window and is Meta's first paid developer API. This release marks Meta's entry into the paid AI model market, potentially commoditizing coding models with its open-weight strategy. It also intensifies competition with OpenAI and Anthropic by offering a competitive, low-cost agentic model. Pricing is set at $1.25/$4.5 per 1M tokens for input/output, with cached input at $0.15. The model uses a bash-tool-only agent harness for evaluation on Terminal-Bench 2.1, but some community members question the benchmark methodology due to resource cap overrides.
+A top-tier reinforcement learning environment startup has emerged, and Meta is pursuing an unprecedented compute ramp involving 2000km+ scale-across infrastructure. These developments signal a potential paradigm shift in AI infrastructure, enabling more efficient training of superintelligent models and opening opportunities for new startups in the RL ecosystem. The RL environment startup is part of a broader trend where companies like Surge and Mercor are building specialized environments for training AI agents, while scale-across technology breaks physical data center boundaries using optical fiber networks.
 
-hackernews · ot · Jul 9, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48846184)
+rss · Semianalysis · Jul 9, 19:16
 
-**Background**: Agentic models are AI systems that can autonomously perform tasks, use tools, and interact with environments. Meta's open-weight approach releases model weights publicly, allowing developers to run models locally, which contrasts with closed models from OpenAI and Anthropic. Muse Spark 1.1 is built by Meta Superintelligence Labs.
+**Background**: Reinforcement learning (RL) environments are simulated worlds where AI agents learn through trial and error. Scale-across refers to distributing GPU training across multiple data centers or regions, which is becoming necessary as model sizes grow beyond single data center capacity.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.datacamp.com/blog/muse-spark-1-1">Muse Spark 1 . 1 : Meta's Agentic Model and API | DataCamp</a></li>
-<li><a href="https://www.digitalapplied.com/blog/meta-muse-spark-1-1-agentic-model-api-2026">Meta Muse Spark 1 . 1 : Meta's First Paid Agent Model</a></li>
-<li><a href="https://datanorth.ai/news/meta-releases-muse-spark-1-1-agentic-ai-model">Meta releases Muse Spark 1 . 1 agentic AI model</a></li>
+<li><a href="https://www.primeintellect.ai/blog/environments">Environments Hub: A Community Hub To Scale RL To Open AGI</a></li>
+<li><a href="https://techcrunch.com/2025/09/21/silicon-valley-bets-big-on-environments-to-train-ai-agents/">Silicon Valley bets big on 'environments' to train AI agents | TechCrunch</a></li>
+<li><a href="https://www.naddod.com/blog/a-complete-guide-to-scale-across-the-third-pillar-of-ai-computing">What Is Scale-Across? A Complete Guide to the “Third Pillar ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight technical concerns about benchmark validity, with one user noting that resource cap overrides disqualify results. Another user shared a practical LLM plugin for the model, while others discussed Meta's strategy to commoditize coding models and praised the low pricing.
-
-**Tags**: `#AI`, `#Meta`, `#agentic model`, `#open source`, `#coding`
+**Tags**: `#AI`, `#superintelligence`, `#reinforcement learning`, `#compute scaling`, `#Meta`
 
 ---
 
 <a id="item-6"></a>
-## [Meta Superintelligence: 1-Year Progress Update](https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence) ⭐️ 8.0/10
+## [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions) ⭐️ 8.0/10
 
-A top-tier reinforcement learning environment startup has emerged, Meta is pursuing the most aggressive compute ramp ever seen with 2000km+ scale-across, and the article offers strategic advice for Google DeepMind. These developments signal a major shift in the AI industry, with Meta aggressively scaling compute and RL capabilities, potentially reshaping the competitive landscape and accelerating progress toward superintelligence. The RL environment startup is described as 'top tier' and emerged suddenly, while Meta's compute ramp involves unprecedented scale across 2000+ km, indicating massive infrastructure investment.
+Chinese courts have ruled in multiple cases over several years that virtual assets such as game accounts, in-game items, and cryptocurrencies are inheritable property, invalidating platform terms that prohibit inheritance. This establishes a legal precedent for digital inheritance in China, affecting millions of gamers and users of digital platforms, and forcing companies to revise their terms of service to comply with inheritance laws. The courts ruled that platform clauses prohibiting inheritance are invalid as they violate statutory rights, but pure personal privacy content like chat logs is not inheritable and must be archived by the platform.
 
-rss · Semianalysis · Jul 9, 19:16
+telegram · zaihuapd · Jul 10, 02:56
 
-**Background**: Meta has been investing heavily in AI research, particularly in reinforcement learning and large-scale compute infrastructure, as part of its pursuit of superintelligence. The article provides a progress update on these efforts.
+**Background**: In China, the Civil Code protects virtual property, but prior to these rulings, there was no clear legal guidance on inheritance of digital assets. Game accounts often contain valuable items and currency, and platforms typically prohibit transfer or inheritance in their user agreements. These cases clarify that such prohibitions are unenforceable.
 
-**Tags**: `#AI`, `#Meta`, `#superintelligence`, `#reinforcement learning`, `#compute`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.zhihu.com/question/2050522294171039185">母亲欲继承离世儿子 87 个游戏账号遭平台拒绝，法院以格式条款无效为...</a></li>
+<li><a href="https://news.qq.com/rain/a/20260609A07QLZ00">玩家去世后87个游戏账号归谁？法院：使用权可继承_腾讯新闻</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#digital inheritance`, `#virtual assets`, `#Chinese law`, `#gaming`, `#property rights`
 
 ---
 
 <a id="item-7"></a>
-## [OpenAI and US War Department Amend AI Contract to Ban Domestic Surveillance](https://t.me/zaihuapd/42459) ⭐️ 8.0/10
+## [Tencent in Talks to Acquire AI Startup Manus from Meta](https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/) ⭐️ 8.0/10
 
-OpenAI and the US Department of War (formerly the Department of Defense) have agreed to amend their AI cooperation contract to explicitly prohibit the use of AI systems for domestic surveillance of American citizens. The amendment, proposed by OpenAI CEO Sam Altman, aims to address concerns about AI being used for mass surveillance. This proactive ethical measure by a leading AI company sets a precedent for responsible AI deployment in military contexts, potentially influencing industry standards and government policies. It addresses critical civil liberties concerns and could shape future AI governance frameworks. The revised clause specifically bans deliberate surveillance of US citizens and prohibits tracking or monitoring using commercially obtained personally identifiable information. The agreement has not yet been formally signed, and similar controversy previously led Anthropic to suspend its cooperation with the War Department.
+Tencent is in advanced negotiations to acquire AI startup Manus from Meta, aiming to become its largest shareholder in a deal valued at over $2 billion. The move follows a Beijing directive requiring Meta to unwind its previous $2 billion acquisition of Manus. This deal would significantly strengthen Tencent's position in the AI agent space, as Manus is a leading autonomous AI agent platform. It also reflects the growing regulatory pressure on foreign tech giants in China and the strategic importance of AI for Chinese internet companies. Tencent is partnering with Manus's original investors, ZhenFund and HSG, to repurchase the company from Meta at a valuation no less than $2 billion. The deal was first reported by the Financial Times, and all parties involved have declined to comment.
 
-telegram · zaihuapd · Jul 9, 13:22
+telegram · zaihuapd · Jul 10, 06:45
 
-**Background**: The US Department of War (historically known as the Department of Defense) has been exploring AI applications for military purposes, raising ethical concerns about surveillance and autonomous weapons. OpenAI, as a leading AI research organization, has faced pressure to ensure its technology is not misused. The amendment reflects ongoing debates about balancing national security with individual privacy rights.
+**Background**: Manus is an autonomous AI agent developed by Butterfly Effect, a company founded in China and based in Singapore. It is designed to execute tasks, automate workflows, and extend human capabilities beyond simple question-answering. Meta had previously acquired Manus for $2 billion, but Beijing ordered the deal to be unwound, likely due to national security and data concerns.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics">Ethics of Artificial Intelligence - AI | UNESCO</a></li>
-<li><a href="https://www.linkedin.com/posts/davidmezzetti_statement-from-dario-amodei-on-our-discussions-activity-7433114642635268096-nqKk">Anthropic's AI Ethics : Lessons Learned | David Mezzetti... | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Manus_(AI_agent)">Manus (AI agent) - Wikipedia</a></li>
+<li><a href="https://manus.im/">Manus: Hands On AI</a></li>
+<li><a href="https://www.hsgcap.com/">Home - HSG</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI ethics`, `#OpenAI`, `#military AI`, `#surveillance`, `#policy`
+**Tags**: `#AI`, `#acquisition`, `#Tencent`, `#Meta`, `#Manus`
 
 ---
 
 <a id="item-8"></a>
-## [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions) ⭐️ 8.0/10
+## [OpenAI, Google reportedly serve AI models to blacklisted Chinese firms via Singapore](https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f) ⭐️ 8.0/10
 
-Chinese courts have issued multiple rulings over several years establishing that virtual assets such as game accounts, in-game items, cryptocurrencies, and social media accounts are inheritable property, and platform terms prohibiting inheritance are invalid. This legal precedent affects millions of digital asset owners in China and forces platforms to comply with inheritance requests, potentially reshaping terms of service across the gaming and tech industries. The courts ruled that chat logs and other purely personal privacy content are not inheritable and will be archived by the platform; platforms may charge reasonable fees for transfer processing.
+According to a Financial Times report, OpenAI and Google have been providing advanced AI services to Singapore-based subsidiaries of Alibaba, Baidu, and Tencent, whose parent companies are on the U.S. Department of Defense's 1260H list for alleged ties to the Chinese military. This revelation highlights potential loopholes in U.S. export controls on AI technology, as Chinese firms may circumvent restrictions through overseas subsidiaries, prompting renewed calls in Washington for stricter regulations on frontier AI models. OpenAI last month suspended API access for a user linked to Alibaba after detecting suspected 'model distillation' and reported the incident to the U.S. government; in contrast, Anthropic has a stricter policy that fully bans Chinese companies and their overseas entities from accessing its frontier AI models.
 
-telegram · zaihuapd · Jul 10, 02:56
+telegram · zaihuapd · Jul 10, 09:59
 
-**Background**: Chinese inheritance law traditionally did not explicitly cover virtual property. These rulings rely on the Civil Code's general protection of property rights, filling a legal gap and setting a precedent for digital inheritance.
+**Background**: The 1260H list, authorized by the U.S. Congress, identifies companies deemed to have direct ties to the People's Liberation Army or involvement in the 'military-civil fusion' strategy. Being on the list does not automatically impose sanctions but signals national security risks. Model distillation is a technique that transfers knowledge from a large 'teacher' model to a smaller 'student' model, potentially allowing unauthorized use of proprietary AI capabilities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://xinwen.bjd.com.cn/content/s664bdbafe4b00e934b5f5246.html">夫妻离婚，百万粉丝号怎么分？ 虚 拟 财 产 分割走上 法 庭</a></li>
-<li><a href="https://www.bj148.org/wq/qwzfw/mtg/202102/t20210202_1597555.html">门头沟-北京政 法 网</a></li>
+<li><a href="https://en.wikipedia.org/wiki/1260H_list">1260H list</a></li>
+<li><a href="https://news.fx168news.com/politics/us/2602/7417351.shtml">news.fx168news.com/politics/us/2602/7417351.shtml</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#digital inheritance`, `#virtual assets`, `#Chinese law`, `#gaming`, `#legal precedent`
+**Tags**: `#AI`, `#export controls`, `#geopolitics`, `#OpenAI`, `#Google`
 
 ---
 
 <a id="item-9"></a>
-## [Tencent in Talks to Buy AI Startup Manus from Meta](https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/) ⭐️ 8.0/10
+## [China Imposes Temporary Ban on Helium Exports](https://wms.mofcom.gov.cn/zcfb/wmgl/art/2026/art_2a795a0d55df4cada91c9fbd2a2cc13a.html) ⭐️ 8.0/10
 
-Tencent is negotiating to acquire AI startup Manus from Meta, aiming to become its largest shareholder after Beijing blocked Meta's $2 billion acquisition. This deal highlights the geopolitical tensions in AI acquisitions, with Chinese tech giants like Tencent stepping in to acquire AI talent and technology that Western companies cannot access due to regulatory hurdles. Tencent will team up with existing investors ZhenFund and HSG to buy back Manus from Meta at a price no less than $2 billion. Manus is a Singapore-registered AI startup with Chinese founder background, focused on general AI agents.
+China's Ministry of Commerce and General Administration of Customs announced a temporary ban on helium exports, effective July 10, 2026, citing the Foreign Trade Law. This ban could disrupt global semiconductor manufacturing, medical imaging, and scientific research, as helium is critical for cooling and purging in chip fabrication and MRI machines. The ban covers helium under customs code 2804290010 and takes immediate effect, with future adjustments to be announced separately.
 
-telegram · zaihuapd · Jul 10, 06:45
+telegram · zaihuapd · Jul 10, 13:27
 
-**Background**: Manus is an AI startup focused on developing general AI agents, which are autonomous systems capable of performing complex tasks. Meta had previously agreed to acquire Manus for $2 billion, but the deal was blocked by Chinese regulators on national security grounds. Tencent, as a major Chinese tech conglomerate, is now stepping in to acquire the company, reflecting the strategic importance of AI technology.
+**Background**: Helium is a non-renewable gas essential for semiconductor manufacturing (e.g., TSMC uses ~500,000 cubic feet per year), medical MRI cooling, and aerospace. China is a major helium consumer and producer, but global supply is already strained due to Qatar outages and geopolitical tensions in the Strait of Hormuz.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Manus_AI_company">Manus (AI company)</a></li>
+<li><a href="https://www.chinadaily.com.cn/a/202607/10/WS6a50c539a310986e2b464a8c.html">China imposes temporary ban on helium exports - Chinadaily.com.cn</a></li>
+<li><a href="https://www.kunalganglani.com/blog/helium-shortage-semiconductor-supply-chain">How Helium Is Used in Semiconductor Manufacturing (2026)</a></li>
+<li><a href="https://scenarioatlas.ai/research/insights/semiconductor-helium-aug2026">Semiconductor Supply Chain : Helium Crisis... | Scenario Atlas AI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#acquisition`, `#Tencent`, `#Meta`, `#geopolitics`
+**Tags**: `#trade policy`, `#helium`, `#supply chain`, `#semiconductor`, `#China`
 
 ---
