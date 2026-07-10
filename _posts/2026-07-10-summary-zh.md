@@ -5,148 +5,125 @@ date: 2026-07-10
 lang: zh
 ---
 
-> 从 31 条内容中筛选出 9 条重要资讯。
+> 从 31 条内容中筛选出 8 条重要资讯。
 
 ---
 
-1. [OpenAI 发布 GPT-5.6，增强意图理解能力](#item-1) ⭐️ 9.0/10
+1. [OpenAI 发布 GPT-5.6 系列：Luna、Terra、Sol](#item-1) ⭐️ 9.0/10
 2. [长征十号乙完成全球首次网系火箭回收](#item-2) ⭐️ 9.0/10
-3. [Mitchell Hashimoto 谈为何为 Ghostty 选择 Zig 而非 Rust](#item-3) ⭐️ 8.0/10
-4. [Meta 发布 Muse Spark 1.1，提供 API 并增强智能体能力](#item-4) ⭐️ 8.0/10
-5. [Meta 超级智能进展：强化学习初创公司与计算扩展](#item-5) ⭐️ 8.0/10
-6. [中国法院认定游戏账号可继承，平台禁止条款无效](#item-6) ⭐️ 8.0/10
-7. [腾讯洽购 AI 初创公司 Manus，拟从 Meta 手中回购](#item-7) ⭐️ 8.0/10
-8. [OpenAI、Google 被指向黑名单中国公司新加坡子公司提供 AI 模型](#item-8) ⭐️ 8.0/10
-9. [中国对氦气实施临时出口禁令](#item-9) ⭐️ 8.0/10
+3. [欧盟初步认定 Instagram 和 Facebook 成瘾设计违反《数字服务法》](#item-3) ⭐️ 8.0/10
+4. [为什么 ML 领域不限制每作者投稿数？](#item-4) ⭐️ 8.0/10
+5. [中国法院裁定游戏账号可继承，平台禁止条款无效](#item-5) ⭐️ 8.0/10
+6. [腾讯洽购 AI 公司 Manus，拟从 Meta 手中回购](#item-6) ⭐️ 8.0/10
+7. [OpenAI、Google 被指向黑名单中国公司提供 AI](#item-7) ⭐️ 8.0/10
+8. [中国对氦气实施临时出口禁令](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI 发布 GPT-5.6，增强意图理解能力](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
+## [OpenAI 发布 GPT-5.6 系列：Luna、Terra、Sol](https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything) ⭐️ 9.0/10
 
-OpenAI 于 2026 年 7 月 9 日公开发布 GPT-5.6，改进了意图理解能力和原始图像细节保留功能。 此次发布标志着 AI 在推断用户目标和处理视觉数据方面迈出了重要一步，可能改变编码、商业和创意任务的工作流程。 GPT-5.6 保留原始图像尺寸，并能推断用户潜在意图而无需显式逐步指令。它还在 ARC-AGI-3 上以 7.8% 的准确率创造了新的最佳成绩。
+OpenAI 于 2026 年 7 月 9 日发布了 GPT-5.6 系列模型，包括三个尺寸：Luna（最小）、Terra 和 Sol（最大），具有改进的代理性能和具有竞争力的定价。 此次发布加剧了 AI 模型市场的竞争，尤其是与 Anthropic 的 Claude Fable 5 的竞争，因为 GPT-5.6 声称在 Agents' Last Exam 基准测试中以更低成本实现了更优的代理性能，可能使先进 AI 更易获取。 所有三个模型均具有 100 万 token 的上下文窗口、128,000 个最大输出 token，以及 2026 年 2 月 16 日的知识截止日期。每 100 万输入/输出 token 的定价为：Luna $1/$6，Terra $2.50/$15，Sol $5/$30。
 
-hackernews · logickkk1 · 7月9日 17:04 · [社区讨论](https://news.ycombinator.com/item?id=48849066)
+rss · Simon Willison · 7月9日 19:46
 
-**背景**: GPT-5.6 是 OpenAI 的最新大型语言模型，基于已改进意图理解的 GPT-5.5 构建。该模型通过 API 提供，并包含一个名为 Sol 的 Codex 变体。
+**背景**: 代理 AI 指能够自主执行复杂、多步骤任务的 AI 系统。Agents' Last Exam 基准测试评估跨 55 个领域的长期专业工作流程。推理 token 是模型在生成最终答案前用于逐步思考的内部 token，其数量在不同模型之间可能差异很大，使得每 token 价格比较不那么直接。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.6">GPT-5.6 - Wikipedia</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT-5.5 | OpenAI</a></li>
-<li><a href="https://venturebeat.com/technology/openais-updated-gpt-5-5-instant-is-better-at-shopping-complex-constraints-and-understanding-user-intent-and-its-already-in-the-api">OpenAI's updated GPT-5.5 Instant is better at shopping, complex constraints, and understanding user intent — and it's already in the API | VentureBeat</a></li>
+<li><a href="https://arxiv.org/abs/2606.05405">[2606.05405] Agents' Last Exam - arXiv.org</a></li>
+<li><a href="https://agents-last-exam.org/">Agents' Last Exam</a></li>
+<li><a href="https://github.com/rdi-berkeley/agents-last-exam">rdi-berkeley/agents-last-exam - GitHub</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论褒贬不一：一些开发者称赞其意图理解和发现 bug 的能力，而另一些人则质疑在创业中对 AI 的依赖。Sol 变体在 ARC-AGI-3 上的表现被强调为令人印象深刻。
+**社区讨论**: 作者指出，虽然 GPT-5.6 Sol 能力不错，但在复杂编码任务上尚未比 Claude Fable 5 更令人印象深刻。他还提到 OpenAI 对 SWE-Bench Pro 的批评，在该基准上 Claude Fable 5 优于 GPT-5.6，暗示可能存在基准问题。
 
-**标签**: `#AI`, `#OpenAI`, `#GPT-5.6`, `#machine learning`, `#natural language processing`
+**标签**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#benchmarks`, `#agentic AI`
 
 ---
 
 <a id="item-2"></a>
 ## [长征十号乙完成全球首次网系火箭回收](https://weibo.com/7340734455/R814of1Ki) ⭐️ 9.0/10
 
-2026 年 7 月 10 日，中国长征十号乙运载火箭从海南商业航天发射场升空，通过海上回收平台的网系捕获方式成功回收一子级，这是全球首次实现运载火箭网系回收。 这一成就使中国成为第二个成功回收火箭一子级的国家，并且是首个采用网系回收方式的国家，有望降低回收成本，为全球航天工业的可重复使用火箭技术提供新选择。 一子级在发射约 6 分钟后分离，随后垂直返回并被回收平台上的网系捕获。与 SpaceX 的着陆腿不同，网系回收利用阻拦索挂住火箭挂钩，无需着陆腿即可实现无损回收。
+2026 年 7 月 10 日，长征十号乙运载火箭从海南商业航天发射场发射升空，成功通过海上回收平台上的网系系统回收一子级，这是全球首次运载火箭网系回收，也是中国首次实现火箭一子级可控回收。 这一突破使中国成为继美国之后第二个掌握火箭级可控海上回收的国家，极大推动了可重复使用火箭技术的发展并降低发射成本。网系回收方法为传统着陆腿提供了新颖替代方案，可能实现更灵活、更精确的回收操作。 一子级在发射约 6 分钟后分离，随后垂直返回并被回收平台上的网系系统捕获。网系系统使用激光雷达监测火箭位置和姿态，同时火箭自身提供精确定位数据以协调捕获动作。
 
 telegram · zaihuapd · 7月10日 04:36
 
-**背景**: 可重复使用火箭技术通过回收和复用最昂贵的火箭一子级来降低发射成本。SpaceX 率先采用垂直着陆腿实现回收，而中国的长征十号乙则展示了另一种网系回收方案。长征十号乙基于长征十号甲改进而来，针对商业发射进行了优化。
+**背景**: 可重复使用火箭技术旨在回收并重复使用火箭最昂贵的部分（主要是一子级），以降低发射成本。传统回收方法使用着陆腿或降落伞，而网系回收则通过类似航母阻拦索的网系系统捕获火箭。中国长征十号系列包括用于载人登月任务和商业发射的型号，其中 10B 为商业型号。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.guancha.cn/kegongliliang/2026_07_10_823277.shtml">长10乙 回 收 成功：美国人做了和没做的事，我们都要做-科工力量</a></li>
-<li><a href="https://www.news.cn/20260710/699cccd9572b4c70a0c9eddc96b77eaf/c.html">新华鲜报丨长征十号乙首飞成功 我国运载火箭首次实现可控回收-新华网</a></li>
-<li><a href="https://www.stdaily.com/web/gdxw/2026-07/10/content_545323.html">历史性突破！长征十号乙运载火箭成功实现一子级可控回收</a></li>
+<li><a href="https://news.qq.com/rain/a/20260710A05KG700">长征十号乙首飞即成功！中国首次实现海上网系回收_腾讯新闻</a></li>
+<li><a href="https://news.cctv.cn/2026/07/10/ARTIclcbkfxwpuWHgyLM7YAb260710.shtml">长征十号乙运载火箭成功实现一子级可控回收_新闻频道_央视网 (cctv.co...</a></li>
+<li><a href="https://news.bjd.com.cn/2026/07/10/11856476.shtml">双成功，里程碑！长征十号乙首飞成功并实现一子级可控回收</a></li>
 
 </ul>
 </details>
 
-**标签**: `#aerospace`, `#rocket recovery`, `#reusable rockets`, `#China space program`, `#Long March 10B`
+**标签**: `#rocket recovery`, `#space technology`, `#Long March 10B`, `#reusable rocket`, `#China space`
 
 ---
 
 <a id="item-3"></a>
-## [Mitchell Hashimoto 谈为何为 Ghostty 选择 Zig 而非 Rust](https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/) ⭐️ 8.0/10
+## [欧盟初步认定 Instagram 和 Facebook 成瘾设计违反《数字服务法》](https://ec.europa.eu/commission/presscorner/home/en) ⭐️ 8.0/10
 
-在最近的一次采访中，Mitchell Hashimoto 解释了他为何选择 Zig 而非 Rust 来构建 Ghostty 终端模拟器，主要原因是 Rust 的文化和复杂性。 这一讨论凸显了系统编程中关于语言选择、社区文化和实用主义的持续辩论，影响着开发者如何着手新项目。 Ghostty 是一个快速、跨平台的终端模拟器，使用 GPU 加速和原生 UI。Hashimoto 强调，Zig 的简洁性和控制力比 Rust 复杂的类型系统和社区规范更符合他的工程理念。
+欧盟委员会初步认定，Meta 旗下的 Instagram 和 Facebook 因其成瘾性设计（包括无限滚动、自动播放和个性化推荐）违反了《数字服务法》（DSA）。 这标志着 DSA 下的一项重大监管行动，可能迫使 Meta 重新设计其平台的核心功能，并为社交媒体公司如何在欧盟范围内解决成瘾性设计问题树立先例。 欧盟委员会批评 Meta 提供的限时工具形同虚设，并要求默认关闭成瘾性功能、设置有效的屏幕休息时间，并减少以参与度为导向的算法推荐。若最终裁定成立，Meta 最高可能面临约 120 亿美元罚款（占其全球年营业额的 10%）。
 
-hackernews · veqq · 7月9日 17:17 · [社区讨论](https://news.ycombinator.com/item?id=48849292)
+hackernews · jeroenhd · 7月10日 11:00 · [社区讨论](https://news.ycombinator.com/item?id=48858292)
 
-**背景**: Zig 是一种系统编程语言，旨在改进 C 语言，注重简洁性和手动内存管理。相比之下，Rust 通过其所有权系统强调内存安全。Ghostty 旨在跨平台提供高性能终端体验。
+**背景**: 《数字服务法》（DSA）是欧盟于 2022 年生效的一项法规，为在线平台制定了确保透明度、问责制和用户安全的规则。成瘾性设计指利用心理弱点（如无限滚动和个性化推荐）来最大化用户参与度的功能，往往以牺牲心理健康为代价。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://ghostty.org/docs">Ghostty Docs</a></li>
-<li><a href="https://github.com/ghostty-org/ghostty">GitHub - ghostty -org/ ghostty : Ghostty is a fast, feature-rich, and...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Digital_Services_Act">Digital Services Act - Wikipedia</a></li>
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/digital-services-act">The Digital Services Act | Shaping Europe’s digital future</a></li>
+<li><a href="https://petrieflom.law.harvard.edu/2024/10/14/addictive-design-and-social-media-legal-opinions-and-research-roundup/">Addictive Design and Social Media: Legal Opinions and ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论反应不一：一些人称赞 Hashimoto 的实用主义方法，而另一些人则为 Rust 的社区和语言设计辩护。有用户指出，与 Rust 爱好者的负面互动通常发生在语言争论中，而非建设性的开发环境中。
+**社区讨论**: 社区评论对此行动表示强烈支持，用户分享了关于成瘾性设计负面影响的个人经历。一些怀疑者质疑仅靠罚款能否改变 Meta 的行为，而另一些人则认为应让用户在选择成瘾性算法和道德算法之间拥有选择权，而非直接禁止。
 
-**标签**: `#Ghostty`, `#Zig`, `#Rust`, `#terminal emulator`, `#software engineering`
+**标签**: `#regulation`, `#social media`, `#DSA`, `#addictive design`, `#EU`
 
 ---
 
 <a id="item-4"></a>
-## [Meta 发布 Muse Spark 1.1，提供 API 并增强智能体能力](https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything) ⭐️ 8.0/10
+## [为什么 ML 领域不限制每作者投稿数？](https://www.reddit.com/r/MachineLearning/comments/1usq43t/why_doesnt_the_ml_research_community_limit_the/) ⭐️ 8.0/10
 
-Meta 于 2026 年 7 月 9 日发布了 Muse Spark 1.1，这是该模型首个提供公开 API 的版本，并在智能体工具调用和计算机使用方面有显著改进。 这标志着 Meta 在通过 API 向开发者提供其先进 AI 模型方面迈出了重要一步，使得模型能够集成到应用和工作流中，并展示了智能体能力的进展。 评估报告中包含一个有趣的“自对话中的吸引子状态”部分，其中模型的两个副本产生了存在主义陈述。Simon Willison 为 LLM 命令行工具创建了插件“llm-meta-ai”以访问该模型。
+Reddit 上的一场讨论质疑机器学习研究社区为何不限制每作者的投稿数量，并引用了安全（CCS）和计算机体系结构（DAC）等领域成功控制审稿工作量的做法。 ML 会议的大量投稿降低了审稿质量（如最近的 ARR 周期所示），采用投稿限制可能改善整个领域的同行评审流程。 原帖指出其他研究社区多年来成功限制了每作者投稿数，并询问 ML 社区采取不同做法是否有文化原因。
 
-rss · Simon Willison · 7月9日 16:24
+reddit · r/MachineLearning · /u/alafaya101 · 7月10日 14:59
 
-**背景**: Muse Spark 是 Meta 于 2026 年 4 月首次发布的多模态推理模型，专为智能体任务设计。智能体工具调用允许 LLM 自主选择并执行外部函数，连接推理与行动。“吸引子状态”现象指模型在自我交互中收敛到的行为模式。
+**背景**: 机器学习研究社区，特别是通过 ACL Rolling Review（ARR）的自然语言处理领域，投稿量激增，导致审稿人工作负担加重，审稿质量令人担忧。ARR 最近因投稿量过高而不得不增加作者的互惠服务任务。相比之下，CCS（计算机与通信安全）和 DAC（设计自动化会议）等会议长期以来对每作者投稿数进行限制，以保持工作量可控。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.datacamp.com/blog/muse-spark-1-1">Muse Spark 1.1: Meta's Agentic Model and API | DataCamp</a></li>
-<li><a href="https://www.lesswrong.com/posts/rvbjZMp6aEDn2jiyp/mapping-llm-attractor-states">Mapping LLM attractor states — LessWrong</a></li>
+<li><a href="http://aclrollingreview.org/may26-cycle-letter">An explanatory letter on the ARR May 2026 cycle – ACL Rolling Review – A peer review platform for the Association for Computational Linguistics</a></li>
+<li><a href="https://aclrollingreview.org/dates">Dates and Venues – ACL Rolling Review – A peer review platform for the Association for Computational Linguistics</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Meta`, `#Muse Spark`, `#API`, `#agentic`
+**标签**: `#machine learning`, `#research community`, `#peer review`, `#submission limits`, `#conference management`
 
 ---
 
 <a id="item-5"></a>
-## [Meta 超级智能进展：强化学习初创公司与计算扩展](https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence) ⭐️ 8.0/10
+## [中国法院裁定游戏账号可继承，平台禁止条款无效](https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions) ⭐️ 8.0/10
 
-一家顶级的强化学习环境初创公司突然出现，Meta 正在推进前所未有的计算扩展，涉及超过 2000 公里的跨区域基础设施。 这些发展标志着 AI 基础设施可能发生范式转变，能够更高效地训练超级智能模型，并为强化学习生态系统中的新初创公司创造机会。 这家强化学习环境初创公司是更广泛趋势的一部分，像 Surge 和 Mercor 这样的公司正在为训练 AI 智能体构建专门环境，而跨区域扩展技术通过光纤网络打破了数据中心的物理边界。
-
-rss · Semianalysis · 7月9日 19:16
-
-**背景**: 强化学习环境是 AI 智能体通过试错学习的模拟世界。跨区域扩展是指将 GPU 训练分布到多个数据中心或区域，随着模型规模超出单个数据中心容量，这变得必要。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.primeintellect.ai/blog/environments">Environments Hub: A Community Hub To Scale RL To Open AGI</a></li>
-<li><a href="https://techcrunch.com/2025/09/21/silicon-valley-bets-big-on-environments-to-train-ai-agents/">Silicon Valley bets big on 'environments' to train AI agents | TechCrunch</a></li>
-<li><a href="https://www.naddod.com/blog/a-complete-guide-to-scale-across-the-third-pillar-of-ai-computing">What Is Scale-Across? A Complete Guide to the “Third Pillar ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#superintelligence`, `#reinforcement learning`, `#compute scaling`, `#Meta`
-
----
-
-<a id="item-6"></a>
-## [中国法院认定游戏账号可继承，平台禁止条款无效](https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions) ⭐️ 8.0/10
-
-中国法院在多年来的多起判例中裁定，游戏账号、游戏道具和加密货币等虚拟资产具有财产属性，属于可继承的合法遗产，平台禁止继承的条款无效。 这为中国数字遗产继承确立了法律先例，影响数百万游戏玩家和数字平台用户，并迫使企业修改服务条款以符合继承法。 法院认定，平台禁止继承的条款因违反法定权利而无效，但聊天记录等纯个人隐私内容不在继承范围内，由平台归档保存。
+中国法院在多起跨越数年的案件中裁定，游戏账号、装备道具、加密货币及社交媒体账号等虚拟资产具有财产属性，属于可继承的合法遗产，平台用户协议中禁止继承的条款因违反法定权利而无效。 这为中国数字资产继承确立了法律先例，影响数百万游戏玩家和数字资产所有者，并迫使平台配合继承请求。 法院认定聊天记录等纯个人隐私内容不在继承范围内，由平台归档保存。平台可收取合理费用办理账号转移。
 
 telegram · zaihuapd · 7月10日 02:56
 
-**背景**: 在中国，《民法典》保护虚拟财产，但在此类判决之前，数字资产继承缺乏明确法律指导。游戏账号通常包含有价值的道具和货币，平台通常在用户协议中禁止转让或继承。这些案例明确了此类禁止条款不可执行。
+**背景**: 根据中国民法，可继承财产包括具有经济价值的资产。游戏账号和游戏内物品等虚拟资产逐渐被认定为财产。最近的裁决明确平台条款不能凌驾于法定继承权之上。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.zhihu.com/question/2050522294171039185">母亲欲继承离世儿子 87 个游戏账号遭平台拒绝，法院以格式条款无效为...</a></li>
-<li><a href="https://news.qq.com/rain/a/20260609A07QLZ00">玩家去世后87个游戏账号归谁？法院：使用权可继承_腾讯新闻</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/32196132734">在中国如何处理虚拟资产继承？律师亲授避坑指南 - 知乎</a></li>
+<li><a href="http://photo.china.com.cn/2026-04/06/content_118421360.shtml">亲人去世后 游 戏 账 号 、自媒体 账 号 、聊天记录能 继 承 吗_中国网</a></li>
 
 </ul>
 </details>
@@ -155,67 +132,66 @@ telegram · zaihuapd · 7月10日 02:56
 
 ---
 
-<a id="item-7"></a>
-## [腾讯洽购 AI 初创公司 Manus，拟从 Meta 手中回购](https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [腾讯洽购 AI 公司 Manus，拟从 Meta 手中回购](https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/) ⭐️ 8.0/10
 
-腾讯正就收购 AI 初创公司 Manus 进行高级谈判，计划以超过 20 亿美元的价格从 Meta 手中回购该公司，成为其最大股东。此前，北京方面要求 Meta 解除对 Manus 的 20 亿美元收购交易。 这笔交易将显著增强腾讯在 AI 智能体领域的地位，因为 Manus 是领先的自主 AI 智能体平台。这也反映了外国科技巨头在中国面临的监管压力日益增大，以及 AI 对中国互联网公司的战略重要性。 腾讯将与 Manus 的原有投资者真格基金和 HSG 联手，以不低于 20 亿美元的估值从 Meta 手中回购该公司。该消息由《金融时报》率先报道，所有相关方均拒绝置评。
+腾讯正谈判从 Meta 手中收购 AI 初创公司 Manus，计划成为其最大股东。此前北京要求 Meta 解除对 Manus 的 20 亿美元收购交易。 这笔交易凸显了 AI 领域日益加剧的地缘政治紧张局势，中国正努力保留对战略性 AI 初创公司的控制权。若成功，腾讯将获得一个强大的 AI 智能体平台，巩固其在全球 AI 竞赛中的地位。 腾讯将与原始投资者真格基金和 HSG 联手，以不低于 20 亿美元的价格从 Meta 手中回购 Manus。该消息由《金融时报》率先报道，涉事各方均未回应。
 
 telegram · zaihuapd · 7月10日 06:45
 
-**背景**: Manus 是由 Butterfly Effect 开发的自主 AI 智能体，该公司成立于中国，总部设在新加坡。它旨在执行任务、自动化工作流程，并扩展人类能力，超越简单的问答。Meta 此前以 20 亿美元收购了 Manus，但北京方面以国家安全和数据担忧为由要求解除该交易。
+**背景**: Manus 是一个 AI 智能体平台，超越聊天功能，可执行研究、分析和工作流自动化等多步骤任务。Meta 于 2025 年底以超过 20 亿美元收购了 Manus，但中国监管机构以国家安全为由要求解除该交易。腾讯作为中国科技巨头，正介入收购这家初创公司。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Manus_(AI_agent)">Manus (AI agent) - Wikipedia</a></li>
-<li><a href="https://manus.im/">Manus: Hands On AI</a></li>
-<li><a href="https://www.hsgcap.com/">Home - HSG</a></li>
+<li><a href="https://manus.im/">Manus : Hands On AI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HongShan">HongShan - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#acquisition`, `#Tencent`, `#Meta`, `#Manus`
+**标签**: `#AI`, `#acquisition`, `#Tencent`, `#Meta`, `#geopolitics`
 
 ---
 
-<a id="item-8"></a>
-## [OpenAI、Google 被指向黑名单中国公司新加坡子公司提供 AI 模型](https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [OpenAI、Google 被指向黑名单中国公司提供 AI](https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f) ⭐️ 8.0/10
 
-据《金融时报》报道，OpenAI 和 Google 一直向阿里巴巴、百度和腾讯的新加坡子公司提供先进 AI 服务，而这些中国科技巨头的母公司均被美国国防部列入 1260H 名单，被指控与中国军方存在联系。 这一发现凸显了美国 AI 技术出口管制中的潜在漏洞，中国企业可能通过海外子公司规避限制，从而在华盛顿重新引发对前沿 AI 模型实施更严格监管的呼声。 OpenAI 上个月在发现疑似“模型蒸馏”行为后，暂停了与阿里巴巴关联用户的 API 访问权限，并向美国政府报告了此事；相比之下，Anthropic 采取了更严格的政策，全面禁止中国公司及其海外实体访问其前沿 AI 模型。
+据《金融时报》报道，OpenAI 和 Google 一直向阿里巴巴、百度和腾讯的新加坡子公司提供先进 AI 服务，而这些公司的母公司均被五角大楼列入 1260H 名单（中国军方企业名单）。 这一发现凸显了美国 AI 出口管制中的潜在漏洞，因为现行限制并未广泛禁止中国母公司在中国大陆以外获取先进 AI 模型，这重新引发了加强监管的呼声。 OpenAI 上月在发现疑似模型蒸馏行为后，暂停了阿里巴巴关联用户的 API 访问权限，并向美国政府报告了此事。相比之下，Anthropic 采取了更严格的政策，全面禁止中国公司及其海外实体访问其前沿 AI 模型。
 
 telegram · zaihuapd · 7月10日 09:59
 
-**背景**: 1260H 名单由美国国会授权设立，用于识别被认定与中国人民解放军有直接联系或参与“军民融合战略”的企业。被列入该名单并不等同于立即制裁，但会发出国家安全风险信号。模型蒸馏是一种知识迁移技术，将大型“教师”模型的知识转移到小型“学生”模型，可能被用于未经授权使用专有 AI 能力。
+**背景**: 1260H 名单是根据 2021 财年《国防授权法》第 1260H 条设立的，用于识别直接或间接在美国运营的中国军方企业。模型蒸馏是一种将知识从大型 AI 模型转移到小型模型的技术，可能被用于未经授权复制先进模型。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/1260H_list">1260H list</a></li>
-<li><a href="https://news.fx168news.com/politics/us/2602/7417351.shtml">news.fx168news.com/politics/us/2602/7417351.shtml</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#export controls`, `#geopolitics`, `#OpenAI`, `#Google`
+**标签**: `#AI regulation`, `#export controls`, `#geopolitics`, `#OpenAI`, `#Google`
 
 ---
 
-<a id="item-9"></a>
+<a id="item-8"></a>
 ## [中国对氦气实施临时出口禁令](https://wms.mofcom.gov.cn/zcfb/wmgl/art/2026/art_2a795a0d55df4cada91c9fbd2a2cc13a.html) ⭐️ 8.0/10
 
-中国商务部和海关总署依据《对外贸易法》宣布自 2026 年 7 月 10 日起对氦气实施临时禁止出口管理。 该禁令可能扰乱全球半导体制造、医学成像和科研领域，因为氦气在芯片制造中的冷却和吹扫以及 MRI 设备中至关重要。 禁令涵盖海关商品编号 2804290010 的氦气，自公布之日起执行，后续调整将另行公告。
+2026 年 7 月 10 日，中国商务部和海关总署联合发布 2026 年第 29 号公告，对氦气（海关商品编号 2804290010）实施临时禁止出口管理，自公布之日起执行。 氦气对半导体制造、核磁共振成像、光纤和航空航天等领域至关重要，而中国是主要供应国；此禁令可能扰乱全球供应链，加剧当前的氦气短缺。 官方公告未说明原因、期限或豁免机制，商业和地缘政治理由不明。禁令仅针对海关商品编号 2804290010 的氦气，即主要工业级氦气。
 
 telegram · zaihuapd · 7月10日 13:27
 
-**背景**: 氦气是一种不可再生气体，对半导体制造（例如台积电每年使用约 50 万立方英尺）、医疗 MRI 冷却和航空航天至关重要。中国是氦气的主要消费国和生产国，但由于卡塔尔停产和霍尔木兹海峡的地缘政治紧张，全球供应本已紧张。
+**背景**: 氦气是一种不可再生资源，对于冷却核磁共振成像仪中的超导磁体以及作为半导体制造中的惰性气体至关重要。中国一直是氦气出口大国，而全球市场已面临反复出现的供应短缺。此次禁令紧随中国对稀土、镓等其他关键材料的出口管制之后。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.chinadaily.com.cn/a/202607/10/WS6a50c539a310986e2b464a8c.html">China imposes temporary ban on helium exports - Chinadaily.com.cn</a></li>
-<li><a href="https://www.kunalganglani.com/blog/helium-shortage-semiconductor-supply-chain">How Helium Is Used in Semiconductor Manufacturing (2026)</a></li>
-<li><a href="https://scenarioatlas.ai/research/insights/semiconductor-helium-aug2026">Semiconductor Supply Chain : Helium Crisis... | Scenario Atlas AI</a></li>
+<li><a href="https://www.xenon-gas.com/2026-helium-export-ban-industry-impacts-and-market-forecast/">2026 Helium Export Ban: Industry Impacts and Market Forecast</a></li>
+<li><a href="https://rareearthexchanges.com/news/china-places-helium-under-temporary-export-controls-raising-fresh-supply-chain-questions/">China Places Helium Under Temporary Export Controls, Raising ...</a></li>
+<li><a href="https://www.globaltimes.cn/page/202607/1365646.shtml">China announces temporary export controls on helium in ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#trade policy`, `#helium`, `#supply chain`, `#semiconductor`, `#China`
+**标签**: `#trade policy`, `#helium`, `#supply chain`, `#semiconductor`, `#export control`
 
 ---
