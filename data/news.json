@@ -1,60 +1,60 @@
 [
   {
     "id": "1",
-    "title": "OpenAI 发布 GPT-5.6 系列：Luna、Terra、Sol",
-    "importance_score": 9.0,
-    "source": "Simon Willison",
-    "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+    "title": "GPT-5.6 Sol Ultra 声称证明循环双覆盖猜想",
+    "importance_score": 10.0,
+    "source": "Hackernews",
+    "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
     "category": "AI",
-    "publish_time": "2026-07-10T19:46:00Z",
-    "summary_zh": "OpenAI 于 2026 年 7 月 9 日发布了 GPT-5.6 系列模型，包括三个尺寸：Luna（最小）、Terra 和 Sol（最大），具有改进的代理性能和具有竞争力的定价。 此次发布加剧了 AI 模型市场的竞争，尤其是与 Anthropic 的 Claude Fable 5 的竞争，因为 GPT-5.6 声称在 Agents' Last Exam 基准测试中以更低成本实现了更优的代理性能，可能使先进 AI 更易获取。 所有三个模型均具有 100 万 token 的上下文窗口、128,000 个最大输出 token，以及 2026 年 2 月 16 日的知识截止日期。每 100 万输入/输出 token 的定价为：Luna $1/$6，Terra $2.50/$15，Sol $5/$30。\n\n**背景**: 代理 AI 指能够自主执行复杂、多步骤任务的 AI 系统。Agents' Last Exam 基准测试评估跨 55 个领域的长期专业工作流程。推理 token 是模型在生成最终答案前用于逐步思考的内部 token，其数量在不同模型之间可能差异很大，使得每 token 价格比较不那么直接。\n\n**社区讨论**: 作者指出，虽然 GPT-5.6 Sol 能力不错，但在复杂编码任务上尚未比 Claude Fable 5 更令人印象深刻。他还提到 OpenAI 对 SWE-Bench Pro 的批评，在该基准上 Claude Fable 5 优于 GPT-5.6，暗示可能存在基准问题。",
-    "summary_en": "OpenAI released the GPT-5.6 family of models on July 9, 2026, consisting of three sizes: Luna (smallest), Terra, and Sol (largest), with improved agentic performance and competitive pricing. This release intensifies competition in the AI model market, especially against Anthropic's Claude Fable 5, as GPT-5.6 claims superior agentic performance on the Agents' Last Exam benchmark at lower costs, potentially making advanced AI more accessible. All three models have a 1 million token context window, 128,000 maximum output tokens, and a knowledge cutoff of February 16, 2026. Pricing per 1M input/output tokens is $1/$6 for Luna, $2.50/$15 for Terra, and $5/$30 for Sol.\n\n**Background**: Agentic AI refers to AI systems that can autonomously perform complex, multi-step tasks in dynamic environments. The Agents' Last Exam benchmark evaluates long-running professional workflows across 55 fields. Reasoning tokens are internal tokens used by models to think step-by-step before generating a final answer, and their count can vary significantly between models for the same task, making price-per-token comparisons less straightforward.\n\n**Discussion**: The author notes that while GPT-5.6 Sol is competent, it hasn't yet impressed him more than Claude Fable 5 on complex coding tasks. He also highlights OpenAI's criticism of SWE-Bench Pro, where Claude Fable 5 outperformed GPT-5.6, suggesting potential benchmark issues.",
+    "publish_time": "2026-07-11T18:29:00Z",
+    "summary_zh": "OpenAI 的 GPT-5.6 Sol Ultra 模型生成了一份声称证明图论中重大未解问题——循环双覆盖猜想的预印本，于 2026 年 7 月 10 日发布。 如果得到验证，这将是人工智能首次自主证明一个长期存在的数学猜想，代表着人工智能能力和数学研究的范式转变。 该证明极其简洁，暗示可能利用了专家们忽略的巧妙技巧，并且提示中包含了大量指令，要求避免模糊的乐观情绪并真正解决问题。\n\n**背景**: 循环双覆盖猜想由 Tutte、Itai、Rodeh、Szekeres 和 Seymour 提出，询问是否每个无桥无向图都存在一组环，使得每条边恰好出现两次。这是图论中的一个核心问题，与图嵌入和圆形嵌入猜想相关。\n\n**社区讨论**: 评论者指出，提示中花费了大量精力告诉模型要真正解决问题，这具有讽刺意味；一些人质疑社区是否真的关心这个猜想，因为之前关注度很低。其他人则强调，证明的简洁性暗示了巧妙的技巧，但自主构建理论仍然是人工智能尚未实现的里程碑。",
+    "summary_en": "OpenAI's GPT-5.6 Sol Ultra model has produced a purported proof of the Cycle Double Cover Conjecture, a major open problem in graph theory, released as a preprint on July 10, 2026. If verified, this would mark the first time an AI has autonomously proven a long-standing mathematical conjecture, representing a paradigm shift in both AI capabilities and mathematical research. The proof is extremely concise, suggesting a clever trick that experts may have missed, and the prompt included extensive instructions to avoid vague optimism and to actually solve the problem.\n\n**Background**: The Cycle Double Cover Conjecture, posed by Tutte, Itai, Rodeh, Szekeres, and Seymour, asks whether every bridgeless undirected graph has a collection of cycles such that each edge appears exactly twice. It is a central problem in graph theory with connections to graph embeddings and the circular embedding conjecture.\n\n**Discussion**: Commenters noted the irony that the prompt spent much effort telling the model to actually solve the problem, and some questioned whether the community truly cares about the conjecture, given its low prior engagement. Others highlighted that the proof's conciseness suggests a clever trick, but that autonomous theory-building remains an AI milestone yet to be achieved.",
     "takeaways": [
-      "背景信息: 代理 AI 指能够自主执行复杂、多步骤任务的 AI 系统。Agents' Last Exam 基准测试评估跨 55 个领域的长期专业工作流程。推理 token 是模型在生成最终答案前用于逐步思考的内部 token，其数量在不同模型之间可能差异很大，使得每 token 价格比较不那么直接。",
-      "社区反馈: 作者指出，虽然 GPT-5.6 Sol 能力不错，但在复杂编码任务上尚未比 Claude Fable 5 更令人印象深刻。他还提到 OpenAI 对 SWE-Bench Pro 的批评，在该基准上 Claude Fable 5 优于 GPT-5.6，暗示可能存在基准问题。"
+      "背景信息: 循环双覆盖猜想由 Tutte、Itai、Rodeh、Szekeres 和 Seymour 提出，询问是否每个无桥无向图都存在一组环，使得每条边恰好出现两次。这是图论中的一个核心问题，与图嵌入和圆形嵌入猜想相关。",
+      "社区反馈: 评论者指出，提示中花费了大量精力告诉模型要真正解决问题，这具有讽刺意味；一些人质疑社区是否真的关心这个猜想，因为之前关注度很低。其他人则强调，证明的简洁性暗示了巧妙的技巧，但自主构建理论仍然是人工智能尚未实现的里程碑。"
     ]
   },
   {
     "id": "2",
-    "title": "长征十号乙完成全球首次网系火箭回收",
+    "title": "长征十号乙完成全球首次火箭网系海上回收",
     "importance_score": 9.0,
     "source": "Telegram",
     "url": "https://weibo.com/7340734455/R814of1Ki",
     "category": "AI",
-    "publish_time": "2026-07-10T04:36:00Z",
-    "summary_zh": "2026 年 7 月 10 日，长征十号乙运载火箭从海南商业航天发射场发射升空，成功通过海上回收平台上的网系系统回收一子级，这是全球首次运载火箭网系回收，也是中国首次实现火箭一子级可控回收。 这一突破使中国成为继美国之后第二个掌握火箭级可控海上回收的国家，极大推动了可重复使用火箭技术的发展并降低发射成本。网系回收方法为传统着陆腿提供了新颖替代方案，可能实现更灵活、更精确的回收操作。 一子级在发射约 6 分钟后分离，随后垂直返回并被回收平台上的网系系统捕获。网系系统使用激光雷达监测火箭位置和姿态，同时火箭自身提供精确定位数据以协调捕获动作。\n\n**背景**: 可重复使用火箭技术旨在回收并重复使用火箭最昂贵的部分（主要是一子级），以降低发射成本。传统回收方法使用着陆腿或降落伞，而网系回收则通过类似航母阻拦索的网系系统捕获火箭。中国长征十号系列包括用于载人登月任务和商业发射的型号，其中 10B 为商业型号。",
-    "summary_en": "On July 10, 2026, the Long March 10B rocket launched from Hainan Commercial Space Launch Site and successfully recovered its first stage via a net-based system on a sea platform, marking the world's first net-based recovery of a launch vehicle and China's first controlled recovery of a rocket first stage. This breakthrough makes China the second country after the United States to master controlled sea recovery of rocket stages, significantly advancing reusable rocket technology and reducing launch costs. The net-based recovery method offers a novel alternative to traditional landing legs, potentially enabling more flexible and precise recovery operations. The first stage separated about 6 minutes after liftoff, then vertically returned and was captured by a net system on the recovery platform. The net system uses laser radar to monitor the rocket's position and attitude, while the rocket itself provides precise positioning data to coordinate the capture.\n\n**Background**: Reusable rocket technology aims to recover and reuse the most expensive parts of a rocket, primarily the first stage, to reduce launch costs. Traditional recovery methods use landing legs or parachutes, while net-based recovery involves catching the rocket with a net-like system, similar to how arresting wires catch aircraft on aircraft carriers. China's Long March 10 series includes variants for crewed lunar missions and commercial launches, with the 10B being a commercial variant.",
+    "publish_time": "2026-07-11T04:36:00Z",
+    "summary_zh": "2026 年 7 月 10 日，长征十号乙运载火箭从海南商业航天发射场发射升空，其一级通过海上回收平台的网系装置成功回收，这是中国首次实现运载火箭一级可控回收，也是全球首次完成运载火箭网系回收。 这一突破使中国成为可重复使用火箭技术的重要参与者，有助于降低发射成本并实现更频繁的太空进入。网系回收方法无需着陆支腿，简化了火箭设计，可能加速全球可重复使用运载火箭的发展。 长征十号乙基于长征十号甲减量研制，移除了载人安全设备并将二级替换为液氧甲烷版本。网系回收依靠回收船上的井字形阻拦索挂住火箭挂钩并缓冲制动，实现一子级无损回收复用。\n\n**背景**: 可重复使用火箭技术由 SpaceX 的猎鹰 9 号率先实现，通常使用着陆支腿进行垂直着陆。中国的长征系列火箭传统上为一次性使用。网系回收方法避免了着陆支腿的质量代价，并允许在海上移动平台上回收，对于不同任务剖面可能更具灵活性。",
+    "summary_en": "On July 10, 2026, China's Long March 10B rocket launched from Hainan Commercial Space Launch Site and successfully recovered its first stage via a net-based system on a sea platform, marking China's first controlled recovery of a rocket first stage and the world's first net-based recovery of a launch vehicle. This breakthrough establishes China as a key player in reusable rocket technology, reducing launch costs and enabling more frequent access to space. The net-based recovery method eliminates the need for landing legs, simplifying the rocket design and potentially accelerating the development of reusable launch vehicles globally. The Long March 10B is derived from the Long March 10A by removing crew safety equipment and replacing the second stage with a liquid oxygen/methane variant. The net-based recovery uses a well-shaped arresting cable system on the recovery ship to catch the rocket's hook and buffer it to a stop, achieving无损 (nondestructive) recovery.\n\n**Background**: Reusable rocket technology, pioneered by SpaceX's Falcon 9, typically uses landing legs for vertical touchdown. China's Long March series has traditionally been expendable. The net-based recovery approach offers an alternative that avoids the mass penalty of landing legs and allows recovery on a moving platform at sea, which could be more flexible for various mission profiles.",
     "takeaways": [
-      "背景信息: 可重复使用火箭技术旨在回收并重复使用火箭最昂贵的部分（主要是一子级），以降低发射成本。传统回收方法使用着陆腿或降落伞，而网系回收则通过类似航母阻拦索的网系系统捕获火箭。中国长征十号系列包括用于载人登月任务和商业发射的型号，其中 10B 为商业型号。"
+      "背景信息: 可重复使用火箭技术由 SpaceX 的猎鹰 9 号率先实现，通常使用着陆支腿进行垂直着陆。中国的长征系列火箭传统上为一次性使用。网系回收方法避免了着陆支腿的质量代价，并允许在海上移动平台上回收，对于不同任务剖面可能更具灵活性。"
     ]
   },
   {
     "id": "3",
-    "title": "欧盟初步认定 Instagram 和 Facebook 成瘾设计违反《数字服务法》",
+    "title": "SGLang v0.5.15 在 Blackwell GPU 上优化 GLM-5.2",
     "importance_score": 8.0,
-    "source": "Hackernews",
-    "url": "https://ec.europa.eu/commission/presscorner/home/en",
+    "source": "Fridge003",
+    "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.15",
     "category": "AI",
-    "publish_time": "2026-07-10T11:00:00Z",
-    "summary_zh": "欧盟委员会初步认定，Meta 旗下的 Instagram 和 Facebook 因其成瘾性设计（包括无限滚动、自动播放和个性化推荐）违反了《数字服务法》（DSA）。 这标志着 DSA 下的一项重大监管行动，可能迫使 Meta 重新设计其平台的核心功能，并为社交媒体公司如何在欧盟范围内解决成瘾性设计问题树立先例。 欧盟委员会批评 Meta 提供的限时工具形同虚设，并要求默认关闭成瘾性功能、设置有效的屏幕休息时间，并减少以参与度为导向的算法推荐。若最终裁定成立，Meta 最高可能面临约 120 亿美元罚款（占其全球年营业额的 10%）。\n\n**背景**: 《数字服务法》（DSA）是欧盟于 2022 年生效的一项法规，为在线平台制定了确保透明度、问责制和用户安全的规则。成瘾性设计指利用心理弱点（如无限滚动和个性化推荐）来最大化用户参与度的功能，往往以牺牲心理健康为代价。\n\n**社区讨论**: 社区评论对此行动表示强烈支持，用户分享了关于成瘾性设计负面影响的个人经历。一些怀疑者质疑仅靠罚款能否改变 Meta 的行为，而另一些人则认为应让用户在选择成瘾性算法和道德算法之间拥有选择权，而非直接禁止。",
-    "summary_en": "The European Commission has preliminarily found that Meta's Instagram and Facebook violate the Digital Services Act (DSA) due to their addictive design features, including infinite scroll, autoplay, and personalized recommendations. This marks a major regulatory action under the DSA, potentially forcing Meta to redesign core features of its platforms and setting a precedent for how social media companies must address addictive design across the EU. The Commission criticized Meta's time-limiting tools as ineffective and demanded default deactivation of addictive features, effective screen-time limits, and reduced engagement-driven algorithmic recommendations. If finalized, Meta could face fines up to approximately $12 billion (10% of global annual turnover).\n\n**Background**: The Digital Services Act (DSA) is an EU regulation that came into force in 2022, establishing rules for online platforms to ensure transparency, accountability, and user safety. Addictive design refers to features like infinite scroll and personalized recommendations that exploit psychological vulnerabilities to maximize user engagement, often at the expense of mental health.\n\n**Discussion**: Community comments express strong support for the action, with users sharing personal anecdotes about the negative impact of addictive design. Some skeptics question whether fines alone will change Meta's behavior, while others argue for giving users a choice between addictive and ethical algorithms rather than outright bans.",
+    "publish_time": "2026-07-11T22:58:00Z",
+    "summary_zh": "SGLang v0.5.15 针对 Blackwell GPU 上的 GLM-5.2 NVFP4 模型提供了优化服务，在 8 块 B300 上实现每用户每秒超过 500 token，在 4 块 GB300 上达到 450 tok/s/user（批大小为 1）。主要改进包括默认启用推测解码 V2、IndexShare MTP、TopK V2 以及 GEMM 优化。 此版本显著提升了在 NVIDIA 最新 Blackwell 架构上服务大语言模型的效率，为生产级 AI 推理带来更高吞吐量和更低延迟。特别是 Spec V2 和 IndexShare MTP 等优化减少了开销并提高了草稿步骤效率，使需要实时或高吞吐量 LLM 服务的应用受益。 推测解码 V2 成为默认方案，利用可 CUDA 图的 DSA draft-extend 消除 CPU 同步并融合元数据操作，端到端 TPS 提升 11%。IndexShare MTP 在草稿步骤间复用索引器 top-k，在长上下文下将草稿步骤成本降低高达 1.9 倍。TopK V2 将 top-k 选择与页表变换融合，支持运行时 k 值高达 2048。\n\n**背景**: NVFP4 是 NVIDIA Blackwell GPU 架构引入的 4 位浮点格式，旨在实现高效低精度推理同时保持准确性。SGLang 是一个用于服务大语言模型的开源框架，推测解码是一种使用较小草稿模型每步预测多个 token 以降低延迟的技术。Blackwell B300 和 GB300 GPU 是 NVIDIA 最新用于 AI 工作负载的高性能加速器。",
+    "summary_en": "SGLang v0.5.15 delivers optimized serving for GLM-5.2 NVFP4 on Blackwell GPUs, achieving over 500 tokens per second per user on 8x B300 and 450 tok/s/user on 4x GB300 at batch size 1. Key improvements include Speculative Decoding V2 by default, IndexShare MTP, TopK V2, and GEMM optimizations. This release significantly improves the efficiency of serving large language models on NVIDIA's latest Blackwell architecture, enabling higher throughput and lower latency for production AI inference. The optimizations, especially Spec V2 and IndexShare MTP, reduce overhead and improve draft-step efficiency, benefiting applications that require real-time or high-throughput LLM serving. Speculative Decoding V2 becomes the default, using CUDA-graphable DSA draft-extend to eliminate CPU syncs and fuse metadata ops, yielding an 11% end-to-end TPS gain. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x at long context. TopK V2 fuses top-k selection with page-table transform, supporting runtime k up to 2048.\n\n**Background**: NVFP4 is a 4-bit floating-point format introduced with NVIDIA's Blackwell GPU architecture, designed for efficient low-precision inference while maintaining accuracy. SGLang is an open-source framework for serving large language models, and speculative decoding is a technique that uses a smaller draft model to predict multiple tokens per step, reducing latency. The Blackwell B300 and GB300 GPUs are NVIDIA's latest high-performance accelerators for AI workloads.",
     "takeaways": [
-      "背景信息: 《数字服务法》（DSA）是欧盟于 2022 年生效的一项法规，为在线平台制定了确保透明度、问责制和用户安全的规则。成瘾性设计指利用心理弱点（如无限滚动和个性化推荐）来最大化用户参与度的功能，往往以牺牲心理健康为代价。",
-      "社区反馈: 社区评论对此行动表示强烈支持，用户分享了关于成瘾性设计负面影响的个人经历。一些怀疑者质疑仅靠罚款能否改变 Meta 的行为，而另一些人则认为应让用户在选择成瘾性算法和道德算法之间拥有选择权，而非直接禁止。"
+      "背景信息: NVFP4 是 NVIDIA Blackwell GPU 架构引入的 4 位浮点格式，旨在实现高效低精度推理同时保持准确性。SGLang 是一个用于服务大语言模型的开源框架，推测解码是一种使用较小草稿模型每步预测多个 token 以降低延迟的技术。Blackwell B300 和 GB300 GPU 是 NVIDIA 最新用于 AI 工作负载的高性能加速器。"
     ]
   },
   {
     "id": "4",
-    "title": "为什么 ML 领域不限制每作者投稿数？",
+    "title": "苹果起诉 OpenAI 窃取商业机密",
     "importance_score": 8.0,
-    "source": "r/MachineLearning",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1usq43t/why_doesnt_the_ml_research_community_limit_the/",
-    "category": "Startup",
-    "publish_time": "2026-07-10T14:59:00Z",
-    "summary_zh": "Reddit 上的一场讨论质疑机器学习研究社区为何不限制每作者的投稿数量，并引用了安全（CCS）和计算机体系结构（DAC）等领域成功控制审稿工作量的做法。 ML 会议的大量投稿降低了审稿质量（如最近的 ARR 周期所示），采用投稿限制可能改善整个领域的同行评审流程。 原帖指出其他研究社区多年来成功限制了每作者投稿数，并询问 ML 社区采取不同做法是否有文化原因。\n\n**背景**: 机器学习研究社区，特别是通过 ACL Rolling Review（ARR）的自然语言处理领域，投稿量激增，导致审稿人工作负担加重，审稿质量令人担忧。ARR 最近因投稿量过高而不得不增加作者的互惠服务任务。相比之下，CCS（计算机与通信安全）和 DAC（设计自动化会议）等会议长期以来对每作者投稿数进行限制，以保持工作量可控。",
-    "summary_en": "A Reddit discussion questions why the ML research community does not limit submissions per author, citing successful practices in fields like security (CCS) and computer architecture (DAC) to manage review workload. The massive volume of submissions in ML conferences degrades review quality, as seen in recent ARR cycles, and adopting submission limits could improve the peer review process across the entire field. The original poster notes that other research communities have successfully limited submissions per author for years, and wonders if there is a cultural reason for ML's different approach.\n\n**Background**: The ML research community, especially in NLP through ACL Rolling Review (ARR), has seen a surge in submissions, leading to increased reviewer workload and concerns about review quality. ARR recently had to increase reciprocal service assignments for authors due to the high submission volume. In contrast, conferences like CCS (Computer and Communications Security) and DAC (Design Automation Conference) have long enforced submission limits per author to keep workloads manageable.",
+    "source": "Hackernews",
+    "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+    "category": "AI",
+    "publish_time": "2026-07-11T20:47:00Z",
+    "summary_zh": "苹果已对 OpenAI 提起诉讼，指控其系统性地招募前苹果员工，这些员工窃取了商业机密，包括机密硬件信息和供应商联系方式。 这两家科技巨头之间的高调法律战可能为 AI 行业的商业机密保护树立先例，并影响公司处理员工离职的方式。 苹果声称 OpenAI 指示新员工避免向苹果透露新工作，且员工在离职时将机密数据通过电子邮件发送给自己。诉讼还指控 OpenAI 利用苹果的硬件信息接触供应商。\n\n**背景**: 商业机密是提供竞争优势的保密商业信息。像苹果这样的公司依赖严格的保密协议来保护这些资产。此案凸显了人才流动与知识产权保护之间的紧张关系。\n\n**社区讨论**: 评论者大多支持苹果，称证据确凿，并预测 OpenAI 将面临严重后果。一些人指出，证据开示可能会揭露更多对 OpenAI 不利的信息。",
+    "summary_en": "Apple has filed a lawsuit against OpenAI, alleging that the company systematically recruited ex-Apple employees who stole trade secrets, including confidential hardware information and supplier contacts. This high-profile legal battle between two tech giants could set a precedent for trade secret protection in the AI industry and impact how companies handle employee transitions. Apple claims OpenAI instructed new hires to avoid disclosing their new jobs to Apple, and that employees emailed themselves confidential data upon leaving. The lawsuit also alleges OpenAI used Apple's hardware information to approach suppliers.\n\n**Background**: Trade secrets are confidential business information that provides a competitive edge. Companies like Apple rely on strict confidentiality agreements to protect such assets. This case highlights the tension between talent mobility and intellectual property protection.\n\n**Discussion**: Commenters largely side with Apple, calling the evidence damning and predicting OpenAI will face severe consequences. Some note that discovery could reveal more damaging information for OpenAI.",
     "takeaways": [
-      "背景信息: 机器学习研究社区，特别是通过 ACL Rolling Review（ARR）的自然语言处理领域，投稿量激增，导致审稿人工作负担加重，审稿质量令人担忧。ARR 最近因投稿量过高而不得不增加作者的互惠服务任务。相比之下，CCS（计算机与通信安全）和 DAC（设计自动化会议）等会议长期以来对每作者投稿数进行限制，以保持工作量可控。"
+      "背景信息: 商业机密是提供竞争优势的保密商业信息。像苹果这样的公司依赖严格的保密协议来保护这些资产。此案凸显了人才流动与知识产权保护之间的紧张关系。",
+      "社区反馈: 评论者大多支持苹果，称证据确凿，并预测 OpenAI 将面临严重后果。一些人指出，证据开示可能会揭露更多对 OpenAI 不利的信息。"
     ]
   },
   {
@@ -64,39 +64,39 @@
     "source": "Telegram",
     "url": "https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions",
     "category": "AI",
-    "publish_time": "2026-07-10T02:56:00Z",
-    "summary_zh": "中国法院在多起跨越数年的案件中裁定，游戏账号、装备道具、加密货币及社交媒体账号等虚拟资产具有财产属性，属于可继承的合法遗产，平台用户协议中禁止继承的条款因违反法定权利而无效。 这为中国数字资产继承确立了法律先例，影响数百万游戏玩家和数字资产所有者，并迫使平台配合继承请求。 法院认定聊天记录等纯个人隐私内容不在继承范围内，由平台归档保存。平台可收取合理费用办理账号转移。\n\n**背景**: 根据中国民法，可继承财产包括具有经济价值的资产。游戏账号和游戏内物品等虚拟资产逐渐被认定为财产。最近的裁决明确平台条款不能凌驾于法定继承权之上。",
-    "summary_en": "Chinese courts have ruled in multiple cases over several years that virtual assets such as game accounts, equipment, cryptocurrencies, and social media accounts are inheritable property, invalidating platform terms that prohibit inheritance. This establishes a legal precedent for digital asset inheritance in China, affecting millions of gamers and digital asset owners, and forcing platforms to comply with inheritance requests. The courts held that chat logs and other purely personal privacy content are not inheritable and will be archived by the platform. Platforms may charge reasonable fees for transferring accounts.\n\n**Background**: Under Chinese civil law, inheritable property includes assets with economic value. Virtual assets like game accounts and in-game items have been increasingly recognized as property. The recent rulings clarify that platform terms cannot override statutory inheritance rights.",
+    "publish_time": "2026-07-11T02:56:00Z",
+    "summary_zh": "中国法院在多起跨越数年的案件中裁定，游戏账号、装备道具及加密货币等虚拟资产具有财产属性，属于可继承的合法遗产，平台禁止继承的条款无效。 这为中国数字资产所有权确立了重要的法律先例，影响数百万玩家及其继承人，并迫使平台修改用户协议以符合继承权。 法院裁定聊天记录等纯个人隐私内容不在继承范围内，由平台归档保存；平台可收取合理费用办理账号转移。\n\n**背景**: 在中国，《民法典》承认虚拟财产为合法财产，但平台用户协议常禁止继承。这些法院判决明确此类条款违反法定权利且不可执行，基于早期案例如《征途》游戏中的“屠龙金刀”案。",
+    "summary_en": "Chinese courts have ruled in multiple cases spanning several years that virtual assets such as game accounts, equipment, and cryptocurrencies are inheritable property, invalidating platform clauses that prohibit inheritance. This establishes a significant legal precedent for digital ownership in China, affecting millions of gamers and their heirs, and pressures platforms to revise user agreements to comply with inheritance rights. The courts ruled that chat logs and other purely personal privacy content are not inheritable and will be archived by the platform; platforms may charge reasonable fees for transferring accounts.\n\n**Background**: In China, the Civil Code recognizes virtual property as legal property, but platform user agreements often prohibit inheritance. These court decisions clarify that such clauses violate statutory rights and are unenforceable, building on earlier cases like the 'Dragon Saber' case in the game 'Zheng Tu'.",
     "takeaways": [
-      "背景信息: 根据中国民法，可继承财产包括具有经济价值的资产。游戏账号和游戏内物品等虚拟资产逐渐被认定为财产。最近的裁决明确平台条款不能凌驾于法定继承权之上。"
+      "背景信息: 在中国，《民法典》承认虚拟财产为合法财产，但平台用户协议常禁止继承。这些法院判决明确此类条款违反法定权利且不可执行，基于早期案例如《征途》游戏中的“屠龙金刀”案。"
     ]
   },
   {
     "id": "6",
-    "title": "腾讯洽购 AI 公司 Manus，拟从 Meta 手中回购",
+    "title": "腾讯洽购 AI 初创公司 Manus，拟从 Meta 手中回购",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/",
     "category": "AI",
-    "publish_time": "2026-07-10T06:45:00Z",
-    "summary_zh": "腾讯正谈判从 Meta 手中收购 AI 初创公司 Manus，计划成为其最大股东。此前北京要求 Meta 解除对 Manus 的 20 亿美元收购交易。 这笔交易凸显了 AI 领域日益加剧的地缘政治紧张局势，中国正努力保留对战略性 AI 初创公司的控制权。若成功，腾讯将获得一个强大的 AI 智能体平台，巩固其在全球 AI 竞赛中的地位。 腾讯将与原始投资者真格基金和 HSG 联手，以不低于 20 亿美元的价格从 Meta 手中回购 Manus。该消息由《金融时报》率先报道，涉事各方均未回应。\n\n**背景**: Manus 是一个 AI 智能体平台，超越聊天功能，可执行研究、分析和工作流自动化等多步骤任务。Meta 于 2025 年底以超过 20 亿美元收购了 Manus，但中国监管机构以国家安全为由要求解除该交易。腾讯作为中国科技巨头，正介入收购这家初创公司。",
-    "summary_en": "Tencent is negotiating to acquire AI startup Manus from Meta, aiming to become its largest shareholder after Beijing ordered Meta to unwind its $2 billion acquisition of Manus. This deal highlights the intensifying geopolitical tensions in AI, as China pushes to retain control over strategic AI startups. If successful, Tencent would gain a powerful AI agent platform, strengthening its position in the global AI race. Tencent is partnering with original investors ZhenFund and HSG to buy back Manus from Meta at a price no less than $2 billion. The news was first reported by the Financial Times, and none of the involved parties have commented.\n\n**Background**: Manus is an AI agent platform that goes beyond chat to execute multi-step tasks like research, analysis, and workflow automation. Meta acquired Manus for over $2 billion in late 2025, but Chinese regulators ordered the deal unwound due to national security concerns. Tencent, a major Chinese tech conglomerate, is now stepping in to acquire the startup.",
+    "publish_time": "2026-07-11T06:45:00Z",
+    "summary_zh": "腾讯正就收购 AI 初创公司 Manus 进行谈判，计划从 Meta 手中回购并成为最大股东，此前北京阻止了 Meta 的 20 亿美元收购。 这笔交易可能重塑中国 AI 格局，让腾讯控制一个有前景的 AI 智能体平台，并加剧与其他科技巨头的竞争。 腾讯将与原有投资者真格基金和 HSG 联手，以不低于 20 亿美元的价格从 Meta 手中回购 Manus。\n\n**背景**: Manus 是一个 AI 智能体平台，能超越聊天功能自主执行多步骤任务。真格基金是由新东方联合创始人共同创立的天使投资基金，HSG（红杉中国）是前身为红杉资本中国的知名风险投资公司。",
+    "summary_en": "Tencent is negotiating to acquire AI startup Manus from Meta, aiming to become its largest shareholder, after Beijing blocked Meta's $2 billion acquisition. This deal could reshape the AI landscape in China, giving Tencent control over a promising AI agent platform and intensifying competition with other tech giants. Tencent will partner with original investors ZhenFund and HSG to buy back Manus from Meta at a price no less than $2 billion.\n\n**Background**: Manus is an AI agent platform that goes beyond chat to execute multi-step tasks autonomously. ZhenFund is a Chinese angel investment fund co-founded by New Oriental co-founders, and HSG (HongShan) is a major Chinese venture capital firm formerly known as Sequoia Capital China.",
     "takeaways": [
-      "背景信息: Manus 是一个 AI 智能体平台，超越聊天功能，可执行研究、分析和工作流自动化等多步骤任务。Meta 于 2025 年底以超过 20 亿美元收购了 Manus，但中国监管机构以国家安全为由要求解除该交易。腾讯作为中国科技巨头，正介入收购这家初创公司。"
+      "背景信息: Manus 是一个 AI 智能体平台，能超越聊天功能自主执行多步骤任务。真格基金是由新东方联合创始人共同创立的天使投资基金，HSG（红杉中国）是前身为红杉资本中国的知名风险投资公司。"
     ]
   },
   {
     "id": "7",
-    "title": "OpenAI、Google 被指向黑名单中国公司提供 AI",
+    "title": "OpenAI、Google 被曝通过新加坡向黑名单中国公司提供 AI 模型",
     "importance_score": 8.0,
     "source": "Telegram",
     "url": "https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f",
     "category": "AI",
-    "publish_time": "2026-07-10T09:59:00Z",
-    "summary_zh": "据《金融时报》报道，OpenAI 和 Google 一直向阿里巴巴、百度和腾讯的新加坡子公司提供先进 AI 服务，而这些公司的母公司均被五角大楼列入 1260H 名单（中国军方企业名单）。 这一发现凸显了美国 AI 出口管制中的潜在漏洞，因为现行限制并未广泛禁止中国母公司在中国大陆以外获取先进 AI 模型，这重新引发了加强监管的呼声。 OpenAI 上月在发现疑似模型蒸馏行为后，暂停了阿里巴巴关联用户的 API 访问权限，并向美国政府报告了此事。相比之下，Anthropic 采取了更严格的政策，全面禁止中国公司及其海外实体访问其前沿 AI 模型。\n\n**背景**: 1260H 名单是根据 2021 财年《国防授权法》第 1260H 条设立的，用于识别直接或间接在美国运营的中国军方企业。模型蒸馏是一种将知识从大型 AI 模型转移到小型模型的技术，可能被用于未经授权复制先进模型。",
-    "summary_en": "According to the Financial Times, OpenAI and Google have been providing advanced AI services to Singapore subsidiaries of Alibaba, Baidu, and Tencent, whose parent companies are on the Pentagon's 1260H list of Chinese military companies. This revelation highlights potential loopholes in US export controls on AI, as current restrictions do not broadly prohibit Chinese parent companies from accessing advanced AI models outside mainland China, reigniting calls for tighter regulations. OpenAI suspended API access for an Alibaba-affiliated user last month after detecting suspected model distillation, and reported the incident to the US government. In contrast, Anthropic has stricter policies that fully ban Chinese companies and their overseas entities from accessing its frontier AI models.\n\n**Background**: The 1260H list, established under Section 1260H of the FY2021 National Defense Authorization Act, identifies Chinese military companies operating directly or indirectly in the US. Model distillation is a technique that transfers knowledge from a large AI model to a smaller one, which can be used to replicate advanced models without authorization.",
+    "publish_time": "2026-07-11T09:59:00Z",
+    "summary_zh": "据《金融时报》报道，OpenAI 和 Google 一直向阿里巴巴、百度和腾讯的新加坡子公司提供先进 AI 服务，而这些中国科技巨头的母公司均被五角大楼列入“1260H 名单”。 这一发现凸显了美国出口管制中的潜在漏洞，因为现行限制并未广泛禁止中国总部企业在中国大陆以外获取先进 AI 模型，重新引发了加强 AI 出口管制的呼声。 OpenAI 上月在发现疑似“模型蒸馏”行为后，暂停了阿里巴巴关联用户的 API 访问权限并上报美国政府；Anthropic 则采取了更严格的政策，全面禁止中国公司及其海外实体访问其前沿 AI 模型。\n\n**背景**: 1260H 名单是美国《国防授权法》的一部分，用于识别直接或间接在美国运营的中国军事公司。模型蒸馏是一种将知识从大型 AI 模型转移到小型模型的技术，可能被用于通过提取模型能力来规避 API 访问限制。",
+    "summary_en": "According to a Financial Times report, OpenAI and Google have been providing advanced AI services to Singapore subsidiaries of Alibaba, Baidu, and Tencent, whose parent companies are on the Pentagon's 1260H list of Chinese military companies. This revelation highlights potential loopholes in US export controls, as current restrictions do not broadly ban Chinese parent companies from accessing advanced AI models outside mainland China, reigniting calls for stricter AI export regulations. OpenAI suspended API access for an Alibaba-affiliated user last month after detecting suspected model distillation, and reported the incident to the US government; Anthropic has adopted stricter policies, fully banning Chinese companies and their overseas entities from accessing its frontier AI models.\n\n**Background**: The 1260H list, part of the US National Defense Authorization Act, identifies Chinese military companies operating directly or indirectly in the US. Model distillation is a technique that transfers knowledge from a large AI model to a smaller one, which can be used to circumvent API access restrictions by extracting model capabilities.",
     "takeaways": [
-      "背景信息: 1260H 名单是根据 2021 财年《国防授权法》第 1260H 条设立的，用于识别直接或间接在美国运营的中国军方企业。模型蒸馏是一种将知识从大型 AI 模型转移到小型模型的技术，可能被用于未经授权复制先进模型。"
+      "背景信息: 1260H 名单是美国《国防授权法》的一部分，用于识别直接或间接在美国运营的中国军事公司。模型蒸馏是一种将知识从大型 AI 模型转移到小型模型的技术，可能被用于通过提取模型能力来规避 API 访问限制。"
     ]
   },
   {
@@ -106,11 +106,39 @@
     "source": "Telegram",
     "url": "https://wms.mofcom.gov.cn/zcfb/wmgl/art/2026/art_2a795a0d55df4cada91c9fbd2a2cc13a.html",
     "category": "AI",
-    "publish_time": "2026-07-10T13:27:00Z",
-    "summary_zh": "2026 年 7 月 10 日，中国商务部和海关总署联合发布 2026 年第 29 号公告，对氦气（海关商品编号 2804290010）实施临时禁止出口管理，自公布之日起执行。 氦气对半导体制造、核磁共振成像、光纤和航空航天等领域至关重要，而中国是主要供应国；此禁令可能扰乱全球供应链，加剧当前的氦气短缺。 官方公告未说明原因、期限或豁免机制，商业和地缘政治理由不明。禁令仅针对海关商品编号 2804290010 的氦气，即主要工业级氦气。\n\n**背景**: 氦气是一种不可再生资源，对于冷却核磁共振成像仪中的超导磁体以及作为半导体制造中的惰性气体至关重要。中国一直是氦气出口大国，而全球市场已面临反复出现的供应短缺。此次禁令紧随中国对稀土、镓等其他关键材料的出口管制之后。",
-    "summary_en": "On July 10, 2026, China's Ministry of Commerce and General Administration of Customs jointly issued Announcement No. 29, imposing a temporary export ban on helium (HS code 2804290010) effective immediately. Helium is critical for semiconductor manufacturing, MRI machines, fiber optics, and aerospace, and China is a major supplier; this ban could disrupt global supply chains and exacerbate the ongoing helium shortage. The official notice provides no explanation, duration, or exemption mechanisms, leaving commercial and geopolitical rationale unclear. The ban covers only helium under HS code 2804290010, which is the primary industrial grade.\n\n**Background**: Helium is a non-renewable resource essential for cooling superconducting magnets in MRI machines and as an inert gas in semiconductor fabrication. China has been a growing exporter of helium, and the global market has faced recurring supply shortages. The ban follows similar export controls on other critical materials like rare earths and gallium.",
+    "publish_time": "2026-07-11T13:27:00Z",
+    "summary_zh": "2026 年 7 月 10 日，中国商务部和海关总署联合发布公告，对氦气（海关商品编号 2804290010）实施临时禁止出口管理，自公布之日起执行。 该禁令可能扰乱半导体、医疗成像（MRI）和科学研究等领域的全球供应链，因为中国是氦气的主要消费国，且国内需求不断增长。此举可能加剧持续的全球氦气短缺，影响依赖这种关键气体的行业。 该禁令涵盖海关商品编号为 2804290010 的氦气，依据《中华人民共和国对外贸易法》实施。公告未明确禁令期限，称后续调整将另行公告。\n\n**背景**: 氦气是一种不可再生资源，在半导体制造中用于冷却，在 MRI 机器中用作冷却剂，并用于加压火箭燃料箱。中国正在快速扩张半导体产业，国内氦气需求增加，而全球供应因生产中断和地缘政治紧张而紧张。",
+    "summary_en": "On July 10, 2026, China's Ministry of Commerce and General Administration of Customs jointly issued an announcement imposing a temporary ban on the export of helium (HS code 2804290010), effective immediately. This ban could disrupt global supply chains for semiconductors, medical imaging (MRI), and scientific research, as China is a major helium consumer and its domestic demand is rising. The move may exacerbate the ongoing global helium shortage, impacting industries reliant on this critical gas. The ban covers helium with HS code 2804290010 and is based on the Foreign Trade Law of China. The announcement did not specify a duration, stating that adjustments will be announced separately.\n\n**Background**: Helium is a non-renewable resource essential for cooling in semiconductor manufacturing, as a coolant in MRI machines, and for pressurizing rocket fuel tanks. China has been rapidly expanding its semiconductor industry, increasing domestic helium demand, while global supply has been strained due to production outages and geopolitical tensions.",
     "takeaways": [
-      "背景信息: 氦气是一种不可再生资源，对于冷却核磁共振成像仪中的超导磁体以及作为半导体制造中的惰性气体至关重要。中国一直是氦气出口大国，而全球市场已面临反复出现的供应短缺。此次禁令紧随中国对稀土、镓等其他关键材料的出口管制之后。"
+      "背景信息: 氦气是一种不可再生资源，在半导体制造中用于冷却，在 MRI 机器中用作冷却剂，并用于加压火箭燃料箱。中国正在快速扩张半导体产业，国内氦气需求增加，而全球供应因生产中断和地缘政治紧张而紧张。"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Meta 或因成瘾设计面临欧盟 120 亿美元罚款",
+    "importance_score": 8.0,
+    "source": "Telegram",
+    "url": "https://www.theverge.com/policy/963872/meta-eu-addictive-design-200b-fine-risk-digital-services-act-dsa",
+    "category": "AI",
+    "publish_time": "2026-07-11T14:47:00Z",
+    "summary_zh": "欧盟委员会初步认定 Meta 旗下的 Facebook 和 Instagram 因无限滚动、自动播放和个性化推荐等成瘾性设计违反《数字服务法》，可能面临高达 120 亿美元（全球年营收的 6%）的罚款。 这标志着《数字服务法》下潜在的最大罚款之一，可能迫使 Meta 重新设计核心功能，为整个科技行业监管成瘾性设计树立先例。 欧盟批评 Meta 现有的限时工具形同虚设，要求默认关闭成瘾功能、设置有效的屏幕休息时间，并弱化以参与度为导向的算法。最终裁定在罚款实施前仍可能发生变化。\n\n**背景**: 无限滚动利用人类对完成感的需求，将用户困在无尽循环中。个性化推荐算法通过预测用户偏好最大化参与度，常导致强迫性使用。欧盟《数字服务法》（DSA）对大型平台施加严格义务，以减轻包括心理健康损害在内的系统性风险。",
+    "summary_en": "The European Commission has preliminarily found that Meta's Facebook and Instagram violate the Digital Services Act due to addictive design features like infinite scroll, autoplay, and personalized recommendations, potentially leading to a fine of up to $12 billion (6% of global annual revenue). This marks one of the largest potential fines under the DSA and could force Meta to redesign core features, setting a precedent for regulating addictive design across the tech industry. The EU criticizes Meta's current time-limiting tools as ineffective and demands default disabling of addictive features, effective screen breaks, and reduced engagement-driven algorithms. The final decision could still change before the fine is imposed.\n\n**Background**: Infinite scroll exploits the human need for closure, trapping users in endless loops. Personalized recommendation algorithms maximize engagement by predicting user preferences, often leading to compulsive use. The EU's Digital Services Act (DSA) imposes strict obligations on large platforms to mitigate systemic risks, including harms to mental health.",
+    "takeaways": [
+      "背景信息: 无限滚动利用人类对完成感的需求，将用户困在无尽循环中。个性化推荐算法通过预测用户偏好最大化参与度，常导致强迫性使用。欧盟《数字服务法》（DSA）对大型平台施加严格义务，以减轻包括心理健康损害在内的系统性风险。"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "SpaceXAI 与 Cursor 联合发布 Grok 4.5，专注编码、法律和金融",
+    "importance_score": 8.0,
+    "source": "Telegram",
+    "url": "https://t.me/zaihuapd/42484",
+    "category": "AI",
+    "publish_time": "2026-07-11T01:44:00Z",
+    "summary_zh": "SpaceXAI 与 Cursor 联合发布了新一代 AI 模型 Grok 4.5，该模型针对编码、法律和金融任务进行了优化，声称在 Harvey 法律代理基准测试中排名第一，且 token 效率是领先模型的两倍。 这是 SpaceX 以 600 亿美元收购 Cursor 后推出的首个联合模型，标志着其大举进军面向高难度专业任务的领域特定 AI，可能重塑 AI 编码和法律科技市场的竞争格局。 Grok 4.5 以每秒 80 个 token 的速度运行，定价为每百万输入 token 2 美元。它基于 1.5 万亿参数的 V9 基础架构，并整合了 Cursor 的数据，但收购说法尚未得到证实。\n\n**背景**: Grok 是 SpaceX 旗下 AI 子公司 xAI 开发的一系列 AI 模型。Cursor 是一款 AI 驱动的代码编辑器和 IDE，到 2026 年初估值已达 293 亿美元。Harvey 法律代理基准测试通过文件读取、编辑等工具评估 AI 代理在法律任务上的表现。",
+    "summary_en": "SpaceXAI and Cursor have jointly released Grok 4.5, a new AI model optimized for coding, legal, and financial tasks, claiming top performance on the Harvey legal agent benchmark and 2x token efficiency over leading models. This marks the first joint model after SpaceX's $60 billion acquisition of Cursor, signaling a major push into domain-specific AI for high-stakes professional tasks, potentially reshaping competition in the AI coding and legal tech markets. Grok 4.5 runs at 80 tokens per second and is priced at $2 per million input tokens. It is built on a 1.5 trillion-parameter V9 foundation and incorporates data from Cursor, though the acquisition claim remains unverified.\n\n**Background**: Grok is a series of AI models developed by xAI, SpaceX's AI subsidiary. Cursor is an AI-powered code editor and IDE that achieved a $29.3 billion valuation by early 2026. The Harvey Legal Agent Benchmark evaluates AI agents on legal tasks using tools like file reading and editing.",
+    "takeaways": [
+      "背景信息: Grok 是 SpaceX 旗下 AI 子公司 xAI 开发的一系列 AI 模型。Cursor 是一款 AI 驱动的代码编辑器和 IDE，到 2026 年初估值已达 293 亿美元。Harvey 法律代理基准测试通过文件读取、编辑等工具评估 AI 代理在法律任务上的表现。"
     ]
   }
 ]
