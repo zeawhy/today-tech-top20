@@ -5,65 +5,36 @@ date: 2026-07-11
 lang: en
 ---
 
-> From 39 items, 14 important content pieces were selected
+> From 27 items, 9 important content pieces were selected
 
 ---
 
-1. [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](#item-1) ⭐️ 9.0/10
-2. [Humanoid Robot Performs World-First Live Pig Gallbladder Surgery](#item-2) ⭐️ 9.0/10
-3. [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](#item-3) ⭐️ 8.0/10
-4. [Einstein's relativity governs chemical bonds in heavy elements](#item-4) ⭐️ 8.0/10
-5. [QuadRF Open-Source Tool Detects Drones and WiFi Through Walls](#item-5) ⭐️ 8.0/10
-6. [Apple Sues OpenAI for Trade Secret Theft](#item-6) ⭐️ 8.0/10
-7. [SpaceX plans 100,000 more Starlink satellites for 100x bandwidth](#item-7) ⭐️ 8.0/10
-8. [Scarf moves from Haskell to Python after 7 years](#item-8) ⭐️ 8.0/10
-9. [China Imposes Temporary Ban on Helium Exports](#item-9) ⭐️ 8.0/10
-10. [EU May Fine Meta $12 Billion for Addictive Design](#item-10) ⭐️ 8.0/10
-11. [SK Hynix ADR Surges 14% on Nasdaq Debut, Raises $26.5B](#item-11) ⭐️ 8.0/10
-12. [SK Hynix CEO Warns of Worst Memory Shortage by 2027](#item-12) ⭐️ 8.0/10
-13. [SpaceXAI and Cursor Launch Grok 4.5](#item-13) ⭐️ 8.0/10
-14. [Six U-Boot Bootloader Flaws Allow Code Execution Before OS Boot](#item-14) ⭐️ 8.0/10
+1. [Humanoid Robot Performs World's First Laparoscopic Surgery on Live Pigs](#item-1) ⭐️ 9.0/10
+2. [SGLang v0.5.15 Boosts GLM-5.2 to 500+ tok/s on Blackwell](#item-2) ⭐️ 8.0/10
+3. [Relativity rules chemical bonds in heavy elements](#item-3) ⭐️ 8.0/10
+4. [Apple sues OpenAI over trade secret theft](#item-4) ⭐️ 8.0/10
+5. [VultronRetriever Models Top MTEB, Enable Offline iPhone Q&A](#item-5) ⭐️ 8.0/10
+6. [SpaceXAI and Cursor Launch Grok 4.5 for Coding, Legal, Finance](#item-6) ⭐️ 8.0/10
+7. [U-Boot Bootloader Flaws Allow Code Execution Before OS Boot](#item-7) ⭐️ 8.0/10
+8. [OpenAI Launches GPT-5.6 Series with Sol, Terra, Luna Tiers](#item-8) ⭐️ 8.0/10
+9. [Shanghai Aims for High-Quality Brain Control by 2027](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 9.0/10
+## [Humanoid Robot Performs World's First Laparoscopic Surgery on Live Pigs](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
 
-OpenAI's GPT-5.6 Sol Ultra has generated a proof of the Cycle Double Cover Conjecture, a long-standing open problem in graph theory, as announced in a preprint released on July 10, 2026. This marks the first time an AI has produced a proof of a major unsolved conjecture, demonstrating AI's growing capability in advanced mathematical reasoning and potentially accelerating discovery in theoretical fields. The proof is notably concise, suggesting a clever insight that experts had missed, and OpenAI released both the prompt and the full proof PDF for public scrutiny.
-
-hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
-
-**Background**: The Cycle Double Cover Conjecture asks whether every bridgeless undirected graph has a collection of cycles such that each edge appears exactly twice. It has been open since the 1970s and is a central problem in graph theory. GPT-5.6 Sol Ultra is OpenAI's most advanced model, released in July 2026, with state-of-the-art performance in coding, science, and reasoning.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
-<li><a href="https://openai.com/index/gpt-5-6/">GPT‑5.6: Frontier intelligence that scales with your ambition</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT‑5.6 Sol: a next-generation model - OpenAI</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community is impressed but notes that the proof is extremely concise, suggesting a clever trick rather than a deep theory-building proof. Some commenters highlight that the prompt required extensive hand-holding, indicating that AI still needs guidance for such tasks. Others are curious about the success rate of frontier models on unsolved problems.
-
-**Tags**: `#AI`, `#mathematics`, `#graph theory`, `#OpenAI`, `#research`
-
----
-
-<a id="item-2"></a>
-## [Humanoid Robot Performs World-First Live Pig Gallbladder Surgery](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
-
-Surgeons remotely operated a Unitree G1 humanoid robot to perform the world's first laparoscopic cholecystectomy on live pigs, with results published in Nature. This is the first use of a general-purpose humanoid robot for live surgery, offering a low-cost alternative to specialized surgical robots like the da Vinci system, potentially expanding access to remote and resource-limited settings. The Unitree G1 robot costs $13,500 for the base model and about $67,000 with dexterous hands, far less than the $500,000+ for da Vinci systems. It stands 1.5 meters tall and weighs 27 kg, making it compact for various environments.
+Surgeons remotely operated a Unitree G1 humanoid robot to perform the world's first laparoscopic cholecystectomy on live pigs, with results published in Nature. This breakthrough demonstrates that low-cost, general-purpose humanoid robots could make minimally invasive surgery accessible in rural, battlefield, or space settings, challenging the dominance of expensive specialized systems like the da Vinci. The Unitree G1 base model costs $13,500, or about $67,000 with dexterous hands, compared to $500,000 to millions for da Vinci systems. The robot stands 1.5 meters tall and weighs 27 kg.
 
 telegram · zaihuapd · Jul 11, 02:29
 
-**Background**: Laparoscopic cholecystectomy is a minimally invasive surgery to remove the gallbladder, commonly performed for gallstones. Teleoperated robotic surgery allows surgeons to operate remotely with precision. The Unitree G1 is a general-purpose humanoid robot with 23-43 degrees of freedom, designed for AI research and dynamic tasks.
+**Background**: Laparoscopic cholecystectomy is a minimally invasive surgery to remove the gallbladder, commonly performed for gallstones. The da Vinci Surgical System is the current standard for robotic-assisted surgery but costs hundreds of thousands to millions of dollars. Unitree G1 is a general-purpose humanoid robot designed for various tasks, not specifically for surgery.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.unitree.com/g1/">Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot ... - unitree</a></li>
-<li><a href="https://medicalxpress.com/news/2026-07-surgeons-teleoperated-humanoid-robots-surgery.html">Surgeons use teleoperated humanoid robots to perform live...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unitree_Robotics">Unitree Robotics - Wikipedia</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Laparoscopic_cholecystectomy">Laparoscopic cholecystectomy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Da_Vinci_Surgical_System">da Vinci Surgical System - Wikipedia</a></li>
 
 </ul>
 </details>
@@ -72,252 +43,172 @@ telegram · zaihuapd · Jul 11, 02:29
 
 ---
 
-<a id="item-3"></a>
-## [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+<a id="item-2"></a>
+## [SGLang v0.5.15 Boosts GLM-5.2 to 500+ tok/s on Blackwell](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
 
-SGLang v0.5.15 introduces Spec V2 speculative decoding by default and IndexShare MTP optimization, delivering over 500 tokens/second/user on 8x B300 GPUs for GLM-5.2 NVFP4. The release also adds support for new models like Hunyuan 3 and Qwen3.6 NVFP4, and enables breakable CUDA Graph by default. These optimizations significantly reduce inference latency and cost for large language models, especially for long-context scenarios, making production serving more efficient. The improvements in speculative decoding and attention indexing set a new performance bar for open-source LLM serving engines. Spec V2 achieves zero-overhead scheduling via CUDA-graphable DSA draft-extend and fused metadata ops, yielding +11% end-to-end TPS. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x at long context. TopK V2 fuses top-k selection with page-table transform, supporting runtime k up to 2048.
+SGLang v0.5.15 introduces major performance optimizations for GLM-5.2 on Blackwell GPUs, achieving over 500 tokens per second per user on 8x B300 and 450 tok/s on 4x GB300. Key improvements include Spec V2 speculative decoding by default, IndexShare MTP reducing draft-step cost by up to 1.9x, and TopK V2 fusion. These optimizations make SGLang one of the fastest open-source LLM serving frameworks for production-grade models like GLM-5.2, directly benefiting users who need low-latency inference on NVIDIA Blackwell hardware. The release also sets a new performance benchmark for speculative decoding and MoE serving. Spec V2 achieves zero-overhead scheduling via CUDA-graphable DSA draft-extend and fused metadata ops, yielding an 11% end-to-end TPS boost. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x at long context. The release also adds native web search via Exa, breakable CUDA Graph by default, and support for new models like Hunyuan 3 and Qwen3.6 NVFP4.
 
 github · Fridge003 · Jul 10, 22:58
 
-**Background**: SGLang is an open-source inference engine for large language models, known for its high performance and support for advanced features like speculative decoding. Blackwell GPUs (e.g., B300, GB300) are NVIDIA's latest architecture optimized for AI workloads. NVFP4 is a 4-bit floating-point quantization format that reduces memory usage while maintaining model quality.
+**Background**: SGLang is an open-source LLM serving framework designed for high-performance inference. Speculative decoding is a technique that uses a smaller draft model to predict multiple tokens, which are then verified by the main model, reducing latency. GLM-5.2 is a 753B-parameter Mixture-of-Experts model from ZAI, optimized for long-horizon tasks. NVFP4 is a 4-bit quantization format for NVIDIA Blackwell GPUs.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://docs.sglang.io/docs/advanced_features/speculative_decoding">Speculative Decoding - SGLang Documentation</a></li>
 <li><a href="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/">The next generation of speculative decoding: DFlash and Spec V2</a></li>
-<li><a href="https://huggingface.co/nvidia/GLM-5.2-NVFP4">nvidia/GLM-5.2-NVFP4 · Hugging Face</a></li>
+<li><a href="https://huggingface.co/blog/zai-org/glm-52-blog">GLM-5.2: Built for Long-Horizon Tasks</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM inference`, `#GPU optimization`, `#speculative decoding`, `#SGLang`, `#Blackwell`
+**Tags**: `#LLM serving`, `#performance optimization`, `#GPU inference`, `#SGLang`, `#speculative decoding`
 
 ---
 
-<a id="item-4"></a>
-## [Einstein's relativity governs chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [Relativity rules chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
 
-New research published in Science demonstrates that relativistic effects, as described by Einstein's theory of relativity, fundamentally govern the chemical bonding in heavy elements such as bismuth. This finding deepens our understanding of heavy-element chemistry and could enable the design of safer materials, such as using non-toxic bismuth as a replacement for lead in solar cells and other applications. The study highlights spin-orbit coupling, where an electron's spin and orbit are no longer independent, as a key relativistic effect influencing sigma and pi bonds in heavy elements.
+New research published in Science confirms that Einstein's theory of relativity governs chemical bonding in heavy elements, providing direct experimental evidence for relativistic effects such as spin-orbit coupling. This work deepens our understanding of why heavy elements like mercury are liquid at room temperature and why gold appears yellow, with implications for materials science and quantum chemistry. The study demonstrates that in heavy elements, electrons orbit at a significant fraction of the speed of light, causing spin and orbit to couple—a relativistic effect that alters chemical bonding.
 
 hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
 
-**Background**: Relativistic effects become significant for heavy elements because their inner electrons travel at speeds close to the speed of light, altering atomic and molecular properties. For example, gold's yellow color and mercury's liquid state at room temperature are both consequences of relativity.
+**Background**: Relativistic quantum chemistry considers corrections to the Schrödinger equation for heavy elements where electron speeds approach the speed of light. These effects explain properties like mercury's low melting point and gold's color, which cannot be predicted by non-relativistic theories.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
+<li><a href="https://sciencenotes.org/why-is-mercury-a-liquid-at-room-temperature/">Why Is Mercury a Liquid at Room Temperature?</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that relativistic effects on heavy elements are already known (e.g., gold's color, mercury's liquidity), but appreciated the new focus on chemical bonding. Some questioned the practical use of bismuth in solar cells, as lead is not commonly used in mass-produced panels.
+**Discussion**: Commenters noted that relativistic effects in chemistry were already known (e.g., gold's color), but appreciated the new experimental confirmation. One user humorously cautioned against using their explanation for spacecraft design.
 
-**Tags**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#materials science`
+**Tags**: `#physics`, `#chemistry`, `#relativity`, `#chemical bonding`, `#heavy elements`
+
+---
+
+<a id="item-4"></a>
+## [Apple sues OpenAI over trade secret theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
+
+Apple has filed a lawsuit against OpenAI, alleging that the AI company systematically stole trade secrets by hiring former Apple employees who emailed confidential information to themselves and used it to approach Apple suppliers. This lawsuit could have major implications for the AI industry, potentially setting legal precedents around trade secret protection and employee mobility, and may damage OpenAI's reputation and hardware partnerships. Apple claims OpenAI instructed new hires to avoid disclosing their new jobs to Apple, and that a pattern of emailing confidential information was discovered, including from a key employee named Tan. OpenAI allegedly used Apple's confidential hardware information when approaching Apple's suppliers.
+
+hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
+
+**Background**: Trade secret lawsuits are common in tech, but this case is notable due to the high profile of both companies and the alleged systematic nature of the theft. Apple has a history of aggressively protecting its intellectual property, while OpenAI has faced criticism for its data practices and hiring tactics.
+
+**Discussion**: Community comments are largely critical of OpenAI, with many calling the alleged behavior 'damning' and suggesting this could be the end of OpenAI's hardware ambitions. Some commenters warn businesses against using OpenAI models due to IP risks, while others note that Apple's deep pockets make a settlement unlikely and discovery could be devastating for OpenAI.
+
+**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#lawsuit`, `#AI ethics`
 
 ---
 
 <a id="item-5"></a>
-## [QuadRF Open-Source Tool Detects Drones and WiFi Through Walls](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
+## [VultronRetriever Models Top MTEB, Enable Offline iPhone Q&A](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
 
-Jeff Geerling demonstrated QuadRF, an open-source RF visualization tool built on a Raspberry Pi 5 and FPGA, that can detect drones in flight and map WiFi signals through walls using phased-array beamforming. QuadRF democratizes advanced RF sensing technology, previously limited to government agencies, enabling hobbyists and security researchers to visualize wireless signals and detect hidden devices or drones. The system uses a phased-array antenna with picosecond-level timing for beamforming, and can route captured signals to SDR programs for decoding. It is fully open-source, allowing users to customize the UI and processing.
+Vultr released the VultronRetriever family of models on HuggingFace, achieving #1 on the MTEB leaderboard in each size class, with the 8B model as global #1. The models offer up to 16x smaller index storage and 12x higher throughput compared to previous 9B-class leaders, and can run fully offline on an iPhone for Q&A and document embedding. This breakthrough enables high-quality retrieval and embedding on edge devices like smartphones, reducing reliance on cloud infrastructure. It sets a new efficiency standard for retrieval models, potentially accelerating adoption of offline AI applications in mobile and IoT environments. The family includes three models: VultronRetrieverPrime-8B (global #1), Core-4.5B (outperforms models twice its size), and Flash-0.8B (outperforms models up to 5x its size, indexes up to 60 images per minute offline). They use the Hydra Architecture for late interaction retrieval with up to half the memory of comparable models, and were trained on datasets with 0% cross-dataset duplication and 0% eval contamination.
 
-hackernews · speckx · Jul 10, 15:59 · [Discussion](https://news.ycombinator.com/item?id=48861717)
+reddit · r/MachineLearning · /u/madkimchi · Jul 11, 15:22
 
-**Background**: Radio frequency (RF) signals can penetrate common building materials like drywall and concrete. Phased-array systems use multiple antennas to steer beams electronically, enabling direction finding and imaging. QuadRF combines a Raspberry Pi 5 with an FPGA for real-time signal processing.
+**Background**: MTEB (Massive Text Embedding Benchmark) is a widely-used leaderboard for evaluating text embedding and retrieval models across diverse tasks. Late interaction retrieval, popularized by models like ColBERT, separates query and document encoding until the final matching step, enabling efficient and precise retrieval. The Hydra Architecture is a novel approach that combines late interaction with generation, reducing memory footprint.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.hackster.io/news/quadrf-the-open-source-rf-camera-that-lets-you-see-wi-fi-signals-141ad91f2a2d">QuadRF: The Open Source RF Camera That Lets You See Wi-Fi Signals - Hackster.io</a></li>
-<li><a href="https://scalerf.com/updates/">QuadRF Updates</a></li>
-<li><a href="https://www.crowdsupply.com/scale-rf/quadrf">QuadRF | Crowd Supply</a></li>
+<li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard - a Hugging Face Space by mteb</a></li>
+<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models... | Weaviate</a></li>
 
 </ul>
 </details>
 
-**Discussion**: QuadRF creator mrtnmcc engaged with the community, answering questions and noting UI improvements based on Jeff's feedback. Commenters discussed potential applications like sound localization and checking for hidden RF transmitters, while acknowledging that government agencies likely have similar capabilities.
+**Discussion**: The Reddit community expressed excitement about the models' efficiency and edge deployment capabilities, with many asking technical questions about the Hydra Architecture and comparisons to existing models like ColBERT. Some users raised concerns about the lack of open-source training code and reproducibility, while others praised the significant improvements in index size and throughput.
 
-**Tags**: `#RF`, `#open-source`, `#drone detection`, `#WiFi`, `#hardware`
+**Tags**: `#retrieval`, `#MTEB`, `#edge AI`, `#NLP`, `#HuggingFace`
 
 ---
 
 <a id="item-6"></a>
-## [Apple Sues OpenAI for Trade Secret Theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
+## [SpaceXAI and Cursor Launch Grok 4.5 for Coding, Legal, Finance](https://t.me/zaihuapd/42484) ⭐️ 8.0/10
 
-Apple filed a lawsuit against OpenAI, two former employees, and io Products in the U.S. District Court for the Northern District of California on July 10, 2026, alleging systematic theft of trade secrets related to hardware design, manufacturing processes, and supply chain information. This lawsuit could have major implications for the AI industry, potentially hindering OpenAI's hardware ambitions and setting a precedent for trade secret enforcement between tech giants. It also raises concerns about data security for businesses using OpenAI's models. Apple claims that former employee Chang Liu accessed internal networks and downloaded dozens of hardware files after leaving, and that OpenAI hardware head Tang Yew Tan instructed new hires to avoid scrutiny when leaving Apple. OpenAI allegedly used confidential Apple hardware information when approaching Apple suppliers.
+SpaceXAI and Cursor have jointly released Grok 4.5, a new AI model that ranks first on the Harvey legal agent benchmark and is optimized for coding, legal, and financial services tasks. This marks the first joint model after SpaceX's $60 billion acquisition of Cursor, combining SpaceXAI's scale with Cursor's coding expertise, potentially setting a new standard for domain-specific AI in professional services. Grok 4.5 runs at 80 tokens per second, claims twice the token efficiency of leading competitors, and is priced at $2 per million input tokens and $6 per million output tokens, with cached input at $0.50.
 
-hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
+telegram · zaihuapd · Jul 11, 01:44
 
-**Background**: Trade secret theft occurs when confidential business information is improperly acquired or used. Apple and OpenAI are both major players in AI and hardware, with Apple known for its tight security and OpenAI expanding into consumer hardware. The lawsuit echoes previous cases like Waymo vs. Uber, which had severe consequences for the accused.
+**Background**: Harvey is an open-source legal agent benchmark with over 1,200 tasks across 24 practice areas, scored against expert-written rubrics. Cursor is an AI coding agent and development environment founded in 2022, recently acquired by SpaceX. Token efficiency refers to generating more useful output per token, reducing cost per task.
 
-**Discussion**: Community comments express strong condemnation of OpenAI, with users calling the evidence damning and suggesting this could be the end of OpenAI's hardware efforts. Some warn businesses against using OpenAI models due to IP theft risks, while others highlight the broader issue of generative AI companies built on copyright violation.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark">Introducing Harvey ’s Legal Agent Benchmark</a></li>
+<li><a href="https://byteiota.com/grok-45-ga-token-efficiency-api-guide/">Grok 4.5 Is GA: Token Efficiency Beats the Benchmark Gap</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cursor_(company)">Cursor (company) - Wikipedia</a></li>
 
-**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI ethics`
+</ul>
+</details>
+
+**Tags**: `#AI`, `#Grok 4.5`, `#SpaceXAI`, `#Cursor`, `#legal AI`
 
 ---
 
 <a id="item-7"></a>
-## [SpaceX plans 100,000 more Starlink satellites for 100x bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
+## [U-Boot Bootloader Flaws Allow Code Execution Before OS Boot](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 8.0/10
 
-SpaceX has announced plans to launch up to 100,000 additional Starlink satellites, aiming to increase total network bandwidth by 100 times. This would expand the current constellation from roughly 6,000 satellites to over 100,000. If realized, this expansion could provide near-universal, high-speed internet access globally, including direct-to-cellphone service. However, it raises serious concerns about space debris, astronomical observations, and the monopolization of low Earth orbit by a single company. The plan is part of SpaceX's second-generation Starlink constellation, which requires regulatory approval from the FCC. The satellites would operate in very low Earth orbit (below 400 km) to reduce latency and improve deorbiting, but the sheer number increases collision risks.
+Binarly disclosed six vulnerabilities in U-Boot's FIT signature verification, two enabling arbitrary code execution and four causing device crashes, affecting versions since 2013.07. These flaws allow attackers to bypass boot-time security checks and execute malicious code before the OS loads, potentially compromising firmware security features and enabling persistent malware on a wide range of devices. The vulnerabilities reside in the FIT image signature verification code, where untrusted boot images are processed before validation completes. Patches have been accepted by U-Boot maintainers, but deployment depends on hardware vendors integrating them into firmware updates.
 
-hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
+telegram · zaihuapd · Jul 11, 08:32
 
-**Background**: Starlink is a low Earth orbit satellite constellation developed by SpaceX to provide high-speed, low-latency internet to remote and underserved areas. Currently, over 6,000 satellites are in orbit, serving about 160 countries. The proposed expansion to 100,000 satellites would dwarf existing megaconstellations and raise unprecedented orbital debris concerns.
+**Background**: U-Boot is a widely used open-source bootloader for embedded devices, supporting FIT (Flattened Image Tree) images with signature verification for secure boot. The Verified Boot mechanism ensures only authenticated firmware runs, but these flaws allow bypassing that check. BMCs (Baseboard Management Controllers) that support remote firmware updates are particularly at risk as attackers can exploit the vulnerabilities without physical access.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Starlink">Starlink - Wikipedia</a></li>
-<li><a href="https://www.space.com/spacex-starlink-satellites.html">Starlink satellites : Facts, tracking and impact on astronomy | Space</a></li>
-<li><a href="https://time.com/article/2026/04/16/space-debris-satellites-growing-risk/">The Looming Risk of Too Many Satellites and Debris in Space</a></li>
+<li><a href="https://docs.u-boot-project.org/en/latest/usage/fit/signature.html">U-Boot FIT Signature Verification</a></li>
+<li><a href="https://cybersecuritynews.com/u-boot-fit-signature-verification/">Six U-Boot FIT Signature Verification Flaws Enable Code ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect mixed feelings: some users express sadness over the privatization of the night sky and environmental impact, while others highlight the practical benefits for remote areas and global cellphone coverage. Skepticism about SpaceX's ability to deliver on promises is also voiced, referencing past delays.
-
-**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#space debris`, `#broadband`
+**Tags**: `#security`, `#bootloader`, `#U-Boot`, `#firmware`, `#vulnerability`
 
 ---
 
 <a id="item-8"></a>
-## [Scarf moves from Haskell to Python after 7 years](https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html) ⭐️ 8.0/10
+## [OpenAI Launches GPT-5.6 Series with Sol, Terra, Luna Tiers](https://t.me/zaihuapd/42497) ⭐️ 8.0/10
 
-Scarf, an open-source intelligence platform, has decided to migrate its production codebase from Haskell to Python after 7 years, citing slow compile times that hindered rapid iteration with LLM agents. This move highlights a growing tension between the safety of strong type systems and the speed required for AI-driven development, potentially influencing language choices for agentic workflows. The decision was driven by the need for fast compile times to support parallel LLM agent iterations; Haskell's cold compile times were deemed too slow for this use case.
+OpenAI has officially released the GPT-5.6 series, featuring three tiers: Sol (flagship), Terra (balanced), and Luna (cost-efficient), along with new capabilities like max/ultra reasoning, multi-agent collaboration, and programmatic tool calling. This release significantly improves performance-to-cost ratio, making advanced AI more accessible for complex tasks in coding, research, and cybersecurity, while the multi-agent and tool-calling features enable more autonomous and efficient workflows. Sol outperforms the previous Fable 5 benchmark by 13.1 points, while Luna costs one-fifth of Sol's price. The series introduces programmatic tool calling, which allows models to orchestrate tools via code instead of individual API round-trips.
 
-hackernews · aviaviavi · Jul 10, 13:30 · [Discussion](https://news.ycombinator.com/item?id=48859673)
+telegram · zaihuapd · Jul 11, 13:34
 
-**Background**: Haskell is a statically typed functional programming language known for its strong type system and high reliability, but it has notoriously slow compile times. LLM agents often require rapid code generation and testing loops, making compile speed critical. Scarf provides analytics for open-source software usage, including tracking by AI agents.
+**Background**: Large language models (LLMs) like GPT are typically accessed via API calls, with each tool invocation requiring a separate round-trip, which is inefficient for multi-step tasks. Programmatic tool calling enables the model to write and execute code that calls multiple tools in a single session, reducing latency and cost. Multi-agent collaboration allows multiple AI agents to coordinate on complex tasks, moving beyond single-model limitations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://about.scarf.sh/">Open source intelligence for the agentic era | Scarf</a></li>
-<li><a href="https://litellm.vercel.app/docs/a2a_iteration_budgets">Agent Iteration Budgets | liteLLM</a></li>
-<li><a href="https://www.emergentmind.com/topics/large-language-model-llm-agent">LLM Agent : Iterative Reasoning & Action</a></li>
+<li><a href="https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained">GPT-5.6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?</a></li>
+<li><a href="https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/">OpenAI Releases GPT-5.6 (Sol, Terra, Luna): A Three-Tier Model Family With Programmatic Tool Calling in the Responses API - MarkTechPost</a></li>
+<li><a href="https://www.mindstudio.ai/blog/what-is-gpt-5-6-soul-terra-luna-explained">What Is GPT-5.6? OpenAI's Soul, Terra, and Luna Model Tiers Explained | MindStudio</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community is divided: some argue that strong type systems are essential to constrain LLM outputs, while others find type systems less necessary with AI assistance. Some Haskell users report success with agentic development, suggesting compile times may not be universally prohibitive.
-
-**Tags**: `#Haskell`, `#type systems`, `#LLM`, `#software engineering`, `#programming languages`
+**Tags**: `#OpenAI`, `#GPT-5.6`, `#AI`, `#large language model`, `#machine learning`
 
 ---
 
 <a id="item-9"></a>
-## [China Imposes Temporary Ban on Helium Exports](https://wms.mofcom.gov.cn/zcfb/wmgl/art/2026/art_2a795a0d55df4cada91c9fbd2a2cc13a.html) ⭐️ 8.0/10
+## [Shanghai Aims for High-Quality Brain Control by 2027](https://t.me/zaihuapd/42501) ⭐️ 8.0/10
 
-On July 10, 2026, China's Ministry of Commerce and General Administration of Customs announced a temporary ban on helium exports (HS code 2804290010), effective immediately, citing the Foreign Trade Law. This ban could disrupt global helium supply chains, impacting semiconductor manufacturing, medical imaging (MRI), and scientific research, potentially driving up prices worldwide. The ban applies to helium with HS code 2804290010, effective from July 10, 2026, with no specified end date; future adjustments will be announced separately.
+The Shanghai Municipal Science and Technology Commission issued the "Shanghai Brain-Computer Interface Future Industry Cultivation Action Plan (2025-2030)", targeting high-quality brain control by 2027, with semi-invasive BCI products first to achieve clinical application and breakthroughs in invasive BCI research. This policy signals strong government support and investment in BCI technology, potentially accelerating clinical adoption and positioning Shanghai as a global leader in neurotechnology. It could bring life-changing communication and motor restoration to patients with paralysis or aphasia. The plan aims to have at least five invasive or semi-invasive BCI products complete medical device type testing and clinical trials, restoring partial language and motor functions for patients with aphasia and paralysis. The action plan covers 2025-2030.
 
-telegram · zaihuapd · Jul 10, 13:27
+telegram · zaihuapd · Jul 11, 15:49
 
-**Background**: Helium is a critical non-renewable resource used in cryogenics, pressurization, and as a shielding gas in welding. China is a significant producer, and export restrictions can tighten global supply, especially given rising demand from tech industries.
-
-**Tags**: `#trade policy`, `#helium`, `#supply chain`, `#semiconductor`, `#critical materials`
-
----
-
-<a id="item-10"></a>
-## [EU May Fine Meta $12 Billion for Addictive Design](https://www.theverge.com/policy/963872/meta-eu-addictive-design-200b-fine-risk-digital-services-act-dsa) ⭐️ 8.0/10
-
-The European Commission has preliminarily found that Meta's Facebook and Instagram violate the Digital Services Act through addictive design features like infinite scroll and autoplay, potentially leading to a fine of up to $12 billion. This marks one of the largest potential fines under the DSA and could force Meta to redesign its platforms, setting a precedent for how social media companies address addictive design globally. The EU criticizes Meta's existing time-limiting tools as ineffective and demands default disabling of addictive features, effective screen time breaks, and reduced engagement-driven algorithms. The fine would represent 6% of Meta's global annual revenue.
-
-telegram · zaihuapd · Jul 10, 14:47
-
-**Background**: The Digital Services Act (DSA) is an EU regulation that imposes strict obligations on very large online platforms to mitigate systemic risks, including risks to mental health. Addictive design patterns, such as infinite scroll and personalized recommendations, are designed to maximize user engagement but have been linked to negative psychological effects.
+**Background**: Brain-computer interfaces (BCIs) enable direct communication between the brain and external devices. They are categorized into non-invasive (scalp electrodes), semi-invasive (electrodes placed under the skull but outside the brain), and invasive (electrodes implanted in brain tissue). Semi-invasive BCIs offer a balance between signal quality and surgical risk, making them promising for early clinical adoption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Digital_Services_Act">Digital Services Act</a></li>
+<li><a href="https://paper.people.com.cn/rmrb/pc/content/202607/04/content_30166549.html">无创接入，脑机接口迎来更多可能（院士讲科普·未来产业）</a></li>
+<li><a href="https://www.nhsa.gov.cn/art/2025/3/13/art_52_15967.html">nhsa.gov.cn/art/2025/3/13/art_52_15967.html</a></li>
+<li><a href="https://www.jfdaily.com/wx/detail.do?id=874565">三家“ 脑 机 接 口 ”头部企业为何出现在上海？｜跟着项目经理看未来产业</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Meta`, `#EU regulation`, `#Digital Services Act`, `#addictive design`, `#privacy`
-
----
-
-<a id="item-11"></a>
-## [SK Hynix ADR Surges 14% on Nasdaq Debut, Raises $26.5B](https://www.aljazeera.com/economy/2026/7/10/south-koreas-sk-hynix-raises-26-5bn-in-record-breaking-us-ipo) ⭐️ 8.0/10
-
-SK Hynix's American Depositary Receipt (ADR) began trading on the Nasdaq on July 10, 2026, priced at $149 per share, raising approximately $26.5 billion. The ADR surged 14% on its first day, opening at around $170. This is the largest foreign IPO in U.S. history, surpassing Alibaba's $25 billion record in 2014, and underscores the surging demand for high-bandwidth memory (HBM) chips driven by AI. The strong debut signals investor confidence in the semiconductor sector's AI growth story. The offering was oversubscribed more than 7 times, reflecting intense investor interest. SK Hynix is the world's largest manufacturer of HBM chips, which are critical for AI graphics processors from Nvidia and AMD.
-
-telegram · zaihuapd · Jul 10, 16:02
-
-**Background**: An American Depositary Receipt (ADR) is a negotiable certificate issued by a U.S. bank representing a specified number of shares in a foreign company, allowing the company to trade on U.S. exchanges. High-bandwidth memory (HBM) is a 3D-stacked DRAM technology that provides ultra-wide bandwidth and low power consumption, essential for AI and high-performance computing workloads. SK Hynix's IPO proceeds will likely be used to expand HBM production capacity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://ai.zhiding.cn/2026/0709/3192818.shtml">高带宽内存：它是什么，为何至关重要--人工智能-至顶网</a></li>
-<li><a href="https://www.hstong.com/sns/status/long/16347870644145372">躺平说投资 | 中概股与 美 国 存 托 凭 证 ADR | 华盛通</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#IPO`, `#semiconductors`, `#AI`, `#HBM`, `#SK Hynix`
-
----
-
-<a id="item-12"></a>
-## [SK Hynix CEO Warns of Worst Memory Shortage by 2027](https://www.reuters.com/world/asia-pacific/sk-hynix-ceo-sees-worst-ever-memory-supply-shortage-2027-says-demand-outstrip-2026-07-10/) ⭐️ 8.0/10
-
-SK Hynix CEO Kwak Noh-Jung warned that the global memory industry will face its worst-ever supply shortage by 2027, with demand outstripping supply even after expansion, and the shortage may persist beyond 2030. This prediction signals a structural shift in the memory market driven by AI demand, which could disrupt supply chains for computers, cars, and consumer electronics for years. SK Hynix is considering overseas wafer fab locations in the US, Japan, and Southeast Asia, prioritizing land, electricity, and labor costs. The company reported a record operating profit of 47 trillion won ($31 billion) in 2025.
-
-telegram · zaihuapd · Jul 11, 00:45
-
-**Background**: Memory chips (DRAM and NAND Flash) are essential components in computers, smartphones, and AI servers. The industry has historically experienced boom-and-bust cycles, but the current AI-driven demand surge is creating a structural shortage that may last longer than typical cycles.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.studioglobal.ai/zh-cn/discover/answers/search-6a51ba2c19402d8e33c08142">SK海力士、英伟达、美光CEO集体发声：AI内存结构性短缺将成新常态 | ...</a></li>
-<li><a href="https://www.163.com/dy/article/L1I1H0BL0519QIKK.html">告别周期性宿命！SK海力士CEO预警存储芯片短缺将延续至下一个十年，集...</a></li>
-<li><a href="https://finance.sina.com.cn/roll/2026-07-11/doc-inihkyia6742015.shtml">SK海力士CEO预计存储芯片短缺将持续到下一个十年</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#semiconductors`, `#memory`, `#supply chain`, `#SK Hynix`, `#industry forecast`
-
----
-
-<a id="item-13"></a>
-## [SpaceXAI and Cursor Launch Grok 4.5](https://t.me/zaihuapd/42484) ⭐️ 8.0/10
-
-SpaceXAI and Cursor have jointly released Grok 4.5, their first model since SpaceX's $60 billion acquisition of Cursor, claiming top performance on the Harvey legal benchmark and double the token efficiency of leading models. This release signals a major push into specialized AI for high-stakes professional domains like coding, law, and finance, potentially reshaping competition among AI model providers. Grok 4.5 runs at 80 tokens per second and is priced at $2 per million input tokens, with a focus on coding, legal, and financial services tasks as well as enhanced cybersecurity capabilities.
-
-telegram · zaihuapd · Jul 11, 01:44
-
-**Background**: Cursor is an AI-powered code editor and development environment valued at $29.3 billion before its acquisition by SpaceX in June 2026. The Harvey Legal Agent Benchmark is an open-source benchmark for evaluating LLM agents on real legal work. Token efficiency refers to how many tokens a model uses to generate a response, affecting cost and speed.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark">Introducing Harvey’s Legal Agent Benchmark</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Cursor_(company)">Cursor (company)</a></li>
-<li><a href="https://medium.com/@kailash.thiyagarajan/improving-llm-efficiency-a-deep-dive-into-tokenization-attention-and-key-value-caching-83d7239310be">Improving LLM Efficiency : A Deep Dive into Tokenization... | Medium</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Grok 4.5`, `#SpaceXAI`, `#Cursor`, `#LLM`
-
----
-
-<a id="item-14"></a>
-## [Six U-Boot Bootloader Flaws Allow Code Execution Before OS Boot](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 8.0/10
-
-Binarly disclosed six vulnerabilities in U-Boot's FIT signature verification, including two critical remote code execution flaws and four denial-of-service flaws, affecting versions since 2013.07. These vulnerabilities allow attackers to execute malicious code before the operating system boots, bypassing firmware security and enabling stealthy persistent attacks. They affect numerous embedded devices and BMCs that support remote firmware updates. The two critical flaws (BRLY-2026-037 and BRLY-2026-038) enable arbitrary code execution, while the other four cause denial of service. Patches have been accepted by U-Boot maintainers but require downstream vendors to integrate and distribute.
-
-telegram · zaihuapd · Jul 11, 08:32
-
-**Background**: U-Boot is a widely used open-source bootloader for embedded devices, responsible for loading the operating system. FIT (Flattened Image Tree) is a format for packaging kernel, device tree, and other binaries, with signature verification to ensure authenticity. The vulnerabilities reside in the signature verification code, allowing attackers to bypass checks and execute arbitrary code during boot.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://cybersecuritynews.com/u-boot-fit-signature-verification/">Six U - Boot FIT Signature Verification Flaws Enable Code Execution...</a></li>
-<li><a href="https://docs.u-boot-project.org/en/latest/usage/fit/signature.html">U - Boot FIT Signature Verification — Das U - Boot unknown version...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#security`, `#vulnerability`, `#bootloader`, `#firmware`, `#U-Boot`
+**Tags**: `#brain-computer interface`, `#policy`, `#China`, `#clinical application`, `#neurotechnology`
 
 ---
