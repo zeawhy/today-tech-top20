@@ -5,183 +5,213 @@ date: 2026-07-11
 lang: en
 ---
 
-> From 38 items, 10 important content pieces were selected
+> From 37 items, 11 important content pieces were selected
 
 ---
 
-1. [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](#item-1) ⭐️ 10.0/10
-2. [China's Long March 10B achieves world's first net-based rocket recovery at sea](#item-2) ⭐️ 9.0/10
-3. [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](#item-3) ⭐️ 8.0/10
-4. [Apple sues OpenAI over trade secret theft](#item-4) ⭐️ 8.0/10
-5. [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](#item-5) ⭐️ 8.0/10
-6. [Tencent in Talks to Acquire AI Startup Manus from Meta](#item-6) ⭐️ 8.0/10
-7. [OpenAI, Google reportedly provided AI models to blacklisted Chinese firms via Singapore](#item-7) ⭐️ 8.0/10
-8. [China Imposes Temporary Ban on Helium Exports](#item-8) ⭐️ 8.0/10
-9. [Meta Faces $12 Billion EU Fine Over Addictive Design](#item-9) ⭐️ 8.0/10
-10. [SpaceXAI and Cursor Launch Grok 4.5 for Coding, Legal, Finance](#item-10) ⭐️ 8.0/10
+1. [Apple Sues OpenAI Over Trade Secret Theft](#item-1) ⭐️ 9.0/10
+2. [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](#item-2) ⭐️ 9.0/10
+3. [Humanoid Robot Performs World's First Live Pig Gallbladder Surgery](#item-3) ⭐️ 9.0/10
+4. [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](#item-4) ⭐️ 8.0/10
+5. [Relativity governs chemical bonds in heavy elements](#item-5) ⭐️ 8.0/10
+6. [QuadRF: Open-Source RF Camera Sees Drones and WiFi Through Walls](#item-6) ⭐️ 8.0/10
+7. [SpaceX Plans 100,000 More Starlink Satellites for 100x Bandwidth](#item-7) ⭐️ 8.0/10
+8. [OpenAI, Google reportedly served AI to blacklisted Chinese firms](#item-8) ⭐️ 8.0/10
+9. [China Imposes Temporary Ban on Helium Exports](#item-9) ⭐️ 8.0/10
+10. [SK Hynix CEO Warns of Worst Memory Shortage by 2027](#item-10) ⭐️ 8.0/10
+11. [SpaceXAI and Cursor Release Grok 4.5 for Coding, Legal, Finance](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 10.0/10
+## [Apple Sues OpenAI Over Trade Secret Theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 9.0/10
 
-OpenAI's GPT-5.6 Sol Ultra model has produced a purported proof of the Cycle Double Cover Conjecture, a major open problem in graph theory, released as a preprint on July 10, 2026. If verified, this would mark the first time an AI has autonomously proven a long-standing mathematical conjecture, representing a paradigm shift in both AI capabilities and mathematical research. The proof is extremely concise, suggesting a clever trick that experts may have missed, and the prompt included extensive instructions to avoid vague optimism and to actually solve the problem.
+Apple filed a lawsuit against OpenAI, two former employees, and io Products in the U.S. District Court for the Northern District of California on July 10, 2026, alleging systematic theft of trade secrets related to hardware design, manufacturing processes, and supply chain information. This lawsuit could severely impact OpenAI's hardware ambitions and set a precedent for trade secret protection in the AI industry, potentially affecting trust in AI companies and their business practices. Apple claims that former employee Chang Liu accessed internal networks and downloaded dozens of hardware files after leaving, and that OpenAI hardware head Tang Yew Tan sent supplier information to his personal email before resigning and instructed job candidates to bring Apple components to interviews.
 
-hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
+hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
 
-**Background**: The Cycle Double Cover Conjecture, posed by Tutte, Itai, Rodeh, Szekeres, and Seymour, asks whether every bridgeless undirected graph has a collection of cycles such that each edge appears exactly twice. It is a central problem in graph theory with connections to graph embeddings and the circular embedding conjecture.
+**Background**: Trade secrets are confidential business information that provides a competitive edge. Apple has long guarded its hardware designs and supply chain details. OpenAI, primarily known for AI software, has been expanding into consumer hardware, which Apple alleges is built on stolen secrets.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT - 5 . 6 Sol : a next-generation model | OpenAI</a></li>
-<li><a href="https://www.datacamp.com/blog/gpt-5-6-sol-luna-terra">GPT - 5 . 6 Sol , Terra, and Luna: OpenAI's Next-Gen Model... | DataCamp</a></li>
+**Discussion**: Commenters largely view the case as damaging for OpenAI, comparing it to the Waymo vs. Uber lawsuit that killed Uber's self-driving project. Some express distrust in OpenAI's business ethics, warning that companies using OpenAI models risk exposing their own IP.
 
-</ul>
-</details>
-
-**Discussion**: Commenters noted the irony that the prompt spent much effort telling the model to actually solve the problem, and some questioned whether the community truly cares about the conjecture, given its low prior engagement. Others highlighted that the proof's conciseness suggests a clever trick, but that autonomous theory-building remains an AI milestone yet to be achieved.
-
-**Tags**: `#AI`, `#mathematics`, `#proof`, `#GPT-5.6`, `#graph theory`
+**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
 
 ---
 
 <a id="item-2"></a>
-## [China's Long March 10B achieves world's first net-based rocket recovery at sea](https://weibo.com/7340734455/R814of1Ki) ⭐️ 9.0/10
+## [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 9.0/10
 
-On July 10, 2026, China's Long March 10B rocket launched from Hainan Commercial Space Launch Site and successfully recovered its first stage via a net-based system on a sea platform, marking China's first controlled recovery of a rocket first stage and the world's first net-based recovery of a launch vehicle. This breakthrough establishes China as a key player in reusable rocket technology, reducing launch costs and enabling more frequent access to space. The net-based recovery method eliminates the need for landing legs, simplifying the rocket design and potentially accelerating the development of reusable launch vehicles globally. The Long March 10B is derived from the Long March 10A by removing crew safety equipment and replacing the second stage with a liquid oxygen/methane variant. The net-based recovery uses a well-shaped arresting cable system on the recovery ship to catch the rocket's hook and buffer it to a stop, achieving无损 (nondestructive) recovery.
+OpenAI's GPT-5.6 Sol Ultra model has generated a proof of the Cycle Double Cover Conjecture, a long-standing open problem in graph theory, as announced on July 10, 2026. This marks the first time an AI has produced a proof of a major open conjecture in mathematics, demonstrating the potential of large language models to contribute to fundamental research. The proof is extremely concise, suggesting a clever trick that experts had missed. OpenAI also released the full prompt used to generate the proof, allowing community scrutiny.
 
-telegram · zaihuapd · Jul 10, 04:36
+hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
 
-**Background**: Reusable rocket technology, pioneered by SpaceX's Falcon 9, typically uses landing legs for vertical touchdown. China's Long March series has traditionally been expendable. The net-based recovery approach offers an alternative that avoids the mass penalty of landing legs and allows recovery on a moving platform at sea, which could be more flexible for various mission profiles.
+**Background**: The Cycle Double Cover Conjecture, posed by Tutte, Itai and Rodeh, Szekeres, and Seymour, asks whether every bridgeless graph has a collection of cycles that covers each edge exactly twice. It is a central problem in graph theory with connections to graph embeddings and the circular embedding conjecture.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.news.cn/20260710/76bfd64fb0b1446ba00ac7514c49bb40/c.html">新华社快讯：长征十号乙运载火箭实现一子级可控回收-新华网</a></li>
-<li><a href="https://www.news.cn/20260710/699cccd9572b4c70a0c9eddc96b77eaf/c.html">新华鲜报丨长征十号乙首飞成功 我国运载火箭首次实现可控回收-新华网</a></li>
-<li><a href="https://www.guancha.cn/kegongliliang/2026_07_10_823277.shtml">长10乙 回 收 成功：美国人做了和没做的事，我们都要做-科工力量</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
+<li><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">A PROOF OF THE CYCLE DOUBLE COVER CONJECTURE OPENAI</a></li>
+<li><a href="https://openai.com/index/gpt-5-6/">GPT‑5.6: Frontier intelligence that scales with your ambition</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#rocket recovery`, `#reusable rockets`, `#aerospace`, `#China space program`, `#engineering milestone`
+**Discussion**: Commenters noted the prompt's extensive instructions to avoid vague optimism and to reject unproven claims, highlighting the current need for careful human guidance. Some expressed amazement at the concise proof, while others pointed out that this still falls short of autonomous theory-building by AI.
+
+**Tags**: `#AI`, `#mathematics`, `#graph theory`, `#research`, `#GPT`
 
 ---
 
 <a id="item-3"></a>
-## [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+## [Humanoid Robot Performs World's First Live Pig Gallbladder Surgery](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
 
-SGLang v0.5.15 delivers optimized serving for GLM-5.2 NVFP4 on Blackwell GPUs, achieving over 500 tokens per second per user on 8x B300 and 450 tok/s/user on 4x GB300 at batch size 1. Key improvements include Speculative Decoding V2 by default, IndexShare MTP, TopK V2, and GEMM optimizations. This release significantly improves the efficiency of serving large language models on NVIDIA's latest Blackwell architecture, enabling higher throughput and lower latency for production AI inference. The optimizations, especially Spec V2 and IndexShare MTP, reduce overhead and improve draft-step efficiency, benefiting applications that require real-time or high-throughput LLM serving. Speculative Decoding V2 becomes the default, using CUDA-graphable DSA draft-extend to eliminate CPU syncs and fuse metadata ops, yielding an 11% end-to-end TPS gain. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x at long context. TopK V2 fuses top-k selection with page-table transform, supporting runtime k up to 2048.
+Surgeons remotely operated a Unitree G1 humanoid robot to perform the world's first laparoscopic cholecystectomy on live pigs, with results published in Nature. This breakthrough demonstrates that low-cost general-purpose humanoid robots can perform complex surgical tasks, potentially making robotic surgery accessible in rural, battlefield, or space settings where specialized surgical robots are too expensive or unavailable. The Unitree G1 robot costs $13,500 for the base model and about $67,000 with dexterous hands, far less than the $500,000 to millions for da Vinci surgical robots. The robot is 1.5 meters tall and weighs 27 kg, occupying minimal space.
 
-github · Fridge003 · Jul 10, 22:58
+telegram · zaihuapd · Jul 11, 02:29
 
-**Background**: NVFP4 is a 4-bit floating-point format introduced with NVIDIA's Blackwell GPU architecture, designed for efficient low-precision inference while maintaining accuracy. SGLang is an open-source framework for serving large language models, and speculative decoding is a technique that uses a smaller draft model to predict multiple tokens per step, reducing latency. The Blackwell B300 and GB300 GPUs are NVIDIA's latest high-performance accelerators for AI workloads.
+**Background**: Laparoscopic cholecystectomy is a minimally invasive surgery to remove the gallbladder, commonly performed for gallstones. The da Vinci Surgical System is the current gold standard for robotic surgery but costs hundreds of thousands to millions of dollars. Unitree G1 is a general-purpose humanoid robot designed for various tasks, not specifically for surgery.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference</a></li>
-<li><a href="https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2">GLM-5.2 - SGLang Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unitree_Robotics">Unitree Robotics - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Laparoscopic_cholecystectomy">Laparoscopic cholecystectomy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Da_Vinci_Surgical_System">da Vinci Surgical System - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI inference`, `#GPU optimization`, `#LLM serving`, `#SGLang`, `#Blackwell`
+**Tags**: `#humanoid robotics`, `#surgical robotics`, `#medical technology`, `#robotic surgery`, `#Nature`
 
 ---
 
 <a id="item-4"></a>
-## [Apple sues OpenAI over trade secret theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
+## [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell GPUs](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
 
-Apple has filed a lawsuit against OpenAI, alleging that the company systematically recruited ex-Apple employees who stole trade secrets, including confidential hardware information and supplier contacts. This high-profile legal battle between two tech giants could set a precedent for trade secret protection in the AI industry and impact how companies handle employee transitions. Apple claims OpenAI instructed new hires to avoid disclosing their new jobs to Apple, and that employees emailed themselves confidential data upon leaving. The lawsuit also alleges OpenAI used Apple's hardware information to approach suppliers.
+SGLang v0.5.15 delivers optimized serving for GLM-5.2 using NVFP4 precision on Blackwell GPUs, achieving over 500 tokens per second per user on 8x B300. It also introduces speculative decoding improvements, IndexShare MTP, and new model support including Hunyuan 3 and Qwen3.6. This release significantly improves inference performance for large language models on NVIDIA's latest Blackwell architecture, making production deployment more efficient. The speculative decoding and IndexShare MTP optimizations can reduce latency and cost for long-context applications. Speculative decoding V2 is now default, providing an 11% end-to-end throughput gain via CUDA-graphable DSA draft-extend. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x on long contexts.
 
-hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
+github · Fridge003 · Jul 10, 22:58
 
-**Background**: Trade secrets are confidential business information that provides a competitive edge. Companies like Apple rely on strict confidentiality agreements to protect such assets. This case highlights the tension between talent mobility and intellectual property protection.
+**Background**: SGLang is an open-source framework for serving large language models efficiently. NVFP4 is a 4-bit floating-point precision format from NVIDIA that reduces memory usage and accelerates inference on Blackwell GPUs. Speculative decoding speeds up generation by using a smaller draft model to propose tokens that a larger target model verifies in parallel.
 
-**Discussion**: Commenters largely side with Apple, calling the evidence damning and predicting OpenAI will face severe consequences. Some note that discovery could reveal more damaging information for OpenAI.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://research.google/blog/looking-back-at-speculative-decoding/">Looking back at speculative decoding</a></li>
+<li><a href="https://huggingface.co/JongYeop/Mistral-7B-Instruct-v0.2-FP4-W4A4">JongYeop/Mistral-7B-Instruct-v0.2-FP4-W4A4 · Hugging Face</a></li>
 
-**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#legal`, `#AI`
+</ul>
+</details>
+
+**Tags**: `#LLM serving`, `#GPU optimization`, `#speculative decoding`, `#SGLang`
 
 ---
 
 <a id="item-5"></a>
-## [Chinese Courts Rule Game Accounts Inheritable, Platform Bans Invalid](https://www.tomshardware.com/tech-industry/big-tech/chinese-courts-allow-heirs-to-inherent-accounts-of-deceased-gamers-multiple-cases-spanning-years-establish-precedent-for-digital-ownership-of-games-in-game-items-and-microtransactions) ⭐️ 8.0/10
+## [Relativity governs chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
 
-Chinese courts have ruled in multiple cases spanning several years that virtual assets such as game accounts, equipment, and cryptocurrencies are inheritable property, invalidating platform clauses that prohibit inheritance. This establishes a significant legal precedent for digital ownership in China, affecting millions of gamers and their heirs, and pressures platforms to revise user agreements to comply with inheritance rights. The courts ruled that chat logs and other purely personal privacy content are not inheritable and will be archived by the platform; platforms may charge reasonable fees for transferring accounts.
+Researchers at Brown University have provided the first direct experimental evidence that Einstein's theory of relativity dictates the behavior of chemical bonds in heavy elements, specifically showing that the textbook triple bond structure breaks down in such elements. This experimental confirmation validates Dirac's relativistic quantum equations for chemical bonding, which has implications for understanding the chemistry of heavy elements used in batteries, catalysts, and nuclear materials. The study, published in Science, demonstrates that spin-orbit coupling—a relativistic effect—causes sigma and pi bonds to mix in heavy elements, altering bond order and geometry from non-relativistic predictions.
 
-telegram · zaihuapd · Jul 10, 02:56
+hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
 
-**Background**: In China, the Civil Code recognizes virtual property as legal property, but platform user agreements often prohibit inheritance. These court decisions clarify that such clauses violate statutory rights and are unenforceable, building on earlier cases like the 'Dragon Saber' case in the game 'Zheng Tu'.
+**Background**: In quantum chemistry, chemical bonds are typically described by non-relativistic Schrödinger equations. However, for heavy elements like uranium or lead, electrons move at speeds close to the speed of light, requiring relativistic corrections. Dirac's equation, which incorporates special relativity, predicts effects such as spin-orbit coupling that become significant in these elements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.spp.gov.cn/spp/llyj/201808/t20180811_388070.shtml">网络虚拟账号能否继承_中华人民共和国最高人民检察院</a></li>
-<li><a href="https://peking.bjd.com.cn/channels/5b165687a010550e5ddc0e70/contentShare/64632331e4b0cee0ece8db92/AP662793a6e4b0f6c5abd5d6c4.html">“我的游戏账号，孩子能继承吗？”</a></li>
-<li><a href="https://www.dehenglaw.com/CN/tansuocontent/0008/030668/7.aspx?MID=0902">虚拟财产能否继承？ - 德恒探索 - 德恒律师事务所</a></li>
+<li><a href="https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity">Einstein’s relativity rules chemical bonds in heavy elements ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dirac_equation">Dirac equation - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#digital inheritance`, `#virtual assets`, `#Chinese law`, `#gaming`, `#digital ownership`
+**Discussion**: Commenters noted that relativistic effects on heavy elements were already known (e.g., gold's color), but this study provides direct experimental evidence for bond structure. Some questioned whether the findings could be reproduced in alternative quantum frameworks like Bohmian mechanics.
+
+**Tags**: `#physics`, `#chemistry`, `#relativity`, `#quantum mechanics`, `#experimental physics`
 
 ---
 
 <a id="item-6"></a>
-## [Tencent in Talks to Acquire AI Startup Manus from Meta](https://www.reuters.com/technology/tencent-talks-become-ai-start-up-manus-largest-shareholder-ft-reports-2026-07-10/) ⭐️ 8.0/10
+## [QuadRF: Open-Source RF Camera Sees Drones and WiFi Through Walls](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
 
-Tencent is negotiating to acquire AI startup Manus from Meta, aiming to become its largest shareholder, after Beijing blocked Meta's $2 billion acquisition. This deal could reshape the AI landscape in China, giving Tencent control over a promising AI agent platform and intensifying competition with other tech giants. Tencent will partner with original investors ZhenFund and HSG to buy back Manus from Meta at a price no less than $2 billion.
+QuadRF, an open-source RF visualization tool built on a Raspberry Pi 5, allows users to see and map wireless signals in augmented reality, including detecting drones and visualizing WiFi signals through walls. This tool democratizes RF sensing, previously limited to government agencies, enabling hobbyists, security researchers, and privacy advocates to detect hidden devices, monitor drone activity, and understand their wireless environment. QuadRF uses a phased-array antenna and beamforming to locate RF sources, and it can decode NTSC video transmissions from drones. The system is open-source and customizable, with the creator actively improving the UI based on user feedback.
 
-telegram · zaihuapd · Jul 10, 06:45
+hackernews · speckx · Jul 10, 15:59 · [Discussion](https://news.ycombinator.com/item?id=48861717)
 
-**Background**: Manus is an AI agent platform that goes beyond chat to execute multi-step tasks autonomously. ZhenFund is a Chinese angel investment fund co-founded by New Oriental co-founders, and HSG (HongShan) is a major Chinese venture capital firm formerly known as Sequoia Capital China.
+**Background**: RF visualization involves converting radio frequency signals into visual representations, often using techniques like beamforming and phased arrays to determine direction and distance. While similar capabilities have existed in military and intelligence contexts, open-source projects like QuadRF make this technology accessible to the public for the first time.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Manus_AI_company">Manus ( AI company ) — Grokipedia</a></li>
-<li><a href="https://www.followme.com/baike/27122.html">真 格 基 金 是什么 真 格 基 金 怎么样_Followme交易社区</a></li>
-<li><a href="https://en.wikipedia.org/wiki/HongShan">HongShan - Wikipedia</a></li>
+<li><a href="https://www.hackster.io/news/quadrf-the-open-source-rf-camera-that-lets-you-see-wi-fi-signals-141ad91f2a2d">QuadRF: The Open Source RF Camera That Lets You See Wi-Fi Signals - Hackster.io</a></li>
+<li><a href="https://scalerf.com/updates/">QuadRF Updates</a></li>
+<li><a href="https://www.crowdsupply.com/scale-rf/quadrf">QuadRF | Crowd Supply</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#M&A`, `#Tencent`, `#Meta`, `#Manus`
+**Discussion**: The creator of QuadRF engaged in the comments, offering demo videos and noting ongoing UI improvements. Commenters expressed interest in building similar tools for sound localization and speculated about government capabilities, while also discussing potential privacy implications.
+
+**Tags**: `#RF`, `#open-source`, `#hardware`, `#privacy`, `#drones`
 
 ---
 
 <a id="item-7"></a>
-## [OpenAI, Google reportedly provided AI models to blacklisted Chinese firms via Singapore](https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f) ⭐️ 8.0/10
+## [SpaceX Plans 100,000 More Starlink Satellites for 100x Bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
 
-According to a Financial Times report, OpenAI and Google have been providing advanced AI services to Singapore subsidiaries of Alibaba, Baidu, and Tencent, whose parent companies are on the Pentagon's 1260H list of Chinese military companies. This revelation highlights potential loopholes in US export controls, as current restrictions do not broadly ban Chinese parent companies from accessing advanced AI models outside mainland China, reigniting calls for stricter AI export regulations. OpenAI suspended API access for an Alibaba-affiliated user last month after detecting suspected model distillation, and reported the incident to the US government; Anthropic has adopted stricter policies, fully banning Chinese companies and their overseas entities from accessing its frontier AI models.
+SpaceX has announced plans to launch up to 100,000 additional Starlink satellites, aiming to increase total network bandwidth by 100 times. The expansion would rely on next-generation V3 satellites, each offering 1,024 Gbps of capacity, and the high-payload Starship launch system. If realized, this would dramatically expand global broadband access, especially in rural and remote areas, but also intensify concerns about light pollution, orbital debris, and impacts on astronomy. The scale of the constellation could fundamentally alter the night sky and raise regulatory and environmental questions. Current Starlink satellites have about 96 Gbps per satellite, while V3 satellites will boost that to 1,024 Gbps. The plan requires FCC approval and would increase the total constellation from roughly 6,000 today to over 100,000, far exceeding current regulatory limits.
 
-telegram · zaihuapd · Jul 10, 09:59
+hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
 
-**Background**: The 1260H list, part of the US National Defense Authorization Act, identifies Chinese military companies operating directly or indirectly in the US. Model distillation is a technique that transfers knowledge from a large AI model to a smaller one, which can be used to circumvent API access restrictions by extracting model capabilities.
+**Background**: Starlink is a satellite internet constellation operated by SpaceX, providing broadband service to over 4 million subscribers worldwide. The system uses low Earth orbit satellites to reduce latency compared to traditional geostationary satellites. Megaconstellations like Starlink have already drawn criticism from astronomers for interfering with observations, and from environmentalists for launch-related emissions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://research.umd.edu/resources/restricted-entities-lists">U . S . Restricted Parties Lists | Division of Research</a></li>
+<li><a href="https://www.basenor.com/blogs/news/starlink-v3-satellites-10x-bandwidth-leap-explained">Starlink V3 Satellites: 10x Bandwidth Leap Explained</a></li>
+<li><a href="https://www.nature.com/articles/s41586-025-09759-5">Satellite megaconstellations will threaten space-based ...</a></li>
+<li><a href="https://www.space.com/space-exploration/satellites/spacex-starlink-and-other-satellite-megaconstellations-are-creating-an-unregulated-geoengineering-experiment-scientists-say">SpaceX Starlink and other satellite megaconstellations are ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Comments reflect a mix of excitement and concern. Some users appreciate Starlink's value for rural connectivity, while others lament the loss of a natural night sky and question the business case outside underserved regions. A few express optimism about technological progress, but many highlight environmental and social trade-offs.
+
+**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#broadband`, `#astronomy`
+
+---
+
+<a id="item-8"></a>
+## [OpenAI, Google reportedly served AI to blacklisted Chinese firms](https://www.ft.com/content/5d6aafa1-5d47-4585-aa95-6ec06a6cd20f) ⭐️ 8.0/10
+
+According to the Financial Times, OpenAI and Google have been providing advanced AI services to Singapore subsidiaries of Alibaba, Baidu, and Tencent, whose parent companies are on the U.S. Department of Defense's 1260H list of Chinese military companies. This revelation reignites calls for stricter U.S. export controls on frontier AI software, as current rules do not broadly restrict Chinese parent companies from accessing AI models outside mainland China, potentially undermining national security efforts. OpenAI suspended API access for an Alibaba-affiliated user last month after detecting suspected model distillation and reported the incident to the U.S. government. In contrast, Anthropic has a stricter policy that fully bans Chinese companies and their overseas entities from accessing its frontier AI models.
+
+telegram · zaihuapd · Jul 10, 09:59
+
+**Background**: The 1260H list, mandated by the U.S. National Defense Authorization Act, identifies Chinese companies allegedly linked to the People's Liberation Army. Model distillation is a technique where knowledge from a large AI model is transferred to a smaller one, which can be used to replicate capabilities without direct access. The U.S. government has been increasingly concerned about China using such methods to acquire advanced AI technology.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/1260H_list">1260H list</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Model_distillation">Model distillation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#export control`, `#geopolitics`, `#OpenAI`, `#Google`
+**Tags**: `#AI`, `#export controls`, `#geopolitics`, `#OpenAI`, `#Google`
 
 ---
 
-<a id="item-8"></a>
+<a id="item-9"></a>
 ## [China Imposes Temporary Ban on Helium Exports](https://wms.mofcom.gov.cn/zcfb/wmgl/art/2026/art_2a795a0d55df4cada91c9fbd2a2cc13a.html) ⭐️ 8.0/10
 
-On July 10, 2026, China's Ministry of Commerce and General Administration of Customs jointly issued an announcement imposing a temporary ban on the export of helium (HS code 2804290010), effective immediately. This ban could disrupt global supply chains for semiconductors, medical imaging (MRI), and scientific research, as China is a major helium consumer and its domestic demand is rising. The move may exacerbate the ongoing global helium shortage, impacting industries reliant on this critical gas. The ban covers helium with HS code 2804290010 and is based on the Foreign Trade Law of China. The announcement did not specify a duration, stating that adjustments will be announced separately.
+On July 10, 2026, China's Ministry of Commerce and General Administration of Customs announced a temporary ban on helium exports, effective immediately under Announcement No. 29 of 2026. This ban could disrupt global semiconductor manufacturing, medical imaging, and scientific research, as China is a major re-exporter of helium from Qatar and Russia, and the move comes amid an existing global helium supply crisis. The ban covers helium under customs code 2804290010, with no specified duration, exemption mechanisms, or official explanation provided in the announcement.
 
 telegram · zaihuapd · Jul 10, 13:27
 
-**Background**: Helium is a non-renewable resource essential for cooling in semiconductor manufacturing, as a coolant in MRI machines, and for pressurizing rocket fuel tanks. China has been rapidly expanding its semiconductor industry, increasing domestic helium demand, while global supply has been strained due to production outages and geopolitical tensions.
+**Background**: Helium is a critical gas used in semiconductor manufacturing for cooling extreme ultraviolet lithography machines, wafer processing, and leak detection. The global helium supply has been strained due to the Middle East conflict, with Qatar's 30% share of global production offline, causing spot prices to surge 40-100%. China's ban on re-exports further tightens supply, impacting chipmakers like Samsung and SK Hynix.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://thedeepdive.ca/china-helium-export-ban-chip-supply/">China bans helium exports to protect domestic supply</a></li>
+<li><a href="https://rareearthexchanges.com/news/china-places-helium-under-temporary-export-controls-raising-fresh-supply-chain-questions/">China Places Helium Under Temporary Export Controls, Raising...</a></li>
 <li><a href="https://www.chosun.com/english/world-en/2026/07/10/SZGBZAJ64NAVZCBQT4747RBY7A/">China Bans Helium Exports Vital for Semiconductor Production</a></li>
+<li><a href="https://easternherald.com/2026/07/10/china-helium-export-ban-semiconductor-supply/">China Bans Helium Exports Amid Middle East Supply Crisis</a></li>
 
 </ul>
 </details>
@@ -190,45 +220,44 @@ telegram · zaihuapd · Jul 10, 13:27
 
 ---
 
-<a id="item-9"></a>
-## [Meta Faces $12 Billion EU Fine Over Addictive Design](https://www.theverge.com/policy/963872/meta-eu-addictive-design-200b-fine-risk-digital-services-act-dsa) ⭐️ 8.0/10
+<a id="item-10"></a>
+## [SK Hynix CEO Warns of Worst Memory Shortage by 2027](https://www.reuters.com/world/asia-pacific/sk-hynix-ceo-sees-worst-ever-memory-supply-shortage-2027-says-demand-outstrip-2026-07-10/) ⭐️ 8.0/10
 
-The European Commission has preliminarily found that Meta's Facebook and Instagram violate the Digital Services Act due to addictive design features like infinite scroll, autoplay, and personalized recommendations, potentially leading to a fine of up to $12 billion (6% of global annual revenue). This marks one of the largest potential fines under the DSA and could force Meta to redesign core features, setting a precedent for regulating addictive design across the tech industry. The EU criticizes Meta's current time-limiting tools as ineffective and demands default disabling of addictive features, effective screen breaks, and reduced engagement-driven algorithms. The final decision could still change before the fine is imposed.
+SK Hynix CEO Kwak Noh-Jung warned that the global memory industry will face its worst-ever supply shortage by 2027, with demand outstripping supply even after aggressive expansion. The warning came on the day SK Hynix began trading on Nasdaq, with shares closing up 13.3% at $168.85. This warning signals a prolonged memory supply crunch that could impact prices and availability of AI servers, consumer electronics, and other tech products. As the second-largest memory chipmaker, SK Hynix's outlook is a key indicator for the semiconductor industry. SK Hynix reported a record operating profit of 47 trillion won ($31 billion) in 2025, with Q2 2026 expected to reach 65.5 trillion won. The company is considering overseas fab locations in the US, Japan, and Southeast Asia, prioritizing areas with the lowest land, power, and labor costs.
 
-telegram · zaihuapd · Jul 10, 14:47
+telegram · zaihuapd · Jul 11, 00:45
 
-**Background**: Infinite scroll exploits the human need for closure, trapping users in endless loops. Personalized recommendation algorithms maximize engagement by predicting user preferences, often leading to compulsive use. The EU's Digital Services Act (DSA) imposes strict obligations on large platforms to mitigate systemic risks, including harms to mental health.
+**Background**: Memory chips, including DRAM and HBM, are critical components in AI servers, PCs, and smartphones. The surge in AI demand, especially for high-bandwidth memory (HBM), has strained supply chains. SK Hynix is a leading supplier of HBM, which stacks memory layers vertically for faster data processing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://medium.com/@nireshratnam/infinite-scroll-how-your-brain-is-trapped-in-an-endless-loop-57ebbcd8d125">Infinite Scroll : How Your Brain Is Trapped in an Endless Loop | Medium</a></li>
-<li><a href="https://sparkco.ai/blog/social-media-algorithm-engagement-addiction-optimization">Algorithmic Engagement and Surveillance Capitalism: Industry...</a></li>
+<li><a href="https://xueqiu.com/1298590952/385020100">内 存 短 缺 危机或将持续数年，2027年需求 缺 口仍达40...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Meta`, `#EU regulation`, `#addictive design`, `#Digital Services Act`, `#tech policy`
+**Tags**: `#memory shortage`, `#SK Hynix`, `#semiconductor industry`, `#supply chain`
 
 ---
 
-<a id="item-10"></a>
-## [SpaceXAI and Cursor Launch Grok 4.5 for Coding, Legal, Finance](https://t.me/zaihuapd/42484) ⭐️ 8.0/10
+<a id="item-11"></a>
+## [SpaceXAI and Cursor Release Grok 4.5 for Coding, Legal, Finance](https://t.me/zaihuapd/42484) ⭐️ 8.0/10
 
-SpaceXAI and Cursor have jointly released Grok 4.5, a new AI model optimized for coding, legal, and financial tasks, claiming top performance on the Harvey legal agent benchmark and 2x token efficiency over leading models. This marks the first joint model after SpaceX's $60 billion acquisition of Cursor, signaling a major push into domain-specific AI for high-stakes professional tasks, potentially reshaping competition in the AI coding and legal tech markets. Grok 4.5 runs at 80 tokens per second and is priced at $2 per million input tokens. It is built on a 1.5 trillion-parameter V9 foundation and incorporates data from Cursor, though the acquisition claim remains unverified.
+SpaceXAI and Cursor jointly released Grok 4.5, a specialized AI model for coding, legal, and finance tasks, achieving top benchmark performance and high token efficiency. This marks the first joint model after SpaceX's $60 billion acquisition of Cursor, signaling a major push into specialized AI for professional domains. Grok 4.5's efficiency and benchmark leadership could reshape competition in coding and legal AI tools. Grok 4.5 runs at 80 tokens per second, with token efficiency twice that of leading comparable models, and is priced at $2 per million input tokens. It ranks first on Harvey's legal agent benchmark and incorporates enhanced cybersecurity capabilities.
 
 telegram · zaihuapd · Jul 11, 01:44
 
-**Background**: Grok is a series of AI models developed by xAI, SpaceX's AI subsidiary. Cursor is an AI-powered code editor and IDE that achieved a $29.3 billion valuation by early 2026. The Harvey Legal Agent Benchmark evaluates AI agents on legal tasks using tools like file reading and editing.
+**Background**: Grok 4.5 is a mixture-of-experts model trained jointly by SpaceXAI and Cursor using trillions of tokens of Cursor data capturing user interactions with codebases. The Harvey Legal Agent Benchmark is an open-source benchmark for evaluating AI agents in legal work. Token efficiency measures the semantic information density per token, impacting cost and performance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://x.ai/news/grok-4-5">Grok 4 . 5 is SpaceXAI's smartest model built for coding, agentic tasks...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Grok_(chatbot)">Grok (chatbot) - Wikipedia</a></li>
-<li><a href="https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark">Introducing Harvey ’s Legal Agent Benchmark</a></li>
+<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus ...</a></li>
+<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 · Cursor</a></li>
+<li><a href="https://www.vals.ai/benchmarks/hlab">Harvey 's Legal Agent Benchmark</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Grok`, `#SpaceXAI`, `#Cursor`, `#LLM`
+**Tags**: `#AI`, `#Grok`, `#SpaceXAI`, `#Cursor`, `#coding`
 
 ---
