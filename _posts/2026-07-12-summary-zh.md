@@ -5,209 +5,193 @@ date: 2026-07-12
 lang: zh
 ---
 
-> 从 28 条内容中筛选出 9 条重要资讯。
+> 从 30 条内容中筛选出 8 条重要资讯。
 
 ---
 
-1. [vLLM v0.25.0：Model Runner V2 成为默认，移除 PagedAttention](#item-1) ⭐️ 9.0/10
-2. [人形机器人完成全球首例活猪胆囊手术](#item-2) ⭐️ 9.0/10
-3. [苹果起诉 OpenAI 系统性窃取商业机密](#item-3) ⭐️ 9.0/10
-4. [OpenAI 发布 GPT-5.6 系列：Sol、Terra、Luna](#item-4) ⭐️ 9.0/10
-5. [ClickHouse 通过 Peering 机制将 PgBouncer 吞吐量提升 4 倍](#item-5) ⭐️ 8.0/10
-6. [VultronRetriever 模型登顶 MTEB，可在 iPhone 上运行](#item-6) ⭐️ 8.0/10
-7. [U-Boot 六个漏洞可在系统启动前执行恶意代码](#item-7) ⭐️ 8.0/10
-8. [谷歌反对欧洲网站屏蔽，美国同类立法加速](#item-8) ⭐️ 8.0/10
-9. [上海设定 2027 年脑机接口临床应用目标](#item-9) ⭐️ 8.0/10
+1. [OpenAI 发布 GPT-5.6 系列，旗舰模型 Sol 登场](#item-1) ⭐️ 9.0/10
+2. [GPT-5.6 一小时攻克 50 年图论猜想](#item-2) ⭐️ 9.0/10
+3. [vLLM v0.25.0：Model Runner V2 成为默认，PagedAttention 被移除](#item-3) ⭐️ 8.0/10
+4. [VultronRetriever 模型登顶 MTEB 排行榜](#item-4) ⭐️ 8.0/10
+5. [U-Boot 引导程序曝 6 个漏洞，可启动时执行代码](#item-5) ⭐️ 8.0/10
+6. [上海计划 2027 年前实现高质量脑控](#item-6) ⭐️ 8.0/10
+7. [苹果起诉 OpenAI 窃取商业机密以推进硬件业务](#item-7) ⭐️ 8.0/10
+8. [xAI Grok CLI 默认上传整个代码库及密钥文件](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [vLLM v0.25.0：Model Runner V2 成为默认，移除 PagedAttention](https://github.com/vllm-project/vllm/releases/tag/v0.25.0) ⭐️ 9.0/10
+## [OpenAI 发布 GPT-5.6 系列，旗舰模型 Sol 登场](https://t.me/zaihuapd/42497) ⭐️ 9.0/10
 
-vLLM v0.25.0 将 Model Runner V2 设为所有稠密模型的默认执行路径，移除了旧版 PagedAttention，并新增了 LLaVA-OneVision-2、GLM-5 等模型，以及流式解析引擎和通用推测解码。 此版本标志着 vLLM 的重大架构转变，提升了性能和模块化程度，通过实现更快的推理和更简便的模型集成，惠及整个 LLM 服务生态系统。 Model Runner V2 现在支持 EVS、实时嵌入、Mamba 混合模型的前缀缓存，以及带有完整 CUDA 图的动态推测解码。Transformers 后端速度已与原生 vLLM 持平，并获得了 FP8 MoE 支持。
+OpenAI 正式发布 GPT-5.6 系列，推出三个模型：Sol（旗舰级，能力最强）、Terra（平衡性能与成本）和 Luna（面向高并发低成本场景）。该系列在代码生成、知识工作、设计、科研和网络安全方面有显著提升，并引入了 max/ultra 推理、多智能体协作和 Programmatic Tool Calling 等新功能。 此次发布标志着 AI 在成本效率和能力上的范式转变，能够以更少的 token 和更低的成本完成复杂任务。多层级模型策略让开发者可以根据需求选择智能与价格的平衡，而多智能体协作和 Programmatic Tool Calling 等高级功能为更自主、高效的 AI 工作流铺平了道路。 GPT-5.6 Sol 是 GPT-5.6 端点的默认模型，提供最高智能。Programmatic Tool Calling 允许模型编写并执行 JavaScript 来协调单个请求中的工具调用，减少往返次数和 token 消耗。多智能体协作使多个 AI 智能体能够协同处理复杂的多步骤任务。
 
-github · khluu · 7月11日 20:06
+telegram · zaihuapd · 7月11日 13:34
 
-**背景**: vLLM 是一个开源的大语言模型推理引擎，采用 PagedAttention 实现高效的 KV 缓存管理。Model Runner V2 是重新设计的执行核心，解决了技术债务并提升了模块化程度，比原有的 V1 后端更快、更灵活。
+**背景**: OpenAI 的 GPT 系列从 GPT-3 发展到 GPT-4，再到现在的 GPT-5.6，每一代都在推理能力、上下文长度和任务完成度上有所提升。新系列引入了类似其他 AI 提供商的分层模型阵容，让用户可以根据成本或能力进行优化。Programmatic Tool Calling 是一种技术，模型通过编写代码以编程方式调用工具，相比传统的往返式工具调用，能减少延迟和 token 成本。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://vllm.ai/blog/2026-03-24-mrv2">Model Runner V2: A Modular and Faster Core for vLLM | vLLM Blog</a></li>
-<li><a href="https://docs.vllm.ai/en/v0.22.1/design/model_runner_v2/">Model Runner V2 Design Document - vLLM</a></li>
-<li><a href="https://en.wikipedia.org/wiki/PagedAttention">PagedAttention</a></li>
+<li><a href="https://codingfleet.com/blog/gpt-5-6-sol-vs-terra-vs-luna/">GPT‑5.6 Sol vs Terra vs Luna: Which Model Should You Use?</a></li>
+<li><a href="https://www.elser.ai/blog/gpt-5-6-sol-vs-terra-vs-luna-which-model-should-you-use">GPT-5.6 Sol vs Terra vs Luna: Which Model Should You Use?</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/tools-programmatic-tool-calling">Programmatic Tool Calling | OpenAI API</a></li>
 
 </ul>
 </details>
 
-**标签**: `#vLLM`, `#LLM inference`, `#open-source`, `#release`, `#AI infrastructure`
+**标签**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#machine learning`, `#cost optimization`
 
 ---
 
 <a id="item-2"></a>
-## [人形机器人完成全球首例活猪胆囊手术](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
+## [GPT-5.6 一小时攻克 50 年图论猜想](https://www.qbitai.com/2026/07/447873.html) ⭐️ 9.0/10
 
-外科医生远程操控宇树 G1 人形机器人，成功在两只活猪身上完成了腹腔镜胆囊切除术，这是通用人形机器人首次用于活体手术。研究结果已发表在《自然》期刊。 这一突破表明，低成本通用人形机器人有望在资源有限的场景（如农村、战场或空间站）中普及微创手术。它挑战了达芬奇等昂贵专用手术机器人的主导地位。 宇树 G1 基础款售价低至 13500 美元，配备灵巧手后约 67000 美元，而专用手术机器人价格在 50 万至数百万美元。该机器人高约 1.5 米、重 27 公斤，由加州大学圣地亚哥分校的研究人员远程操控。
+OpenAI 的 GPT-5.6 Sol Ultra 使用 64 个并行子代理，在不到一小时内自主证明了图论中存在 50 年的循环双覆盖猜想，并生成了 3 页 PDF 证明。OpenAI 同时公布了所使用的完整提示词。 这表明大语言模型现在能够自主解决长期未解的数学猜想，可能加速数学和理论计算机科学的研究。同时展示了先进的多智能体推理和验证能力。 该猜想断言每个无桥图都存在一组圈，使得每条边恰好被覆盖两次。GPT-5.6 将问题转化为有限域上的边标号和线性方程组求解，使用 64 个子代理并行工作，并设有独立验证检查。
 
-telegram · zaihuapd · 7月11日 02:29
+telegram · zaihuapd · 7月12日 03:49
 
-**背景**: 腹腔镜胆囊切除术是一种微创手术，用于切除胆囊，常用于治疗有症状的胆结石。目前机器人手术的标准系统——达芬奇手术系统，售价数十万至数百万美元，限制了其普及。像宇树 G1 这样的通用人形机器人设计用于多种任务，价格低廉，但此前从未用于活体手术。
+**背景**: 循环双覆盖猜想由 Szekeres（1973）和 Seymour（1979）独立提出，是图论中的一个重要未解问题。桥是指删除后会使图不连通的边；该猜想仅适用于无桥图。此前使用传统数学方法的尝试未能给出完整证明。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Unitree_Robotics">Unitree Robotics - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Laparoscopic_cholecystectomy">Laparoscopic cholecystectomy</a></li>
-<li><a href="https://www.unitree.com/g1/">Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bridge_(graph_theory)">Bridge (graph theory)</a></li>
 
 </ul>
 </details>
 
-**标签**: `#robotics`, `#surgery`, `#humanoid robot`, `#medical technology`, `#AI`
+**标签**: `#AI`, `#mathematics`, `#graph theory`, `#OpenAI`, `#reasoning`
 
 ---
 
 <a id="item-3"></a>
-## [苹果起诉 OpenAI 系统性窃取商业机密](https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html) ⭐️ 9.0/10
+## [vLLM v0.25.0：Model Runner V2 成为默认，PagedAttention 被移除](https://github.com/vllm-project/vllm/releases/tag/v0.25.0) ⭐️ 8.0/10
 
-2026 年 7 月 10 日，苹果在美国加州北区联邦法院起诉 OpenAI、两名前员工及 io Products，指控 OpenAI 系统性窃取苹果的产品设计、制造工艺及供应链机密，以加速其消费级硬件研发。 这起两大科技巨头之间的诉讼可能为 AI 硬件竞赛中的商业秘密保护树立先例，可能影响 OpenAI 的硬件计划及整个行业的招聘行为。 苹果指控前员工刘畅离职后仍访问内部网络并下载数十份硬件文件；OpenAI 硬件负责人陈玉丹在离职前将供应商资料发送至个人邮箱，并要求求职者携带苹果零部件参加面试。苹果还表示，目前有超过 400 名前员工在 OpenAI 工作。
+vLLM v0.25.0 将 Model Runner V2 设为所有稠密模型的默认执行路径，移除了旧版 PagedAttention，并新增了 LLaVA-OneVision-2、GLM-5 等模型，以及流式解析引擎和通用推测解码。 此版本标志着 vLLM 架构的重大转变，通过移除旧组件提升了性能和模块化，同时简化了代码库。它还扩展了模型支持并引入了新功能，惠及更广泛的 LLM 服务生态系统。 Model Runner V2 现在支持 EVS、实时嵌入、Mamba 混合模型的前缀缓存，以及带完整 CUDA 图的动态推测解码。Transformers 建模后端现在与原生 vLLM 速度相当，此版本包含来自 232 位贡献者的 558 次提交。
 
-telegram · zaihuapd · 7月11日 03:14
+github · khluu · 7月11日 20:06
 
-**背景**: OpenAI 于 2025 年 5 月收购了 io Products，以主导其硬件开发。io 由 Jony Ive、Scott Cannon、Evans Hankey 和 Tang Tan 于 2024 年创立，旨在打造 AI 硬件。诉讼称 OpenAI 的硬件业务因依赖窃取的商业机密而“从根上烂透了”。
+**背景**: vLLM 是一个开源的大语言模型推理和服务引擎，使用 PagedAttention 实现高效内存管理。Model Runner V2 是重新设计的执行核心，解决了 V1 中的设计缺陷，提供了更好的模块化和性能。PagedAttention 是 vLLM 最初实现高吞吐量的注意力机制。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.bbc.com/news/articles/cy8w379e091o">Apple sues OpenAI , its employees claiming theft of trade secrets</a></li>
-<li><a href="https://www.theguardian.com/technology/2026/jul/10/apple-sues-openai-trade-secrets">Apple sues OpenAI , alleging artificial intelligence company stole trade ...</a></li>
-<li><a href="https://apnews.com/article/apple-openai-lawsuit-trade-secrets-theft-6fff8833f5889d86406b89a02dd8fb16">Apple files lawsuit accusing OpenAI of stealing trade secrets</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/design/model_runner_v2/">Model Runner V2 Design Document - vLLM</a></li>
+<li><a href="https://vllm.ai/blog/2026-03-24-mrv2">Model Runner V2: A Modular and Faster Core for vLLM</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/design/paged_attention/">Paged Attention - vLLM</a></li>
 
 </ul>
 </details>
 
-**标签**: `#lawsuit`, `#trade secrets`, `#Apple`, `#OpenAI`, `#AI hardware`
+**标签**: `#vLLM`, `#LLM inference`, `#open source`, `#release`, `#performance`
 
 ---
 
 <a id="item-4"></a>
-## [OpenAI 发布 GPT-5.6 系列：Sol、Terra、Luna](https://t.me/zaihuapd/42497) ⭐️ 9.0/10
+## [VultronRetriever 模型登顶 MTEB 排行榜](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
 
-OpenAI 正式发布 GPT-5.6 系列，包含三个层级：旗舰级 Sol、平衡型 Terra 和低成本 Luna。该系列引入了 max/ultra 推理、多智能体协作和程序化工具调用，在代码、知识工作、设计、科研和网络安全方面有显著提升。 此次发布标志着 AI 模型效率和能力的重大进步，通过分层定价满足不同用例，同时引入多智能体协作和程序化工具调用等高级功能，降低复杂任务的 token 消耗和成本。它为行业树立了性能成本比的新标杆。 每百万 token 定价：Sol 输入 $5 / 输出 $30，Terra 输入 $2.50 / 输出 $15，Luna 输入 $1 / 输出 $6。裸 gpt-5.6 API 别名默认指向 Sol。程序化工具调用允许模型通过代码编排工具，而非逐个 API 往返，从而提高效率。
-
-telegram · zaihuapd · 7月11日 13:34
-
-**背景**: GPT-5.6 是 OpenAI 最新一代大型语言模型，接替 GPT-4。多智能体协作使多个 AI 智能体能够协调完成复杂任务，而程序化工具调用（此前见于 Anthropic 的 Claude）允许模型编写代码来调用外部工具，从而降低延迟和成本。这些功能旨在让 AI 更适用于企业和研究应用。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT-5.6 Sol: a next-generation model | OpenAI</a></li>
-<li><a href="https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained">GPT-5.6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?</a></li>
-<li><a href="https://www.mindstudio.ai/blog/what-is-gpt-5-6-soul-terra-luna-explained">What Is GPT-5.6? OpenAI's Soul, Terra, and Luna Model Tiers Explained | MindStudio</a></li>
-
-</ul>
-</details>
-
-**标签**: `#OpenAI`, `#GPT-5.6`, `#AI`, `#language models`, `#multi-agent`
-
----
-
-<a id="item-5"></a>
-## [ClickHouse 通过 Peering 机制将 PgBouncer 吞吐量提升 4 倍](https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres) ⭐️ 8.0/10
-
-ClickHouse 在 PgBouncer 中实现了一种 peering 机制，可将查询取消请求转发到正确的进程，从而在使用 so_reuseport 的多进程配置下实现高达 4 倍的吞吐量提升。 这一进展使得 PostgreSQL 连接池能够跨多个进程和机器水平扩展，同时不破坏查询取消功能，这对于高可用云部署和大规模托管数据库服务至关重要。 Peering 功能自 PgBouncer 1.19.0 起可用，使用 peer_id（最大 16383）在进程间协调取消请求。ClickHouse 的实现利用此功能，通过 so_reuseport 在单个端口后运行多个 PgBouncer 实例。
-
-hackernews · saisrirampur · 7月11日 15:28 · [社区讨论](https://news.ycombinator.com/item?id=48872874)
-
-**背景**: PgBouncer 是 PostgreSQL 的轻量级连接池。当使用 so_reuseport 允许多个进程共享同一监听端口时，取消请求可能落到不拥有该会话的进程上，导致取消被忽略。Peering 通过将请求转发到正确的进程来解决此问题。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://manpages.debian.org/testing/pgbouncer/pgbouncer.5.en.html">pgbouncer (5) — pgbouncer — Debian testing — Debian Manpages</a></li>
-<li><a href="https://dataegret.com/2024/08/handling_cancellation_request/">Handling Cancellation Request - Data Egret</a></li>
-<li><a href="https://boosterkrd.github.io/2024/08/20/Handling-Cancellation-Request.html">Handling Cancellation Request | Booster’s Blog</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者提出了替代方案如 Odyssey 和 pgdog，并询问了 Kubernetes 兼容性。一些人指出，如果每个 pod 有自己的池，则可能不需要 peering，但其他人认为多实例部署中仍有价值。
-
-**标签**: `#PostgreSQL`, `#PgBouncer`, `#scaling`, `#connection pooling`, `#ClickHouse`
-
----
-
-<a id="item-6"></a>
-## [VultronRetriever 模型登顶 MTEB，可在 iPhone 上运行](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
-
-VultronRetriever 模型系列（包括 Prime-8B、Core-4.5B 和 Flash-0.8B）已在 HuggingFace 上发布，并在 MTEB 排行榜上各自类别中排名第一，其中 Prime 模型为全球第一。 这些模型相比之前的领先者，索引存储最多缩小 16 倍，吞吐量提高 12 倍，并且可以在 iPhone 上完全离线运行，标志着边缘 AI 和高效检索领域的重大进步。 VultronRetrieverFlash-0.8B 的性能优于其规模 5 倍的模型，离线每分钟可索引多达 60 张图像。这些模型采用 Hydra 架构实现后期交互检索，在精度高的同时内存消耗仅为同类模型的一半。
+VultronRetriever 系列检索模型已在 HuggingFace 上发布，在 MTEB 排行榜上取得第一名，索引存储占用最多减少 16 倍，吞吐量提升 12 倍，并且可以在 iPhone 上完全离线运行。 这一突破使得在边缘设备上实现最先进的检索成为可能，显著降低了离线问答和文档嵌入等应用的基础设施成本和延迟。 该系列包括三个模型：Prime-8B（全球第一）、Core-4.5B（性能超越两倍大小的模型）和 Flash-0.8B（性能超越五倍大小的模型，离线每分钟索引 60 张图像）。它们采用 Hydra 架构实现后期交互检索和生成，内存占用仅为同类模型的一半。
 
 reddit · r/MachineLearning · /u/madkimchi · 7月11日 15:22
 
-**背景**: MTEB（大规模文本嵌入基准）是评估嵌入模型在检索、分类和聚类等任务上性能的标准公开排行榜。后期交互检索（如 ColBERT 所用）将查询和文档分开处理，直到最后匹配步骤，从而实现高效精准的搜索。Hydra 架构是一种模块化设计，结合了稀疏注意力、混合专家和双记忆机制，用于高效的长上下文推理。
+**背景**: MTEB 排行榜是评估嵌入模型在检索等任务上性能的标准基准。后期交互检索（如 ColBERT）通过计算 token 级别的相似度实现更高精度。Hydra 架构将检索和生成统一到单个模型中，降低了内存和系统复杂度。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard - a Hugging Face Space by mteb</a></li>
-<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models... | Weaviate</a></li>
-<li><a href="https://arxiv.org/abs/2508.15099">[2508.15099] Hydra: A Modular Architecture for Efficient Long-Context Reasoning</a></li>
+<li><a href="https://arxiv.org/abs/2603.28554">[2603.28554] Hydra: Unifying Document Retrieval and ...</a></li>
+<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models: ColBERT, ColPali, and ColQwen | Weaviate</a></li>
 
 </ul>
 </details>
 
-**标签**: `#retrieval`, `#MTEB`, `#edge AI`, `#embedding`, `#HuggingFace`
+**标签**: `#retrieval`, `#MTEB`, `#edge AI`, `#embedding`, `#NLP`
 
 ---
 
-<a id="item-7"></a>
-## [U-Boot 六个漏洞可在系统启动前执行恶意代码](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [U-Boot 引导程序曝 6 个漏洞，可启动时执行代码](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 8.0/10
 
-Binarly 披露了 U-Boot 的 FIT 签名验证中的六个漏洞，其中两个可导致任意代码执行，四个可导致拒绝服务，影响自 2013.07 以来的版本。 这些漏洞（BRLY-2026-037 至 BRLY-2026-042）位于 FIT 镜像解析代码中；补丁已被上游接受，但需要厂商集成到固件更新中才能分发，已停止支持的设备将永久存在风险。
+Binarly 披露了 U-Boot 的 FIT 签名验证中的六个漏洞，包括两个严重远程代码执行漏洞（BRLY-2026-037 至 BRLY-2026-042），影响自 2013.07 版本以来的所有版本。 这些漏洞允许攻击者绕过签名检查，在操作系统启动前执行恶意代码，从而实现难以检测的固件攻击。漏洞影响从嵌入式系统到服务器的数百万台设备。 六个漏洞中，两个可实现任意代码执行，四个可导致拒绝服务崩溃。补丁已被 U-Boot 维护者接受，但设备厂商需将其集成到固件更新中；已停止支持的设备可能永远无法修复。
 
 telegram · zaihuapd · 7月11日 08:32
 
-**背景**: U-Boot 是嵌入式设备中广泛使用的开源引导程序，负责初始化硬件并加载操作系统。FIT（Flattened Image Tree）是一种用于打包启动镜像的标准格式，其签名验证确保只执行受信任的固件。这些漏洞绕过了该验证，使攻击能够在设备启动的最早阶段发生。
+**背景**: U-Boot 是广泛使用的嵌入式设备开源引导程序，负责加载操作系统。FIT（Flattened Image Tree）是一种用于打包内核、设备树等镜像并附带加密签名以确保完整性的格式。漏洞位于签名验证代码中，允许攻击者构造绕过验证的恶意 FIT 镜像。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.binarly.io/blog/unfit-to-boot-breaking-u-boots-fit-signature-verification">Unfit to Boot: Breaking U-Boot's FIT Signature Verification</a></li>
 <li><a href="https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/">New U-Boot flaws could enable stealthy firmware attacks</a></li>
+<li><a href="https://cybersecuritynews.com/u-boot-fit-signature-verification/">Six U - Boot FIT Signature Verification Flaws Enable Code Execution...</a></li>
 <li><a href="https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html">Six New U-Boot Flaws Could Let Malicious Images Crash Devices ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#bootloader`, `#vulnerability`, `#firmware`, `#U-Boot`
+**标签**: `#security`, `#vulnerability`, `#bootloader`, `#firmware`, `#U-Boot`
 
 ---
 
-<a id="item-8"></a>
-## [谷歌反对欧洲网站屏蔽，美国同类立法加速](https://torrentfreak.com/google-opposes-site-blocking-in-europe-as-u-s-piracy-blocking-plans-gain-momentum/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [上海计划 2027 年前实现高质量脑控](https://t.me/zaihuapd/42501) ⭐️ 8.0/10
 
-谷歌向欧盟委员会提交文件，反对扩大网站屏蔽措施，称屏蔽 DNS 解析器、IP 地址和 VPN 的做法无效且不成比例。与此同时，美国国会也在推进类似的反盗版立法，众议员 Issa 计划推动一项网站屏蔽法案。 这凸显了版权执法与互联网自由之间日益紧张的全球矛盾，谷歌等大型科技公司正在抵制广泛的屏蔽措施。其结果可能为各国政府如何平衡知识产权保护与开放互联网原则树立先例。 谷歌的文件引用了具体的误封案例，例如意大利的反盗版系统误封了 Google Drive 子域名以及托管 4200 万个域名的 Cloudflare IP 地址。谷歌尚未对美国立法公开表态，但其欧盟文件表明，它更倾向于提供更好的合法替代服务，而非扩大屏蔽。
-
-telegram · zaihuapd · 7月11日 15:10
-
-**背景**: 网站屏蔽是一种常见的反盗版技术，即命令 ISP 或 DNS 解析器阻止访问侵权网站。批评者认为，这类措施常导致误封，影响合法服务，且用户可通过 VPN 或替代 DNS 绕过。欧盟和美国都在考虑更新法律框架以打击在线盗版，但方法不同。
-
-**标签**: `#internet governance`, `#copyright`, `#site blocking`, `#tech policy`, `#Google`
-
----
-
-<a id="item-9"></a>
-## [上海设定 2027 年脑机接口临床应用目标](https://t.me/zaihuapd/42501) ⭐️ 8.0/10
-
-上海市科学技术委员会印发《上海市脑机接口未来产业培育行动方案（2025-2030 年）》，目标在 2027 年前实现高质量脑控，半侵入式脑机接口产品在国内率先实现临床应用，侵入式脑机接口研发取得突破。该计划推动 5 款以上侵入式、半侵入式脑机接口产品完成医疗器械型式检验和临床试验，面向失语、瘫痪等患者实现部分语言和运动功能恢复。 这是一项重要的政策里程碑，为脑机接口在中国的临床转化提供了清晰的路线图和政府支持，有望加速基于脑机接口的医疗器械开发，并将上海定位为神经技术的全球中心。具体目标和产品指标表明，中国正大力推动脑机接口从研究实验室走向实际医疗应用，惠及严重神经系统疾病患者。 该计划区分了半侵入式和侵入式脑机接口：半侵入式设备（如 ECoG）置于颅骨下但大脑组织外，在信号质量和安全性之间取得平衡；侵入式设备（如微电极阵列）穿透大脑以获取高分辨率信号，但需要手术。2027 年目标包括完成医疗器械型式检验和临床试验，这是在中国获得市场准入的强制性监管步骤。
+上海市科学技术委员会印发了《上海市脑机接口未来产业培育行动方案（2025-2030 年）》，目标是到 2027 年实现高质量脑控，半侵入式脑机接口产品在国内率先实现临床应用，侵入式脑机接口研发取得突破。 该政策表明中国政府对脑机接口技术的大力支持，可能加速脑机接口设备在医疗康复领域的开发和临床应用，例如帮助瘫痪或失语患者恢复部分语言和运动功能。 该计划目标是到 2027 年推动 5 款以上侵入式和半侵入式脑机接口产品完成医疗器械型式检验和临床试验，面向失语、瘫痪等患者实现部分语言和运动功能恢复。半侵入式脑机接口植入头骨下但不进入脑组织，在信号质量和安全性之间取得平衡。
 
 telegram · zaihuapd · 7月11日 15:49
 
-**背景**: 脑机接口（BCI）通过解码神经信号实现大脑与外部设备之间的直接通信。它们分为非侵入式（如 EEG 头戴设备）、半侵入式（如 ECoG）和侵入式（如犹他阵列）三种类型，信号保真度依次提高，但手术风险也随之增加。中国一直在积极投资脑机接口技术，该行动计划与国家在新兴神经技术领域领先的战略相一致。
+**背景**: 脑机接口（BCI）实现大脑与外部设备之间的直接通信。它们分为侵入式（电极植入脑组织）、半侵入式（电极置于头骨下但不在脑内）和非侵入式（头皮电极）。侵入式 BCI 信号质量最高但存在手术风险，非侵入式更安全但信号分辨率较低。中国近期开展了首例侵入式脑机接口临床试验，成为第二个进入该阶段的国家。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/76363987">【深度解析】一文看懂脑机接口技术的现状与未来！ - 知乎</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/699343201">侵入式、半侵入式、非侵入式脑机接口，具体应该怎么选</a></li>
-<li><a href="https://www.nifdc.org.cn/nifdc///xxgk/zcfg/zcjd/202607011610522105082.html">《脑机接口医疗器械产品分类界定指导原则》解读</a></li>
+<li><a href="https://zh.wikipedia.org/zh-hans/脑机接口">脑机接口 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/699343201">侵入式、半侵入式、非侵入式脑机接口，具体应该怎么选 - 知乎</a></li>
+<li><a href="https://www.cas.cn/syky/202506/t20250614_5073157.shtml">我国侵入式脑机接口进入临床试验阶段----中国科学院</a></li>
 
 </ul>
 </details>
 
-**标签**: `#brain-computer interface`, `#policy`, `#clinical application`, `#China`, `#neurotechnology`
+**标签**: `#brain-computer interface`, `#neurotechnology`, `#policy`, `#China`, `#medical AI`
+
+---
+
+<a id="item-7"></a>
+## [苹果起诉 OpenAI 窃取商业机密以推进硬件业务](https://t.me/zaihuapd/42502) ⭐️ 8.0/10
+
+2026 年 7 月 10 日，苹果在美国加州北区联邦法院起诉 OpenAI、两名前员工及 io Products，指控其系统性窃取与产品设计、制造工艺及供应链相关的商业机密，以加速 OpenAI 的消费级硬件研发。 这起诉讼加剧了全球两家最具价值科技公司之间的紧张关系，可能影响 OpenAI 的硬件雄心，并为 AI 公司如何从苹果等成熟硬件领导者处招募人才树立先例。 苹果指控前员工 Chang Liu 在离职后仍访问内部网络并下载数十份硬件文件；OpenAI 硬件负责人 Tang Yew Tan 在离职前将供应商信息发送至个人邮箱，并要求求职者携带苹果零部件参加面试。诉讼还称，超过 40 名前苹果员工现任职于 OpenAI 的硬件部门。
+
+telegram · zaihuapd · 7月11日 16:29
+
+**背景**: OpenAI 以 ChatGPT 闻名，近年来正扩展至硬件领域，于 2025 年 5 月收购了由前苹果设计总监 Jony Ive 联合创立的 io Products。诉讼称，OpenAI 的硬件业务建立在窃取的苹果机密之上，包括未发布产品的细节和制造工艺。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.macrumors.com/2026/07/10/apple-sues-openai/">Apple Sues OpenAI for Stealing Trade Secrets to Build AI Hardware</a></li>
+<li><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/">Apple sues OpenAI, accuses ex-employees of stealing trade secrets</a></li>
+<li><a href="https://www.nytimes.com/2026/07/10/technology/apple-openai-lawsuit.html">Apple Sues OpenAI, Accusing It of Stealing Company Secrets</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Apple`, `#OpenAI`, `#trade secrets`, `#lawsuit`, `#hardware`
+
+---
+
+<a id="item-8"></a>
+## [xAI Grok CLI 默认上传整个代码库及密钥文件](https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547) ⭐️ 8.0/10
+
+安全研究人员发现，xAI 的 Grok Build CLI 工具（版本 0.2.93）默认将整个代码仓库和 .env 等敏感文件上传至 xAI 服务器，且无法有效关闭。 这对开发者构成严重的隐私和安全风险，专有代码和凭据可能在未经同意的情况下泄露，削弱对 AI 辅助开发工具的信任。 该工具通过两个渠道上传代码：文件内容嵌入模型请求，同时以 git bundle 形式打包上传至 Google Cloud Storage；关闭“改进模型”开关无法阻止上传。
+
+telegram · zaihuapd · 7月12日 04:19
+
+**背景**: Grok CLI 是一个命令行界面工具，用于访问 xAI 的 Grok AI 模型。Git bundle 是一种将整个 Git 仓库打包成单个文件以便传输的格式。Google Cloud Storage 是一种云端对象存储服务。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://grokipedia.com/page/Grok_CLI">Grok CLI</a></li>
+<li><a href="https://git-scm.com/docs/git-bundle">Git - git-bundle Documentation</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 上的讨论可能对默认上传数据的行为表示强烈担忧，许多用户质疑 xAI 的透明度，并呼吁立即修复或提供退出选项。
+
+**标签**: `#security`, `#privacy`, `#xAI`, `#CLI`, `#data leakage`
 
 ---
