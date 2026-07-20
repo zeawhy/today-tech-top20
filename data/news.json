@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id": "1",
+    "title": "OpenAI 发布 GPT-5 模型",
+    "importance_score": 9.9,
+    "source": "OpenAI Blog",
+    "url": "https://openai.com",
+    "category": "AI",
+    "publish_time": "2026-07-03T16:00:00Z",
+    "summary_zh": "OpenAI 今日发布了其下一代大模型 GPT-5。该模型在逻辑推理和多步骤自主执行（Agent）层面实现了飞跃。\n\n**背景**: GPT-5 解决了大语言模型无法自主进行深度思考的顽疾。\n\n**社区讨论**: 网友普遍对于其自主执行代码的能力感到兴奋，但也有安全担忧。",
+    "summary_en": "OpenAI officially unveiled GPT-5, showing massive improvements in reasoning and autonomous agent planning.\n\n**Background**: GPT-5 addresses the limitations of previous models in deep multi-step planning.\n\n**Discussion**: Users are generally excited about local-first execution, though safety is still debated.",
+    "takeaways": [
+      "背景信息: GPT-5 解决了大语言模型无法自主进行深度思考的顽疾。",
+      "社区反馈: 网友普遍对于其自主执行代码的能力感到兴奋，但也有安全担忧。"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Vite 7.0 正式版发布",
+    "importance_score": 8.9,
+    "source": "Vite",
+    "url": "https://vite.dev",
+    "category": "Dev",
+    "publish_time": "2026-07-03T14:30:00Z",
+    "summary_zh": "Vite 7.0 默认采用 Rust 编写的打包器 Rolldown，编译和热更新速度提升高达 5 倍。\n\n**背景**: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。",
+    "summary_en": "Vite 7.0 now uses Rust-based bundler Rolldown by default, achieving up to 5x faster hot reload times.\n\n**Background**: Rolldown is the Rust rewrite of Rollup initiated by the Vue core team.",
+    "takeaways": [
+      "背景信息: Rolldown 是 Vue 团队为了替代 Rollup 编写的 Rust 移植版本。"
+    ]
+  }
+]

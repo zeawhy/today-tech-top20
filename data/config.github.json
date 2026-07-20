@@ -60,6 +60,18 @@
         "category": "github-trending"
       },
       {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "enabled": true,
+        "category": "ai"
+      },
+      {
+        "name": "Solidot 奇客",
+        "url": "https://www.solidot.org/index.rss",
+        "enabled": true,
+        "category": "tech-news"
+      },
+      {
         "name": "Semianalysis",
         "url": "https://newsletter.semianalysis.com/feed",
         "enabled": true,
@@ -80,16 +92,16 @@
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
+          "fetch_limit": 15,
+          "min_score": 40
         },
         {
           "subreddit": "LocalLLaMA",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
+          "fetch_limit": 15,
+          "min_score": 40
         }
       ],
       "users": [],
