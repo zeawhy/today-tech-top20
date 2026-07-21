@@ -5,271 +5,83 @@ date: 2026-07-21
 lang: en
 ---
 
-> From 85 items, 18 important content pieces were selected
+> From 76 items, 16 important content pieces were selected
 
 ---
 
-1. [Leaked Email Reveals Altman's Open Source Strategy](#item-1) ⭐️ 9.0/10
-2. [Critical RCE in Fastjson 1.x Without Gadgets or AutoType](#item-2) ⭐️ 9.0/10
-3. [Jane Street Releases Incremental Library for OCaml](#item-3) ⭐️ 8.0/10
-4. [Chinese AI Models Challenge US Dominance](#item-4) ⭐️ 8.0/10
-5. [AI Outperforms Humans in Generating Counterexamples](#item-5) ⭐️ 8.0/10
-6. [Cursor's Agent Swarm Hits 1000 Commits/s with Custom VCS](#item-6) ⭐️ 8.0/10
-7. [China's open-weights AI strategy is winning](#item-7) ⭐️ 8.0/10
-8. [Jellyfin founder steps down due to burnout](#item-8) ⭐️ 8.0/10
-9. [Hacker wipes Romania's land registry database](#item-9) ⭐️ 8.0/10
-10. [AI Writing Surge on arXiv: Up to 39% of Papers Flagged by 2026](#item-10) ⭐️ 8.0/10
-11. [Claude Code team reveals 65% of PRs via Claude Tag](#item-11) ⭐️ 8.0/10
-12. [AI coding agents make reverse-engineering cheap](#item-12) ⭐️ 8.0/10
-13. [Anthropic's $1.5B Copyright Settlement Approved](#item-13) ⭐️ 8.0/10
-14. [Google Develops Frozen v2 Chip to Boost Gemini Efficiency](#item-14) ⭐️ 8.0/10
-15. [Trump Admin Weighs Soft Ban on Chinese Open-Weight AI Models](#item-15) ⭐️ 8.0/10
-16. [EU to Share Biometric Data with US for Visa-Free Travel](#item-16) ⭐️ 8.0/10
-17. [Zhipu AI Completes 1 GW Data Center with Domestic Chips](#item-17) ⭐️ 8.0/10
-18. [Cloudflare Launches Internal DNS Service](#item-18) ⭐️ 8.0/10
+1. [Apple Wins CSAM Scanning Lawsuit, Judge Criticizes Privacy Trade-off](#item-1) ⭐️ 8.0/10
+2. [Jane Street's Incremental Library for Efficient Computations](#item-2) ⭐️ 8.0/10
+3. [Fireside Chat with Claude Code Team Reveals 65% PRs via Claude Tag](#item-3) ⭐️ 8.0/10
+4. [AI coding agents make reverse-engineering cheap](#item-4) ⭐️ 8.0/10
+5. [Ben Thompson Proposes US Law to Legalize AI Data Collection](#item-5) ⭐️ 8.0/10
+6. [Sam Altman's 2022 Email Reveals Open Source Strategy](#item-6) ⭐️ 8.0/10
+7. [Data Centers to Quadruple Electricity Use by 2035](#item-7) ⭐️ 8.0/10
+8. [US threatens sanctions on Chinese AI models over IP theft](#item-8) ⭐️ 8.0/10
+9. [Deezer: Over 50% of daily uploads are AI-generated](#item-9) ⭐️ 8.0/10
+10. [Anthropic's $1.5B Copyright Settlement Approved](#item-10) ⭐️ 8.0/10
+11. [EU to Share Biometric Data with US for Visa-Free Travel](#item-11) ⭐️ 8.0/10
+12. [Zhipu AI Completes Giant Data Center with Domestic Chips](#item-12) ⭐️ 8.0/10
+13. [Google Develops 'Frozen v2' AI Chip for Gemini](#item-13) ⭐️ 8.0/10
+14. [Cloudflare Launches Internal DNS Service](#item-14) ⭐️ 8.0/10
+15. [TSMC May Raise Advanced Node Prices 5-10% in 2026](#item-15) ⭐️ 8.0/10
+16. [Google Launches Gemini 3.5 Flash, Pro Coming Next Month](#item-16) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Leaked Email Reveals Altman's Open Source Strategy](https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything) ⭐️ 9.0/10
+## [Apple Wins CSAM Scanning Lawsuit, Judge Criticizes Privacy Trade-off](https://blog.ericgoldman.org/archives/2026/07/apple-defeats-liability-for-not-scanning-icloud-for-csam-but-the-judge-was-not-pleased-amy-v-apple.htm) ⭐️ 8.0/10
 
-A leaked email from Sam Altman to OpenAI's board, dated October 1, 2022, reveals a plan to release a GPT-3-level open source model that can run locally on consumer hardware, aiming to preempt competitors like Stability AI. This disclosure provides rare insight into OpenAI's strategic thinking about open source, suggesting the company viewed releasing open models as a tactic to discourage competitors and limit funding for rival efforts. The email was exposed in the Musk v. Altman lawsuit in 2026, and the proposed model would have approximately GPT-3's capability, which can handle natural language tasks like text generation and code writing.
+A U.S. court ruled that Apple is not liable for failing to scan iCloud for Child Sexual Abuse Material (CSAM), dismissing a lawsuit against the company. The judge expressed displeasure with the outcome, stating that privacy protections leave child victims as collateral damage. This ruling sets a legal precedent that tech companies may not be required to scan encrypted cloud services for illegal content, reinforcing the tension between privacy and child safety. It could influence future legislation and corporate policies on encryption and content moderation. Apple previously proposed client-side CSAM scanning on devices but abandoned it after privacy backlash. The court noted that end-to-end encryption inherently prevents server-side scanning, and Apple's current iCloud encryption is not fully end-to-end by default.
 
-rss · Simon Willison · Jul 20, 03:47
+hackernews · speckx · Jul 21, 14:31 · [Discussion](https://news.ycombinator.com/item?id=48992870)
 
-**Background**: GPT-3 is a large language model developed by OpenAI, capable of generating human-like text and code. Stability AI is known for releasing open source generative models, such as Stable Diffusion. The email suggests OpenAI considered releasing a smaller, locally runnable model to maintain competitive advantage.
+**Background**: Child Sexual Abuse Material (CSAM) refers to illegal images and videos depicting child sexual abuse. Tech companies face pressure to detect and report CSAM, but end-to-end encryption prevents service providers from accessing content. Apple's iCloud uses encryption, but Advanced Data Protection (ADP) is required for full end-to-end encryption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-3">GPT-3 - Wikipedia</a></li>
-<li><a href="https://github.com/Stability-AI/generative-models">Generative Models by Stability AI - GitHub</a></li>
+<li><a href="https://9to5mac.com/guides/csam/">CSAM : Apple's efforts to detect Child Sexual Abuse Materials - 9to5Mac</a></li>
+<li><a href="https://www.lawfaremedia.org/article/apple-client-side-scanning-system">The Apple Client-Side Scanning System | Lawfare</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#openai`, `#open-source`, `#sam-altman`, `#ai-ethics`, `#generative-ai`
+**Discussion**: Commenters largely supported the ruling as a win for privacy, with some arguing that true end-to-end encryption is impossible when the company controls both the app and servers. Others noted the tragic trade-off, acknowledging that privacy protections can hinder CSAM detection.
+
+**Tags**: `#privacy`, `#encryption`, `#Apple`, `#CSAM`, `#legal`
 
 ---
 
 <a id="item-2"></a>
-## [Critical RCE in Fastjson 1.x Without Gadgets or AutoType](https://x.com/k_firsov/status/2078872293745570032) ⭐️ 9.0/10
+## [Jane Street's Incremental Library for Efficient Computations](https://github.com/janestreet/incremental) ⭐️ 8.0/10
 
-Security researcher Kirill Firsov disclosed a critical remote code execution vulnerability in Fastjson 1.2.68 through 1.2.83 that works on JDK 8, 17, and 21 without requiring autoType or any classpath gadgets. This vulnerability affects a widely-used Java JSON library and can be exploited without special conditions, posing a severe risk to millions of applications. Since Fastjson 1.x is end-of-life, no official patch will be released, forcing users to migrate to Fastjson2 or enable SafeMode. The vulnerability is exploitable via the default JSON parsing entry point, and does not require any third-party deserialization gadget chains like commons-collections or JdbcRowSetImpl. Tencent Cloud Security Center has publicly confirmed the impact scope.
+Jane Street has released Incremental, an OCaml library that enables efficient incremental computations by automatically recomputing only the parts of a computation graph that change when inputs are updated. This library brings the power of incremental computation to OCaml, enabling developers to build responsive applications and systems (like build tools or financial models) that avoid full recomputation, saving time and resources. Incremental is similar to reactive programming signals in JavaScript frameworks (e.g., Vue, SolidJS) but is designed for OCaml's functional programming paradigm. It uses a directed acyclic graph (DAG) to model dependencies and propagate changes efficiently.
 
-telegram · zaihuapd · Jul 20, 14:32
+hackernews · handfuloflight · Jul 21, 03:50 · [Discussion](https://news.ycombinator.com/item?id=48987822)
 
-**Background**: Fastjson is a popular Java library for JSON serialization/deserialization developed by Alibaba. Its autoType feature, which allows polymorphic deserialization, has historically been a source of vulnerabilities. SafeMode is a security mode that disables autoType and other risky features, and is recommended for production use.
+**Background**: Incremental computation is a technique that reuses previous results to compute new outputs when inputs change, avoiding redundant work. This concept is widely used in build systems (e.g., Make, Bazel) and reactive programming. Jane Street's Incremental library implements self-adjusting computations, a concept introduced by Umut Acar, and has evolved through seven implementations over years of practical use.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/alibaba/fastjson/wiki/fastjson_safemode">fastjson_safemode · alibaba/fastjson Wiki · GitHub</a></li>
-<li><a href="https://github.com/alibaba/fastjson2">GitHub - alibaba/fastjson2: 🚄 FASTJSON2 is a Java JSON library with excellent performance.</a></li>
-<li><a href="https://mrxn.net/jswz/fastjson-1-2-83-default-config-rce.html">Fastjson 1.2.83 默认配置下的远程代码执行漏洞 - Mrxn's Blog</a></li>
+<li><a href="https://github.com/janestreet/incremental">GitHub - janestreet/incremental: A library for incremental computations</a></li>
+<li><a href="https://www.janestreet.com/tech-talks/seven-implementations-of-incremental/">Seven Implementations of Incremental - Jane Street</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#vulnerability`, `#fastjson`, `#rce`, `#java`
+**Discussion**: Commenters noted the similarity between Incremental and JavaScript signals, with one mentioning its use in frameworks like Vue and SolidJS. Another commenter recalled Goldman Sachs using a similar approach for instrument pricing decades ago, highlighting the long history of incremental computation in finance.
+
+**Tags**: `#incremental computation`, `#reactive programming`, `#Jane Street`, `#OCaml`, `#build systems`
 
 ---
 
 <a id="item-3"></a>
-## [Jane Street Releases Incremental Library for OCaml](https://github.com/janestreet/incremental) ⭐️ 8.0/10
+## [Fireside Chat with Claude Code Team Reveals 65% PRs via Claude Tag](https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything) ⭐️ 8.0/10
 
-Jane Street has released Incremental, a library for building self-adjusting computations in OCaml that efficiently recompute only the affected parts of a dependency graph when inputs change. This library brings efficient incremental computation to OCaml, enabling applications like reactive UIs, build systems, and financial modeling to update results with minimal overhead, and it has already inspired community discussion comparing it to JavaScript signals and differential dataflow. Incremental is used internally at Jane Street and is the foundation for their UI library Bonsai; it supports a DAG-based computation model where nodes are recomputed only when their dependencies change, with multiple propagation algorithms available.
-
-hackernews · handfuloflight · Jul 21, 03:50 · [Discussion](https://news.ycombinator.com/item?id=48987822)
-
-**Background**: Incremental computation is a technique where a computation is updated incrementally rather than recomputed from scratch when inputs change. This is common in build systems (e.g., Make) and reactive programming frameworks. Jane Street's Incremental library implements this for OCaml, using a directed acyclic graph (DAG) to model dependencies.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/janestreet/incremental">GitHub - janestreet/incremental: A library for incremental computations · GitHub</a></li>
-<li><a href="https://blog.janestreet.com/introducing-incremental/">Jane Street Blog - Introducing Incremental</a></li>
-<li><a href="https://www.janestreet.com/tech-talks/seven-implementations-of-incremental/">Seven Implementations of Incremental :: Jane Street</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters noted similarities to JavaScript signals (used in Vue, SolidJS, Svelte) and to build systems, as well as connections to differential dataflow and DBSP. Some shared historical context from financial firms like Goldman Sachs, and others pointed to related libraries like Javelin (Clojure) and Bonsai.
-
-**Tags**: `#incremental computation`, `#reactive programming`, `#Jane Street`, `#OCaml`, `#dataflow`
-
----
-
-<a id="item-4"></a>
-## [Chinese AI Models Challenge US Dominance](https://stratechery.com/2026/whos-afraid-of-chinese-models/) ⭐️ 8.0/10
-
-An analysis on Stratechery examines how Chinese AI models are undercutting US rivals on price and access, sparking debate over the term 'distillation attack' used by Anthropic. This matters because Chinese models are forcing US companies to compete on pricing and openness, potentially reshaping the global AI landscape and making advanced AI more accessible to individuals and open-source projects. Chinese models like DeepSeek-V3 and Qwen offer frontier performance at 90-95% lower cost than GPT-5 or Claude, with token prices as low as $0.07 per million tokens compared to $1.25 for Western equivalents.
-
-hackernews · mfiguiere · Jul 20, 11:05 · [Discussion](https://news.ycombinator.com/item?id=48977128)
-
-**Background**: AI model distillation is a technique where a smaller model learns from a larger model's outputs, often via logits. Anthropic has accused Chinese labs of conducting 'distillation attacks' to copy its models, but critics argue the term is misleading because Anthropic does not provide logits, and generating training data from outputs is a common practice.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
-<li><a href="https://www.ainchina.com/blog/china-ai-price-revolution-silicon-valley-waic-2026/">The $0.07 Model: How China's AI Price Revolution Is Forcing ...</a></li>
-<li><a href="https://aicost.org/blog/chinese-ai-models-cost-advantage-2026">Chinese AI Models 2026: 90% Cheaper Than GPT-5 Yet Matching ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters express fear of US model pricing and access restrictions, noting that Chinese models keep US companies in check. Some criticize the term 'distillation attack' as loaded and inaccurate, while others highlight unequal security access, forcing open-source developers to rely on Chinese models.
-
-**Tags**: `#AI`, `#Chinese models`, `#competition`, `#pricing`, `#distillation`
-
----
-
-<a id="item-5"></a>
-## [AI Outperforms Humans in Generating Counterexamples](https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/) ⭐️ 8.0/10
-
-A blog post reports that AI systems can now generate counterexamples to mathematical conjectures that human mathematicians cannot, signaling a shift in mathematical practice. This development could accelerate mathematical research by quickly disproving false conjectures, saving mathematicians time and allowing them to focus on more fruitful problems. The post highlights that AI-generated counterexamples are often beyond human intuition, and the technology is being applied to open problems in discrete mathematics and combinatorics.
-
-hackernews · artninja1988 · Jul 20, 19:03 · [Discussion](https://news.ycombinator.com/item?id=48983382)
-
-**Background**: Automated reasoning and theorem proving have long been goals of AI, but until recently they had little impact on working mathematicians. Recent advances in AI, particularly in pattern recognition and exhaustive search, are now enabling the discovery of counterexamples that humans miss.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://bigdata.duke.edu/projects/ai-powered-discovery-of-counterexamples-in-discrete-mathematics/">AI-Powered Discovery of Counterexamples in Discrete Mathematics - JOINT Math+/Data+ Project - Duke Rhodes iiD</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Automated_reasoning">Automated reasoning - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments express mixed views: some see it as a positive tool to avoid wasted effort, while others caution that the results may be less impressive than claimed, noting that human mathematicians still need to interpret and clean up AI-generated reasoning.
-
-**Tags**: `#AI`, `#mathematics`, `#research`, `#machine learning`, `#automated reasoning`
-
----
-
-<a id="item-6"></a>
-## [Cursor's Agent Swarm Hits 1000 Commits/s with Custom VCS](https://cursor.com/blog/agent-swarm-model-economics) ⭐️ 8.0/10
-
-Cursor's blog details a new agent swarm system that achieves 1000 commits per second using a custom-built version control system (VCS), dramatically improving performance and cost efficiency over previous approaches. This breakthrough showcases the potential of large-scale agent collaboration for software engineering, potentially reducing development time and costs while raising questions about training data contamination and the economics of AI-driven coding. The new system peaks at 1000 commits per second, compared to the old swarm's 1000 commits per hour, and uses a custom VCS to handle collisions and coordination. A test task of building SQLite from scratch in Rust from documentation showed dramatic cost savings: Opus + Composer achieved comparable results at about 1/19th the price and half the lines of code.
-
-hackernews · jlaneve · Jul 20, 18:06 · [Discussion](https://news.ycombinator.com/item?id=48982535)
-
-**Background**: Agent swarms are systems where multiple AI agents collaborate on complex tasks, leveraging collective intelligence. Custom VCS for AI agents is an emerging concept to manage the high throughput and coordination challenges of agent swarms. LLM economics refers to the cost and efficiency analysis of using large language models in production.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://relevanceai.com/learn/agent-swarms-orchestrating-the-future-of-ai-collaboration">What is an AI Agent Swarm</a></li>
-<li><a href="https://medium.com/@sahysahy/how-i-built-version-control-for-ai-agents-1f6b69abc860">How I Built Version-Control For AI Agents | by Shay Livni | Medium</a></li>
-<li><a href="https://artificialanalysis.ai/models/capabilities/economics">Best AI for Economics : LLM Leaderboard | Artificial Analysis</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed amazement at the performance gains, with one noting the cost efficiency of Opus + Composer compared to the new swarm. Another questioned whether SQLite's source code was in the training data, raising concerns about test validity. Some debated the value of large agent swarms for coding tasks.
-
-**Tags**: `#AI agents`, `#software engineering`, `#version control`, `#LLM economics`, `#Cursor`
-
----
-
-<a id="item-7"></a>
-## [China's open-weights AI strategy is winning](https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/) ⭐️ 8.0/10
-
-An analysis argues that China's open-weights AI models are gaining dominance over proprietary US models, citing historical trends where free and open solutions eventually win. The article highlights that 80% of startups are using Chinese models, though some commenters dispute this figure. This trend could reshape the global AI landscape, as open-weights models lower barriers to entry and foster rapid innovation, potentially undermining the market position of proprietary US AI leaders. It also reflects a strategic divergence in AI development philosophies between China and the US. The article draws parallels to historical market shifts such as PCs vs. minicomputers and Linux vs. UNIX. However, critics note that Meta's Llama, a prominent open-weights model, has not led to commercial success for Meta, and enterprises prioritize data retention over openness.
-
-hackernews · benwerd · Jul 20, 14:21 · [Discussion](https://news.ycombinator.com/item?id=48979269)
-
-**Background**: Open-weights AI models allow developers to access and modify the trained model parameters, enabling customization and local deployment, unlike proprietary models that are only accessible via API. China's AI labs like DeepSeek and Qwen have released competitive open-weights models, undercutting US rivals on price and fostering a developer ecosystem. The US-China AI competition increasingly centers on whether open or closed approaches will dominate.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.uscc.gov/research/two-loops-how-chinas-open-ai-strategy-reinforces-its-industrial-dominance">Two Loops: How China’s Open AI Strategy Reinforces Its ...</a></li>
-<li><a href="https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/">China’s open-source bet: 10 Things That Matter in AI Right ...</a></li>
-<li><a href="https://llm-stats.com/">AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters are divided: some agree with the historical analogy that free/open eventually wins, while others question the claim that 80% of startups use Chinese models, citing their own experience with US models. Some also point out that enterprises care more about data retention than openness, and that Llama's mixed success undermines the argument.
-
-**Tags**: `#AI`, `#open-source`, `#China`, `#strategy`, `#LLM`
-
----
-
-<a id="item-8"></a>
-## [Jellyfin founder steps down due to burnout](https://forum.jellyfin.org/t-project-leadership-changes) ⭐️ 8.0/10
-
-Andrew, the founder of the open-source media server Jellyfin, has stepped down from the project leadership due to severe burnout and mental health risks. The transition was peaceful, with the team continuing development. This highlights the sustainability challenges of open-source projects, especially as Jellyfin is a key alternative to Plex, which recently raised its lifetime pass price to $750. The departure underscores the need for better maintainer support in the FLOSS community. Andrew cited severe burnout and inability to perform his duties, noting that similar burnout cases have occurred in other open-source projects like Filebrowser. The community praised Jellyfin's functionality as a self-hosted media server without ads or streaming-service features.
-
-hackernews · swat535 · Jul 20, 23:15 · [Discussion](https://news.ycombinator.com/item?id=48986091)
-
-**Background**: Jellyfin is a free, open-source media server that organizes and streams personal media libraries to various devices. It started as a fork of Emby in 2018 and has become a popular alternative to proprietary solutions like Plex, especially among users who want full control without subscription fees.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://jellyfin.org/">The Free Software Media System | Jellyfin</a></li>
-<li><a href="https://www.howtogeek.com/876197/best-plex-alternatives/">5 Best Plex Alternatives - How-To Geek</a></li>
-<li><a href="https://jellywatch.app/blog/best-plex-alternatives-2026-jellyfin-emby-immich-comparison">Best Plex Alternatives in 2026: 8 Self-Hosted Options Compared</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed gratitude for Andrew's work and noted Jellyfin's reliability over years of use. Some contrasted Jellyfin's open-source ethos with Plex's recent price hike, while others pointed out that burnout among open-source maintainers is a recurring issue.
-
-**Tags**: `#open-source`, `#media-server`, `#burnout`, `#community`, `#FLOSS`
-
----
-
-<a id="item-9"></a>
-## [Hacker wipes Romania's land registry database](https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/) ⭐️ 8.0/10
-
-A hacker wiped Romania's entire land registry database after a failed extortion attempt, halting all property transactions nationwide. Officials claim to have offline backups and are migrating applications to the government cloud infrastructure. This incident paralyzes Romania's real-estate market and threatens legal proof of land ownership, affecting millions of citizens. It highlights critical vulnerabilities in government IT systems and the importance of offline backups and cloud migration for national infrastructure. The hacker, identified as Zakaria Mahdjoub from Algeria, claimed to have deleted backups as well, but the agency had an offline copy. The migration to Romania's Government Cloud is coordinated by the Special Telecommunications Service (STS) and was expected to be completed by July 22.
-
-hackernews · speckx · Jul 20, 13:28 · [Discussion](https://news.ycombinator.com/item?id=48978605)
-
-**Background**: Romania's land registry is a national property registry that legally documents ownership rights, boundaries, and claims. A breach of such a system can halt all real-estate transactions and create legal chaos. Offline backups and cloud migration are standard disaster recovery practices to mitigate such risks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://cybernews.com/security/hacker-deletes-romanian-land-registry-database/">Hacker deletes country’s entire land registry database ... | Cybernews</a></li>
-<li><a href="https://www.newsdirectory3.com/romania-land-registry-paralysed-by-major-cyberattack/">Romania Land Registry Paralysed by Major... - News Directory 3</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters noted that the availability of offline backups likely prevented a catastrophic loss of land ownership records. Some Romanian users attributed the breach to corruption in government IT contracting, where cronies fail to implement real security. The hacker's identity was doxxed by security firm KELA as Zakaria Mahdjoub from Algeria, which has an extradition treaty with Romania.
-
-**Tags**: `#cybersecurity`, `#data breach`, `#infrastructure`, `#hacking`, `#Romania`
-
----
-
-<a id="item-10"></a>
-## [AI Writing Surge on arXiv: Up to 39% of Papers Flagged by 2026](https://unslop.run/blog/measuring-ai-writing-on-arxiv) ⭐️ 8.0/10
-
-A study measured AI-written text in arXiv papers using a custom detector tuned for low false positives, finding that by January 2026, up to 39% of all papers and 65% of computer science papers were flagged as machine-written, a sharp rise from less than 1% before ChatGPT's release. This quantifies the rapid infiltration of AI-generated text in academic publishing, raising concerns about research integrity, peer review, and the reliability of scientific literature, especially in fields like computer science where adoption is highest. The detector combined three separate scoring methods and was tuned to achieve a pre-ChatGPT false positive rate of only 0.4%. Mathematics papers showed minimal increase (0.7%), while computer science peaked at 65%, highlighting stark disciplinary differences.
-
-hackernews · dopamine_daddy · Jul 20, 16:36 · [Discussion](https://news.ycombinator.com/item?id=48981206)
-
-**Background**: arXiv is a widely used open-access preprint repository for scientific papers, particularly in physics, mathematics, and computer science. Since the release of ChatGPT in late 2022, concerns have grown about authors using large language models (LLMs) to generate or polish manuscripts, potentially undermining the authenticity of research.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/ArXiv">arXiv - Wikipedia</a></li>
-<li><a href="https://arxiv.org/">arXiv .org e- Print archive</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters raised concerns about detection accuracy, with one user noting that their pre-LLM papers from 2011-2015 were flagged as 27-74% machine-written, suggesting the detector may have high false positive rates for certain writing styles. Others questioned the methodology, particularly the combination of three detectors, and noted the lack of open-source code for reproducibility.
-
-**Tags**: `#AI detection`, `#academic publishing`, `#arXiv`, `#LLM impact`, `#measurement`
-
----
-
-<a id="item-11"></a>
-## [Claude Code team reveals 65% of PRs via Claude Tag](https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything) ⭐️ 8.0/10
-
-In a fireside chat at the AI Engineer World's Fair, Anthropic's Claude Code team disclosed that Claude Tag now handles 65% of product engineering pull requests for the team, and that the Claude Code system prompt has been reduced by 80% for models like Fable 5. These metrics demonstrate a significant shift toward AI-driven code review and delegation, offering concrete evidence of how leading AI companies are adopting their own tools internally and shaping best practices for the broader developer community. The team ships features to Anthropic employees first and only releases those that show user retention; critical changes still undergo manual review, but automated review is used for outer layers. Additionally, adding examples to system prompts is no longer recommended for latest models, and lists of prohibitions can reduce output quality.
+Simon Willison hosted a fireside chat with Anthropic's Claude Code team, revealing that Claude Tag now handles 65% of product engineering pull requests for the team, and that the Claude Code system prompt has been reduced by 80% for newer models like Fable 5. These metrics demonstrate the growing maturity and trust in AI coding agents within Anthropic itself, offering concrete evidence of productivity gains and best-practice evolution for the broader AI engineering community. The team ships features to employees first and only releases those that show user retention; critical changes still undergo manual review, but automated review is used for outer layers. Adding examples to system prompts is no longer recommended for latest models.
 
 rss · Simon Willison · Jul 21, 12:54
 
-**Background**: Claude Code is Anthropic's AI coding agent, initially launched alongside Claude Sonnet 3.7. Claude Tag is a Slack integration that allows users to @mention Claude in channels for collaborative coding. The team practices 'ant fooding' (internal dogfooding) to validate features before public release.
+**Background**: Claude Code is Anthropic's AI coding agent, launched alongside Claude 3.7 Sonnet in early 2025. Claude Tag is a Slack integration that allows users to @ mention Claude in channels for collaborative coding. The AI Engineer World's Fair is a conference focused on AI engineering practices.
 
 <details><summary>References</summary>
 <ul>
@@ -280,45 +92,145 @@ rss · Simon Willison · Jul 21, 12:54
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Claude Code`, `#Anthropic`, `#software engineering`, `#AI tools`
+**Tags**: `#AI`, `#Claude Code`, `#Anthropic`, `#coding agents`, `#AI engineering`
 
 ---
 
-<a id="item-12"></a>
+<a id="item-4"></a>
 ## [AI coding agents make reverse-engineering cheap](https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything) ⭐️ 8.0/10
 
-Simon Willison reports that AI coding agents have dramatically reduced the effort and maintenance burden of reverse-engineering home devices, making automation projects viable where they previously weren't. This shift changes the ROI calculus for home automation, enabling hobbyists and engineers to automate devices without fear of high maintenance costs. It also highlights a broader trend where AI-assisted programming lowers the barrier to software engineering tasks. The key insight is that coding agents reduce both the initial effort to get a simple automation working and the psychological cost of future maintenance, since code is now cheap enough to throw away and start over. This applies to undocumented, unstable APIs that may change or break.
+AI coding agents have drastically reduced the cost and effort required to reverse-engineer undocumented APIs in home devices, making automation projects viable even for hobbyists. This shift changes the ROI calculus for home automation, lowering the barrier to entry and reducing the psychological burden of future maintenance, potentially accelerating adoption of custom smart home solutions. The post highlights that prior to agents, the effort to reverse-engineer and maintain undocumented APIs often outweighed the benefits; now, the low cost of trying and failing makes experimentation risk-free.
 
 rss · Simon Willison · Jul 20, 19:24
 
-**Background**: Reverse-engineering home devices involves analyzing their protocols or firmware to create custom integrations, often requiring significant time and expertise. AI coding agents are tools that can autonomously write, modify, debug, and refactor code, understanding multi-file context and executing multi-step tasks. Prior to agents, the high effort and maintenance burden often made such projects uneconomical.
+**Background**: Reverse-engineering involves analyzing a device's network traffic or firmware to understand its protocols, often to control it without official support. Undocumented APIs are common in consumer smart home devices, which may change without notice, requiring ongoing maintenance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://agentic.ai/best/coding-agents">20 Best AI Coding Agents in 2026 — Agentic.ai</a></li>
-<li><a href="https://technicalustad.com/reverse-engineering-tools/">13 Best Reverse Engineering Tools For Code Analysis [2026]</a></li>
+<li><a href="https://www.agentre-bench.ai/">AgentRE-Bench — LLM Reverse Engineering Benchmark</a></li>
+<li><a href="https://www.linkedin.com/pulse/i-used-ai-coding-agent-my-phone-reverse-engineer-smart-daniel-potts-ovd4c">I Used an AI Coding Agent on My Phone to Reverse - Engineer ...</a></li>
+<li><a href="https://stevessmarthomeguide.com/smart-home-apis/">Understanding Smart Home APIs</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#reverse-engineering`, `#AI coding agents`, `#home automation`, `#software engineering`
+**Tags**: `#AI agents`, `#reverse engineering`, `#software engineering`, `#home automation`, `#cost of code`
 
 ---
 
-<a id="item-13"></a>
-## [Anthropic's $1.5B Copyright Settlement Approved](https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/) ⭐️ 8.0/10
+<a id="item-5"></a>
+## [Ben Thompson Proposes US Law to Legalize AI Data Collection](https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything) ⭐️ 8.0/10
 
-A US judge has granted final approval to Anthropic's $1.5 billion copyright settlement with authors who accused the company of using their works to train AI models without permission. This landmark settlement sets a financial precedent for AI companies using copyrighted data, but the broader legal question of whether training AI on copyrighted content constitutes fair use remains unresolved, leaving the industry in uncertainty. The settlement resolves a class-action lawsuit but does not establish a legal precedent on fair use for AI training, meaning future cases could still rule differently. The $1.5 billion will be distributed to affected authors.
+Ben Thompson proposed that the US should pass a law explicitly making data collection for AI training fair use and barring terms of service that forbid distillation, to help US open models compete with Chinese counterparts. He also noted that Alibaba released Qwen 3.8 Max as open weights, possibly influenced by a recent Xi Jinping speech encouraging open source. This proposal addresses a key hypocrisy in AI: labs that train on unlicensed data often prohibit others from distilling their models. If enacted, it could level the playing field for US open models against Chinese ones, and reshape copyright policy for AI training. Distillation is the process of querying a larger model's API to train a smaller model, which is nearly impossible to stop technically. Qwen 3.8 Max is a 2.4 trillion parameter model, nearly as large as Kimi K3's 2.8 trillion parameters.
 
-rss · TechCrunch AI · Jul 21, 00:12
+rss · Simon Willison · Jul 20, 17:09
 
-**Background**: AI companies like Anthropic train large language models on vast datasets scraped from the internet, often including copyrighted books and articles. Authors and publishers have sued, arguing this infringes their copyrights, while AI companies claim fair use. Courts have issued conflicting rulings on this issue.
+**Background**: Knowledge distillation is a machine learning technique where a smaller 'student' model learns from a larger 'teacher' model's outputs. Open weights models allow users to download and run the model locally, but do not include full training code or data. The US Copyright Office has recently weighed in on whether AI training constitutes fair use, with some courts considering the public benefit.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lTLUtQU0R4R0JGSUo2Q2M3dGl5Z0FQAQ?hl=en-US&gl=US&ceid=US:en">US judge approves $1.5 billion Anthropic copyright settlement ...</a></li>
-<li><a href="https://www.claimdepot.com/settlements/anthropic-copyright-settlement">Anthropic Settles Copyright Class Action for $1.5 Billion</a></li>
-<li><a href="https://www.linkedin.com/posts/jeremy-kahn-01100462_anthropic-reaches-15-billion-settlement-activity-7369858980912869376--7L7">Anthropic settles copyright infringement case for $1.5 billion | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation - Wikipedia</a></li>
+<li><a href="https://opensource.org/ai/open-weights">Open Weights: not quite what you’ve been told – Open Source Initiative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence_and_copyright">Artificial intelligence and copyright - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI policy`, `#open models`, `#distillation`, `#copyright`, `#Chinese AI`
+
+---
+
+<a id="item-6"></a>
+## [Sam Altman's 2022 Email Reveals Open Source Strategy](https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything) ⭐️ 8.0/10
+
+A 2022 email from Sam Altman to OpenAI's board, exposed in the Musk v. Altman lawsuit, reveals plans to release a GPT-3-level open source model that can run on consumer hardware to preempt competitors like Stability AI and discourage new entrants. This email provides rare insight into OpenAI's internal strategic thinking about open source models, highlighting how competitive pressures influenced decisions that affect AI accessibility, ethics, and market dynamics. The email is dated October 1, 2022, and was part of the Musk v. Altman legal case in 2026. Altman specifically mentions releasing the model before 'Stability or someone else does,' referring to Stability AI's StableLM series.
+
+rss · Simon Willison · Jul 20, 03:47
+
+**Background**: GPT-3 is a large language model developed by OpenAI, released in 2020, known for its ability to generate human-like text. At the time of the email, open source alternatives like GPT-Neo and OPT were emerging, but none matched GPT-3's capability. Running such models on consumer hardware was a significant technical challenge, requiring optimization and quantization.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GPT-3">GPT-3 - Wikipedia</a></li>
+<li><a href="https://github.com/Stability-AI/StableLM">Stability - AI /StableLM: StableLM: Stability AI Language Models ...</a></li>
+<li><a href="https://www.local-llm.net/learn/what-is-local-ai/">What Is Local AI? The Complete Guide to Running AI... | local - llm .net</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#open-source`, `#ai-ethics`, `#openai`, `#sam-altman`, `#generative-ai`
+
+---
+
+<a id="item-7"></a>
+## [Data Centers to Quadruple Electricity Use by 2035](https://techcrunch.com/2026/07/21/data-centers-expected-to-use-4x-more-electricity-by-2035/) ⭐️ 8.0/10
+
+A new projection indicates that data centers built through 2033 could consume as much electricity as India's current total usage, quadrupling their power demand by 2035. This surge in energy consumption poses significant challenges for energy infrastructure, AI scalability, and global sustainability efforts, potentially straining power grids and increasing carbon emissions. The projection covers data centers built through 2033, and the comparison to India's electricity usage highlights the enormous scale of expected growth.
+
+rss · TechCrunch AI · Jul 21, 18:06
+
+**Background**: Data centers are facilities that house computer systems and associated components, such as telecommunications and storage. They are critical for cloud computing, AI training, and digital services, but are highly energy-intensive.
+
+**Tags**: `#data centers`, `#energy consumption`, `#AI infrastructure`, `#sustainability`
+
+---
+
+<a id="item-8"></a>
+## [US threatens sanctions on Chinese AI models over IP theft](https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/) ⭐️ 8.0/10
+
+U.S. Treasury Secretary Scott Bessent said the Trump administration could sanction Chinese open-source AI models if they are found to be built on intellectual property theft from American companies. This escalates US-China tech tensions and could reshape the global AI landscape by restricting the distribution of Chinese open-source models, affecting developers and companies worldwide. Bessent specifically mentioned the practice of 'distillation,' where a model is trained on outputs from another model, as a potential form of IP theft. The administration is reportedly considering adding Chinese AI labs to sanctions lists and holding US companies liable for security failures.
+
+rss · TechCrunch AI · Jul 21, 15:37
+
+**Background**: Open-source AI models have become popular due to their transparency and lower cost, but they can still be black boxes regarding training data. The US has previously imposed export controls on advanced AI chips to China, and this sanctions threat represents a new front in the technology competition.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.businessinsider.com/treasury-secretary-chinese-ai-open-source-sanctions-kimi-k3-2026-7">Treasury Secretary says its 'unacceptable' that Chinese open source AI models may have been built on 'IP theft'</a></li>
+<li><a href="https://www.cnbc.com/2026/07/21/bessent-china-ai-sanctions.html">Bessent says U.S. could sanction China over AI model 'theft'</a></li>
+<li><a href="https://the-decoder.com/trump-administration-reportedly-builds-a-slow-motion-ban-on-chinese-ai-models-through-sanctions-and-soft-pressure/">Trump administration reportedly builds a slow-motion ban on Chinese AI models through sanctions and soft pressure</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#geopolitics`, `#sanctions`, `#open source`, `#policy`
+
+---
+
+<a id="item-9"></a>
+## [Deezer: Over 50% of daily uploads are AI-generated](https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/) ⭐️ 8.0/10
+
+Deezer reported that in June, more than 90,000 AI-generated tracks were uploaded daily to its platform, accounting for over 50% of all daily uploads. This statistic quantifies the massive scale of AI-generated content on a major streaming platform, highlighting urgent challenges for copyright, curation, and content moderation across the music industry. Deezer has developed an AI music detector that has identified over 13.4 million AI tracks in 2025, and it offers this detection tool for free to users across multiple platforms.
+
+rss · TechCrunch AI · Jul 21, 13:27
+
+**Background**: Generative AI tools like SOUNDRAW, AIVA, and Canva's AI music generator allow anyone to create royalty-free music in seconds. As these tools become widespread, streaming platforms face the challenge of distinguishing human-made from AI-generated content. Deezer's aggressive detection approach contrasts with competitors like Spotify and Apple Music, which only add labels to AI content.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.deezer.com/explore/ai-music-detector/">Free AI Music Detector by Deezer | AI Song checker</a></li>
+<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pQdmZhc0VSRVJiN05uZlRXbXhpZ0FQAQ?hl=en-NA&gl=NA&ceid=NA:en">Google News - Deezer 's AI music detector - Overview</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI-generated content`, `#music streaming`, `#generative AI`, `#content moderation`, `#industry impact`
+
+---
+
+<a id="item-10"></a>
+## [Anthropic's $1.5B Copyright Settlement Approved](https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/) ⭐️ 8.0/10
+
+A U.S. court has granted final approval to Anthropic's $1.5 billion copyright settlement with authors who claimed the company used their works without permission to train AI models. This landmark settlement is the largest of its kind in the AI era, signaling that AI companies may face significant financial liability for using copyrighted training data, though the core legal question of fair use remains unresolved. The settlement provides compensation for each class work but does not establish a legal precedent on whether using copyrighted material for AI training constitutes fair use, leaving the broader legal landscape uncertain.
+
+rss · TechCrunch AI · Jul 21, 00:12
+
+**Background**: Anthropic, an AI safety company, faced a class-action lawsuit from authors alleging that its AI models were trained on pirated copies of their books and articles. The case is part of a wave of copyright lawsuits against AI companies, including OpenAI and Meta, over the use of copyrighted data in training large language models.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.wired.com/story/anthropic-settlement-lawsuit-copyright/">Anthropic Agrees to Pay Authors at Least $1.5 Billion in AI Copyright ...</a></li>
+<li><a href="https://www.linkedin.com/pulse/anthropic-settlement-ai-training-data-what-means-businesses-using-hvvme">The Anthropic Settlement & AI Training Data: What It Means for...</a></li>
 
 </ul>
 </details>
@@ -327,111 +239,130 @@ rss · TechCrunch AI · Jul 21, 00:12
 
 ---
 
-<a id="item-14"></a>
-## [Google Develops Frozen v2 Chip to Boost Gemini Efficiency](https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/) ⭐️ 8.0/10
+<a id="item-11"></a>
+## [EU to Share Biometric Data with US for Visa-Free Travel](https://edri.org/our-work/the-eu-is-about-to-sell-our-most-sensitive-data-to-the-us-for-visa-free-travel/) ⭐️ 8.0/10
 
-Google is reportedly developing a new AI server chip, codenamed 'Frozen v2', that hardwires parts of the Gemini model architecture directly into silicon to improve inference efficiency. The chip is expected to deliver 6 to 10 times more tokens per unit of power than Google's latest TPUs, with deployment planned for 2028. This chip represents a strategic shift toward domain-specific AI hardware, potentially reducing reliance on general-purpose GPUs and TPUs. It could alleviate Google's internal compute shortage, which has forced Google Cloud to turn down enterprise customers, and set a new benchmark for inference efficiency in the industry. Frozen v2 is designed as a complement to Google's TPUs, not a replacement. The chip's efficiency gains come from embedding Gemini's architecture directly into hardware, optimizing for the specific operations of the model.
+The European Commission is negotiating an Enhanced Border Security Partnership (EBSP) framework with the US, which would require EU member states to share biometric data with US authorities in exchange for visa-free travel for US citizens. This agreement could set a precedent for mass surveillance and data sharing between major powers, potentially undermining EU privacy protections and exposing sensitive biometric data to risks of misuse. A leaked draft shows the EU has largely accepted US demands for unrestricted access to biometric databases, including the sharing of 'risk indicators' based on political views, which could threaten freedom of expression.
 
-rss · TechCrunch AI · Jul 20, 21:21
+telegram · zaihuapd · Jul 20, 15:08
 
-**Background**: Google has long developed custom AI accelerators, such as its Tensor Processing Units (TPUs), to handle machine learning workloads. However, as AI models grow larger and more complex, inference efficiency—measured in tokens per watt—has become a critical metric. By hardwiring model-specific logic into silicon, Google aims to achieve significant power savings and performance gains, similar to how ASICs outperform general-purpose chips for specific tasks.
+**Background**: Biometric data includes unique physical characteristics like fingerprints and facial recognition patterns, which cannot be changed if compromised. The EBSP framework would be the first large-scale agreement for sharing EU citizens' biometric data with US border authorities, raising concerns about privacy and data security.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.theinformation.com/articles/google-plans-new-frozen-chip-run-ai-models-efficiently">Google Plans New ‘Frozen’ Chip to Run Its AI Models Much More ...</a></li>
-<li><a href="https://qz.com/google-gemini-chip-frozen-tpu-efficiency-072026">Google developing Gemini-specific chip called Frozen v2 - Quartz</a></li>
-<li><a href="https://www.techtimes.com/articles/321152/20260721/googles-frozen-v2-chip-hardwires-gemini-architecture-tenfold-inference-efficiency.htm">Google's Frozen v2 Chip Hardwires Gemini Architecture: Up to ...</a></li>
+<li><a href="https://leantrustgovernance.substack.com/p/the-eu-us-biometric-data-deal-trading">How the EU – US Border Deal Rewrites Privacy</a></li>
+<li><a href="https://cdt.org/insights/responding-to-the-eu-us-negotiations-on-reciprocal-data-exchanges-for-border-procedures/">Responding to the EU - US Negotiations on Reciprocal Data Exchanges...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI hardware`, `#Google`, `#Gemini`, `#chip design`, `#efficiency`
+**Tags**: `#privacy`, `#biometric data`, `#EU-US agreement`, `#data protection`, `#civil liberties`
+
+---
+
+<a id="item-12"></a>
+## [Zhipu AI Completes Giant Data Center with Domestic Chips](https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai) ⭐️ 8.0/10
+
+Zhipu AI has completed construction of a large data center powered entirely by domestically produced Chinese chips, with a power capacity of 1 gigawatt, and has begun partial operations to support its GLM platform development. This milestone demonstrates China's progress toward AI self-sufficiency by reducing reliance on foreign chips, and it is one of the largest AI facilities built by a Chinese AI lab, potentially boosting domestic AI model training capabilities. The data center's 1 GW power capacity is enough to supply approximately 750,000 households. Zhipu AI operates multiple computing clusters each with over 10,000 chips, and this new facility is among the largest of its kind in China.
+
+telegram · zaihuapd · Jul 20, 15:43
+
+**Background**: Zhipu AI is a Chinese AI company spun off from Tsinghua University's Knowledge Engineering Lab (KEG Lab), known for its open-source GLM (General Language Model) series. The GLM-5 flagship model achieved a SWE-Bench score of 77.8%, the highest among open-source models for tool-calling ability. Domestic chip development in China has been accelerating, with Morgan Stanley predicting the domestic AI chip market could reach $67 billion by 2030, with domestic chips meeting about 76% of demand.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.it007.com/article-331776-1.html">产 业_消息称智谱建成大型 AI 数 据 中 心 ： 全 部采用 国 产 芯 片 _ IT007...</a></li>
+<li><a href="https://vpn07.com/tw/blog/2026-glm4-quanpingtai-anzhuang-jiaoxue-bendi-bushu.html">智 谱 GLM 全 平 台 安裝教學：清華系開源 AI 本地部署 2026</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI infrastructure`, `#domestic chips`, `#China`, `#data center`, `#GLM`
+
+---
+
+<a id="item-13"></a>
+## [Google Develops 'Frozen v2' AI Chip for Gemini](https://www.quiverquant.com/news/Google+Reportedly+Developing+%E2%80%98Frozen+v2%E2%80%99+AI+Chip+to+Boost+Gemini+Efficiency) ⭐️ 8.0/10
+
+Google is reportedly developing a new AI server chip codenamed 'Frozen v2' that hard-codes some capabilities of its Gemini model directly into hardware, aiming to achieve 6 to 10 times better tokens-per-watt than its latest TPUs, with deployment planned for 2028. This chip could dramatically improve inference efficiency, addressing a critical bottleneck in AI deployment and potentially reducing the GPU advantage in AI compute. It also highlights a trend of custom hardware designed for specific models, which could reshape the AI hardware landscape. Frozen v2 is positioned as a complementary product to Google's TPU, not a replacement, and aims to alleviate internal compute shortages that have limited Google Cloud's ability to serve some enterprise customers. The chip is expected to be deployed by 2028.
+
+telegram · zaihuapd · Jul 21, 01:01
+
+**Background**: Tokens-per-watt is a key metric for AI inference efficiency, measuring how many output tokens a system produces per unit of power. Google's TPUs are already specialized AI accelerators, but Frozen v2 goes further by embedding model-specific logic into silicon, potentially offering significant efficiency gains for Gemini workloads.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://qz.com/google-gemini-chip-frozen-tpu-efficiency-072026">Google developing Gemini-specific chip called Frozen v 2</a></li>
+<li><a href="https://logicity.in/en/blog/google-s-frozen-v2-chip-embeds-gemini-in-hardware-for-6-10x-gains">Google 's Frozen v 2 chip embeds Gemini in hardware for... | Logicity</a></li>
+<li><a href="https://cowlpane.com/ai/my-ai-diary-google-s-frozen-v2-chip-shakes-the-gpu-moat/">Google Frozen v 2 Chip vs GPU Moat — Cowlpane</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI hardware`, `#Google`, `#Gemini`, `#TPU`, `#inference efficiency`
+
+---
+
+<a id="item-14"></a>
+## [Cloudflare Launches Internal DNS Service](https://blog.cloudflare.com/internal-dns/) ⭐️ 8.0/10
+
+Cloudflare announced the general availability of its Internal DNS service on July 20, 2026, providing authoritative and recursive DNS resolution for private networks, integrated with Zero Trust and the global Cloudflare network. This service unifies public and private DNS on a single platform, simplifying split-horizon DNS management and extending Zero Trust policies to the DNS layer, reducing complexity for enterprises. Existing Cloudflare Gateway customers can enable Internal DNS at no additional cost. It supports deployment via API, Terraform, and Cloudflare WAN, and allows administrators to set resolver policies to control which internal views different users and devices can access.
+
+telegram · zaihuapd · Jul 21, 03:49
+
+**Background**: Split-horizon DNS (also known as split-view or split-brain DNS) provides different DNS responses based on the source of the request, typically returning internal IP addresses for internal users and public IPs for external users. Traditionally, managing split-horizon DNS requires maintaining separate DNS servers or views, which can lead to data drift and configuration complexity. Cloudflare's Internal DNS integrates this capability with its Zero Trust and network services, offering a unified control plane.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Split-horizon_DNS">Split-horizon DNS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zero_trust_design">Zero trust design</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Cloudflare`, `#DNS`, `#Zero Trust`, `#networking`, `#enterprise`
 
 ---
 
 <a id="item-15"></a>
-## [Trump Admin Weighs Soft Ban on Chinese Open-Weight AI Models](https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi) ⭐️ 8.0/10
+## [TSMC May Raise Advanced Node Prices 5-10% in 2026](https://t.me/zaihuapd/42691) ⭐️ 8.0/10
 
-The Trump administration is reportedly considering soft restrictions, such as procurement rules and entity list threats, to discourage US companies from using cost-effective Chinese open-weight AI models like Kimi K3, which has shown strong performance. This move could reshape global AI competition by limiting access to affordable, high-performing open-weight models, potentially slowing AI adoption in the US while strengthening China's influence in the open-source AI ecosystem. The restrictions are reportedly soft rather than a hard ban, involving bureaucratic hurdles like procurement rules and entity list threats. White House AI advisor David Sacks criticized closed-source giants OpenAI and Anthropic for trying to eliminate open-source competition through government action.
+TSMC is considering a 5-10% price increase for all its advanced process nodes (5nm/4nm, 3nm, and 2nm) in 2026 to offset US tariffs, currency fluctuations, and supply chain cost pressures. The company has already communicated the higher 2026 quotes to its foundry partners. This price hike directly impacts major clients like NVIDIA and Apple, potentially raising chip costs and affecting the entire semiconductor ecosystem. It signals industry-wide cost pressures and may lead to higher prices for consumer electronics and AI hardware. The increase applies to all advanced nodes including 5nm/4nm, 3nm, and 2nm. TSMC chairman Wei Zhejia humorously declined to confirm the plan, saying 'what's in the heart cannot be spoken by the mouth.'
 
-telegram · zaihuapd · Jul 20, 11:49
+telegram · zaihuapd · Jul 21, 09:28
 
-**Background**: Open-weight models allow users to access and fine-tune the model's trained parameters, offering flexibility similar to open-source but with some restrictions. Kimi K3, developed by Chinese company Moonshot AI, ranks third globally in comprehensive benchmarks, surpassing many US models. The US government has previously debated restricting Chinese AI models, with some officials advocating for regulation and others opposing it.
+**Background**: TSMC is the world's largest dedicated semiconductor foundry, manufacturing chips for companies like Apple, NVIDIA, and AMD. Advanced nodes (5nm and below) are critical for high-performance computing and mobile devices. The US has been considering tariffs on imported semiconductors, and currency fluctuations (e.g., USD/TWD) affect TSMC's revenue.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Kimi_K3">Kimi K3</a></li>
-<li><a href="https://36kr.com/p/3903679395989378">KIMI K 3 直追海外，对AI投资到底意味着什么？ -36氪</a></li>
+<li><a href="https://www.elecfans.com/d/1528945.html">台 积 电 在 5 nm 及未来的 3 nm 工 艺 上依然是老大- 电 子发烧友网</a></li>
+<li><a href="https://m.laoyaoba.com/n/954522">【头条】 232 半 导 体 关 税 对 国 内企 业 影 响 有限</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The provided content does not include community comments, so this field is left empty.
-
-**Tags**: `#AI policy`, `#open-source`, `#geopolitics`, `#Kimi K3`, `#US-China`
+**Tags**: `#TSMC`, `#semiconductor`, `#pricing`, `#chip manufacturing`, `#supply chain`
 
 ---
 
 <a id="item-16"></a>
-## [EU to Share Biometric Data with US for Visa-Free Travel](https://edri.org/our-work/the-eu-is-about-to-sell-our-most-sensitive-data-to-the-us-for-visa-free-travel/) ⭐️ 8.0/10
+## [Google Launches Gemini 3.5 Flash, Pro Coming Next Month](https://t.me/zaihuapd/42699) ⭐️ 8.0/10
 
-The European Commission is negotiating an Enhanced Border Security Partnership (EBSP) framework with the Trump administration, which would require EU member states to share biometric data and personal information with the US as a condition for maintaining visa-free travel for US citizens. This agreement could set a precedent for mass surveillance and data sharing between major powers, potentially chilling political dissent and endangering privacy rights for millions of EU citizens. Leaked drafts indicate the EU has largely accepted US demands for unrestricted access to biometric databases, including the transmission of 'risk indicators' based on political views, which could target activists and transgender rights supporters.
+Google has officially launched the Gemini 3.5 Flash model, which is now available globally, and announced that the more powerful Gemini 3.5 Pro will be released next month. This release marks a significant step in Google's AI strategy, offering near-Pro level reasoning and coding capabilities at Flash-tier cost and speed, which could accelerate the adoption of agentic AI in enterprise and developer workflows. Gemini 3.5 Flash delivers 4x faster output speed and significantly lower cost compared to comparable models, with a 1M token context window and support for text, image, video, audio, and PDF inputs.
 
-telegram · zaihuapd · Jul 20, 15:08
+telegram · zaihuapd · Jul 21, 15:23
 
-**Background**: The Visa Waiver Program (VWP) allows citizens of certain countries to travel to the US without a visa for up to 90 days. In 2022, the US Department of Homeland Security introduced a requirement for VWP partners to establish an EBSP, which involves sharing traveler data through the IBIS system. The EU is now negotiating a framework agreement to standardize this data exchange across member states.
+**Background**: Gemini is Google's family of multimodal large language models. The Flash series is designed for high efficiency and low latency, while the Pro series targets complex reasoning and coding tasks. Agentic AI refers to AI systems that can autonomously execute multi-step workflows to achieve goals, going beyond simple text generation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/European_Digital_Rights_(EDRi)">European Digital Rights (EDRi)</a></li>
-<li><a href="https://eur-lex.europa.eu/eli/dec/2025/2640/oj/eng">Decision - EU - 2025/2640 - EN - EUR-Lex</a></li>
+<li><a href="https://deepmind.google/models/gemini/flash/">Gemini 3 . 5 Flash — Google DeepMind</a></li>
+<li><a href="https://openrouter.ai/google/gemini-3.5-flash">Gemini 3 . 5 Flash - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#privacy`, `#biometric data`, `#EU-US relations`, `#data sharing`, `#civil liberties`
-
----
-
-<a id="item-17"></a>
-## [Zhipu AI Completes 1 GW Data Center with Domestic Chips](https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai) ⭐️ 8.0/10
-
-Zhipu AI has completed a 1-gigawatt data center powered entirely by domestic Chinese chips and has begun partial operation to train its GLM model. This milestone demonstrates China's ability to build large-scale AI infrastructure without relying on foreign semiconductors, reducing vulnerability to export controls and advancing AI self-sufficiency. The data center has a power capacity of 1 GW, enough to power about 750,000 homes, and is one of the largest facilities built by a Chinese AI lab, with multiple clusters each containing over 10,000 chips.
-
-telegram · zaihuapd · Jul 20, 15:43
-
-**Background**: Zhipu AI develops the GLM series of large language models, including GLM-4.5 (355B parameters, open-source) and GLM-5 (745B parameters). Domestic chips like Huawei's Ascend series are increasingly competitive alternatives to NVIDIA GPUs, which are restricted by US export controls.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://glm5.ai/">GLM-5 - Zhipu AI's Flagship Foundation Model</a></li>
-<li><a href="https://glm45.org/">GLM-4.5 - by Zhipu AI</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#China`, `#data center`, `#semiconductors`, `#infrastructure`
-
----
-
-<a id="item-18"></a>
-## [Cloudflare Launches Internal DNS Service](https://blog.cloudflare.com/internal-dns/) ⭐️ 8.0/10
-
-Cloudflare announced the general availability of its Internal DNS service on July 20, 2026, providing authoritative and recursive DNS resolution for enterprise private networks on the same global network and control plane as its public DNS and Zero Trust services. This service unifies public and private DNS management, simplifying split-horizon DNS configurations and extending Zero Trust policies to the DNS resolution layer, which addresses a common pain point for enterprise network and security engineers. Existing Cloudflare Gateway customers can enable Internal DNS at no additional cost, and administrators can use DNS views to control which internal records different users and devices can access, with support for API, Terraform, and Cloudflare WAN deployment.
-
-telegram · zaihuapd · Jul 21, 03:49
-
-**Background**: Split-horizon DNS is a technique where a DNS server provides different responses based on the source of the query, typically used to serve internal network addresses to internal users while showing public addresses to external users. Traditionally, managing split-horizon DNS requires separate DNS servers or complex configurations, leading to data drift and security gaps. Cloudflare's Internal DNS integrates this capability into its existing Zero Trust platform, leveraging its global network for performance and consistency.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/internal-dns/">Cloudflare Internal DNS is now generally available</a></li>
-<li><a href="https://developers.cloudflare.com/dns/internal-dns/">Internal DNS - Cloudflare Docs</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Split-horizon_DNS">Split-horizon DNS</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Cloudflare`, `#DNS`, `#Zero Trust`, `#Enterprise Networking`, `#Security`
+**Tags**: `#AI`, `#Google`, `#Gemini`, `#LLM`, `#Machine Learning`
 
 ---
