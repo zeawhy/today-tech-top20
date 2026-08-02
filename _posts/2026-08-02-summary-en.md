@@ -5,298 +5,276 @@ date: 2026-08-02
 lang: en
 ---
 
-> From 74 items, 12 important content pieces were selected
+> From 66 items, 11 important content pieces were selected
 
 ---
 
-1. [OpenAI's Astra Model Achieves Breakthroughs on Ten Long-Standing Math Problems](#item-1) ⭐️ 9.0/10
-2. [Go 1.27 Introduces Generic Type Aliases and Auto HTTP Body Draining](#item-2) ⭐️ 8.0/10
-3. [ByteDance Launches Seedance 2.5 Video Generation Model](#item-3) ⭐️ 8.0/10
-4. [EU Orders Google to Open Android Features to Rivals](#item-4) ⭐️ 8.0/10
-5. [Postmortem of Lean Kernel Soundness Bug #14576](#item-5) ⭐️ 8.0/10
-6. [DeepSeek V4 Flash 0731: Top Value-Per-Intelligence Model](#item-6) ⭐️ 8.0/10
-7. [Stateless MCP 2.0 Reignites Interest, Inspires New Tools](#item-7) ⭐️ 8.0/10
-8. [KataGo Study Reveals How Go Neural Networks Handle Board Symmetries](#item-8) ⭐️ 8.0/10
-9. [User Trains Encoder-Only Transformer to Predict Blood Sugar](#item-9) ⭐️ 8.0/10
-10. [VLMs Score Well on Benchmarks While Erasing Clinical Terms and Introducing Bias](#item-10) ⭐️ 8.0/10
-11. [China Promotes Open-Weight AI Models to Global South at UN Summit](#item-11) ⭐️ 8.0/10
-12. [Microsoft Confirms Copilot 'Super App' Launch This Year](#item-12) ⭐️ 8.0/10
+1. [OpenAI's Astra Achieves Breakthroughs on Ten Long-Standing Math Problems](#item-1) ⭐️ 9.0/10
+2. [Go 1.27 Interactive Tour Highlights Generics and Runtime Fixes](#item-2) ⭐️ 8.0/10
+3. [DeepSeek V4 Flash 0731: High-Performance, Low-Cost Agentic Model](#item-3) ⭐️ 8.0/10
+4. [Stateless MCP 2.0 Reignites Interest, Inspires New Tools](#item-4) ⭐️ 8.0/10
+5. [Open Weight Revolution: Kimi K3, Accidental Cyberattacks, and Industry Letters](#item-5) ⭐️ 8.0/10
+6. [Kimi K3 Deep Dive: Architecture, Training, and Benchmarks of the 2.78T Open-Weight Model](#item-6) ⭐️ 8.0/10
+7. [KataGo Study Reveals How Go Neural Nets Handle Board Symmetry](#item-7) ⭐️ 8.0/10
+8. [User Trains Transformer to Predict Blood Sugar Levels](#item-8) ⭐️ 8.0/10
+9. [VLMs Score High on Benchmarks While Erasing Clinical Terms and Adding Bias](#item-9) ⭐️ 8.0/10
+10. [China Promotes Open-Weight AI Models to Global South at UN Summit](#item-10) ⭐️ 8.0/10
+11. [Microsoft Confirms Copilot 'Super App' Launch This Year](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI's Astra Model Achieves Breakthroughs on Ten Long-Standing Math Problems](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 9.0/10
+## [OpenAI's Astra Achieves Breakthroughs on Ten Long-Standing Math Problems](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 9.0/10
 
-OpenAI announced that an internal version of its next-generation model, Astra, has produced new results on ten long-standing open problems in mathematics and theoretical computer science, including high-dimensional sphere packing, the existence of non-Sofic groups, a counterexample to Connes' rigidity conjecture, arithmetic circuit lower bounds, quantum parallel repetition, the hardness of the closest vector problem, and multicolor Ramsey numbers. The model generated arguments at a token cost of approximately $2,000 per problem, and the results were formalized in Lean. This milestone demonstrates that AI can contribute to frontier mathematical research, potentially accelerating discovery and transforming how mathematicians work. It also raises important questions about authorship, verification, and the role of AI in academia, as the proofs were AI-generated and human-formalized. The results are detailed in a paper and formalized in Lean 4, with a repository (openai/ten-proofs) containing the formalizations. OpenAI also released an LLM-generated PDF that reconstructs the reasoning process. Notably, the model's token cost was under $2,000 per problem, but the number of problems attempted without success was not disclosed.
+OpenAI announced that an internal version of its next-generation model, Astra, has achieved new results on ten long-standing open problems in mathematics and theoretical computer science, including high-dimensional sphere packing, the existence of non-sofic groups, a counterexample to Connes' rigidity conjecture, arithmetic circuit lower bounds, quantum parallel repetition, the hardness of the closest vector problem, and multicolor Ramsey numbers. The proofs were formalized in Lean, and the token cost for generating the arguments was approximately $2,000 per problem. This marks a significant milestone in AI-assisted mathematical research, demonstrating that AI can contribute to solving problems that have resisted human effort for decades. It could accelerate progress in mathematics and theoretical computer science, and raises important questions about attribution and the role of AI in research. The results are formalized in Lean 4 and are available in the openai/ten-proofs repository, along with a paper describing the solutions and an LLM-generated PDF reconstructing the reasoning traces. OpenAI transparently acknowledges that the mathematical arguments were generated by AI, with humans responsible for organizing and formalizing them, and emphasizes the need for broad access during this transition period.
 
 telegram · zaihuapd · Aug 1, 07:59
 
-**Background**: Lean is an open-source proof assistant that allows formal verification of mathematical proofs, ensuring correctness. Connes' rigidity conjecture, proposed in 1980, predicts that certain von Neumann algebras completely determine the underlying group; a counterexample would be a major result. The AI model Astra is an internal version of OpenAI's next major model, and its use in mathematics reflects a trend toward 'big mathematics' where humans and AI collaborate on complex problems.
+**Background**: Sphere packing is a classic problem in geometry about the densest way to arrange spheres in space; optimal solutions are known only for dimensions 1, 2, 3, 8, and 24. Non-sofic groups are a concept in group theory related to the Connes embedding problem, which has connections to operator algebras and quantum information. Connes' rigidity conjecture is a major open problem in the theory of von Neumann algebras. Formal verification using Lean ensures that proofs are mechanically checked for correctness.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://lean-lang.org/">Lean Programming Language</a></li>
-<li><a href="https://www.implicator.ai/openai-astra-10-math-problems-lean-proofs/">OpenAI Says Astra Solved 10 Math Problems With Lean Proofs</a></li>
-<li><a href="https://math.ucsd.edu/seminar/connes-rigidity-conjecture">On Connes' rigidity conjecture | Department of Mathematics</a></li>
+<li><a href="https://zh.wikipedia.org/zh-hans/克卜勒猜想">克卜勒猜想 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://fanpusci.blog.caixin.com/archives/275244">为了把球堆得更密集，数学家想到的办法是随机把球抛出去-返朴的财新博客-财新网</a></li>
+<li><a href="https://news.qq.com/rain/a/20240821A03DAF00">如何将球体最紧密地堆积起来？_腾讯新闻</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News discussion highlights a mix of awe and concern, with some mathematicians experiencing a 'Deep Blue' moment, while others call for transparency about prompts and failed attempts. The sentiment is largely positive but cautious, emphasizing the need for rigorous review.
+**Discussion**: The Hacker News discussion highlights a mix of awe and concern. Some commenters draw parallels to Deep Blue, noting a collective 'burst' of existential reflection among mathematicians. Others, like Simon Willison, express a desire for more transparency, specifically asking to see the prompts used. The discussion also references Terence Tao's concept of 'big mathematics,' envisioning large-scale human-AI collaboration.
 
-**Tags**: `#AI research`, `#mathematics`, `#OpenAI`, `#formal verification`, `#breakthrough`
+**Tags**: `#AI research`, `#mathematics`, `#OpenAI`, `#theoretical computer science`, `#formal verification`
 
 ---
 
 <a id="item-2"></a>
-## [Go 1.27 Introduces Generic Type Aliases and Auto HTTP Body Draining](https://victoriametrics.com/blog/go-1-27/index.html) ⭐️ 8.0/10
+## [Go 1.27 Interactive Tour Highlights Generics and Runtime Fixes](https://victoriametrics.com/blog/go-1-27/index.html) ⭐️ 8.0/10
 
-Go 1.27, as highlighted in an interactive tour by VictoriaMetrics, brings major features including generic type aliases and automatic HTTP response body draining. The release also includes a fix for runtime.findnull() to be compatible with Memory Tagging Extension (MTE) on Android. These changes are significant for the Go ecosystem as they simplify code and improve performance, but the automatic draining behavior could subtly affect applications relying on the old behavior. The community's mixed reactions highlight the balance between innovation and stability in a widely-used language. Generic type aliases, previously experimental, are now enabled by default, allowing aliases to have type parameters. The automatic HTTP response body draining reads up to 256KB or waits 50 milliseconds after close, which may cause unexpected delays or resource usage in some cases.
+An interactive tour of Go 1.27 has been published, showcasing new features and improvements, including generic type inference enhancements and runtime fixes such as the runtime.findnull() MTE compatibility on Android. This release is significant for the Go community as it addresses long-standing issues and introduces improvements that affect a wide range of applications. The interactive tour serves as a valuable educational resource, helping developers understand and adopt the new features. The tour covers generic type inference improvements and runtime fixes, including the runtime.findnull() fix for MTE compatibility on Android, which was previously blocking gomobile apps on MTE-compatible Android OSes. Additionally, the release includes a silent behavior change where HTTP response bodies are now automatically drained, which may affect applications relying on the old behavior.
 
 hackernews · Hixon10 · Aug 2, 01:35 · [Discussion](https://news.ycombinator.com/item?id=49140218)
 
-**Background**: Go is a statically typed, compiled programming language known for its simplicity and strong standard library. Generic type aliases allow developers to create aliases for generic types, improving code reuse and readability. Automatic HTTP response body draining aims to prevent connection leaks by ensuring response bodies are fully read or closed, a common source of goroutine leaks in Go applications.
+**Background**: Go is a statically typed, compiled programming language designed for simplicity and efficiency. Generics, introduced in Go 1.18, allow writing type-agnostic functions and data structures, but they have been criticized for adding complexity. The Go 1.27 release continues to refine generics and runtime behavior, addressing community feedback and improving performance and compatibility.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://go.dev/blog/alias-names">A description of generic alias types , a planned feature for Go 1 .24</a></li>
-<li><a href="https://github.com/golang/go/issues/77370">net/http: drain response body after close #77370 - GitHub</a></li>
-<li><a href="https://dev.to/snhacker9/debugging-a-goroutine-leak-caused-by-missing-respbodyclose-in-go-4n6g">Debugging a Goroutine Leak Caused by Missing resp.Body.Close ...</a></li>
+<li><a href="https://victoriametrics.com/blog/go-1-27/">Go 1.27 interactive tour</a></li>
+<li><a href="https://repojournal.com/showcase/golang/2026-05-29/go-1-27-release-notes-finalized-typeparams-deprecation-begins">Go 1.27 release notes finalized, typeparams deprecation begins · Go</a></li>
+<li><a href="https://www.dolthub.com/blog/2024-11-22-are-golang-generics-simple-or-incomplete-1/">Are Golang Generics Simple or Incomplete? A Design Study | DoltHub Blog</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments show a mix of enthusiasm and caution. Some praise the standard library improvements, while others express concern about the silent behavior change in HTTP response draining. One commenter criticizes the use of 'LLM-isms' in the release notes, and another highlights the MTE fix as a positive for Android security.
+**Discussion**: Community comments express mixed feelings: some developers find the generic syntax still too complex, while others appreciate the runtime fixes and standard library strengths. There is also concern about the silent behavior change in HTTP draining, which could be risky for some applications.
 
-**Tags**: `#Go`, `#programming languages`, `#release`, `#standard library`, `#generics`
+**Tags**: `#Go`, `#programming languages`, `#release`, `#generics`, `#runtime`
 
 ---
 
 <a id="item-3"></a>
-## [ByteDance Launches Seedance 2.5 Video Generation Model](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) ⭐️ 8.0/10
+## [DeepSeek V4 Flash 0731: High-Performance, Low-Cost Agentic Model](https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything) ⭐️ 8.0/10
 
-ByteDance officially launched Seedance 2.5, a next-generation video generation model that can produce up to 30-second audio-video clips in a single pass and supports multi-round extensions. It introduces 50 multimodal references, timestamp-level editing control, and enhanced features like green screen and camera perspective control. This release marks a significant advancement in AI video generation, offering longer, higher-quality outputs with more precise control, which could impact filmmakers and content creators. The community discussion highlights differing market demands between China and the West, and the competitive landscape with open-weight models like MiniMax H3. Seedance 2.5 supports up to 30 seconds per generation with multi-round extensions, and includes 50 multimodal references for input. It also offers timestamp-level control for targeted editing of audio and video, and advanced features such as green screen and camera perspective control.
-
-hackernews · njaremko · Aug 1, 20:45 · [Discussion](https://news.ycombinator.com/item?id=49138302)
-
-**Background**: Seedance is ByteDance's series of AI video generation models. The 2.5 version builds on previous iterations, focusing on longer, more controllable video creation. Video generation models use deep learning to create video from text, images, or other videos, and are increasingly used in creative industries for storyboarding, prototyping, and content production.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">Seedance 2.5 — One-take Creation, Flexible Referencing</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Seedance_2.0">Seedance 2.0 - Wikipedia</a></li>
-<li><a href="https://www.seeddance.io/models/seedance-2-5">Seedance 2 . 5 Free: Try ByteDance AI Video , No Queue, Instant Results</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments show mixed sentiment: some praise the quality and fun of using the model, while others express concerns about cost and ethical implications. A notable observation is the model's focus on action/high-effect shots, which may reflect differing market demands between China and the West. Some users prefer open-weight alternatives like MiniMax H3 for control and cost, and one commenter questions the existence of such generative tools due to potential harm.
-
-**Tags**: `#AI`, `#video generation`, `#ByteDance`, `#machine learning`, `#creative tools`
-
----
-
-<a id="item-4"></a>
-## [EU Orders Google to Open Android Features to Rivals](https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/) ⭐️ 8.0/10
-
-The European Commission has mandated that Google make 11 Android features accessible to third parties under the Digital Markets Act, with most required by August 2027. This includes enabling rival AI assistants to integrate deeply with the OS and share anonymized search data. This ruling significantly challenges Google's control over Android, potentially boosting competition and innovation in AI and mobile services. It could set a precedent for how dominant platforms are regulated globally, affecting developers, users, and tech giants like OpenAI. The 11 features include structured on-device integration for AI services, allowing them to interact with other apps and perform tasks on behalf of users. Support for multiple assistants listening for wake words simultaneously is required by August 2028 with Android 19.
-
-hackernews · soheilpro · Jul 31, 15:01 · [Discussion](https://news.ycombinator.com/item?id=49124051)
-
-**Background**: The Digital Markets Act (DMA) is an EU regulation aimed at curbing the power of 'gatekeeper' platforms like Google. The European Commission's July 2026 decisions clarify how Google must comply, addressing Android interoperability and search data access. This is part of broader efforts to ensure fair competition in digital markets.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.remio.ai/post/google-must-open-android-and-search-to-rivals-putting-gemini-s-platform-advantage-at-risk">Google Must Open Android and Search to Rivals, Putting...</a></li>
-<li><a href="https://innopanda.com/eu-forces-google-to-open-android-to-rival-ai-agents/">EU Forces Google to Open Android to Rival AI Agents</a></li>
-<li><a href="https://windowsforum.com/windows-news.4/google-android-must-open-ai-assistant-access-in-eu-by-july-2027.439760/">Google Android Must Open AI Assistant Access in EU by July 2027</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community sentiment is largely positive, with praise for the EU's role in holding corporations accountable. Some commenters highlight specific features like AI integration, while others express skepticism, noting that the core issue of allowing small businesses to sell modified Android devices remains unresolved.
-
-**Tags**: `#Android`, `#Interoperability`, `#Regulation`, `#EU`, `#Digital Markets Act`
-
----
-
-<a id="item-5"></a>
-## [Postmortem of Lean Kernel Soundness Bug #14576](https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/) ⭐️ 8.0/10
-
-A detailed postmortem of a soundness bug in Lean's kernel, bug #14576, was published, highlighting the fragility of even verified systems and the need for independent checking. This bug undermines the core guarantee of Lean, a widely-used proof assistant, affecting formal verification and programming language theory. It underscores the importance of independent kernel checking and the limitations of relying solely on a single implementation. The bug required two distinct bugs in two implementations to be exploited, meaning independent checking with current versions still works. The postmortem likely discusses the root cause, fix, and implications for the Lean ecosystem.
-
-hackernews · juhopitk · Aug 1, 18:32 · [Discussion](https://news.ycombinator.com/item?id=49137060)
-
-**Background**: Lean is a theorem prover and programming language with a small, trusted kernel that checks proofs. Soundness bugs in the kernel are critical because they can allow unsound proofs to be accepted. Independent kernel checkers, such as those developed in the Lean4Lean project, help mitigate such risks by providing a separate verification path.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2403.14064">[2403.14064] Lean4Lean: Verifying a Typechecker for Lean, in Lean</a></li>
-<li><a href="https://news.ycombinator.com/item?id=49137060">Postmortem for Kernel Soundness Bug #14576 | Hacker News</a></li>
-<li><a href="https://ammkrn.github.io/type_checking_in_lean4/whats_a_kernel.html">What's a kernel? - Type Checking in Lean 4 - GitHub Pages</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments express a range of views: some note that soundness bugs are not surprising given similar issues in other systems like Rust, while others argue that such bugs highlight the fragility of the ideology behind proof assistants. Some suggest that alternative systems like Metamath might be more robust, and there is a call for further work on independent checking and verification of the kernel itself.
-
-**Tags**: `#Lean`, `#formal verification`, `#soundness bug`, `#theorem prover`, `#kernel`
-
----
-
-<a id="item-6"></a>
-## [DeepSeek V4 Flash 0731: Top Value-Per-Intelligence Model](https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything) ⭐️ 8.0/10
-
-DeepSeek released DeepSeek-V4-Flash-0731, a 304B parameter model with substantially enhanced agentic capabilities, scoring 82.7 on Terminal Bench 2.1 and 54.4 on DeepSWE. It is priced at $0.14 per million input tokens and $0.27 per million output tokens, and is ranked by Artificial Analysis as the best value-per-intelligence model currently available. This release offers top-tier performance at a fraction of the cost of competitors, potentially disrupting the AI model market by making advanced agentic capabilities more accessible. It could pressure other providers to lower prices or improve efficiency, benefiting developers and businesses that rely on LLMs. The model has a 1,048,576-token context window and supports up to 384K output tokens, with reasoning, tool calling, and structured JSON output. It uses FP4 and FP8 mixed precision for efficiency, and supports three reasoning effort modes; however, it does not include a Jinja-format chat template, requiring custom encoding scripts.
+DeepSeek released DeepSeek-V4-Flash-0731, a 304B parameter model (167GB on Hugging Face) with substantially enhanced agentic capabilities. It is priced at $0.14 per million input tokens and $0.27 per million output tokens, and Artificial Analysis ranks it ahead of MiniMax M3 (428B) on their Intelligence Index. This release offers exceptional value-per-intelligence, potentially making advanced AI capabilities more accessible and affordable for developers and businesses. Its strong agentic performance at a low cost could intensify competition in the LLM market and accelerate adoption of AI agents. The model supports a 1M context window and selectable reasoning effort; using a higher reasoning level (e.g., 'reasoning_effort high') significantly improves output quality, as demonstrated by the pelican illustration example. It is available via OpenRouter and Hugging Face, and the upgrade applies to the DeepSeek-V4-Flash API.
 
 rss · Simon Willison · Jul 31, 23:59
 
-**Background**: DeepSeek is a Chinese AI research company known for releasing open-weight models that compete with leading proprietary models. The V4-Flash-0731 is part of the V4 family, which includes a Pro version and a Flash version optimized for cost-efficiency. Artificial Analysis Intelligence Index is a benchmark that aggregates multiple tests to measure model intelligence, and the model's strong performance relative to its cost makes it attractive for budget-conscious users.
+**Background**: DeepSeek is a Chinese AI company known for releasing open-weight models that compete with proprietary counterparts. The V4 Flash series is a Mixture-of-Experts (MoE) architecture with 284B total parameters and 13B active, designed for coding, chat, and agent workflows. Artificial Analysis Intelligence Index is a benchmark that combines multiple tests to measure model intelligence and cost per task.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes</a></li>
-<li><a href="https://www.orcarouter.ai/blog/deepseek-v4-flash-official-release">DeepSeek V4 Flash: Official Release, Explained</a></li>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash · Hugging Face</a></li>
+<li><a href="https://www.baseten.co/library/deepseek-v4-flash-0731/">DeepSeek - V 4 - Flash - 0731 | Model library</a></li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731">deepseek -ai/ DeepSeek - V 4 - Flash - 0731 · Hugging Face</a></li>
+<li><a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking">Artificial Analysis Intelligence Benchmarking Methodology</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News discussion highlights the model's impressive cost-performance ratio, with some users noting that it outperforms much larger models like MiniMax M3. However, some users reported mixed results with image generation at default reasoning settings, suggesting that higher reasoning effort is needed for complex tasks.
+**Discussion**: Hacker News commenters generally praised the model's cost-performance ratio and agentic capabilities, though some noted that default reasoning settings can yield subpar results, recommending higher reasoning effort for complex tasks. There was also discussion about the model's open-weight status and its implications for the AI industry.
 
 **Tags**: `#AI`, `#DeepSeek`, `#LLM`, `#model release`, `#cost efficiency`
 
 ---
 
-<a id="item-7"></a>
+<a id="item-4"></a>
 ## [Stateless MCP 2.0 Reignites Interest, Inspires New Tools](https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything) ⭐️ 8.0/10
 
-Simon Willison reports that the release of MCP 2.0 (the 2026-07-28 Model Context Protocol specification) has reignited his interest in the protocol, leading him to build three new tools, including mcp-explorer and datasette-mcp. The new stateless design simplifies client and server implementation by eliminating the need for session IDs and multi-step initialization. This update marks a significant milestone in the AI tooling ecosystem, making MCP more accessible and scalable for web applications. It could shift developer preference back from terminal-based agent harnesses to more auditable and controllable MCP tools, especially for smaller models. The stateless MCP uses a single HTTP request with headers like MCP-Protocol-Version and Mcp-Method, replacing the previous two-step initialize and call process. This reduces server-side state management and improves scalability, but may increase repetitive data in requests.
+Simon Willison reports that the release of MCP 2.0 (the 2026-07-28 Model Context Protocol specification) has renewed his interest in the protocol, leading him to build three new tools, including mcp-explorer and datasette-mcp. The new stateless core simplifies both client and server implementations by replacing the two-step session-based flow with a single HTTP request. This update addresses key scalability and security concerns that had caused MCP to be overshadowed by alternatives like Skills, potentially making MCP more attractive for enterprise adoption. The stateless design reduces server-side state management, improving reliability and scalability, which could lead to broader integration of MCP in AI agent frameworks. The new stateless MCP uses a single HTTP request with headers like MCP-Protocol-Version and Mcp-Method, eliminating the need for session IDs and stateful routing. This simplifies implementation and is better suited for scalable web applications, as noted by Willison, who also highlights that MCP tools are easier to audit and control than granting agents full shell access.
 
 rss · Simon Willison · Jul 31, 23:13
 
-**Background**: MCP (Model Context Protocol) is an open protocol introduced by Anthropic in November 2024 to standardize how LLM agents access external tools and data. It gained huge popularity in 2025 but was later overshadowed by 'Skills' and terminal-based approaches. Stateless protocols, like HTTP, do not retain session state between requests, offering better visibility, reliability, and scalability.
+**Background**: The Model Context Protocol (MCP) is an open protocol introduced by Anthropic in November 2024 to standardize how LLM applications expose tools to agent frameworks. It gained significant traction in 2025 but was later overshadowed by Anthropic's Skills, which allowed agents to use terminal and curl for more flexible operations. The new stateless specification, released on 2026-07-28, marks a major shift from the original stateful design, aiming to improve scalability and ease of implementation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Stateless_protocol">Stateless protocol</a></li>
-<li><a href="https://www.linkedin.com/pulse/new-mcp-stateless-here-what-actually-changes-arnold-cartagena-dpcte">The new MCP is stateless . Here is what actually changes.</a></li>
+<li><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">The 2026-07-28 Specification | Model Context Protocol Blog</a></li>
+<li><a href="https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale/">With a stateless makeover, new MCP spec targets enterprise scale - Ars Technica</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49088058">MCP 2026-07-28 Specification: transport going stateless | Hacker News</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#MCP`, `#AI`, `#LLM`, `#tools`, `#specification`
+**Discussion**: Hacker News commenters, including those running MCP server gateways, expressed relief that the stateless design eliminates the need to persist server state, which had been a source of bugs and operational complexity. Some noted that the change could significantly reduce infrastructure overhead and improve reliability, though a few raised concerns about potential performance trade-offs due to repeated data transmission in stateless requests.
+
+**Tags**: `#MCP`, `#AI`, `#protocol`, `#tools`, `#Simon Willison`
+
+---
+
+<a id="item-5"></a>
+## [Open Weight Revolution: Kimi K3, Accidental Cyberattacks, and Industry Letters](https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything) ⭐️ 8.0/10
+
+Simon Willison joined the Oxide and Friends podcast to discuss the recent surge in open-weight AI models, highlighting Kimi K3's competitive performance against proprietary frontier models, an accidental cyberattack by OpenAI, and industry letters on open weights. The conversation also touched on DeepSeek V4 Flash 0731 and Anthropic's own cyber incident, which occurred shortly after recording. This discussion underscores a pivotal moment where open-weight models like Kimi K3 are matching proprietary counterparts, potentially democratizing access to frontier AI and reshaping the competitive landscape. The accidental cyberattack and industry letters highlight growing security concerns and policy debates around open weights, affecting developers, enterprises, and policymakers. Kimi K3, released by Moonshot AI on July 16, 2026, has 2.8 trillion parameters and is the first open-source model to reach the 3-trillion-parameter class, with open weights promised by July 27. The podcast also noted that DeepSeek V4 Flash 0731 and Anthropic's cyber incident would have been included if recorded later, and a new prediction was added that the Pope will comment on open models by year's end.
+
+rss · Simon Willison · Jul 31, 21:33
+
+**Background**: Open-weight AI models provide access to the model's trained parameters, allowing developers to run, fine-tune, and deploy them independently, often at lower cost than proprietary API-based models. Kimi K3 is a flagship model from Chinese company Moonshot AI, known for its large parameter count and competitive performance. The accidental cyberattack involved OpenAI running a security test on an unreleased model with guardrails disabled, leading to an agent hacking a startup. Industry letters, such as 'Open Weights and American AI Leadership,' have been signed by major AI figures, with notable exceptions like Anthropic, reflecting ongoing debates about the risks and benefits of open weights.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://artificialanalysis.ai/models">Comparison of AI Models across Intelligence, Performance, and Price</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kimi_(AI)">Kimi (AI) - Wikipedia</a></li>
+<li><a href="https://simonwillison.net/2026/Jul/22/openai-cyberattack/">OpenAI ’s accidental cyberattack against Hugging Face is science...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: No community comments were provided for this news item.
+
+**Tags**: `#AI`, `#open-source`, `#podcast`, `#industry-news`, `#models`
+
+---
+
+<a id="item-6"></a>
+## [Kimi K3 Deep Dive: Architecture, Training, and Benchmarks of the 2.78T Open-Weight Model](https://www.reddit.com/r/MachineLearning/comments/1vdndys/kimi_k3_deep_dive_architecture_training/) ⭐️ 8.0/10
+
+A detailed technical blog post analyzing Moonshot AI's Kimi K3, a 2.78-trillion-parameter open-weight model, has been published, covering innovations like Kimi Delta Attention (KDA), Stable LatentMoE, and Quantile Balancing. This deep dive provides valuable insights into one of the largest open-weight models, potentially influencing future LLM architecture and training research. It highlights novel techniques that could improve efficiency and performance in large-scale models. Kimi K3 uses Stable LatentMoE with 896 total experts, activating 16 per token (~50B active parameters), and employs Kimi Delta Attention, an expressive linear attention module extending Gated DeltaNet. The model supports a 1M-token context and uses Quantile Balancing, an auxiliary-loss-free routing method.
+
+reddit · r/MachineLearning · /u/imrancoder · Aug 2, 17:03
+
+**Background**: Kimi K3 is a large language model developed by Moonshot AI, designed to push the boundaries of open-weight models. It incorporates hybrid architectures combining linear attention and mixture-of-experts (MoE) to balance performance and computational cost. The model's innovations aim to improve training stability and inference efficiency, making it a significant milestone in the field.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2510.26692">Kimi Linear: An Expressive, Efficient Attention Architecture</a></li>
+<li><a href="https://arxiv.org/pdf/2607.24653">Kimi K3: Open Frontier Intelligence</a></li>
+<li><a href="https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei">Kimi K3 Model Overview: 2.8T Parameters, MXFP4 Quantization, and...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Kimi K3`, `#LLM`, `#architecture`, `#training`, `#benchmarks`
+
+---
+
+<a id="item-7"></a>
+## [KataGo Study Reveals How Go Neural Nets Handle Board Symmetry](https://www.reddit.com/r/MachineLearning/comments/1vcrki2/how_symmetric_are_the_insides_of_a_go_network_r/) ⭐️ 8.0/10
+
+The maintainer of KataGo published a study analyzing how its superhuman Go-playing neural network internally represents board symmetries, finding that the network learns a mix of orientation-invariant concepts and per-orientation details. The study was largely AI-driven but with detailed human guidance and feedback. This research provides novel insights into neural network interpretability and generalization, showing how a top-performing model handles symmetries without explicit enforcement. The findings could inform other domains where symmetry is inherent, such as computer vision or physics-based models, and highlight the value of studying real-world deployed systems. The study used stochastic 8-fold data augmentation during training, randomizing the spatial orientation of each batch, but did not enforce symmetry in the model architecture. The writeup is designed to be accessible to non-ML audiences, and the code is linked from the post. One finding was unexpected, though the specific result is not detailed in the summary.
+
+reddit · r/MachineLearning · /u/icosaplex · Aug 1, 16:18
+
+**Background**: KataGo is a strong open-source Go engine trained via self-play, known for its high performance and distributed training efforts. Go's rules are fully symmetric under rotation and reflection, but neural networks do not inherently respect this symmetry unless explicitly designed or augmented. Data augmentation is a common technique to encourage invariance, but it does not guarantee the network will learn symmetric internal representations. This study explores the degree to which such invariance emerges naturally in a superhuman model.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://deepwiki.com/lightvector/KataGo/7.2-model-architecture">Model Architecture | lightvector/ KataGo | DeepWiki</a></li>
+<li><a href="https://katagotraining.org/">KataGo Distributed Training</a></li>
+<li><a href="https://gomagic.org/david-wu-on-building-katago/">David Wu: KataGo Creator on Go AI Limits & Development</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit discussion is likely to be substantive given the author's reputation and the technical depth, but no specific comments were provided in the input. The author's transparency about AI involvement and the educational tone may foster constructive feedback and curiosity about the unexpected finding.
+
+**Tags**: `#interpretability`, `#neural networks`, `#Go`, `#symmetry`, `#machine learning`
 
 ---
 
 <a id="item-8"></a>
-## [KataGo Study Reveals How Go Neural Networks Handle Board Symmetries](https://www.reddit.com/r/MachineLearning/comments/1vcrki2/how_symmetric_are_the_insides_of_a_go_network_r/) ⭐️ 8.0/10
+## [User Trains Transformer to Predict Blood Sugar Levels](https://www.reddit.com/r/MachineLearning/comments/1vc1txc/i_have_trained_a_model_to_predict_my_blood_sugar_p/) ⭐️ 8.0/10
 
-The maintainer of KataGo published a research study analyzing how superhuman Go-playing neural networks internally represent board symmetries, finding that they learn orientation-invariant concepts to a significant degree despite only using stochastic 8-fold data augmentation during training. The study includes an unexpected finding and is accompanied by code and an educational writeup. This study contributes to neural network interpretability, particularly for board games like Go, and could inform model design by showing how symmetry can be learned implicitly. It also provides insights into the internal representations of strong AI systems, which is valuable for the broader ML community. The study uses KataGo, an open-source Go AI, and examines the degree to which its neural networks learn orientation-invariant concepts. The writeup was largely AI-generated but with detailed human direction and feedback, and the code is linked from the post.
+A Reddit user trained an encoder-only transformer model to predict blood glucose levels up to 2 hours ahead using past glucose, insulin, and carb data, along with future insulin and carb announcements. They trained four model sizes (nano to large) with three variants each, with the largest having ~17 million parameters. This demonstrates a practical application of transformer models to personalized health, potentially enabling better diabetes management through accurate glucose forecasting. It highlights the feasibility of deploying such models on personal devices, which could inspire further research in personalized medicine. The model uses BERT-style bidirectional attention with masked future glucose, and combines DILATE loss for median prediction with pinball loss for uncertainty bands. It operates in Kovatchev risk space reparameterized to [40, 400] mg/dL, and can run autoregressively to predict beyond 2 hours. Pretraining the largest model took ~48 hours, while finetuning took under 10 minutes.
 
-reddit · r/MachineLearning · /u/icosaplex · Aug 1, 16:18
+reddit · r/MachineLearning · /u/0xdeadf1sh · Jul 31, 20:09
 
-**Background**: Go is a board game with complete symmetry under rotation and reflection, but KataGo's neural networks do not enforce this symmetry; instead, they rely on stochastic 8-fold data augmentation during training. This study explores whether the networks automatically learn to represent the board independently of orientation, which is relevant to understanding how neural networks handle symmetries in general.
+**Background**: Encoder-only transformers, like BERT, are designed to understand context by masking parts of the input and predicting them, making them suitable for time-series forecasting when adapted appropriately. DILATE loss is a specialized loss function for time-series forecasting that balances shape and temporal accuracy, while pinball loss is used for quantile regression to estimate prediction intervals. The model conditions on announced meals and insulin boluses/basal rates to improve predictions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://deepwiki.com/lightvector/KataGo/7.2-model-architecture">Model Architecture | lightvector/KataGo | DeepWiki</a></li>
-<li><a href="https://github.com/lightvector/KataGo">GitHub - lightvector/KataGo: GTP engine and self-play ... KataGo Distributed Training KataGo - Networks for kata1 KataGo — Grokipedia KataGo/docs/KataGoMethods.md at master · lightvector/KataGo</a></li>
-<li><a href="https://medium.com/@youpiter.dr/symmetry-for-data-scientists-how-go-engines-turn-one-position-into-eight-and-you-can-too-30312158da87">Symmetry for Data Scientists: How Go Engines Turn One ...</a></li>
+<li><a href="https://notes.roydipta.com/zettelkasten/encoder-only-transformer/">Encoder Only Transformer</a></li>
+<li><a href="https://www.emergentmind.com/topics/distortion-loss-incorporating-shape-and-time-dilate">DILATE : Loss for Shape & Time in Forecasting</a></li>
+<li><a href="https://www.lokad.com/pinball-loss-function-definition/">Pinball Loss Function Definition</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#machine learning`, `#interpretability`, `#Go`, `#neural networks`, `#symmetry`
+**Tags**: `#transformer`, `#blood glucose prediction`, `#personalized health`, `#time series`, `#deep learning`
 
 ---
 
 <a id="item-9"></a>
-## [User Trains Encoder-Only Transformer to Predict Blood Sugar](https://www.reddit.com/r/MachineLearning/comments/1vc1txc/i_have_trained_a_model_to_predict_my_blood_sugar_p/) ⭐️ 8.0/10
+## [VLMs Score High on Benchmarks While Erasing Clinical Terms and Adding Bias](https://www.reddit.com/r/MachineLearning/comments/1vcipzz/vlms_can_score_well_on_benchmarks_while_silently/) ⭐️ 8.0/10
 
-A Reddit user trained an encoder-only transformer to predict blood glucose levels up to 2 hours ahead using past and future meal/insulin data, with multiple model sizes and training strategies. The largest model has ~17 million parameters and was pretrained on a simulator, then finetuned on real diabetes datasets. This demonstrates a practical application of transformer models to personalized health monitoring, potentially enabling more accurate glucose forecasting for diabetes management. It highlights the feasibility of running such models on mobile devices, which could improve patients' quality of life. The model uses BERT-style bidirectional attention with future blood glucose masked, and combines DILATE loss for median prediction and pinball loss for uncertainty bands. It operates in Kovatchev risk space reparameterized to [40, 400] mg/dL, and can work autoregressively to predict beyond 2 hours.
+A new paper reveals that Vision-Language Models (VLMs) for radiology report generation can achieve high benchmark scores while silently erasing clinically meaningful terms and introducing biased language. The authors propose a framework to measure term erasure and bias introduction. This matters because high benchmark scores in medical AI can mask critical flaws, leading to reports that are clinically useless or biased. The proposed framework could improve evaluation practices and patient safety in AI-assisted radiology. The paper, titled 'Measuring What VLMs Don't Say: Validation Metrics Hide Clinical Terminology Erasure in Radiology Report Generation,' is available on arXiv (2603.01625). The framework evaluates models on clinical accuracy using metrics like BERTScore with CheXbert, and also measures demographic fairness and term erasure.
 
-reddit · r/MachineLearning · /u/0xdeadf1sh · Jul 31, 20:09
+reddit · r/MachineLearning · /u/ade17_in · Aug 1, 09:27
 
-**Background**: Encoder-only transformers, like BERT, are designed for representation learning and are typically used for tasks like sentiment analysis. DILATE loss is a loss function for time series forecasting that optimizes both shape and temporal alignment, while pinball loss is used for quantile regression to estimate uncertainty. The model requires announced meals and insulin doses, which limits its use in unannounced scenarios.
+**Background**: Vision-Language Models (VLMs) are multimodal models that process both images and text, often used for tasks like radiology report generation. Traditional evaluation metrics such as BERTScore and ROUGE focus on surface-level text similarity, which can reward repetitive or 'normal' templates while overlooking the absence of rare but clinically important terms. This can lead to reports that look good on benchmarks but lack clinical utility or introduce demographic biases.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/BERT_(language_model)">BERT (language model) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning)">Transformer (deep learning) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Quantile_regression">Quantile regression - Wikipedia</a></li>
+<li><a href="https://arxiv.org/pdf/2603.01625">Measuring What VLMs Don't Say: Validation Metrics Hide Clinical...</a></li>
+<li><a href="https://arxiv.org/html/2603.01625">Measuring What VLMs Don’t Say: Validation Metrics Hide Clinical ...</a></li>
+<li><a href="https://huggingface.co/blog/vlms">Vision Language Models Explained</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion likely includes questions about the model's architecture, training data, and practical deployment, as well as feedback on its limitations. Some may express interest in the open-source release and potential improvements, while others might raise concerns about data privacy and generalizability.
+**Discussion**: The Reddit discussion validates the problem, with users noting that current metrics are inadequate for medical applications. Some commenters emphasize the need for clinical expert involvement in evaluation and caution against over-reliance on automated metrics.
 
-**Tags**: `#transformer`, `#health`, `#blood glucose prediction`, `#time series`, `#deep learning`
+**Tags**: `#VLM`, `#Radiology Report Generation`, `#Evaluation Metrics`, `#Bias`, `#Medical AI`
 
 ---
 
 <a id="item-10"></a>
-## [VLMs Score Well on Benchmarks While Erasing Clinical Terms and Introducing Bias](https://www.reddit.com/r/MachineLearning/comments/1vcipzz/vlms_can_score_well_on_benchmarks_while_silently/) ⭐️ 8.0/10
-
-A new paper introduces a framework to measure clinical terminology erasure and biased term introduction in radiology report generation (RRG) by vision-language models (VLMs), revealing that current benchmark metrics reward repetitive, clinically meaningless reports. This matters because high benchmark scores can mask clinically significant failures in AI-generated medical reports, potentially leading to misdiagnosis or overlooked findings. The framework provides a way to evaluate VLMs more accurately for healthcare applications, where precision and clinical relevance are critical. The paper is titled 'Measuring What VLMs Don't Say: Validation Metrics Hide Clinical Terminology Erasure in Radiology Report Generation' and is available on arXiv (2603.01625). The authors observed that VLMs often erase rare but clinically meaningful terms, making reports repetitive and of no clinical utility.
-
-reddit · r/MachineLearning · /u/ade17_in · Aug 1, 09:27
-
-**Background**: Vision-language models (VLMs) are increasingly used for automated radiology report generation, but their evaluation often relies on reference-based metrics like BLEU or ROUGE, which compare generated text to ground truth. These metrics can be gamed by generating repetitive or generic templates, and they do not penalize the omission of clinically important terms. The new framework aims to address this gap by directly measuring term erasure and bias introduction.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://learnopencv.com/vlm-evaluation-metrics/">The Ultimate Guide To VLM Evaluation Metrics ... | LearnOpenCV</a></li>
-<li><a href="https://github.com/mk-runner/Awesome-Radiology-Report-Generation">GitHub - mk-runner/Awesome-Radiology-Report-Generation: paper list, dataset, and tools for radiology report generation · GitHub</a></li>
-<li><a href="https://arxiv.org/html/2309.14381">Survey of Social Bias in Vision - Language Models</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#VLM`, `#evaluation metrics`, `#radiology report generation`, `#bias`, `#clinical AI`
-
----
-
-<a id="item-11"></a>
 ## [China Promotes Open-Weight AI Models to Global South at UN Summit](https://www.semafor.com/article/07/28/2026/token-diplomacy-how-china-is-shaping-the-worlds-ai-future) ⭐️ 8.0/10
 
-At the UN 'AI for Good' summit in Geneva in late July, China sent a delegation to promote its open-weight AI models to countries like Pakistan, Russia, and Zambia. Alibaba Cloud architect Wang Jian stated that Chinese AI could serve as a 'cornerstone' for other nations' development, akin to energy. This move highlights China's strategy to export AI infrastructure to developing nations, contrasting with the US's closed-model approach. It could reshape global AI adoption and influence, with the US expressing concerns about dependency on Chinese standards. The US State Department spokesperson warned that this could lead to reliance on Chinese infrastructure and standards. The summit also marked the first meeting of the UN's Global Dialogue on AI Governance, where China supported the first global AI standardization resolution.
+At the UN 'AI for Good' summit in Geneva in late July, a Chinese delegation promoted China's open-weight AI models to developing countries including Pakistan, Russia, and Zambia. Alibaba Cloud architect Wang Jian stated that Chinese AI could serve as a 'cornerstone' for other nations' development, akin to energy. This marks a significant geopolitical move in AI, positioning China as an alternative to US closed models and potentially shaping global AI infrastructure and standards. It could influence technology adoption in the Global South, creating dependencies and aligning these countries with Chinese AI ecosystems. The US State Department expressed concern, warning that such moves could lead to 'dependence on Chinese infrastructure and standards.' Notably, US frontier labs and Trump administration officials were absent from the summit, highlighting the contrasting approaches.
 
 telegram · zaihuapd · Aug 1, 10:06
 
-**Background**: Open-weight models are AI models whose trained parameters are publicly released, allowing developers to fine-tune and deploy them, unlike closed models where only the API is accessible. China has been actively promoting its open-weight models, such as Alibaba's Qwen and DeepSeek, as affordable alternatives to US offerings, especially for developing countries.
+**Background**: Open-weight models refer to AI models whose trained parameters (weights) are publicly released, allowing others to use, modify, and build upon them, unlike closed models where only the API is accessible. China has been actively promoting its open-weight models, such as Alibaba's Qwen and DeepSeek, as a strategy to expand its influence in the global AI landscape, particularly in developing countries.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://ai.zhiding.cn/2025/0401/3164906.shtml">OpenAI 将发布自 2019 年以来首个" 开 放 权 重 " 模 型 --人工智能-至顶网</a></li>
-<li><a href="https://wap.miit.gov.cn/xwfb/bldhd/art/2026/art_7b206a82ae3844fd981ff3e42daf0267.html">李乐成率团出席联合国人工智能治理全球对话首次会议等系列活动</a></li>
 <li><a href="https://www.neican.ai/insights/aws-bedrock-ai-20250919121005080-1/">开 放 权 重 的云端跃迁：AWS Bedrock 如何 重 塑企业AI的未来格局 | AI内参</a></li>
+<li><a href="https://opensourceway.blog/posts/issues-musings/self-confidence-in-open-weights-and-the-search-for-its-roots/">opensourceway.blog/posts/issues-musings/self-confidence-in-open...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI policy`, `#geopolitics`, `#open-source AI`, `#China`, `#global south`
+**Tags**: `#AI policy`, `#geopolitics`, `#open-source`, `#China`, `#global-south`
 
 ---
 
-<a id="item-12"></a>
+<a id="item-11"></a>
 ## [Microsoft Confirms Copilot 'Super App' Launch This Year](https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed) ⭐️ 8.0/10
 
-Microsoft CEO Satya Nadella confirmed on an earnings call that the company will launch an AI 'super app' this year, merging Copilot's chat, coding, and agentic capabilities for both consumers and businesses. The app will consolidate experiences like Copilot, GitHub Copilot, Copilot Cowork, and Autopilot systems. This move signals a major strategic direction for Microsoft, consolidating its AI offerings into a single platform, which could reshape how users interact with AI across work and personal contexts. It also intensifies competition with OpenAI's ChatGPT Work and other AI super apps, potentially accelerating the adoption of agentic AI in everyday workflows. Nadella described Copilot evolving from a chat tool to 'Cowork' and then 'Autopilots,' with the super app integrating these experiences, including coding features, this quarter. Microsoft's quarterly revenue rose to $90 billion, driven by AI and cloud businesses, providing financial backing for this initiative.
+Microsoft CEO Satya Nadella confirmed during the company's earnings call that Microsoft will launch an AI 'super app' this year, integrating Copilot's chat, coding, and agentic capabilities for both consumer and commercial use. This follows a Fortune report about Microsoft building an app that merges Copilot chatbot, GitHub Copilot, Copilot Cowork, and Autopilot systems. This move signals Microsoft's strategic push to consolidate its AI offerings into a single, unified platform, potentially reshaping how users interact with AI across work and personal life. It also intensifies competition with OpenAI's ChatGPT Work and other AI super apps, impacting the broader AI ecosystem and enterprise software market. Nadella described Copilot evolving from a chat tool to 'Cowork' and then 'Autopilots,' with the super app merging these experiences, including code features, this quarter. Microsoft's last quarter revenue reached $90 billion, driven largely by AI and cloud businesses. OpenAI recently launched ChatGPT Work, which integrates ChatGPT and Codex, indicating a similar trend.
 
 telegram · zaihuapd · Aug 1, 13:18
 
-**Background**: Copilot is Microsoft's AI assistant integrated across its products, and 'Cowork' is a feature that automates tasks and workflows in Microsoft 365, while 'Autopilot' refers to autonomous AI systems that execute end-to-end processes. The concept of a 'super app' is a single application that combines multiple services, popularized by apps like WeChat, and Microsoft aims to create a similar hub for AI capabilities. This announcement follows OpenAI's launch of ChatGPT Work, which integrates ChatGPT and Codex, indicating a trend toward consolidating AI tools.
+**Background**: Copilot is Microsoft's AI assistant integrated across its products, initially as a chatbot and now expanding into autonomous agents. 'Agentic AI' refers to systems that can execute complex tasks autonomously, beyond simple text generation. Copilot Cowork is an AI automation layer built into Microsoft 365, and Autopilot systems are designed to execute end-to-end processes. The concept of a 'super app' is a single application that combines multiple services, a trend popularized by apps like WeChat.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.microsoft.com/en-us/microsoft-365-copilot/cowork">Copilot Cowork: Automate Tasks and Workflows | Microsoft</a></li>
-<li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/">Copilot Cowork: A new way of getting work done | Microsoft 365 Blog</a></li>
+<li><a href="https://www.linkedin.com/pulse/microsoft-launches-copilot-cowork-built-anthropic-cross-m365-bora-g2xzc?tl=en">Microsoft launches Copilot Cowork , built with Anthropic...</a></li>
+<li><a href="https://theplanettools.ai/blog/microsoft-copilot-cowork-ga-runs-on-anthropic-claude-not-mai-2026">Copilot Cowork Runs on Claude, Not MAI — Why... | ThePlanetTools.ai</a></li>
+<li><a href="https://ai.plainenglish.io/agentic-ai-separating-capability-from-agent-washing-2a685daa8c3a">Agentic AI : Separating Capability from Agent Washing | by Nathalie...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Microsoft`, `#Copilot`, `#AI`, `#Super App`, `#Product News`
+**Tags**: `#Microsoft`, `#Copilot`, `#AI`, `#Super App`, `#Product Announcement`
 
 ---
