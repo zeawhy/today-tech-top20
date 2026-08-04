@@ -5,345 +5,313 @@ date: 2026-08-04
 lang: en
 ---
 
-> From 84 items, 16 important content pieces were selected
+> From 84 items, 14 important content pieces were selected
 
 ---
 
-1. [DeepSeek V4 Flash Runs on Single AMD MI300X](#item-1) ⭐️ 8.0/10
-2. [LLMs Reward Expertise, Amplifying Skilled Developers](#item-2) ⭐️ 8.0/10
-3. [Swiftlet Runs 80B Qwen in 4.3GB RAM on Mac, 35B on iPhone](#item-3) ⭐️ 8.0/10
-4. [OpenAI Highlights Ten Advances in Math and Theoretical CS](#item-4) ⭐️ 8.0/10
-5. [FFmpeg 9.0 Released with New Encoders, Decoders, and Filters](#item-5) ⭐️ 8.0/10
-6. [Pandoc Celebrates 20 Years: A Retrospective by Its Creator](#item-6) ⭐️ 8.0/10
-7. [ComfyUI Adds Day-0 Support for MiniMax H3 with Open Weights and Native Audio](#item-7) ⭐️ 8.0/10
-8. [Kimi K3 Architecture: Compressed Memory, Attention Across Depth, Latent Expert Routing](#item-8) ⭐️ 8.0/10
-9. [Desk Reject Papers Without Reproducible Code](#item-9) ⭐️ 8.0/10
-10. [Explorative Modeling: A New Pretraining Axis for Generative AI](#item-10) ⭐️ 8.0/10
-11. [UK Issues New Technical Capability Notice to Apple for Backdoor Access to Encrypted Backups](#item-11) ⭐️ 8.0/10
-12. [White House Finalizes Secret Voluntary AI Evaluation Framework](#item-12) ⭐️ 8.0/10
-13. [Huawei Unveils 'Tao's Law' to Replace Geometric Scaling with Time Scaling](#item-13) ⭐️ 8.0/10
-14. [Cloudflare Drops Third-Party Security Tools, Uses $58/Month AI for Bug Bounty Triage](#item-14) ⭐️ 8.0/10
-15. [Google Builds $200B Wall Street Financing Machine for Anthropic](#item-15) ⭐️ 8.0/10
-16. [China's First Mandatory L3/L4 Autonomous Driving Standard Submitted for Approval](#item-16) ⭐️ 8.0/10
+1. [DeepSeek V4 Flash Runs on Single AMD MI300X at 150+ tok/s](#item-1) ⭐️ 8.0/10
+2. [Keyv and related npm packages compromised in Shai-Hulud supply chain attack](#item-2) ⭐️ 8.0/10
+3. [Xbox Outage Blocks Disc Games, Reigniting Digital Ownership Debate](#item-3) ⭐️ 8.0/10
+4. [Harness Engineering for AI Self-Improvement](#item-4) ⭐️ 8.0/10
+5. [MiniMax-H3 Ported to MLX for Apple Silicon](#item-5) ⭐️ 8.0/10
+6. [LLMs Make Open Source Freedom Practical](#item-6) ⭐️ 8.0/10
+7. [AI Begins to Drastically Cut Customer Service Jobs](#item-7) ⭐️ 8.0/10
+8. [Kimi K3 Architecture: Compressed Memory, Cross-Depth Attention, Latent Routing](#item-8) ⭐️ 8.0/10
+9. [Call to Desk Reject ML Papers Without Reproducible Code](#item-9) ⭐️ 8.0/10
+10. [Explorative Modeling: A Third Pretraining Axis for Generative Models](#item-10) ⭐️ 8.0/10
+11. [Huawei Unveils Tau Scaling Law to Replace Moore's Law](#item-11) ⭐️ 8.0/10
+12. [Cloudflare Ditches Third-Party Security Tools for $58/Month AI Triage](#item-12) ⭐️ 8.0/10
+13. [Google Builds $200B Wall Street Financing Machine for Anthropic](#item-13) ⭐️ 8.0/10
+14. [China's First Mandatory L3/L4 Autonomous Driving Standard Approved, Effective 2027](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [DeepSeek V4 Flash Runs on Single AMD MI300X](https://github.com/ryanzhou/deepseek-v4-flash-mi300x) ⭐️ 8.0/10
+## [DeepSeek V4 Flash Runs on Single AMD MI300X at 150+ tok/s](https://github.com/ryanzhou/deepseek-v4-flash-mi300x) ⭐️ 8.0/10
 
-A developer has demonstrated running DeepSeek V4 Flash, a 284B-parameter MoE model with 13B active parameters, on a single AMD MI300X GPU. This marks a notable achievement in making large-scale AI inference more accessible on AMD hardware. This achievement is significant because it demonstrates that frontier-level AI models can run on a single AMD GPU, potentially lowering hardware costs and expanding deployment options beyond Nvidia's ecosystem. It could encourage broader adoption of AMD hardware for AI inference and spur further optimization efforts. DeepSeek V4 Flash has 284B total parameters with 13B activated, and supports a 1M-token context window. The MI300X is an OAM module, not a PCIe card, and the MI350P (with 144GB memory) is suggested as a PCIe alternative, though DeepSeek V4 Flash's native MXFP4 quantization may allow it to fit in 144GB.
+A technical guide demonstrates DeepSeek V4 Flash running on a single AMD MI300X accelerator, achieving over 150 tokens per second. The setup uses a reduced context window of 256k tokens instead of the original 1M. This demonstration shows that high-performance LLM inference is achievable on a single AMD GPU, potentially lowering hardware costs and broadening access to advanced models. It also highlights the practical trade-offs between context length and hardware requirements, which is relevant for deployment decisions. DeepSeek V4 Flash is a Mixture-of-Experts model with 284B total parameters and 13B activated parameters, natively quantized to MXFP4. The MI300X features 192GB of HBM3 memory, which is sufficient for the model at the reduced context window.
 
 hackernews · zhoutong · Aug 4, 10:00 · [Discussion](https://news.ycombinator.com/item?id=49166386)
 
-**Background**: DeepSeek V4 Flash is a Mixture-of-Experts (MoE) language model from DeepSeek, designed for efficiency with a large total parameter count but only a fraction activated per token. The AMD MI300X is a high-end accelerator with HBM3 memory, offering high memory bandwidth suitable for large models. Running such models on a single GPU is challenging due to memory and compute constraints, but quantization and optimization can help.
+**Background**: DeepSeek V4 Flash is an efficiency-optimized variant of the DeepSeek V4 series, designed for fast reasoning with a 1M-token context window. The AMD MI300X is a data center GPU with 192GB of HBM3 memory, often used for large-scale AI workloads. Quantization reduces model size and memory footprint, enabling deployment on a single accelerator.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash · Hugging Face</a></li>
-<li><a href="https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash - Demo - DeepInfra</a></li>
-<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V4 Flash 0423 - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash 0423 - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://www.techpowerup.com/gpu-specs/radeon-instinct-mi300x.c4179">AMD Radeon Instinct MI300X Specs | TechPowerUp GPU Database</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments raise technical points: one user notes that prior art DwarfStar can run the same model in less memory, while another questions the availability of a single MI300X unit, noting it typically comes in an 8-GPU box costing ~250K EUR. Others discuss performance gaps versus H800 (15k tokens/s/gpu) and hardware interface concerns for frontier models.
+**Discussion**: Commenters noted that the MI300X is typically sold as an 8-GPU system, not as a single unit, and suggested the MI350P as a PCIe alternative with 144GB memory. Some also mentioned alternative approaches like DwarfStar and referenced related work on dual MI300X setups, while others praised the practical trade-off of reduced context window for higher speed.
 
-**Tags**: `#AI inference`, `#DeepSeek`, `#AMD MI300X`, `#hardware`, `#LLM deployment`
+**Tags**: `#DeepSeek`, `#AMD MI300X`, `#LLM inference`, `#quantization`, `#hardware`
 
 ---
 
 <a id="item-2"></a>
-## [LLMs Reward Expertise, Amplifying Skilled Developers](https://www.seangoedecke.com/llms-reward-expertise/) ⭐️ 8.0/10
+## [Keyv and related npm packages compromised in Shai-Hulud supply chain attack](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack) ⭐️ 8.0/10
 
-The article argues that LLMs amplify the productivity of experienced software engineers rather than enabling novices to build complex software, challenging the popular narrative that AI tools democratize software development. This perspective is significant because it suggests that the adoption of LLMs in software engineering may widen the skill gap rather than close it, affecting hiring practices, training, and the perceived value of human expertise in an AI-augmented industry. The article uses the analogy of a mirror to describe LLMs, reflecting the user's own expertise and prompting style. It emphasizes that effective use requires domain knowledge to formulate precise prompts and evaluate outputs, which novices often lack.
+A supply chain attack has compromised the Keyv npm package and several related packages, part of the ongoing Shai-Hulud attack campaign. The attack exploits the npm dependency ecosystem to distribute malicious code. This attack underscores the persistent vulnerability of the npm ecosystem to supply chain attacks, affecting countless developers and projects that rely on these packages. It highlights the urgent need for stronger security measures and community awareness. The Shai-Hulud campaign has previously compromised hundreds of npm packages and harvested developer credentials. This latest incident involves Keyv and its related packages, which are widely used for key-value storage in Node.js applications.
 
-hackernews · MaxMussio · Aug 3, 21:13 · [Discussion](https://news.ycombinator.com/item?id=49161518)
+hackernews · cimi_ · Aug 4, 11:01 · [Discussion](https://news.ycombinator.com/item?id=49166874)
 
-**Background**: Large Language Models (LLMs) like GPT-4 are AI systems trained on vast text data to generate human-like text. In software engineering, they are used for code generation, debugging, and explanation. The debate centers on whether these tools lower the barrier to entry or simply enhance the capabilities of those already skilled.
+**Background**: Supply chain attacks on npm packages have become a major security concern, as attackers compromise popular packages to inject malicious code into downstream applications. The Shai-Hulud attack is one of several recent campaigns, following incidents like the s1ngularity attack and the compromise of maintainer Josh Junon. These attacks often exploit pre-install or post-install hooks to execute malicious scripts during package installation.
 
-**Discussion**: Community comments share personal anecdotes and analogies, such as the 'amplifying mirror' and medical history-taking, supporting the article's thesis. Some call for formal studies to confirm the effect, acknowledging potential confirmation bias.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack">Shai - Hulud npm Supply Chain Attack | Wiz Blog</a></li>
+<li><a href="https://www.securityweek.com/shai-hulud-supply-chain-attack-worm-used-to-steal-secrets-180-npm-packages-hit/">Shai - Hulud Supply Chain Attack : Worm Used to... - SecurityWeek</a></li>
+<li><a href="https://www.npmjs.com/package/keyv">keyv - npm</a></li>
 
-**Tags**: `#LLM`, `#software engineering`, `#expertise`, `#AI tools`, `#productivity`
+</ul>
+</details>
+
+**Discussion**: Community members expressed frustration over the fragile dependency system, with some calling for the elimination of pre-install and post-install hooks. Others suggested practical mitigations like setting a minimum release age for packages, while some questioned why no arrests have been made despite the scale of the crime.
+
+**Tags**: `#security`, `#supply chain`, `#npm`, `#open source`, `#dependency management`
 
 ---
 
 <a id="item-3"></a>
-## [Swiftlet Runs 80B Qwen in 4.3GB RAM on Mac, 35B on iPhone](https://github.com/leonickson1/Swiftlet) ⭐️ 8.0/10
+## [Xbox Outage Blocks Disc Games, Reigniting Digital Ownership Debate](https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/) ⭐️ 8.0/10
 
-Swiftlet, an open-source project, enables running an 80B-parameter Qwen model in just 4.3GB of RAM on a Mac and a 35B model on an iPhone, using expert streaming and model compression techniques. This breakthrough allows large language models to operate on consumer hardware without requiring high-end GPUs. This development significantly lowers the barrier to running large AI models on personal devices, potentially democratizing access to advanced AI and enabling offline, privacy-preserving applications. It aligns with industry trends toward on-device AI and could reduce reliance on cloud-based inference, impacting developers, researchers, and end-users. Swiftlet builds on TurboFieldfare's expert-streaming approach, using pread for streaming experts into a bounded slot pool, LFU plus recency eviction, and fixed-stride packing for efficient disk reads. The project is open-source on GitHub and has gained significant community attention with 239 points and 108 comments.
+A recent Xbox outage lasting roughly 15-16 hours prevented players from launching even physical disc-based games across multiple console generations. The outage was caused by a backend licensing service failure, not unreadable discs, exposing the DRM dependence of modern consoles. This incident highlights the fragility of digital ownership, showing that even physical media can be rendered unusable by server-side failures. It fuels ongoing consumer rights discussions about the need for true ownership and offline access in gaming, potentially influencing future regulations and industry practices. The outage affected Xbox consoles across three generations, and Microsoft attributed it to faulty entitlement checks. This demonstrates that disc-based games on Xbox still require online license verification, contradicting the assumption that physical media guarantees offline play.
 
-hackernews · leonickson · Aug 3, 16:54 · [Discussion](https://news.ycombinator.com/item?id=49158333)
+hackernews · surprisetalk · Aug 4, 12:01 · [Discussion](https://news.ycombinator.com/item?id=49167448)
 
-**Background**: Model compression is a machine learning technique that reduces the size of trained models while maintaining accuracy, enabling deployment on resource-constrained devices. The Qwen 3-Next-80B-A3B-Thinking model is a Mixture-of-Experts (MoE) architecture with 80B total parameters but only 3B activated, making it suitable for such compression. Swiftlet leverages expert streaming, where only the necessary experts are loaded from disk or cache, reducing memory footprint.
+**Background**: Modern gaming consoles increasingly rely on online DRM (Digital Rights Management) to verify game ownership, even for physical discs. This trend has led to concerns about the erosion of ownership, as games can become unplayable if servers shut down or experience outages. The 'Stop Killing Games' campaign and various government responses highlight growing consumer pushback against such practices.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/leonickson1/Swiftlet">GitHub - leonickson1/Swiftlet · GitHub</a></li>
-<li><a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking">Qwen / Qwen 3-Next- 80 B -A3B-Thinking · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Model_compression">Model compression - Wikipedia</a></li>
+<li><a href="https://tech.yahoo.com/gaming/articles/xbox-outage-locked-players-discs-154143617.html">Xbox Outage Locked Players Out of Discs They Own</a></li>
+<li><a href="https://windows.gadgethacks.com/news/xbox-outage-blocked-disc-games-why-physical-media-isnt-offline-access/">Xbox Outage Blocked Disc Games: Why Physical Media Isn't ...</a></li>
+<li><a href="https://aliteq.com/xbox-outage-physical-discs-stopped-working-explained-2026">Xbox Outage Stopped Physical Discs From Working: What ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express enthusiasm and support, with users noting that such impractical setups are how progress happens and anticipating future efficiency gains. Some highlight Apple's potential bet on efficient on-device LLMs, while others raise concerns about web-dependent use cases and the practicality of local models. The project's author acknowledges TurboFieldfare's inspiration, and some draw parallels to decentralized identity.
+**Discussion**: Community comments express frustration and nostalgia, with users like cautiouscat lamenting the loss of permanent ownership and comparing it to the decline of physical media in other industries. paxys argues the core issue is ownership rights, not physical vs. digital, and lists specific rights consumers should have. Some users also point out that older consoles like the PS3 offered better offline and LAN support, suggesting a regression in consumer-friendly features.
 
-**Tags**: `#on-device AI`, `#model compression`, `#LLM`, `#Apple Silicon`, `#open source`
+**Tags**: `#digital ownership`, `#DRM`, `#gaming`, `#cloud dependency`, `#consumer rights`
 
 ---
 
 <a id="item-4"></a>
-## [OpenAI Highlights Ten Advances in Math and Theoretical CS](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 8.0/10
+## [Harness Engineering for AI Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/) ⭐️ 8.0/10
 
-OpenAI published a post highlighting ten recent advances in mathematics and theoretical computer science, showcasing AI's growing capability in formal reasoning and proof generation. The announcement underscores the rapid progress of AI in tackling complex mathematical problems. This is significant because it demonstrates AI's expanding role in formal reasoning and proof assistance, which could transform how mathematical research is conducted. It also signals a broader trend where AI is increasingly used to solve problems that were previously thought to require human intuition. The post lists ten specific advances, though the details are not provided in the given content. The announcement is part of OpenAI's ongoing efforts to push the boundaries of AI in scientific and mathematical domains, likely involving models like GPT-4 and specialized tools for theorem proving.
+Lilian Weng published a blog post on harness engineering for self-improvement, discussing how to optimize AI agent frameworks and sparking community debate on fitness functions and training paradigms. This article highlights a shift from improving model weights to optimizing the surrounding harness, which could lead to more reliable and efficient AI agents. It is significant for AI engineers and researchers looking to enhance agent performance beyond model capabilities. The post explores practical implementation challenges, such as defining quality and building generic fitness functions for codebases. It also touches on novel approaches like hillclimbing experiments and using AI harness engineering skills in tools like Codex.
 
-hackernews · milkshakes · Aug 3, 16:27 · [Discussion](https://news.ycombinator.com/item?id=49157930)
+hackernews · tosh · Aug 4, 06:17 · [Discussion](https://news.ycombinator.com/item?id=49164896)
 
-**Background**: AI's involvement in mathematics has grown significantly, with models now capable of generating proofs, checking validity, and even discovering new conjectures. Formal reasoning systems like Lean and Coq are being integrated with AI to assist mathematicians. This progress is part of a broader trend where AI is applied to scientific research, potentially accelerating discovery.
+**Background**: Harness engineering is a discipline focused on building the infrastructure, validation loops, guardrails, and orchestration systems around AI systems, shifting focus from model intelligence to system reliability. Fitness functions, borrowed from evolutionary algorithms, measure how close a candidate solution is to the desired outcome, and are being applied to optimize AI coding assistants and agent harnesses.
 
-**Discussion**: The Hacker News discussion reflects a mix of awe and skepticism. Some users compare the progress to an exponential curve, noting that AI keeps delivering impressive results, while others question whether AI can truly 'intuit' conjectures or if it's just grinding through computations. There is also concern about the impact on mathematicians' careers, with some noting that recent graduates may find their work upended.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://harness-engineering.ai/?trk=article-ssr-frontend-pulse_little-text-block">Home | Harness Engineering</a></li>
+<li><a href="https://medium.com/@ravikumar135/harness-engineering-the-new-discipline-powering-reliable-ai-agents-da5a077099a2">Harness Engineering : The New Discipline Powering Reliable AI Agents</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fitness_function">Fitness function - Wikipedia</a></li>
+<li><a href="https://www.thinkcode.se/blog/2026/06/24/fitness-functions-for-an-ai-coding-assistant">Fitness Functions for an AI Coding Assistant</a></li>
 
-**Tags**: `#AI`, `#Mathematics`, `#Theoretical Computer Science`, `#OpenAI`, `#Research`
+</ul>
+</details>
+
+**Discussion**: Community comments show a mix of enthusiasm and practical concerns. Some users discuss implementing fitness functions at an organizational level, while others share personal experiments with harness optimization. There is also a humorous reference to the 'Torment Nexus' and a debate on whether training weights have peaked, with some advocating for a new training paradigm for prompts and code.
+
+**Tags**: `#AI engineering`, `#harness optimization`, `#LLM agents`, `#software engineering`, `#self-improvement`
 
 ---
 
 <a id="item-5"></a>
-## [FFmpeg 9.0 Released with New Encoders, Decoders, and Filters](https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES) ⭐️ 8.0/10
+## [MiniMax-H3 Ported to MLX for Apple Silicon](https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything) ⭐️ 8.0/10
 
-FFmpeg 9.0 has been released, introducing a range of new features including the Playdate video encoder and muxer, an animated WebP decoder and demuxer, and hardware acceleration support for ProRes RAW via VideoToolbox and APV via Vulkan. The release also adds filters such as v360_vulkan and transpose_cuda, along with HE-AAC 960 decoding for DAB+. FFmpeg is a cornerstone of multimedia processing, and this major release brings significant improvements that benefit developers and users across video encoding, decoding, and filtering. The new hardware acceleration and format support expand the tool's versatility, reinforcing its critical role in the open-source ecosystem. Notable changes include the removal of CELT decoding support (which does not affect Opus CELT), SMPTE 2094-50 metadata support and passthrough, and extended AMF Color Converter HDR capabilities. The release also includes LCEVC track muxing support in the MP4 muxer and an AMF Frame Rate Converter filter.
+A new Python package, PipeNetwork/minimax-h3-mlx, ports MiniMax's omni-modal MiniMax-H3 model to MLX, enabling local execution on Apple Silicon. Simon Willison successfully ran it on an M5 Max MacBook Pro, generating a 15-second video clip with audio from a text prompt. This port makes a state-of-the-art omni-modal generative model accessible to developers on Apple hardware, reducing the barrier to local experimentation and deployment. It highlights the growing ecosystem of MLX ports that leverage Apple's unified memory architecture for efficient AI inference. The model requires downloading approximately 115 GB of model files, and video generation took just under 45 minutes on the M5 Max. The generated audio was described as 'speech-like garbage' because the prompt lacked audio guidance, but the prompting guide provides instructions for better results.
 
-hackernews · gyan · Aug 4, 09:30 · [Discussion](https://news.ycombinator.com/item?id=49166202)
+rss · Simon Willison · Aug 4, 19:10
 
-**Background**: FFmpeg is a widely used open-source framework for handling multimedia data, providing libraries and tools for encoding, decoding, transcoding, muxing, demuxing, and filtering. It is the backbone of many video players, editors, and streaming platforms. Major version bumps like this typically signal substantial feature additions or architectural changes, and the community closely follows each release.
+**Background**: MLX is an open-source array framework optimized for Apple silicon's unified memory architecture, providing a NumPy-like API for efficient machine learning. MiniMax-H3 is a general-purpose omni-modal generative model that accepts text, images, audio, and video, and can generate up to 15-second video clips with native stereo audio at up to 2K resolution. An omni-modal system uses encoders to convert multiple input types into a common representation, enabling unified reasoning and generation across modalities.
 
-**Discussion**: The community response is largely positive, with users expressing gratitude for the project's importance. One commenter noted that the changes from 8.0 to 8.1 were more substantial than from 8.1 to 9.0, questioning the major version bump. Another user shared a detailed blog post about the release, and a third expressed hope for future Intel QSV support on Windows laptops where it is disabled.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://machinelearning.apple.com/research/exploring-llms-mlx-m5">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU - Apple Machine Learning Research</a></li>
+<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities - MiniMax Research | MiniMax</a></li>
+<li><a href="https://fal.ai/minimax-h3">MiniMax H3 - Open-Weights General-Purpose Multimodal Video Model | fal</a></li>
 
-**Tags**: `#FFmpeg`, `#multimedia`, `#open-source`, `#release`, `#video`
+</ul>
+</details>
+
+**Tags**: `#MLX`, `#MiniMax-H3`, `#multimodal`, `#Apple Silicon`, `#generative model`
 
 ---
 
 <a id="item-6"></a>
-## [Pandoc Celebrates 20 Years: A Retrospective by Its Creator](https://pandoc.org/twenty-years-of-pandoc.html) ⭐️ 8.0/10
+## [LLMs Make Open Source Freedom Practical](https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything) ⭐️ 8.0/10
 
-John MacFarlane, the creator of Pandoc, published a retrospective article marking the 20th anniversary of the universal document converter, reflecting on its design principles, the role of Haskell, and its enduring relevance. Pandoc is a widely used tool in academia, publishing, and software development, and this retrospective offers valuable insights into how thoughtful design and technology choices can lead to a long-lasting, influential open-source project. It also highlights the ongoing importance of robust, well-crafted tools in an era of rapid AI-generated content. The article discusses Pandoc's architecture, which uses N readers and M writers to support N×M conversions, and credits Haskell for the project's high-quality but low-volume contributor base. MacFarlane also speculates about the future need for such tools as document formats evolve.
+Simon Willison argues that LLMs have lowered the barrier to reading and modifying open source code, making the original promise of open source more attainable. He now routinely uses AI tools like Claude and Codex to clone, build, and understand codebases that he previously avoided due to friction. This shift could revitalize open source participation, as more developers can contribute to projects they use. It also signals a broader trend where AI-assisted development becomes integral to everyday workflows, potentially increasing code quality and innovation. Willison mentions using regular Claude chat to prompt 'Clone x/y from GitHub and tell me how Z works', and using Codex or Claude Code to checkout and build projects as a 'zero time investment challenge'. He notes he is not yet habitually modifying software, but sees a path that didn't exist a year ago.
 
-hackernews · fiddlosopher · Aug 3, 15:04 · [Discussion](https://news.ycombinator.com/item?id=49156750)
+rss · Simon Willison · Aug 3, 15:30
 
-**Background**: Pandoc is a universal document converter that supports a wide range of formats, including Markdown, HTML, LaTeX, EPUB, and DOCX. It is built in Haskell, a purely functional programming language known for its strong type system and lazy evaluation, which has influenced the project's design and contributor community.
+**Background**: Open source software grants users the freedom to examine and modify source code, but in practice, the time and effort required often deter even expert programmers. LLMs reduce this friction by automating code comprehension and build processes, making it easier for developers to engage with unfamiliar codebases. This aligns with the concept of 'vibe coding', where AI generates code from natural language prompts, and with broader trends in AI-assisted programming.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://pandoc.org/">Pandoc - index</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Haskell_programming_language">Haskell programming language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe coding - Wikipedia</a></li>
+<li><a href="https://ias-research.com/research/research-journal/reading-and-understanding-open-source-code-a-comprehensive-guide">Reading and Understanding Open Source Code: A Comprehensive Guide</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed admiration for Pandoc and its creator, with some noting the underestimated impact of technology stack choices on project culture. Others shared practical uses, such as converting emails to Markdown and building static site generators, and praised the project's craftsmanship in an age of AI-generated code.
+**Discussion**: The Hacker News discussion (referenced in the content) likely includes diverse opinions, but since no comments are provided, the sentiment cannot be summarized. However, the high score suggests the community found the insight valuable and timely.
 
-**Tags**: `#Pandoc`, `#document conversion`, `#Haskell`, `#open source`, `#software history`
+**Tags**: `#open source`, `#LLMs`, `#developer tools`, `#AI-assisted development`
 
 ---
 
 <a id="item-7"></a>
-## [ComfyUI Adds Day-0 Support for MiniMax H3 with Open Weights and Native Audio](https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui) ⭐️ 8.0/10
+## [AI Begins to Drastically Cut Customer Service Jobs](https://www.solidot.org/story?sid=84994) ⭐️ 8.0/10
 
-ComfyUI has added day-0 support for MiniMax H3, an open-weights multimodal video model that generates video with native stereo audio and up to 2K resolution. The model can take text, images, video, or audio as input and produces clips up to 15 seconds long. This marks a significant step for open-weights video generation, as MiniMax H3 offers competitive quality with native audio, a feature often missing in open models. Day-0 support in ComfyUI lowers the barrier for creators and developers to experiment with state-of-the-art video generation on their own hardware. The model's modulation weights, which account for about 40% of total parameters, can be pruned and replaced with a lookup table, reducing memory footprint by 66% (from 123.6 GB to 42.5 GB for the smallest variants) without loss of output quality. This optimization, combined with dynamic VRAM offloading, enables the 2K video model to run locally on a GPU like the RTX 3060.
+Major companies including Microsoft, Uber, and Commonwealth Bank of Australia are replacing customer service roles with AI-powered chatbots and phone systems, leading to significant job reductions. Microsoft cut its customer service team from about 50,000 to 40,000, while Uber reduced 10% of its customer service positions. This trend signals a paradigm shift in customer service employment, potentially affecting millions of jobs globally by 2030, especially in countries like the Philippines and India that rely on outsourcing. It highlights the growing impact of generative AI on the workforce and raises concerns about job displacement. Commonwealth Bank cut hundreds of customer service roles, saving tens of millions of dollars annually. Microsoft's sales and services operations lead Judson Althoff stated that AI saves the company about $750 million annually in customer service costs, though complex issues still require human support. Hyatt Hotels cut 30% of its in-house customer service staff in the Americas last year.
 
-hackernews · vblanco · Aug 3, 13:34 · [Discussion](https://news.ycombinator.com/item?id=49155629)
+rss · Solidot 奇客 · Aug 3, 14:22
 
-**Background**: Open-weights models are AI models whose trained parameters are publicly released, allowing users to download and run them locally, though modification rights depend on the license. ComfyUI is a popular node-based interface for AI image and video generation, and day-0 support means the model is integrated into the platform on the same day it is released. MiniMax H3 is part of the Hailuo video model family developed by MiniMax.
+**Background**: Customer service call centers have traditionally employed millions of workers in countries like the US, India, and the Philippines. With advances in AI and pressure on executives to adopt new technologies, companies are increasingly using generative AI tools to handle customer interactions, leading to a decline in customer service employment in the US and expected reductions in outsourcing destinations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/Comfy-Org/MiniMax-H3">Comfy-Org/ MiniMax - H 3 · Hugging Face</a></li>
-<li><a href="https://fal.ai/minimax-h3">MiniMax H 3 - Open-Weights General-Purpose Multimodal Video Model</a></li>
-<li><a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">MiniMax H3 Day - 0 Support in ComfyUI : Open Weights, Native Audio...</a></li>
+<li><a href="https://www.microsoft.com/zh-cn/dynamics-365/products/customer-service">使用生成式 AI 的 Customer Service | Microsoft Dynamics 365</a></li>
+<li><a href="https://m.aitntnews.com/newDetail.html?newId=7368">万字长文讲透生成式AI 如何赋能客服</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are generally positive, with users reporting impressive results on consumer GPUs, such as a 4070 Ti Super generating a 10-second 480p video in 10 minutes. Some users note that the model still struggles with unusual or complex scenarios, and there is curiosity about the pruning technique's applicability to LLMs.
-
-**Tags**: `#AI/ML`, `#video generation`, `#ComfyUI`, `#open weights`, `#model optimization`
+**Tags**: `#AI`, `#customer service`, `#automation`, `#employment`, `#industry trend`
 
 ---
 
 <a id="item-8"></a>
-## [Kimi K3 Architecture: Compressed Memory, Attention Across Depth, Latent Expert Routing](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
+## [Kimi K3 Architecture: Compressed Memory, Cross-Depth Attention, Latent Routing](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
 
-SemiAnalysis published a detailed technical analysis of Kimi K3's architecture, focusing on its compressed memory, attention across depth, and latent expert routing mechanisms. The analysis highlights how these innovations improve inference performance. This analysis provides valuable insights into a novel AI architecture that could significantly enhance inference efficiency, impacting the broader AI/ML systems research and deployment. Understanding Kimi K3's design may influence future model development and optimization strategies. Kimi K3 scales information flow along sequence length, network depth, and model width. It uses Hybrid Attention combining Kimi Delta Attention (KDA) layers with a Gated MLA layer per block, and employs latent expert routing for efficient parameter use.
+SemiAnalysis published a deep technical analysis of Kimi K3's architecture, highlighting its innovations in compressed memory, attention across depth, and latent expert routing. These mechanisms are designed to enhance inference efficiency and performance. This analysis provides valuable insights into cutting-edge AI architecture that could influence future LLM designs. Understanding these techniques is crucial for researchers and engineers working on efficient large-scale model inference. Kimi K3 is a 2.8T-parameter model with a 1-million-token context window, built on Kimi Delta Attention and Attention Residuals. The architecture combines compressed memory, cross-depth attention, and latent expert routing to optimize inference performance.
 
 rss · Semianalysis · Aug 3, 19:42
 
-**Background**: Kimi K3 is a large language model architecture designed to improve inference efficiency. Traditional attention mechanisms scale quadratically with sequence length, but Kimi K3's hybrid attention and compressed memory aim to reduce computational overhead. Latent expert routing is a technique that activates only relevant experts per token, reducing computation while maintaining model capacity.
+**Background**: Large language models face challenges in scaling context length, depth, and width efficiently. Techniques like attention across depth allow queries to attend to keys from earlier layers, improving information flow. Mixture of Experts (MoE) routing, especially latent expert routing, reduces parameters while preserving capacity, enabling more efficient training and inference.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arxiv.org/pdf/2607.24653">Kimi K3: Open Frontier Intelligence - arXiv.org</a></li>
-<li><a href="https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the">Kimi K3, The Manos, The Mythos, The Legendos</a></li>
-<li><a href="https://inferencex.semianalysis.com/blog/kimi-k3-the-manos-the-mythos-the">Kimi K3: The Manos, The Mythos, The Legendos | InferenceX</a></li>
+<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K3 Tech Blog: Open Frontier Intelligence</a></li>
+<li><a href="https://arxiv.org/pdf/2606.05014">Depth-Attention: Cross-Layer Value Mixing for Language Models</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI/ML`, `#architecture`, `#inference`, `#Kimi K3`, `#systems`
+**Tags**: `#AI architecture`, `#LLM inference`, `#memory compression`, `#attention mechanisms`, `#MoE`
 
 ---
 
 <a id="item-9"></a>
-## [Desk Reject Papers Without Reproducible Code](https://www.reddit.com/r/MachineLearning/comments/1vei12v/its_time_to_desk_reject_papers_that_dont_include/) ⭐️ 8.0/10
+## [Call to Desk Reject ML Papers Without Reproducible Code](https://www.reddit.com/r/MachineLearning/comments/1vei12v/its_time_to_desk_reject_papers_that_dont_include/) ⭐️ 8.0/10
 
-A reviewer proposes that machine learning conferences should desk reject papers that do not include code capable of reproducing the results, based on their experience reviewing 12 papers this year where only 1 had full code and 3 of 5 with code had bugs. This proposal addresses a critical reproducibility crisis in ML research, where hidden code and bugs undermine scientific integrity. If adopted, it could significantly increase the quality and trustworthiness of published research, affecting authors, reviewers, and the broader research community. The reviewer found that only 1 of 12 papers provided full code running the entire training pipeline, 4 provided partial code, and 7 provided no code. Of the 5 papers with some code, 3 had bugs that invalidated results, highlighting the need for mandatory code submission and desk rejection as a penalty.
+A reviewer reports that out of 12 papers reviewed for major ML conferences this year, only 1 provided full code, and 3 of 5 with partial code had bugs invalidating results, arguing for desk rejection of papers lacking reproducible code. This highlights a systemic reproducibility crisis in ML research, where code sharing is rare and bugs can go undetected, undermining scientific integrity. Changing review policies to penalize missing code could incentivize better practices and improve research quality. The reviewer suggests that the current incentive structure rewards hiding code because releasing it increases the risk of rejection due to bugs. They propose imposing real penalties, such as desk rejection, to force code sharing as a standard requirement.
 
 reddit · r/MachineLearning · /u/Flaky-Ambition5900 · Aug 3, 16:17
 
-**Background**: A desk reject is a decision by an editor to decline a manuscript without peer review, often due to clear non-compliance or low quality. In machine learning, reproducibility relies on sharing code and data, but current incentives discourage authors from releasing code because it may expose bugs and increase rejection risk. Metrics like AUROC (Area Under the Receiver Operating Characteristic curve) are commonly used to evaluate model performance, and reproducing such metrics requires the full training pipeline.
+**Background**: In machine learning research, reproducibility is crucial for verifying results, but many papers omit code due to lack of incentives or fear of scrutiny. Conferences like NeurIPS and ICML have started enforcing policies like AI watermarking, but code sharing remains inconsistent. Desk rejection is an editorial decision to reject a paper without full peer review, often for clear violations of submission requirements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.aischolar.com/news/article/what-is-desk-reject">What Is a Desk Reject? 6 Common Reasons & How to Avoid It</a></li>
-<li><a href="https://www.geeksforgeeks.org/machine-learning/auc-roc-curve/">AUC-ROC Curve in Machine Learning - GeeksforGeeks</a></li>
+<li><a href="https://byteiota.com/icml-desk-rejects-497-papers-ai-review-trap-explained/">ICML Desk Rejects 497 Papers : AI Review Trap Explained | byteiota</a></li>
+<li><a href="https://data-mining.philippe-fournier-viger.com/paper-without-code-non-reproducible-research/">Papers without code (and the problem of non- reproducible research )</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community discussion likely supports the proposal, with many agreeing that code sharing should be mandatory and that desk rejection is a strong deterrent. Some may argue that requiring code could burden authors or that reviewers should be more lenient, but the overall sentiment appears to favor stricter policies to improve reproducibility.
-
-**Tags**: `#reproducibility`, `#machine learning`, `#research policy`, `#peer review`
+**Tags**: `#reproducibility`, `#machine learning`, `#research practices`, `#peer review`, `#open source`
 
 ---
 
 <a id="item-10"></a>
-## [Explorative Modeling: A New Pretraining Axis for Generative AI](https://www.reddit.com/r/MachineLearning/comments/1vf6r6f/explorative_modeling_unlocking_a_third/) ⭐️ 8.0/10
+## [Explorative Modeling: A Third Pretraining Axis for Generative Models](https://www.reddit.com/r/MachineLearning/comments/1vf6r6f/explorative_modeling_unlocking_a_third/) ⭐️ 8.0/10
 
-The paper introduces 'explorative modeling' as a third pretraining axis for generative models, beyond parameters and data, and demonstrates that scaling exploration improves performance across images, video, and language. It also enables end-to-end generation, achieving a 4.1x FLOP efficiency gain and a 6.2x sample efficiency gain, with a near-SOTA 1.43 FID on ImageNet. This work introduces a novel scaling axis that could significantly enhance generative model capabilities, potentially leading to more efficient and powerful AI systems. It may influence future research directions in pretraining and inspire new approaches to generative modeling across multiple domains. The method, called Explorative Models (XMs), can be added to existing generative models to improve performance. The paper reports a 4.1x improvement in FLOP efficiency and a 6.2x improvement in sample efficiency, and achieves a near-SOTA FID of 1.43 on ImageNet without additional data.
+A new paper by Gladstone et al. (2026) introduces 'Explorative Modeling' (XMs) as a third pretraining axis beyond parameters and data, and demonstrates that it enables end-to-end generation in existing generative models. This could significantly impact the machine learning field by offering a new dimension for scaling generative models, potentially leading to more capable and efficient models. It challenges the traditional focus on scaling parameters and data, opening up new research directions. The paper describes Explorative Models (XMs) that increase exploration during pretraining, acting as a complementary axis to parameters and data. The approach is claimed to enable end-to-end generation, though specific technical details are not yet available in the provided content.
 
 reddit · r/MachineLearning · /u/Benlus · Aug 4, 10:42
 
-**Background**: Pretraining is a common technique in machine learning where models are trained on large datasets to learn general representations, which can then be fine-tuned for specific tasks. Traditionally, scaling pretraining has focused on increasing model parameters and data size. This paper proposes exploration as a third axis, suggesting that encouraging models to explore diverse outputs during training can improve their generative abilities.
+**Background**: Pretraining is a common technique in machine learning where a model is trained on a large dataset to learn general representations, which can then be fine-tuned for specific tasks. Traditionally, scaling has focused on increasing model parameters and training data. This paper proposes a third axis—exploration—which may involve novel training objectives or architectures that encourage the model to explore a wider range of possibilities during learning.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2607.27372">[2607.27372] Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation</a></li>
-<li><a href="https://explorative-modeling.github.io/">Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation</a></li>
-<li><a href="https://alexiglad.github.io/blog/2026/explorative_modeling/">Explorative Modeling -- Unlocking a Third Pretraining Axis and End-to-End Generation | Alexi Gladstone</a></li>
+<li><a href="https://explorative-modeling.github.io/">Explorative Modeling : Unlocking a Third Pretraining Axis and...</a></li>
+<li><a href="https://digg.com/tech/mrt8e84i">Paper Frames Exploration as Third Pretraining Axis · Digg</a></li>
+<li><a href="https://paperswithcode.co/paper/2607.27372">Explorative Modeling : Unlocking a Third Pretraining Axis and...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion is not provided, so no community sentiment is available.
-
-**Tags**: `#pretraining`, `#generative models`, `#machine learning`, `#research`
+**Tags**: `#pretraining`, `#machine learning`, `#research`, `#generative models`
 
 ---
 
 <a id="item-11"></a>
-## [UK Issues New Technical Capability Notice to Apple for Backdoor Access to Encrypted Backups](https://t.me/zaihuapd/42953) ⭐️ 8.0/10
+## [Huawei Unveils Tau Scaling Law to Replace Moore's Law](https://t.me/zaihuapd/42966) ⭐️ 8.0/10
 
-In early September, the UK Home Office issued a new Technical Capability Notice to Apple, demanding the creation of a backdoor for encrypted cloud backups, but this time limited to data belonging to UK citizens. This follows a previous global demand in January that caused diplomatic tensions with the US. This development intensifies the ongoing conflict between governments and tech companies over encryption and data access. It has significant implications for global privacy and security, as it could set a precedent for other governments to demand similar backdoors, potentially weakening encryption standards worldwide. Apple had previously withdrawn its most secure cloud storage service, iCloud Advanced Data Protection, from the UK in February after the earlier notice. Privacy activists warn that any attempt to force Apple to compromise system security could endanger the private information of users worldwide.
+At the 2026 IEEE International Symposium on Circuits and Systems (ISCAS) held in Shanghai, Huawei presented the Tau (τ) Scaling Law, proposing to replace geometric scaling with time (τ) scaling for semiconductor evolution. Over the past six years, Huawei has designed and mass-produced 381 chips based on this principle, and this fall it will launch a new Kirin smartphone chip using logic folding technology. This is the first new semiconductor scaling law proposed by a Chinese company, offering a potential path beyond Moore's Law as it approaches physical limits. If validated, it could reshape the global semiconductor industry, providing an alternative to traditional lithography-based scaling and impacting competitors like TSMC and Intel. The Tau Scaling Law focuses on reducing time constants to achieve multi-level co-optimization across devices, circuits, chips, and systems. Huawei projects that by 2031, high-end chips based on this law could achieve transistor density equivalent to the 1.4nm process node. Logic folding, a key technique, involves vertical stacking of chip components to shorten signal travel distances, potentially rivaling TSMC's first-generation 3nm performance without EUV lithography.
 
-telegram · zaihuapd · Aug 3, 15:40
+telegram · zaihuapd · Aug 4, 08:04
 
-**Background**: The UK's Technical Capability Notice is an order under the Investigatory Powers Act 2016, which compels service providers to maintain or develop the technical capability to comply with future warrants. Apple's Advanced Data Protection for iCloud uses end-to-end encryption, meaning decryption keys are stored only on user devices, making it impossible for Apple to access the data even if compelled.
+**Background**: Moore's Law, which predicts that transistor density doubles roughly every two years, has driven the semiconductor industry for decades but is now approaching physical limits. Traditional scaling relies on geometric shrinking of transistors, requiring advanced lithography tools. Huawei's Tau Scaling Law proposes an alternative: time-domain compression, where reducing time constants (e.g., signal propagation delays) can improve performance without shrinking feature sizes. This approach leverages vertical integration and logic folding to achieve gains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Technical_capability_notice">Technical capability notice</a></li>
-<li><a href="https://predaxia.com/glossary/technical-capability-notice/">Technical Capability Notice : UK government order under... | Predaxia</a></li>
-<li><a href="https://support.apple.com/guide/security/advanced-data-protection-for-icloud-sec973254c5f/web">Advanced Data Protection for iCloud - Apple Support</a></li>
+<li><a href="https://www.huawei.com/en/news/2026/5/ieee-iscas-tau-scaling">HUAWEI Presents the Tau (τ) Scaling Law, Enabling ...</a></li>
+<li><a href="https://medium.com/newsarticulated/huaweis-tau-τ-scaling-law-explained-how-time-scaling-replaces-moore-s-law-for-breakthrough-eeeb13318a31">HUAWEI’s Tau (τ) Scaling Law Explained: How Time Scaling ...</a></li>
+<li><a href="https://www.geeky-gadgets.com/huawei-logic-folding-moores-law/">Huawei Logic Folding : A New Approach to... - Geeky Gadgets</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#encryption`, `#privacy`, `#Apple`, `#UK government`, `#data access`
+**Tags**: `#semiconductors`, `#Huawei`, `#Moore's Law`, `#chip design`, `#technology`
 
 ---
 
 <a id="item-12"></a>
-## [White House Finalizes Secret Voluntary AI Evaluation Framework](https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors) ⭐️ 8.0/10
+## [Cloudflare Ditches Third-Party Security Tools for $58/Month AI Triage](https://www.theregister.com/security/2026/08/04/cloudflare-has-mostly-ditched-third-party-security-tools-suggests-not-trying-that-at-home/5282600) ⭐️ 8.0/10
 
-On August 3, 2026, the White House announced it had completed a voluntary evaluation framework for advanced AI models by the deadline set in a June 2 executive order, but refused to disclose its contents, the list of reviewers, or when companies would begin using it. The framework requires companies to grant government access to models up to 30 days before public release and includes requirements for confidentiality, cybersecurity, intellectual property protection, and non-disclosure agreements. This development is significant because it establishes a formal, albeit voluntary, mechanism for the U.S. government to evaluate advanced AI models before public release, potentially setting a precedent for AI regulation. The lack of transparency may raise concerns among policymakers, researchers, and the public about accountability and the influence of major AI companies on the process. The framework specifies that companies must allow government access to models up to 30 days before public release and includes provisions for confidentiality, cybersecurity, intellectual property protection, and non-disclosure agreements. It will also list 'trusted partners' who can access models early, and the executive order classifies model cyber capability benchmarks and applicability thresholds as confidential. The White House plans a staff-level meeting on Tuesday with OpenAI, Google, Anthropic, and other companies to review the framework.
+Cloudflare's Chief Security Officer Grant Bourzikas revealed that the company has automated vulnerability bounty triage using Anthropic's Claude Sonnet model, costing only $58 per month, compared to $200,000 per month for a security-specific model like Mythos. The company has also built over 200 autonomous security agents and largely replaced third-party security tools with self-developed applications, some AI-assisted. This demonstrates a significant cost reduction and efficiency gain in security operations by leveraging general-purpose AI models, potentially reshaping how enterprises approach security tooling. It also highlights a broader trend of AI replacing traditional software tools and the strategic implications for vendors and customers. Bourzikas advised other companies not to imitate Cloudflare's approach, noting that not every bank should develop its own software. Chief Strategy Officer Stephanie Cohen attributed the company's 1,100 layoffs to AI-driven automation and revealed plans to act as an intermediary between AI companies and publishers, using micropayments for content licensing.
 
-telegram · zaihuapd · Aug 4, 02:31
+telegram · zaihuapd · Aug 4, 09:24
 
-**Background**: The framework stems from a June 2 executive order requiring the White House to develop a voluntary evaluation framework for advanced AI models. This is part of broader efforts to address AI safety and security concerns, with the government seeking to understand and mitigate potential risks associated with cutting-edge AI systems. The voluntary nature means compliance is not mandatory, but the involvement of major AI labs suggests significant industry engagement.
+**Background**: Claude is a series of large language models developed by Anthropic, with versions like Sonnet and Opus. In 2026, Anthropic released Claude Mythos, a security-specialized model, to select organizations, followed by Claude Fable for the public. Cloudflare's move reflects a growing trend of using AI to automate security tasks, but also raises concerns about reliance on third-party AI models and the impact on jobs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html">White House to host AI companies Tuesday to review new model-testing framework</a></li>
-<li><a href="https://thenextweb.com/news/white-house-ai-framework-secret-voluntary-classified">The White House says its AI framework is done. It will not say what is in it.</a></li>
-<li><a href="https://linux.do/t/topic/2700920">白宫闭门敲定 AI 模型自愿评估框架，细节不公开 - 前沿快讯 - LINUX DO</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Sonnet_4">Claude Sonnet 4</a></li>
+<li><a href="https://news.qq.com/rain/a/20260611A000PV00">Mythos模型深度解析：技术跃迁、安全革命与战略博弈</a></li>
+<li><a href="https://blog.csdn.net/qq_31142761/article/details/162108207">Claude Mythos 深度拆解：安全专用大模型如何开创“防御性AI“新品类-CS...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments on platforms like LINUX DO express skepticism about the lack of transparency, with some users questioning the effectiveness of a voluntary framework and others speculating about the influence of big tech companies. There is also concern about the classified nature of benchmarks, which may hinder independent evaluation.
-
-**Tags**: `#AI policy`, `#regulation`, `#White House`, `#AI safety`, `#voluntary framework`
+**Tags**: `#AI`, `#security`, `#Cloudflare`, `#vulnerability management`, `#Anthropic`
 
 ---
 
 <a id="item-13"></a>
-## [Huawei Unveils 'Tao's Law' to Replace Geometric Scaling with Time Scaling](https://t.me/zaihuapd/42966) ⭐️ 8.0/10
-
-At the 2026 IEEE International Symposium on Circuits and Systems (ISCAS) held in Shanghai on May 25, 2026, Huawei officially introduced 'Tao's Law' (τ Law), proposing 'time scaling' as a replacement for traditional 'geometric scaling' in semiconductor advancement. Huawei claims to have designed and mass-produced 381 chips based on this principle over the past six years, and plans to release a new Kirin smartphone chip using logic folding technology this fall. This announcement is significant because it proposes a new scaling paradigm that could extend semiconductor progress beyond Moore's Law, which is approaching physical limits. If validated, it could reshape the global semiconductor industry, potentially reducing reliance on advanced lithography equipment and challenging the dominance of companies like ASML. Tao's Law focuses on systematically reducing the time constant (τ) through techniques such as logic folding, which reconfigures circuit topology at the design stage to compress signal propagation delays and increase transistor density. Huawei projects that by 2031, high-end chips based on this law could achieve transistor density equivalent to that of the 1.4nm process node.
-
-telegram · zaihuapd · Aug 4, 08:04
-
-**Background**: Moore's Law, which predicts that the number of transistors on a chip doubles roughly every two years, has driven the semiconductor industry for decades but is now facing physical and economic limits. Traditional 'geometric scaling' shrinks transistor dimensions to improve performance, but as features approach atomic scales, further miniaturization becomes increasingly difficult. Tao's Law offers an alternative by optimizing across device, circuit, chip, and system levels through time-domain techniques, potentially enabling continued performance gains without relying solely on extreme ultraviolet (EUV) lithography.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://baike.baidu.com/item/时间缩微/67842555">时间缩微_百度百科</a></li>
-<li><a href="https://baike.baidu.com/item/韬(τ)定律/67846419">韬 (τ)定律（半导体领域定律）_百度百科</a></li>
-<li><a href="https://www.sohu.com/a/1027856518_348129">华为发布韬定律：以时间缩微重构半导体范式，2031 年剑指等效 1.4nm_...</a></li>
-<li><a href="https://www.21jingji.com/article/20260526/herald/88be312b20ad7d0d18384eb8169efded.html">究竟｜“韬定律”将如何影响半导体产业演进路径 - 21经济网</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#semiconductors`, `#Huawei`, `#Moore's Law`, `#chip design`, `#technology innovation`
-
----
-
-<a id="item-14"></a>
-## [Cloudflare Drops Third-Party Security Tools, Uses $58/Month AI for Bug Bounty Triage](https://www.theregister.com/security/2026/08/04/cloudflare-has-mostly-ditched-third-party-security-tools-suggests-not-trying-that-at-home/5282600) ⭐️ 8.0/10
-
-Cloudflare's CISO Grant Bourzikas revealed at a Sydney event that the company now uses Anthropic's Claude Sonnet model to automate vulnerability bounty report triage, costing only $58 per month, compared to about $200,000 per month for the same task with the security-specific Mythos model. The company has also built over 200 autonomous security agents and largely abandoned third-party security tools in favor of self-developed applications, some of which are AI-assisted. This news highlights the dramatic cost-performance advantage of general-purpose AI models like Claude Sonnet for security automation, potentially reshaping how organizations approach vulnerability management. It also signals a broader industry trend where companies may build custom security solutions with AI assistance, though Cloudflare's CISO cautions that this approach is not suitable for most enterprises. The $58/month figure is for using Claude Sonnet for vulnerability triage, while the Mythos model, which is designed for autonomous exploit discovery, costs significantly more. Cloudflare's CSO Stephanie Cohen also attributed the company's 1,100-person layoff to AI-driven automation and revealed plans to act as an intermediary between AI companies and publishers, using micro-payments for content access.
-
-telegram · zaihuapd · Aug 4, 09:24
-
-**Background**: Cloudflare is a major web infrastructure and security company. Vulnerability bounty programs rely on human analysts to triage reports, which is time-consuming and expensive. Claude Sonnet is a general-purpose LLM from Anthropic, while Claude Mythos is a specialized model for autonomous security reasoning and zero-day discovery. The company's move reflects a growing use of AI in security operations, but also underscores the need for in-house expertise to build such systems.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.adwaitx.com/github-ai-taskflow-agent-vulnerability-triage/">GitHub Deploys AI to Triage Vulnerabilities : 30 Flaws Found</a></li>
-<li><a href="https://www.contrastsecurity.com/glossary/mythos-ai">What Is Mythos AI? Autonomous Exploits and AppSec Defense | Contrast Security</a></li>
-<li><a href="https://www.cloudflare.com/ai-security/">AI Security Suite | Solution for scaling AI adoption | Cloudflare</a></li>
-
-</ul>
-</details>
-
-**Discussion**: No community comments were provided for this news item.
-
-**Tags**: `#AI security`, `#Cloudflare`, `#vulnerability management`, `#Anthropic Claude`, `#automation`
-
----
-
-<a id="item-15"></a>
 ## [Google Builds $200B Wall Street Financing Machine for Anthropic](https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c) ⭐️ 8.0/10
 
-Google has quietly constructed a massive $200 billion financing structure to deliver over $150 billion in AI chips to Anthropic, involving a novel risk-sharing model with investors like Apollo and Blackstone. The first transactions through a special purpose vehicle, Compute SPV, closed in June, purchasing about $35 billion in hardware. This financing model could reshape how large-scale AI infrastructure is funded, allowing companies without credit ratings to access massive compute without straining their balance sheets. It also gives Google's TPU chips a competitive edge over Nvidia, as Google-backed data centers enjoy lower borrowing costs. The structure involves Google guaranteeing data centers, Broadcom purchasing and financing chips, and Apollo and Blackstone buying hardware to lease back to Anthropic. The Compute SPV's first deal involved about 1 gigawatt of compute and 1 million TPUs, and the financing model is inspired by vendor financing used by Boeing and GE.
+Google has quietly constructed one of the largest infrastructure financing structures in history to deliver over $150 billion in AI chips to Anthropic, with total contracts worth about $200 billion. The novel structure involves Broadcom, Apollo, Blackstone, Morgan Stanley, and several crypto miners, spreading risk among all parties. This marks a significant shift in how AI infrastructure is financed, moving massive hardware costs off balance sheets and enabling unprecedented scale. It could reshape the competitive landscape for AI compute, benefiting Anthropic and potentially setting a template for other AI companies and tech giants. In June, the special purpose vehicle Compute SPV completed its first transactions, purchasing about $35 billion in hardware, equivalent to 1 gigawatt of compute and 1 million TPUs. The structure is modeled after manufacturer financing used by Boeing and GE, allowing parties to avoid putting hundreds of billions in AI hardware on their own balance sheets.
 
 telegram · zaihuapd · Aug 4, 10:52
 
-**Background**: Anthropic, an AI company, lacks a credit rating, making traditional financing difficult. Special purpose vehicles (SPVs) are off-balance-sheet entities used to finance assets without appearing on a company's books. This approach is part of a broader trend where hyperscalers use SPVs and private credit to fund AI infrastructure, as seen with Meta's $300 billion SPV financing.
+**Background**: Anthropic, the AI lab behind the Claude model family, lacks a credit rating, so the financing structure distributes risk: Google guarantees data centers, Broadcom purchases and helps finance chips, and Apollo and Blackstone buy hardware and lease it back to Anthropic. This off-balance-sheet approach is part of a broader trend where SPVs and private credit are financing the AI infrastructure boom, as seen in similar deals like Meta's $300 billion SPV financing.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.ernestchiang.com/en/posts/2025/off-balance-sheet-ai-how-spvs-are-financing-the-data-center-boom-while-hiding-leverage/">Off-Balance Sheet AI: How SPVs Are Financing the Data Center ...</a></li>
-<li><a href="https://www.briefs.co/news/google-backed-15b-texas-ai-hub-for-anthropic-with-morgan-sta/">Morgan Stanley Leads $15B Debt for Anthropic Texas AI Hub</a></li>
-<li><a href="https://www.techtimes.com/articles/322900/20260804/google-built-credit-guarantee-infrastructure-giving-its-tpu-chips-2-point-rate-edge-over-nvidia.htm">Google Built Credit Guarantee Infrastructure Giving Its TPU Chips 2-Point Rate Edge Over Nvidia</a></li>
+<li><a href="https://finance.biggo.com/news/HvPcsp4BmHHDnbgyVm1I">Google, Broadcom, and Private Equity Giants Forge $35 Billion ...</a></li>
+<li><a href="https://tech-insider.org/google-40-billion-anthropic-investment-tpu-compute-2026/">Google's $40B Anthropic Investment: TPU Deal Inside [2026]</a></li>
 
 </ul>
 </details>
@@ -352,20 +320,20 @@ telegram · zaihuapd · Aug 4, 10:52
 
 ---
 
-<a id="item-16"></a>
-## [China's First Mandatory L3/L4 Autonomous Driving Standard Submitted for Approval](https://t.me/zaihuapd/42972) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [China's First Mandatory L3/L4 Autonomous Driving Standard Approved, Effective 2027](https://t.me/zaihuapd/42972) ⭐️ 8.0/10
 
-China's Ministry of Industry and Information Technology (MIIT) has completed the draft of the mandatory national standard 'Safety Requirements for Intelligent Connected Vehicle Autonomous Driving Systems' and started public consultation on June 17, with a proposed implementation date of July 1, 2027. This is China's first mandatory standard for L3 and L4 autonomous driving, introducing a Safety Case mechanism for safety validation. This standard marks a shift in China's autonomous driving regulation from loose concepts to hard safety constraints, which will significantly impact automakers and technology companies by requiring systematic safety validation. It sets a precedent for other countries and could accelerate the commercialization of L3/L4 autonomous driving in China. The standard introduces a Safety Case mechanism, requiring companies to systematically demonstrate safety using a 'claim-argument-evidence' approach. It also specifies requirements for human-machine handover in L3 and system autonomous risk handling in L4.
+China's Ministry of Industry and Information Technology (MIIT) has completed and submitted the mandatory national standard 'Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles' (GB 44721—2026) for approval, with public consultation starting June 17. The standard is set to take effect on July 1, 2027, introducing a Safety Case mechanism and specific requirements for human-machine handover in L3 and system risk handling in L4. This is China's first mandatory national standard for L3/L4 autonomous driving, marking a shift from loose conceptual guidance to hard safety constraints. It will force automakers to rigorously demonstrate safety, potentially reshaping the competitive landscape and accelerating the deployment of higher-level autonomous vehicles in China. The standard applies to M- and N-category vehicles with L3 and L4 autonomous driving systems. It introduces a Safety Case mechanism requiring companies to systematically demonstrate safety through 'claims-arguments-evidence', and sets distinct requirements for L3 human-machine handover and L4 system autonomous risk handling.
 
 telegram · zaihuapd · Aug 4, 13:06
 
-**Background**: Autonomous driving levels are defined by the Society of Automotive Engineers (SAE), with L3 allowing conditional automation where the driver can take over, and L4 allowing full automation in certain conditions. Safety Case is a structured safety argument supported by evidence, used in high-risk industries to demonstrate that a system is acceptably safe. China has been developing its autonomous driving industry rapidly, and this standard is part of its effort to establish a robust regulatory framework.
+**Background**: Autonomous driving levels range from L0 to L5, with L3 allowing the driver to disengage under certain conditions but requiring takeover when requested, while L4 can operate without driver intervention in defined scenarios. Safety Case is a structured argumentation framework used in safety-critical industries to demonstrate that a system is acceptably safe. China's new standard aims to establish a unified safety baseline for L3/L4 systems, addressing concerns about human-machine handover and system risk management.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://yfrobotics.github.io/self-driving-handbook-cn/system/safety/">系统安全保障 - 自动驾驶指南 - GitHub Pages</a></li>
-<li><a href="https://baike.baidu.com/item/Safety+Case/67871945">Safety Case - 百度百科</a></li>
-<li><a href="https://www.sohu.com/a/1040778204_100084983">中国工程院院士李骏：自动驾驶安全进入Safety Case时代_搜狐汽车_搜狐...</a></li>
+<li><a href="https://www.globaltimes.cn/page/202608/1367493.shtml">China releases mandatory national standard for autonomous ...</a></li>
+<li><a href="https://opengovasia.com/china-sets-national-safety-standard-for-autonomous-driving-systems/">China Sets National Safety Standard for Autonomous Driving ...</a></li>
+<li><a href="https://cnevpost.com/2026/08/04/china-sets-safety-baseline-l3-l4-autonomous-driving/">China sets unified safety baseline for L3, L4 autonomous driving</a></li>
 
 </ul>
 </details>
