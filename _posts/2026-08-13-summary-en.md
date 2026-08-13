@@ -5,369 +5,345 @@ date: 2026-08-13
 lang: en
 ---
 
-> From 83 items, 15 important content pieces were selected
+> From 82 items, 14 important content pieces were selected
 
 ---
 
-1. [DeepSeek V4 Pro 0813 Released with Strong Performance and Low Cost](#item-1) ⭐️ 9.0/10
-2. [Tailscale Details 16-Year-Old SQLite WAL-Reset Bug Fix](#item-2) ⭐️ 9.0/10
-3. [Qwen Releases Massive 2.4T MoE Model Qwen3.8-2.4T-A95B](#item-3) ⭐️ 9.0/10
-4. [Researchers Steal Hidden Reasoning from Top LLM APIs](#item-4) ⭐️ 9.0/10
-5. [HTML over WebSockets: Real-Time SPAs with Minimal JavaScript](#item-5) ⭐️ 8.0/10
-6. [xAI Releases Grok 4.6, Sparking Debate on Performance and API Quirks](#item-6) ⭐️ 8.0/10
-7. [Chrome's Tiny JPEG Rendering Quirk Explained](#item-7) ⭐️ 8.0/10
-8. [Amazon to Train AI on Twitch Streams by Default, Opt-Out Available](#item-8) ⭐️ 8.0/10
-9. [AI Pioneers Debate Open Source, Regulation at Ai4](#item-9) ⭐️ 8.0/10
+1. [Tailscale Uncovers 16-Year-Old SQLite WAL-Reset Race Condition](#item-1) ⭐️ 9.0/10
+2. [Qwen3.8-2.4T-A95B: Massive MoE Model Nears Frontier Performance](#item-2) ⭐️ 9.0/10
+3. [Researchers Steal Hidden Reasoning from Major LLM APIs](#item-3) ⭐️ 9.0/10
+4. [uBlock Origin Stops Blocking Facebook Ads](#item-4) ⭐️ 8.0/10
+5. [xAI Releases Grok 4.6 with Benchmark Gains and API Changes](#item-5) ⭐️ 8.0/10
+6. [HTML over WebSockets: Real-Time SPAs with Minimal JavaScript](#item-6) ⭐️ 8.0/10
+7. [Chrome's Tiny JPEG Rendering Difference Explained](#item-7) ⭐️ 8.0/10
+8. [Twitch auto-enrolls streamers in Amazon AI training, opt-out only](#item-8) ⭐️ 8.0/10
+9. [AI Pioneers Advocate for Open Development Amid Safety Concerns](#item-9) ⭐️ 8.0/10
 10. [General Catalyst leads $1.1B round into 2-month-old River AI](#item-10) ⭐️ 8.0/10
-11. [Anthropic's Unreleased Model Makes Progress on Riemann Hypothesis](#item-11) ⭐️ 8.0/10
-12. [Anthropic Extends AI Text Watermarking to Older Models](#item-12) ⭐️ 8.0/10
-13. [Adam's Per-Coordinate Scaling Breaks Rotation Invariance and Low-Rank Bias](#item-13) ⭐️ 8.0/10
-14. [Decoupled Descent: Exact Train-Test Error Tracking via AMP](#item-14) ⭐️ 8.0/10
-15. [White House to Expand AI Policy to Include Open-Source Models in Safety Testing](#item-15) ⭐️ 8.0/10
+11. [Anthropic's Unreleased Model Advances on Riemann Hypothesis](#item-11) ⭐️ 8.0/10
+12. [Adam's Coordinate Adaptivity Breaks Rotation Invariance and Low-Rank Bias](#item-12) ⭐️ 8.0/10
+13. [Decoupled Descent: Enforcing Exact Train-Test Error Tracking via AMP Corrections](#item-13) ⭐️ 8.0/10
+14. [DeepMind's SL2T Sign Language-to-Text Model Debuts on Pixel 11](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [DeepSeek V4 Pro 0813 Released with Strong Performance and Low Cost](https://openrouter.ai/deepseek/deepseek-v4-pro-0813) ⭐️ 9.0/10
+## [Tailscale Uncovers 16-Year-Old SQLite WAL-Reset Race Condition](https://tailscale.com/blog/sqlite-wal-reset-bug) ⭐️ 9.0/10
 
-DeepSeek V4 Pro 0813, the GA release of DeepSeek's 1.6T-parameter flagship model, is now available via API on OpenRouter. It features a 1,048,576-token context window, 384,000-token maximum output, and pricing of $0.435 per million input tokens and $0.87 per million output tokens. This release is significant because it offers a high-performance model at a very competitive price, potentially disrupting the AI model market. Early community tests show it can handle complex development tasks effectively, making advanced AI more accessible to developers and businesses. The model is available via API only, and it is unclear whether open weights will be released. It includes independent benchmarks from Artificial Analysis, and the official announcement highlights enhanced agent capabilities, support for the Responses API, and Codex integration.
+Tailscale detailed the discovery and fix of a 16-year-old SQLite WAL-reset race condition that could cause data corruption. The bug was isolated with a custom SQLite VFS shim funded by Tailscale and fixed by SQLite maintainers. This bug affected a widely-used embedded database, and its discovery highlights the value of open-source funding and modern deterministic concurrency testing. The collaborative debugging effort underscores the importance of investing in correctness for critical infrastructure. The bug is a race condition in WAL checkpointing that could corrupt data files, and SQLite developers estimate it existed for at least 16 years. Tailscale funded the development of a custom SQLite VFS shim that helped isolate the race condition almost immediately, and the fix also uncovered a second stale expression index bug.
 
-hackernews · explosion-s · Aug 12, 16:04 · [Discussion](https://news.ycombinator.com/item?id=49274600)
+hackernews · ropbear · Aug 12, 14:22 · [Discussion](https://news.ycombinator.com/item?id=49272832)
 
-**Background**: DeepSeek is a Chinese AI company known for releasing powerful open-source language models at low cost. Mixture-of-experts (MoE) architecture, used in this model, activates only a subset of parameters per token, improving efficiency. The model is now fully available across web, mobile app, and API, according to DeepSeek's official site.
+**Background**: SQLite is a widely-used embedded database that supports Write-Ahead Logging (WAL) for improved concurrency and durability. The WAL-reset bug is a race condition that occurs during checkpointing, where the WAL file is reset, potentially leading to data corruption. Deterministic concurrency testing is a methodology that aims to reproduce scheduling sequences to find such races, which traditional testing may miss.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 - API Pricing & Benchmarks | OpenRouter</a></li>
-<li><a href="https://lovableapp.org/blog/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 (2026): Complete Guide to Pricing ...</a></li>
-<li><a href="https://deepseek.com/en/index.html">DeepSeek</a></li>
+<li><a href="https://tailscale.com/blog/sqlite-wal-reset-bug">How Tailscale helped find the SQLite WAL - Reset bug</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49272832">Tracking down the 16-year-old WAL - reset SQLite bug | Hacker News</a></li>
+<li><a href="https://www.youngju.dev/blog/2026-07-16-sqlite-wal-reset-bug.en">The SQLite WAL - Reset Bug: A Data Corruption Race That Hid for 15...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is largely positive, with users reporting strong performance on complex tasks at low cost. One user noted minor issues compared to GPT-5.6-terra-high on a Docker deployment task, while another praised significant gains in a traffic simulator without new problems. Some users expressed interest in trying the model, and one highlighted cost-effectiveness as a key factor.
+**Discussion**: The Hacker News community praised Tailscale for funding open-source development and engaging with SQLite maintainers, with some noting the value of deterministic concurrency testing. Others expressed skepticism about SQLite's production readiness, suggesting that such bugs might push companies toward Postgres, while some appreciated the detailed write-up and the single-writer design clarification.
 
-**Tags**: `#AI`, `#DeepSeek`, `#LLM`, `#model release`, `#open source`
+**Tags**: `#SQLite`, `#bug`, `#concurrency`, `#open-source`, `#debugging`
 
 ---
 
 <a id="item-2"></a>
-## [Tailscale Details 16-Year-Old SQLite WAL-Reset Bug Fix](https://tailscale.com/blog/sqlite-wal-reset-bug) ⭐️ 9.0/10
+## [Qwen3.8-2.4T-A95B: Massive MoE Model Nears Frontier Performance](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) ⭐️ 9.0/10
 
-Tailscale published a detailed blog post about discovering and fixing a 16-year-old SQLite bug, a rare data race between a checkpoint and a write transaction in WAL mode. The fix was developed collaboratively with the SQLite team, aided by a custom VFS shim funded by Tailscale. This bug could corrupt SQLite databases under specific concurrency conditions, affecting countless applications that rely on SQLite. The debugging process highlights the value of commercial support and specialized tools for open-source projects, and the fix improves SQLite's reliability for all users. The bug occurs when a write happens at a specific time during a checkpoint, causing the checkpoint to think pages have been copied from the WAL to the main database when they haven't. Tailscale funded the development of the tmstmpvfs shim, which added logging that helped isolate the race condition.
+Alibaba released Qwen3.8-2.4T-A95B, an open-weight MoE model with 2.4 trillion total parameters and 95 billion active parameters, claiming performance near Opus 4.5/4.8 and Fable 5. The model is available in BF16 and FP8 formats, with a 1-bit quantized version at 397GB. This release brings near-frontier AI capabilities to the open ecosystem, potentially democratizing access to top-tier model performance. It intensifies competition among open-weight models and may influence hardware requirements and deployment strategies for large-scale MoE models. The model uses a fine-grained MoE architecture with hybrid full and linear attention, supporting a context length of up to 1M tokens in the official Qwen3.8-Max version, though the open-weight version lacks vision support and built-in tools. The BF16 version requires about 4.9TB of storage, while the 1-bit quantized version is 397GB, making it feasible for high-end consumer hardware.
 
-hackernews · ropbear · Aug 12, 14:22 · [Discussion](https://news.ycombinator.com/item?id=49272832)
+hackernews · Philpax · Aug 12, 15:01 · [Discussion](https://news.ycombinator.com/item?id=49273478)
 
-**Background**: SQLite uses Write-Ahead Logging (WAL) mode to improve concurrency, allowing multiple readers and a single writer. A checkpoint operation copies pages from the WAL file back into the main database. The bug was a data race that could corrupt the database when a write and checkpoint occurred concurrently on separate connections. SQLite is widely used in embedded systems and applications, making such bugs particularly impactful.
+**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, enabling large total parameter counts with efficient inference. Quantization techniques like FP8 and 1-bit reduce memory footprint and computational cost, making large models more accessible. Qwen is a series of open-weight models from Alibaba, and this release is part of a trend toward open-weight models rivaling proprietary frontier models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://tailscale.com/blog/sqlite-wal-reset-bug">How Tailscale helped find the SQLite WAL-Reset bug</a></li>
-<li><a href="https://www.sqlite.org/howtocorrupt.html">How To Corrupt An SQLite Database File</a></li>
-<li><a href="https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected">Hunting a 16-year-old SQLite bug with TLA+: is dqlite affected? | Ubuntu</a></li>
+<li><a href="https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/">Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...</a></li>
+<li><a href="https://openrouter.ai/qwen/qwen3.8-2.4t-a95b">Qwen3.8 2.4T A95B - API Pricing & Providers | OpenRouter</a></li>
+<li><a href="https://www.baseten.co/blog/fp8-efficient-model-inference-with-8-bit-floating-point-numbers/">FP8: Efficient model inference with 8-bit floating point numbers</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community praised Tailscale for funding open-source development and taking the bug seriously with a commercial support contract. Commenters noted the irony of SQLite's extensive testing yet the presence of a bug, and appreciated the detailed write-up. Some discussed the specifics of the race condition and the single-writer design.
+**Discussion**: Community comments highlight the model's size and serving challenges, noting that BF16 and FP8 releases are harder to serve than competitors like Kimi k3, and that QAT on q4 is not provided, requiring external quantization efforts. Some express excitement about the 1-bit quantized version enabling near-Opus performance on consumer hardware, while others lament the lack of vision support and 1M context in the open-weight version. There is also speculation about future hardware cost reductions and comparisons with DeepSeek's upcoming models.
 
-**Tags**: `#SQLite`, `#bug`, `#debugging`, `#open-source`, `#database`
+**Tags**: `#AI/ML`, `#Large Language Models`, `#MoE`, `#Qwen`, `#Model Release`
 
 ---
 
 <a id="item-3"></a>
-## [Qwen Releases Massive 2.4T MoE Model Qwen3.8-2.4T-A95B](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) ⭐️ 9.0/10
+## [Researchers Steal Hidden Reasoning from Major LLM APIs](https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/) ⭐️ 9.0/10
 
-Qwen has released Qwen3.8-2.4T-A95B, a 2.4-trillion-parameter Mixture-of-Experts model with 95 billion active parameters per token, available in BF16 and FP8 formats. The model claims performance between Opus 4.8 and Fable 5. This release is significant as it brings frontier-level performance to the open-weight community, potentially rivaling proprietary models like Opus and Fable. It could accelerate adoption of large MoE models in research and industry, though serving requirements remain high. The model uses a fine-grained MoE architecture with 512 routed experts (10 active) plus one shared expert, over a 92-layer hybrid-attention backbone, supporting up to 1M context and 128K output. The BF16 version requires about 4.9TB of memory, while a 1-bit quantized version is around 397GB.
+Researchers demonstrated a method to recover hidden chain-of-thought reasoning from proprietary LLM APIs (OpenAI, Anthropic, Google) by replaying encrypted reasoning blocks into weaker sibling models and jailbreaking them. The attack has been acknowledged and fixed by all providers. This exposes a significant security flaw in how major AI providers protect their internal reasoning, potentially allowing extraction of sensitive chain-of-thought data. It highlights the need for stronger encryption and isolation of reasoning traces, impacting AI safety and security practices. The attack exploited the fact that models in the same family share the same encryption key, allowing encrypted blocks to be replayed across models. Claude Haiku 4.5 was the easiest to attack, using a prompt to transcribe the reasoning verbatim, and the paper includes extracted reasoning traces in its appendix.
 
-hackernews · Philpax · Aug 12, 15:01 · [Discussion](https://news.ycombinator.com/item?id=49273478)
+rss · Simon Willison · Aug 11, 22:40
 
-**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, enabling massive scale with manageable compute. Qwen3.8-2.4T-A95B is the open-weight version of Qwen3.8-Max, which adds vision, 1M context, and built-in tools. BF16 and FP8 are precision formats; FP8 reduces memory and speeds up inference but may require careful quantization.
+**Background**: Proprietary LLM APIs often return encrypted chain-of-thought blocks to avoid exposing raw reasoning, but these blocks are portable and can be replayed. The paper demonstrates that weaker sibling models, with fewer safety guardrails, can be jailbroken to decode these blocks, revealing the stronger model's hidden reasoning.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B">Qwen/Qwen3.8-2.4T-A95B — 2.4T / 95B active · MOE · 256K ctx</a></li>
-<li><a href="https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/">Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72 | NVIDIA Technical Blog</a></li>
-<li><a href="https://www.mindstudio.ai/blog/qwen3-8-2-4t-a95b-release">Qwen3.8-2.4T-A95B: Alibaba's Open-Weight Qwen-Max Flagship Explained | MindStudio</a></li>
+<li><a href="https://arxiv.org/pdf/2608.09867">Stealing Reasoning Traces from Proprietary LLM APIs - arXiv.org</a></li>
+<li><a href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/">Stealing Reasoning Traces from Proprietary LLM APIs</a></li>
+<li><a href="https://cybersecuritynews.com/top-ai-models-apis-flaw-exposes-hidden-reasoning/">OpenAI, Anthropic, and Google LLM APIs vulnerability Exposes ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight the model's size and serving challenges, with some noting it is harder to serve than Kimi k3 due to lack of QAT quantization. Others are excited about the 1-bit quantized version fitting into consumer hardware, and there is discussion about hardware cost projections. Some express disappointment that the open-weight model lacks vision and 1M context features of the official version.
-
-**Tags**: `#AI/ML`, `#Large Language Models`, `#MoE`, `#Qwen`, `#Open Source`
+**Tags**: `#LLM security`, `#chain-of-thought`, `#AI safety`, `#proprietary APIs`, `#research`
 
 ---
 
 <a id="item-4"></a>
-## [Researchers Steal Hidden Reasoning from Top LLM APIs](https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/) ⭐️ 9.0/10
+## [uBlock Origin Stops Blocking Facebook Ads](https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html) ⭐️ 8.0/10
 
-Researchers demonstrated a method to recover encrypted chain-of-thought reasoning from proprietary LLM APIs by replaying traces into weaker sibling models and jailbreaking them. The attack affected Anthropic, OpenAI, and Google, but has since been fixed. This research exposes a significant security vulnerability in major AI APIs, highlighting risks of hidden reasoning extraction and potential for model distillation or data exfiltration. It underscores the need for robust encryption and access controls in AI services. The attack exploited that all models in the same family share the same encryption key, allowing encrypted reasoning blocks to be replayed into weaker models like Claude Haiku 4.5, which could be jailbroken to output plaintext. The paper includes extensive extracted reasoning traces, revealing raw chain-of-thought content not intended for human consumption.
+uBlock Origin's volunteer team announced it will no longer attempt to block ads on Facebook, citing the platform's constantly changing anti-ad-blocking techniques. This decision was made public around August 2026, following years of escalating technical challenges. This marks a significant moment in the ad-blocking arms race, as one of the most popular ad blockers concedes defeat against a major platform. It highlights the increasing difficulty for open-source tools to keep up with sophisticated ad obfuscation, potentially impacting user privacy and ad experience for millions. Facebook uses techniques such as splitting words like 'ad' into single-letter spans with random class names, nesting divs eight layers deep, and using data attributes instead of plain text to evade CSS selectors. These methods make it nearly impossible for filter lists to keep up, leading uBlock Origin to focus efforts elsewhere.
 
-rss · Simon Willison · Aug 11, 22:40
+hackernews · Markoff · Aug 12, 11:28 · [Discussion](https://news.ycombinator.com/item?id=49270726)
 
-**Background**: Chain-of-thought reasoning is a technique where LLMs generate intermediate steps to arrive at answers, often hidden from users in proprietary APIs. To maintain context, APIs encrypt these reasoning traces and pass them back to clients, but the encryption keys are shared across model families, enabling the attack.
+**Background**: Ad blockers like uBlock Origin rely on filter lists that identify and hide ad elements based on selectors. Facebook has long employed obfuscation tactics to make its ads harder to detect, creating a cat-and-mouse game. The Meta ad delivery system uses machine learning and auctions to serve ads, further complicating blocking efforts.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cybersecuritynews.com/top-ai-models-apis-flaw-exposes-hidden-reasoning/">OpenAI, Anthropic, and Google LLM APIs vulnerability Exposes...</a></li>
-<li><a href="https://arxiv.org/pdf/2608.09867">Stealing Reasoning Traces from Proprietary LLM APIs</a></li>
-<li><a href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/">Stealing Reasoning Traces from Proprietary LLM APIs</a></li>
+<li><a href="https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html">uBlock Origin Is Giving Up the Fight to Keep Ads Off Facebook</a></li>
+<li><a href="https://www.neowin.net/news/facebook-ads-are-so-hard-to-block-that-ublock-origin-stopped-filtering-them/">Facebook ads are so hard to block that uBlock Origin ... - Neowin</a></li>
+<li><a href="https://www.dylanpaulus.com/posts/how-fb-avoids-adblockers">How Facebook Avoids Ad Blockers - Dylan Paulus</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM security`, `#chain-of-thought`, `#proprietary APIs`, `#AI safety`, `#research`
+**Discussion**: Community comments express frustration with Facebook's tactics, with some suggesting that ads are a form of 'brain malware' and that users should leave the platform. Others predict the arms race will eventually lead to computer vision-based ad blocking, while some note the accessibility issues caused by Facebook's obfuscated markup.
+
+**Tags**: `#ad-blocking`, `#privacy`, `#Facebook`, `#uBlock Origin`, `#arms race`
 
 ---
 
 <a id="item-5"></a>
-## [HTML over WebSockets: Real-Time SPAs with Minimal JavaScript](https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/) ⭐️ 8.0/10
+## [xAI Releases Grok 4.6 with Benchmark Gains and API Changes](https://x.ai/news/grok-4-6) ⭐️ 8.0/10
 
-The article discusses building real-time SPAs using HTML over WebSockets, a technique popularized by Phoenix LiveView, and highlights how it minimizes JavaScript usage. It also references new HTML streaming APIs in Chrome that could further reduce JS dependencies. This approach challenges the traditional heavy-JavaScript SPA paradigm, offering a simpler and more efficient way to build real-time applications. It could influence future web development practices, especially for server-rendered apps needing real-time updates. The technique uses WebSockets to send HTML fragments directly to the browser, which then updates the DOM without custom client-side JavaScript. The article notes that for most apps, SSE (Server-Sent Events) is simpler and cheaper, but WebSockets are necessary for bidirectional low-latency communication.
-
-hackernews · redbell · Aug 12, 16:51 · [Discussion](https://news.ycombinator.com/item?id=49275335)
-
-**Background**: Phoenix LiveView, created by Chris McCord, is a framework that allows building interactive web applications without writing much JavaScript by sending HTML over WebSockets. This technique predates LiveView, as McCord had experimented with similar ideas in Rails before moving to Phoenix. The approach contrasts with traditional SPAs that rely heavily on client-side rendering and REST APIs.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/phoenixframework/phoenix_live_view">Phoenix LiveView</a></li>
-<li><a href="https://www.phoenixframework.org/">Phoenix Framework</a></li>
-<li><a href="https://websocket.org/comparisons/sse/">WebSocket vs SSE: Which One Should You Use?</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The comments highlight the historical context, noting that Chris McCord pioneered this technique with Rails before LiveView. Some discuss the trade-offs between WebSockets and SSE, with one commenter suggesting SSE is simpler for most cases. Others point to new HTML streaming APIs in Chrome that could further reduce JS bundles, and there is a link to a critical response.
-
-**Tags**: `#WebSockets`, `#Real-time`, `#SPA`, `#Phoenix LiveView`, `#SSE`
-
----
-
-<a id="item-6"></a>
-## [xAI Releases Grok 4.6, Sparking Debate on Performance and API Quirks](https://x.ai/news/grok-4-6) ⭐️ 8.0/10
-
-xAI released Grok 4.6, a new frontier AI model, on an unspecified date. It debuts on the AA-Briefcase benchmark with an Elo of 1577, placing it at Fable 5-tier, and shows strong performance across multiple benchmarks. Grok 4.6's release intensifies competition among major AI labs, offering a cost-effective alternative with competitive performance. Its strong benchmark results and lower pricing could pressure other frontier models and benefit users seeking high intelligence at lower cost. Grok 4.6 supports a 500k context window and offers four reasoning effort levels: xhigh, high (default), medium, and low. Pricing is $2.00 per 1M input tokens and $6.00 per 1M output tokens, which is lower than the median for output tokens.
+xAI has released Grok 4.6, a new AI model that shows a 5-point improvement over Grok 4.5 on the Artificial Analysis Intelligence Index, bringing it back to the frontier alongside OpenAI and behind only Anthropic. The model is available via the xAI API, Grok Build, Cursor, OpenRouter, Vercel, and Cloudflare, with a 500,000-token context window. This release signals xAI's return to the competitive frontier of AI models, intensifying competition among major labs. The improvements in coding and agentic behavior, along with a large context window, could make Grok 4.6 a strong choice for developers and enterprises, potentially shifting market dynamics. Grok 4.6 is trained on a wide range of agentic RL tasks, including knowledge work, general coding, and domain-specific environments for kernel optimization and web tasks. The model shows stronger post-training, coding and agent behavior, speed and token efficiency, and one-shot UI or 3D code generation, but no verified benchmark has been released by xAI itself.
 
 hackernews · iLuddite · Aug 12, 15:32 · [Discussion](https://news.ycombinator.com/item?id=49274027)
 
-**Background**: Grok is a chatbot developed by xAI, led by Elon Musk. The company has been releasing successive versions of the Grok model, with Grok 4 and 4 Heavy released in July 2025. Grok 4.6 is the latest iteration, aiming to compete with other frontier models like GPT-5.6 and Claude 4.8/5.
+**Background**: Grok is a series of large language models developed by xAI, led by Elon Musk. The Artificial Analysis Intelligence Index is a third-party composite score that provides a neutral cross-model comparison. Grok 4.6's release comes just over a month after Grok 4.5, and it gains 5 points on the index, or +23 points compared to Grok 4.3.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis">Grok 4 . 6 returns SpaceXAI to the intelligence frontier and leads on cost...</a></li>
-<li><a href="https://x.ai/news/grok-4-6">Introducing Grok 4 . 6 | SpaceXAI</a></li>
-<li><a href="https://docs.x.ai/developers/grok-4-6">Grok 4 . 6 | SpaceXAI Docs</a></li>
+<li><a href="https://x.ai/news/grok-4-6">Introducing Grok 4.6 | SpaceXAI</a></li>
+<li><a href="https://kingy.ai/blog/grok-4-6-price-benchmarks-api-cursor-context-window/">Grok 4.6: Price, Benchmarks, 500K Context & Access</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight concerns about the API adding a default system prompt that overrides user instructions, and skepticism about rapid benchmark improvements across labs, suggesting possible benchmark hacking. Some users find Grok 4.5 more pleasant to use than competitors, while others see Grok as a healthy competitor despite its polarizing reputation.
+**Discussion**: Community comments highlight concerns about the SpaceXAI API adding a default system prompt that overrides user instructions, causing refusals to discuss system prompts. Some users question the rapid benchmark improvements across labs, suspecting benchmark hacking or distillation, while others praise Grok's concise and direct style compared to competitors. Overall sentiment is mixed, with some seeing Grok as a healthy competitor but noting its polarizing reputation.
 
 **Tags**: `#AI`, `#Grok`, `#xAI`, `#LLM`, `#benchmarks`
 
 ---
 
-<a id="item-7"></a>
-## [Chrome's Tiny JPEG Rendering Quirk Explained](https://guillaumetech.github.io/posts/jpg-scaling-chrome/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [HTML over WebSockets: Real-Time SPAs with Minimal JavaScript](https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/) ⭐️ 8.0/10
 
-A technical article explains that Chrome renders tiny JPEGs differently because it performs partial decompression, which can cause visual artifacts. The author advises against using JPEGs for small icons, recommending PNG or appropriately sized images instead. This matters because many developers use JPEGs for icons and small images, and the rendering difference can cause unexpected visual issues across browsers. Understanding this behavior helps developers choose the right image format and avoid subtle bugs in web and Electron applications. The article highlights that Chrome's partial decompression is an optimization that can lead to artifacts when images are scaled down significantly. It also notes that Firefox is working on similar lower-scale decompression (see bug 2033250), and that different scaling algorithms between browsers contribute to the visual differences.
+The article advocates building real-time single-page applications (SPAs) by sending HTML over WebSockets, a technique popularized by Phoenix LiveView, which allows server-side rendering with minimal client-side JavaScript. It argues this approach simplifies development by using a single language and eliminating the need for separate API contracts. This approach could shift how developers build real-time web applications, reducing front-end complexity and potentially lowering development costs. It challenges the dominance of JavaScript-heavy frameworks and offers an alternative for teams that prefer server-centric development. The article highlights that WebSockets provide bidirectional, low-latency communication, making them suitable for chat, collaboration, and games, whereas Server-Sent Events (SSE) are simpler and cheaper for one-way server pushes. It also notes that modern browsers multiplex HTTP requests over a single TCP connection, so latency is similar for many use cases.
 
-hackernews · gutechh · Aug 12, 14:00 · [Discussion](https://news.ycombinator.com/item?id=49272549)
+hackernews · redbell · Aug 12, 16:51 · [Discussion](https://news.ycombinator.com/item?id=49275335)
 
-**Background**: JPEG is a lossy compression standard commonly used for photographs, but it can introduce compression artifacts such as blockiness and color banding, especially at low quality settings. When an image is displayed at a size much smaller than its original resolution, browsers must scale it down, and the scaling algorithm and decompression method can affect the final appearance. Chrome's partial decompression decodes only part of the JPEG data to speed up rendering, which can produce different results compared to full decompression followed by scaling.
+**Background**: Phoenix LiveView is a real-time web framework feature in the Elixir Phoenix framework that enables rich, real-time user experiences with server-rendered HTML. It begins as a regular HTTP request and then upgrades to a stateful view, automatically pushing updates to the client. The HTML-over-WebSockets technique extends this idea to general web development, allowing server-side generation of HTML fragments that are sent over WebSockets and inserted into the DOM.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/JPEG">JPEG - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Compression_artifact">Compression artifact - Wikipedia</a></li>
+<li><a href="https://testdriven.io/blog/html-over-websockets/">HTML Over WebSockets | TestDriven.io</a></li>
+<li><a href="https://alistapart.com/article/the-future-of-web-software-is-html-over-websockets/">The Future of Web Software Is HTML-over-WebSockets – A List Apart</a></li>
+<li><a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Phoenix.LiveView — Phoenix LiveView v1.2.9</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that the same issue may occur with PNGs, and that using appropriately sized images is more important than the format. One commenter linked to a Firefox bug for lower-scale decompression, while another suggested that different scaling algorithms between Chrome and Firefox contribute more to the visual difference. A user also questioned whether Firefox does full rendering or partial rendering, indicating a desire for a more balanced comparison.
+**Discussion**: Community comments show a mix of support and critique. Some users point out that the technique has historical roots, such as Chris McCord's earlier work on Rails' Sync, and that context matters when choosing between WebSockets and SSE. Others highlight new browser APIs like declarative partial updates that could enhance this approach, while some link to a critical response questioning the technique's merits.
 
-**Tags**: `#browser`, `#image-processing`, `#JPEG`, `#Chrome`, `#web-performance`
+**Tags**: `#WebSockets`, `#Real-time`, `#SPA`, `#JavaScript`, `#Server-Sent Events`
+
+---
+
+<a id="item-7"></a>
+## [Chrome's Tiny JPEG Rendering Difference Explained](https://guillaumetech.github.io/posts/jpg-scaling-chrome/) ⭐️ 8.0/10
+
+An article explains that Chrome renders tiny JPEGs differently from other browsers due to partial decompression, and recommends using appropriate image formats and resolutions. The issue has gained significant community attention, with 321 points and 66 comments. This matters because it highlights a subtle but impactful browser rendering difference that can affect web developers' image display consistency across browsers. Understanding this can help developers avoid visual glitches and improve cross-browser compatibility. The article advises against using JPEG for icons and recommends using images at an appropriate resolution for their display size. Firefox is actively working on lower-scale decompression, as referenced in Bugzilla bug 2033250.
+
+hackernews · gutechh · Aug 12, 14:00 · [Discussion](https://news.ycombinator.com/item?id=49272549)
+
+**Background**: JPEG compression involves converting images to YCbCr, subsampling color, and applying frequency transforms, then quantizing and compressing. When decoding, browsers may partially decompress to speed up rendering, which can lead to different results for very small images. Chrome and Firefox also use different scaling algorithms, contributing to visual differences.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://cgjennings.ca/articles/jpeg-compression/">How JPEG works - Home (Christopher G. Jennings)</a></li>
+<li><a href="https://stackoverflow.com/questions/63502778/blurry-downscaled-images-in-the-chrome-84">Blurry downscaled images in the Chrome 84 - Stack Overflow</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters note that the same issue occurs with PNGs, and that Chrome's optimization broke icons in Electron apps. Some point out that using appropriate image resolution is more important than format, while others mention Firefox's ongoing work and differing scaling algorithms.
+
+**Tags**: `#web development`, `#browser rendering`, `#image processing`, `#Chrome`, `#Firefox`
 
 ---
 
 <a id="item-8"></a>
-## [Amazon to Train AI on Twitch Streams by Default, Opt-Out Available](https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/) ⭐️ 8.0/10
+## [Twitch auto-enrolls streamers in Amazon AI training, opt-out only](https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/) ⭐️ 8.0/10
 
-Amazon will use Twitch streamers' content to train its generative AI models by default, with an opt-out setting now available under Security and Privacy in Twitch account settings. Twitch CPO Mike Minton confirmed the default-on approach, stating that an opt-in model would result in few participants. This policy shift raises significant privacy and consent concerns, as it leverages user-generated content for AI training without explicit consent, potentially setting a precedent for other platforms. It affects millions of Twitch streamers and could influence broader debates on AI training data ethics and user rights. The opt-out setting is labeled 'Training for Generative AI' and prevents Amazon from using a channel's streams, VODs, clips, highlights, chat, and text for training. However, some AI-powered features deemed necessary for platform functionality cannot be opted out of, and opting out does not affect models already trained.
+Amazon-owned Twitch has announced that it will automatically enroll all streamers in AI training programs, using their content to train Amazon's AI models by default. Streamers who do not want their content used must manually opt out via a settings toggle. This policy shift is significant because it establishes a default opt-out approach for AI training data, which could set a precedent for other platforms. It directly impacts millions of content creators, raising ethical concerns about consent and the balance between platform innovation and user rights. Twitch CPO Mike Minton admitted on a livestream that the opt-out design was chosen because 'if this was opt-in, nobody would opt in.' The opt-out setting is available in streamer settings, but some AI features may still use content even after opting out, according to reports.
 
 rss · TechCrunch AI · Aug 12, 20:10
 
-**Background**: Twitch is a popular live-streaming platform owned by Amazon, where users broadcast gameplay, creative content, and more. Generative AI models, such as Amazon's Nova series, require vast amounts of data for training, and companies often use user-generated content to improve these models. This move follows industry trends where platforms like Reddit and Google have faced backlash for similar practices.
+**Background**: Twitch is a live-streaming platform owned by Amazon, and Amazon has been developing AI models that require large amounts of training data. This move follows a broader industry trend where platforms like Meta and Google have faced backlash for using user content to train AI without explicit consent. The default opt-out approach contrasts with opt-in models, which require active user consent before data usage.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.engadget.com/2235928/how-to-stop-twitch-training-ai-on-streams/">How to stop Twitch from training AI on your streams - Engadget</a></li>
-<li><a href="https://appleinsider.com/articles/26/08/12/twitch-will-train-amazons-ai-on-your-streams-unless-you-opt-out">Twitch will train Amazon's AI on your streams unless you opt out</a></li>
-<li><a href="https://www.bbc.com/news/articles/cp30pz8d09jo">Twitch users can now block Amazon from using their content to train AI</a></li>
+<li><a href="https://www.windowscentral.com/artificial-intelligence/if-it-was-opt-in-nobody-would-opt-in-cringe-twitch-cpo-admits-everyone-hates-its-ai-training-feature-doesnt-care">"If it was opt in ... nobody would opt-in." Twitch CPO ... | Windows Ce...</a></li>
+<li><a href="https://www.tubefilter.com/2026/08/12/twitch-amazon-llm-scraping-opt-in-mike-minton/">"If it was opt-in, nobody would opt in": Twitch auto-enrolls... - Tube...</a></li>
+<li><a href="https://insider-gaming.com/twitch-ai-training-opt-out-setting/">Twitch Adds AI Training Opt - Out Setting for Streamers - Insider Gaming</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community reaction has been largely negative, with users flooding Twitch's chat with criticism during the announcement. Many expressed concerns about consent and the lack of opt-in, while some noted that the opt-out option is a step forward but insufficient given the default-on nature.
+**Discussion**: Community reactions have been largely negative, with many streamers expressing anger and frustration over the default opt-out policy. Critics argue that Twitch is prioritizing its own interests over user consent, and some have compared the move unfavorably to other platforms like YouTube, which also faces similar criticism.
 
-**Tags**: `#AI training`, `#privacy`, `#Twitch`, `#Amazon`, `#ethics`
+**Tags**: `#AI training`, `#Twitch`, `#Amazon`, `#privacy`, `#content policy`
 
 ---
 
 <a id="item-9"></a>
-## [AI Pioneers Debate Open Source, Regulation at Ai4](https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/) ⭐️ 8.0/10
+## [AI Pioneers Advocate for Open Development Amid Safety Concerns](https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/) ⭐️ 8.0/10
 
-At the Ai4 conference in Las Vegas, Geoffrey Hinton, Fei-Fei Li, and Andrew Ng publicly debated AI regulation, open source access, and US competitiveness amid China's advances. The discussion highlighted deep divisions among the three pioneers on how to balance safety and innovation. This debate matters because it brings together three of the most influential voices in AI to address a critical policy question: whether open source AI should be restricted for safety reasons. Their positions could influence regulators and industry leaders as they shape the future of AI governance. The debate occurred at Ai4 2026, held August 4-6 in Las Vegas, and was part of a rare joint appearance. Reports indicate the three experts clashed over jobs, regulation, and who should shape AI's future, with Hinton emphasizing existential risks and Li and Ng advocating for pragmatic, open approaches.
+At the Ai4 conference, Geoffrey Hinton, Fei-Fei Li, and Andrew Ng argued for maintaining open AI development despite rising safety concerns and geopolitical competition. They debated regulation, open source access, and how the U.S. can compete with China's advances. This discussion is significant as it brings together three top AI pioneers to address critical policy issues, potentially influencing regulation and industry practices. Their stance on openness could shape the future of AI development and international competition. The conference, Ai4, is described as the world's largest gathering of AI leaders in business, held in Las Vegas. The debate covered regulation, open source access, and U.S. competitiveness against China's AI progress.
 
 rss · TechCrunch AI · Aug 12, 17:51
 
-**Background**: Geoffrey Hinton, a Nobel Prize-winning AI pioneer, has recently warned that AI may outsmart humans and escape testing environments, highlighting safety gaps. Fei-Fei Li, a Stanford researcher and founder of World Labs, has previously urged policymakers to adopt a pragmatic attitude rather than an ideological one. Andrew Ng, a prominent AI educator and entrepreneur, has consistently advocated for open source and democratized AI access. The debate reflects broader tensions in the AI community over how to manage rapid advancement while ensuring safety and competitiveness.
+**Background**: AI safety is an interdisciplinary field focused on preventing accidents, misuse, or harmful consequences from AI systems. Open-source AI development has been a topic of debate, with concerns about potential misuse versus the benefits of transparency and collaboration. The U.S. and China are in a competitive race for AI dominance, making these discussions timely.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/">As AI safety concerns mount, three pioneers make the case for ...</a></li>
-<li><a href="https://www.forbes.com/sites/ronschmelzer/2026/08/06/hinton-li-ng-ai-jobs-regulation/">Three AI Pioneers Clash Over Jobs, Regulation And The Future ...</a></li>
-<li><a href="https://www.datacenterknowledge.com/regulations/hinton-fei-fei-li-and-andrew-ng-clash-over-ai-risks-jobs-and-regulation-at-ai4">Hinton, Fei-Fei Li, and Andrew Ng Clash Over AI Risks at Ai4</a></li>
+<li><a href="https://ai4.io/">Ai4 2026</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_safety">AI safety - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open-source_artificial_intelligence">Open-source artificial intelligence - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: No community comments were provided for this news item.
-
-**Tags**: `#AI safety`, `#open source`, `#regulation`, `#AI policy`, `#Geoffrey Hinton`
+**Tags**: `#AI safety`, `#open source`, `#regulation`, `#Geoffrey Hinton`, `#Fei-Fei Li`
 
 ---
 
 <a id="item-10"></a>
 ## [General Catalyst leads $1.1B round into 2-month-old River AI](https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/) ⭐️ 8.0/10
 
-River AI, a startup founded by xAI co-founder Igor Babuschkin, has raised $1.1 billion in a funding round led by General Catalyst, just two months after its founding. The company aims to develop personal AI agents. This massive early-stage investment signals strong investor confidence in personal AI agents, a rapidly growing area. It also highlights the continued influence of high-profile AI founders and could accelerate competition in the consumer AI space. The funding round was led by General Catalyst, a major venture capital firm with over $43 billion in assets. River AI is only two months old and has not yet released any products, indicating the investment is based largely on the team and vision.
+River AI, a startup founded by xAI co-founder Igor Babuschkin, has raised $1.1 billion in a funding round led by General Catalyst, just two months after its inception. The company aims to develop personal agents. This massive early-stage investment signals strong investor confidence in the personal agent space, a key trend in AI. It also highlights the continued influence of top AI talent like Babuschkin, potentially accelerating competition among AI startups. The funding round was led by General Catalyst, though the exact valuation and other investors were not disclosed. River AI is focused on building personal agents, which are AI systems that can autonomously perform tasks on behalf of users.
 
 rss · TechCrunch AI · Aug 11, 17:41
 
-**Background**: Personal AI agents are autonomous software systems that can perform tasks on behalf of users, such as managing emails, scheduling, and reminders. Igor Babuschkin is a co-founder of xAI, Elon Musk's AI company, and recently left to start his own ventures. General Catalyst is a prominent VC firm with investments in companies like Anthropic and Mistral.
+**Background**: Igor Babuschkin co-founded xAI with Elon Musk in 2023 but left the company in August 2025 to start his own venture. Personal agents are a class of AI agents that know user context, use tools, and take actions autonomously, such as booking meetings or sending emails. The AI agent market is rapidly growing, with major investments flowing into startups developing these technologies.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/General_Catalyst">General Catalyst</a></li>
-<li><a href="https://grokipedia.com/page/igor-babuschkin">Igor Babuschkin</a></li>
-<li><a href="https://aimultiple.com/personal-ai-agents">Building Personal AI Agents + 18 Agent Platforms and Tools</a></li>
+<li><a href="https://techcrunch.com/2025/08/13/co-founder-of-elon-musks-xai-departs-the-company/">Co - founder of Elon Musk's xAI departs the company | TechCrunch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent - Wikipedia</a></li>
+<li><a href="https://www.ego.app/blog/what-is-a-personal-agent/">What is a personal agent? Everything to know in 2026</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#funding`, `#startup`, `#personal agents`
+**Tags**: `#AI`, `#funding`, `#startups`, `#personal agents`
 
 ---
 
 <a id="item-11"></a>
-## [Anthropic's Unreleased Model Makes Progress on Riemann Hypothesis](https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/) ⭐️ 8.0/10
+## [Anthropic's Unreleased Model Advances on Riemann Hypothesis](https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/) ⭐️ 8.0/10
 
-Anthropic's unreleased AI model reportedly made unexpected progress on the Riemann hypothesis, a famous unsolved math problem, though it did not solve it. The specific details of the model and its findings have not been disclosed. This is significant because it demonstrates that advanced AI models can contribute to frontier mathematical research, potentially accelerating progress on long-standing problems. It also highlights the growing role of AI in scientific discovery, which could impact mathematicians and researchers worldwide. The article does not provide technical specifics about the model or the nature of its progress, leaving many questions unanswered. The Riemann hypothesis, formulated in 1859, asserts that all non-trivial zeros of the Riemann zeta function have real part 1/2, and it remains unproven despite extensive efforts.
+Anthropic's unreleased AI model reportedly made notable progress on the Riemann hypothesis, a famous unsolved problem in mathematics, demonstrating advanced reasoning capabilities. The model did not solve the problem but achieved more than expected. This development highlights the growing capability of AI models in tackling complex mathematical problems, potentially accelerating research in number theory and related fields. It also signals that frontier AI models are approaching human-level reasoning in specialized domains, which could have broad implications for scientific discovery. The Riemann hypothesis, proposed by Bernhard Riemann, concerns the distribution of nontrivial zeros of the Riemann zeta function, all of which are conjectured to lie on the critical line with real part 1/2. It is one of the Millennium Prize Problems, with a $1 million reward for a proof. The specific progress made by Anthropic's model has not been disclosed in detail.
 
 rss · TechCrunch AI · Aug 11, 16:25
 
-**Background**: The Riemann hypothesis is one of the most important unsolved problems in pure mathematics, with deep connections to the distribution of prime numbers. It is one of the Clay Mathematics Institute's Millennium Prize Problems, offering a $1 million reward for a proof. AI models like Anthropic's Claude series have shown advanced reasoning capabilities, and this news suggests they may be applied to such mathematical challenges.
+**Background**: The Riemann hypothesis is a central conjecture in analytic number theory, implying results about the distribution of prime numbers. Despite overwhelming numerical evidence, no proof has been found in over 150 years. Anthropic is an AI safety company known for its Claude series of large language models, which are trained using a constitution-based approach to improve ethical compliance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Riemann_hypothesis">Riemann hypothesis - Wikipedia</a></li>
-<li><a href="https://www.claymath.org/millennium/riemann-hypothesis/">Riemann Hypothesis - Clay Mathematics Institute</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Riemann_hypothesis">Riemann hypothesis</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#mathematics`, `#Anthropic`, `#Riemann hypothesis`, `#research`
+**Tags**: `#AI`, `#mathematics`, `#Anthropic`, `#research`, `#Riemann hypothesis`
 
 ---
 
 <a id="item-12"></a>
-## [Anthropic Extends AI Text Watermarking to Older Models](https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/) ⭐️ 8.0/10
+## [Adam's Coordinate Adaptivity Breaks Rotation Invariance and Low-Rank Bias](https://www.reddit.com/r/MachineLearning/comments/1vmjb3p/the_loss_does_not_see_the_basis_but_adam_does_r/) ⭐️ 8.0/10
 
-Anthropic announced it will extend watermarking support for AI-generated text to older models, following its commitment to the EU AI Act's transparency framework. All models released after August 2 will automatically include technology to watermark both text and files, with files using the C2PA open standard. This move enhances traceability of AI-generated content, helping to combat misinformation and meet regulatory requirements. It sets a precedent for other AI labs and could accelerate industry-wide adoption of watermarking standards. The text watermarks are designed to remain invisible during normal reading and persist when content is copied or pasted. Anthropic is also working to retrofit older models and plans to provide detection tools for third parties.
+A new study shows that Adam's per-coordinate second moment breaks rotation invariance in matrix factorization, causing it to lose gradient descent's implicit low-rank bias in matrix sensing. Nine update rules were tested, revealing that optimizers with shared scaling (GD, Muon, Shampoo) preserve the bias, while coordinate-wise ones (Adam, RMSProp, Lion) lose it. This finding connects optimizer design to implicit bias, offering a new criterion for choosing optimizers in low-rank recovery tasks. It could guide the development of optimizers that retain beneficial inductive biases, impacting fields like deep learning and compressed sensing. The study used a one-parameter family to transition Adam's denominator from per-coordinate to a shared scalar, showing recovery improves monotonically, indicating anisotropy is the culprit. Muon's behavior was unexpected: it is exact on truly low-rank targets but degrades with spectral tail, ceding to GD near 4% tail energy. A caveat: the 43-44% error reduction on hyperspectral data relies on a train-only learning rate rule that assigns Adam the worst rate; with optimal rates, the gap narrows.
 
-rss · TechCrunch AI · Aug 11, 12:13
+reddit · r/MachineLearning · /u/EtherealGlyph · Aug 12, 16:39
 
-**Background**: Text watermarking is a technique for embedding hidden information within textual content to verify its authenticity or origin. With the rise of generative AI, there has been significant development in watermarking AI-generated text to address concerns about misinformation and regulatory compliance, such as the EU AI Act's Article 50, which requires AI outputs to be detectable as artificially generated.
+**Background**: In matrix factorization, the loss is invariant to rotations of the factors, and gradient descent respects this symmetry. Adam's per-coordinate adaptivity breaks this invariance, affecting its implicit bias in underdetermined problems like matrix sensing. Implicit bias refers to the tendency of optimization algorithms to converge to solutions with certain properties (e.g., low rank) even without explicit regularization.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">Anthropic says it will watermark text generated by its AI models</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Text_watermarking">Text watermarking - Wikipedia</a></li>
-<li><a href="https://www.seangoedecke.com/text-ai-watermarks/">Text AI watermarks will always be trivial to remove</a></li>
+<li><a href="https://huggingface.co/papers/2608.05136">Paper page - The Loss Does Not See the Basis, but Adam Does</a></li>
+<li><a href="https://arxiv.org/abs/2008.12091">[2008.12091] Limitations of Implicit Bias in Matrix Sensing ... Limitations of Implicit Bias in Matrix Sensing ... - NASA/ADS [PDF] Limitations of Implicit Bias in Matrix Sensing ... [2008.12091] Limitations of Implicit Bias in Matrix Sensing ... Implicit Regularization in Matrix Sensing via Mirror Descent Gradient descent for deep matrix factorization: Dynamics and ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Anthropic`, `#watermarking`, `#AI safety`, `#content authenticity`
+**Tags**: `#optimization`, `#deep learning`, `#implicit bias`, `#matrix factorization`, `#Adam`
 
 ---
 
 <a id="item-13"></a>
-## [Adam's Per-Coordinate Scaling Breaks Rotation Invariance and Low-Rank Bias](https://www.reddit.com/r/MachineLearning/comments/1vmjb3p/the_loss_does_not_see_the_basis_but_adam_does_r/) ⭐️ 8.0/10
+## [Decoupled Descent: Enforcing Exact Train-Test Error Tracking via AMP Corrections](https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/) ⭐️ 8.0/10
 
-A new study shows that Adam's per-coordinate second moment destroys rotation invariance in factored models, eliminating the implicit low-rank bias that gradient descent exhibits. The authors tested nine optimizers on matrix sensing and found that rotation-invariant methods like GD, Muon, and Shampoo preserve the bias, while Adam, RMSProp, and others lose it. This insight clarifies why certain optimizers generalize better in low-rank settings, which is crucial for training large language models and other overparameterized systems. It also highlights a previously overlooked design criterion—rotation invariance—that could guide the development of new optimizers. The study uses a one-parameter family that interpolates between per-coordinate and shared-scalar denominators, showing recovery improves monotonically as anisotropy decreases. Muon behaves unexpectedly: it excels on truly low-rank targets but degrades fastest with added spectral tail, crossing over with GD near 4% tail energy. The paper also notes that the 43-44% error reduction on hyperspectral data shrinks when each optimizer is tuned on its own grid.
-
-reddit · r/MachineLearning · /u/EtherealGlyph · Aug 12, 16:39
-
-**Background**: In factored models like W = UV^T, the loss is invariant to rotations (U,V) → (UQ, VQ), and gradient descent respects this symmetry. Adam's per-coordinate second moment, however, depends on the basis, breaking this invariance. Implicit low-rank bias refers to the tendency of certain optimizers to converge to low-rank solutions even without explicit regularization, which is beneficial for generalization in many tasks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2604.01472v1">The Newton–Muon Optimizer - arXiv.org</a></li>
-<li><a href="https://github.com/KellerJordan/Muon">GitHub - KellerJordan/Muon: Muon is an optimizer for hidden ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit discussion likely includes debates about whether the results are an artifact of insufficient tuning of Adam, as the author anticipates objections like 'you should have just tuned Adam harder.' Some may question the practical relevance of matrix sensing experiments to real-world deep learning, while others may appreciate the theoretical clarity and the surprising behavior of Muon.
-
-**Tags**: `#optimization`, `#Adam`, `#low-rank bias`, `#matrix sensing`, `#implicit bias`
-
----
-
-<a id="item-14"></a>
-## [Decoupled Descent: Exact Train-Test Error Tracking via AMP](https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/) ⭐️ 8.0/10
-
-A new training method called Decoupled Descent (DD) is introduced, which uses approximate message passing (AMP) corrections to enforce that the training error asymptotically equals the test error at each iteration. This is demonstrated on stylized Gaussian mixture models and a high-dimensional XOR model, showing that DD avoids the overfitting issue seen with gradient descent. This work addresses a fundamental issue in neural network training where training error decreases but test error stagnates or worsens, offering a theoretically grounded method to mitigate overfitting. It could enable validation without holding out data and open new directions for optimal stopping and hyperparameter tuning, potentially impacting how models are trained and evaluated. The method relies on AMP theory and operates under a low-dimensional state evolution recursion, making its dynamics transparent and tractable. The paper is theoretical and focuses on stylized problems, with plans for a PyTorch-compatible package in the future.
+The paper introduces Decoupled Descent (DD), a novel training method that uses approximate message passing (AMP) corrections to enforce that the training error asymptotically equals the test error at each parameter iterate. The author demonstrates its effectiveness on a stylized Gaussian mixture model with a two-layer network, showing improved train-test error tracking compared to standard gradient descent. This work addresses a fundamental issue in deep learning where training error decreases but test error stagnates or worsens, a phenomenon attributed to data reuse bias. By providing a theoretical guarantee of train-test error tracking, Decoupled Descent could enable better model selection, optimal stopping, and hyperparameter tuning, potentially improving generalization in practical applications. The method is based on high-dimensional statistical theory, specifically approximate message passing (AMP), and is currently a theoretical paper with experiments on a stylized Gaussian mixture model. The author notes that scaling to very large models is a future direction, and plans to release a PyTorch-compatible package.
 
 reddit · r/MachineLearning · /u/mlovik1 · Aug 11, 21:06
 
-**Background**: Approximate message passing (AMP) is a technique from high-dimensional statistics used for signal recovery and inference, known for its state evolution analysis that precisely characterizes algorithm behavior. In machine learning, overfitting occurs when a model fits training data too closely, hurting generalization to new data. Decoupled Descent leverages AMP to enforce a train-test identity, ensuring that training error tracks test error, thus preventing overfitting.
+**Background**: Approximate message passing (AMP) is a class of iterative algorithms used in high-dimensional statistical problems, such as compressed sensing, that provide precise asymptotic guarantees via state evolution. In deep learning, the gap between training and test error is often due to overfitting, where the model memorizes training data but fails to generalize. This paper leverages AMP to correct the training dynamics, ensuring that the training error tracks the test error, which is a novel application of AMP to neural network training.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2201.07487">A Concise Tutorial on Approximate Message Passing A unifying tutorial on Approximate Message Passing Lecture 19: Approximate message passing algorithms Approximate Message Passing Tutorial - GitHub Pages Vector Approximate Message Passing - IEEE Xplore Message-passing algorithms for compressed sensing Approximate Message Passing - GitHub Pages</a></li>
-<li><a href="https://arxiv.org/abs/2105.02180">A unifying tutorial on Approximate Message Passing Lecture 19: Approximate message passing algorithms Approximate Message Passing Tutorial - GitHub Pages Vector Approximate Message Passing - IEEE Xplore Message-passing algorithms for compressed sensing Approximate Message Passing - GitHub Pages</a></li>
-<li><a href="https://arxiv.org/pdf/2604.27883">Decoupled Descent: Exact Test Error Tracking Via Approximate ...</a></li>
+<li><a href="https://arxiv.org/abs/2201.07487">A Concise Tutorial on Approximate Message Passing A unifying tutorial on Approximate Message Passing Lecture 19: Approximate message passing algorithms Approximate Message Passing Tutorial - GitHub Pages A unifying tutorial on Approximate Message Passing Message-passing algorithms for compressed sensing Fast, Robust Approximate Message Passing | Proceedings of the ...</a></li>
+<li><a href="https://arxiv.org/abs/2105.02180">A unifying tutorial on Approximate Message Passing Lecture 19: Approximate message passing algorithms Approximate Message Passing Tutorial - GitHub Pages A unifying tutorial on Approximate Message Passing Message-passing algorithms for compressed sensing Fast, Robust Approximate Message Passing | Proceedings of the ...</a></li>
+<li><a href="https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/Lecture_notes/scribe_lecture19.pdf">Lecture 19: Approximate message passing algorithms</a></li>
 
 </ul>
 </details>
+
+**Discussion**: The Reddit post is by the author, inviting discussion. The community has not yet provided comments, but the author is open to questions and suggestions for the future PyTorch package.
 
 **Tags**: `#machine learning`, `#optimization`, `#generalization`, `#approximate message passing`, `#theory`
 
 ---
 
-<a id="item-15"></a>
-## [White House to Expand AI Policy to Include Open-Source Models in Safety Testing](https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [DeepMind's SL2T Sign Language-to-Text Model Debuts on Pixel 11](https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/) ⭐️ 8.0/10
 
-The White House plans to revise its AI policy framework to include open-source models in pre-release safety testing once they reach 'frontier' capability, expanding beyond the current coverage of closed-source models like those from Anthropic and OpenAI. The framework remains voluntary, and the change is expected to take effect in the coming months. This expansion could significantly impact the open-source AI ecosystem, potentially slowing the release of powerful open models and affecting US competitiveness in AI development. It signals a shift in regulatory attention toward open-weight models, which have been a major driver of innovation but also raise safety concerns. The policy would require safety testing for open-source models once they reach 'frontier' capability, a term referring to models that exceed prior-generation capabilities and outrun existing regulatory frameworks. Some officials worry that a potential 30-day testing requirement could stifle US companies, and the framework's voluntary nature is partly due to President Trump's belief that formal regulation would help China catch up.
+Google DeepMind has released SL2T, a massively multilingual sign language-to-text model, and integrated it into consumer products for the first time. It is now available on Pixel 11's Gboard and Live Transcribe, supporting American Sign Language (ASL) to English translation. This marks a significant step in making sign language AI accessible to everyday users, potentially improving communication for Deaf and hard-of-hearing individuals. It sets a precedent for integrating such models into mainstream devices, which could drive further adoption and development in accessibility technology. The model was trained on over 100,000 hours of data across more than 50 sign languages, and it achieves a zero-shot score of 70 BLEURT on the FLEURS-ASL benchmark, far exceeding previous records. To protect privacy, it processes only hand and body pose keypoints, not raw video.
 
-telegram · zaihuapd · Aug 13, 00:43
+telegram · zaihuapd · Aug 13, 08:55
 
-**Background**: Frontier AI refers to models at the cutting edge of capability, often exceeding prior-generation models and posing novel risks. The White House's AI policy framework was initially designed for closed-source models like those from OpenAI and Anthropic, but the growing influence of open-source models has prompted a need for broader oversight. Safety testing aims to identify and mitigate risks such as adversarial attacks or unintended behaviors before deployment.
+**Background**: Sign language translation is challenging due to the complexity and diversity of sign languages, which are distinct from spoken languages. FLEURS-ASL is a benchmark designed to evaluate ASL translation, and pose keypoints are a privacy-preserving way to represent human movement without storing raw video. DeepMind's SL2T leverages these keypoints to enable on-device translation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zertia.ai/glossary/governance/frontier-ai/">Frontier AI : Capability Beyond the Framework | Zertia</a></li>
-<li><a href="https://www.politico.com/news/2026/08/04/white-house-ai-vetting-plan-to-exempt-nonproprietary-models-01024816">White House AI vetting plan to exempt lower-cost ‘open’ models</a></li>
-<li><a href="https://owasp.org/www-project-ai-testing-guide/">OWASP AI Testing Guide</a></li>
+<li><a href="https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/">Putting sign language AI into users’ hands — Google DeepMind</a></li>
+<li><a href="https://datanorth.ai/news/google-deepmind-releases-sl2t">Google DeepMind releases SL 2 T sign language AI - DataNorth</a></li>
+<li><a href="https://interestingengineering.com/ai-robotics/google-sign-language-model-body-landmarks">Google's new model turns sign language into text for web searches</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI policy`, `#open-source`, `#safety testing`, `#regulation`, `#White House`
+**Tags**: `#AI`, `#Sign Language`, `#DeepMind`, `#Accessibility`, `#Machine Learning`
 
 ---
