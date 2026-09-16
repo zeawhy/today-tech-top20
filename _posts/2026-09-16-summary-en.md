@@ -5,250 +5,276 @@ date: 2026-09-16
 lang: en
 ---
 
-> From 89 items, 11 important content pieces were selected
+> From 89 items, 14 important content pieces were selected
 
 ---
 
-1. [TypeSafe AI Launches System One Models and Jev for Typed Inference](#item-1) ⭐️ 8.0/10
-2. [E-ink frame listens for birds and draws 1800s-style illustrations](#item-2) ⭐️ 8.0/10
-3. [Apple Reference Image: Cryptographic Proof for Verified Photography](#item-3) ⭐️ 8.0/10
-4. [Internet Archive Adds Protections as Wayback Machine Faces Scraping Waves](#item-4) ⭐️ 8.0/10
-5. [Google launches Gemini 3.8 Live and Live Extended Thinking](#item-5) ⭐️ 8.0/10
-6. [Developer Builds Linux GPU Driver for M4 Mac Mini in One Month](#item-6) ⭐️ 8.0/10
-7. [Strix finds exposed GitHub PAT granting admin access to Baseten's production GitHub](#item-7) ⭐️ 8.0/10
-8. [Vera Rubin NVL72 Delivers 67x Better Agentic Inference Performance per Dollar](#item-8) ⭐️ 8.0/10
-9. [SemiAnalysis: On-Device vs Datacenter Inference for Robot Brains](#item-9) ⭐️ 8.0/10
-10. [Prior Labs releases TabPFN-3.5, new SOTA tabular foundation model](#item-10) ⭐️ 8.0/10
-11. [Low-Quality Chinese Casino Sites Hide APT Command-and-Control Infrastructure](#item-11) ⭐️ 8.0/10
+1. [TypeSafe AI launches System One Models and Jev for typed inference](#item-1) ⭐️ 8.0/10
+2. [E-ink frame listens for birds and draws them in 1800s style](#item-2) ⭐️ 8.0/10
+3. [Hackers Breach Flock License Plate Camera, Exposing Unencrypted Data](#item-3) ⭐️ 8.0/10
+4. [Apple Reference Image: Cryptographic Photo Verification](#item-4) ⭐️ 8.0/10
+5. [Internet Archive Adds Protections as Wayback Machine Faces Scraping Surge](#item-5) ⭐️ 8.0/10
+6. [Google launches Gemini 3.8 Live and Live Extended Thinking voice models](#item-6) ⭐️ 8.0/10
+7. [Author stays bearish on LLMs despite Navier-Stokes breakthrough](#item-7) ⭐️ 8.0/10
+8. [FPGA Project Recreates 3dfx Voodoo Graphics and a Late-1990s Gaming PC](#item-8) ⭐️ 8.0/10
+9. [SemiAnalysis: Vera Rubin NVL72 Delivers 67x Better Agentic Inference Performance per Dollar](#item-9) ⭐️ 8.0/10
+10. [SemiAnalysis: On-Device vs Datacenter AI Inference Economics](#item-10) ⭐️ 8.0/10
+11. [Prior Labs releases TabPFN-3.5, new SOTA tabular foundation model](#item-11) ⭐️ 8.0/10
+12. [Intel CEO: CPU Supply Meets Only 50% of Demand, 14A Production in Q1 2027, New Architecture Could Cut Inference Power to 1/15 of GPUs](#item-12) ⭐️ 8.0/10
+13. [Cloudflare Adds Setting to Block AI Training While Keeping Search Indexing](#item-13) ⭐️ 8.0/10
+14. [Sina Cloud SAE shuts down permanently, early Bilibili video files lost](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [TypeSafe AI Launches System One Models and Jev for Typed Inference](https://typesafe.ai/blog/introducing-system-one-models-and-jev) ⭐️ 8.0/10
+## [TypeSafe AI launches System One Models and Jev for typed inference](https://typesafe.ai/blog/introducing-system-one-models-and-jev) ⭐️ 8.0/10
 
-TypeSafe AI, a San Francisco lab founded by Diogo Almeida (who previously built RLHF methods at OpenAI for ChatGPT), has emerged from stealth with $40 million in seed funding led by DCVC and launched System One Models along with its first model, Jev. Jev is a model that skips text generation entirely, instead returning typed probabilistic decisions from unstructured input, and is available in early access. This represents a novel approach to structured output generation that trades general-purpose text generation for fast, typed inference, potentially making LLM-style intelligence practical for classification, routing, scoring, and extraction tasks where hand-written logic is too brittle. The 403-comment discussion suggests strong interest in the trade-offs between general-purpose generation and specialized typed inference. According to TypeSafe, Jev is 20-200x faster and 40-400x cheaper than LLMs, and because it gives up string generation it is architecturally incapable of hallucinating. However, these headline speed and cost gains remain vendor-tested, and critics note that Jev can only generate structured output, not arbitrary code or text.
+TypeSafe AI announced its first System One Model, Jev, a new class of frontier models built to make fast, structured decisions that software can use directly, returning typed answers and probabilities rather than free-form text. The company claims Jev runs roughly 200x faster than general-purpose generative models at a cost of $0.042 per million tokens, and it is available in early access. This represents a shift away from general-purpose text generation toward narrow, output-bounded tasks like classification, routing, scoring, and extraction, which could make LLM-powered automation dramatically cheaper and faster for production software. It also sparks debate about whether specialized typed-inference models can replace or only complement general-purpose generative models. Jev returns typed decisions instead of text, and its 'zero hallucinations' claim is really a narrow type-safety guarantee rather than a general correctness promise. One independent test reportedly caught 6 of 7 defects, and the speed comparison against generative models has been criticized as misleading since a Turing-complete generative model can in principle do anything Jev can.
 
 hackernews · albelfio · Sep 15, 19:25 · [Discussion](https://news.ycombinator.com/item?id=49717558)
 
-**Background**: System One models are a class of AI models built to make fast, structured decisions that software can use directly: they evaluate a state and return typed answers and probabilities, similar to how an LLM understands natural-language input but returning typed decisions rather than text. Jev is TypeSafe's flagship model and the first System One model, trained with RLCD (Reinforcement Learning from Contrastive Data) and positioned as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. This contrasts with conventional LLMs, which generate free-form text and can hallucinate.
+**Background**: System One models are a class of AI models built to make fast, structured decisions that software can use directly, evaluating a state and returning typed answers and probabilities. Jev is TypeSafe's flagship model and the first System One model, aimed at tasks like classification, routing, scoring, and extraction where hand-written logic is too brittle. Structured outputs have become a common pattern in LLM applications, letting models return strict JSON schemas for tasks such as document extraction, ticket classification, and agent routing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Introducing System One Models & Jev - TypeSafe AI Blog</a></li>
+<li><a href="https://typesafe.ai/">Home - TypeSafe AI</a></li>
 <li><a href="https://docs.typesafe.ai/concepts/system-one">System One - TypeSafe AI</a></li>
-<li><a href="https://www.explainx.ai/blog/typesafe-ai-jev-system-one-models-launch-2026">Jev by TypeSafe AI: 200x Faster Structured-Output Model (2026 ...</a></li>
+<li><a href="https://www.orcarouter.ai/blog/jev-typesafe-system-one-what-we-know">Jev : TypeSafe's Decision Model, Speed and Cost Explained</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely found the approach genuinely interesting and new, with ymir_e highlighting contract analysis and vintermann citing genealogy matching as strong use cases, especially valuing the certainty output for flagging low-confidence results for human review. jacobgold argued the title should be 'Jev: Trading general purpose generation for fast typed inference' and questioned whether the speed comparison is misleading, since a generative model that can output code in a Turing-complete language can do anything a computer can do, while Jev can only generate structured output. cfowles said the value clicked after seeing the Home Assistant demo, and futurisold noted combining this with design-by-contract patterns could enable many new applications.
+**Discussion**: Commenters praised the launch as genuinely interesting and new, with one noting the home assistant demo made the value click, and another citing genealogy matching as a real use case. However, several questioned the framing and speed comparison, arguing that a Turing-complete generative model can do anything Jev can, and that Jev is limited to structured output, making the comparison misleading.
 
-**Tags**: `#LLM`, `#structured-output`, `#typed-inference`, `#AI`, `#typesafe`
+**Tags**: `#LLM`, `#structured-output`, `#typed-inference`, `#AI`, `#system-design`
 
 ---
 
 <a id="item-2"></a>
-## [E-ink frame listens for birds and draws 1800s-style illustrations](https://github.com/arnegiacomo/fugleramme) ⭐️ 8.0/10
+## [E-ink frame listens for birds and draws them in 1800s style](https://github.com/arnegiacomo/fugleramme) ⭐️ 8.0/10
 
-A developer released 'fugleramme' on GitHub, an e-ink frame that continuously listens for bird sounds, identifies species using the BirdNET classifier, and renders each detected bird as a 19th-century-style illustration on the display. The Show HN post reached 1664 points with 208 comments, sparking discussion about embedded ML and e-ink projects. The project demonstrates how existing open-source ML models like BirdNET can be combined with low-power e-ink hardware to create delightful, always-on ambient devices, inspiring other builders to pursue similar embedded ML applications. It also highlights the growing ecosystem of hobbyist e-ink and ESP32 projects that prioritize energy efficiency and single-purpose design. BirdNET is a traditional convolutional neural network designed for acoustic bird identification, not an LLM, and it processes raw audio through a multi-stage pipeline for ecological accuracy. E-ink displays only consume power when refreshing, so with a BLE driver and a 2000mAh battery, a similar setup can last years on a single charge even with multiple daily refreshes.
+Developer Arne Munthe-Kaas built an e-ink frame that continuously listens for bird calls, identifies the species using the BirdNET neural network, and then generates a drawing of the bird in a 19th-century illustration style. The project, called 'fugleramme' (Norwegian for 'bird frame'), was shared on Hacker News as a Show HN post. The project demonstrates how low-power e-ink hardware can be combined with on-device machine learning and generative art to create ambient, magical experiences in the home. It also highlights the growing ecosystem of open-source bird monitoring tools and the creative potential of embedded systems beyond typical smart-home gadgets. BirdNET is a traditional convolutional neural network trained to identify over 3,000 bird species from sound, not an LLM. E-ink displays only consume power when the image changes, so the frame can run for long periods on a small battery, especially when paired with low-power wireless like Bluetooth LE instead of Wi-Fi.
 
 hackernews · arnemunthekaas · Sep 15, 12:31 · [Discussion](https://news.ycombinator.com/item?id=49711544)
 
-**Background**: E Ink is an electronic paper display technology that reflects light like paper and only uses power when the image changes, making it ideal for low-power, always-on devices. BirdNET is an AI-powered bird sound identification system developed by the Cornell Lab of Ornithology and Chemnitz University of Technology, available as a free app and open model. Embedded machine learning refers to running ML models directly on small, low-power devices such as microcontrollers, enabling applications like this without cloud connectivity.
+**Background**: BirdNET is an open-source research project from the Cornell Lab of Ornithology and Chemnitz University of Technology that uses neural networks to identify bird species from audio recordings. E-ink (electronic ink) is a display technology that mimics paper by moving charged pigment particles, requiring power only when the content changes. Generative art uses algorithms, often AI models, to create images; here it produces illustrations styled after 19th-century natural history drawings.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://birdnet.cornell.edu/">BirdNET – AI-Powered Sound ID</a></li>
-<li><a href="https://en.wikipedia.org/wiki/E_Ink">E Ink - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Embedded_Machine_Learning">Embedded Machine Learning</a></li>
+<li><a href="https://jiclcd.com/what-is-e-ink-display-technology/">What Is E - Ink Display Technology ? Complete Guide to E-Paper...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters overwhelmingly praised the project as magical and inspiring, with one noting it was the coolest thing on HN in a while. A commenter clarified that BirdNET is a traditional neural network rather than an LLM, and another shared a replication attempt on FrameOS, while a third described long-lasting BLE e-ink setups that run for years on a single charge.
+**Discussion**: Commenters were highly enthusiastic, calling the project 'magical' and a perfect blend of ideas. One noted that BirdNET is a traditional neural network rather than an LLM, while another shared their own e-ink projects and praised the battery life of Bluetooth LE e-ink drivers. Others linked related bird projects and joked about IP over Avian Carriers.
 
-**Tags**: `#e-ink`, `#embedded-systems`, `#bird-classification`, `#hardware`, `#machine-learning`
+**Tags**: `#e-ink`, `#bird-classification`, `#embedded-systems`, `#generative-art`, `#hardware`
 
 ---
 
 <a id="item-3"></a>
-## [Apple Reference Image: Cryptographic Proof for Verified Photography](https://security.apple.com/blog/apple-reference-image/) ⭐️ 8.0/10
+## [Hackers Breach Flock License Plate Camera, Exposing Unencrypted Data](https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/) ⭐️ 8.0/10
 
-Apple introduced Apple Reference Image, an opt-in camera mode on the iPhone 18 Pro series that cryptographically proves a photograph depicts a real event and has not been tampered with. The system is detailed in a new Apple Security blog post titled "Apple Reference Image: A New Approach for Verified Photography." This is a significant technical development with major privacy and security implications, potentially shifting verified photography from an open industry standard to a proprietary Apple-controlled system. It could affect journalists, insurance and identity-verification apps, and raise concerns about requiring an iPhone to participate in normal civic and commercial life. Reference Image works only with the iPhone 18 Pro's main camera, so photos taken with the ultrawide and telephoto cameras cannot be verified the same way. The system requires uploading every verified "developed" image to Apple's servers and relies on many closed-source components, which critics say makes trust and auditing difficult.
+Hackers gained physical access to a Flock Safety automated license plate reader (ALPR) camera and extracted its stored data, revealing that the device keeps unencrypted logs and images. Analysis of the camera's records showed roughly 21 days of activity, during which it photographed about 50,200 vehicles and generated around 1.6 million images, with a typical day logging about 3,300 vehicles and a high of 4,454. This breach underscores that ALPR surveillance infrastructure can leak sensitive location data if not properly secured, raising serious privacy and civil-liberties concerns for the public whose movements are captured. It also intensifies scrutiny of Flock Safety's security practices and could accelerate calls for stricter regulation of ALPR systems. The camera stored data without encryption, meaning anyone with physical access could walk up and take it, and the logs covered multiple periods totaling about 21 days. The breach was reported in collaboration with 404 Media, and the transparency group Distributed Denial of Secrets published partition images of the camera's data.
 
-hackernews · imwally · Sep 16, 02:07 · [Discussion](https://news.ycombinator.com/item?id=49721322)
+hackernews · driverdan · Sep 16, 13:18 · [Discussion](https://news.ycombinator.com/item?id=49726586)
 
-**Background**: Cryptographic image provenance aims to verify a digital image's origin and edit history using signatures and metadata, similar to the C2PA Content Credentials standard backed by Adobe, The New York Times, and others. Apple's approach differs by tying verification to specific capture hardware and Apple's own infrastructure rather than an open cross-vendor standard.
+**Background**: Automated License Plate Readers (ALPRs) are AI-powered cameras that capture and analyze images of passing vehicles, storing details such as a car's location, date, and time; in the US they are commonly called ALPRs rather than ANPRs. Flock Safety is a major vendor of these cameras, which law enforcement agencies use to cross-reference plates against watchlists, stolen-vehicle databases, and AMBER alerts. Privacy advocates have long warned that such systems create detailed movement records, and past research has found unencrypted data in other surveillance devices, including home security cameras and trackers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://9to5mac.com/2026/09/15/apple-explains-how-the-iphone-18-pros-new-reference-image-camera-mode-works/">Apple explains how the iPhone 18 Pro’s new Reference Image ...</a></li>
-<li><a href="https://www.androidauthority.com/apple-reference-image-vs-android-c2pa-3711734/">Apple claims iPhone 18 Pro's camera is more... - Android Authority</a></li>
-<li><a href="https://c2pa.org/">C 2 PA | Verifying Media Content Sources</a></li>
+<li><a href="https://deflock.org/">DeFlock is an open-source project that maps license plate readers ...</a></li>
+<li><a href="https://trafficvision.live/blog/flock-cameras">Flock Cameras : What They Are & Can You Watch... | TrafficVision.Live</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Automatic_number-plate_recognition">Automatic number- plate recognition - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were highly critical: some noted the system doesn't address replay attacks, where a photo of an edited image displayed on a monitor could still receive a valid Apple Reference signature. Others objected to the complexity, closed-source trust requirements, mandatory uploads to Apple's servers, and the risk that a "certified real" tag would lead people to accept misleading narratives at face value.
+**Discussion**: Commenters expressed alarm that the data was unencrypted and physically accessible, with one saying they have "zero trust in anything Flock says." Others noted the collaboration with 404 Media and the publication of partition images by Distributed Denial of Secrets, and one commenter raised New Hampshire's strict three-minute deletion rule for non-hit plate data as a contrast to the 21 days of logs found.
 
-**Tags**: `#Apple`, `#photo-verification`, `#cryptography`, `#privacy`, `#security`
+**Tags**: `#security`, `#privacy`, `#surveillance`, `#ALPR`, `#data-breach`
 
 ---
 
 <a id="item-4"></a>
-## [Internet Archive Adds Protections as Wayback Machine Faces Scraping Waves](https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/) ⭐️ 8.0/10
+## [Apple Reference Image: Cryptographic Photo Verification](https://security.apple.com/blog/apple-reference-image/) ⭐️ 8.0/10
 
-The Internet Archive reported that its Wayback Machine has been hit by waves of high-volume automated scraping traffic, forcing it to deploy new protections to keep the service running. The organization believes much of this traffic comes from scrapers trying to bypass blocks on original sites by pulling archived copies instead. The Internet Archive is critical public infrastructure for web preservation, and sustained scraping pressure threatens the availability of a free, open resource used by journalists, researchers, and Wikipedia editors. If sites respond by opting out of archiving, the historical record of the web could shrink for everyone. The Archive says it has put protections in place but has not detailed them, and service has been inconsistent while remaining accessible, including anonymously via Tor without a centralized gatekeeper. Some sites have already opted out of archiving in response to the scraping.
+Apple introduced Apple Reference Image, an opt-in camera mode on iPhone 18 Pro that creates a securely timestamped reference image using cryptographic hardware attestation, proving what the camera sensor actually captured. The system builds a chain of trust from the camera sensor through final processing, adding a cryptographic seal to the image to defend against AI-generated and edited fakes. This is a significant technical development with major privacy, security, and societal implications, as it could shift from needing a smartphone to needing an iPhone for identity verification and insurance claims. It also raises broader questions about whether verifying photons actually solves the problem of verifying the truth of an event. The system relies on closed-source components and uploads every verified 'developed' image to Apple's servers, and it does not address replay attacks where a modified or AI-generated image is displayed on a high-resolution monitor and then photographed. Critics note that many pieces of the trust chain are closed-source, making correctness assumptions hard to audit.
 
-hackernews · ChrisArchitect · Sep 15, 17:52 · [Discussion](https://news.ycombinator.com/item?id=49716176)
+hackernews · imwally · Sep 16, 02:07 · [Discussion](https://news.ycombinator.com/item?id=49721322)
 
-**Background**: The Wayback Machine is a digital archive of the World Wide Web launched for public access on October 25, 2001, by the Internet Archive, a San Francisco-based nonprofit founded in 1996 by Brewster Kahle. It lets users view historical snapshots of websites and, as of October 2025, has archived more than 1 trillion web pages and well over 99 petabytes of data. Web scraping refers to automated bots collecting data at mass scale, and in the mid-2020s scrapers operated by LLM vendors became a major source of web traffic, often using distributed crawling to avoid detection.
+**Background**: Cryptographic hardware attestation is a security mechanism in which a device's hardware and firmware produce cryptographic proof about their own state, rather than relying on software to simply claim integrity. Apple Reference Image applies this concept to photography, creating a verifiable chain of trust from the camera sensor to the final image so that viewers can check whether a photo was captured untampered by an iPhone.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Wayback_Machine">Wayback Machine</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Internet_Archive">Internet Archive</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Web_scraping">Web scraping - Wikipedia</a></li>
+<li><a href="https://security.apple.com/blog/apple-reference-image/">Apple Reference Image: A New Approach for Verified Photography - Apple Security Research</a></li>
+<li><a href="https://appleinsider.com/articles/26/09/09/apple-reference-image-is-a-new-way-to-authenticate-iphone-photography">Apple Reference Image is a new way to authenticate iPhone photography</a></li>
+<li><a href="https://www.securview.com/ai-security-essentials/hardware-attestation">Hardware Attestation : Definition and Key Concepts</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters widely praised the Archive as vital open infrastructure and urged donations, with simonw arguing the traffic likely comes from scrapers circumventing blocks on original sites. Others shared personal stories of recovering lost early-2000s content, while one user noted persistent 429 errors from a work computer but not a phone, suggesting the protections may affect some legitimate users unevenly.
+**Discussion**: Commenters found the approach clever but raised serious concerns: replay attacks via photographing a monitor, the complexity and closed-source nature of the trust chain, mandatory uploads to Apple's servers, and the risk that a 'certified real' tag will make people accept misleading narratives at face value. Some also warned it could shift from needing a smartphone to needing an iPhone to live normally.
 
-**Tags**: `#internet-archive`, `#web-scraping`, `#open-access`, `#digital-preservation`, `#infrastructure`
+**Tags**: `#Apple`, `#cryptography`, `#photo verification`, `#privacy`, `#security`
 
 ---
 
 <a id="item-5"></a>
-## [Google launches Gemini 3.8 Live and Live Extended Thinking](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/) ⭐️ 8.0/10
+## [Internet Archive Adds Protections as Wayback Machine Faces Scraping Surge](https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/) ⭐️ 8.0/10
 
-Google announced Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, described as its most advanced live dialogue models yet, built for natural real-time conversation. The Extended Thinking variant is a high-reasoning audio-to-audio model that captures the #1 spot on Artificial Analysis' Speech to Speech Quality Index with a score of 82.6. The release pushes real-time voice AI toward enterprise-grade reliability, with the Extended Thinking model leading agentic task completion benchmarks (68.6% on τ-Voice and 35.1% on Sierra's benchmark). This matters for developers and businesses building latency-sensitive, high-volume voice agents, and it intensifies competition with other frontier model providers. The models are positioned as cost-efficient and fast, optimized for high-volume, latency-sensitive tasks such as real-time dialogue, and are part of the natively multimodal Gemini 3 series. The Extended Thinking variant is specifically recommended when higher background reasoning is needed for complex, multi-step problem solving during live voice interactions.
+On September 15, 2026, the Internet Archive announced that the Wayback Machine has been hit by waves of high-volume automated traffic and that it has deployed new protections to keep the service running. The Archive acknowledged that some of these protections have mistakenly blocked legitimate users, and it warned that some websites have already opted out of being archived as a result of the scraping pressure. The Internet Archive is critical public infrastructure used by journalists, researchers, lawyers, and fact-checkers, so sustained scraping pressure threatens both service availability and the completeness of the historical web record. If more site owners opt out of archiving, the Wayback Machine's value as a shared public archive could erode over time. The Archive attributes the traffic to scrapers attempting to circumvent blocks on original sites by pulling content from Wayback Machine copies instead, and notes that its countermeasures have inadvertently blocked some real users. Historically, site owners could opt out via robots.txt, and a public list shows roughly 3,800 sites have explicitly excluded themselves from being crawled.
 
-hackernews · leumon · Sep 15, 17:38 · [Discussion](https://news.ycombinator.com/item?id=49715947)
+hackernews · ChrisArchitect · Sep 15, 17:52 · [Discussion](https://news.ycombinator.com/item?id=49716176)
 
-**Background**: Gemini is Google's flagship family of multimodal AI models, and the 'Live' line refers to models designed for real-time, speech-to-speech conversation rather than text-only chat. 'Extended Thinking' denotes a mode where the model performs additional background reasoning before responding, trading some latency for better accuracy on complex tasks. The release follows Google's recent Gemini 3.8 Flash and 3.8 Flash Cyber models, continuing a rapid cadence of Gemini 3-series launches.
+**Background**: The Wayback Machine is the Internet Archive's tool for preserving snapshots of web pages over time, letting anyone view how a site looked in the past even after it changes or goes offline. Website owners can traditionally opt out of being archived using the robots.txt standard, which tells crawlers which parts of a site they may access. Scrapers are automated programs that harvest data at scale, and when they target the Wayback Machine they consume the same bandwidth and server resources needed by ordinary visitors.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Gemini 3 . 8 Live & Gemini 3 . 8 Live Extended Thinking</a></li>
-<li><a href="https://deepmind.google/models/model-cards/gemini-3-8-audio/">Gemini 3.8 Audio (Live, Live Extended Thinking) - Model Card — Google DeepMind</a></li>
-<li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking">Gemini 3 . 8 Live Extended Thinking | Gemini API | Google AI for...</a></li>
+<li><a href="https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/">An Update on Wayback Machine Access | Internet Archive Blogs</a></li>
+<li><a href="https://www.digitalinformationworld.com/2026/09/internet-archives-wayback-machine.html">Internet Archive's Wayback Machine Blocks Some Real Users Amid High ...</a></li>
+<li><a href="https://www.stefanjudis.com/blog/the-internet-archive-opt-out-itch/">The Internet Archive opt out itch | Stefan Judis Web Development</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Hacker News commenters were divided: some praised the model's low latency, pleasant voices, and strong handling of accented speech and niche languages like Afrikaans, while others reported issues with context loss and unrequested product links. Several users also questioned why Google still trails competitors like Fable and Astra despite its data, TPU hardware, and advertising resources.
+**Discussion**: Commenters largely praised the Internet Archive as vital infrastructure and urged donations, while simonw argued the traffic likely comes from scrapers trying to bypass blocks on original sites. Some users shared personal stories of recovering lost content, and others expressed concern about polite scrapers being caught in the crackdown or about the Archive's long-term survival.
 
-**Tags**: `#Gemini`, `#Google`, `#AI`, `#LLM`, `#Model Release`
+**Tags**: `#internet-archive`, `#web-scraping`, `#digital-preservation`, `#open-access`, `#infrastructure`
 
 ---
 
 <a id="item-6"></a>
-## [Developer Builds Linux GPU Driver for M4 Mac Mini in One Month](https://codyho.dev/blog/gpu-driver/) ⭐️ 8.0/10
+## [Google launches Gemini 3.8 Live and Live Extended Thinking voice models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/) ⭐️ 8.0/10
 
-A developer built a working Linux GPU driver for the M4 Mac Mini in about one month, according to a blog post that sparked extensive discussion on Hacker News. The achievement is notable because the M4 is a newer Apple Silicon generation that previously lacked GPU acceleration under Linux. This could significantly accelerate Linux support for newer Apple Silicon hardware, where GPU acceleration has been a major pain point, especially for M3 and later chips. It also fuels debate about whether LLM-assisted reverse engineering can replace years of manual effort and how such contributions should be treated by upstream projects. The author was reportedly banned from Asahi Linux for hiding extensive LLM use in a prior contribution and for concealing that he is a former Apple engineer with direct contacts in Apple Silicon development. Asahi Linux has a strict no-AI policy, which likely prevents this driver from being upstreamed into the Linux kernel.
+Google released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, its most advanced live dialogue models yet, built for natural, fluid real-time voice conversation. The Extended Thinking variant is a high-reasoning audio-to-audio model designed for complex, multi-step problem solving during live voice interactions. The release pushes real-time, low-latency voice AI forward, letting users hold natural spoken conversations with a model that can also reason through harder problems in the background. It matters for anyone building or using voice assistants, and it drew heavy community attention with 464 points and 309 comments on Hacker News. According to Google DeepMind's model card, the Gemini 3.8 Audio models are cost-efficient and fast, optimized for high-volume, latency-sensitive tasks such as real-time interaction. The Extended Thinking variant is recommended specifically when higher background reasoning is needed for complex, multi-step problem solving during voice conversations.
 
-hackernews · ADevWithAnIdea · Sep 15, 19:30 · [Discussion](https://news.ycombinator.com/item?id=49717638)
+hackernews · leumon · Sep 15, 17:38 · [Discussion](https://news.ycombinator.com/item?id=49715947)
 
-**Background**: Apple Silicon Macs use custom ARM-based chips whose GPU architecture is undocumented, so Linux support requires reverse engineering. The Asahi Linux project has led this effort, but its GPU driver work has focused on older M1 and M2 generations and has faced slowdowns. LLMs are increasingly used in reverse engineering to help understand binary code and hardware behavior.
+**Background**: Gemini is Google's flagship family of natively multimodal AI models, meaning they can process text, audio, images and other inputs together. The 3.8 generation follows earlier 3.7 and 3.8 Flash releases, and the "Live" branding refers to models tuned for real-time, conversational use rather than batch text generation. "Extended Thinking" denotes a mode where the model spends extra compute on internal reasoning before answering.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.ycombinator.com/item?id=49717638">Building a Linux GPU Driver for the M4 Mac Mini in... | Hacker News</a></li>
-<li><a href="https://www.phoronix.com/news/Asahi-Lina-Steps-Down-Linux-GPU">Asahi Lina Pausing Work On Apple GPU Linux Driver Development</a></li>
-<li><a href="https://www.linuxencaja.net/en/asahi-lina-pauses-development-of-linux-gpu-driver-for-apple/">Asahi Lina suspends development of Linux GPU driver for Apple</a></li>
+<li><a href="https://deepmind.google/models/model-cards/gemini-3-8-audio/">Gemini 3.8 Audio (Live, Live Extended Thinking) - Model Card — Google DeepMind</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking">Gemini 3.8 Live Extended Thinking | Gemini API | Google AI for Developers</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were impressed by the speed of the achievement and saw it as a strong use case for LLMs in reverse engineering, though some raised ethical concerns about the author's concealed LLM use and former Apple employment. Others noted that Asahi Linux's no-AI policy means this work likely cannot be upstreamed, potentially leading to AI-assisted forks.
+**Discussion**: Sentiment on Hacker News was mixed: one user praised Gemini's Afrikaans conversation and grammar help as a standout use case, and another called the release solid with good accent handling, pleasant voices, low latency, and finally usable on a workspace account. Others were critical, with one user complaining that Gemini sometimes loses context in the very next message and inserts unasked-for product links, while another questioned why Google still trails rivals despite its data, TPUs, and ad money.
 
-**Tags**: `#Linux`, `#GPU driver`, `#Apple Silicon`, `#reverse engineering`, `#LLM`
+**Tags**: `#Gemini`, `#Google`, `#LLM`, `#AI`, `#model release`
 
 ---
 
 <a id="item-7"></a>
-## [Strix finds exposed GitHub PAT granting admin access to Baseten's production GitHub](https://www.strix.ai/blog/baseten-harbor-github-pat-takeover) ⭐️ 8.0/10
+## [Author stays bearish on LLMs despite Navier-Stokes breakthrough](https://dank.systems/posts/2026-09-15-ai-bear.html) ⭐️ 8.0/10
 
-Strix, an AI penetration testing platform, discovered an exposed GitHub Personal Access Token (PAT) and a public container image that together granted admin access to Baseten's production GitHub organization. Baseten confirmed the report, immediately invalidated the leaked key, removed the public Harbor container image, and stated that logs show no exploitation or customer data exposure. This incident highlights how a single exposed credential can cascade into full administrative control over a company's production code repositories, and it fuels the ongoing debate about whether AI agents meaningfully improve vulnerability discovery or simply automate what a motivated human could already find. It also raises questions about the ethics and rules of engagement when AI security tools are pointed at prospective vendors without prior negotiation. The disclosure timeline shows Strix reported the live basetenbot token, the public Harbor project, and repository permissions on July 13 at 11:10 PM; Baseten made the Harbor project private the next morning but the token still worked until Baseten Security confirmed the issue as critical and rotated the token on July 14 at 4:34 PM. Baseten also asked Strix to securely delete the images they had pulled, and community members questioned whether running Strix against a prospective vendor's domain was negotiated in advance.
+A blog post titled "Why I'm still bearish on LLMs after Navier-Stokes" argues that even impressive technical feats like solving Navier-Stokes problems do not make LLMs broadly valuable, because they lack the tacit knowledge and strategic thinking required for most real-world business applications. The post sparked a 352-point Hacker News discussion with 447 comments. The piece offers a grounded counterpoint to the narrative that frontier AI labs will soon automate most knowledge work, which matters for investors, enterprises deciding on AI adoption, and practitioners assessing where LLMs can actually be deployed. It also highlights the gap between benchmark-style technical wins and messy, ill-defined business problems. The author contends that only a few classes of firms can accept fully autonomous LLM use, such as those that can tolerate cheap failure (e.g., intern-level or rapid-prototyping work) or those with narrowly defined tasks and clear guardrails. Commenters cite an April 2026 arXiv paper (2509.24239v4) in which frontier models playing chess failed to identify legal moves better than 80% of the time and kept requesting illegal moves even when told which moves were legal.
 
-hackernews · bearsyankees · Sep 15, 18:11 · [Discussion](https://news.ycombinator.com/item?id=49716476)
+hackernews · jaykru · Sep 15, 17:37 · [Discussion](https://news.ycombinator.com/item?id=49715927)
 
-**Background**: Baseten is an AI infrastructure company that provides an inference platform for deploying and scaling open-source and custom AI models in production. A GitHub Personal Access Token (PAT) is a credential that allows programmatic access to GitHub repositories and organizations; if exposed publicly, it can let attackers read, modify, or administer code and CI/CD pipelines. Strix is an open-source AI penetration testing tool that uses autonomous agents to dynamically run code, find vulnerabilities, and validate them with proofs-of-concept, similar in spirit to manual red-teaming but automated.
+**Background**: The Navier-Stokes equations describe the motion of viscous fluids and are central to fields like aerodynamics and weather modeling; the related existence and smoothness problem is one of the seven Millennium Prize Problems. In September 2026, OpenAI announced a claimed counterexample to that problem, which triggered a priority dispute and has not yet been independently verified. The debate in the post centers on "tacit knowledge" — the unspoken, experience-based know-how that humans use to handle ill-defined problems, which AI systems are said to lack.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.baseten.co/">Inference Platform: Deploy AI models in production | Baseten</a></li>
-<li><a href="https://github.com/usestrix/strix">GitHub - usestrix/strix: Open-source AI penetration testing ...</a></li>
-<li><a href="https://www.csoonline.com/article/4103717/github-action-secrets-arent-secret-anymore-exposed-pats-now-a-direct-path-into-cloud-environments-2.html">GitHub Action Secrets aren’t secret anymore: exposed PATs now a direct path into cloud environments | CSO Online</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Navier-Stokes_equations">Navier-Stokes equations</a></li>
+<li><a href="https://medium.com/@bruno_7636/the-knowledge-ai-cant-have-why-friction-still-matters-d2a5cebdad06">The Knowledge AI Can’t Have: Why Friction Still Matters | Medium</a></li>
+<li><a href="https://aldeiadaponte.com/autonomous-llm-agents-real-world-capabilities-and-current-limits">Autonomous LLM Agents : Real-World Capabilities and Current Limits</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Baseten's Philip Kiely confirmed the coordinated remediation and thanked Strix for responsible disclosure, noting no exploitation or data exposure. Commenters like ivraatiems argued the value of AI agents is speed rather than finding things humans couldn't, while SaucyWrong questioned whether Strix had permission to test a prospective vendor and raised rules-of-engagement concerns. Overall sentiment was positive about Baseten's response but skeptical about the novelty and ethics of AI-driven security research.
+**Discussion**: Commenters largely praised the post as one of the most grounded takes on LLM realizable value, with several arguing that AI lacks tacit knowledge and strategic thinking and citing examples like customer-service agents that failed once deployed. Others pushed back on the article's premise about frontier lab pricing, and one commenter criticized the post's lack of sentence capitalization as hard to read.
 
-**Tags**: `#security`, `#vulnerability-disclosure`, `#cloud-security`, `#ai-agents`, `#responsible-disclosure`
+**Tags**: `#LLM`, `#AI criticism`, `#tacit knowledge`, `#autonomous agents`, `#Hacker News`
 
 ---
 
 <a id="item-8"></a>
-## [Vera Rubin NVL72 Delivers 67x Better Agentic Inference Performance per Dollar](https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference) ⭐️ 8.0/10
+## [FPGA Project Recreates 3dfx Voodoo Graphics and a Late-1990s Gaming PC](https://nand2mario.github.io/posts/2026/zsst-voodoo/) ⭐️ 8.0/10
 
-SemiAnalysis reports that NVIDIA's Vera Rubin NVL72 rack-scale platform achieves 67x better performance per dollar for agentic inference workloads, based on its new AgentX benchmark built from recorded real-world agentic coding sessions. NVIDIA separately highlights SemiAnalysis AgentX data showing the system delivers up to 30x higher throughput per megawatt than GB300 NVL72 on the same agentic workloads. The claim reframes AI infrastructure economics around profit per gigawatt rather than raw FLOPS, which directly affects how data center operators and hyperscalers plan power-constrained buildouts. If the numbers hold, agentic inference could become dramatically cheaper per unit of useful work, shifting purchasing decisions toward NVIDIA's next-generation rack platform. Vera Rubin NVL72 unites 36 Vera CPUs and 72 Rubin GPUs in a third-generation MGX rack design, delivering 3.6 exaFLOPS of AI performance and 75TB of memory with cable-free modularity for rapid deployment. The AgentX workload preserves real context growth, tool calls, and sub-agent spawning, making it more representative than earlier fixed-sequence benchmarks such as 8k1k or 1k1k.
+A developer has published a detailed project recreating 3dfx's Voodoo Graphics card and a complete late-1990s gaming PC on an FPGA, as documented on the nand2mario blog. The project implements the original GPU logic in programmable hardware rather than emulating it in software, sparking discussion about hardware replication and low-level GPU internals. This represents a significant achievement in retro computing and hardware emulation, showing that even complex 3D accelerators from the 1990s can be faithfully re-implemented in FPGA fabric. It could inspire more accurate preservation of vintage PC gaming hardware and deepen public understanding of how early GPUs worked internally. The project targets the original 3dfx Voodoo Graphics chipset, the pioneering 3D accelerator released by 3dfx in the mid-1990s, and pairs it with the rest of a period-appropriate gaming PC. Because FPGA implementations map the original device logic directly into hardware, they can achieve timing accuracy that software emulators often struggle to match.
 
-rss · Semianalysis · Sep 14, 22:08
+hackernews · zdw · Sep 15, 22:50 · [Discussion](https://news.ycombinator.com/item?id=49719938)
 
-**Background**: Agentic inference refers to the multi-step work an AI agent performs while reading files, calling tools, revisiting context, and producing changes, rather than a single prompt-response exchange. SemiAnalysis's InferenceX is an open-source, Apache-2.0 automated benchmark suite, and AgentX is its newer scenario that replaces single-turn traffic with agentic coding traffic. NVIDIA's NVL72 rack-scale systems integrate CPUs and GPUs into one coherent unit to serve very large models efficiently.
+**Background**: 3dfx Interactive was an American hardware company founded in 1994 that pioneered consumer 3D graphics with its Voodoo line of GPUs, powering many late-1990s PC games before the company declined in the early 2000s. FPGA stands for field-programmable gate array, a chip whose logic can be reconfigured after manufacturing, allowing enthusiasts to recreate classic computers and consoles at the hardware level rather than through software emulation. Projects like MiSTer have popularized this approach for retro gaming, and the Voodoo card is a particularly ambitious target because of its complex 3D pipeline.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents/">Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents</a></li>
-<li><a href="https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat">AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic ...</a></li>
-<li><a href="https://servers.asus.com/glossary/What-is-NVIDIA-Vera-Rubin-NVL72">What is NVIDIA Vera Rubin NVL72? | ASUS Servers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/3dfx">3 dfx - Wikipedia</a></li>
+<li><a href="https://emulation.gametechwiki.com/index.php/FPGA">FPGA - Emulation General Wiki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_emulation">Hardware emulation - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#NVIDIA`, `#AI Hardware`, `#Inference`, `#Performance`, `#Data Center Economics`
+**Discussion**: Commenters praised the project and pointed to MiSTer as a related FPGA-based hardware recreation effort, while one user shared a nostalgic story about saving up for a Voodoo 3000 PCI and the buyer's remorse that followed. Another noted the recent surge in articles about low-level GPU internals, arguing that once you view a GPU as a processor specialized for graphics with its own instruction set and RAM, implementing one becomes conceptually straightforward.
+
+**Tags**: `#FPGA`, `#retro-computing`, `#hardware-emulation`, `#GPU`, `#Voodoo-Graphics`
 
 ---
 
 <a id="item-9"></a>
-## [SemiAnalysis: On-Device vs Datacenter Inference for Robot Brains](https://newsletter.semianalysis.com/p/a-brain-too-big-to-carry-on-device) ⭐️ 8.0/10
+## [SemiAnalysis: Vera Rubin NVL72 Delivers 67x Better Agentic Inference Performance per Dollar](https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference) ⭐️ 8.0/10
 
-SemiAnalysis published an in-depth analysis titled "A Brain Too Big to Carry — On-Device vs Datacenter Inference," examining whether robot foundation models should run locally on edge silicon or be offloaded to datacenter GPUs over wireless links. The piece compares silicon and DRAM efficiency, Jetson Thor versus B300 total cost of ownership, real-world deployments, and the network constraints that shape the decision. As robots move from labs to factory floors and homes, this architecture choice determines hardware cost, latency, and reliability for the entire generalist robotics industry. The analysis suggests the answer depends on fleet size, network conditions, and how much intelligence a task demands, which could reshape how robotics companies design their compute stacks. For a fleet of 96 robots, aggregate TCO is reported at $14.97/hr for on-device Jetson Thor, $15.61/hr for RTX 6000 Pro offload, and $18.63/hr for B300 datacenter inference. Boston Dynamics reportedly offloads its System 2 planner to Google TPUs because models at hundreds of billions to a trillion parameters are too large to run on the robot itself.
+SemiAnalysis published an analysis of NVIDIA's Vera Rubin NVL72 rack-scale platform, claiming it achieves 67x better performance per dollar for agentic inference workloads. The report also highlights that the system delivers 2x more annual profit per gigawatt and emphasizes NVIDIA's 'extreme co-design' strategy, while suggesting Jensen Huang is again 'sandbagging' performance figures. This analysis matters because it quantifies how NVIDIA's rack-scale, co-designed systems could dramatically lower the cost of running agentic AI workloads, which are becoming a dominant production use case. The profit-per-gigawatt framing also signals that AI infrastructure economics are shifting toward data-center-level efficiency rather than raw chip specs. The Vera Rubin NVL72 unifies 72 next-generation Rubin GPUs and 36 Vera CPUs in a single liquid-cooled rack interconnected via NVLink 6, delivering 3.6 exaFLOPS of AI performance and 75TB of memory. The 67x performance-per-dollar claim is specific to agentic inference, which involves stateful, multi-turn workflows rather than single model completions.
 
-rss · Semianalysis · Sep 14, 16:37
+rss · Semianalysis · Sep 14, 22:08
 
-**Background**: Robot foundation models are increasingly split into fast reactive "System 1" policies and slower deliberative "System 2" planners, mirroring dual-process theories of cognition. Unlike cloud language models where compute scales flexibly, robotics inverts the design paradigm: the robot must act in the physical world with hard latency and safety constraints, so engineers must decide whether to carry heavy edge silicon or depend on a reliable low-latency network link. On-device inference avoids connectivity risk but limits model size, while datacenter offload enables larger models at the cost of bandwidth, latency, and network reliability.
+**Background**: Agentic inference refers to the full execution path an AI agent follows when it reasons, chooses actions, uses tools, revisits prior context, and updates its next step, making it a stateful workflow that differs from simple single-turn inference. NVIDIA's 'extreme co-design' approach optimizes hardware, software, and models together to maximize AI factory throughput and minimize token cost, moving beyond peak chip specifications. The Vera Rubin NVL72 is a rack-scale system built on third-generation MGX design, enabling cable-free modularity and rapid deployment for mission-critical AI workloads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://newsletter.semianalysis.com/p/a-brain-too-big-to-carry-on-device">Where Does a Robot Think — On-Device vs Datacenter Inference</a></li>
-<li><a href="https://aiweekly.co/alerts/boston-dynamics-runs-robot-brains-on-tpus-rivals-stay-on-jetson">Boston Dynamics runs robot brains on TPUs; rivals stay on Jetson</a></li>
-<li><a href="https://news.lavx.hu/article/where-does-a-robot-think-on-device-vs-datacenter-inference">Where Does a Robot Think — On-Device vs Datacenter Inference</a></li>
+<li><a href="https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/">NVIDIA Vera Rubin NVL72 | Co-Designed Infrastructure for Agentic AI</a></li>
+<li><a href="https://nhimg.org/glossary/agentic-inference/">What Is Agentic Inference? Definition & Examples</a></li>
+<li><a href="https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design/">Building for the Rising Complexity of Agentic Systems with Extreme ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI inference`, `#edge computing`, `#robotics`, `#hardware`, `#TCO`
+**Tags**: `#NVIDIA`, `#AI Inference`, `#Hardware Acceleration`, `#Performance Optimization`, `#Agentic AI`
 
 ---
 
 <a id="item-10"></a>
-## [Prior Labs releases TabPFN-3.5, new SOTA tabular foundation model](https://www.reddit.com/r/MachineLearning/comments/1wh4xhy/tabpfn35_is_released_as_the_next_sota_tabular/) ⭐️ 8.0/10
+## [SemiAnalysis: On-Device vs Datacenter AI Inference Economics](https://newsletter.semianalysis.com/p/a-brain-too-big-to-carry-on-device) ⭐️ 8.0/10
 
-Prior Labs released TabPFN-3.5, a new tabular foundation model that tops both the TabArena and BeyondArena benchmarks and is claimed to be SOTA for datasets with up to 1M rows and 20k features. It ships in three variants: TabPFN-3.5-Fast (alpha, 6x faster than the base model), TabPFN-3.5-Thinking (API-only, trades compute for accuracy), and TabPFN-3.5-Plus. Tabular data remains the dominant format in enterprise and scientific settings, so a stronger foundation model here can directly replace gradient-boosted trees in many real-world pipelines. The +250 Elo gain over the strongest previous baseline on BeyondArena suggests foundation models are finally becoming competitive on the harder, non-IID tabular tasks where trees have historically dominated. On BeyondArena, TabPFN-3.5 leads on text-rich, high-cardinality, and high-dimensional data, beating the previous overall leader by +150 Elo, while TabPFN-3.5-Thinking adds +20 Elo over the base model on BeyondArena and +44 Elo on TabArena. The Fast variant is still in alpha, and the Thinking variant is only accessible through the API rather than as downloadable weights.
+SemiAnalysis published an in-depth analysis comparing on-device and datacenter AI inference, focusing on robot models, silicon efficiency, the total cost of ownership (TCO) of NVIDIA's Jetson Thor versus the B300, deployment strategies, and network limitations. This analysis is highly relevant for AI/ML systems and hardware, as it could influence how companies decide where to run inference workloads, balancing latency, cost, and scalability between edge devices and datacenters. The article compares NVIDIA's Jetson Thor, a robotics computer with up to 2070 FP4 TFLOPS and 128 GB memory, against the B300 datacenter GPU with 288 GB HBM3e and 8 TB/s bandwidth, highlighting trade-offs in TCO and network constraints for real-time applications.
 
-reddit · r/MachineLearning · /u/tuanacelik · Sep 15, 16:18
+rss · Semianalysis · Sep 14, 16:37
 
-**Background**: TabPFN is a transformer-based foundation model from Prior Labs that solves tabular prediction problems via in-context learning in a single forward pass, rather than requiring per-dataset training like XGBoost or CatBoost. TabArena is a living benchmark for IID tabular machine learning that continuously adds curated datasets and well-implemented models, while BeyondArena extends this to non-IID settings including temporal and grouped tasks across a wide range of dataset sizes and dimensionalities. Elo ratings are used in these leaderboards to express relative model strength in a way similar to chess rankings.
+**Background**: On-device inference runs AI models locally on hardware like phones, robots, or cars, offering low latency and privacy, while datacenter inference uses powerful cloud GPUs for heavy workloads. NVIDIA's Jetson Thor is designed for physical AI and robotics, whereas the B300 (Blackwell Ultra) targets high-memory training and inference in datacenters. The choice between them involves trade-offs in performance, cost, and network dependency.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://developer.nvidia.com/embedded/jetson-modules">Jetson Modules, Support, Ecosystem, and Lineup | NVIDIA Developer</a></li>
+<li><a href="https://www.together.ai/gpu/nvidia-hgx-b300">NVIDIA HGX B 300 Cluster Pricing & Specs | Rent HGX B 300 GPUs</a></li>
+<li><a href="https://www.etfpedia.wiki/compare/ai-on-device-vs-ai-inference-infrastructure/">AI On - Devices vs AI Inference Infrastructure | ETFpedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI inference`, `#edge computing`, `#hardware`, `#robotics`, `#TCO`
+
+---
+
+<a id="item-11"></a>
+## [Prior Labs releases TabPFN-3.5, new SOTA tabular foundation model](https://www.reddit.com/r/MachineLearning/comments/1wh4xhy/tabpfn35_is_released_as_the_next_sota_tabular/) ⭐️ 8.0/10
+
+Prior Labs released TabPFN-3.5, a new tabular foundation model that tops both the TabArena and BeyondArena benchmarks and is state-of-the-art for datasets with up to 1M rows and 20k features. The release includes three variants: TabPFN-3.5-Fast (in alpha, 6x faster than the base model), TabPFN-3.5-Thinking (trades compute for accuracy via API), and TabPFN-3.5-Plus. Tabular data remains the dominant format in real-world enterprise and scientific applications, so a new state-of-the-art foundation model directly affects ML practitioners choosing between gradient-boosted trees and deep models. The substantial Elo gains, especially on text-rich, high-cardinality, and high-dimensional data, suggest foundation models are closing gaps that previously favored tree-based methods. On BeyondArena, TabPFN-3.5 leads by +250 Elo over the strongest previous baseline and +150 Elo ahead of the previous overall leader, while TabPFN-3.5-Thinking adds +20 Elo over the base model on BeyondArena and +44 Elo on TabArena. The Fast variant is still in alpha, and the Thinking variant is only accessible through the API.
+
+reddit · r/MachineLearning · /u/tuanacelik · Sep 15, 16:18
+
+**Background**: TabPFN is a transformer-based foundation model from Prior Labs that uses in-context learning to solve tabular prediction problems in a single forward pass, rather than requiring per-dataset training. TabArena is a living benchmark that continuously integrates new datasets and models for tabular ML, while BeyondArena is a newer unified benchmark spanning IID, temporal, and grouped tasks across 142 curated datasets. Previous TabPFN versions (2.5, 2.6, 3) were released under non-commercial licenses, and TabPFN-3 is used by default in the public repository.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://priorlabs.ai/tabpfn-2">TabPFN | Prior Labs</a></li>
 <li><a href="https://github.com/PriorLabs/TabPFN">GitHub - PriorLabs/ TabPFN : TabPFN : Foundation Model for Tabular ...</a></li>
 <li><a href="https://arxiv.org/abs/2506.16791">TabArena : A Living Benchmark for Machine Learning on Tabular Data</a></li>
-<li><a href="https://aiweekly.co/alerts/beyondarena-finds-trees-still-beat-tabular-fms-off-iid-data">BeyondArena finds trees still beat tabular FMs off-IID data | AI Weekly</a></li>
 
 </ul>
 </details>
@@ -257,24 +283,68 @@ reddit · r/MachineLearning · /u/tuanacelik · Sep 15, 16:18
 
 ---
 
-<a id="item-11"></a>
-## [Low-Quality Chinese Casino Sites Hide APT Command-and-Control Infrastructure](https://www.theregister.com/security/2026/09/15/low-quality-casino-sites-conceal-highly-dangerous-threat-actors/5296652) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [Intel CEO: CPU Supply Meets Only 50% of Demand, 14A Production in Q1 2027, New Architecture Could Cut Inference Power to 1/15 of GPUs](https://wallstreetcn.com/articles/3781851) ⭐️ 8.0/10
 
-Security researchers have identified roughly 1.7 million Chinese-language casino and adult websites, some of which are being used as covert command-and-control (C2) infrastructure by China-linked APT groups. Since 2023, these actors have used a JScript-based framework called "PeckBirdy" to hide malware C2 domains inside low-quality gambling sites and lure victims into downloading malware through fake software updates. This technique lets attackers blend malicious traffic into ordinary-looking gambling site visits, making detection and attribution significantly harder for defenders. It also risks causing security teams to misclassify C2 traffic as employee policy violations rather than active intrusions, potentially delaying incident response. PeckBirdy is a script-based framework implemented in JScript that can run in browsers, MSHTA, WScript, Classic ASP, Node JS, and .NET ScriptControl environments, giving it broad flexibility for LOLBins-style exploitation. Because the hosting sites closely resemble legitimate gambling sites, defenders may overlook the associated traffic as benign or non-compliant user behavior.
+Intel CEO Lip-Bu Tan said the company can currently meet only about 50% of its leading-edge customers' CPU demand, driven by the AI agent boom. He also confirmed that the 18A process is in full mass production, the 14A process will start production in Q1 2027, and Intel is developing dataflow, wafer-scale, and neuromorphic architectures that could achieve equivalent inference performance at 1/10 to 1/15 of GPU power consumption. The CPU supply shortfall signals that AI-driven demand is outpacing Intel's manufacturing capacity, a major concern for cloud providers and enterprises building agentic AI systems. The 14A timeline and the claimed 10-15x inference power advantage position Intel against GPU-centric AI hardware leaders like Nvidia, potentially reshaping the economics of AI inference if the architecture delivers. The 14A node is reportedly tracking ahead of 18A in defect density reduction, with Intel targeting a D0 of 0.1 to 0.2 by Q1 2027. The claimed 1/10 to 1/15 power efficiency applies only to specific inference scenarios, and Intel has acknowledged it might abandon advanced manufacturing altogether if external customers do not adopt 14A.
 
-telegram · zaihuapd · Sep 16, 07:31
+telegram · zaihuapd · Sep 16, 04:15
 
-**Background**: Command-and-control (C2) infrastructure is the set of tools and channels attackers use to maintain communication with compromised devices after initial exploitation. Advanced persistent threats (APTs) are sophisticated, long-term cyberattacks typically conducted by highly skilled, often nation-state-backed actors. By hosting C2 domains on seemingly innocuous casino sites, attackers exploit the fact that such traffic is common and rarely scrutinized, complicating both detection and attribution.
+**Background**: Intel's 18A and 14A are advanced process nodes measured in angstroms, with smaller numbers generally meaning denser, more efficient chips; 18A is Intel's current leading node, and 14A is its next-generation successor. Neuromorphic computing mimics the brain's structure using artificial neurons and event-driven processing to improve energy efficiency, while dataflow architectures optimize how data moves through a chip rather than relying purely on raw compute, which is increasingly important for AI inference workloads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.trendaisecurity.com/en-gb/resources-insights/trendai-security-blog/peckbirdy-script-framework">PeckBirdy : A Versatile Script Framework for LOLBins Exploitation...</a></li>
-<li><a href="https://www.scworld.com/brief/peckbirdy-framework-used-by-china-linked-apts-targets-gambling-and-government-entities">PeckBirdy framework used by China-linked APTs targets gambling...</a></li>
-<li><a href="https://www.varonis.com/blog/what-is-c2">What is C2? Command and Control Infrastructure Explained</a></li>
+<li><a href="https://wccftech.com/intels-defect-density-minimization-for-its-14a-node-is-currently-tracking-3-4-quarters-ahead-of-the-18a-node-trajectory-indicating-an-earlier-launch/">Intel 's Defect Density Minimization For Its 14 A Node Is Currently...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neuromorphic_computing">Neuromorphic computing</a></li>
+<li><a href="https://datacentremagazine.com/news/sambanovas-dataflow-architecture-the-natural-flow-of-ai">SambaNova's Dataflow Architecture : The natural Flow of AI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#cybersecurity`, `#APT`, `#malware`, `#threat-intelligence`, `#C2-infrastructure`
+**Tags**: `#Intel`, `#semiconductor`, `#AI hardware`, `#inference`, `#process node`
+
+---
+
+<a id="item-13"></a>
+## [Cloudflare Adds Setting to Block AI Training While Keeping Search Indexing](https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/) ⭐️ 8.0/10
+
+On September 15, Cloudflare announced a new "Disallow AI Training" setting that lets website owners stay indexed by search engines while refusing to let the same crawlers train AI models on their content. Apple, Google, and Microsoft have either already honored or committed to honoring this setting within a specified timeframe. This addresses a major industry pain point by giving publishers a way to protect their content from AI training without sacrificing search visibility, which is critical for traffic and revenue. Backing from Apple, Google, and Microsoft signals a significant shift in web content control and AI ethics, potentially influencing how other platforms handle crawler permissions. The setting is configured per domain; if a site chooses "block," all crawlers—including mixed-use ones—are blocked, which also affects search indexing. Cloudflare also plans to let sites control the proportion of their content cited in AI summaries starting early next year.
+
+telegram · zaihuapd · Sep 16, 05:46
+
+**Background**: Web crawlers are automated bots that scan websites to index content for search engines or to gather data for training AI models. Historically, sites used robots.txt to manage crawler access, but AI companies often use separate crawlers for training and search, making it hard to block one without the other. Cloudflare's new setting aims to simplify this by distinguishing between training and search crawlers at the network level.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/">Have it both ways: stay discoverable in search while... | Cloudflare Blog</a></li>
+<li><a href="https://www.playwire.com/blog/ai-training-vs-ai-search-crawlers-does-blocking-ai-training-crawlers-hurt-your-ai-referral-traffic">AI Training vs . AI Search Crawlers : Does Blocking AI Training ...</a></li>
+<li><a href="https://www.innflows.com/blog/technology/training-bots-vs-search-crawlers-robots-txt">Training Bots vs Search Crawlers : The robots.txt Split</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Cloudflare`, `#AI training`, `#web crawling`, `#search indexing`, `#content control`
+
+---
+
+<a id="item-14"></a>
+## [Sina Cloud SAE shuts down permanently, early Bilibili video files lost](https://tracker.archiveteam.org/sinavideo/#show-all) ⭐️ 8.0/10
+
+Sina Cloud SAE, China's first PaaS platform launched in 2009, will be permanently shut down at midnight on September 16, 2026, and all user data will be completely deleted. Early Bilibili video source files stored on the platform are being lost, with about 420 TB of historical data still in Sina Cloud S3 buckets, prompting Archive Team's distributed archiving project to rescue roughly 680 TB so far, reaching 96.26% completion. This marks the disappearance of China's first PaaS cloud platform and a significant chunk of early Chinese internet video history, highlighting how fragile commercial cloud storage is for long-term digital preservation. It also underscores the growing role of volunteer archiving groups in saving at-risk online content before it is erased forever. The shutdown date is set for 24:00 on September 16, 2026, after which all user data will be irreversibly deleted. Archive Team's rescue effort has saved about 680 TB and is 96.26% complete, but roughly 420 TB of Bilibili-related data still remains in Sina Cloud S3 buckets, so the race against the deadline continues.
+
+telegram · zaihuapd · Sep 16, 15:00
+
+**Background**: Sina App Engine (SAE) was launched in 2009 as China's first PaaS (Platform as a Service) offering, letting developers deploy and run web applications without managing servers, and it became popular for its low cost and zero-maintenance model. Bilibili, now a major Chinese video platform, relied on Sina Cloud to store many of its early video source files. Archive Team is a volunteer digital-preservation collective co-founded by Jason Scott in 2009 that copies content from at-risk online services, often making it available through the Wayback Machine.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Archive_Team">Archive Team</a></li>
+<li><a href="https://www.sinacloud.com/sae.html">云 应用 SAE - 云 服务 - 云 托管</a></li>
+<li><a href="https://cloud.it168.com/a2012/0719/1374/000001374232_all.shtml">十分钟带你快速了解 新 浪 SAE 云 计算平台- 云 计算专区</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#cloud-computing`, `#digital-preservation`, `#PaaS`, `#Bilibili`, `#Archive Team`
 
 ---
