@@ -5,362 +5,383 @@ date: 2026-09-22
 lang: en
 ---
 
-> From 83 items, 15 important content pieces were selected
+> From 102 items, 16 important content pieces were selected
 
 ---
 
-1. [OpenAI forms math advisory group as its AI solves over 100 open problems](#item-1) ⭐️ 9.0/10
-2. [Apple Unveils M6, Its First 2nm Chip, and Quad-Die M5 Ultra](#item-2) ⭐️ 9.0/10
-3. [vLLM v0.30.0 adds Fast Start GPU weight cache and new models](#item-3) ⭐️ 8.0/10
+1. [Alibaba Announces Qwen 4 at Apsara Conference](#item-1) ⭐️ 9.0/10
+2. [vLLM v0.30.0 ships Fast Start weight cache and new model support](#item-2) ⭐️ 8.0/10
+3. [GPT-6 Astra Helps Break Enigma Message Unsolved Since 2005](#item-3) ⭐️ 8.0/10
 4. [Can gzip function as a language model?](#item-4) ⭐️ 8.0/10
-5. [Xiaomi Releases MiMo v2.6 Open-Weight LLM Family](#item-5) ⭐️ 8.0/10
-6. [Spymarks: Covert Tracking Marks Pose Greater Privacy Threat Than Watermarks](#item-6) ⭐️ 8.0/10
-7. [Blog Post Argues Against Reading AI-Generated Content](#item-7) ⭐️ 8.0/10
-8. [NASA's Mars Sample Return mission is dead](#item-8) ⭐️ 8.0/10
-9. [Cloudflare Python Workers reach general availability](#item-9) ⭐️ 8.0/10
-10. [xAI Releases Grok 4.7 With 40% More Weights at Same Price](#item-10) ⭐️ 8.0/10
-11. [TypeSafe AI launches Jev, a 'System One' decision model returning typed probabilistic outputs](#item-11) ⭐️ 8.0/10
-12. [Anonymous Engineer Describes Company Where Claude Code Writes Everything](#item-12) ⭐️ 8.0/10
+5. [Xiaomi Releases MiMo v2.6 Open-Weight MoE Model Family](#item-5) ⭐️ 8.0/10
+6. [Bryan Cantrill Analyzes What Sun Microsystems Got Wrong](#item-6) ⭐️ 8.0/10
+7. [Blogger Argues Against Using LLMs to Generate Written Content](#item-7) ⭐️ 8.0/10
+8. [Essay Argues AI Lacks Wisdom, Over-Reliance Risks Human Judgment](#item-8) ⭐️ 8.0/10
+9. [TypeSafe AI Unveils Jev, a 'System One' Decision Model](#item-9) ⭐️ 8.0/10
+10. [OpenAI forms math advisory group as AI solves 100+ open problems](#item-10) ⭐️ 8.0/10
+11. [Alibaba Plans 5-10 Trillion Parameter AI Model, Unveils Zhenwu V900 Chip](#item-11) ⭐️ 8.0/10
+12. [phantom-kv uncensors LLMs via a swappable 18MB KV-cache bank](#item-12) ⭐️ 8.0/10
 13. [25 Fields Medalists Warn AI May Be Misaligned with Math Research Goals](#item-13) ⭐️ 8.0/10
-14. [Alibaba Unveils Zhenwu V900, Claiming China's Most Powerful AI Chip](#item-14) ⭐️ 8.0/10
-15. [DeepSeek and Tsinghua Release DSec Sandbox Platform Technical Report](#item-15) ⭐️ 8.0/10
+14. [Alibaba Unveils Zhenwu V900, Claiming 3x Compute Over M890](#item-14) ⭐️ 8.0/10
+15. [DeepSeek and Tsinghua Release DSec Sandbox Platform Serving 3 Million Sandboxes Daily](#item-15) ⭐️ 8.0/10
+16. [China Probes DeepSeek and Moonshot Over Data Leaks](#item-16) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI forms math advisory group as its AI solves over 100 open problems](https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/) ⭐️ 9.0/10
+## [Alibaba Announces Qwen 4 at Apsara Conference](https://www.reddit.com/r/LocalLLaMA/comments/1wmxfjs/qwen_4_announced_at_apsara_conference/) ⭐️ 9.0/10
 
-On Monday, OpenAI announced a new independent Advisory Group on Mathematics and Artificial Intelligence, hosted at the Institute for Advanced Study in Princeton, New Jersey, while reporting that its AI system has resolved more than 100 open mathematical problems. The group, however, will not be given leeway to slow down or redirect OpenAI's ongoing mathematical research. This marks a significant milestone in AI-for-science, as an AI system autonomously resolving over 100 open problems suggests machines can now contribute to advancing human mathematical knowledge. The advisory group also signals a new governance model for how AI companies engage with the mathematical community, even though its influence is explicitly limited. The advisory group is independent and hosted at the Institute for Advanced Study, but it cannot slow or redirect OpenAI's mathematical research, raising questions about how much real oversight it can exercise. The announcement follows OpenAI's earlier reports of AI advances on long-standing open problems in geometry, cryptography, and complexity, including the first autonomous disproof of a central conjecture in discrete geometry.
+Alibaba officially announced Qwen 4 at the Apsara Conference, introducing a new generation of its open-source large language model series. The announcement was shared by a community member on r/LocalLLaMA, drawing significant attention from local AI enthusiasts. Qwen is one of the most widely used open-weight LLM families, so a new generation could reshape the open-source model landscape and give developers a stronger alternative to proprietary models. Local AI users and enterprises building on open weights will be directly affected. The Reddit post itself is brief and mainly links to an image from the conference, so specific technical details such as parameter counts, benchmarks, and licensing terms are not yet available. The announcement aligns with Alibaba's pattern of releasing Qwen models at its annual Apsara Conference in Hangzhou.
 
-rss · TechCrunch AI · Sep 21, 20:15
+reddit · r/LocalLLaMA · /u/Salah_H_Hasan · Sep 22, 02:45
 
-**Background**: Automated theorem proving is a subfield of automated reasoning in which computer programs generate formal proofs of mathematical statements, and it has been a major motivating factor for computer science since its early days. In recent years, AI systems have increasingly been applied to open problems in mathematics, with benchmarks like FrontierMath designed to test whether AI can advance human mathematical knowledge rather than just solve textbook exercises.
+**Background**: Qwen, also known as Tongyi Qianwen, is a family of predominantly open-weight large and small language models developed by Alibaba Cloud. The series has become popular in the open-source community for its strong performance and permissive licensing, with versions like Qwen-72B outperforming LLaMA2-70B on many tasks. The Apsara Conference is Alibaba Cloud's premier annual technology summit, held in Hangzhou, where the company showcases its latest AI and cloud innovations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/">OpenAI forms math advisory group as its AI resolves more than 100 open problems</a></li>
-<li><a href="https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/">Announcing the Advisory Group on Mathematics and Artificial Intelligence - Terry Tao</a></li>
-<li><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Qwen">Qwen - Wikipedia</a></li>
+<li><a href="https://www.alibabacloud.com/en/apsara-conference/2026-about?_p_lc=1">2026 About Apsara Conference – Alibaba Cloud</a></li>
+<li><a href="https://github.com/QwenLM/qwen">GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. · GitHub</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community discussion is limited, but a Reddit thread on r/mathematics highlights the advisory group's stated purpose of guiding the review and communication of AI-generated mathematical results, while some commenters question how much independence the group truly has given its inability to slow or redirect OpenAI's research.
-
-**Tags**: `#OpenAI`, `#AI for Mathematics`, `#Research Breakthrough`, `#AI Governance`, `#Automated Theorem Proving`
+**Tags**: `#Qwen`, `#LLM`, `#Alibaba`, `#open-source`, `#AI announcement`
 
 ---
 
 <a id="item-2"></a>
-## [Apple Unveils M6, Its First 2nm Chip, and Quad-Die M5 Ultra](https://t.me/zaihuapd/43965) ⭐️ 9.0/10
+## [vLLM v0.30.0 ships Fast Start weight cache and new model support](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
 
-Apple announced the M6, its first 2-nanometer chip, debuting in a new Mac mini with a 12-core CPU, 12-core GPU, dual 16-core neural engines, and up to 170GB/s memory bandwidth. Apple also introduced the M5 Ultra in a new Mac Studio, its first quad-die M-series chip, offering up to 36 CPU cores, 80 GPU cores, 512GB of memory, and 1.2TB/s memory bandwidth. The M6 marks Apple's transition to the 2nm process node, which should deliver meaningful gains in performance and power efficiency across its Mac lineup. The M5 Ultra's quad-die design pushes Apple Silicon into workstation-class territory, strengthening Apple's position in high-end computing and on-device AI workloads. The M5 Ultra's 1.2TB/s memory bandwidth is 50% higher than the M3 Ultra, making it Apple's most powerful chip to date. The quad-die architecture is achieved by bridging two dual-die M5 Max chips using Apple's upgraded UltraFusion interconnect technology.
+vLLM released v0.30.0, a major update with 762 commits from 315 contributors (104 of them new), adding support for models such as DeepSeek-V4.1-Flash, DeepSeek-V4-Flash-Vision-Exp, GLM-5.3-Flash, K2-Horizon, Cohere Compass, Bailing V3 VL, and Nanbeige4.2. The release also introduces a persistent per-GPU weight-cache daemon called Fast Start, Gumbel-max watermarking, the HiSparse host-resident KV tier, and a large set of performance and quantization improvements. vLLM is one of the most widely used open-source LLM inference and serving engines, so its releases directly shape how production AI infrastructure is deployed. Features like Fast Start and HiSparse target two of the biggest operational pain points — slow engine restarts and GPU memory pressure during long-context decoding — which matters to anyone running large models at scale. Fast Start keeps post-quantized, tensor-parallel-sharded weights in GPU memory and remaps them over CUDA IPC via `--load-format ipc_cache` instead of reloading from disk, now covering FP4 checkpoints and multi-node TP. Other notable details include MXFP8 KV storage for DeepSeek-V4.1-Flash through FlashMLA on SM100, a DeepSeek-V4 CPU backend with AVX512/AMX sparse MLA kernels, and Model Runner V2 changes that cut CUDA graph capture from 12s to 2s and engine init from 28.9s to 8.2s on H200.
 
-telegram · zaihuapd · Sep 21, 16:32
+github · khluu · Sep 22, 05:20
 
-**Background**: The 2nm process is the semiconductor manufacturing node following 3nm, using nanosheet transistor technology to improve performance and power consumption. Apple Silicon uses a unified memory architecture that combines system RAM and VRAM into a single high-speed pool shared by CPU and GPU, which benefits AI and graphics workloads. Apple's Ultra chips are created by fusing two Max dies via the UltraFusion interconnect, and the M5 Ultra extends this to four dies for the first time.
+**Background**: vLLM is an open-source framework for inference and serving of large language models, originally developed at UC Berkeley's Sky Computing Lab and centered on PagedAttention, a memory-management method for transformer key-value caches. It supports continuous batching, distributed inference, quantization, and OpenAI-compatible APIs, and has become one of the most active open-source AI projects. FlashMLA is DeepSeek's library of optimized multi-head latent attention kernels, while MXFP8 is a block floating-point format that shares one exponent across a group of values to save memory and compute.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/2_nm_process">2 nm process - Wikipedia</a></li>
-<li><a href="https://www.pcmag.com/news/apple-m5-ultra-and-m6-silicon-explained">Forget Foldables: Apple's 2nm M6 and Quad-Die Monster Just Reset the AI Race | PCMag</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/VLLM">VLLM</a></li>
+<li><a href="https://github.com/deepseek-ai/FlashMLA">GitHub - deepseek-ai/FlashMLA: FlashMLA: Efficient Multi-head Latent Attention Kernels · GitHub</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MXFP8">MXFP8</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Apple`, `#semiconductor`, `#M6 chip`, `#M5 Ultra`, `#hardware`
+**Tags**: `#vLLM`, `#LLM inference`, `#model serving`, `#release`, `#AI infrastructure`
 
 ---
 
 <a id="item-3"></a>
-## [vLLM v0.30.0 adds Fast Start GPU weight cache and new models](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
+## [GPT-6 Astra Helps Break Enigma Message Unsolved Since 2005](https://www.cryptocellar.org/bgac/the-mvueh-break.html) ⭐️ 8.0/10
 
-vLLM released v0.30.0, a large update with 762 commits from 315 contributors (104 new) that adds support for DeepSeek-V4.1-Flash, GLM-5.3-Flash, K2-Horizon, Cohere Compass and other new architectures. The headline feature is Fast Start, a persistent per-GPU weight-cache daemon that keeps post-quantized, TP-sharded weights in GPU memory so engines restart via CUDA IPC with `--load-format ipc_cache` instead of reloading from disk. vLLM is one of the most widely used open-source LLM inference and serving engines, so its releases directly shape what models teams can deploy and how cheaply they can serve them. Fast Start targets one of the biggest operational pain points in production serving — slow engine cold starts and restarts — while the new model support keeps vLLM aligned with the fastest-moving frontier architectures. Fast Start now covers FP4 checkpoints and multi-node tensor parallelism, and the release also introduces Gumbel-max watermarking with per-request opt-out and speculative-decoding compatibility, a HiSparse host-resident tier for sparse-MLA decode, and Model Runner V2 improvements that cut graph capture from 12s to 2s and engine init from 28.9s to 8.2s on H200. Quantization work includes targeted online quantization via `quantization_config.targets` and FlashInfer CuTeDSL NVFP4 W4A16 becoming the default over Marlin on SM100/103.
+OpenAI's GPT-6 Astra reportedly assisted researcher Leffer in cracking a stubborn Enigma-encrypted message that had resisted decryption since 2005, in what is described as a two-day collaboration. The breakthrough was possible because the message used a completely different key from the rest of that day's traffic, the original transcription contained errors, and the left rotor turned over at letter 72, which is rare and defeats standard crib attacks. This case illustrates how large language models like GPT-6 Astra are increasingly being applied to hard cryptographic and historical puzzles, potentially changing how researchers approach long-standing unsolved problems. It also fuels broader debate about AI's growing capabilities and whether human expertise in fields like cryptanalysis is becoming replaceable. The actual decrypted message reads approximately: 'Please specify the route of march. I am in Rosenow, Rosenow. Immediate reply by radio. Waschbusch,' with several misspellings in the original German ciphertext. The message's unusual key and the rare rotor turnover at letter 72 explain why it remained unsolved for nearly two decades, and the decryption was a collaboration between researcher Leffer and Astra rather than a fully autonomous AI solve.
 
-github · khluu · Sep 22, 05:20
+hackernews · sohkamyung · Sep 22, 13:52 · [Discussion](https://news.ycombinator.com/item?id=49801324)
 
-**Background**: vLLM is an open-source high-throughput, memory-efficient engine for serving large language models, best known for PagedAttention and continuous batching; it supports NVIDIA, AMD and Intel GPUs as well as x86/ARM/PowerPC CPUs. Loading a large model's weights into GPU memory is slow, and in elastic or serverless deployments engines are frequently started and stopped, so caching weights across restarts can save substantial time. MXFP8 is a block-scaled FP8 quantization format where groups of 32 elements along the K dimension share a scale, and FlashMLA is DeepSeek's library of optimized attention kernels for its MLA-based models.
+**Background**: The Enigma machine was a German rotor cipher device used extensively in World War II; although it was believed unbreakable, Allied cryptanalysts led by Alan Turing at Bletchley Park exploited procedural flaws and operator mistakes to decrypt many messages. Some individual messages, however, remained unsolved for decades due to unusual key settings, transcription errors, or rare rotor behavior. GPT-6 Astra is OpenAI's most capable large language model, released in September 2026, designed for complex reasoning, coding, and research tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/vllm-project/vllm">GitHub - vllm -project/ vllm : A high-throughput and memory-efficient...</a></li>
-<li><a href="https://docs.vllm.ai/en/latest/configuration/optimization/">Optimization and Tuning - vLLM</a></li>
-<li><a href="https://github.com/deepseek-ai/FlashMLA">FlashMLA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Enigma_machine">Enigma machine - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma">Cryptanalysis of the Enigma - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT - 6 Astra - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#vllm`, `#llm-inference`, `#model-serving`, `#release`, `#ai-infrastructure`
+**Discussion**: Commenters corrected the sensationalized headline, noting the message was broken with 'good help' from Astra rather than by the AI alone, and highlighted technical reasons for its long resistance: a unique key, transcription errors, and a rare rotor turnover at letter 72. Some expressed unease about AI making even the smartest humans replaceable, while others noted a recent Veritasium video on Enigma and questioned the significance of the 2005 date.
+
+**Tags**: `#AI`, `#cryptography`, `#Enigma`, `#OpenAI`, `#GPT-6`
 
 ---
 
 <a id="item-4"></a>
 ## [Can gzip function as a language model?](https://nathan.rs/posts/gzip-lm/) ⭐️ 8.0/10
 
-A blog post on nathan.rs explores whether gzip can act as a language model by using compressed length as a measure of how well a candidate continuation is predicted, and the idea sparked a lively Hacker News discussion with 156 points and 65 comments. Community members shared practical experiments, such as classifying text by topic using gzip -9 and testing alternative compressors like bzip2 and zstd. This discussion highlights a conceptual bridge between classical lossless compression and modern language modeling, suggesting that prediction and compression are deeply linked. It matters because it offers an accessible, low-resource way to reason about language model behavior and could inspire lightweight classification or generation techniques without neural networks. The gzip approach works by compressing a corpus plus a candidate continuation and treating smaller compressed size as a better prediction, but as commenters note, it only searches a tiny fraction of the possible sequence space, so results are a lower bound. Experiments with bzip2 produced sequences that did not resemble human language, while zstd and other compressors were also tested.
+An article on nathan.rs investigates whether the gzip compression algorithm can function as a language model, sparking a 307-point Hacker News discussion with 120 comments. The piece explores compression-based classification and its conceptual ties to language modeling research. This matters because it connects information theory and machine learning, showing how classical compression tools can approximate language modeling tasks and offering a low-resource alternative to large neural models. It also highlights the deep theoretical link between compression and prediction that underpins modern AI research. Community members note that gzip can classify text by compressing a test file together with topic-specific corpora and picking the smallest output, a technique pioneered by Witten's group at Waikato. Critics point out that the search space for generating continuations is far too large to explore meaningfully, so results only provide a lower bound on gzip's plausibility-testing ability.
 
 hackernews · networked · Sep 22, 06:08 · [Discussion](https://news.ycombinator.com/item?id=49797323)
 
-**Background**: gzip is a widely used lossless compression format based on the DEFLATE algorithm, which finds repeated patterns to shrink files. Language models, by contrast, predict the next token in a sequence based on context. The idea that compression and prediction are related dates back to information theory, and recent work has explored using compressors as proxies for language modeling.
+**Background**: gzip is a widely used compression utility released in 1992, based on the DEFLATE algorithm combining LZ77 and Huffman coding. Language models are computational models that predict sequences in natural language, and recent research such as Google's 'Language Modeling Is Compression' paper has shown that compression and prediction are mathematically equivalent. Compression-based classification uses the normalized compression distance to measure similarity between files.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://nathan.rs/posts/gzip-lm/">Can gzip be a language model? - nathan.rs</a></li>
-<li><a href="https://news.ycombinator.com/item?id=36732430">Ziplm: Gzip-Backed Language Model - Hacker News</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Gzip">gzip - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_modeling">Language modeling</a></li>
+<li><a href="https://github.com/ranfysvalle02/compressed-classification">GitHub - ranfysvalle02/ compressed - classification · GitHub</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were enthusiastic but skeptical: jll29 demonstrated topic classification with gzip, networked tested bzip2 and zstd (finding bzip2 output gibberish), and mg questioned whether the search space is meaningfully explored, calling the result only a lower bound. Others drew humorous analogies, like comparing Winrar's profitability to OpenAI's.
+**Discussion**: Commenters shared practical gzip classification examples and referenced related research, including Google's 'Language Modeling Is Compression' paper and the Gibbs randomness-compression proposition. Some raised concerns about the limited search space, while others humorously noted that Winrar is more profitable than OpenAI.
 
-**Tags**: `#gzip`, `#language-model`, `#compression`, `#machine-learning`, `#hacker-news`
+**Tags**: `#compression`, `#language-modeling`, `#gzip`, `#information-theory`, `#machine-learning`
 
 ---
 
 <a id="item-5"></a>
-## [Xiaomi Releases MiMo v2.6 Open-Weight LLM Family](https://mimo.xiaomi.com/mimo-v2-6) ⭐️ 8.0/10
+## [Xiaomi Releases MiMo v2.6 Open-Weight MoE Model Family](https://mimo.xiaomi.com/mimo-v2-6) ⭐️ 8.0/10
 
-Xiaomi's MiMo team released and open-sourced the MiMo-V2.6 series, including the flagship MiMo-V2.6-Pro and the efficiency-focused MiMo-V2.6-Flash, with unusually transparent training practices such as a realtime training dashboard and a comprehensive technical report. This release adds a strong Chinese open-weight contender to the frontier LLM race, and its transparency around training methodology could raise expectations for how much detail labs disclose, while fueling ongoing debate about open models, energy constraints, and benchmark reliability. MiMo-V2.6-Flash has 309B total parameters with 15B activated, while MiMo-V2.6-Pro has 1.02T total with 42B activated; both are available on Hugging Face as RL variants, and community benchmarks place Pro well behind leading proprietary models on tasks like Terminal Bench 4.0.
+Xiaomi's MiMo team released the MiMo-V2.6 series on September 22, open-sourcing two models: Flash with 309B total / 15B activated parameters and Pro with 1.02T total / 42B activated parameters, both available on Hugging Face. The release includes an unusually transparent realtime training dashboard and a detailed technical report covering methodology and over 7,000 RL environments. This is a significant open-weight LLM release from a major consumer electronics company, pushing trillion-parameter scale into the open ecosystem and intensifying competition among Chinese AI labs. Its transparent training methodology raises the bar for how open models are documented and shared. The models use a Mixture-of-Experts architecture, with Pro at 1.02T total but only 42B activated parameters, and were trained across 750,000 RL trajectories in programming, vision, and CFT tasks. Community benchmarks show MiMo-V2.6-Pro scoring 34.9 on Terminal Bench 4.0, well behind leading closed models like GPT 6 Astra at 59.6.
 
 hackernews · volf_ · Sep 21, 20:12 · [Discussion](https://news.ycombinator.com/item?id=49792730)
 
-**Background**: Open-weight models publicly release their trained parameters, allowing others to download and use them, though modification and redistribution depend on the license; this contrasts with fully open-source AI, which also releases training code, data, and documentation. Chinese labs like DeepSeek, Alibaba Cloud, and Moonshot AI have driven much of the open-weight frontier, while US companies tend to favor proprietary releases, making open weights a geopolitical issue. Transparently trained models go further by documenting the training process, as Xiaomi did with its realtime dashboard and tech report.
+**Background**: Mixture-of-Experts (MoE) is an architecture that routes each input through only a subset of the model's parameters, allowing models to scale to enormous total size while keeping per-token compute manageable. Open-weight models are those whose trained parameters are publicly downloadable, though they may not include training data or code. Xiaomi's MiMo team is the company's dedicated AI research unit, and this release follows earlier MiMo versions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Open-weight_model">Open-weight model</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Xiaomi_MiMo">Xiaomi MiMo - Wikipedia</a></li>
-<li><a href="https://llm-stats.com/models/mimo-v2.6-flash">MiMo-V2.6-Flash Benchmarks, Pricing & Context Window</a></li>
+<li><a href="https://mimo.xiaomi.com/mimo-v2-6">MiMo-V2.6 | Xiaomi</a></li>
+<li><a href="https://www.kucoin.com/news/flash/xiaomi-releases-mimo-v2-6-with-trillion-parameter-models-and-7-000-rl-environments">Xiaomi Releases MiMo-V2.6 with Trillion-Parameter Models and 7,000+ RL Environments | KuCoin</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters praised Xiaomi's transparency, with one calling the realtime training dashboard an incredible learning tool, while others argued China may win the AI race due to US energy bottlenecks and debated benchmark reliability, noting MiMo-V2.6-Pro trails leading proprietary models on some tests.
+**Discussion**: Commenters praised Xiaomi's transparency, especially the realtime training dashboard as a learning tool, while others debated the US-China AI race with energy as a key bottleneck. Some expressed skepticism about benchmarks, and users shared links to Hugging Face model cards and test outputs.
 
-**Tags**: `#LLM`, `#open-weights`, `#AI research`, `#Xiaomi`, `#model release`
+**Tags**: `#LLM`, `#open-weights`, `#Mixture-of-Experts`, `#AI-research`, `#Xiaomi`
 
 ---
 
 <a id="item-6"></a>
-## [Spymarks: Covert Tracking Marks Pose Greater Privacy Threat Than Watermarks](https://brand.io/article/spymarks/) ⭐️ 8.0/10
+## [Bryan Cantrill Analyzes What Sun Microsystems Got Wrong](https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/) ⭐️ 8.0/10
 
-An article titled 'Spymarks, Not Watermarks' argues that covert tracking marks embedded in digital content—dubbed 'spymarks'—represent a distinct and more dangerous evolution of traditional watermarking, sparking a Hacker News discussion with 454 upvotes and 115 comments. The piece and ensuing debate explore how such marks, an application of steganography, could enable ad attribution, leak tracing, and pervasive surveillance. This matters because spymarks could turn everyday devices and content pipelines into surveillance tools, affecting anyone who creates, shares, or views digital media. The discussion highlights growing concerns about privacy erosion and the difficulty of resisting covert tracking in an increasingly instrumented ecosystem. Commenters noted that spymarks are an application of steganography rather than a new name for it, and that defenses could include asserting byte-for-byte identity with a trusted source. One user worried about low-level drivers in laptops and phones constantly scanning for these marks to report ad attribution, while another criticized the article's live examples as low-quality and not representative of real SynthID watermarks.
+Bryan Cantrill, a former Sun Microsystems engineer and co-creator of DTrace, published a retrospective essay titled "What Sun got wrong" on his personal blog, examining the strategic and technical missteps that led to the company's decline. The post sparked a large Hacker News discussion with 653 points and 375 comments from industry veterans sharing their own experiences and perspectives. Sun Microsystems was one of the most influential computing companies of the 1980s and 1990s, and its decline offers enduring lessons about business strategy, technology commoditization, and the dangers of ignoring market shifts. Cantrill's insider perspective, combined with the community discussion, provides valuable insight for today's engineers and founders navigating similar competitive pressures. Cantrill worked at Sun Microsystems and later at Oracle after its acquisition of Sun, and co-developed DTrace, a dynamic tracing framework for production systems, alongside Adam Leventhal and Mike Shapiro. The community discussion highlights specific missteps such as briefly cancelling Solaris on x86 in 2002 and failing to strike a deal with Google in 2002 over server count disclosure.
 
-hackernews · possibilistic · Sep 21, 23:03 · [Discussion](https://news.ycombinator.com/item?id=49794615)
+hackernews · chmaynard · Sep 21, 14:03 · [Discussion](https://news.ycombinator.com/item?id=49787436)
 
-**Background**: Steganography is the practice of hiding information within other non-secret data, such as images or audio, so that only the sender and intended recipient can detect it. Digital watermarking, a related technique, embeds copyright or integrity information into media but is often designed to be robust or fragile depending on the use case. Spymarks extend this idea toward covert tracking, raising ethical and privacy questions as AI-generated content and ad-tech attribution become more prevalent.
+**Background**: Sun Microsystems was an American technology company founded in 1982 that developed and sold computers, computer hardware, and software, becoming famous for its SPARC workstations, Solaris operating system, and Java platform. The company was acquired by Oracle in 2010, ending its existence as an independent firm. Bryan Cantrill is a software engineer known for his work at Sun and Oracle and is now co-founder and CTO of Oxide Computer Company.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.ycombinator.com/item?id=49794615">Spymarks , Not Watermarks | Hacker News</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Digital_watermarking">Digital watermarking - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sun_Microsystems">Sun Microsystems - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bryan_Cantrill">Bryan Cantrill - Wikipedia</a></li>
+<li><a href="https://grokipedia.com/page/Bryan_Cantrill">Bryan Cantrill</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News community largely agreed that spymarks are a concerning application of steganography, with some arguing the only defense is to stop engaging with new tech altogether. Others highlighted historical use of such marks by corporations to identify leakers from screenshots, and criticized the article's examples as unrealistic. The overall sentiment was wary of surveillance and skeptical of easy technical countermeasures.
+**Discussion**: Commenters broadly agreed that Sun's engineering was exceptional but its business execution was poor, with one noting that Sun "was never interested in running a business" and cared more about building amazing technology. Others shared concrete grievances, such as the painful enterprise sales process compared with Dell, and pointed to specific strategic errors like cancelling Solaris on x86 and failing to close a deal with Google. A few drew parallels to today's high-valuation tech stocks, warning of similar bubble dynamics.
 
-**Tags**: `#privacy`, `#surveillance`, `#steganography`, `#watermarking`, `#AI ethics`
+**Tags**: `#Sun Microsystems`, `#computing history`, `#business strategy`, `#Hacker News`, `#technology industry`
 
 ---
 
 <a id="item-7"></a>
-## [Blog Post Argues Against Reading AI-Generated Content](https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/) ⭐️ 8.0/10
+## [Blogger Argues Against Using LLMs to Generate Written Content](https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/) ⭐️ 8.0/10
 
-Colin Breck published a blog post titled 'I don't want to read what you didn't write,' arguing that readers should not engage with AI-generated content. The post sparked a large Hacker News discussion with 702 points and 285 comments debating the nuances of AI assistance in writing. This debate touches on fundamental questions about authorship, authenticity, and the value of human effort in communication, affecting writers, developers, and anyone who consumes online content. It reflects growing tensions as AI writing tools become ubiquitous in professional and personal communication. The discussion highlights practical concerns such as pull requests bloated with AI-generated descriptions, the difficulty of verifying AI content, and the argument that writing is a transfer of semantic information that AI cannot fully replicate. Some commenters note that AI can help structure thoughts or give voice to those who struggle with articulate prose.
+Colin Breck published a blog post titled "I don't want to read what you didn't write" arguing that using LLMs to generate written content undermines authentic communication, and the post sparked a highly engaged Hacker News discussion with 904 points and 382 comments. As LLMs become embedded in software engineering workflows, this debate touches on how teams write design documents, pull request descriptions, and technical communication, raising questions about trust, information transfer, and the value of human authorship. Commenters raised an information-theoretic argument that writing is the transfer of semantic information from one brain to another, and that an LLM cannot fill in semantic bits the author never provided; others noted that AI-generated pull request descriptions have become so verbose that reviewers feel forced to read pages of text for a 20-line change.
 
 hackernews · mooreds · Sep 21, 22:30 · [Discussion](https://news.ycombinator.com/item?id=49794330)
 
-**Background**: The rise of large language models like ChatGPT and Claude has made it easy to generate text, leading to concerns about authenticity and effort in writing. Hacker News, a popular forum for technology and startup discussions, often hosts debates on the ethical and practical implications of AI tools.
+**Background**: Large language models (LLMs) such as ChatGPT and Claude can generate fluent text on demand, and they are increasingly used to draft documentation, summaries, and code review comments. This has prompted debate about whether AI-generated writing genuinely conveys the author's intent or merely produces plausible-sounding filler, and tools marketed as "AI humanizers" now exist to make such text sound more natural.
 
-**Discussion**: Commenters largely agree that AI-generated content can be problematic, with some sharing frustrations about verbose AI-written pull request descriptions. However, a contrarian view suggests AI can be a useful sparring partner for structuring thoughts, and others note that AI gives voice to people who might not otherwise share their ideas.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.alphaxiv.org/overview/2309.11210">Speak While You Think: Streaming Speech Synthesis During Text ...</a></li>
+<li><a href="https://notegpt.io/ai-humanizer">Free AI Humanizer – 100% Human Text & No Sign-up, Unlimited</a></li>
 
-**Tags**: `#AI`, `#writing`, `#ethics`, `#communication`, `#Hacker News`
+</ul>
+</details>
+
+**Discussion**: The Hacker News discussion was largely sympathetic to the article's thesis, with one commenter offering an information-theoretic framing that an LLM cannot supply semantic information the author never had, and another complaining that AI-generated pull request descriptions are now so bloated that reviewers cannot afford to skip them. A contrarian commenter argued that LLMs can still serve as useful sparring partners for structuring thoughts, provided the author proofreads and rewrites until the text genuinely conveys the intended information.
+
+**Tags**: `#AI`, `#Writing`, `#LLM`, `#Communication`, `#Software Engineering`
 
 ---
 
 <a id="item-8"></a>
-## [NASA's Mars Sample Return mission is dead](https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead) ⭐️ 8.0/10
+## [Essay Argues AI Lacks Wisdom, Over-Reliance Risks Human Judgment](https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/) ⭐️ 8.0/10
 
-NASA's Mars Sample Return (MSR) campaign, a joint effort with the European Space Agency to retrieve samples collected by the Perseverance rover, has been effectively cancelled in 2026. The decision follows years of cost escalation, with program estimates reportedly reaching around $11 billion and a projected sample return date slipping to as late as 2040. The cancellation ends NASA's most ambitious multi-mission planetary science campaign and raises questions about JPL's management and cost-control practices. It also hands a potential first-mover advantage to China's Tianwen-3 mission, which aims to return Martian samples in the late 2020s or early 2030s. The MSR architecture relied on legacy launch vehicles such as Ariane 64 rather than newer, lower-cost options like Starship or New Glenn, and would have returned only about 1.1 pounds (500 grams) of Martian material. China's Tianwen-3 is planned for the December 2028–January 2029 launch window, using a dual-launch configuration with a lander and ascent vehicle on a Long March 5 and an orbiter and return module on a Long March 3B.
+A blog essay titled "AI Has No Wisdom and Neither Will You" argues that AI systems lack genuine wisdom and that humans who over-rely on them risk losing their own. The piece sparked a 430-comment Hacker News discussion (308 points) debating the limits of AI for knowledge work and software development. The debate touches on a growing concern in the AI/ML and software engineering communities: that offloading cognitive tasks to AI may erode institutional knowledge and human expertise over time. It matters because the industry is rapidly adopting AI coding agents and assistants, and the long-term effects on skill development and maintainability remain unclear. Commenters noted that code maintainability and good architecture lack good measurable metrics, making it hard to prove whether AI-assisted development degrades quality. One commenter with 20 years of experience described building a MongoDB-like database in two weeks using Claude, Kiro, Qwen Coder, and Cursor, then spending much longer reworking internals after studying relational algebra and database design.
 
-hackernews · Muhammad523 · Sep 21, 19:14 · [Discussion](https://news.ycombinator.com/item?id=49791939)
+hackernews · dimonomid · Sep 22, 12:11 · [Discussion](https://news.ycombinator.com/item?id=49799965)
 
-**Background**: Mars Sample Return was a proposed multi-mission campaign to collect rock and dust samples on Mars and bring them to Earth, allowing far more extensive analysis than onboard instruments, particularly in the search for signs of past life. NASA's Perseverance rover has been caching samples since 2021 for eventual pickup, and the campaign was formally approved in 2022 as a NASA-ESA collaboration. Concerns about potential back contamination of Earth's biosphere from Martian samples have been raised, though the risk is considered low.
+**Background**: The essay's title plays on the idea that wisdom is not the same as knowledge or pattern matching — it requires judgment, experience, and context that current AI models do not possess. Hacker News is a popular technology forum where engineers and researchers debate industry trends, and a 430-comment thread with 308 points indicates unusually high engagement. The discussion reflects broader anxiety about AI's role in replacing or augmenting human cognitive work.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Mars_sample-return_mission">Mars sample - return mission - Wikipedia</a></li>
-<li><a href="https://science.nasa.gov/mission/mars-sample-return/">Mars Sample Return - NASA Science</a></li>
-<li><a href="https://www.nasaspaceflight.com/2026/09/china-roundup-202609/">China progresses plans for Mars sample return , asteroid flyby and...</a></li>
+**Discussion**: Commenters were divided: some warned that offloading wisdom-gathering to AI causes slow institutional knowledge decay, comparing it to the outsourcing of manufacturing. Others argued that AI coding agents can produce maintainable code if properly directed, and one commenter predicted that within 5-10 years most human developers will not touch a single line of code.
 
-</ul>
-</details>
-
-**Discussion**: Commenters were sharply critical of JPL leadership, citing the $11 billion cost and 2040 return date, and argued the mission should have been designed around lower-cost commercial vehicles like Starship or New Glenn. Others highlighted China's parallel Tianwen-3 program as a geopolitical concern, while some noted that waiting for crewed Mars missions might be more practical given the small sample mass involved.
-
-**Tags**: `#space exploration`, `#NASA`, `#Mars Sample Return`, `#JPL`, `#geopolitics`
+**Tags**: `#AI`, `#wisdom`, `#software-engineering`, `#institutional-knowledge`, `#Hacker-News`
 
 ---
 
 <a id="item-9"></a>
-## [Cloudflare Python Workers reach general availability](https://blog.cloudflare.com/python-workers-ga/) ⭐️ 8.0/10
+## [TypeSafe AI Unveils Jev, a 'System One' Decision Model](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
 
-Cloudflare announced on September 21 that Python Workers are now generally available, making Python a first-class, fully supported language on its developer platform. The release adds native support for frameworks like FastAPI, Django, and Flask, plus lower-level networking that lets developers run PostgreSQL and AI libraries such as LangChain directly inside Workers. Python is one of the most widely used languages for data, AI, and backend work, so first-class support on Cloudflare's edge platform lets a huge pool of developers deploy existing Python code globally without rewriting it in JavaScript. It also intensifies competition in serverless edge computing, where Cloudflare, AWS Lambda, and others are racing to attract AI and data workloads. Python Workers run a Python interpreter compiled to WebAssembly via Pyodide, with each native module built as a separate Wasm module dynamically linked at runtime; Cloudflare also contributed upstream so HTTP clients like urllib3 and Requests can route through the JavaScript fetch API. Community members note that PyEmscripten is now standardized through PEP 783, though questions remain about cold-start latency and some architectural trade-offs.
-
-hackernews · torutofu · Sep 21, 13:38 · [Discussion](https://news.ycombinator.com/item?id=49787142)
-
-**Background**: Cloudflare Workers is a serverless edge computing platform that has supported WebAssembly since 2018, allowing code to run close to users worldwide instead of in a single data center. Pyodide is a project that compiles CPython and many scientific Python packages to WebAssembly, so Python can execute inside a sandboxed Wasm environment. Python Workers first launched in open beta about two years ago, and general availability means the feature is now considered stable and production-ready.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/python-workers-ga/">Python Workers are now generally available | Cloudflare Blog</a></li>
-<li><a href="https://blog.cloudflare.com/python-workers/">Bringing Python to Workers using Pyodide and WebAssembly</a></li>
-<li><a href="https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/">Cloudflare Python Workers are now generally available</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Hacker News thread was largely positive, with Wasmer CEO Syrus Akbary praising Cloudflare's progress on package support and PEP 783 standardization while noting remaining architectural concerns. An urllib3 maintainer clarified that upstream Pyodide/Emscripten and JSPI contributions were funded to an external contributor rather than the maintainers, and others joked about the headline and compared the move to Google App Engine's 2008 Python launch, while asking about cold-start performance.
-
-**Tags**: `#Cloudflare Workers`, `#Python`, `#WebAssembly`, `#Serverless`, `#Edge Computing`
-
----
-
-<a id="item-10"></a>
-## [xAI Releases Grok 4.7 With 40% More Weights at Same Price](https://x.ai/news/grok-4-7) ⭐️ 8.0/10
-
-xAI has released Grok 4.7, a new large language model that reportedly contains 40% more weights than its predecessor Grok 4.6 while keeping the same pricing of $2 per million input tokens and $6 per million output tokens. The release arrived roughly two weeks later than originally planned and just one day before the rumored launch of Anthropic's Opus 5.5. This release intensifies competition among frontier AI labs, as xAI tries to match rivals like Anthropic and OpenAI on coding and agentic tasks while maintaining aggressive pricing. It also fuels the ongoing industry debate about whether benchmark scores truly reflect real-world model capability, especially as models consume more tokens to achieve marginal gains. Grok 4.7 is described by xAI as its most capable model for coding and knowledge work, with improved self-checking and better-calibrated safeguards, and it is available through the Cursor Models pool alongside Grok 4.6, Grok 4.5, and Composer 2.5. Community testing suggests the model is slower and more token-hungry than Grok 4.6, with reasoning effort levels (low, medium, high, xhigh) showing inconsistent token usage patterns.
-
-hackernews · meetpateltech · Sep 21, 15:50 · [Discussion](https://news.ycombinator.com/item?id=49788838)
-
-**Background**: Grok is a series of large language models developed by xAI, Elon Musk's AI company, first launched in November 2023 and integrated with the X social network. Starting with Grok 4.5, the models have been co-developed with Cursor, the AI coding tool company that xAI is acquiring. In large language models, 'weights' refer to the learned parameters that determine the model's behavior; more weights generally mean greater capacity but also higher training and inference costs.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://x.ai/news/grok-4-7">Introducing Grok 4 . 7 | SpaceXAI</a></li>
-<li><a href="https://cursor.com/docs/models/grok-4-7">Grok 4 . 7 | Cursor Docs</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Grok_4">Grok 4</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Hacker News commenters were largely skeptical: some noted that xAI absorbing higher costs at unchanged prices and delaying the release suggests internal dissatisfaction with Grok 4.7's results, while others found the model slower and more expensive than Grok 4.6 without clearly surpassing an 'intelligence floor' needed for coding and agentic workflows. Several users also expressed fatigue with benchmark claims, arguing that token-burning to climb leaderboards does not necessarily translate to real-world usefulness.
-
-**Tags**: `#LLM`, `#xAI`, `#Grok`, `#AI models`, `#benchmarks`
-
----
-
-<a id="item-11"></a>
-## [TypeSafe AI launches Jev, a 'System One' decision model returning typed probabilistic outputs](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
-
-TypeSafe AI unveiled Jev, the first of its new 'System One' model class, which accepts unstructured text or semi-structured 'state' objects and returns typed probabilistic outputs — Bernoulli-style yes/no confidence scores, choice distributions, and numeric ratings — instead of generated text. It charges only for input at $0.042 per million tokens (output is free), undercutting OpenAI's GPT-5 Nano at $0.05 per million, and evaluates many questions in parallel. Jev represents a new model category — 'decision models' — that reframes LLM inference as a fast, cheap classification function rather than a text generator, making it attractive for spam detection, labeling, prioritization, ranking, and search reranking. Its speed (roughly 70–500 ms) and free output tokens could shift how developers build automation pipelines that need structured decisions rather than prose. Jev supports three question types: 'Noul' yes/no questions (named after the Bernoulli distribution, returning a 0–1 confidence), choice questions (a confidence score plus a probability distribution over options), and score questions (a floating-point value along a described numeric range). A single state can be paired with as many questions as fit in the context window, and questions are evaluated in parallel, so many questions take roughly the same time as one.
+TypeSafe AI has unveiled Jev, the first of a new class of 'System One' models (also called decision models) that accept text input but return typed probabilistic outputs — floating point numbers for yes/no questions, choice distributions, and scores — along with confidence values, rather than generating text. The first model is priced at just $0.042 per million input tokens with output charged at zero, making it cheaper than OpenAI's GPT-5 Nano. This introduces a novel paradigm that reframes LLMs as decision-making functions rather than conversational text generators, which could meaningfully change how AI is applied to classification, ranking, and automation tasks in software. Because it is extremely fast and cheap, it may lower the cost barrier for embedding AI decisions directly into production systems. Jev supports three question types: 'Noul' (Bernoulli) yes/no questions returning a 0–1 confidence, choice questions returning a probability distribution over provided options, and score questions returning a float along a numeric range; questions are evaluated in parallel against a single 'state' object. A notable caveat is that Jev is a pure black box — it returns only numbers with no explanation or justification, raising concerns about hidden bias in high-stakes uses like ranking job applicants.
 
 rss · Simon Willison · Sep 21, 23:09
 
-**Background**: Traditional LLMs are priced by input and output tokens, with output usually charged at higher rates, and they return prose that developers must parse into structured data. TypeSafe AI, founded by a ChatGPT co-inventor, trained Jev using an approach it calls Reinforcement Learning for Calibrated Decisions (RLCD), which targets calibrated probability estimates rather than conversational responses. The 'System One' name contrasts with slower, deliberative 'System Two' reasoning, echoing the dual-process theory popularized by Daniel Kahneman.
+**Background**: Traditional large language models generate text token by token and are billed per input and output token, with output typically costing more. TypeSafe AI is positioning Jev as a 'frontier-intelligence function call' for machine-native automation: unstructured state in, typed probabilistic decisions out. The 'System One' name contrasts with slower, deliberative 'System Two' reasoning, while the alternative label 'decision model' emphasizes its role in classification-style tasks such as spam detection, labeling, prioritization, and search reranking.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Introducing System One Models & Jev - TypeSafe AI Blog</a></li>
-<li><a href="https://jev-agent.com/">What is Jev ? TypeSafe AI 's System One decision model explained</a></li>
 <li><a href="https://www.requesty.ai/blog/typesafe-jev-explained">TypeSafe Jev explained: how it works, LLM differences and... | Requesty</a></li>
+<li><a href="https://mchromiak.github.io/articles/2026/Sep/17/Jev-Typed-Decisions-for-Enterprise-AI/">Jev: Typed decisions for enterprise AI - Michał Chromiak's blog</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Simon Willison and Maggie Appleton both prefer the term 'decision models' over 'System One models', and Willison flags Jev as a regression toward black-box machine learning: it returns only a floating-point number with no justification, so bias could be concealed and hard to audit. He specifically hopes nobody uses Jev to rank job applicants, while still finding it useful for classification and search reranking.
+**Discussion**: Simon Willison, a highly respected commentator, finds the 'decision model' framing useful for understanding where to apply Jev, especially classification and search reranking, but expresses discomfort that it represents a further regression toward black-box machine learning. He warns that bias concerns should be front and center, hoping nobody uses Jev to rank job applicants since the floating point number could conceal unseen bias.
 
-**Tags**: `#LLM`, `#AI models`, `#decision models`, `#TypeSafe AI`, `#probabilistic inference`
+**Tags**: `#LLM`, `#AI Models`, `#Decision Models`, `#TypeSafe AI`, `#Probabilistic Inference`
+
+---
+
+<a id="item-10"></a>
+## [OpenAI forms math advisory group as AI solves 100+ open problems](https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/) ⭐️ 8.0/10
+
+OpenAI has formed an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results, following its AI system resolving more than 100 open mathematical problems. The group is explicitly not given leeway to slow down or redirect OpenAI's ongoing mathematical research. This signals a major milestone in AI-driven mathematical discovery, potentially shifting how mathematical research is conducted and validated. It also raises governance questions about who reviews and communicates AI-generated mathematical results, affecting mathematicians, AI researchers, and the broader scientific community. The advisory group is independent and can advise but cannot make company decisions, and it has no authority to slow or redirect OpenAI's mathematical research. The announcement comes as OpenAI's AI system reportedly resolved over 100 open problems, though the specific problems and verification methods have not been detailed in the provided content.
+
+rss · TechCrunch AI · Sep 21, 20:15
+
+**Background**: Automated theorem proving is a subfield of automated reasoning in which computer programs attempt to prove mathematical theorems, with systems such as Lean, Coq, Isabelle, and Mizar serving as proof assistants. In recent years, AI models have increasingly been applied to mathematics, moving from simple problem solving toward generating and verifying original mathematical results. OpenAI's advisory group is meant to build a formal bridge to the mathematics community so that AI-produced results are reviewed and communicated responsibly.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/">Advisory Group on Mathematics and Artificial Intelligence | OpenAI</a></li>
+<li><a href="https://kingy.ai/blog/openai-math-advisory-group-control/">OpenAI ’s Math Advisory Group : Who Controls Mathematics ?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commentary around the announcement has been skeptical, with observers noting that the advisory group can advise but cannot make company decisions, and some mathematicians object to being treated as an AI benchmark. The main concern is that the group lacks real authority to slow or redirect OpenAI's research, making its oversight role largely symbolic.
+
+**Tags**: `#OpenAI`, `#AI for Mathematics`, `#Automated Theorem Proving`, `#AI Research`, `#Mathematical Discovery`
+
+---
+
+<a id="item-11"></a>
+## [Alibaba Plans 5-10 Trillion Parameter AI Model, Unveils Zhenwu V900 Chip](https://www.reddit.com/r/LocalLLaMA/comments/1wmyh9z/alibaba_plans_ai_model_with_5_trillion_to_10/) ⭐️ 8.0/10
+
+At its annual Apsara Conference in Hangzhou on September 22, Alibaba CEO Eddie Wu announced plans to train an AI model with 5 to 10 trillion parameters and unveiled the Zhenwu V900, a new in-house AI chip for both training and inference. The company also said it aims to operate more than 20 gigawatts of global data center capacity by 2032. If realized, a 5-10 trillion parameter model would be among the largest ever attempted, pushing the frontier of AI scaling while Alibaba's custom silicon reduces its dependence on Nvidia amid tightening export controls. The combination of extreme model scale and in-house hardware signals that Chinese cloud providers are building full-stack AI ecosystems to compete globally. The Zhenwu V900 reportedly delivers three times the performance of its predecessor and is slated for mass production in the first quarter of 2027, with new server CPUs planned for the third quarter of 2027. Alibaba has not disclosed the training timeline, cost, or whether the 5-10 trillion parameter model's weights will be released openly.
+
+reddit · r/LocalLLaMA · /u/tengo_harambe · Sep 22, 03:35
+
+**Background**: Parameters are the internal numerical weights a neural network learns during training; larger parameter counts generally correlate with greater capability, though scaling laws show diminishing returns and rising costs. Alibaba's Qwen family of models, including the previewed 2.4-trillion-parameter Qwen3.8-Max, has become a widely used open-weight alternative to Western models. The Zhenwu V900 is designed by Alibaba's T-Head semiconductor unit as part of a broader trend of Chinese tech firms developing domestic AI accelerators to work around US export restrictions on advanced chips.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://cryptobriefing.com/alibaba-ai-model-zhenwu-v900-chip/">Alibaba plans AI model with 5 -10 trillion parameters , unveils Zhenwu...</a></li>
+<li><a href="https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html">Alibaba shares jump as new AI chip , data center buildout plans unveiled</a></li>
+<li><a href="https://www.trendforce.com/news/2026/09/22/news-alibaba-unveils-ai-chip-zhenwu-v900-for-1q27-mass-production-maps-out-new-server-cpus-for-3q27/">[News] Alibaba Unveils AI Chip Zhenwu V900 for 1Q27 Mass...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#large language models`, `#Alibaba`, `#AI chips`, `#scaling`
 
 ---
 
 <a id="item-12"></a>
-## [Anonymous Engineer Describes Company Where Claude Code Writes Everything](https://simonwillison.net/2026/Sep/20/voxium/) ⭐️ 8.0/10
+## [phantom-kv uncensors LLMs via a swappable 18MB KV-cache bank](https://www.reddit.com/r/LocalLLaMA/comments/1wms904/uncensor_an_llm_without_touching_weights_inject_a/) ⭐️ 8.0/10
 
-An anonymous engineer posting as "voxium" on X described joining a large company where specs, code, tests, PRDs, tickets, ticket resolutions, and reports are all generated by Claude Code, with engineers at every level from L1 to L7 working 12-13 hour days just pressing enter. The engineer says nobody on the team likes the situation, that management insists pushing code is not the bottleneck, and that nobody reads anything that is produced. The anecdote, amplified by Simon Willison's curation, captures a widely discussed fear that AI coding tools are being adopted as a throughput metric rather than an engineering aid, potentially producing large volumes of unreviewed, unmaintained code. It raises questions about code quality, accountability, and engineer burnout at large organizations racing to demonstrate AI-driven productivity. The account is a single anonymous first-person anecdote with no company name, no verifiable metrics, and no independent corroboration, so it should be treated as illustrative rather than representative. It specifically claims the practice spans all seniority levels from L1 to L7, and that the bottleneck has shifted from writing code to merely triggering generation.
+A developer released phantom-kv, a refusal-removal system that injects a small trained bank of key/value tensors (~18MB) directly into a model's KV cache as context, without modifying any model weights. Because the graft lives only in the input channel, it can be unloaded per request, leaving the base model byte-identical, and it supports hot-swappable capability modes such as a defensive 'blue pill' and an offensive 'red pill'. This reframes uncensoring from a permanent checkpoint edit into a per-request, hot-swappable capability mode, which could let a single set of weights serve multiple deployment roles without re-flashing or re-quantizing. It also sidesteps the fragility of prior methods like weight-space abliteration and activation-space projection, which commit changes permanently or patch the model's signal path at boot. The graft is trained offline against the model's own objective (comply on harmful prompts, preserve behavior on harmless ones) and avoids the single 1-D refusal-direction assumption, forwarding-pass hooks, and per-architecture rebuilds. Self-auditing with an 8B judge model found that lexical refusal-suppression metrics over-claim compliance, the graft fades with a roughly 2–4k token half-life in long sessions (mitigated by a measured re-injection cadence), and answers retain legal/ethical framing.
 
-rss · Simon Willison · Sep 20, 21:06
+reddit · r/LocalLLaMA · /u/Anony6666 · Sep 21, 22:55
 
-**Background**: Claude Code is Anthropic's AI-powered coding assistant, available through Claude and the Claude API, which can analyze codebases, edit files, run tests, and automate Git workflows. L1 to L7 refers to the engineering leveling systems used at large tech companies, where L1 is typically an entry-level engineer and L7 a senior staff or manager-level role. A PRD, or product requirements document, is a written specification of what a product should do, traditionally authored and reviewed by humans before development begins.
+**Background**: The KV cache is the memory of key/value tensors that attention mechanisms read as prior context during inference, so injecting content there influences the model through the same channel as conversation history. Prior refusal-removal approaches include abliteration, which projects out refusal directions from weight matrices, and activation-space projection, which subtracts a refusal direction at runtime per token and per layer. phantom-kv instead ships as megabytes of cache content rather than a new checkpoint, and the author presents it as a deployment-controlled mode rather than a jailbreak.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://claude.com/solutions/coding">Coding | Claude by Anthropic</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Product_requirements_document">Product requirements document - Wikipedia</a></li>
-<li><a href="https://www.levels.fyi/">Levels .fyi | Зарплаты и инструменты для развития карьеры</a></li>
+<li><a href="https://www.emergentmind.com/topics/abliteration">Abliteration in LLMs: Removing Refusal Behavior</a></li>
+<li><a href="https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction">Refusal in LLMs is mediated by a single direction - LessWrong</a></li>
+<li><a href="https://toytag.net/posts/efficient-llm/">Efficient Large Language Model Inference · @toytag.net</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#ai-misuse`, `#llms`, `#software-engineering`, `#engineering-culture`, `#claude-code`
+**Tags**: `#LLM`, `#uncensoring`, `#KV-cache`, `#refusal-removal`, `#local-llama`
 
 ---
 
 <a id="item-13"></a>
 ## [25 Fields Medalists Warn AI May Be Misaligned with Math Research Goals](https://t.me/zaihuapd/43973) ⭐️ 8.0/10
 
-A joint statement signed by 25 Fields Medalists, including Terence Tao, warns that the rapid use of AI to solve mathematical problems could cause a "serious misalignment" between AI development goals and the goals of mathematical research. The statement argues that treating math problem-solving as a benchmark for AI capability may harm mathematical research and the academic ecosystem. The endorsement of such a large group of the world's most distinguished mathematicians gives unusual weight to concerns about how AI is evaluated and used in science, potentially influencing how benchmarks, funding, and academic credit are structured. It signals that the AI and mathematics communities need to negotiate shared norms before AI-generated results become routine in research. The statement acknowledges that large language models have greatly improved at solving major mathematical problems in recent years, but stresses that the core of mathematical research is conceptual understanding and new insight rather than merely obtaining answers. It also warns that AI-generated output in bulk could compress the time available for verification, communication, and citing prior work, and raise issues around authorship and plagiarism, while noting AI's impact ultimately depends on how people use it.
+A group of 25 Fields Medalists, including Terence Tao and Deng Yu, issued a joint statement warning that the rapid deployment of AI to solve mathematical problems could cause AI development goals to become 'severely misaligned' with the core aims of mathematical research. The statement argues that using mathematical problem-solving as a benchmark for AI capability may harm mathematical research and the broader academic ecosystem. The statement carries unusual weight because it comes from the world's most decorated mathematicians, and it could shape how universities, journals, and funders evaluate AI-generated mathematical work. It also raises broader questions about whether optimizing AI for benchmark performance distorts the goals of the fields it is applied to. The statement emphasizes that the core of mathematical research is forming conceptual understanding and new insights rather than merely obtaining answers, and warns that AI-generated output at scale could compress the time available for verification, communication, and citing prior work while raising issues of authorship and plagiarism. It also acknowledges that AI could improve research efficiency, with the outcome depending on how people choose to use the technology.
 
 telegram · zaihuapd · Sep 22, 03:00
 
-**Background**: The Fields Medal is awarded every four years by the International Mathematical Union to up to four mathematicians under 40, and is widely regarded as the highest honor in mathematics, often called the "Nobel Prize of Mathematics." Terence Tao, a 2006 recipient, is a UCLA professor known for work spanning partial differential equations, combinatorics, and number theory. Large language models are AI systems trained on vast text data that have recently shown rapidly improving performance on mathematical reasoning benchmarks, which has prompted debate over whether such benchmarks truly capture mathematical understanding.
+**Background**: The Fields Medal is awarded every four years by the International Mathematical Union to up to four mathematicians under 40, and is widely described as the 'Nobel Prize of Mathematics'; 68 people have received it as of 2026. Large language models have improved markedly in recent years at solving mathematical problems, prompting debate over whether such benchmark performance reflects genuine mathematical understanding. The joint statement reflects growing concern within the mathematics community about AI's role in research ethics, publishing, and academic credit.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Fields_Medal">Fields Medal</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Terence_Tao">Terence Tao</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
+<li><a href="https://otontechnology.com/leiden-declaration-ai-mathematics-ethics/">Leiden Declaration Demands AI Transparency in Mathematics</a></li>
+<li><a href="https://www.allscientificjournal.com/assets/archives/2026/vol11issue2/11055.pdf">The impact of AI on mathematical research</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Mathematics`, `#Research Ethics`, `#Academic Publishing`, `#Large Language Models`
+**Tags**: `#AI`, `#Mathematics`, `#Research Ethics`, `#Academic Publishing`, `#Fields Medal`
 
 ---
 
 <a id="item-14"></a>
-## [Alibaba Unveils Zhenwu V900, Claiming China's Most Powerful AI Chip](https://finance.sina.com.cn/stock/bxjj/2026-09-22/doc-inissitf7048094.shtml) ⭐️ 8.0/10
+## [Alibaba Unveils Zhenwu V900, Claiming 3x Compute Over M890](https://finance.sina.com.cn/stock/bxjj/2026-09-22/doc-inissitf7048094.shtml) ⭐️ 8.0/10
 
-At the 2026 Yunqi Conference, Alibaba's T-Head semiconductor unit unveiled the Zhenwu V900 AI chip, claiming three times the compute of its predecessor, the M890, with single clusters scalable to 500,000 cards. CEO Eddie Wu said the self-developed M890 supernode already supports inference for 2-trillion-parameter models and will be deployed at scale on Alibaba Cloud this quarter. The announcement positions Alibaba as a leading force in China's push for semiconductor self-sufficiency, offering domestic alternatives to Nvidia accelerators amid export restrictions. If the performance claims hold, it could reshape the economics of large-scale AI training and inference for Chinese cloud customers and strengthen Alibaba's full-stack AI strategy spanning chips, cloud, and models. The Zhenwu V900 is designed for both training and inference, with mass production targeted for the first quarter of 2027, and T-Head also mapped out new server CPUs for the third quarter of 2027. Alibaba additionally plans to train Qwen models with 5 to 10 trillion parameters and aims for over 20GW of global data center capacity by 2032, though the performance claims remain vendor-stated and lack independent verification.
+At the 2026 Yunqi Conference, Alibaba's chip unit T-Head unveiled the Zhenwu V900, a train-and-inference integrated AI chip it calls the most powerful domestic Chinese AI chip, claiming 3x the compute of its Zhenwu M890 predecessor and scalability to a single 500,000-card cluster. CEO Wu Yongming also said the self-developed M890 supernode already supports inference for 2-trillion-parameter models and will scale onto Alibaba Cloud this quarter. The announcement signals that China's domestic AI chip ecosystem is maturing fast enough to challenge Nvidia's constrained presence in the market, with Bernstein Research predicting Huawei will hold 50% of China's AI chip market in 2026 while Nvidia's share shrinks to about 8%. If the V900's claims hold up, it could give Chinese cloud providers a viable path to train and serve frontier-scale models without relying on export-restricted foreign hardware. According to IT之家's on-site report, the Zhenwu V900 supports 216GB of memory and 1200GB/s of inter-die bandwidth, though full specifications for the V900 and the follow-up J900 remain undisclosed. All performance figures are vendor-sourced and have not been independently benchmarked, and Alibaba also set ambitious targets: Qwen models of 5-10 trillion parameters and over 20GW of global Alibaba Cloud datacenter capacity by 2032.
 
 telegram · zaihuapd · Sep 22, 03:30
 
-**Background**: AI chips like the Zhenwu V900 are specialized accelerators designed to handle the massive matrix computations required for training and running large language models, a market long dominated by Nvidia. A supernode is a tightly integrated cluster architecture that links many accelerators together with high-speed interconnects so they can work as a single large computer, which is essential for training models with trillions of parameters. Alibaba's T-Head unit designs these chips in-house, part of a broader Chinese effort to reduce reliance on foreign semiconductor supply chains.
+**Background**: T-Head (平头哥) is Alibaba's in-house semiconductor design unit, and the Zhenwu series is its line of AI accelerators for training and inference. A "supernode" refers to a tightly interconnected cluster of many accelerators that acts as one large compute unit, a design Nvidia has popularized with systems like NVL72 and that Chinese vendors such as Huawei are also pursuing with CloudMatrix 384. China's AI chip push is driven largely by U.S. export controls that limit access to top Nvidia GPUs, making domestic alternatives strategically important.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cryptobriefing.com/alibaba-ai-model-zhenwu-v900-chip/">Alibaba plans AI model with 5-10 trillion parameters, unveils Zhenwu ...</a></li>
-<li><a href="https://www.trendforce.com/news/2026/09/22/news-alibaba-unveils-ai-chip-zhenwu-v900-for-1q27-mass-production-maps-out-new-server-cpus-for-3q27/">[News] Alibaba Unveils AI Chip Zhenwu V 900 for 1Q27 Mass...</a></li>
-<li><a href="https://k-farruh.medium.com/from-brute-force-to-finesse-the-evolution-and-future-of-ai-training-infrastructure-11c5697fc4da">From Brute Force to Finesse: The Evolution and Future of AI Training ...</a></li>
+<li><a href="https://www.ithome.com/1/005/602.htm">最强国产 AI 芯 片 阿里 平 头 哥 真 武 V 900 ...</a></li>
+<li><a href="https://tech.ifeng.com/c/8tHMSnuzdDJ">真 武 M890只是开胃菜！阿里 平 头 哥 首曝路线图： V 900 +J900两年两代</a></li>
+<li><a href="https://www.chip37.com/m/article/20260922-3032.shtml">chip37.com/m/article/20260922-3032.shtml</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI chips`, `#Alibaba`, `#semiconductor`, `#AI infrastructure`, `#Qwen`
+**Tags**: `#AI chips`, `#Alibaba`, `#semiconductor`, `#AI infrastructure`, `#cloud computing`
 
 ---
 
 <a id="item-15"></a>
-## [DeepSeek and Tsinghua Release DSec Sandbox Platform Technical Report](https://arxiv.org/abs/2609.22978) ⭐️ 8.0/10
+## [DeepSeek and Tsinghua Release DSec Sandbox Platform Serving 3 Million Sandboxes Daily](https://arxiv.org/abs/2609.22978) ⭐️ 8.0/10
 
-DeepSeek-AI and Tsinghua University jointly released a technical report on DeepSeek Elastic Compute (DSec), a sandbox infrastructure that serves about 3 million sandbox instances per day to support large-scale agent training and evaluation. DSec offers four backends—FnCall, containers, Firecracker microVMs, and full VMs—through a unified SDK, and decouples stateful rollout execution from preemptible GPU training. This report shows how production-grade sandbox infrastructure can be scaled to millions of daily instances, which is increasingly critical as agent training and evaluation become a major workload for frontier AI labs. The architecture and optimizations offer a reusable blueprint for other teams building RL or agent training systems. A single production unit of DSec has about 160 nodes, handles peak concurrency above 380,000, and creates over 5,000 sandboxes per second; one node can host 3,200 containers or 800 microVMs. By loading EROFS images on demand from the 3FS distributed file system instead of full Docker pulls, DSec achieves 1.7x faster task completion and 57% fewer disk writes, while memory sharing and reclamation cut peak memory usage by about 40%.
+DeepSeek-AI and Tsinghua University jointly released a technical report on DeepSeek Elastic Compute (DSec), a sandbox infrastructure that supports large-scale agent training and evaluation. DSec provides four backend types — FnCall, containers, Firecracker microVMs, and full VMs — through a unified SDK, and serves roughly 3 million sandbox instances per day with peak concurrency exceeding 380,000. Agent training and reinforcement learning increasingly depend on massive numbers of isolated execution environments, and DSec shows how a production-grade sandbox platform can be built to sustain that scale. The architectural choices and performance numbers offer a concrete reference for teams building agent training infrastructure, and reinforce DeepSeek's push into open systems work alongside its models. A single production unit uses about 160 nodes, creates sandboxes at over 5,000 per second, and can host up to 3,200 containers or 800 microVMs per node. By loading EROFS images on demand from the 3FS distributed file system instead of pulling full Docker images, DSec achieves 1.7x faster task completion and 57% less disk write, while memory sharing and reclamation cut peak memory usage by about 40%.
 
 telegram · zaihuapd · Sep 22, 04:45
 
-**Background**: Sandboxes are isolated execution environments used to safely run untrusted code, and they are essential for training AI agents that interact with tools, operating systems, or networks. Firecracker microVMs are lightweight virtual machines developed by AWS that combine hardware-level isolation with fast startup, while EROFS is a read-only Linux file system designed for efficient image delivery. 3FS is DeepSeek's high-performance distributed file system built for AI training and inference workloads.
+**Background**: Sandboxes are isolated execution environments used to safely run untrusted code, and agent training frameworks need them at enormous scale to let models interact with tools, operating systems, and software tasks. Firecracker is a lightweight virtualization technology that creates microVMs with fast startup and low memory overhead, while EROFS is a read-only Linux file system optimized for compression and efficient I/O. 3FS is DeepSeek's own high-performance distributed file system designed for AI training and inference workloads, and DSec combines these pieces into a unified platform that decouples stateful rollout execution from preemptible GPU training.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/firecracker-microvm/firecracker">firecracker-microvm/firecracker: Secure and fast microVMs for serverless computing. - GitHub</a></li>
+<li><a href="https://firecracker-microvm.github.io/">Firecracker</a></li>
 <li><a href="https://en.wikipedia.org/wiki/EROFS">EROFS - Wikipedia</a></li>
-<li><a href="https://www.linkedin.com/posts/nidhinkumar06_opensourceweek-3fs-distributedfilesystem-activity-7301297675969118212-UaxW">Introducing 3 FS : A High-Performance File System for AI | LinkedIn</a></li>
+<li><a href="https://medium.com/@drishabh521/deepseek-ai-unveils-fire-flyer-file-system-3fs-a-high-performance-distributed-file-system-for-1dac7e4b8d21">DeepSeek AI Unveils Fire-Flyer File System ( 3 FS )... | Medium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI infrastructure`, `#sandbox`, `#agent training`, `#systems`, `#DeepSeek`
+**Tags**: `#agent-training`, `#sandbox-infrastructure`, `#systems`, `#reinforcement-learning`, `#DeepSeek`
+
+---
+
+<a id="item-16"></a>
+## [China Probes DeepSeek and Moonshot Over Data Leaks](https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic) ⭐️ 8.0/10
+
+China's internet regulator is investigating DeepSeek and Moonshot AI over potential data leaks, following Anthropic's September 10 report accusing seven Chinese companies of large-scale misuse of its Claude model. Anthropic's 154-page report specifically cited DeepSeek for forwarding a request from an engineer working on a police surveillance system to Claude. This investigation highlights growing tensions between Chinese AI developers and foreign model providers, and could reshape how Chinese companies access overseas AI services. It also signals that Beijing is taking data privacy and cross-border data flows seriously, with potential regulatory consequences for two of China's most prominent AI startups. Anthropic's report names seven Chinese companies and provides specific examples, including DeepSeek forwarding a police surveillance engineer's request to Claude. The investigation is being conducted by China's internet regulator, though no formal charges or penalties have been announced yet.
+
+telegram · zaihuapd · Sep 22, 14:37
+
+**Background**: DeepSeek is a Hangzhou-based AI company owned by hedge fund High-Flyer, known for its open-weight large language models. Moonshot AI, whose Chinese name means 'dark side of the moon,' is another major Chinese AI startup. Anthropic is an American AI safety company that develops the Claude series of large language models, which are widely used via API by developers worldwide.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek_(Company)">DeepSeek (Company)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
+<li><a href="https://www.moonshot.ai/">Welcome to Moonshot AI . Our mission is to seek the optimal...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI regulation`, `#data privacy`, `#DeepSeek`, `#Moonshot AI`, `#Anthropic`
 
 ---
