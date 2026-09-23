@@ -5,112 +5,88 @@ date: 2026-09-23
 lang: en
 ---
 
-> From 94 items, 15 important content pieces were selected
+> From 91 items, 13 important content pieces were selected
 
 ---
 
-1. [Anthropic and OpenAI Launch New Frontier Models, Sparking Price War](#item-1) ⭐️ 9.0/10
-2. [OpenAI forms math advisory group as AI solves 100+ open problems](#item-2) ⭐️ 9.0/10
-3. [OpenAI Begins Limited Preview of GPT-5.6 Series: Sol, Terra, Luna](#item-3) ⭐️ 9.0/10
-4. [vLLM v0.30.0 ships Fast Start weight cache and new model support](#item-4) ⭐️ 8.0/10
-5. [OpenAI's GPT-6 Astra Reportedly Cracks Long-Unsolved Enigma Message](#item-5) ⭐️ 8.0/10
-6. [FoxPro revived with Rust/WASM runtime](#item-6) ⭐️ 8.0/10
-7. [ShinyHunters claims FBI hack, says it has data on all employees](#item-7) ⭐️ 8.0/10
-8. [Trail of Bits Critiques SAML as a 'Fractal of Bad Design'](#item-8) ⭐️ 8.0/10
-9. [WordPress Patches Unauthenticated Path Traversal Enabling Conditional RCE](#item-9) ⭐️ 8.0/10
-10. [Pentagon report links AI overreliance to deadly Iran school strike](#item-10) ⭐️ 8.0/10
-11. [TypeSafe AI Unveils Jev, a 'System One' Decision Model](#item-11) ⭐️ 8.0/10
-12. [Xiaomi releases MiMo-V2.6 multimodal model with $3.5M RL training cost](#item-12) ⭐️ 8.0/10
-13. [Complex KDA Extends Kimi Delta Attention Expressivity](#item-13) ⭐️ 8.0/10
-14. [US Proposes AI Incident Reporting Channel With China](#item-14) ⭐️ 8.0/10
-15. [China Probes DeepSeek and Moonshot Over Data Leaks to Claude](#item-15) ⭐️ 8.0/10
+1. [Anthropic and OpenAI Launch Rival Frontier Models Within an Hour, Sparking Price War](#item-1) ⭐️ 9.0/10
+2. [OpenAI Begins Limited Preview of GPT-5.6 Series: Sol, Terra, Luna](#item-2) ⭐️ 9.0/10
+3. [vLLM v0.30.0 ships 762 commits, new models, Fast Start weight cache](#item-3) ⭐️ 8.0/10
+4. [OpenAI GPT-6 Astra Reportedly Breaks Long-Unsolved 2005 Enigma Message](#item-4) ⭐️ 8.0/10
+5. [ShinyHunters Claims Breach of FBI Employee and Applicant Data](#item-5) ⭐️ 8.0/10
+6. [Trail of Bits Calls SAML a Fractal of Bad Design](#item-6) ⭐️ 8.0/10
+7. [WordPress Patches Unauthenticated Path Traversal That Can Lead to RCE](#item-7) ⭐️ 8.0/10
+8. [Pentagon Blames AI Overreliance for Deadly Iran School Missile Strike](#item-8) ⭐️ 8.0/10
+9. [Artificial Analysis benchmarks Claude Opus 5.5 across reasoning settings](#item-9) ⭐️ 8.0/10
+10. [TypeSafe AI unveils Jev, a 'System One' decision model returning typed probabilistic outputs](#item-10) ⭐️ 8.0/10
+11. [Cloudflare Python Workers reach general availability after two-year preview](#item-11) ⭐️ 8.0/10
+12. [China Probes DeepSeek and Moonshot Over Data Leaks to Claude](#item-12) ⭐️ 8.0/10
+13. [DeepSeek to Brief UN Security Council on AI Risks This Week](#item-13) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Anthropic and OpenAI Launch New Frontier Models, Sparking Price War](https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/) ⭐️ 9.0/10
+## [Anthropic and OpenAI Launch Rival Frontier Models Within an Hour, Sparking Price War](https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/) ⭐️ 9.0/10
 
-Anthropic released Claude Opus 5.5, and about an hour later OpenAI released GPT-6 Sol and GPT-6 Luna, with GPT-6 Luna priced at half the cost of its GPT-5.6 predecessor. GPT-6 Luna now costs $0.10 per million input tokens and $0.50 per million output tokens, while Claude Opus 5.5 is priced at $4 input and $20 output. This simultaneous release and dramatic price reduction signals an intensifying price war among frontier AI labs, making advanced models far cheaper for developers and businesses to build on. It could reshape the economics of AI application development and pressure competitors like xAI to adjust their pricing. GPT-5.6 models have a scheduled 25% price increase for November, so GPT-6 is actually half the price of the promotional pricing for those models. GPT-6 Sol reasons about twice as much as GPT-5.6, making it roughly twice as slow and 25% more expensive in practice despite lower token costs.
+On September 22, 2026, Anthropic released Claude Opus 5.5, and roughly an hour later OpenAI released GPT-6 Sol and GPT-6 Luna, with GPT-6 Luna priced at just $0.10 per million input tokens and $0.50 per million output tokens — half the price of GPT-5.6 Luna. The near-simultaneous releases and steep price cuts signal an intensifying price war among frontier AI labs, dramatically lowering the cost for developers to build applications on top of top-tier models and reshaping competitive dynamics across the industry. GPT-6 Sol is priced at $2 per million input tokens and $10 per million output tokens, matching GPT-5.6 Terra's price and undercutting Grok 4.7 on output, while Claude Opus 5.5 comes in at $4/$20 per million tokens; note that GPT-5.6 had a scheduled 25% price increase for November, so GPT-6 is half the price of even the promotional pricing.
 
 rss · Simon Willison · Sep 22, 23:46
 
-**Background**: Claude is Anthropic's family of large language models, with Opus being its most capable tier, while GPT is OpenAI's flagship series. Frontier models are the most advanced and expensive AI systems, and their pricing directly affects how much developers pay to build AI-powered applications. A price war occurs when competing labs cut prices aggressively to win market share.
+**Background**: Frontier AI labs like OpenAI and Anthropic typically release their most capable models in tiers — OpenAI's GPT-5.6 family included Luna (cheapest), Terra, and Sol (most capable), while Anthropic's Claude line uses Haiku, Sonnet, and Opus naming. API pricing is quoted per million tokens, with separate rates for input, cached input, and output, and output tokens usually cost several times more than input. Recent releases have been shaped by government restrictions and alignment concerns, with OpenAI adding monitoring for risky model behavior.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.anthropic.com/claude-opus-5-5">Introducing Claude Opus 5 . 5 \ Anthropic</a></li>
-<li><a href="https://openrouter.ai/x-ai/grok-4.7">Grok 4 . 7 - API Pricing & Benchmarks | OpenRouter</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_Opus_4.1">Claude Opus 4.1</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Introducing GPT - 6 Sol and Luna | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.6_Sol">GPT-5.6 Sol</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters highlighted GPT-6 Luna's halved price as a major deal and praised its intelligence-per-cost ratio, while some expressed concern that GPT-6 Sol is slower and more expensive in practice. Others noted attachment to GPT-5.6 Sol's working style and discussed usage limits and pricing math between Claude Code and Codex Pro plans.
+**Discussion**: Commenters highlighted GPT-6 Luna's halved price as a major development, with one longtime agent user expressing attachment to GPT-5.6 Sol and concern that a technically better successor might feel less natural to work with. Others compared Claude Code and Codex Pro subscription plans, noting Codex's usage limits and unmetered ChatGPT access as decisive advantages.
 
-**Tags**: `#AI`, `#LLM`, `#OpenAI`, `#Anthropic`, `#pricing`
+**Tags**: `#AI/ML`, `#LLM`, `#OpenAI`, `#Anthropic`, `#pricing`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI forms math advisory group as AI solves 100+ open problems](https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/) ⭐️ 9.0/10
+## [OpenAI Begins Limited Preview of GPT-5.6 Series: Sol, Terra, Luna](https://t.me/zaihuapd/43990) ⭐️ 9.0/10
 
-On Monday, OpenAI announced an independent Advisory Group on Mathematics and Artificial Intelligence, hosted at the Institute for Advanced Study in Princeton, New Jersey, to give mathematicians more input into its math-oriented research. As part of the announcement, OpenAI also claimed that the same internal model has resolved more than 100 additional open problems across most areas of mathematics. If verified, an AI resolving over 100 open mathematical problems would mark a major leap in AI-for-math, potentially reshaping how mathematical research is conducted and how quickly new results are produced. The advisory group also signals that OpenAI is trying to build institutional oversight for AI-generated mathematical discoveries, even as the field debates how novel such results really are. The advisory group is explicitly not given leeway to slow down or redirect OpenAI's ongoing mathematical research, meaning it functions mainly as a review and communication body rather than a governance or safety brake. OpenAI has previously shared results such as an AI-generated disproof of the Erdős unit-distance conjecture and a selection of ten advances in mathematics and theoretical computer science.
+OpenAI has begun a limited preview of its GPT-5.6 series, introducing three tiers: the flagship Sol, the balanced Terra, and the low-cost Luna. Sol focuses on stronger coding, biology, and cybersecurity capabilities and adds a new max reasoning intensity and ultra mode, while Terra performs close to GPT-5.5 at roughly half the price and Luna is positioned as the lowest-cost option. This release signals that OpenAI is increasingly selling AI on economics as well as raw intelligence, with tiered pricing that could reshape how developers and enterprises choose models for different workloads. The limited, government-influenced rollout also highlights growing regulatory involvement in how frontier models reach the public. The preview is initially available only to a small number of trusted partners via the API and Codex, and OpenAI describes this as a short-term step taken at the request of the US government, with plans to expand to ChatGPT and Codex over the coming weeks. Sol's new max reasoning intensity and ultra mode suggest higher compute and cost tiers for the most demanding tasks.
 
-rss · TechCrunch AI · Sep 21, 20:15
+telegram · zaihuapd · Sep 22, 18:04
 
-**Background**: OpenAI is a leading AI lab whose models are increasingly used to attack open problems in mathematics, a field where results are typically verified by peer review and formal proof. The Institute for Advanced Study in Princeton is a renowned independent research institution, and hosting the advisory group there is meant to lend the effort academic credibility. Open problems are long-standing unsolved questions that mathematicians consider important but have not yet resolved.
+**Background**: OpenAI's GPT series is a family of large language models that power ChatGPT and developer APIs, with each numbered generation typically bringing improved reasoning and coding abilities. Codex is OpenAI's AI coding agent, released in April 2025 as Codex CLI and available through ChatGPT's web app, a desktop app, and IDE integrations. The tiered naming (Sol, Terra, Luna) reflects a broader industry trend of offering multiple model sizes at different price and performance points.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/">Advisory Group on Mathematics and Artificial Intelligence | OpenAI</a></li>
-<li><a href="https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/">OpenAI forms math advisory group as its AI resolves more than 100 open problems | TechCrunch</a></li>
-<li><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances in mathematics and theoretical computer science | OpenAI</a></li>
+<li><a href="https://www.linkedin.com/posts/zumnex_previewing-gpt56-sol-terra-and-luna-activity-7476351889111056385-YX8J">OpenAI GPT - 5 . 6 Preview: Sol , Terra , Luna Models Launched | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">OpenAI Codex (AI agent) - Wikipedia</a></li>
+<li><a href="https://www.aiformortals.co/blog/openai-gpt-5-6-limited-preview">OpenAI 's GPT - 5 . 6 Is Here, but Only a Handful Can Use It</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Discussion on r/mathematics largely echoed OpenAI's own framing, focusing on the advisory group's stated purpose of guiding the review and communication of emerging AI results. Some commentators, cited in broader coverage, argue that recent AI mathematical breakthroughs consist of clever recombination of existing ideas rather than the development of truly novel theory.
+**Discussion**: Early online reactions suggest genuine enthusiasm, with one widely shared comment saying users are "genuinely not disappointed by a new OpenAI release" for once. Discussion also emphasizes that the three tiers make clear AI is increasingly being sold on economics rather than just intelligence.
 
-**Tags**: `#OpenAI`, `#AI for Mathematics`, `#Research Breakthrough`, `#AI Safety`, `#Mathematical Discovery`
+**Tags**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#API`, `#Codex`
 
 ---
 
 <a id="item-3"></a>
-## [OpenAI Begins Limited Preview of GPT-5.6 Series: Sol, Terra, Luna](https://t.me/zaihuapd/43990) ⭐️ 9.0/10
+## [vLLM v0.30.0 ships 762 commits, new models, Fast Start weight cache](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
 
-OpenAI has started a limited preview of its GPT-5.6 model family, which includes three tiers: the flagship Sol, the balanced Terra, and the low-cost Luna. The preview is initially available only to a small group of trusted partners through the API and Codex, with broader rollout to ChatGPT and Codex planned in the coming weeks. This is a major flagship model release from OpenAI, with Sol claiming stronger coding, biology, and cybersecurity capabilities that could reshape developer workflows and security research. The government-influenced limited rollout also signals a new era of regulatory involvement in frontier AI deployment. Sol introduces new 'max' reasoning intensity and an 'ultra' mode, Terra is roughly twice as cheap as GPT-5.5 while performing close to it, and Luna is positioned as the lowest-cost option. OpenAI describes the limited preview as a short-term step taken at the request of the US government, with participation shared with the government before broader release.
-
-telegram · zaihuapd · Sep 22, 18:04
-
-**Background**: GPT-5.6 is the latest iteration of OpenAI's flagship large language model series, following GPT-5.5. Codex is OpenAI's AI coding agent, released in April 2025, which can write code and fix bugs across ChatGPT, CLI, desktop, and IDE integrations. The tiered naming (Sol, Terra, Luna) reflects a strategy of offering different price-performance tradeoffs for different use cases.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.businessinsider.com/openai-gpt-5-6-limited-preview-us-government-ai-security-2026-6">OpenAI Launches Limited Preview of GPT-5.6 at US Government's Request - Business Insider</a></li>
-<li><a href="https://www.cybersecuritydive.com/news/openai-model-government-limit-request/823966/">OpenAI voluntarily limits new AI models at government’s request | Cybersecurity Dive</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">OpenAI Codex (AI agent)</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#limited preview`, `#API`
-
----
-
-<a id="item-4"></a>
-## [vLLM v0.30.0 ships Fast Start weight cache and new model support](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
-
-vLLM released v0.30.0, a major update with 762 commits from 315 contributors (104 of them new). The release adds a persistent per-GPU weight-cache daemon called Fast Start, new model architectures such as DeepSeek-V4.1-Flash, DeepSeek-V4-Flash-Vision-Exp, GLM-5.3-Flash, K2-Horizon, Cohere Compass and Bailing V3 VL, plus Gumbel-max watermarking, the HiSparse host-resident KV tier, and numerous performance optimizations. vLLM is one of the most widely used open-source LLM inference and serving engines, so its releases directly shape how companies and researchers deploy models in production. Fast Start can cut engine restart time dramatically, and the broad new model coverage means users can serve the latest architectures without waiting for third-party forks or patches. Fast Start keeps post-quantized, TP-sharded weights in GPU memory and remaps them over CUDA IPC via `--load-format ipc_cache` instead of reloading from disk, now covering FP4 checkpoints and multi-node TP. Other notable items include dual-batch overlap with FULL CUDA graphs, adaptive speculative-decoding verification, MXFP8 KV storage for DeepSeek-V4.1-Flash on SM100, and targeted online quantization through `quantization_config.targets`.
+vLLM released v0.30.0, a major update containing 762 commits from 315 contributors (104 of them new), adding support for models such as DeepSeek-V4.1-Flash, DeepSeek-V4-Flash-Vision-Exp, GLM-5.3-Flash, K2-Horizon, Cohere Compass, Bailing V3 VL and Nanbeige4.2. The release also introduces Fast Start, a persistent per-GPU weight-cache daemon that keeps post-quantized, TP-sharded weights in GPU memory so engines can restart via CUDA IPC with --load-format ipc_cache instead of reloading from disk. As one of the most widely used open-source LLM inference and serving engines, vLLM's model coverage and performance features directly shape what the AI infrastructure community can deploy, and Fast Start plus the new quantization and large-scale serving work could substantially cut restart latency and improve throughput for production deployments. The breadth of this release—spanning new model integrations, speculative decoding, watermarking and multi-node serving—affects both researchers and companies running LLMs at scale. Fast Start now covers FP4 checkpoints and multi-node tensor parallelism, while other highlights include Gumbel-max watermarking with per-request opt-out and speculative-decoding compatibility, HiSparse host-resident KV tiering for sparse-MLA decode, and Model Runner V2 improvements such as dual-batch overlap and reduced graph-capture time (from 12s to 2s on H200). Quantization gains include targeted online quantization via quantization_config.targets and FlashInfer CuTeDSL NVFP4 W4A16 becoming the default over Marlin on SM100/103.
 
 github · khluu · Sep 22, 05:20
 
-**Background**: vLLM is an open-source engine for high-throughput LLM inference and serving, known for techniques like PagedAttention that manage KV cache memory efficiently. Quantization formats such as MXFP8 and NVFP4 compress model weights to lower precision so they use less memory and run faster on modern GPUs like NVIDIA's Blackwell (SM100) generation. FlashMLA is DeepSeek's library of optimized multi-head latent attention kernels, and speculative decoding speeds up generation by having a small draft model propose tokens that a larger model verifies.
+**Background**: vLLM is an open-source framework for inference and serving of large language models, originally developed at UC Berkeley's Sky Computing Lab and centered on PagedAttention, a memory-management method for transformer key-value caches. It supports continuous batching, distributed inference, quantization and OpenAI-compatible APIs, and has grown into one of the most active open-source AI projects with contributions from over 2000 people. Features like MXFP8 (microscaling FP8) and FlashMLA (DeepSeek's optimized multi-head latent attention kernels) are low-precision and attention optimizations that vLLM integrates to run large models faster and with less memory.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.vllm.ai/en/latest/api/vllm/model_executor/model_loader/weight_cache/daemon/">daemon - vLLM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/VLLM">VLLM</a></li>
+<li><a href="https://github.com/vllm-project/vllm">GitHub - vllm-project/vllm: A high-throughput and memory ...</a></li>
 <li><a href="https://github.com/deepseek-ai/FlashMLA">GitHub - deepseek-ai/FlashMLA: FlashMLA: Efficient Multi-head Latent Attention Kernels · GitHub</a></li>
-<li><a href="https://barrahome-quantization-formats-and-cuda-compute-c34be9a.static.hf.space/">LLM Quantization Formats & CUDA Support Reference</a></li>
 
 </ul>
 </details>
@@ -119,247 +95,206 @@ github · khluu · Sep 22, 05:20
 
 ---
 
-<a id="item-5"></a>
-## [OpenAI's GPT-6 Astra Reportedly Cracks Long-Unsolved Enigma Message](https://www.cryptocellar.org/bgac/the-mvueh-break.html) ⭐️ 8.0/10
+<a id="item-4"></a>
+## [OpenAI GPT-6 Astra Reportedly Breaks Long-Unsolved 2005 Enigma Message](https://www.cryptocellar.org/bgac/the-mvueh-break.html) ⭐️ 8.0/10
 
-OpenAI's GPT-6 Astra reportedly decrypted an Enigma-encrypted message that had resisted solution since 2005, producing the plaintext 'BTTE UM ANGABE DES MARSQWEGES X BEFINDE MIQ IN X ROSENOW ROSENOW X SOFORT FUNKANTWORT X WASCHBBSCH'. The claim, published on cryptocellar.org, has drawn intense debate over how much of the work was truly autonomous. If verified, this would be a notable demonstration of a large language model tackling a real cryptanalysis problem that stumped human codebreakers for roughly two decades, reinforcing the trend of AI agents being applied to security and cryptography research. It also fuels the broader debate about AI autonomy, since the model reportedly wrote its own Enigma-simulating software rather than relying on existing tools. The decrypted text contains apparent misspellings and German military telegraph conventions, translating roughly to a request to specify a march route, a location report from Rosenow, and a demand for an immediate radio reply. Skeptics note that Astra reportedly developed Python and C++ Enigma-simulator software to do the work, raising questions about how novel that code was and how much of the cracking was offloaded to conventional computation.
+OpenAI's GPT-6 Astra reportedly decrypted a historic Enigma-encrypted message that had resisted solution since 2005, with the plaintext reading 'BTTE UM ANGABE DES MARSQWEGES X BEFINDE MIQ IN X ROSENOW ROSENOW X SOFORT FUNKANTWORT X WASCHBBSCH.' The claim, posted on cryptocellar.org and discussed on Hacker News, has prompted independent replication attempts using other models such as Gemini 3.8 Flash. If verified, this marks a notable milestone in applying large language models to cryptanalysis, showing that modern AI can assist with problems that stumped human researchers and distributed computing projects for nearly two decades. It also fuels the broader debate about how much credit AI deserves when it relies on self-generated software tools to complete a task. The message was unusually stubborn because it used a completely different key from the rest of that day's traffic, and everyone had assumed it shared the daily key. Commenters note that Astra reportedly developed its own Python and C++ Enigma simulator software to aid the decryption, raising questions about how much of the process was genuinely autonomous versus offloaded to generated code.
 
 hackernews · sohkamyung · Sep 22, 13:52 · [Discussion](https://news.ycombinator.com/item?id=49801324)
 
-**Background**: The Enigma machine was a German rotor cipher device used heavily in World War II; its rotors advanced with each keypress so that every letter was encrypted with a different substitution, making it resistant to conventional cryptanalysis until Allied codebreakers exploited operational and procedural weaknesses. The message in question is a short, difficult ciphertext that had remained unsolved in the cryptography community since 2005. GPT-6 Astra is a large language model from OpenAI, described as its most aligned and capable model, with strong reasoning and computer-use abilities.
+**Background**: The Enigma machine was a rotor-based cipher device used by Nazi Germany during World War II; its codes were famously broken by Alan Turing and others at Bletchley Park. Some individual messages remained unsolved for decades, and projects like Enigma@home used distributed computing to attack them. GPT-6 Astra is OpenAI's most capable model, released to approved users on September 3, 2026, and available via the OpenAI API, Microsoft Azure, and Amazon Bedrock.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Enigma_machine">Enigma machine - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT-6 Astra - Wikipedia</a></li>
-<li><a href="https://openai.com/index/gpt-6-astra/">GPT-6 Astra: A new generation of intelligence | OpenAI</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49801324">OpenAI GPT–6 Astra breaks Enigma message that... | Hacker News</a></li>
+<li><a href="https://www.theneuron.ai/explainer-articles/how-ai-cracked-85-year-old-wwii-enigma-message/">How AI Cracked an 85-Year-Old WWII Enigma Message | The Neuron</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT - 6 Astra - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were sharply divided: one reported that Gemini 3.8 Flash solved the same ciphertext in about 45 minutes in a non-steered run, undercutting the uniqueness of the feat, while another argued that 'did it entirely on its own' is incongruous with the model generating its own Enigma-simulator software, since much of the work may be offloaded to conventional code. Others noted the message's rough translation and joked that the breakthrough came a bit late for the war effort.
+**Discussion**: Commenters provided the actual decrypted message and its approximate translation, and one user reported that Gemini 3.8 Flash solved the decryption in about 45 minutes in a non-steered run. Others were skeptical, arguing that 'did it entirely on its own' is incongruous with Astra developing its own Enigma simulator software, and questioning how much of the breaking process was offloaded to that code.
 
-**Tags**: `#AI`, `#cryptography`, `#Enigma`, `#OpenAI`, `#language models`
+**Tags**: `#AI`, `#cryptography`, `#Enigma`, `#OpenAI`, `#Hacker News`
+
+---
+
+<a id="item-5"></a>
+## [ShinyHunters Claims Breach of FBI Employee and Applicant Data](https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/) ⭐️ 8.0/10
+
+The cybercriminal group ShinyHunters claims it breached multiple FBI-related services and stole data on all FBI employees and job applicants, providing a sample of roughly 5,000 purported employee records that reportedly include names, home addresses, phone numbers, and family member details such as spouses. The FBI has not confirmed the claim and says it is investigating. If the data is authentic, the leaked information could be used to track, harass, or threaten FBI employees and their families, and it could pose serious security and counterintelligence risks to U.S. law enforcement and intelligence systems. The claim also underscores how even top-tier government agencies struggle to protect large personnel databases from persistent criminal and state-linked actors. The sample of about 5,000 records reportedly includes names, home addresses, phone numbers, and details about spouses and other family members, and ShinyHunters has hinted it may pursue coercion rather than financially motivated extortion against the FBI. The group has also posted a defacement reading 'this site has been seized by ShinyHunters,' though no independent verification of the full dataset has been provided.
+
+hackernews · spenvo · Sep 22, 17:46 · [Discussion](https://news.ycombinator.com/item?id=49805278)
+
+**Background**: ShinyHunters is a black-hat criminal hacker and extortion group active since 2019 that has been linked to numerous large-scale data breaches, typically stealing data through vulnerabilities and then demanding payment. The FBI is the principal federal law enforcement agency of the United States, and its employees' personal data is considered highly sensitive because of the counterintelligence risks involved. This claim follows a history of major breaches of U.S. government personnel records, including the 2015 Office of Personnel Management hack that exposed data on about 22.1 million people.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ShinyHunters">ShinyHunters - Wikipedia</a></li>
+<li><a href="https://techcrunch.com/2026/09/22/hacking-group-shinyhunters-claims-it-breached-the-fbi-stole-agents-and-applicants-data/">Hacking group ShinyHunters claims it breached the FBI, stole ...</a></li>
+<li><a href="https://economictimes.indiatimes.com/us/news/shinyhunters-claims-hacking-fbi-data-all-you-need-to-know-about-the-cybercriminal-group-and-its-other-victims/articleshow/134435171.cms">ShinyHunters claims hacking FBI data: All you need to know ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters were largely skeptical and resigned, with one noting that no one seems capable of keeping a large database safe and pointing to the 2015 OPM breach of 22.1 million U.S. government employee records. Others joked about the incident, suggesting ShinyHunters missed a chance to claim an autonomous AI agent swarm did the hack, or referencing Battlestar Galactica's networked-computer vulnerability, while some questioned the group's stated non-financial motives.
+
+**Tags**: `#cybersecurity`, `#data-breach`, `#FBI`, `#hacking`, `#privacy`
 
 ---
 
 <a id="item-6"></a>
-## [FoxPro revived with Rust/WASM runtime](https://foxscript.org/) ⭐️ 8.0/10
+## [Trail of Bits Calls SAML a Fractal of Bad Design](https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/) ⭐️ 8.0/10
 
-A project called FoxScript has revived Visual FoxPro by implementing a new runtime in Rust compiled to WebAssembly, maintaining compatibility with legacy VFP9 code while adding modern features like lambdas, JSON support, and an HTTP server. The runtime is checked against the real vfp9.exe, lifts the 2 GB table size limit, and still loads old 32-bit .fll add-ins. Many businesses still rely on long-lived Visual FoxPro applications that are costly to rewrite, so this revival offers a practical path to modernize and extend them without a full migration. It also demonstrates how legacy languages can be preserved and enhanced using modern toolchains like Rust and WebAssembly. The runtime is MIT-licensed, but reports are not yet implemented and builds are unsigned. It maintains compatibility with legacy 32-bit .fll add-ins and lifts the 2 GB table size limit, though security concerns about the Database Container (DBC) design remain unaddressed.
-
-hackernews · boredjohnny · Sep 22, 21:00 · [Discussion](https://news.ycombinator.com/item?id=49808023)
-
-**Background**: Visual FoxPro is a data-centric, object-oriented programming language and IDE developed by Microsoft, derived from FoxPro and FoxBASE. Version 9.0, released in 2004 and updated in 2007, was the final version, with support ending in 2015. Despite this, many business applications still run on Visual FoxPro, often because rewriting them is too risky or expensive. WebAssembly is a binary instruction format that allows code written in languages like Rust to run efficiently in various environments.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Visual_FoxPro">Visual FoxPro</a></li>
-<li><a href="https://fileproinfo.com/file-type/fll">FLL File Extension | Associated Programs | Free Online... - FileProInfo</a></li>
-<li><a href="https://dev.to/wasmer/embedding-webassembly-in-your-rust-application-33n4">Embedding WebAssembly in your Rust application - DEV Community</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters highlighted that Visual FoxPro remains critical in niche industries with significant revenue, and shared experiences of its use in medical and real estate applications. A major concern raised was a security hole in the Database Container (DBC) design, where stored procedures can execute arbitrary FoxPro code, including Win32 calls, and are stored as plain text. Others reminisced about the ease of building CRUD applications in FoxPro and the business impact it had.
-
-**Tags**: `#Visual FoxPro`, `#legacy systems`, `#Rust`, `#WebAssembly`, `#language revival`
-
----
-
-<a id="item-7"></a>
-## [ShinyHunters claims FBI hack, says it has data on all employees](https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/) ⭐️ 8.0/10
-
-The extortion group ShinyHunters claims it breached multiple FBI-related services and exfiltrated data on all FBI employees and job applicants, providing a sample of roughly 5,000 alleged employee records that reportedly include names, home addresses, phone numbers, and family member details. The FBI has not confirmed the claim, and the group says its motive is not financial, describing its planned action as 'coercion' rather than extortion. If the data is genuine, the leak could be used to track, harass, or threaten FBI employees and their families, posing serious security and counterintelligence risks to US law enforcement and intelligence systems. The incident also highlights how even high-value government targets remain vulnerable to criminal extortion groups, echoing past large-scale breaches of federal personnel data. According to BleepingComputer, ShinyHunters claims it breached FBI systems by exploiting a new Oracle PeopleSoft zero-day vulnerability to access internal services and steal sensitive employee and applicant data. The group also defaced a website with a message reading 'this site has been seized by ShinyHunters,' though the authenticity of the sample data and the claimed zero-day has not been independently verified.
-
-hackernews · spenvo · Sep 22, 17:46 · [Discussion](https://news.ycombinator.com/item?id=49805278)
-
-**Background**: ShinyHunters is a black-hat criminal hacking and extortion group active since 2019, known for stealing and selling large databases from hundreds of companies. Oracle PeopleSoft is widely used enterprise HR and personnel management software, making it an attractive target for attackers seeking employee records. The 2015 Office of Personnel Management breach, which exposed records of about 22.1 million US government employees, is a key precedent for the national-security stakes of such leaks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/">ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ShinyHunters">ShinyHunters - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters were largely skeptical and darkly humorous, with some noting that no large database seems safe and citing the 2015 OPM breach as evidence that state actors likely already hold such data. Others mocked the group's non-financial framing, joked about AI agent swarms and Battlestar Galactica's unnetworked ships, and shared links to ShinyHunters' own 'PSA' text and a defacement screenshot.
-
-**Tags**: `#cybersecurity`, `#data-breach`, `#FBI`, `#ShinyHunters`, `#government-security`
-
----
-
-<a id="item-8"></a>
-## [Trail of Bits Critiques SAML as a 'Fractal of Bad Design'](https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/) ⭐️ 8.0/10
-
-Trail of Bits published a blog post titled 'SAML: A fractal of bad design,' delivering a deep technical critique of the Security Assertion Markup Language's flawed architecture and its persistent security pitfalls. The post argues that SAML's XML-based design is fundamentally unsuited to authentication, even as it remains widely deployed for enterprise single sign-on alongside the newer OIDC protocol. SAML underpins enterprise SSO for countless organizations, so its design flaws translate directly into real-world attack surface, including XML signature wrapping and improper assertion validation. The critique matters because teams must decide whether to keep supporting SAML for enterprise customers or migrate to OIDC, and the article shows that neither choice is free of risk. The article highlights that SAML's complexity stems from XML's structural flexibility, which enables attacks like XML Signature Wrapping that trick applications into processing unauthenticated data while passing signature validation. Community commenters added that early C implementations of XML signature validation would accept HMAC signatures using attacker-controlled passwords or validate signatures against web PKI, meaning an attacker could sign a SAML document with their own TLS key.
+Trail of Bits published a blog post titled "SAML: A fractal of bad design," arguing that the SAML authentication protocol is fundamentally flawed rather than merely misconfigured. The post sparked a substantial Hacker News discussion with 302 points and 156 comments, where engineers shared concrete SAML vulnerabilities and compared it to OIDC. SAML remains the dominant enterprise single sign-on protocol, so its design flaws directly affect the security of countless organizations and the engineers who must implement it. The discussion highlights a broader industry shift toward OIDC while acknowledging that SAML's enterprise-specific features, such as IdP-initiated flow, keep it entrenched. The article and discussion point to concrete issues like XML Signature Wrapping (XSW) attacks, where signature verification is separated from the rest of the payload, and historical flaws in C XML signature libraries that accepted attacker-controlled HMAC keys or TLS certificates. Commenters also note that OIDC has its own problems, including JWT algorithm confusion, "none" algorithm attacks, and missing audience checks.
 
 hackernews · aray07 · Sep 22, 18:57 · [Discussion](https://news.ycombinator.com/item?id=49806335)
 
-**Background**: SAML (Security Assertion Markup Language) is an XML-based open standard for exchanging authentication and authorization data between identity providers and service providers, widely used for enterprise single sign-on. OIDC (OpenID Connect) is a newer identity layer built on OAuth 2.0 that uses JSON Web Tokens instead of XML, and is often positioned as SAML's modern replacement. XML Signature Wrapping is a class of attack that exploits XML's ability to represent the same data in multiple structural forms, allowing a valid signature to cover one element while the application processes another.
+**Background**: SAML (Security Assertion Markup Language) is an XML-based open standard for exchanging authentication and authorization data between identity providers (IdPs) and service providers (SPs), enabling single sign-on across enterprise applications. It relies on XML Digital Signatures (XML-DSig) to establish trust, but the complexity of XML parsing and signature validation has led to recurring vulnerabilities. OIDC (OpenID Connect) is a newer authentication layer built on OAuth 2.0 that uses JSON Web Tokens (JWTs) instead of XML, and is often presented as a simpler alternative.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://workos.com/blog/common-saml-security-vulnerabilities">Common SAML security vulnerabilities and how to... — WorkOS</a></li>
-<li><a href="https://www.ibm.com/think/topics/xml-signature-wrapping">What is XML Signature Wrapping ? | IBM</a></li>
+<li><a href="https://workos.com/guide/common-saml-security-vulnerabilities">Common SAML security vulnerabilities and how to defend against them — WorkOS Guides</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SAML">SAML - Wikipedia</a></li>
 <li><a href="https://fusionauth.io/blog/saml-and-oidc-difference">OIDC vs SAML : What's the Difference Between OpenID Connect and...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely agreed with the critique but pushed back on the article's one-sided framing, noting that OIDC has its own vulnerabilities such as JWT algorithm confusion, 'none' algorithm attacks, and missing audience checks. Several argued SAML still offers enterprise-specific features OIDC lacks, most notably IdP-initiated flow, and that vendors selling to enterprises should support both protocols while also dealing with SCIM.
+**Discussion**: Commenters largely agree with the critique but push back on the lack of an equivalent analysis of OIDC, noting that OIDC suffers from JWT algorithm confusion, "none" algorithm attacks, and inconsistent spec support. Several engineers argue SAML still has enterprise-specific advantages like IdP-initiated flow and a more stable commonly-implemented subset, while others share horror stories about XML signature libraries accepting attacker-controlled keys. A recurring theme is that both protocols are dwarfed by the effort spent on SCIM provisioning.
 
-**Tags**: `#SAML`, `#authentication`, `#security`, `#XML`, `#OIDC`
+**Tags**: `#SAML`, `#authentication`, `#security`, `#OIDC`, `#enterprise SSO`
 
 ---
 
-<a id="item-9"></a>
-## [WordPress Patches Unauthenticated Path Traversal Enabling Conditional RCE](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [WordPress Patches Unauthenticated Path Traversal That Can Lead to RCE](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp) ⭐️ 8.0/10
 
-On September 22, 2026, the WordPress Security Team released WordPress 7.1.2 to fix a critical unauthenticated path traversal issue in page-template resolution that can lead to conditional remote code execution, and backported the fix to every branch back to WordPress 4.7. The vulnerability was reported by Robert Ressl and is tracked in the official WordPress security advisory GHSA-7hp8-65ch-5whp. Because the flaw is unauthenticated, any attacker can trigger it without logging in, and WordPress powers a huge share of the web, so millions of sites running versions as old as 4.7 are potentially exposed. The conditional nature of the RCE means exploitation depends on specific server configurations, but the broad backport signals how seriously the security team views the risk. The bug lives in WordPress's page-template resolution logic and is described as an unauthenticated path traversal leading to conditional remote code execution; the fix is included in WordPress 7.1.2 and in security backports for all affected branches since 4.7. Users are advised to update immediately, and about one-third of installs are reportedly not yet on the recent 7.x branch.
+WordPress released a security fix for an unauthenticated path traversal vulnerability (CVE-2026-87902) in WordPress Core that can lead to remote code execution under certain conditions. The fix was shipped in WordPress 7.1.2 and backported to all branches back to version 4.7 as a courtesy to users on older releases. Because WordPress powers a huge share of the web and the flaw is unauthenticated, any affected site could be attacked without login credentials, making rapid patching critical. The fact that roughly a third of installs are not on the recent 7.x branch means many sites remain exposed until they update. The vulnerability allows an unauthenticated remote attacker to perform path traversal and local file inclusion via theme template resolution functions such as locate_template and get_page_template, which can be chained with environments like pearcmd.php to achieve full RCE. Every release from 4.7.0 through 7.1.1 is affected, and exploitation requires additional server conditions such as the official PHP Docker image or default cPanel setups on PHP below 8.5.
 
 hackernews · vntok · Sep 22, 16:33 · [Discussion](https://news.ycombinator.com/item?id=49803959)
 
-**Background**: A path traversal vulnerability lets an attacker manipulate file paths (for example with ../ sequences) to access or include files outside the intended directory. In WordPress, page templates determine which theme file renders a given page, so if an attacker can influence that resolution, they may be able to load unintended files and, under certain conditions, execute code. WordPress is a free, open-source content management system that powers a large fraction of all websites, which is why core security flaws attract widespread attention.
+**Background**: A path traversal (or directory traversal) attack exploits insufficient validation of user-supplied file names so that sequences like ../ can escape the intended directory and reach other files on the server. Remote code execution (RCE) is a class of vulnerability where an attacker can run arbitrary code on a target machine over the network, often the most severe outcome of a web flaw. In WordPress, theme template resolution decides which PHP file to load for a given page, so if an attacker can influence that path, they may trick the site into including a malicious or unintended local PHP file.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.wordfence.com/blog/2026/09/psa-critical-unauthenticated-path-traversal-vulnerability-patched-in-wordpress-core/">PSA: Critical Unauthenticated Path Traversal Vulnerability Patched in...</a></li>
-<li><a href="https://wordpress.org/documentation/wordpress-version/version-7-1-2/">Version 7.1.2 – Documentation – WordPress .org</a></li>
-<li><a href="https://mariushosting.com/synology-ugreen-nas-wordpress-7-1-2-released/">Synology & UGREEN NAS WordPress 7.1.2 Released – Marius Hosting</a></li>
+<li><a href="https://github.com/rabakuku/CVE-2026-87902-A-working-PoC-for-WordPress-s-critical-path-traversal">rabakuku/CVE-2026-87902-A-working-PoC-for- WordPress -s-critical...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Path_traversal_vulnerability">Path traversal vulnerability</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that path traversal bugs are a recurring problem across many programs, with one developer pointing to their libpathrs project as a fix because standard libraries lack proper file-handling abstractions. Others criticized WordPress's long history of exploitability and its large install base, while some shared relief at having migrated away from WordPress to static site generators or Rust-based frameworks.
+**Discussion**: Commenters expressed frustration with WordPress's long history of exploitable vulnerabilities and asked for a simple quick fix for older installs, while noting that about a third of installs are not on the recent 7.x branch. One commenter highlighted that this bug pattern is common across languages and pointed to libpathrs as an attempt to provide safer file-handling abstractions, and another celebrated having migrated away from WordPress to statically hosted Hugo templates.
 
 **Tags**: `#WordPress`, `#security`, `#vulnerability`, `#RCE`, `#path traversal`
 
 ---
 
-<a id="item-10"></a>
-## [Pentagon report links AI overreliance to deadly Iran school strike](https://www.bloomberg.com/graphics/2026-iran-school-attack/) ⭐️ 8.0/10
+<a id="item-8"></a>
+## [Pentagon Blames AI Overreliance for Deadly Iran School Missile Strike](https://www.bloomberg.com/graphics/2026-iran-school-attack/) ⭐️ 8.0/10
 
-A Pentagon investigation, reported by Bloomberg, concluded that overreliance on an AI targeting tool built by Palantir, combined with staff cuts and rushed targeting procedures, contributed to a U.S. missile strike on a girls' school in Minab, Iran, that killed 123 children. The report found the U.S. "failed in its obligation to do everything feasible to verify" the school was a military objective, and that the failure "went beyond mere negligence." This is one of the most consequential documented cases of AI-assisted military targeting causing mass civilian casualties, and it raises urgent questions about accountability, automation bias, and who bears responsibility when AI-informed decisions go wrong. It could reshape policy debates over human oversight of military AI systems and the procurement of tools like Palantir's. Officials said some Pentagon personnel knew within hours that the U.S. had hit the school, and the investigation described a cascade of preventable failures. Commentators note that the underlying problem may be automation bias — excessive trust in AI outputs — meaning more accurate models could actually worsen overreliance, and fixes must live in workflow and interface design rather than the model layer.
+A Pentagon report has concluded that overreliance on AI contributed to a U.S. missile strike on an Iranian school, finding that the U.S. "failed in its obligation to do everything feasible to verify" the target was a military objective and that the failure "went beyond mere negligence." The report states the U.S. directed strikes at the school building while aware of a substantial risk of hitting a civilian object. This is one of the first official acknowledgments that AI-assisted targeting contributed to a mass-casualty civilian incident, potentially reshaping how militaries justify and oversee AI in lethal decision-making. It raises urgent questions about accountability, human oversight, and whether AI is being used as a scapegoat for human or institutional failures. The report's language suggests the failure was not merely technical but reckless, and community discussion notes that AI may have enabled incompetent operators to cause more damage than they otherwise would have. Critics also point to a separate incident where an AI-assisted intelligence report nearly led the U.S. to board a Chinese ship suspected of carrying nuclear weapons components.
 
 hackernews · devonnull · Sep 22, 19:03 · [Discussion](https://news.ycombinator.com/item?id=49806430)
 
-**Background**: Militaries increasingly use AI systems to sift through massive datasets, identify potential targets, and accelerate strike decisions; well-known examples include Israel's Lavender system and the U.S. Project Maven. Accountability in autonomous or AI-assisted weapons is legally and ethically complex, since it requires identifying who is responsible, under which norms, and before which authority. Automation bias is a documented human-factors phenomenon in which operators over-trust automated recommendations, especially under time pressure or staffing shortages.
+**Background**: The Pentagon has been expanding its use of AI tools, including Palantir's Maven system, to generate, locate, and prioritize military targets in Iran, and even to evaluate whether strikes are legal. Research on AI decision-support systems warns that overreliance can degrade human judgment, reduce risk-assessment activity in the brain, and erode commanders' battlefield intuition. International law requires militaries to take constant care to spare civilians and to verify targets before striking.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477">Pentagon Investigators Say Overreliance on Palantir AI Tech...</a></li>
-<li><a href="https://thetesserapress.com/articles/pentagon-says-overreliance-on-ai-contributed-to-missile-strike-on-iran">Pentagon Links Overreliance on AI to Iran School Missile Strike...</a></li>
-<li><a href="https://www.militarytimes.com/news/your-military/2026/09/16/ai-military-targeting-may-move-faster-than-humans-can-authenticate-critics-warn/">AI military targeting may move faster than humans can authenticate...</a></li>
+<li><a href="https://www.brennancenter.org/our-work/research-reports/militarys-use-ai-explained">The Military’s Use of AI, Explained - Brennan Center for ...</a></li>
+<li><a href="https://www.militarytimes.com/news/your-military/2026/09/16/ai-military-targeting-may-move-faster-than-humans-can-authenticate-critics-warn/">AI military targeting may move faster than humans can ...</a></li>
+<li><a href="https://www.military.com/feature/2026/03/22/pentagon-expands-palantirs-role-ai-contract.html">Pentagon Expands Use of Palantir AI in New Defense Contract</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely pushed back on framing AI as the culprit, arguing it serves as a scapegoat that absolves humans of responsibility; several noted the deeper problem is people offloading targeting work to AI or being pressured to do so. Others criticized sanitized language like "deadliest American military targeting error" for mass murder, and pointed to a broader pattern of demanding a fall guy for criminal acts.
+**Discussion**: Hacker News commenters largely debated whether AI is a scapegoat for military incompetence or an enabler that lets incompetent people do more damage, with several arguing both can be true. Some pointed to a separate AI-assisted intelligence incident as more compelling evidence of direct AI impact, while others demanded criminal accountability for the deaths of hundreds of schoolgirls.
 
-**Tags**: `#AI ethics`, `#military AI`, `#accountability`, `#policy`, `#news`
+**Tags**: `#AI ethics`, `#military AI`, `#accountability`, `#AI safety`, `#geopolitics`
+
+---
+
+<a id="item-9"></a>
+## [Artificial Analysis benchmarks Claude Opus 5.5 across reasoning settings](https://artificialanalysis.ai/models/claude-opus-5-5) ⭐️ 8.0/10
+
+Artificial Analysis published intelligence, performance, and price evaluations of Anthropic's Claude Opus 5.5, with separate pages for its max, xhigh, and medium (default) reasoning settings. The analysis shows roughly half the cost per task compared to Opus 5 when comparing high-effort settings, and the release drew 319 points and 100 comments of community discussion. The evaluation gives AI/ML practitioners concrete cost-efficiency data for choosing between reasoning settings, and it fuels a broader debate about whether proprietary frontier models justify their price when open-weight alternatives are close in quality. It also raises questions about benchmark reliability, since providers have incentives to showcase peak performance right after launch. The max reasoning setting can exhaust its 128,000-token budget while still reasoning, as Simon Willison reported failing twice to generate an SVG of a pelican riding a bicycle. The evaluation is hosted on Artificial Analysis, which benchmarks models across intelligence, price, output speed, and latency, and the medium setting is the default.
+
+hackernews · theanonymousone · Sep 22, 16:51 · [Discussion](https://news.ycombinator.com/item?id=49804316)
+
+**Background**: Artificial Analysis is an independent benchmarking platform that compares AI models and API providers across quality, price, output speed, and latency. Claude Opus 5.5 is Anthropic's latest flagship model, offering configurable reasoning effort levels from low to max, where higher settings spend more tokens on internal reasoning before answering. Open-weight models are those whose trained weights can be downloaded and self-hosted, often at much lower cost than proprietary APIs.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://artificialanalysis.ai/">AI Model & API Providers Analysis | Artificial Analysis</a></li>
+<li><a href="https://artificialanalysis-ai.nproxy.org/methodology">Language Model Benchmarking Methodology | Artificial Analysis</a></li>
+<li><a href="https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5">What's new in Claude Opus 5.5 - Claude Platform Docs</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters highlighted practical issues: Simon Willison noted the max setting ran out of its 128,000-token budget mid-reasoning, and breckenedge worried that providers' benchmark scores regress weeks after launch. hglaser praised the roughly halved cost per task versus Opus 5, while cmiles8 argued open-weight models are nearly as good at about 1/100th the price, and linuxrebe1 said Opus 4.8 followed instructions better than Opus 5.
+
+**Tags**: `#AI`, `#LLM`, `#Claude`, `#Benchmarking`, `#Model Evaluation`
+
+---
+
+<a id="item-10"></a>
+## [TypeSafe AI unveils Jev, a 'System One' decision model returning typed probabilistic outputs](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
+
+TypeSafe AI, a San Francisco lab that emerged from stealth on September 15, 2026 with $40M in seed funding, released Jev, its first 'System One' model, which accepts text or semi-structured 'state' input but returns floating-point numbers instead of generated text. Jev answers three question types — Bernoulli-style yes/no ('Noul') questions, choice questions with a probability distribution over options, and score questions along a numeric range — and is priced at $0.042 per million input tokens with output free. Jev represents a meaningful architectural shift away from free-form text generation toward typed, software-consumable decisions, which could simplify pipelines that currently spend significant code parsing and validating LLM prose. If the paradigm gains traction, it could reshape how classification, spam detection, labeling, prioritization, and search reranking are built into applications. Jev evaluates multiple questions against a single state in parallel, so sending many questions takes roughly the same time as sending one, and its documentation notes current weaknesses with numbers, dates, and adversarial content. A notable caveat is that Jev offers no textual justification for its decisions — you only get back a floating-point number, making it an even deeper black box than conventional LLMs.
+
+rss · Simon Willison · Sep 21, 23:09
+
+**Background**: Most large language models today take text in and produce text out, which means developers must write extra code to parse, validate, and repair that output before software can act on it. TypeSafe's 'System One' framing contrasts with slower, deliberative 'System Two' reasoning, positioning Jev as a fast, cheap function call that turns unstructured state into typed probabilistic decisions. The naming debate — Simon Willison and Maggie Appleton prefer 'decision models' — reflects the community's effort to define this emerging category.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Introducing System One Models & Jev - TypeSafe AI Blog</a></li>
+<li><a href="https://flaviocopes.com/jev/">A deep dive into Jev, TypeSafe's System One model</a></li>
+<li><a href="https://www.langchain.com/blog/building-a-harness-with-jev">What Is Jev? A Guide to TypeSafe AI’s System One Model</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commentators broadly welcomed the decision-model framing, with Simon Willison and Maggie Appleton favoring the term 'decision models' over 'System One', and TypeSafe's CEO confirming on Hacker News that 'Noul' derives from the Bernoulli distribution. A recurring concern is the black-box nature of Jev: users cannot see which content signals drove a decision, and early evidence for where it outperforms conventional LLMs is still thin.
+
+**Tags**: `#LLM`, `#AI/ML`, `#decision-models`, `#TypeSafe`, `#probabilistic-inference`
 
 ---
 
 <a id="item-11"></a>
-## [TypeSafe AI Unveils Jev, a 'System One' Decision Model](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
+## [Cloudflare Python Workers reach general availability after two-year preview](https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/) ⭐️ 8.0/10
 
-TypeSafe AI has released Jev, the first of its new 'System One' model category, which accepts text input but returns typed probabilistic outputs — categories, yes/no answers, ratings, and confidence scores — instead of generated text. Jev charges only for input tokens at $0.042 per million, making it cheaper than OpenAI's GPT-5 Nano. By reframing LLM-style inference as a decision function rather than a text generator, Jev could reshape how developers build classification, spam detection, labeling, and ranking systems, offering dramatically lower cost and latency than traditional LLMs. It also signals a broader industry shift toward specialized, task-specific models that integrate directly into software pipelines. Jev supports three question types: 'Noul' yes/no questions returning a Bernoulli-style confidence between 0 and 1, choice questions returning a probability distribution over provided options, and score questions returning a floating-point value along a numeric range. Questions are evaluated in parallel, but the model is currently weak on numbers, dates, and adversarial content, and it offers no explanation for its decisions.
+Cloudflare announced that Python Workers are now generally available, making Python a first-class, fully supported language on the Cloudflare Developer Platform after roughly two years in preview. The implementation runs Python compiled to WebAssembly via Pyodide inside Cloudflare's V8-based workerd runtime. This makes Python a first-class option on a major edge/serverless platform, letting Python developers deploy to Cloudflare's global network without rewriting code in JavaScript. It also signals serious investment in the Python and Pyodide ecosystems, since two Pyodide core maintainers are credited on the release. There are documented limitations: both multiprocessing and threading are non-functional in the WebAssembly VM, and Python Workers get only an ephemeral in-memory filesystem whose data is lost when the isolate is destroyed. Local development is handled by the pywrangler tool (published on PyPI as workers-py), which runs a full local simulation using a 123MB workerd binary.
 
-rss · Simon Willison · Sep 21, 23:09
+rss · Simon Willison · Sep 21, 22:25
 
-**Background**: Traditional large language models (LLMs) generate free-form text and are billed per input and output token, with output usually costing more. TypeSafe AI's 'System One' name borrows from Daniel Kahneman's distinction between fast intuitive thinking (System 1) and slow deliberate reasoning (System 2), positioning Jev as a fast, cheap decision layer rather than a reasoning engine. Jev is transformer-based but is explicitly not a language model, as it never produces prose.
+**Background**: Cloudflare Workers is a serverless platform that runs code at the network edge using V8 isolates rather than containers, which enables very fast cold starts. workerd is the open-source JavaScript/Wasm runtime that powers Workers, and Pyodide is a port of CPython to WebAssembly that lets Python run in constrained environments such as browsers. Python Workers combine these so that Python code executes inside the same edge runtime as JavaScript Workers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.marktechpost.com/2026/09/19/typesafe-ai-releases-jev/">TypeSafe AI Releases Jev: A System One Model ... - MarkTechPost</a></li>
-<li><a href="https://www.requesty.ai/blog/typesafe-jev-explained">TypeSafe Jev explained: how it works, LLM differences and... | Requesty</a></li>
-<li><a href="https://docs.llmgateway.io/features/system-one">Get typed , probabilistic decisions instead of generated text with the...</a></li>
+<li><a href="https://developers.cloudflare.com/workers/languages/python/stdlib/">Standard Library provided to Python Workers · Cloudflare Workers ...</a></li>
+<li><a href="https://github.com/cloudflare/workerd">workerd, Cloudflare's JavaScript/Wasm Runtime - GitHub How workerd, the Cloudflare Workers runtime, is built workerd Architecture: Navigating the Cloudflare Workers ... How Workers works - Cloudflare Docs How workerd, the Cloudflare Workers runtime, is built</a></li>
+<li><a href="https://github.com/pyodide/pyodide">GitHub - pyodide / pyodide : Pyodide is a Python distribution for the...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commentators, including Simon Willison and Maggie Appleton, have debated the naming, with Appleton preferring 'decision models' over 'System One models.' A Hacker News discussion confirmed that 'Noul' is short for Bernoulli, and some users expressed discomfort that Jev represents a further regression toward opaque black-box machine learning, since it returns only numbers with no justification.
+**Discussion**: The item was surfaced via Hacker News, but no specific comment content was provided, so no detailed community sentiment can be summarized.
 
-**Tags**: `#LLM`, `#AI Models`, `#Decision Models`, `#TypeSafe AI`, `#Probabilistic Inference`
+**Tags**: `#Cloudflare`, `#Python`, `#WebAssembly`, `#Serverless`, `#Edge Computing`
 
 ---
 
 <a id="item-12"></a>
-## [Xiaomi releases MiMo-V2.6 multimodal model with $3.5M RL training cost](https://www.reddit.com/r/MachineLearning/comments/1wn36d4/xiaomi_releases_mimov26_frontier_intelligence_all/) ⭐️ 8.0/10
-
-Xiaomi has released MiMo-V2.6, a frontier multimodal AI model whose total reinforcement learning training cost was disclosed as $3.5 million, accompanied by a live benchmark dashboard and a 'built in public' development approach. The MiMo-V2.6-Pro variant scores 46.32 on the Artificial Analysis Intelligence Index, surpassing Kimi K3 and Qwen3.8 Max to become the strongest open-source model to date. The disclosure of a concrete $3.5M RL training cost and a live benchmark dashboard brings unusual transparency to frontier model development, which is typically kept secret. If MiMo-V2.6-Pro truly leads open-source models, it could shift competitive dynamics among Chinese AI labs and give developers a strong new open-weight option. The MiMo-V2.6 series keeps the API pricing of the V2.5 series, and the lineup includes MiMo-V2.6-Pro, MiMo-V2.6-Flash, and MiMo-V2.6-Pro-UltraSpeed, with monthly or annual subscription plans available. The model is accessible through platforms such as OpenRouter, which lists eight Xiaomi models.
-
-reddit · r/MachineLearning · /u/we_are_mammals · Sep 22, 07:56
-
-**Background**: MiMo is Xiaomi's in-house large language model family, and V2.6 is its latest multimodal iteration capable of handling multiple data types such as text and images. Reinforcement learning (RL) is a training technique where a model learns from reward signals rather than labeled examples, and it is often computationally expensive, making the disclosed $3.5M cost a notable data point. The Artificial Analysis Intelligence Index is a composite benchmark that aggregates multiple evaluation tasks to rank model capability.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://mimo.xiaomi.com/mimo-v2-6">MiMo - V 2 . 6 | Xiaomi</a></li>
-<li><a href="https://openrouter.ai/xiaomi">Xiaomi API and Models | OpenRouter</a></li>
-<li><a href="https://mimo.mi.com/models/en-US/mimo-v2.6-pro">Xiaomi MiMo Home</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Machine Learning`, `#Multimodal`, `#Xiaomi`, `#Model Release`
-
----
-
-<a id="item-13"></a>
-## [Complex KDA Extends Kimi Delta Attention Expressivity](https://www.reddit.com/r/MachineLearning/comments/1wn5uv9/understanding_and_enhancing_kimi_delta_attention_r/) ⭐️ 8.0/10
-
-A new paper titled "Complex KDA: Understanding and Enhancing the Expressivity of Kimi Delta Attention" introduces Complex KDA (CKDA), a modification of Kimi Delta Attention that extends the gate range to [-1,1] and the delta rule learning rate to [0,2]. The authors prove that this form can express any orthogonal diagonal-plus-rank-one matrix and track the S3, S4, and A5 groups, but not S5, with experiments showing stable training and competitive language modeling performance. This work deepens the theoretical understanding of linear attention mechanisms by connecting Kimi Delta Attention to group theory, showing precisely which symmetries it can and cannot represent. It could guide the design of more expressive yet efficient attention architectures for long-context and multimodal models. The key insight is that the full diagonal gate in KDA can act as a reflection, enabling 2D rotations in a single step, but only when the gate range is extended to [-1,1] and the delta rule learning rate to [0,2]. CKDA successfully learns S3 and S4 groups and shows promising results on audio continuation, though it cannot track S5.
-
-reddit · r/MachineLearning · /u/Yossarian_1234 · Sep 22, 10:34
-
-**Background**: Kimi Delta Attention (KDA) is an expressive linear attention module that extends Gated DeltaNet (GDN) with a finer-grained gating mechanism, designed for efficient long-context modeling. Gated DeltaNet itself improves upon Mamba2 by incorporating the delta rule with input-dependent gating to enhance memory retention and selectivity. The delta rule is a classic error-correction learning rule that adapts weights based on the error between actual and desired outputs, and its learning rate controls the size of each update.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2510.26692">Kimi Linear: An Expressive, Efficient Attention Architecture</a></li>
-<li><a href="https://arxiv.org/abs/2412.06464">[2412.06464] Gated Delta Networks: Improving Mamba2 with Delta Rule</a></li>
-<li><a href="https://jianyuh.github.io/attention/2025/12/13/KDA.html">Linear Attention : Kimi Delta Attention | Jianyu Huang</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#attention mechanisms`, `#deep learning theory`, `#expressivity`, `#group theory`, `#Kimi Delta Attention`
-
----
-
-<a id="item-14"></a>
-## [US Proposes AI Incident Reporting Channel With China](https://t.me/zaihuapd/43985) ⭐️ 8.0/10
-
-The United States proposed establishing an AI incident notification channel with China during a September 20 meeting in New York, aimed at reporting AI-related events that meet a national security threshold. US Treasury Secretary Bessent said the move is intended to improve transparency between the two countries, and the two sides also plan regular US-China AI dialogue on shared risks. This is a significant geopolitical development in AI governance, as it could create a novel bilateral mechanism for managing AI risks at the national security level between the world's two leading AI powers. If realized, it could improve global AI safety and transparency, though it remains only a proposal with no formal agreement yet. The proposal has not yet become a bilateral agreement or treaty, and China's official statement confirmed discussions on AI-related topics but did not explicitly accept the specific mechanism. The notification system would create a formalized communication pathway specifically for AI incidents that rise to a national security threshold.
-
-telegram · zaihuapd · Sep 22, 11:34
-
-**Background**: AI incident reporting is an emerging governance concept: for example, US legislation such as the AI Incident Reporting Act would require developers of high-capability models to report dangerous discoveries within seven days. The US-China talks come amid growing unease about AI security risks, including warnings from Anthropic researchers that AI could pose catastrophic threats within the decade, and ahead of a high-stakes Trump-Xi summit.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://cryptobriefing.com/us-treasury-ai-notification-china/">US Treasury proposes AI incident notification mechanism after talks...</a></li>
-<li><a href="https://dnyuz.com/2026/09/21/u-s-proposes-ai-incident-alert-system-in-talks-with-china/">U.S. proposes AI incident alert system in talks with China – DNYUZ</a></li>
-<li><a href="https://www.ft.com/content/d29d769e-039c-4d11-9152-e63ccd397b32?syn-25a6b1a6=1">Scott Bessent hails US - China AI dialogue ahead of Trump-Xi meeting</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI governance`, `#US-China relations`, `#AI safety`, `#international policy`, `#national security`
-
----
-
-<a id="item-15"></a>
 ## [China Probes DeepSeek and Moonshot Over Data Leaks to Claude](https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic) ⭐️ 8.0/10
 
-China's internet regulator is investigating DeepSeek and Moonshot AI after Anthropic alleged in a 154-page report published on September 10 that seven Chinese companies improperly forwarded sensitive user data to its Claude models. The report specifically cited DeepSeek forwarding requests from an engineer working on a police surveillance system to Claude. This case sits at the intersection of AI regulation, data privacy, and cross-border data flows, and could set precedents for how Chinese authorities police domestic AI firms accused of leaking sensitive data to foreign models. It also escalates tensions between Anthropic and Chinese AI developers, with potential compliance and reputational consequences for DeepSeek and Moonshot. Anthropic's report names seven Chinese companies and alleges large-scale violations of its Claude usage terms, with the DeepSeek example involving a police surveillance engineer's request. The investigation is being conducted by China's internet regulator, though the source is a brief Telegram post with limited public discussion.
+China's internet regulator is investigating DeepSeek and Moonshot AI over allegations that they forwarded sensitive user data to Anthropic's Claude model. The probe follows a 154-page report Anthropic published on September 10, which accused seven Chinese companies of large-scale misuse of Claude, citing an example where DeepSeek forwarded a request from an engineer working on a police surveillance system. This case sits at the intersection of AI regulation, data privacy, and international tech tensions, potentially reshaping how Chinese AI firms access foreign frontier models. The outcome could set precedents for cross-border data handling and compliance requirements affecting the entire AI industry. Anthropic's report specifically names seven Chinese companies and provides the police surveillance engineer example as evidence of sensitive data being forwarded to Claude. The Chinese regulator's investigation is still ongoing, and no official conclusions have been announced.
 
 telegram · zaihuapd · Sep 22, 14:37
 
-**Background**: DeepSeek is a Hangzhou-based AI company owned by the hedge fund High-Flyer that develops open-weight large language models. Moonshot AI (月之暗面), named after Pink Floyd's album, is a Chinese AI startup known for its Kimi models with very long context windows. Anthropic is the US company behind the Claude family of AI models, which are widely used via API and consumer apps.
+**Background**: DeepSeek is a Hangzhou-based AI company owned by hedge fund High-Flyer, known for its open-weight large language models and the DeepSeek-R1 chatbot released in January 2025. Moonshot AI, also known as 月之暗面, is a Chinese AI startup behind the Kimi model series, named after Pink Floyd's album 'The Dark Side of the Moon'. Anthropic is a leading US AI safety company that develops the Claude family of models, which are widely used via API and consumer apps.
 
 <details><summary>References</summary>
 <ul>
@@ -370,6 +305,28 @@ telegram · zaihuapd · Sep 22, 14:37
 </ul>
 </details>
 
-**Tags**: `#AI regulation`, `#data privacy`, `#DeepSeek`, `#Anthropic`, `#China tech policy`
+**Tags**: `#AI regulation`, `#data privacy`, `#DeepSeek`, `#Moonshot AI`, `#Anthropic`
+
+---
+
+<a id="item-13"></a>
+## [DeepSeek to Brief UN Security Council on AI Risks This Week](https://t.me/zaihuapd/43989) ⭐️ 8.0/10
+
+Two people familiar with the matter say Chinese AI startup DeepSeek will brief the UN Security Council on AI risks this week, with OpenAI CEO Sam Altman and senior Anthropic representatives also expected to take part. The 15-member council is scheduled to meet Wednesday to discuss AI and international security, and Chinese firms including DeepSeek and Moonshot have been invited to speak, though DeepSeek founder Liang Wenfeng does not plan to attend. This marks a notable moment for global AI governance, as a Chinese frontier-model startup is invited to address the UN's top security body alongside leading US AI labs. It signals both the rising international profile of Chinese AI firms and growing multilateral attention to how AI could affect international peace and security. The briefing is tied to a Security Council meeting on AI and international security, and the arrangements could still change at short notice. DeepSeek founder Liang Wenfeng is not expected to attend, and it is not yet clear which representative will speak on the company's behalf.
+
+telegram · zaihuapd · Sep 22, 17:39
+
+**Background**: DeepSeek is a Hangzhou-based Chinese AI company, owned and funded by the hedge fund High-Flyer, that develops open-weights large language models and gained worldwide attention after topping app download charts. Moonshot AI is another prominent Chinese AI startup, founded in Beijing in 2023 and backed by investors including Alibaba and Tencent. The UN Security Council has increasingly examined how AI technologies might be used to spark conflicts or spread disinformation, making this briefing part of a broader debate on AI and international security.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek_(Company)">DeepSeek (Company)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI - Wikipedia</a></li>
+<li><a href="https://www.securitycouncilreport.org/atf/cf/{65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9}/Concept+Note+AI+UNSC+Signature+Event+(1).pdf">CONCEPT NOTE: UN Security Council Briefing on Artificial ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI governance`, `#AI safety`, `#DeepSeek`, `#United Nations`, `#industry news`
 
 ---
