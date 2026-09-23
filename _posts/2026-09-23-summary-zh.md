@@ -5,88 +5,89 @@ date: 2026-09-23
 lang: zh
 ---
 
-> 从 91 条内容中筛选出 13 条重要资讯。
+> 从 95 条内容中筛选出 14 条重要资讯。
 
 ---
 
-1. [Anthropic 与 OpenAI 一小时内相继发布旗舰模型，掀起新一轮价格战](#item-1) ⭐️ 9.0/10
-2. [OpenAI 开始有限预览 GPT-5.6 系列：Sol、Terra、Luna](#item-2) ⭐️ 9.0/10
-3. [vLLM v0.30.0 发布：762 次提交，新增多款模型与 Fast Start 权重缓存](#item-3) ⭐️ 8.0/10
-4. [OpenAI GPT-6 Astra 据称破解了自 2005 年以来未解的恩尼格玛密文](#item-4) ⭐️ 8.0/10
-5. [ShinyHunters 声称入侵 FBI 并窃取员工及申请者数据](#item-5) ⭐️ 8.0/10
-6. [Trail of Bits 称 SAML 是糟糕设计的分形](#item-6) ⭐️ 8.0/10
-7. [WordPress 修复可导致 RCE 的未认证路径遍历漏洞](#item-7) ⭐️ 8.0/10
-8. [五角大楼称过度依赖 AI 导致伊朗学校遭导弹袭击](#item-8) ⭐️ 8.0/10
-9. [Artificial Analysis 对 Claude Opus 5.5 各推理档位进行基准评测](#item-9) ⭐️ 8.0/10
-10. [TypeSafe AI 发布 Jev：一种返回类型化概率决策的“System One”模型](#item-10) ⭐️ 8.0/10
-11. [Cloudflare Python Workers 结束两年预览正式发布](#item-11) ⭐️ 8.0/10
-12. [中国调查 DeepSeek 与月之暗面数据泄露事件](#item-12) ⭐️ 8.0/10
-13. [DeepSeek 本周将向联合国安理会通报 AI 风险](#item-13) ⭐️ 8.0/10
+1. [Anthropic 称 Claude 发现了一种类似 CRISPR 的新型酶系统](#item-1) ⭐️ 9.0/10
+2. [Anthropic 与 OpenAI 相继发布 Claude Opus 5.5 与 GPT-6 Sol/Luna，引发价格战](#item-2) ⭐️ 9.0/10
+3. [vLLM v0.30.0 发布：新增多款模型、Fast Start 权重缓存与 MXFP8 KV](#item-3) ⭐️ 8.0/10
+4. [谷歌发布 Gemini 3.8 语音合成，支持 30 秒克隆声音](#item-4) ⭐️ 8.0/10
+5. [用 25 行 Python 实现 Jev：极简 LLM 对数概率分类器](#item-5) ⭐️ 8.0/10
+6. [西雅图市议会通过法案禁止食品杂货监控定价](#item-6) ⭐️ 8.0/10
+7. [OpenAI 的 GPT-6 Astra 据称破解了长期未解的 Enigma 密文](#item-7) ⭐️ 8.0/10
+8. [GPT-6 Astra 展示出驾驶汽车的能力](#item-8) ⭐️ 8.0/10
+9. [TypeSafe AI 发布 Jev：一种“System One”决策模型](#item-9) ⭐️ 8.0/10
+10. [小米发布 MiMo-V2.6 多模态模型，强化学习成本 350 万美元](#item-10) ⭐️ 8.0/10
+11. [中国调查 DeepSeek 与月之暗面涉嫌向 Claude 泄露数据](#item-11) ⭐️ 8.0/10
+12. [DeepSeek 本周将向联合国安理会通报 AI 风险](#item-12) ⭐️ 8.0/10
+13. [OpenAI 开始有限预览 GPT-5.6 系列：Sol、Terra、Luna](#item-13) ⭐️ 8.0/10
+14. [ShinyHunters 声称入侵 FBI 并窃取员工及申请者数据](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Anthropic 与 OpenAI 一小时内相继发布旗舰模型，掀起新一轮价格战](https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/) ⭐️ 9.0/10
+## [Anthropic 称 Claude 发现了一种类似 CRISPR 的新型酶系统](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) ⭐️ 9.0/10
 
-2026 年 9 月 22 日，Anthropic 发布了 Claude Opus 5.5，大约一小时后 OpenAI 发布了 GPT-6 Sol 和 GPT-6 Luna，其中 GPT-6 Luna 的定价仅为每百万输入 token 0.10 美元、每百万输出 token 0.50 美元，是 GPT-5.6 Luna 价格的一半。 两大前沿 AI 实验室几乎同时发布新模型并大幅降价，标志着价格战进一步升级，这将显著降低开发者基于顶级模型构建应用的成本，并重塑整个行业的竞争格局。 GPT-6 Sol 的定价为每百万输入 token 2 美元、每百万输出 token 10 美元，与 GPT-5.6 Terra 持平，并在输出价格上低于 Grok 4.7；Claude Opus 5.5 的定价为每百万 token 4 美元/20 美元。需要注意的是，GPT-5.6 原定于 11 月涨价 25%，因此 GPT-6 的价格仅为这些模型促销价的一半。
+Anthropic 宣布其 AI 模型 Claude 发现了一种此前未知的酶系统，该酶的基因旁边有一段与 CRISPR 重复序列相似的长重复 DNA 阵列。这一发现以 Anthropic 官方新闻稿的形式发布，而非传统的同行评审期刊投稿或预印本。 CRISPR 重复序列是现代基因编辑药物的基础，因此 AI 发现的类似 CRISPR 的系统可能指向新的基因编辑或生物技术工具。这也引发了关于 AI 公司是否应自行开展并发布前沿科学研究、而非与学术实验室合作的争论。 Anthropic 指出，目前尚不清楚这段重复 DNA 结构的功能，该发现也尚未经过同行评审验证。社区成员还质疑，这一系统究竟是 Claude 自主发现的，还是使用 Claude 的人类发现的。
 
-rss · Simon Willison · 9月22日 23:46
+hackernews · raahelb · 9月23日 18:06 · [社区讨论](https://news.ycombinator.com/item?id=49820134)
 
-**背景**: OpenAI 和 Anthropic 等前沿 AI 实验室通常按层级发布其最强模型——OpenAI 的 GPT-5.6 系列包括 Luna（最便宜）、Terra 和 Sol（最强），而 Anthropic 的 Claude 系列则采用 Haiku、Sonnet 和 Opus 的命名方式。API 定价按每百万 token 计算，输入、缓存输入和输出分别计价，且输出 token 的价格通常是输入的数倍。近期的模型发布还受到政府限制和对齐问题的影响，OpenAI 已为模型的高风险行为增加了监控机制。
+**背景**: CRISPR 是存在于细菌和古菌中的一类 DNA 序列，最初是作为异常的重复序列被注意到的，如今已成为基因编辑疗法的基础。AI 驱动的科学发现利用机器学习分析大规模数据集，并找出人类可能难以察觉的模式。Anthropic 一直在拓展科学工具领域，包括面向研究人员的 Claude Science 工作台。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.anthropic.com/claude-opus-5-5">Introducing Claude Opus 5 . 5 \ Anthropic</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Introducing GPT - 6 Sol and Luna | OpenAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.6_Sol">GPT-5.6 Sol</a></li>
+<li><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">Claude discovers a novel enzyme system with CRISPR-like repeats - Anthropic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CRISPR">CRISPR - Wikipedia</a></li>
+<li><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Claude Science, an AI workbench for scientists - Anthropic</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者认为 GPT-6 Luna 价格减半是一大进展，一位长期使用智能体的用户表达了对 GPT-5.6 Sol 的依恋，并担心技术上更强的继任模型可能用起来不那么自然。其他人则比较了 Claude Code 和 Codex Pro 的订阅方案，指出 Codex 的使用限额和 ChatGPT 不限量使用是关键优势。
+**社区讨论**: 评论者意见不一：一些人批评 Anthropic 发布的是营销白皮书而非期刊投稿，另一些人则质疑 AI 公司为何要在内部开展这类研究而不与外部合作。还有人指出，对 LLM 而言生物学比数学更难，问题范围已被大幅缩小，不过许多人对这项工作本身表示欢迎。
 
-**标签**: `#AI/ML`, `#LLM`, `#OpenAI`, `#Anthropic`, `#pricing`
+**标签**: `#AI`, `#CRISPR`, `#scientific discovery`, `#Anthropic`, `#biotechnology`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI 开始有限预览 GPT-5.6 系列：Sol、Terra、Luna](https://t.me/zaihuapd/43990) ⭐️ 9.0/10
+## [Anthropic 与 OpenAI 相继发布 Claude Opus 5.5 与 GPT-6 Sol/Luna，引发价格战](https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/) ⭐️ 9.0/10
 
-OpenAI 已开始有限预览其 GPT-5.6 系列，推出三个层级：旗舰模型 Sol、均衡型 Terra 和低成本 Luna。Sol 主打更强的编码、生物和网络安全能力，并新增 max 推理强度和 ultra 模式；Terra 性能接近 GPT-5.5 且价格便宜约一半，Luna 则定位为最低成本选择。 此次发布表明 OpenAI 越来越注重以经济性而非单纯智能来销售 AI，分层定价可能重塑开发者和企业针对不同工作负载选择模型的方式。这种受政府影响的有限发布也凸显出监管机构在前沿模型面向公众过程中的参与度日益上升。 此次预览最初仅通过 API 和 Codex 面向少数可信伙伴开放，OpenAI 称这是应美国政府要求采取的短期步骤，并计划在未来几周扩大到 ChatGPT 和 Codex。Sol 新增的 max 推理强度和 ultra 模式意味着针对最高难度任务将提供更高的算力和成本层级。
+Anthropic 发布了 Claude Opus 5.5，大约一小时后 OpenAI 发布了 GPT-6 Sol 和 GPT-6 Luna，其中 GPT-6 Luna 的价格仅为前代 GPT-5.6 Luna 的一半（输入$0.10/百万 token，输出$0.50/百万 token）。Claude Opus 5.5 也同步降价，现为输入$4/百万 token、输出$20/百万 token。 这次同步发布与大幅降价标志着前沿模型厂商之间的价格战进一步升级，显著降低了构建 AI 应用的成本，并可能重塑开发者在生产环境中选用模型的格局。 GPT-6 Luna 以$0.10/$0.50 的价格成为 OpenAI 有史以来最便宜的模型之一，仅弱于能力更低的 GPT-4.1 Nano 和 GPT-5 Nano；GPT-5.6 计划在 11 月涨价 25%，因此 GPT-6 的价格甚至只有促销价的一半。
 
-telegram · zaihuapd · 9月22日 18:04
+rss · Simon Willison · 9月22日 23:46
 
-**背景**: OpenAI 的 GPT 系列是驱动 ChatGPT 和开发者 API 的大型语言模型家族，每一代编号通常都会带来推理和编码能力的提升。Codex 是 OpenAI 的 AI 编码代理，于 2025 年 4 月以 Codex CLI 形式发布，可通过 ChatGPT 网页应用、桌面应用和 IDE 集成使用。Sol、Terra、Luna 这种分层命名反映了业界提供多种不同价格与性能定位模型的更广泛趋势。
+**背景**: Anthropic 和 OpenAI 等前沿 AI 实验室会定期发布新的旗舰大语言模型，而每百万 token 的定价是开发者构建应用时的关键竞争杠杆。Anthropic 的 Claude 系列分为 Haiku、Sonnet 和 Opus 三档，而 OpenAI 的 GPT-6 家族则在现有 Terra 和 Astra 之外新增了 Sol 和 Luna 两个变体。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.linkedin.com/posts/zumnex_previewing-gpt56-sol-terra-and-luna-activity-7476351889111056385-YX8J">OpenAI GPT - 5 . 6 Preview: Sol , Terra , Luna Models Launched | LinkedIn</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">OpenAI Codex (AI agent) - Wikipedia</a></li>
-<li><a href="https://www.aiformortals.co/blog/openai-gpt-5-6-limited-preview">OpenAI 's GPT - 5 . 6 Is Here, but Only a Handful Can Use It</a></li>
+<li><a href="https://www.anthropic.com/claude-opus-5-5">Introducing Claude Opus 5 . 5 \ Anthropic</a></li>
+<li><a href="https://x.ai/news/grok-4-7">Introducing Grok 4.7 - SpaceXAI</a></li>
+<li><a href="https://artificialanalysis.ai/models/claude-opus-5-5">Claude Opus 5 . 5 (max with fallback) - Intelligence... | Artificial Analysis</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 早期网络反响显示出真实的热情，一条被广泛分享的评论称用户这次“真的没有对 OpenAI 的新发布感到失望”。讨论还强调，这三个层级清楚表明 AI 正越来越多地以经济性而非单纯的智能来销售。
+**社区讨论**: 评论者认为 GPT-6 Luna 价格减半是一大进展，有人提到对前代 GPT-5.6 Sol 产生了情感依赖，并担心后继模型虽然技术上更强但用起来不够自然。其他人比较了 Claude Code 与 Codex Pro 订阅的性价比，认为 Codex 在使用额度上胜出，也有人称赞 ChatGPT Plus 在日常任务上几乎无限量。
 
-**标签**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#API`, `#Codex`
+**标签**: `#AI`, `#LLM`, `#OpenAI`, `#Anthropic`, `#model-releases`
 
 ---
 
 <a id="item-3"></a>
-## [vLLM v0.30.0 发布：762 次提交，新增多款模型与 Fast Start 权重缓存](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
+## [vLLM v0.30.0 发布：新增多款模型、Fast Start 权重缓存与 MXFP8 KV](https://github.com/vllm-project/vllm/releases/tag/v0.30.0) ⭐️ 8.0/10
 
-vLLM 发布了 v0.30.0，这是一个包含 762 次提交、来自 315 位贡献者（其中 104 位是新贡献者）的重大更新，新增了对 DeepSeek-V4.1-Flash、DeepSeek-V4-Flash-Vision-Exp、GLM-5.3-Flash、K2-Horizon、Cohere Compass、Bailing V3 VL 和 Nanbeige4.2 等模型的支持。该版本还引入了 Fast Start——一个常驻的每 GPU 权重缓存守护进程，将量化后、按 TP 分片的权重保留在 GPU 显存中，使引擎可以通过 CUDA IPC 配合 --load-format ipc_cache 快速重启，而无需从磁盘重新加载。 作为使用最广泛的开源大模型推理与服务引擎之一，vLLM 的模型覆盖能力和性能特性直接影响 AI 基础设施社区能够部署什么；Fast Start 以及新的量化和大规模服务能力有望显著降低重启延迟并提升生产环境的吞吐。此次更新的广度——涵盖新模型集成、投机解码、水印和多节点服务——对研究人员和规模化运行大模型的企业都有影响。 Fast Start 现已覆盖 FP4 检查点和多节点张量并行；其他亮点包括支持按请求退出且兼容投机解码的 Gumbel-max 水印、面向稀疏 MLA 解码的 HiSparse 主机端 KV 分层，以及 Model Runner V2 的改进，例如双批次重叠和将图捕获时间从 12 秒缩短到 2 秒（H200 上）。量化方面新增了通过 quantization_config.targets 实现的目标在线量化，并在 SM100/103 上让 FlashInfer CuTeDSL NVFP4 W4A16 取代 Marlin 成为默认方案。
+vLLM 发布 v0.30.0，这是一个包含 315 位贡献者（其中 104 位新贡献者）提交的 762 个 commit 的重大版本，新增支持 DeepSeek-V4.1-Flash、DeepSeek-V4-Flash-Vision-Exp、GLM-5.3-Flash、K2-Horizon、Cohere Compass、Bailing V3 VL 和 Nanbeige4.2 等模型。该版本引入了名为 Fast Start 的持久化每 GPU 权重缓存守护进程、SM100 上 DeepSeek-V4.1-Flash 的 MXFP8 KV 存储、Gumbel-max 水印、HiSparse 主机端 KV 分层，以及针对 Qwen3.8-Flash-Next 和 Kimi K3 的大量性能优化。 vLLM 是目前使用最广泛的开源 LLM 推理与服务引擎之一，因此该版本会直接影响大规模部署模型的 AI 基础设施团队。Fast Start 权重缓存和 MXFP8 KV 存储等功能可以显著降低引擎启动时间和 GPU 显存压力，而对众多新模型的支持则使 vLLM 持续跟上开源权重 LLM 的快速演进。 Fast Start 将量化后、按 TP 分片的权重保留在 GPU 显存中，并通过 `--load-format ipc_cache` 以 CUDA IPC 方式映射，目前已覆盖 FP4 检查点和多节点 TP。HiSparse 在 GPU 显存压力下将稀疏 MLA 的 KV 页溢出到锁页主机内存，并从每请求的 GPU 热缓冲区服务 top-k 未命中；Model Runner V2 在 H200 上将图捕获时间从 12 秒降至 2 秒，引擎初始化从 28.9 秒降至 8.2 秒。
 
 github · khluu · 9月22日 05:20
 
-**背景**: vLLM 是一个用于大语言模型推理与服务的开源框架，最初由加州大学伯克利分校 Sky Computing Lab 开发，核心是 PagedAttention——一种针对 Transformer 键值缓存的内存管理方法。它支持连续批处理、分布式推理、量化和兼容 OpenAI 的 API，并已发展成为最活跃的开源 AI 项目之一，拥有超过 2000 名贡献者。MXFP8（微缩放 FP8）和 FlashMLA（DeepSeek 优化的多头潜在注意力内核）等特性属于低精度与注意力优化技术，vLLM 通过集成它们来更快、更省显存地运行大模型。
+**背景**: vLLM 是一个开源的高吞吐量大语言模型服务引擎，基于 PagedAttention 和连续批处理等技术来最大化 GPU 利用率。KV 缓存指注意力计算过程中存储的键/值张量，其大小往往限制服务器能同时处理的请求数量；将其量化为 MXFP8 等格式可以降低这部分显存占用。FlashMLA 是 DeepSeek 为其基于 MLA 的模型提供的优化注意力内核库，而投机解码则通过小规模草稿模型提出候选 token、再由大模型验证，从而加速生成。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/VLLM">VLLM</a></li>
-<li><a href="https://github.com/vllm-project/vllm">GitHub - vllm-project/vllm: A high-throughput and memory ...</a></li>
-<li><a href="https://github.com/deepseek-ai/FlashMLA">GitHub - deepseek-ai/FlashMLA: FlashMLA: Efficient Multi-head Latent Attention Kernels · GitHub</a></li>
+<li><a href="https://docs.vllm.ai/en/stable/configuration/optimization/">Optimization and Tuning - vLLM Documentation</a></li>
+<li><a href="https://github.com/deepseek-ai/FlashMLA">FlashMLA</a></li>
+<li><a href="https://docs.vllm.ai/en/stable/design/prefix_caching/">Automatic Prefix Caching - vLLM Documentation</a></li>
 
 </ul>
 </details>
@@ -96,211 +97,184 @@ github · khluu · 9月22日 05:20
 ---
 
 <a id="item-4"></a>
-## [OpenAI GPT-6 Astra 据称破解了自 2005 年以来未解的恩尼格玛密文](https://www.cryptocellar.org/bgac/the-mvueh-break.html) ⭐️ 8.0/10
+## [谷歌发布 Gemini 3.8 语音合成，支持 30 秒克隆声音](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/) ⭐️ 8.0/10
 
-据报道，OpenAI 的 GPT-6 Astra 成功解密了一条自 2005 年以来一直未能破解的历史恩尼格玛密文，明文内容为“BTTE UM ANGABE DES MARSQWEGES X BEFINDE MIQ IN X ROSENOW ROSENOW X SOFORT FUNKANTWORT X WASCHBBSCH”。该消息发布在 cryptocellar.org 上并在 Hacker News 引发讨论，促使人们使用 Gemini 3.8 Flash 等其他模型进行独立复现尝试。 如果得到验证，这将是把大语言模型应用于密码分析的一个重要里程碑，表明现代 AI 能够协助解决困扰人类研究人员和分布式计算项目近二十年的难题。同时，它也加剧了更广泛的争论：当 AI 依赖自己生成的软件工具完成任务时，它究竟应获得多少功劳。 这条密文之所以格外难解，是因为它使用了与当天其他通信完全不同的密钥，而此前所有人都假定它共用当日密钥。评论者指出，Astra 据称自行开发了 Python 和 C++ 的恩尼格玛模拟器软件来辅助解密，这引发了关于该过程究竟有多少是真正自主完成、又有多少被外包给生成代码的疑问。
+谷歌发布了 Gemini 3.8 Flash 和 Flash-Lite 文本转语音模型，只需 30 秒的音频样本即可重建一致的声音特征，提供超过 2000 种生产级音色，并支持 100 种语言。该版本内置了同意验证、SynthID 水印和 C2PA 内容凭证，以保护配音人员和开发者。 这标志着谷歌全面拥抱声音克隆技术，而该能力此前已由其他厂商提供，此举可能加速个性化合成语音在有声书、游戏和无障碍工具中的普及。同意验证和水印的加入为符合伦理的语音 AI 部署树立了潜在的行业先例。 该模型针对大批量生产、对话式语音代理和朗读功能进行了优化，并声称在 Hume AI 的语音基准测试中排名第一。声音混音功能被列为即将推出，且该模型在谷歌的消费者、专业消费者和云平台上的可用性各不相同。
 
-hackernews · sohkamyung · 9月22日 13:52 · [社区讨论](https://news.ycombinator.com/item?id=49801324)
+hackernews · swolpers · 9月23日 15:29 · [社区讨论](https://news.ycombinator.com/item?id=49817615)
 
-**背景**: 恩尼格玛机是二战期间纳粹德国使用的转子密码设备，其密码由艾伦·图灵等人在布莱切利园成功破解。但个别密文数十年来始终未解，Enigma@home 等项目曾用分布式计算尝试攻克。GPT-6 Astra 是 OpenAI 最强的模型，于 2026 年 9 月 3 日向获批用户发布，并通过 OpenAI API、微软 Azure 和亚马逊 Bedrock 提供。
+**背景**: 文本转语音（TTS）系统将书面文本转换为语音音频，而近期的 AI 模型已能通过简短样本模仿特定人物的声音。SynthID 是谷歌 DeepMind 的技术，可在 AI 生成内容中嵌入不可见的数字水印；C2PA 则是一项开放标准，通过加密签名的来源元数据记录媒体内容的创建和编辑过程。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://news.ycombinator.com/item?id=49801324">OpenAI GPT–6 Astra breaks Enigma message that... | Hacker News</a></li>
-<li><a href="https://www.theneuron.ai/explainer-articles/how-ai-cracked-85-year-old-wwii-enigma-message/">How AI Cracked an 85-Year-Old WWII Enigma Message | The Neuron</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT - 6 Astra - Wikipedia</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/">Gemini 3.8 text-to-speech says hello</a></li>
+<li><a href="https://deepmind.google/models/synthid/">SynthID — Google DeepMind</a></li>
+<li><a href="https://c2pa.org/">C2PA</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者给出了实际的解密消息及其大致翻译，一位用户报告称 Gemini 3.8 Flash 在非引导运行中约 45 分钟就完成了解密。也有人持怀疑态度，认为“完全靠自己完成”与 Astra 自行开发恩尼格玛模拟器软件的说法自相矛盾，并质疑破解过程有多少被外包给了这些代码。
+**社区讨论**: 评论者批评谷歌在消费者、专业消费者和云平台之间的功能可用性不一致，指出模型在各平台上的能力往往不同。其他人则认为声音克隆如今已足够普遍，谷歌不再犹豫推出该功能；还有人分享了自己的 TTS 实践项目，并对庞大的音色库和精细控制表示欢迎。
 
-**标签**: `#AI`, `#cryptography`, `#Enigma`, `#OpenAI`, `#Hacker News`
+**标签**: `#AI`, `#text-to-speech`, `#voice cloning`, `#Google Gemini`, `#Hacker News`
 
 ---
 
 <a id="item-5"></a>
-## [ShinyHunters 声称入侵 FBI 并窃取员工及申请者数据](https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/) ⭐️ 8.0/10
+## [用 25 行 Python 实现 Jev：极简 LLM 对数概率分类器](https://www.nobodywho.ai/posts/jev-in-25-lines/) ⭐️ 8.0/10
 
-网络犯罪组织 ShinyHunters 声称已入侵多个与 FBI 相关的服务，窃取了所有 FBI 员工及求职申请者的数据，并提供了一份约 5,000 名所谓员工的样本，据称包含姓名、住址、电话号码以及配偶等家属信息。FBI 尚未确认这一说法，表示正在调查中。 如果数据属实，泄露信息可能被用于跟踪、骚扰甚至威胁 FBI 员工及其家属，并可能对美国执法和情报系统构成严重的安全与反情报风险。这一事件也凸显出，即便是顶级政府机构，也难以保护大型人员数据库免受持续不断的犯罪团伙和国家背景攻击者的侵害。 这份约 5,000 条记录的样本据称包含姓名、住址、电话号码以及配偶和其他家属的信息，ShinyHunters 还暗示可能对 FBI 采取胁迫而非以金钱为目的的勒索。该组织还发布了一个页面篡改声明，写着“此网站已被 ShinyHunters 接管”，但目前尚无对完整数据集的独立验证。
+nobodywho.ai 上的一篇博客文章展示了如何仅用 25 行 Python 代码实现 Jev——一种直接从 LLM 的 token 对数概率中提取分类概率的技术。该文章引发了大量讨论（564 分，182 条评论），参与者包括 Redis 的创造者 antirez 等知名实践者。 这一极简实现让强大的分类技术对任何 Python 开发者都触手可及，有望降低目前依赖完整 LLM 文本生成的文本分类任务的成本和延迟。高规格的社区讨论揭示了实际应用中的陷阱和优化技巧，可能影响实践者采用基于对数概率的分类方式。 讨论指出，聊天模型倾向于稀释选择 token 的概率，因为它们被训练来生成散文，因此需要精心设计的系统指令和提示格式。antirez 指出，由于掩码注意力机制，将选项放在文本主体之前可以让 Transformer 使用更多 token 为任务构建状态，重复问题也能改善校准。
 
-hackernews · spenvo · 9月22日 17:46 · [社区讨论](https://news.ycombinator.com/item?id=49805278)
+hackernews · bashbjorn · 9月23日 07:26 · [社区讨论](https://news.ycombinator.com/item?id=49812769)
 
-**背景**: ShinyHunters 是一个自 2019 年以来活跃的黑帽犯罪黑客与勒索组织，被认为与大量大规模数据泄露事件有关，通常利用漏洞窃取数据并索要赎金。FBI 是美国主要的联邦执法机构，其员工的个人数据因涉及反情报风险而被视为高度敏感。此次声明之前，美国政府人事记录已多次发生重大泄露，包括 2015 年人事管理办公室（OPM）遭黑客攻击，约 2,210 万人的数据被曝光。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/ShinyHunters">ShinyHunters - Wikipedia</a></li>
-<li><a href="https://techcrunch.com/2026/09/22/hacking-group-shinyhunters-claims-it-breached-the-fbi-stole-agents-and-applicants-data/">Hacking group ShinyHunters claims it breached the FBI, stole ...</a></li>
-<li><a href="https://economictimes.indiatimes.com/us/news/shinyhunters-claims-hacking-fbi-data-all-you-need-to-know-about-the-cybercriminal-group-and-its-other-victims/articleshow/134435171.cms">ShinyHunters claims hacking FBI data: All you need to know ...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者普遍持怀疑和无奈态度，有人指出似乎没人能保证大型数据库的安全，并提到 2015 年 OPM 泄露 2,210 万美国政府雇员记录的事件。也有人以调侃方式评论此事，称 ShinyHunters 错过了宣称由自主 AI 智能体集群实施攻击的机会，或引用《太空堡垒卡拉狄加》中联网计算机易被入侵的情节，还有人对该组织声称的非金钱动机表示质疑。
-
-**标签**: `#cybersecurity`, `#data-breach`, `#FBI`, `#hacking`, `#privacy`
-
----
-
-<a id="item-6"></a>
-## [Trail of Bits 称 SAML 是糟糕设计的分形](https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/) ⭐️ 8.0/10
-
-Trail of Bits 发布了一篇题为《SAML：糟糕设计的完美分形》的博客文章，认为 SAML 认证协议存在根本性缺陷，而不仅仅是配置错误。该文章在 Hacker News 上引发了热烈讨论，获得 302 分和 156 条评论，工程师们分享了具体的 SAML 漏洞并将其与 OIDC 进行比较。 SAML 仍是企业单点登录的主流协议，因此其设计缺陷直接影响无数组织的安全以及必须实现它的工程师。讨论凸显了行业向 OIDC 的广泛转变，同时也承认 SAML 的企业特定功能（如 IdP 发起的流程）使其难以被取代。 文章和讨论指出了具体问题，如 XML 签名包装（XSW）攻击，即签名验证与载荷其余部分分离，以及 C 语言 XML 签名库的历史缺陷，这些库会接受攻击者控制的 HMAC 密钥或 TLS 证书。评论者还指出 OIDC 自身也有问题，包括 JWT 算法混淆、"none" 算法攻击和缺少受众检查。
-
-hackernews · aray07 · 9月22日 18:57 · [社区讨论](https://news.ycombinator.com/item?id=49806335)
-
-**背景**: SAML（安全断言标记语言）是一种基于 XML 的开放标准，用于在身份提供商（IdP）和服务提供商（SP）之间交换认证和授权数据，从而实现企业应用的单点登录。它依赖 XML 数字签名（XML-DSig）建立信任，但 XML 解析和签名验证的复杂性导致了反复出现的漏洞。OIDC（OpenID Connect）是构建在 OAuth 2.0 之上的较新认证层，使用 JSON Web Token（JWT）而非 XML，通常被视为更简单的替代方案。
+**背景**: Jev 是 TypeSafe 提出的一种分类方法，它利用 LLM 的对数概率（logprobs）——即分配给每个 token 的概率的对数——来判断一段文本属于哪个预定义类别，而不是生成自由文本。对数概率来自模型原始 logits 经过 softmax 函数后的结果，为分类提供了自然的置信度分数。这种方法避免了完整文本生成的延迟和成本，同时利用了 LLM 对语言的理解能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://workos.com/guide/common-saml-security-vulnerabilities">Common SAML security vulnerabilities and how to defend against them — WorkOS Guides</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SAML">SAML - Wikipedia</a></li>
-<li><a href="https://fusionauth.io/blog/saml-and-oidc-difference">OIDC vs SAML : What's the Difference Between OpenID Connect and...</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者大多认同这一批评，但反驳文章没有对 OIDC 进行同等分析，指出 OIDC 也存在 JWT 算法混淆、"none" 算法攻击以及规范支持不一致等问题。一些工程师认为 SAML 仍具有企业特定优势，如 IdP 发起的流程和更稳定的常用实现子集，而其他人则分享了 XML 签名库接受攻击者控制密钥的恐怖故事。一个反复出现的主题是，与 SCIM 配置所花费的精力相比，这两种协议都相形见绌。
-
-**标签**: `#SAML`, `#authentication`, `#security`, `#OIDC`, `#enterprise SSO`
-
----
-
-<a id="item-7"></a>
-## [WordPress 修复可导致 RCE 的未认证路径遍历漏洞](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp) ⭐️ 8.0/10
-
-WordPress 针对 WordPress Core 中一个未认证路径遍历漏洞（CVE-2026-87902）发布了安全修复，该漏洞在特定条件下可导致远程代码执行。修复随 WordPress 7.1.2 发布，并出于对旧版本用户的照顾，向后移植到 4.7 以来的所有分支。 由于 WordPress 支撑着互联网上很大一部分网站，且该漏洞无需认证即可利用，任何受影响的站点都可能在没有登录凭据的情况下被攻击，因此快速打补丁至关重要。大约三分之一的安装量并不在最新的 7.x 分支上，这意味着在更新之前，许多站点仍处于暴露状态。 该漏洞允许未认证的远程攻击者通过 locate_template 和 get_page_template 等主题模板解析函数实施路径遍历和本地文件包含，并可结合 pearcmd.php 之类的环境实现完整的 RCE。从 4.7.0 到 7.1.1 的所有版本均受影响，且利用需要额外的服务器条件，例如官方 PHP Docker 镜像或 PHP 低于 8.5 的默认 cPanel 环境。
-
-hackernews · vntok · 9月22日 16:33 · [社区讨论](https://news.ycombinator.com/item?id=49803959)
-
-**背景**: 路径遍历（又称目录遍历）攻击利用对用户提供的文件名验证不足的缺陷，使 ../ 之类的序列能够跳出预期目录并访问服务器上的其他文件。远程代码执行（RCE）是一类漏洞，攻击者可通过网络在目标机器上运行任意代码，通常是 Web 漏洞最严重的后果。在 WordPress 中，主题模板解析决定为给定页面加载哪个 PHP 文件，因此如果攻击者能影响该路径，就可能诱使站点包含恶意或非预期的本地 PHP 文件。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.wordfence.com/blog/2026/09/psa-critical-unauthenticated-path-traversal-vulnerability-patched-in-wordpress-core/">PSA: Critical Unauthenticated Path Traversal Vulnerability Patched in...</a></li>
-<li><a href="https://github.com/rabakuku/CVE-2026-87902-A-working-PoC-for-WordPress-s-critical-path-traversal">rabakuku/CVE-2026-87902-A-working-PoC-for- WordPress -s-critical...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Path_traversal_vulnerability">Path traversal vulnerability</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者对 WordPress 长期存在可被利用的漏洞表示不满，并询问是否有针对旧安装的简单快速修复方案，同时指出约三分之一的安装量不在最新的 7.x 分支上。一位评论者强调这种缺陷模式在各语言中都很常见，并提到 libpathrs 是提供更安全文件处理抽象的一种尝试；另一位则庆幸自己已从 WordPress 迁移到静态托管的 Hugo 模板。
-
-**标签**: `#WordPress`, `#security`, `#vulnerability`, `#RCE`, `#path traversal`
-
----
-
-<a id="item-8"></a>
-## [五角大楼称过度依赖 AI 导致伊朗学校遭导弹袭击](https://www.bloomberg.com/graphics/2026-iran-school-attack/) ⭐️ 8.0/10
-
-五角大楼一份报告认定，过度依赖人工智能是导致美军对伊朗一所学校发动导弹袭击的原因之一，并指出美国“未能履行尽一切可行努力核实”该目标为军事目标的义务，这一失误“超出了单纯疏忽的范畴”。报告称，美国在明知存在击中民用物体的重大风险的情况下，仍下令对该学校建筑实施打击。 这是官方首次承认 AI 辅助目标定位导致大规模平民伤亡事件之一，可能重塑各国军方对 AI 参与致命决策的论证与监管方式。该事件引发了关于责任归属、人类监督以及 AI 是否被当作人类或制度失误替罪羊的紧迫问题。 报告措辞表明这一失误不仅是技术性的，更带有鲁莽性质；社区讨论指出，AI 可能让能力不足的操作者造成比以往更大的破坏。批评者还提到另一起事件：一份 AI 辅助生成的情报报告几乎导致美国登临一艘被怀疑运载核武器部件的中国船只。
-
-hackernews · devonnull · 9月22日 19:03 · [社区讨论](https://news.ycombinator.com/item?id=49806430)
-
-**背景**: 五角大楼一直在扩大 AI 工具的使用，包括 Palantir 的 Maven 系统，用于在伊朗生成、定位和排序军事目标，甚至评估打击是否合法。关于 AI 决策支持系统的研究警告，过度依赖会削弱人类判断力、降低大脑风险评估活动，并侵蚀指挥官的战场直觉。国际法要求军方持续注意保护平民，并在打击前核实目标。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.brennancenter.org/our-work/research-reports/militarys-use-ai-explained">The Military’s Use of AI, Explained - Brennan Center for ...</a></li>
-<li><a href="https://www.militarytimes.com/news/your-military/2026/09/16/ai-military-targeting-may-move-faster-than-humans-can-authenticate-critics-warn/">AI military targeting may move faster than humans can ...</a></li>
-<li><a href="https://www.military.com/feature/2026/03/22/pentagon-expands-palantirs-role-ai-contract.html">Pentagon Expands Use of Palantir AI in New Defense Contract</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Hacker News 的评论者主要争论 AI 究竟是军事无能的替罪羊，还是让无能者造成更大破坏的助推器，多人认为两者可以同时成立。一些人指出另一起 AI 辅助情报事件更能说明 AI 的直接影响，还有人要求对数百名女学生死亡追究刑事责任。
-
-**标签**: `#AI ethics`, `#military AI`, `#accountability`, `#AI safety`, `#geopolitics`
-
----
-
-<a id="item-9"></a>
-## [Artificial Analysis 对 Claude Opus 5.5 各推理档位进行基准评测](https://artificialanalysis.ai/models/claude-opus-5-5) ⭐️ 8.0/10
-
-Artificial Analysis 发布了针对 Anthropic 的 Claude Opus 5.5 的智能、性能与价格评测，并分别为 max、xhigh 和 medium（默认）三种推理档位提供了独立页面。分析显示，在同等高投入档位对比下，其每任务成本约为 Opus 5 的一半，该发布在社区引发 319 分、100 条评论的热议。 该评测为 AI/ML 从业者在不同推理档位之间做选择提供了具体的成本效益数据，并推动了更广泛的争论：当开源权重模型质量接近时，专有前沿模型是否值得其高昂价格。它还引发了关于基准可靠性的质疑，因为模型厂商有动机在发布初期展示峰值性能。 max 推理档位可能在仍在推理时就耗尽 128,000 token 预算，Simon Willison 报告称他两次尝试生成“骑自行车的鹈鹕”SVG 都失败了。该评测由 Artificial Analysis 发布，其基准覆盖智能、价格、输出速度和延迟，而 medium 档位是默认设置。
-
-hackernews · theanonymousone · 9月22日 16:51 · [社区讨论](https://news.ycombinator.com/item?id=49804316)
-
-**背景**: Artificial Analysis 是一个独立基准测试平台，从质量、价格、输出速度和延迟等维度比较 AI 模型与 API 提供商。Claude Opus 5.5 是 Anthropic 最新的旗舰模型，提供从 low 到 max 可配置的推理投入档位，档位越高，模型在作答前用于内部推理的 token 就越多。开源权重模型指训练权重可下载并自行部署的模型，其成本通常远低于专有 API。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://artificialanalysis.ai/">AI Model & API Providers Analysis | Artificial Analysis</a></li>
-<li><a href="https://artificialanalysis-ai.nproxy.org/methodology">Language Model Benchmarking Methodology | Artificial Analysis</a></li>
-<li><a href="https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5">What's new in Claude Opus 5.5 - Claude Platform Docs</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者指出了实际问题：Simon Willison 提到 max 档位在推理中途就耗尽了 128,000 token 预算，breckenedge 则担心厂商的基准分数在发布数周后会出现回落。hglaser 称赞其每任务成本相比 Opus 5 约减半，cmiles8 则认为开源权重模型质量接近而价格仅约百分之一，linuxrebe1 表示 Opus 4.8 在遵循指令方面比 Opus 5 更好。
-
-**标签**: `#AI`, `#LLM`, `#Claude`, `#Benchmarking`, `#Model Evaluation`
-
----
-
-<a id="item-10"></a>
-## [TypeSafe AI 发布 Jev：一种返回类型化概率决策的“System One”模型](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
-
-2026 年 9 月 15 日，刚从隐身状态走出、获得 4000 万美元种子轮融资的旧金山实验室 TypeSafe AI 发布了其首个“System One”模型 Jev。该模型接受文本或半结构化“状态”输入，但不生成文本，而是返回浮点数结果。Jev 支持三类问题：类似伯努利分布的“Noul”是非题、带选项概率分布的选择题，以及沿数值区间打分的评分题；其定价为每百万输入 token 0.042 美元，输出免费。 Jev 代表着一次重要的架构转向：从自由文本生成转向可直接被软件消费的类型化决策，这可能简化目前需要大量代码来解析和校验 LLM 输出文本的流程。如果这一范式获得认可，可能会改变分类、垃圾信息检测、标签建议、优先级排序和搜索重排序等功能在应用中的构建方式。 Jev 可针对单个状态并行评估多个问题，因此发送多个问题的耗时与发送一个大致相同；其文档指出，该模型目前在数字、日期和对抗性内容方面表现较弱。一个值得注意的局限是，Jev 不会为决策提供任何文本解释——你只能得到一个浮点数，这使它比传统 LLM 更像一个黑箱。
-
-rss · Simon Willison · 9月21日 23:09
-
-**背景**: 如今大多数大语言模型都是输入文本、输出文本，这意味着开发者必须编写额外代码来解析、校验和修复输出，软件才能据此行动。TypeSafe 的“System One”提法与更慢、更具审慎推理的“System Two”形成对比，将 Jev 定位为一种快速、廉价、把非结构化状态转化为类型化概率决策的函数调用。关于命名的争论——Simon Willison 和 Maggie Appleton 更倾向于“决策模型”这一叫法——反映了社区试图定义这一新兴类别的努力。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Introducing System One Models & Jev - TypeSafe AI Blog</a></li>
-<li><a href="https://flaviocopes.com/jev/">A deep dive into Jev, TypeSafe's System One model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jev_(AI_model)">Jev (AI model) - Wikipedia</a></li>
 <li><a href="https://www.langchain.com/blog/building-a-harness-with-jev">What Is Jev? A Guide to TypeSafe AI’s System One Model</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者普遍欢迎“决策模型”这一框架，Simon Willison 和 Maggie Appleton 更倾向于用“决策模型”而非“System One”来称呼它，TypeSafe 的 CEO 也在 Hacker News 上确认“Noul”一词源自伯努利分布。一个反复出现的担忧是 Jev 的黑箱性质：用户无法看到是哪些内容信号促成了决策，而且关于它在哪些场景优于传统 LLM 的早期证据仍然不足。
+**社区讨论**: 评论者普遍认为该技术很巧妙，但也提出了重要警告：sigmoid10 指出聊天模型会稀释选择 token 的概率，建议使用清晰的系统指令；antirez 建议将选项放在文本之前并重复任务以改善校准。visarga 分享了一种基于嵌入的替代分类器，使用岭回归在不到一秒内训练完成，并指出 Jev 缺乏领域内训练数据；rcarmo 则描述了在本地 GPU 上用 Gemma 进行原型开发的经验。
 
-**标签**: `#LLM`, `#AI/ML`, `#decision-models`, `#TypeSafe`, `#probabilistic-inference`
+**标签**: `#LLM`, `#classification`, `#logprobs`, `#Python`, `#prompt-engineering`
 
 ---
 
-<a id="item-11"></a>
-## [Cloudflare Python Workers 结束两年预览正式发布](https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [西雅图市议会通过法案禁止食品杂货监控定价](https://advocacy.consumerreports.org/press_release/seattle-city-council-votes-to-ban-surveillance-pricing-in-sale-of-groceries/) ⭐️ 8.0/10
 
-Cloudflare 宣布 Python Workers 正式全面可用（GA），经过约两年的预览期后，Python 成为 Cloudflare 开发者平台上的一等公民、获得完整支持的语言。其实现方式是通过 Pyodide 将 Python 编译为 WebAssembly，并运行在基于 V8 的 workerd 运行时中。 这使 Python 成为主流边缘/无服务器平台上的一等选项，Python 开发者无需改用 JavaScript 重写代码即可部署到 Cloudflare 的全球网络。这也表明 Cloudflare 对 Python 与 Pyodide 生态的实质性投入，因为发布公告的署名者中有两位是 Pyodide 核心维护者。 官方文档列出了若干限制：multiprocessing 和 threading 在 WebAssembly 虚拟机中均无法工作，Python Workers 只能使用临时的内存文件系统，数据在 isolate 被销毁后即丢失。本地开发由 pywrangler 工具负责（在 PyPI 上以 workers-py 包名发布），它会用约 123MB 的 workerd 二进制文件在本地完整模拟整套运行栈。
+西雅图市议会投票通过法案，禁止在食品杂货销售中使用监控定价，禁止零售商利用消费者个人数据为食品设定个性化价格。该法案同时允许多种折扣做法，但要求提高折扣透明度，并对消费者画像的使用施加一定限制。 这是美国首批针对监控定价的城市禁令之一，为其他城市和州监管算法个性化定价树立了先例。它可能影响更广泛的消费者保护行动，并促使零售商重新思考食品杂货及其他领域的数据驱动定价策略。 该禁令仅适用于食品杂货，并包含折扣漏洞，允许零售商提供个性化折扣，批评者认为这可能削弱法律初衷。法案还要求提高折扣透明度，并对消费者画像施加一定限制。
 
-rss · Simon Willison · 9月21日 22:25
+hackernews · ortusdux · 9月23日 14:04 · [社区讨论](https://news.ycombinator.com/item?id=49816374)
 
-**背景**: Cloudflare Workers 是一个无服务器平台，使用 V8 isolate 而非容器在网络边缘运行代码，因此冷启动非常快。workerd 是支撑 Workers 的开源 JavaScript/Wasm 运行时，而 Pyodide 是 CPython 到 WebAssembly 的移植版本，使 Python 能在浏览器等受限环境中运行。Python Workers 将两者结合，让 Python 代码与 JavaScript Workers 运行在同一个边缘运行时中。
+**背景**: 监控定价是一种动态定价形式，利用消费者的个人数据和行为推断其支付意愿，常导致同一商品对不同人价格不同。它引发了关于算法歧视、消费者隐私和数字红线的担忧，近期多个州已考虑或颁布相关法规。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developers.cloudflare.com/workers/languages/python/stdlib/">Standard Library provided to Python Workers · Cloudflare Workers ...</a></li>
-<li><a href="https://github.com/cloudflare/workerd">workerd, Cloudflare's JavaScript/Wasm Runtime - GitHub How workerd, the Cloudflare Workers runtime, is built workerd Architecture: Navigating the Cloudflare Workers ... How Workers works - Cloudflare Docs How workerd, the Cloudflare Workers runtime, is built</a></li>
-<li><a href="https://github.com/pyodide/pyodide">GitHub - pyodide / pyodide : Pyodide is a Python distribution for the...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Surveillance_pricing">Surveillance pricing</a></li>
+<li><a href="https://epic.org/issues/consumer-privacy/surveillance-pricing/">Surveillance Pricing – EPIC – Electronic Privacy Information Center</a></li>
+<li><a href="https://www.brookings.edu/articles/what-is-dynamic-pricing-and-why-do-consumers-need-better-protections/">What is dynamic pricing, and why do consumers need better protections? | Brookings</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 该消息经由 Hacker News 传播，但未提供具体评论内容，因此无法总结详细的社区观点。
+**社区讨论**: Hacker News 评论者普遍支持该禁令，但对其适用范围存在争议，有人认为应适用于所有商品和服务，而不仅是食品杂货。其他人则指出折扣漏洞，并呼吁加强隐私保护，例如宪法层面的隐私权。
 
-**标签**: `#Cloudflare`, `#Python`, `#WebAssembly`, `#Serverless`, `#Edge Computing`
+**标签**: `#privacy`, `#surveillance-pricing`, `#regulation`, `#consumer-protection`, `#algorithmic-fairness`
 
 ---
 
-<a id="item-12"></a>
-## [中国调查 DeepSeek 与月之暗面数据泄露事件](https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [OpenAI 的 GPT-6 Astra 据称破解了长期未解的 Enigma 密文](https://www.cryptocellar.org/bgac/the-mvueh-break.html) ⭐️ 8.0/10
 
-中国互联网监管机构正在调查 DeepSeek 和月之暗面，起因是这两家公司被指控将敏感用户数据转发给 Anthropic 的 Claude 模型。此次调查源于 Anthropic 于 9 月 10 日发布的 154 页报告，该报告指控 7 家中国公司大规模违规使用 Claude，并举例称 DeepSeek 曾把一名警方监控系统开发工程师的请求转发给 Claude。 此案处于 AI 监管、数据隐私和国际科技紧张关系的交汇点，可能重塑中国 AI 公司获取外国前沿模型的方式。调查结果可能为跨境数据处理和合规要求树立先例，影响整个 AI 行业。 Anthropic 的报告具体点名了 7 家中国公司，并以警方监控系统工程师的案例作为敏感数据被转发给 Claude 的证据。中国监管机构的调查仍在进行中，尚未公布官方结论。
+据报道，OpenAI 的 GPT-6 Astra 成功解密了一条 82 个字母的 Enigma 加密信息，该信息以指示符 MVUEH 为标识，自 2005 年以来一直列在 Frode Weierud 的 CryptoCellar 研究网站上未被破解。解密后的文本大致为：“请说明行军路线。我在罗森诺，罗森诺。立即通过无线电回复。瓦施布施。” 如果得到验证，这标志着 AI 辅助密码分析的一个重要里程碑，表明大型语言模型能够为解决数十年来人类和计算努力都未能破解的历史密码做出贡献。这也引发了更广泛的争论：当 AI 依赖生成或现有的软件工具来执行实际计算时，它应该获得多少功劳。 该信息的明文包含战地传输中常见的拼写错误，据称解密是通过 GPT-6 Astra 开发用于 Enigma 模拟器的 Python 和 C++软件实现的。怀疑者指出，生成的代码可能大部分并非原创，实际破解过程可能被外包给了该软件，从而引发了对 AI 真正贡献的质疑。
 
-telegram · zaihuapd · 9月22日 14:37
+hackernews · sohkamyung · 9月22日 13:52 · [社区讨论](https://news.ycombinator.com/item?id=49801324)
 
-**背景**: DeepSeek 是一家总部位于杭州的 AI 公司，由对冲基金幻方量化所有，以其开放权重的大语言模型和 2025 年 1 月发布的 DeepSeek-R1 聊天机器人而闻名。月之暗面（Moonshot AI）是一家中国 AI 初创公司，旗下拥有 Kimi 系列模型，其名称源自 Pink Floyd 的专辑《The Dark Side of the Moon》。Anthropic 是一家领先的美国 AI 安全公司，开发了 Claude 系列模型，这些模型通过 API 和消费级应用被广泛使用。
+**背景**: Enigma 密码机是二战期间纳粹德国使用的基于转子的加密设备；其密码由艾伦·图灵和布莱切利园的其他人员著名地破解，极大地帮助了盟军的战争努力。尽管取得了这些成功，但由于缺少密钥设置或操作员错误，一些个别信息数十年来一直未被破解。Frode Weierud 的 CryptoCellar 网站维护了一份此类未破解信息的清单，而 MVUEH 信息自 2005 年以来一直在该清单上。
 
 <details><summary>参考链接</summary>
 <ul>
+<li><a href="https://mixed-news.com/en/gpt-6-astra-cracks-1941-enigma-message-unsolved-since-2005/">GPT-6 Astra cracks a 1941 Enigma message that had resisted solution since 2005</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49801324">OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005 | Hacker News</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma">Cryptanalysis of the Enigma - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Hacker News 的评论者对 GPT-6 Astra 的新颖性和所获功劳表示怀疑，其中一人指出“完全靠自己完成”与 AI 为 Enigma 模拟器开发软件的说法不一致。另一位评论者报告称，Gemini 3.8 Flash 也在约 45 分钟内解决了该信息，表明这项任务对先进模型来说可能并非独一无二的挑战。其他人分享了解密文本，并提到 Veritasium 最近关于 Enigma 的视频，还有人开玩笑说这个解决方案“对战争努力来说有点晚了”。
+
+**标签**: `#AI`, `#cryptography`, `#Enigma`, `#OpenAI`, `#Hacker News`
+
+---
+
+<a id="item-8"></a>
+## [GPT-6 Astra 展示出驾驶汽车的能力](https://drivingbench.com/) ⭐️ 8.0/10
+
+OpenAI 于 2026 年 9 月发布的 GPT-6 Astra 在 drivingbench.com 的基准测试中被演示能够驾驶汽车，在 Hacker News 上引发热烈讨论（249 分、213 条评论）。该演示表明，云端交付的大语言模型能够将传感器输入映射为转向和致动器输出，足以完成一段驾驶路线。 这表明基于大语言模型的端到端驾驶最终可能挑战由视觉、3D 地图、车道选择语法和占用网络组成的传统模块化自动驾驶技术栈。如果出现低延迟的开源权重替代方案，可能会重塑自动驾驶系统的构建方式以及谁能构建它们。 核心限制在于延迟：模型太大，无法在本地运行，因此云端往返使得现实世界驾驶目前不可行。评论者还指出 Astra 在视觉和空间推理方面异常强大，这体现在其较高的 ARC 3、SpatialBench 和 ZeroBench 分数上，可能解释了其驾驶能力。
+
+hackernews · plurby · 9月23日 15:14 · [社区讨论](https://news.ycombinator.com/item?id=49817404)
+
+**背景**: GPT-6 Astra 是 OpenAI 于 2026 年 9 月 3 日向获批用户发布的大语言模型，次日全面开放。自动驾驶传统上依赖由摄像头、激光雷达、高精地图和手工设计规划器组成的模块化流水线，而近期 LMDrive、Talk2Drive 等研究探索了将大语言模型用作驾驶智能体。drivingbench.com 的演示测试了通用大语言模型能否直接从传感器数据控制车辆。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT-6 Astra</a></li>
+<li><a href="https://openai.com/index/gpt-6-astra/">GPT - 6 Astra : A new generation of intelligence | OpenAI</a></li>
+<li><a href="https://paperswithcode.co/paper/2312.07488">LMDrive: Closed-Loop End - to - End Driving with Large Language ...</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者意见分歧：一位 openpilot 贡献者认为该演示证明大语言模型可以驾驶一段路线，但由于延迟问题在现实世界中绝对行不通；另一些人则表示“苦涩的教训”即将降临自动驾驶，像 Qwen 这样的开源权重低延迟替代方案不会太远。多人称赞 Astra 的视觉和空间推理分数，还有人开玩笑说它接下来能降落飞机或实现社区自动泊车。
+
+**标签**: `#LLM`, `#autonomous driving`, `#GPT-6`, `#AI`, `#self-driving cars`
+
+---
+
+<a id="item-9"></a>
+## [TypeSafe AI 发布 Jev：一种“System One”决策模型](https://simonwillison.net/2026/Sep/21/jev/) ⭐️ 8.0/10
+
+TypeSafe AI 发布了其首个公开的“System One”模型 Jev，它接收非结构化文本输入，返回类型化的概率输出——包括是/否（Noul）置信度、选项概率分布和数值评分——而不是生成文本。其定价为每百万输入 token 0.042 美元且输出免费，比 OpenAI 的 GPT-5 Nano（每百万 0.05 美元）更便宜，目前已开放早期访问。 Jev 代表了一种全新的模型类别，将 LLM 推理重新定义为类型化的决策函数而非文本生成，使其在垃圾邮件检测、标签推荐、优先级排序和搜索重排等分类任务上速度更快、成本更低。如果这一路线成立，可能会让大量企业自动化工作负载从通用聊天模型转向专用决策模型。 Jev 支持三类问题——Noul（伯努利）是/否置信度、返回选项概率分布的选择题，以及在给定数值区间内返回浮点分数的评分题——并可针对单个“state”文档并行评估多个问题。其自身的“jaggedness”文档指出它在数字、日期和对抗性内容上表现不佳，而且由于只返回浮点数，它无法为决策提供自然语言解释。
+
+rss · Simon Willison · 9月21日 23:09
+
+**背景**: 大多数 LLM 是自回归的：它们一次生成一个 token，这也是输出 token 通常比输入 token 定价更高的原因。TypeSafe AI 将“System One”模型定位为专门用于在软件内部做决策的独立类别，类似于快速、直觉式的“系统 1”思维，而非深思熟虑的推理。结构化输出 API 已经可以强制 LLM 输出合法 JSON，但模型本质上仍在生成文本，其给出的置信度是文字描述，而不是应用程序可以据以分支判断的数值。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Introducing System One Models & Jev - TypeSafe AI Blog</a></li>
+<li><a href="https://www.mindstudio.ai/blog/jev-system-one-model-launch">Jev Explained: Typesafe AI's Non-Autoregressive System-1 Model | MindStudio</a></li>
+<li><a href="https://apimaster.ai/blog/jev-vs-llm">Jev vs LLMs: Where a Decision Model Beats Prompting... | APIMaster.AI</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Simon Willison 支持 Maggie Appleton 提出的“决策模型”这一说法，认为它比 TypeSafe 的“System One”命名更好，这场命名之争也表明社区确实在认真讨论。Willison 还表达了一丝不安：Jev 让机器学习进一步走向黑箱系统，因为它只返回一个浮点数，不解释是哪些内容信号促成了该决策。
+
+**标签**: `#LLM`, `#AI/ML`, `#decision-models`, `#inference`, `#model-architecture`
+
+---
+
+<a id="item-10"></a>
+## [小米发布 MiMo-V2.6 多模态模型，强化学习成本 350 万美元](https://www.reddit.com/r/MachineLearning/comments/1wn36d4/xiaomi_releases_mimov26_frontier_intelligence_all/) ⭐️ 8.0/10
+
+小米正式发布并开源了 MiMo-V2.6 系列，这是一款前沿多模态 AI 模型，其强化学习训练总成本公开为 350 万美元。此次发布还附带一个实时"benchmaxxing"仪表盘，公开追踪该模型的基准测试表现。 公开具体的 350 万美元强化学习训练成本以及公开的基准测试仪表盘，为通常保密的前沿模型开发带来了罕见的透明度。这可能促使其他实验室公开训练经济性，并为开源社区提供更具成本效益的多模态训练参考。 MiMo-V2.6 已在 Hugging Face 上提供（包括 Flash-RL 变体），推荐采样参数为 temperature=1.0 和 top_p=0.95，同时可通过 AI Studio、MiMo Code、小米 MiMo 桌面端、MiMo 开放平台 API 以及 OpenRouter 访问。据报道，小米的材料专家使用 MiMo-V2.6-Pro 设计了一种新型金属有机框架（MOF），用于吸附 PFAS"永久化学品"。
+
+reddit · r/MachineLearning · /u/we_are_mammals · 9月22日 07:56
+
+**背景**: MiMo 是小米自研的大模型系列，V2.6 侧重于扩大强化学习（RL）规模以实现自我改进。强化学习是一种后训练技术，模型从奖励信号而非标注样本中学习，其计算成本是前沿 AI 支出的主要驱动因素。"Benchmaxxing"指专门针对公开基准测试优化模型以取得高分，因此实时仪表盘会引发外界对报告的性能提升是否真实的审视。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://mimo.xiaomi.com/mimo-v2-6">MiMo - V 2 . 6 | Xiaomi</a></li>
+<li><a href="https://mimo.mi.com/docs/en-US/news/latest/v2-6">Xiaomi MiMo Home</a></li>
+<li><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL">XiaomiMiMo/ MiMo - V 2 . 6 -Flash-RL · Hugging Face</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#Multimodal`, `#Xiaomi`, `#Model Release`, `#Reinforcement Learning`
+
+---
+
+<a id="item-11"></a>
+## [中国调查 DeepSeek 与月之暗面涉嫌向 Claude 泄露数据](https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic) ⭐️ 8.0/10
+
+中国互联网监管机构正在调查 DeepSeek 和月之暗面，起因是两家公司被指将敏感用户数据转发给 Anthropic 的 Claude 模型。此次调查由 Anthropic 于 9 月 10 日发布的 154 页报告引发，该报告指控 7 家中国公司大规模违规使用 Claude，并举例称 DeepSeek 曾把一名警方监控系统开发工程师的请求转发给 Claude。 这是一起罕见的案例：中国监管机构因跨境数据流动问题调查本国 AI 明星企业，可能重塑中国 AI 公司使用外国模型和处理敏感用户数据的方式。这也让 Anthropic 等美国模型提供商面临更大压力，其服务条款和数据处理实践如今处于地缘政治与合规争议的中心。 调查源于 Anthropic 的 154 页报告，该报告点名 7 家中国公司，并特别指称 DeepSeek 将一名开发警方监控系统的工程师的请求转发给了 Claude。调查由中国互联网监管机构进行，涉事公司目前尚未公开回应。
+
+telegram · zaihuapd · 9月22日 14:37
+
+**背景**: DeepSeek 是一家总部位于杭州的 AI 公司，由对冲基金幻方量化（High-Flyer）所有，以发布开放权重的大语言模型而闻名；月之暗面（Moonshot AI）则是一家总部位于北京的 AI 初创公司。Anthropic 是 Claude 系列大语言模型背后的美国公司，Claude 于 2023 年 3 月首次以聊天机器人形式发布。中国 AI 开发者有时会使用 Claude 等外国模型进行数据生成或基准测试等任务，这可能与模型提供商的服务条款以及中国的数据安全法规产生冲突。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI - Wikipedia</a></li>
 <li><a href="https://en.wikipedia.org/wiki/DeepSeek_(Company)">DeepSeek (Company)</a></li>
-<li><a href="https://www.moonshot.ai/">Welcome to Moonshot AI . Our mission is to seek the optimal...</a></li>
-<li><a href="https://www.anthropic.com/claude/sonnet">Claude Sonnet \ Anthropic</a></li>
 
 </ul>
 </details>
@@ -309,24 +283,70 @@ telegram · zaihuapd · 9月22日 14:37
 
 ---
 
-<a id="item-13"></a>
+<a id="item-12"></a>
 ## [DeepSeek 本周将向联合国安理会通报 AI 风险](https://t.me/zaihuapd/43989) ⭐️ 8.0/10
 
-两名知情人士称，中国 AI 初创公司 DeepSeek 将在本周向联合国安理会通报人工智能带来的风险，OpenAI 首席执行官 Sam Altman 计划出席简报，Anthropic 高层代表预计也将参加。由 15 个成员组成的安理会定于周三开会讨论 AI 与国际安全，DeepSeek 和月之暗面（Moonshot）等中国 AI 公司受邀发言，但 DeepSeek 创始人梁文锋不打算出席。 这标志着全球 AI 治理的一个重要时刻：一家中国前沿模型初创公司与美国领先 AI 实验室一同受邀在联合国最高安全机构发言。这既反映出中国 AI 企业国际地位的上升，也表明多边机构日益关注 AI 对国际和平与安全的影响。 此次通报与安理会关于 AI 与国际安全的会议相关，但相关安排仍可能临时变动。DeepSeek 创始人梁文锋预计不会出席，目前尚不清楚将由哪位代表代表公司发言。
+两名知情人士称，中国 AI 初创公司 DeepSeek 本周将向由 15 个成员组成的联合国安理会通报人工智能带来的风险，OpenAI 首席执行官 Sam Altman 计划出席周三关于 AI 与国际安全的会议，Anthropic 高层代表预计也将参加。DeepSeek 和月之暗面（Moonshot）等中国 AI 公司受邀发言，但 DeepSeek 创始人梁文锋不打算出席，相关安排仍可能临时变动。 这标志着一个罕见时刻：一家中国 AI 初创公司与美国领先的 AI 实验室同台参与全球治理，凸显 AI 安全已从纯技术议题上升为国际安全的首要议题。这也表明中国 AI 企业的国际地位正在上升，并可能影响未来大国之间全球 AI 规则的谈判走向。 简报定于周三在拥有 15 个成员的安理会举行，议程涵盖 AI 与国际安全；DeepSeek 创始人梁文锋预计不会出席，发言名单仍可能临时变动。DeepSeek 是一家总部位于杭州的开源权重大语言模型开发商，由对冲基金幻方量化（High-Flyer）拥有并出资。
 
 telegram · zaihuapd · 9月22日 17:39
 
-**背景**: DeepSeek 是一家总部位于杭州的中国 AI 公司，由对冲基金幻方量化（High-Flyer）拥有和资助，开发开放权重的大语言模型，并因登顶应用下载榜而受到全球关注。月之暗面（Moonshot AI）是另一家知名的中国 AI 初创公司，2023 年在北京成立，投资方包括阿里巴巴和腾讯。联合国安理会日益关注 AI 技术可能被用于引发冲突或传播虚假信息，因此这次通报是有关 AI 与国际安全更广泛讨论的一部分。
+**背景**: 联合国安理会是主要负责维护国际和平与安全的机构，随着人工智能技术快速进步引发滥用和失控担忧，安理会日益关注这一议题。DeepSeek 是一家中国 AI 公司，以发布开源权重大语言模型著称，其 DeepSeek-R1 于 2025 年初成为美国 iOS 应用商店下载量最高的免费应用。Anthropic 是一家美国 AI 安全与研究公司，OpenAI 则是 ChatGPT 的开发者，由 Sam Altman 领导。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/DeepSeek_(Company)">DeepSeek (Company)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI - Wikipedia</a></li>
-<li><a href="https://www.securitycouncilreport.org/atf/cf/{65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9}/Concept+Note+AI+UNSC+Signature+Event+(1).pdf">CONCEPT NOTE: UN Security Council Briefing on Artificial ...</a></li>
+<li><a href="https://news.un.org/en/story/2026/09/1168414">LIVE: OpenAI and Anthropic to brief Security Council as AI ... | UN News</a></li>
+<li><a href="https://cointelegraph.com/news/openai-anthropic-to-brief-un-security-council-on-ai-risks">OpenAI and Anthropic CEOs Join UN Security Council AI Briefing</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI governance`, `#AI safety`, `#DeepSeek`, `#United Nations`, `#industry news`
+**标签**: `#AI governance`, `#DeepSeek`, `#UN Security Council`, `#AI safety`, `#international policy`
+
+---
+
+<a id="item-13"></a>
+## [OpenAI 开始有限预览 GPT-5.6 系列：Sol、Terra、Luna](https://t.me/zaihuapd/43990) ⭐️ 8.0/10
+
+OpenAI 已开始有限预览 GPT-5.6 系列，包括旗舰模型 Sol、均衡型 Terra 和低成本 Luna，首批面向少数可信伙伴通过 API 和 Codex 提供。Sol 主打更强的编码、生物和网络安全能力，并新增 max 推理强度和 ultra 模式；Terra 性能接近 GPT-5.5 且便宜约 2 倍，Luna 则定位为最低成本选择。 此次预览表明 OpenAI 持续推进分层模型家族策略，让开发者可以在能力、速度和成本之间权衡，这可能重塑团队为编码智能体和生产负载选择模型的方式。应美国政府要求、仅面向伙伴的发布方式，也凸显出前沿 AI 实验室与监管机构在广泛公开前的日益密切的审查与协调。 三个层级按每 100 万 token 计价：Sol 为输入 $5 / 输出 $30，Terra 为输入 $2.50 / 输出 $15，Luna 为输入 $1 / 输出 $6。OpenAI 未公布参数量或架构描述，且此次预览严格意义上属于闭门测试，计划在未来几周内扩大到 ChatGPT、Codex 和 API。
+
+telegram · zaihuapd · 9月22日 18:04
+
+**背景**: OpenAI 的 GPT 系列是其旗舰大语言模型家族，公司近年来越来越多地以多个规模层级发布模型，让用户根据预算和性能需求进行选择。Codex 是 OpenAI 的一套 AI 驱动的编码智能体，可自动完成软件工程任务，通常也是最早获得新模型的平台之一。有限预览意味着模型仅面向一小批经过审核的伙伴开放，之后才会更广泛地发布，以便 OpenAI 收集反馈并处理安全问题。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT-5.6 Sol: a next-generation model | OpenAI</a></li>
+<li><a href="https://www.mindstudio.ai/blog/what-is-gpt-5-6-sol-terra-luna-explained">What Is GPT-5.6? OpenAI's Sol, Terra, and Luna Model Tiers Explained | MindStudio</a></li>
+<li><a href="https://www.reddit.com/r/codex/comments/1utzi5w/gpt56_sol_vs_terra_vs_luna_my_early_guide_to/">GPT-5.6 Sol vs Terra vs Luna: my early guide to choosing the right model without burning your limits : r/codex - Reddit</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: r/codex 上的早期讨论显示，Sol 明显很强但消耗 token 极快，Terra 占用的额度超出预期，一些用户甚至质疑 Terra 是否值得使用。整体情绪是谨慎关注，但对成本和速率限制消耗感到担忧。
+
+**标签**: `#OpenAI`, `#GPT-5.6`, `#AI models`, `#API`, `#Codex`
+
+---
+
+<a id="item-14"></a>
+## [ShinyHunters 声称入侵 FBI 并窃取员工及申请者数据](https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/) ⭐️ 8.0/10
+
+黑客组织 ShinyHunters 声称已入侵多个与美国联邦调查局（FBI）相关的服务，窃取了所有 FBI 员工及求职申请者的数据，并向 404 Media 提供了一份约 5,000 名所谓 FBI 员工的样本。据称样本包含姓名、住址、电话号码以及配偶等家属信息，但 FBI 尚未确认这一说法。 如果数据属实，泄露信息可能被用于跟踪、骚扰甚至威胁 FBI 员工及其家属，并对美国执法和情报系统构成严重的安全与反情报风险。此事也凸显出即便是顶级政府机构也可能通过第三方企业软件被攻破，暴露出公共部门普遍存在的供应链安全漏洞。 据称约 5,000 条记录的样本包含个人及家属信息，被盗数据据称来自最初 PeopleSoft 被攻破后访问的系统，其中据称包括用于存储员工和申请者信息的 FBI AWS GovCloud 环境。FBI 尚未确认此次入侵，因此该说法仍未经证实。
+
+telegram · zaihuapd · 9月23日 05:00
+
+**背景**: ShinyHunters 是一个自 2019 年以来活跃的黑帽犯罪黑客与勒索组织，以大量数据泄露事件以及泄露或出售被盗数据库而闻名。404 Media 是一家独立科技新闻媒体，由前 Motherboard 记者于 2023 年创办。FBI 此前也曾遭遇黑客事件，包括 2021 年有人利用 FBI 邮箱地址发送虚假警告的邮件入侵事件，因此这类说法即便在官方确认前也会受到严肃对待。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ShinyHunters">ShinyHunters - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/404_Media">404 Media - Wikipedia</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/">ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach</a></li>
+
+</ul>
+</details>
+
+**标签**: `#cybersecurity`, `#data breach`, `#FBI`, `#ShinyHunters`, `#national security`
 
 ---
