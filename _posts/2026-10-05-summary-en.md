@@ -5,55 +5,54 @@ date: 2026-10-05
 lang: en
 ---
 
-> From 51 items, 12 important content pieces were selected
+> From 65 items, 11 important content pieces were selected
 
 ---
 
 1. [2026 Nobel Prize in Physiology or Medicine Awarded for Optogenetics](#item-1) ⭐️ 9.0/10
-2. [vLLM v0.31.0 Boosts DeepSeek-V4.1-Flash and Adds Fast Restart](#item-2) ⭐️ 8.0/10
-3. [Denmark CPR Registry Breach Exposes 8.8 Million People's Data](#item-3) ⭐️ 8.0/10
-4. [Strata Runs 125B Qwen 3.8 Flash Next on RTX 4090 at 100+ T/s](#item-4) ⭐️ 8.0/10
-5. [CedarDB ports original Doom to run entirely in SQL](#item-5) ⭐️ 8.0/10
-6. [Distilling Stockfish into a ResNet/ViT Model on 1B Positions, 3.9B Dataset Released](#item-6) ⭐️ 8.0/10
-7. [Yandex Music's Sona transformer replaces 15+ component recommender pipeline](#item-7) ⭐️ 8.0/10
-8. [ARC-AGI-3 Kaggle scores jump from 7% to 56% in 30 days](#item-8) ⭐️ 8.0/10
-9. [SK Telecom Apologizes for Massive Data Breach, Offers Free USIM Replacements](#item-9) ⭐️ 8.0/10
-10. [Google Releases VeriHarness Self-Verification Framework for Long-Horizon Tasks](#item-10) ⭐️ 8.0/10
-11. [Huawei and Qualcomm Sign Broad Multi-Year Patent Deal Covering 5G and AI](#item-11) ⭐️ 8.0/10
-12. [Quad9 Refuses French DNS Blocking Order, Faces €580K Daily Fine](#item-12) ⭐️ 8.0/10
+2. [vLLM v0.31.0 ships DeepSeek-V4.1-Flash optimizations and fast-restart weight cache](#item-2) ⭐️ 8.0/10
+3. [Reflection releases Beam, a 501B open-weight MoE model](#item-3) ⭐️ 8.0/10
+4. [Anthropic reported a Florida woman's Claude diary to police, sparking felony charge](#item-4) ⭐️ 8.0/10
+5. [Qualcomm licenses Huawei's LogicFolding chip patents in landmark deal](#item-5) ⭐️ 8.0/10
+6. [Existing Tech Could Eradicate Mosquito-Borne Diseases, Article Argues](#item-6) ⭐️ 8.0/10
+7. [OpenAI to Watermark ChatGPT and Codex Text in the EU](#item-7) ⭐️ 8.0/10
+8. [Distilling Stockfish into a Neural Net on 1B Positions, 3.9B Dataset Released](#item-8) ⭐️ 8.0/10
+9. [Yandex Music's Sona replaces 15+ recommender components with one transformer](#item-9) ⭐️ 8.0/10
+10. [ARC-AGI-3 Kaggle Scores Jump from 7% to 56% in 30 Days](#item-10) ⭐️ 8.0/10
+11. [Quad9 Refuses French DNS Blocking Order, Faces €580K Daily Fine](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [2026 Nobel Prize in Physiology or Medicine Awarded for Optogenetics](https://www.nobelprize.org/all-nobel-prizes-2026/) ⭐️ 9.0/10
 
-The 2026 Nobel Prize in Physiology or Medicine was awarded to Karl Deisseroth, Peter Hegemann, and Georg Nagel for their discovery of light-controlled ion channels and the development of optogenetics. This technique allows researchers to turn individual neurons on or off in the living brain using light. Optogenetics has revolutionized neuroscience by providing unprecedented precision in controlling neuronal activity, and it is now used in laboratories worldwide to study brain function and behavior. The Nobel recognition highlights the technique's broad impact on understanding decision-making, learning, memory, and even restoring vision in blind patients. Optogenetics works by expressing light-sensitive ion channels, such as channelrhodopsin, in specific neurons, allowing millisecond-precision control with light pulses. Beyond basic research, it has entered clinical trials, including a case where vision was partially restored in a patient with retinitis pigmentosa.
+The 2026 Nobel Prize in Physiology or Medicine was awarded to Karl Deisseroth, Peter Hegemann, and Georg Nagel for their discovery of light-controlled ion channels and the development of optogenetics. This technique allows researchers to turn individual neurons on or off in living brains and is now used in laboratories worldwide for brain research. Optogenetics represents a paradigm shift in neuroscience, giving researchers unprecedented precision to control specific neurons and study how neural circuits drive behavior, learning, memory, and disease. Its recognition with a Nobel Prize underscores the broad impact of this tool, which has already moved toward clinical applications such as partial vision restoration in a blind patient. Optogenetics works by expressing light-sensitive ion channels, pumps, or enzymes in target cells, allowing light to precisely control biochemical signaling and neuronal activity. Beyond controlling individual cells, the technique has been used to map functional brain connectivity and to study behaviors such as decision making, fear memory, addiction, and feeding.
 
 telegram · zaihuapd · Oct 5, 09:33
 
-**Background**: Optogenetics is a biological technique that uses light to control cells in living tissue, typically neurons, that have been genetically modified to express light-sensitive ion channels. The approach was pioneered by Deisseroth, Hegemann, and Nagel, building on earlier discoveries of microbial rhodopsins that respond to light. It has become a foundational tool in systems neuroscience, enabling causal tests of how specific neural circuits contribute to behavior.
+**Background**: Optogenetics is a biological technique that uses light to manipulate the activity of neurons or other cell types. It relies on light-sensitive proteins, such as ion channels and pumps, that are genetically introduced into target cells; when light shines on these cells, the proteins change the flow of ions across the cell membrane, activating or silencing the cell. This method has become a foundational tool in systems neuroscience, enabling researchers to establish causal links between specific neural activity and behavior.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Optogenetics">Optogenetics</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Karl_Deisseroth">Karl Deisseroth - Wikipedia</a></li>
-<li><a href="https://deisseroth.com/">Karl Deisseroth — A timeline of discovery, from light to life</a></li>
+<li><a href="https://www.downtoearth.org.in/health/2026-medicine-nobel-awarded-for-discoveries-concerning-light-gated-ion-channels-and-optogenetics">2026 Medicine Nobel Prize Honors Pioneers of Optogenetics and...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#neuroscience`, `#optogenetics`, `#Nobel Prize`, `#research breakthrough`, `#science news`
+**Tags**: `#optogenetics`, `#neuroscience`, `#Nobel Prize`, `#brain research`, `#light-controlled ion channels`
 
 ---
 
 <a id="item-2"></a>
-## [vLLM v0.31.0 Boosts DeepSeek-V4.1-Flash and Adds Fast Restart](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) ⭐️ 8.0/10
+## [vLLM v0.31.0 ships DeepSeek-V4.1-Flash optimizations and fast-restart weight cache](https://github.com/vllm-project/vllm/releases/tag/v0.31.0) ⭐️ 8.0/10
 
-vLLM released v0.31.0, a major update with 717 commits from 307 contributors (96 new). It delivers extensive performance optimizations for DeepSeek-V4.1-Flash, including FlashMLA mega attention with NVFP4 compressed KV cache as the SM100 default, plus a new fast restart capability via the `vllm preload` CLI that keeps post-quantized weights resident in GPU memory across engine restarts. As one of the most widely used open-source LLM inference engines, vLLM's improvements directly affect how efficiently and cheaply organizations can serve large models. The DeepSeek-V4.1-Flash optimizations and fast restart feature can significantly reduce latency and downtime for production deployments, making this release highly relevant to the AI/ML infrastructure community. The release includes several breaking changes: per-request multimodal kwargs are now gated behind `--trust-request-mm-kwargs`, `tokenizer_mode="slow"` was removed, `--enable-mamba-fine-grained-prefix-cache` was renamed to `--enable-mamba-shared-prefix-checkpoint`, and online quantization via `quantization="fp8"` was replaced by the `fp8_per_tensor` shorthand. It also adds scheduling controls like `--max-num-active-seqs` and `--long-prefill-token-threshold`, plus security hardening for prefix-cache keys and LoRA paths.
+vLLM released v0.31.0, a large update with 717 commits from 307 contributors (96 new) that delivers major DeepSeek-V4.1-Flash inference optimizations such as FlashMLA mega attention with NVFP4 compressed KV cache, DeepGEMM sparse MQA logits, and fused decoder-boundary kernels. It also introduces a new `vllm preload` CLI that launches a weight-cache daemon keeping post-quantized weights resident in GPU memory across engine restarts, plus experimental CRIU-based engine snapshots. vLLM is one of the most widely used open-source high-throughput LLM inference and serving engines, so these optimizations directly affect how efficiently and cheaply teams can serve large models like DeepSeek-V4.1-Flash. The fast-restart weight cache and snapshot features could substantially cut cold-start and restart times in production deployments, which matters for autoscaling and reliability. The release includes several breaking changes: per-request multimodal kwargs are now gated behind `--trust-request-mm-kwargs`, `tokenizer_mode="slow"` was removed, `--enable-mamba-fine-grained-prefix-cache` was renamed to `--enable-mamba-shared-prefix-checkpoint`, and online quantization via `quantization="fp8"` was replaced by the `fp8_per_tensor` shorthand. It also adds scheduling controls like `--max-num-active-seqs` and `--long-prefill-token-threshold`, plus security fixes for prefix-cache key collisions and stale multimodal cache entries.
 
 github · khluu · Oct 5, 06:44
 
-**Background**: vLLM is an open-source framework for inference and serving of large language models, originally developed at UC Berkeley's Sky Computing Lab and centered on the PagedAttention memory-management method for transformer KV caches. It supports continuous batching, distributed inference, quantization, and OpenAI-compatible APIs. DeepSeek-V4.1-Flash is a multimodal large language model from DeepSeek, trained on a 45T-token corpus with sparse attention and context extended to 1M tokens. FlashMLA is DeepSeek's library of optimized attention kernels that power its models.
+**Background**: vLLM is an open-source framework for inference and serving of large language models, originally developed at UC Berkeley's Sky Computing Lab and built around PagedAttention, a memory-management method for transformer key-value caches. It supports continuous batching, distributed inference, quantization, and OpenAI-compatible APIs, making it a common choice for production LLM serving. DeepSeek-V4.1-Flash is a recent DeepSeek model trained from scratch on a 45T-token multimodal corpus with sparse attention and context extended to 1M tokens, and FlashMLA is DeepSeek's library of optimized attention kernels.
 
 <details><summary>References</summary>
 <ul>
@@ -64,116 +63,164 @@ github · khluu · Oct 5, 06:44
 </ul>
 </details>
 
-**Tags**: `#vLLM`, `#LLM inference`, `#release`, `#performance optimization`, `#DeepSeek`
+**Tags**: `#vLLM`, `#LLM inference`, `#model serving`, `#performance optimization`, `#release`
 
 ---
 
 <a id="item-3"></a>
-## [Denmark CPR Registry Breach Exposes 8.8 Million People's Data](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger) ⭐️ 8.0/10
+## [Reflection releases Beam, a 501B open-weight MoE model](https://reflection.ai/blog/introducing-beam) ⭐️ 8.0/10
 
-Denmark's national civil registration system (CPR) suffered a massive unauthorized data breach affecting the personal information of 8.8 million people, including all living Danish citizens and foreign nationals who have had residence in the country, as well as some deceased individuals. The compromised data reportedly includes CPR numbers, age, sex, family relations, physical and protected addresses, and sex change records. This is one of the largest national data breaches in Danish history, exposing sensitive identity data that could enable identity theft, fraud, and targeted attacks on vulnerable individuals such as those with protected addresses. It raises urgent questions about government data security and the systemic privacy risks of centralized citizen registries across the EU. The breach affects all living Danish citizens and foreign nationals who have had residence in Denmark, plus some deceased individuals, and includes highly sensitive fields like protected addresses and sex change records. It comes just days after a separate breach at the Technical University of Denmark (DTU) that exposed CPR numbers of students, faculty, and staff.
+Reflection has released Beam, an open-weight sparse Mixture-of-Experts model with 501 billion total parameters and 23 billion active parameters, targeting coding, reasoning, and agentic workloads. The model was pretrained on 23.8 trillion curated tokens and further tuned with reinforcement learning, with Reflection claiming it matches or outperforms similar-sized open base models. Beam adds another large open-weight contender to a field increasingly dominated by Chinese labs, and its release fuels debate about whether Western open models are keeping pace. For developers and researchers, it offers a new high-capacity option for coding and agentic use cases that can be self-hosted and inspected. Beam uses a sparse MoE design where only 23B of the 501B parameters are active per token, and it was trained on 28T tokens according to community comparisons. Community member wren6991 contrasted it with DeepSeek V4.1 Flash, noting Beam has more active parameters (23B vs 8B prefill/16B decode) but fewer pretraining tokens (28T vs 45T) and no N-gram/PLE parameters.
 
-hackernews · clan · Oct 5, 08:09 · [Discussion](https://news.ycombinator.com/item?id=49962012)
+hackernews · Philpax · Oct 5, 19:16 · [Discussion](https://news.ycombinator.com/item?id=49969183)
 
-**Background**: In Denmark, every resident is assigned a CPR number (Central Person Register number), a civil registration identifier used for all contact with Danish authorities, healthcare, banks, and many private institutions. Because it functions as a universal identity key, compromise of CPR data is especially dangerous—it can be used to impersonate individuals, open accounts, or access services. Denmark has previously faced criticism over inadequate anonymization of health and research data, and the country is currently debating the 'Chat Control' proposal that critics say could undermine end-to-end encryption across the EU.
+**Background**: Mixture-of-Experts (MoE) is an architecture that splits a model into many specialized sub-networks (experts) and uses a router to activate only a few per input, so total parameters can be huge while active parameters—and thus compute per token—stay small. Open-weight models release their trained parameters for anyone to download and run, unlike closed API-only models. Beam's 501B/23B split places it in the same weight class as other frontier open MoE models such as DeepSeek's.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ihcph.kk.dk/registration-guidance/cpr-registration">CPR registration | International House Copenhagen</a></li>
-<li><a href="https://www.norden.org/en/info-norden/civil-registration-denmark">Civil registration in Denmark | Nordic cooperation</a></li>
-<li><a href="https://international.kk.dk/live/cpr-registration-and-documents/cpr-registration">CPR registration | City of Copenhagen</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
+<li><a href="https://berges.ai/concepts/mixture-of-experts">What is a mixture-of-experts (MoE) model? Total vs active parameters</a></li>
+<li><a href="https://vettedconsumer.com/mixture-of-experts-moe-explained-why-active-parameters-decide-what-runs-on-your-machine/">Mixture-of-Experts (MoE), Explained: Why “ Active Parameters ”...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed deep frustration with systemic privacy erosion, with one noting they now avoid routine activities like visiting doctors or booking flights out of fear of data misuse. Others pointed to Sweden's model of openly publishing residents' data as a contrast, warned that Denmark's Chat Control push could enable mass leaks of EU private conversations, and highlighted the breach's enormous scope—covering nearly the entire Danish population—as well as its proximity to the DTU breach days earlier.
+**Discussion**: Commenters welcomed another open-weight release but were skeptical of Reflection's generalization claims, with Ariarule noting a demo citing 95.5% coverage on a recent viral puzzle. wren6991 provided a detailed spec comparison against DeepSeek V4.1 Flash, while NorwegianDude argued Western open models still lag smaller free Chinese models and hoped for more competition and providers like Google's Gemma.
 
-**Tags**: `#data-breach`, `#privacy`, `#cybersecurity`, `#denmark`, `#identity-theft`
+**Tags**: `#open-weight models`, `#Mixture-of-Experts`, `#large language models`, `#AI research`, `#model release`
 
 ---
 
 <a id="item-4"></a>
-## [Strata Runs 125B Qwen 3.8 Flash Next on RTX 4090 at 100+ T/s](https://github.com/Niko1221/Strata) ⭐️ 8.0/10
+## [Anthropic reported a Florida woman's Claude diary to police, sparking felony charge](https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html) ⭐️ 8.0/10
 
-A new open-source inference stack called Strata enables running the 125B-parameter Qwen 3.8 Flash Next Mixture-of-Experts model on consumer hardware such as the RTX 4090 at over 100 tokens per second. However, independent testing by a community member found that Strata produced a median error of 154.8 pixels on a 50-image vision benchmark, compared to 46.5 pixels when running the same GGUF and vision adapter weights on llama.cpp. This is significant because it suggests that very large Mixture-of-Experts models can be run locally on consumer GPUs at usable speeds, potentially reducing reliance on cloud inference for agentic coding, tool use, and vision tasks. The reported accuracy degradation, however, highlights the trade-offs between aggressive quantization and output quality, which matters for practitioners who need reliable results. Qwen 3.8 Flash Next has 125B total parameters with only 6B activated per token, plus 51B n-gram embeddings and 4B MTP, and is described as the first open-weight model built on the architecture that will underpin Qwen 4. Community reports show speeds of 124 T/s on an RTX 4090 with 128GB DDR5, about 60 T/s on an R9700 32GB with 96GB DDR4, and even 10 T/s on a Ryzen 6600H iGPU, though the accuracy gap versus llama.cpp remains a concern.
+A Florida woman was charged with a second-degree felony under Florida Statute 836.10 after Anthropic reported a diary entry she wrote using its Claude chatbot that contained threats of violence. The case, reported by TechSpot and Cybernews, marks one of the first known instances of an AI company proactively sharing user conversations with law enforcement. The case raises major legal and ethical questions about AI surveillance, user privacy, and free speech, and could set a precedent for how AI companies handle potentially threatening content. It affects every user of AI chatbots, as it shows that private-seeming conversations may be monitored and reported to authorities. Florida Statute 836.10 makes it a second-degree felony to send, post, or transmit a written or electronic record threatening to kill or injure someone, carry out a mass shooting, or commit terrorism, and the communication must be made in a manner in which another person may view it. The woman told authorities she used Claude as a diary, and the case highlights that AI chatbot conversations may be reviewed and shared with police for serious threats.
 
-hackernews · snehesht · Oct 4, 12:51 · [Discussion](https://news.ycombinator.com/item?id=49953495)
+hackernews · emptybits · Oct 5, 05:37 · [Discussion](https://news.ycombinator.com/item?id=49961057)
 
-**Background**: Mixture-of-Experts (MoE) models activate only a subset of their parameters for each token, which allows them to have a very large total parameter count while keeping inference cost closer to that of a much smaller model. Quantization reduces the precision of model weights (for example to 4-bit or lower) so that large models fit into limited GPU memory, but more aggressive quantization can degrade output quality. Strata is an open-source inference engine specifically designed to run Qwen 3.8 Flash Next on consumer hardware, while llama.cpp is a widely used inference framework known for its quantization support and accuracy.
+**Background**: Anthropic is an AI safety and research company that develops the Claude chatbot using Constitutional AI to make it safe, accurate, and secure. Like other AI chat services, Claude collects user data and may filter or moderate content, though the exact monitoring and reporting policies are not always transparent. This incident follows similar debates about whether AI companies should report users who express violent intentions, with some critics arguing it amounts to surveillance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen / Qwen 3 . 8 - Flash - Next · Hugging Face</a></li>
-<li><a href="https://github.com/qwenlm/qwen3.8-flash-next">GitHub - QwenLM/ Qwen 3 . 8 - Flash - Next : Qwen 3 . 8 - Flash - Next is the...</a></li>
+<li><a href="https://cybernews.com/ai-news/claude-diary-police/">Claude diary threat : Florida woman reported to police | Cybernews</a></li>
+<li><a href="https://www.anthropic.com/">Home \ Anthropic</a></li>
+<li><a href="https://claude.com/">Claude</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reaction is mixed: some users are impressed by the speed and ease of setup, with one reporting 124 T/s on an RTX 4090 and another calling it game-changing on an R9700 32GB. However, a11r expressed skepticism about going below 4-bit quantization due to quality degradation, and Jackson__ provided a benchmark showing Strata's median error of 154.8 pixels versus 46.5 for llama.cpp on the same weights, tempering the enthusiasm.
+**Discussion**: Commenters are deeply divided: some argue that reading a private diary entry and charging the author is unconstitutional surveillance, while others sympathize with Anthropic, noting that failing to report a potential shooter would also draw criticism. Many question whether a diary entry to a chatbot legally constitutes a transmitted threat under Florida law, and some suggest running local open-source models to avoid corporate monitoring.
 
-**Tags**: `#LLM inference`, `#quantization`, `#consumer hardware`, `#Qwen`, `#performance benchmarking`
+**Tags**: `#AI ethics`, `#privacy`, `#surveillance`, `#free speech`, `#legal`
 
 ---
 
 <a id="item-5"></a>
-## [CedarDB ports original Doom to run entirely in SQL](https://cedardb.com/blog/sqldoom/) ⭐️ 8.0/10
+## [Qualcomm licenses Huawei's LogicFolding chip patents in landmark deal](https://www.bloomberg.com/news/articles/2026-10-05/qualcomm-licenses-patents-on-huawei-s-logicfolding-chip-tech) ⭐️ 8.0/10
 
-CedarDB developers ported the original 1993 Doom's game logic and renderer entirely into SQL queries, running the game inside a database at around 35 FPS, with multiplayer deathmatch also working. The game logic amounts to roughly 5,900 lines of SQL, fewer than the vanilla C implementation. The project challenges common assumptions about SQL's limitations, showing that contemporary SQL engines are powerful enough to express complex stateful logic like a full game engine. It fuels debate about whether business rules and complex domain logic could similarly be implemented in SQL, potentially improving maintainability and concurrency in enterprise systems. The port abuses SQL query planning as a state machine and drives the game loop through a tic sequence inside the database engine; deathmatch works almost for free thanks to the data model. The developers also explored compiling SQL for better performance, though running a game in a database is inherently unconventional.
+On October 5, 2026, Huawei and Qualcomm announced a multi-year, broad patent cross-license agreement covering 5G, computing, AI, and networking, under which Qualcomm also licensed patents related to Huawei's LogicFolding chip manufacturing technology and agreed to purchase certain Huawei U.S. patents. Huawei said the deal's cumulative expected contract value for its licensing business exceeds $6.9 billion, pending regulatory approval. This marks a notable reversal in semiconductor IP dynamics, with Huawei shifting from a net licensee of Western technology to a provider whose chipmaking IP is licensed by a major U.S. chipmaker. It could reshape patent bargaining power across 5G and AI and carries significant geopolitical implications given Huawei's presence on the U.S. Entity List. Huawei claims LogicFolding improves chip performance and helps narrow the gap with leading foundries such as TSMC, targeting 1.4nm-class density by 2031 without EUV, though 3D stacking itself is not new and the deal still requires regulatory approval. Qualcomm is purchasing certain Huawei U.S. patents as part of the arrangement.
 
-hackernews · Vaslo · Oct 3, 22:14 · [Discussion](https://news.ycombinator.com/item?id=49948300)
+hackernews · 0xedb · Oct 5, 07:46 · [Discussion](https://news.ycombinator.com/item?id=49961861)
 
-**Background**: Doom, released by id Software in 1993, is a landmark first-person shooter whose engine architecture (id Tech 1) separates game logic from rendering and uses WAD files to store assets. SQL is the standard language for querying relational databases, and modern engines support procedural extensions like PL/SQL and T-SQL that add loops and branching. Porting Doom to SQL means reimplementing its game loop, state updates, and rendering as database queries rather than conventional procedural code.
+**Background**: LogicFolding is Huawei's chip technology that stacks multiple wafer layers so signals travel shorter distances in layer space rather than across a single chip, which Huawei says reduces overall heat. The deal is a cross-license, meaning both companies gain access to each other's patent portfolios, and it comes as Huawei's IP licensing business has generated positive revenue since 2021. Huawei remains on the U.S. Entity List, which restricts U.S. firms from certain dealings with it, making the regulatory path for this agreement notable.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cedardb.com/blog/sqldoom/">We ported the original Doom to SQL | CedarDB</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Id_Tech">id Tech - Wikipedia</a></li>
-<li><a href="https://vldb.org/pvldb/vol14/p1378-ramachandra.pdf">Procedural Extensions of SQL</a></li>
+<li><a href="https://www.tipranks.com/news/qualcomm-stock-rises-after-huawei-logicfolding-chip-deal">Qualcomm Stock Rises after Huawei LogicFolding Chip Deal</a></li>
+<li><a href="https://www.buildmvpfast.com/blog/huawei-logicfolding-tau-scaling-chip-breakthrough-2026">Huawei LogicFolding Tau Scaling Chip Breakthrough 2026</a></li>
+<li><a href="https://moorinsightsstrategy.com/field-notes/huawei-qualcomms-historic-cross-license-agreement/">Huawei & Qualcomm ’s Historic Cross - License Agreement</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were impressed but divided: some praised SQL's expressive power for complex logic and shared related projects like pg_shell and pg_gpt2, while others called it 'engineering malpractice' or noted practical pain points such as deadlocks and scaling issues when using SQL tables as the source of truth for game state. Overall sentiment was a mix of admiration for the technical feat and skepticism about its practical use.
+**Discussion**: Commenters debated whether Huawei is now earning net revenue from Qualcomm, a reversal from its past role as a technology buyer, while others questioned how Qualcomm can strike such a deal given Huawei's Entity List status. Some praised LogicFolding as an obvious-in-hindsight innovation that reduces heat, and others wondered how Ericsson might respond or lamented the shift in the 5G leadership race.
 
-**Tags**: `#SQL`, `#Doom`, `#game development`, `#database`, `#engineering`
+**Tags**: `#semiconductors`, `#patents`, `#Huawei`, `#Qualcomm`, `#geopolitics`
 
 ---
 
 <a id="item-6"></a>
-## [Distilling Stockfish into a ResNet/ViT Model on 1B Positions, 3.9B Dataset Released](https://www.reddit.com/r/MachineLearning/comments/1wxz5qq/distilling_stockfish_on_a_billion_positions_full/) ⭐️ 8.0/10
+## [Existing Tech Could Eradicate Mosquito-Borne Diseases, Article Argues](https://worksinprogress.co/issue/mosquitoes-are-a-choice/) ⭐️ 8.0/10
 
-A developer distilled the Stockfish chess engine's value function into a combined ResNet/ViT neural network trained on 1 billion positions from the Gigafish dataset, and publicly released the full 3.9 billion position dataset on Hugging Face. The dataset was built from positions drawn from 37 months of Lichess games. This demonstrates that a neural network can approximate Stockfish's depth-limited search value function faster than the engine itself, potentially offering a competitive alternative to NNUE. The public release of a 3.9 billion position dataset also provides a valuable resource for chess AI and knowledge distillation research. The author found that a pure vision transformer was slow to understand the board, while a CNN benefited early training due to its geometric inductive biases; combining both architectures yielded the best results. Holding search depth constant was crucial because the goal was to approximate the value function at a fixed depth-limited search.
+A Works in Progress article argues that the technology to eradicate mosquito-borne diseases such as dengue and malaria already exists, and that failing to deploy it is a deliberate choice costing millions of lives each year. The piece highlights tools like gene drives and Wolbachia-based methods that are ready for wider use. Mosquito-borne diseases kill hundreds of thousands of people annually, mostly in tropical regions, so wider deployment of these technologies could save millions of lives and reduce immense economic burdens. The debate also raises ethical and regulatory questions about deliberately altering wild insect populations. The article points to gene drives, which use CRISPR to spread anti-parasite genes through mosquito populations, and Wolbachia bacteria, which reduce mosquitoes' ability to transmit viruses like dengue. Trials such as Singapore's Wolbachia AlbB strain have shown a 72% reduction in dengue risk, though regulatory and ecological concerns remain.
 
-reddit · r/MachineLearning · /u/microscope1024 · Oct 5, 04:11
+hackernews · benbreen · Oct 4, 18:06 · [Discussion](https://news.ycombinator.com/item?id=49956290)
 
-**Background**: Stockfish is a free, open-source chess engine that has been among the strongest in the world for years, and since 2020 it has used an efficiently updatable neural network (NNUE) for evaluation. Knowledge distillation is a technique that transfers knowledge from a large model to a smaller one, often to make evaluation faster or deployable on weaker hardware. The Gigafish dataset is a large collection of chess positions derived from Lichess games, intended for training chess neural networks.
+**Background**: Gene drives are genetic systems that ensure a particular trait is inherited by nearly all offspring, allowing a modification to spread rapidly through a wild population. Wolbachia is a common bacterium that, when introduced into mosquitoes, blocks them from transmitting viruses such as dengue. Both approaches aim to suppress or modify mosquito populations rather than relying solely on insecticides and nets.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Stockfish_NNUE">Stockfish NNUE</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation</a></li>
-<li><a href="https://huggingface.co/datasets/lukesalamone/gigafish-3.8b-d10">lukesalamone/ gigafish -3.8b-d10 · Datasets at Hugging Face</a></li>
+<li><a href="https://www.geneconvenevi.org/articles/mosquito-gene-drives-and-the-malaria-eradication-agenda/">Mosquito Gene Drives and the Malaria Eradication Agenda</a></li>
+<li><a href="https://www.worldmosquitoprogram.org/en/work/wolbachia-method/how-it-works">How WMP's Wolbachia method works | World Mosquito Program</a></li>
+<li><a href="https://www.ocacademy.in/blogs/wolbachia-mosquito-dengue-control-singapore-trial/">Wolbachia mosquito dengue control : A 72% risk reduction</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#chess`, `#knowledge-distillation`, `#deep-learning`, `#dataset`, `#stockfish`
+**Discussion**: Commenters were largely supportive, with one noting that dengue is 'no joke' and another arguing there is 'no good reason not to' deploy the technology. Some raised practical questions about DIY use in endemic areas, while others compared the situation to tuberculosis, where a cure exists but human choices still allow the disease to persist.
+
+**Tags**: `#public health`, `#biotechnology`, `#genetic engineering`, `#mosquito-borne diseases`, `#global health`
 
 ---
 
 <a id="item-7"></a>
-## [Yandex Music's Sona transformer replaces 15+ component recommender pipeline](https://www.reddit.com/r/MachineLearning/comments/1wy4qxm/sona_one_transformer_replaced_our_15_candidate/) ⭐️ 8.0/10
+## [OpenAI to Watermark ChatGPT and Codex Text in the EU](https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/) ⭐️ 8.0/10
 
-Yandex Music introduced Sona, a single generative transformer that replaced its production recommender's 15+ candidate generators, pre-ranker, and ranker in an A/B test. In a 7-day test on smart speakers with 15% of users per arm, Sona achieved +4.53% Active Users and +6.30% Total Listening Time over the production control, both significant at p < 0.01. This demonstrates that a single end-to-end generative model can replace a complex multi-stage recommender cascade in a real production A/B test, potentially simplifying architecture and reducing engineering overhead. If validated in long-term tests, it could influence how large-scale recommender systems are designed across the industry. Sona reads up to 8,192 events using a History Compression technique that splits history into older 6,144 and recent 2,048 events, exchanging information via cross-attention and one full-history self-attention layer, roughly halving inference cost. Catalog coverage is lower than the production stack, which the team plans to investigate, and a long-term A/B test is underway.
+OpenAI announced it will add machine-readable invisible watermarks to qualifying ChatGPT and Codex text outputs in the EU over the coming weeks to comply with the AI Act's content transparency requirements. API users can optionally enable watermarking for some models, though it is off by default, and OpenAI is opening its text watermark detector to researchers and professional organizations. This is one of the first concrete implementations of the EU AI Act's transparency obligations by a major AI provider, and it could set a de facto standard for how AI-generated text is marked and detected across the industry. It affects EU users, developers building on OpenAI's API, enterprises relying on AI-generated content, and regulators seeking enforceable provenance mechanisms. OpenAI notes that editing the text can make the invisible marks harder to detect, echoing known limitations of text watermarking, such as reduced detector confidence after rewriting or translation. The watermarking applies only to qualifying outputs in the EU, and API watermarking is opt-in rather than enabled by default.
+
+rss · TechCrunch AI · Oct 5, 20:36
+
+**Background**: The EU AI Act's Article 50 requires providers of certain AI systems to make AI-generated or manipulated content detectable through machine-readable marking, so that synthetic content can be identified as such. Text watermarking works by embedding hidden, statistically detectable patterns into LLM-generated text, which a detector can later recognize. OpenAI's Codex is its coding agent that helps developers with tasks like bug fixing and refactoring, so watermarking it extends the transparency requirement beyond chat to code generation.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.resemble.ai/resources/complete-guide-to-eu-ai-act-watermarking-requirements-for-generative-ai">Complete Guide to EU AI Act Watermarking Requirements for...</a></li>
+<li><a href="https://vryse.co/blog/claude-ai-watermarking">Claude AI Watermarking : EU AI Act & Content Rules Explained</a></li>
+<li><a href="https://ai.google.dev/responsible/docs/safeguards/synthid">SynthID: Tools for watermarking and detecting LLM- generated Text</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#OpenAI`, `#AI Act`, `#watermarking`, `#AI regulation`, `#content provenance`
+
+---
+
+<a id="item-8"></a>
+## [Distilling Stockfish into a Neural Net on 1B Positions, 3.9B Dataset Released](https://www.reddit.com/r/MachineLearning/comments/1wxz5qq/distilling_stockfish_on_a_billion_positions_full/) ⭐️ 8.0/10
+
+A developer distilled Stockfish's value function into a combined ResNet/ViT model using 1 billion positions from the Gigafish dataset, and released the full 3.9 billion position dataset on Hugging Face. The dataset is built from 37 months of Lichess games, and the project specifically holds search depth constant to approximate depth-limited search with a neural network. This work explores whether a learned function can approximate Stockfish's depth-limited search faster than the engine itself, potentially offering a competitive alternative to NNUE. The public 3.9B dataset also gives the chess AI community a large, ready-to-use resource for training and benchmarking evaluation models. The author found that a pure vision transformer was very slow to understand the board, while a CNN benefited early in training from its geometric inductive biases; combining the two architectures gave the best results. Holding search depth constant was a deliberate design choice to make the distilled value function approximate the full search tree underneath each position.
+
+reddit · r/MachineLearning · /u/microscope1024 · Oct 5, 04:11
+
+**Background**: Stockfish is a top open-source chess engine that evaluates positions and picks moves, and since adopting NNUE (an efficiently updatable neural network) it has used a small neural net for evaluation. Knowledge distillation transfers knowledge from a large or strong model (the teacher) to a smaller model (the student), and here Stockfish acts as the teacher. ResNets are convolutional networks with strong spatial inductive biases, while vision transformers process images as patch sequences and must learn spatial structure from data.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Efficiently_updatable_neural_network">Efficiently updatable neural network - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation - Wikipedia</a></li>
+<li><a href="https://genmind.ch/posts/ResNet-vs-ViT-Benchmark-Reality-Check/">I Benchmarked ResNet vs ViT on 50K Images. They're Nearly Identical.</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#chess`, `#distillation`, `#neural-networks`, `#dataset`, `#stockfish`
+
+---
+
+<a id="item-9"></a>
+## [Yandex Music's Sona replaces 15+ recommender components with one transformer](https://www.reddit.com/r/MachineLearning/comments/1wy4qxm/sona_one_transformer_replaced_our_15_candidate/) ⭐️ 8.0/10
+
+Yandex Music introduced Sona, a single generative transformer that replaced over 15 candidate generators, a pre-ranker, and a ranker in a production A/B test on smart speakers, delivering +4.53% Active Users and +6.30% Total Listening Time over the control (p < 0.01). The model uses a History Compression technique that splits up to 8,192 events into 6,144 older and 2,048 recent events, roughly halving inference cost while retaining most of the quality of full attention. This is a rare production-validated demonstration that a single end-to-end generative recommender can replace a complex multi-stage cascade, potentially simplifying recommender architectures across the industry. If the approach generalizes, it could reduce engineering overhead and inference costs for large-scale recommendation systems. Sona reads up to 8,192 events, with the older 6,144 and recent 2,048 blocks exchanging information via cross-attention and one full-history self-attention layer, after which a 7-layer stack runs only on the recent 2,048. The decoder and Ranking Module share the same encoder output so the encoder runs once per request, but catalog coverage is lower than the production stack and the model has not yet shipped to full traffic.
 
 reddit · r/MachineLearning · /u/SettingAccording8986 · Oct 5, 10:07
 
-**Background**: Traditional production recommenders use a multi-stage cascade: candidate generators retrieve a subset of items from a large catalog, a pre-ranker filters them, and a heavy ranker scores the final list using hundreds of engineered features. This design exists because scoring millions of items per request within tens of milliseconds is infeasible with a single model. Recent advances in generative recommenders and efficient attention mechanisms have made single-model alternatives more practical.
+**Background**: Traditional production recommenders use a multi-stage cascade: many candidate generators retrieve items, a pre-ranker filters them, and a heavy ranker scores the survivors using hundreds of engineered features. Transformers, originally built for sequences, have recently been adapted into generative recommenders that can produce recommendations end-to-end, but full attention over long user histories is computationally expensive because its cost grows quadratically with sequence length. History Compression is a practical attention-efficiency technique that keeps older events visible while limiting expensive full attention to a shorter recent window.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.marktechpost.com/2026/10/05/yandex-introduces-sona-a-single-generative-recommender-that-replaces-entire-recommendation-cascade/">Yandex Introduces Sona: A Single Generative Recommender That...</a></li>
-<li><a href="https://preptima.com/questions/machine-learning/recommenders-and-ranking/candidate-generation-then-ranking">Candidate Generation and Ranking | Recommenders — Preptima</a></li>
+<li><a href="https://www.deeplearning.ai/the-batch/more-efficient-transformers">BigBird is an Efficient Attention Mechanism for Transformers</a></li>
+<li><a href="https://mbrenndoerfer.com/writing/quadratic-attention-bottleneck-transformers-long-sequences">Quadratic Attention Bottleneck - Interactive</a></li>
 
 </ul>
 </details>
@@ -182,105 +229,42 @@ reddit · r/MachineLearning · /u/SettingAccording8986 · Oct 5, 10:07
 
 ---
 
-<a id="item-8"></a>
-## [ARC-AGI-3 Kaggle scores jump from 7% to 56% in 30 days](https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arc%CE%B1gi3_scores_on_kaggle_just_went_from_7_to/) ⭐️ 8.0/10
+<a id="item-10"></a>
+## [ARC-AGI-3 Kaggle Scores Jump from 7% to 56% in 30 Days](https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arc%CE%B1gi3_scores_on_kaggle_just_went_from_7_to/) ⭐️ 8.0/10
 
-Over the past 30 days, the top scores on the Kaggle ARC-AGI-3 leaderboard rose from roughly 7% to 56%, achieved by small local models running inside a harness, according to a Reddit post on r/MachineLearning. The poster notes the leaderboard graphic is slightly out of date and asks the community what to make of the rapid climb. ARC-AGI-3 is explicitly designed to measure human-like fluid intelligence and to show where humans still outperform machines, so a jump to 56% on a Kaggle track suggests benchmark-style reasoning tasks are being solved faster than expected. If small local models can reach this level, it raises questions about how much of the remaining gap reflects genuine reasoning versus harness engineering and benchmark-specific tuning. Kaggle rules for the ARC Prize 2026 ARC-AGI-3 track restrict participants to small local models, so the gains come from harness design and agent scaffolding rather than large frontier models. ARC-AGI-3 is an interactive benchmark where agents must explore novel environments, infer goals on the fly, and build adaptable world models without instructions, and each frame is encoded as 4096 ASCII characters with spatial rather than semantic meaning.
+Over the past 30 days, top scores on the ARC-AGI-3 Kaggle competition surged from roughly 7% to 56%, achieved by small local models running inside custom harnesses under strict competition compute constraints. This means these compact, locally-runnable systems are now outperforming average humans on a benchmark explicitly designed to demonstrate human superiority. ARC-AGI-3 was built as a hard test of fluid, human-like reasoning, so a rapid jump from near-zero to above-average-human performance signals that interactive reasoning benchmarks may be saturating faster than expected. This could reshape how the AI community measures progress toward AGI and raise questions about whether current benchmarks still meaningfully separate human and machine intelligence. Kaggle competitors are restricted to smallish local models, so the 56% figure reflects efficiency under tight compute budgets rather than raw scale. The reported leaderboard graphic is noted as slightly out-of-date, and ARC-AGI-3 scores are known to swing widely depending on the harness wrapped around a model, meaning harness engineering is a major factor in these gains.
 
 reddit · r/MachineLearning · /u/we_are_mammals · Oct 4, 10:24 · [Discussion](https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arcαgi3_scores_on_kaggle_just_went_from_7_to/)
 
-**Background**: ARC-AGI (Abstraction and Reasoning Corpus for Artificial General Intelligence) is a benchmark family created to test general reasoning ability rather than memorized knowledge. ARC-AGI-3 moves beyond static puzzle grids to interactive environments where an agent must act, observe, and learn continuously, similar to how a human would explore an unfamiliar game. The ARC Prize 2026 competition on Kaggle hosts this track with prize money and rules that push participants toward efficient, small-model solutions.
+**Background**: ARC-AGI-3 is an interactive reasoning benchmark from the ARC Prize that challenges AI agents to explore novel environments, infer goals on the fly, build adaptable world models, and learn continuously through action-response loops. Unlike static puzzle benchmarks, it has no instructions and requires agents to figure out rules and objectives from observation alone, with a 100% score meaning an agent can beat every game as efficiently as a human. The Kaggle competition is a systems-track challenge where participants must submit efficient, purpose-built methods under strict compute constraints, and a $2M prize pool is attached to the broader ARC Prize effort.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arcprize.org/arc-agi/3">ARC - AGI - 3</a></li>
+<li><a href="https://arcprize.org/leaderboard">ARC Prize - Leaderboard</a></li>
+<li><a href="https://www.mindstudio.ai/blog/gpt6-astra-benchmarks-agi-claims">GPT-6 Astra Benchmarks : Do the Numbers Actually Mean AGI ?</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit post is brief and the provided content does not include actual comment text, but the framing invites debate over whether small local models in a harness are genuinely beating average humans on a benchmark designed to show human superiority, or whether the result reflects benchmark-specific optimization.
-
-**Tags**: `#ARC-AGI`, `#benchmark`, `#AI`, `#machine learning`, `#Kaggle`
-
----
-
-<a id="item-9"></a>
-## [SK Telecom Apologizes for Massive Data Breach, Offers Free USIM Replacements](https://t.me/zaihuapd/44206) ⭐️ 8.0/10
-
-SK Telecom (SKT), South Korea's largest telecom operator, confirmed that its internal HSS server was hacked, exposing sensitive data of over 25 million users, including IMEI, SN, ICCID, PIN2/PUK2, eID, encryption K values, and private keys. The CEO publicly apologized and announced free USIM card replacements for all SKT users (including MVNO users on its network, with some device exceptions), and will reimburse those who recently paid for replacements. This is one of the largest telecom data breaches in recent years, affecting over 25 million people and exposing critical authentication credentials that could enable SIM cloning or identity theft. The incident highlights the vulnerability of core telecom infrastructure and sets a precedent for industry-wide incident response, potentially pressuring other carriers to reassess their security measures. The compromised HSS server stored authentication keys (K values) and private keys used to secure subscriber identity, which are critical for preventing unauthorized access. The free USIM replacement aims to mitigate risks by issuing new cards with fresh credentials, but some devices (e.g., certain IoT or older models) may not be eligible, and users may still face residual risks if other data like IMEI is misused.
-
-telegram · zaihuapd · Oct 4, 09:02
-
-**Background**: A Home Subscriber Server (HSS) is a central database in 4G/5G networks that manages subscriber profiles, authentication, and security keys. A USIM card is a universal subscriber identity module used in 3G/4G/5G devices to securely store the international mobile subscriber identity (IMSI) and related keys for network authentication. The breach of an HSS server is particularly severe because it can compromise the root of trust for mobile communications, enabling attackers to impersonate users or intercept calls and data.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.p1sec.com/blog/home-subscriber-server-hss">Home Subscriber Server ( HSS ): The Backbone of Modern Telecom ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/USIM_(card)">USIM (card)</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#cybersecurity`, `#data breach`, `#telecom`, `#privacy`, `#incident response`
-
----
-
-<a id="item-10"></a>
-## [Google Releases VeriHarness Self-Verification Framework for Long-Horizon Tasks](https://arxiv.org/abs/2610.00972v1) ⭐️ 8.0/10
-
-Google Research released VeriHarness, an agentic verification framework that uses the same model that generated candidate outputs to verify them by checking disputed claims against environment evidence and actively challenging consensus claims, then selecting, revising, or rebuilding the final result. It achieved the highest selection scores across five long-horizon benchmarks and two models, and after evidence-driven revision improved Gemini 3.5 Flash by an average of 6.2 points and Claude Opus 4.8 by 6.4 points over single-pass generation, while releasing roughly 26,000 rollouts. This is a training-free, plug-and-play verification harness that improves long-horizon LLM agent performance without reference answers or grading rubrics, which could make agentic AI more reliable in real-world multi-step tasks where ground-truth labels are unavailable. The release of 26,000 rollouts also provides a valuable public dataset for studying agent verification and evaluation. VeriHarness is described as the first agentic verification harness for long-horizon tasks, and it is training-free and plug-and-play across benchmarks and models, relying on disagreement resolution, consensus challenging, and evidence-backed revision rather than external graders. The reported gains are measured against single-pass generation on five long-horizon benchmarks with two models, and the framework's code is available in the google-research/veriharness GitHub repository.
-
-telegram · zaihuapd · Oct 4, 13:32
-
-**Background**: Long-horizon tasks require an AI agent to make many decisions over an extended sequence of steps, and they cannot be completed reliably by a single prompt or short exchange. Because pure generation tends to drift over long dependency chains, verification before or during execution is increasingly seen as a way to keep agents honest. Rollouts are the sampled generation trajectories an LLM produces during training or evaluation, and releasing them lets researchers analyze agent behavior systematically.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2610.00972">VeriHarness : Scaling Agentic Verification for Long-Horizon Tasks</a></li>
-<li><a href="https://huggingface.co/papers/2610.00972">Paper page - VeriHarness : Scaling Agentic Verification for...</a></li>
-<li><a href="https://github.com/google-research/veriharness/issues">Issues · google -research/ veriharness · GitHub</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM`, `#verification`, `#long-horizon tasks`, `#Google`, `#benchmark`
+**Tags**: `#ARC-AGI`, `#AI benchmarks`, `#Kaggle`, `#AGI`, `#machine learning`
 
 ---
 
 <a id="item-11"></a>
-## [Huawei and Qualcomm Sign Broad Multi-Year Patent Deal Covering 5G and AI](https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement) ⭐️ 8.0/10
-
-Huawei and Qualcomm announced a multi-year, broad patent cross-licensing agreement covering 5G, computing, AI, and networking, under which Qualcomm will also purchase some of Huawei's U.S. patents and license Huawei's logic-folding chip manufacturing technology. The deal, subject to regulatory approval, is expected to bring Huawei's cumulative patent licensing contract value to over $6.9 billion. This is the first licensing deal between the two companies to include 5G technology, signaling a significant shift in the global tech industry landscape and potentially easing long-standing patent tensions between Huawei and major U.S. chipmakers. It also strengthens Huawei's IP monetization strategy, which has generated positive revenue since 2021. The agreement covers cross-licenses to both companies' patent portfolios across 5G, compute, AI, and networking, and includes Qualcomm acquiring certain Huawei U.S. patents as well as a license to Huawei's logic-folding chip manufacturing technology. The transaction is subject to necessary regulatory approvals before it can be completed.
-
-telegram · zaihuapd · Oct 5, 06:45
-
-**Background**: Patent cross-licensing agreements allow companies to use each other's patented technologies without risking infringement lawsuits, often creating synergies and reducing litigation costs. Huawei has been actively monetizing its patent portfolio, and this deal with Qualcomm—a major U.S. chip designer—marks a notable expansion of its licensing reach into 5G and AI. Logic-folding chip manufacturing is a Huawei technology that restructures circuit topology within a single chip's logic layer, distinct from advanced packaging or 3D stacking approaches.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.shiftdelete.net/huawei-and-qualcomm-sign-landmark-5g-patent-licensing-agreement/">Huawei and Qualcomm Sign Landmark 5 G Patent Licensing Agreement</a></li>
-<li><a href="https://www.techzine.eu/news/infrastructure/144742/huawei-and-qualcomm-sign-broad-patent-agreement/">Huawei and Qualcomm sign broad patent agreement - Techzine Global</a></li>
-<li><a href="https://www.ithome.com/1/009/852.htm">高通与华为达成 逻 辑 折 叠 芯 片 技 术 相关专利授权，韬定律加速出海 - IT...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Huawei`, `#Qualcomm`, `#patent-licensing`, `#5G`, `#AI`
-
----
-
-<a id="item-12"></a>
 ## [Quad9 Refuses French DNS Blocking Order, Faces €580K Daily Fine](https://torrentfreak.com/dns-resolver-quad9-rejects-french-piracy-blocks-weighs-exit-as-bein-seeks-up-to-e580k-a-day/) ⭐️ 8.0/10
 
-Swiss non-profit DNS resolver Quad9 has refused to comply with a French court order requiring it to block 58 piracy-related domains, with beIN Sports seeking fines of €10,000 per domain per day — up to €580,000 daily. A Paris court heard the case last Thursday and is expected to rule within three weeks. This case highlights the growing conflict between DNS providers and state-mandated censorship, and could set a global precedent for how DNS resolvers handle jurisdiction-specific blocking demands. Quad9's principled stance may influence other privacy-focused DNS operators and shape the future of internet governance and digital rights. Quad9 states it has never blocked any domain and, because it does not collect user data, cannot target only French users — leaving it with the choice of either global blocking or exiting the French market. It also criticized France's July law allowing real-time automatic blacklisting of domains as 'reckless and dangerous'.
+Swiss non-profit DNS provider Quad9 has refused to comply with a French court order requiring it to block 58 piracy-linked domains, and beIN Sports is seeking fines of up to €580,000 per day (€10,000 per domain). A Paris court heard the case last Thursday, with a ruling expected within three weeks. This case could set a global precedent for how state-mandated DNS blocking applies to privacy-focused resolvers, potentially forcing Quad9 to exit France or block domains worldwide. It highlights the growing tension between national copyright enforcement and the borderless, privacy-centric architecture of public DNS services. Quad9 says it has never blocked any domain and, because it does not collect user data, it cannot geo-target blocks to French users only — leaving it with the choice of global blocking or exiting France. It also criticized France's July law allowing automated real-time domain blacklisting as 'reckless and dangerous.'
 
 telegram · zaihuapd · Oct 5, 08:05
 
-**Background**: Quad9 is a Swiss non-profit DNS resolver whose founding charter prioritizes privacy, meaning it does not log users' IP addresses. DNS resolvers translate human-readable domain names into IP addresses, and blocking at the DNS level is a common method for enforcing copyright-related site blocks. France has increasingly pushed for automated, real-time domain blacklisting to combat piracy, particularly of live sports streams.
+**Background**: DNS resolvers like Quad9 translate human-readable domain names into IP addresses, and blocking at this level is a common anti-piracy tool. Quad9 is a Swiss non-profit that emphasizes privacy by not logging user queries, which makes selective, jurisdiction-specific blocking technically difficult. France has recently expanded its piracy-blocking regime, including a July law enabling automated, real-time blocking of pirate sports streams.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://quad9.net/">Quad 9 | A public and free DNS service for a better security and privacy</a></li>
+<li><a href="https://torrentfreak.com/dns-resolver-quad9-rejects-french-piracy-blocks-weighs-exit-as-bein-seeks-up-to-e580k-a-day/">DNS Resolver Quad9 Rejects French Piracy Blocks ... * TorrentFreak</a></li>
+<li><a href="https://quad9.net/">Quad9 | A public and free DNS service for a better security and privacy</a></li>
+<li><a href="https://torrentfreak.com/wrong-logo-no-piracy-proof-french-court-rejects-dns-piracy-blocking-bids-250515/">Wrong Logo, No Piracy Proof: French Court Rejects DNS Piracy...</a></li>
 
 </ul>
 </details>
