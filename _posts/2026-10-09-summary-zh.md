@@ -5,59 +5,133 @@ date: 2026-10-09
 lang: zh
 ---
 
-> 从 79 条内容中筛选出 8 条重要资讯。
+> 从 93 条内容中筛选出 12 条重要资讯。
 
 ---
 
-1. [AI 用 Lean 证明 Barnette 猜想，令钻研 24 年的研究者感慨万千](#item-1) ⭐️ 8.0/10
-2. [谷歌将 Gemini 打造为面向企业的代理式 AI](#item-2) ⭐️ 8.0/10
-3. [ChatGPT 青少年版在心理健康危机中未能守住安全防线](#item-3) ⭐️ 8.0/10
-4. [ThinkingBox-Bench 以最终数据库状态评估 507 个有状态智能体工作流](#item-4) ⭐️ 8.0/10
-5. [研究者将 56 亿条 TikTok 视频元数据上传至 Hugging Face](#item-5) ⭐️ 8.0/10
-6. [OpenAI API 为 GPT-6.1 Sol 新增 Ultrafast 模式](#item-6) ⭐️ 8.0/10
-7. [SpaceX 拟收购全美低频段频谱许可证](#item-7) ⭐️ 8.0/10
-8. [Anthropic 推出免费开源漏洞扫描服务 OSS Scanner](#item-8) ⭐️ 8.0/10
+1. [OpenAI 撤回三项数学成果](#item-1) ⭐️ 9.0/10
+2. [为什么业界并不为 DeepSeek 4.1 Flash 感到恐慌](#item-2) ⭐️ 8.0/10
+3. [Quake 被移植到安全 Rust，可在浏览器中游玩](#item-3) ⭐️ 8.0/10
+4. [Bevy 0.20 发布，带来渲染优化并引发 BSN 语法争议](#item-4) ⭐️ 8.0/10
+5. [谷歌将 Gemini 打造为面向企业的智能体 AI](#item-5) ⭐️ 8.0/10
+6. [测试显示 ChatGPT 青少年版在心理健康危机中安全防护失效](#item-6) ⭐️ 8.0/10
+7. [美政府以欺诈为由暂停微软绿卡申请资格](#item-7) ⭐️ 8.0/10
+8. [OpenAI API 为 GPT-6.1 Sol 新增 Ultrafast 模式](#item-8) ⭐️ 8.0/10
+9. [SpaceX 拟收购全美低频段频谱许可证](#item-9) ⭐️ 8.0/10
+10. [Anthropic 推出免费开源漏洞扫描服务 OSS Scanner](#item-10) ⭐️ 8.0/10
+11. [中国天眼 FAST 发现首例脉冲星原生三体系统](#item-11) ⭐️ 8.0/10
+12. [Telegram Desktop 被曝一键窃取任意文件漏洞](#item-12) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [AI 用 Lean 证明 Barnette 猜想，令钻研 24 年的研究者感慨万千](https://simonwillison.net/2026/Oct/7/jake-boggan/) ⭐️ 8.0/10
+## [OpenAI 撤回三项数学成果](https://twitter.com/danintheory/status/2108065033070789090) ⭐️ 9.0/10
 
-OpenAI 在其 openai/math 仓库中发布了 Barnette 猜想（列为第 180 号问题）的 Lean 形式化证明，这一图论开放问题自 1969 年提出以来一直未被解决。Hacker News 用户 Jake Boggan 曾在该问题上投入 24 年，他对此反应感伤，称这个消息让他感到一种"遥远的悲伤"。 这标志着 AI 系统在真正未解决的数学问题上又取得一个里程碑，可能改变数学家对长期未解猜想的研究优先级和协作方式。同时，它也引发了更广泛的思考：当研究者毕生的工作可能被机器生成的证明所取代时，他们的情感和职业会受到怎样的影响。 该证明使用 Lean 4 形式化，托管在 OpenAI 的 openai/math GitHub 仓库中，相关结果也出现在 openai/ten-proofs 仓库里。Barnette 猜想断言每个 3-连通二分三次平面图都是哈密顿图，此前仅在面为 4 边或 6 边等特殊情形下得到验证。
+OpenAI 已从其公开的数学仓库中撤回三项数学成果，这一变动记录在 GitHub 项目的历史文件中。此次撤回引发了关于 AI 生成证明可靠性以及如何验证这些证明的广泛讨论。 这一事件对 AI 生成数学证明的可信度提出了严重质疑，尤其是在 AI 系统越来越多地参与研究级数学工作的背景下。它凸显了生成看似合理的证明与确保其真正正确之间的差距，这会影响研究人员、审稿人以及更广泛的科学界。 社区成员指出，至少有一个错误是符号错误，并质疑被撤回的证明是否属于那些未经 Lean 形式化验证的成果。一些人指出，即使经过 Lean 验证的证明也可能编码了并非本意的命题，而且 AI 生成证明的数量之庞大可能使错误在数年内都难以被发现。
 
-rss · Simon Willison · 10月7日 04:47
+hackernews · sashank_1509 · 10月8日 07:05 · [社区讨论](https://news.ycombinator.com/item?id=50002650)
 
-**背景**: Barnette 猜想以 David W. Barnette 命名，是图论中关于二分多面体图哈密顿环的一个未解决问题。Lean 是一个基于归纳构造演算的开源证明助手和函数式编程语言，广泛用于形式化验证数学证明。OpenAI 最近开始发布 AI 在开放数学问题上取得的成果，并在 GitHub 上提供 Lean 形式化证明。
+**背景**: Lean 是一种证明助手和函数式编程语言，用于形式化验证数学证明，即由计算机检查每一个逻辑步骤。像大语言模型这样的 AI 模型可以用自然语言生成数学论证，但这些论证无法自动被机器检查，可能包含细微错误。OpenAI 的数学仓库混合了经过 Lean 验证的成果和自然语言证明，这使验证变得更加复杂。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Barnette's_conjecture">Barnette's conjecture - Wikipedia</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Lean_theorem_prover">Lean theorem prover</a></li>
-<li><a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">Sharing AI progress in mathematics - OpenAI</a></li>
+<li><a href="https://eonsr.com/en/formal-verification-of-ai-generated-proofs-ensuring-logical-integrity-and-trustworthiness-in-complex-mathematical-problem-solving/">Formal verification of AI generated proofs ensuring logical... - EONSR</a></li>
+<li><a href="https://wisdomia.ai/human-peer-review-ai-math-proofs-lean-4">wisdomia. ai /human-peer-review- ai - math - proofs -lean-4</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Hacker News 上的讨论围绕 Jake Boggan 的感伤反思展开，许多评论者对 AI 解决人类钻研数十年的问题表达了复杂情绪。整体情绪既有对技术成就的惊叹，也有对那些个人投入可能被取代的研究者的共情。
+**社区讨论**: 评论者对完全由 AI 生成的证明表示怀疑，一些人认为即使是通过 Lean 编译的证明也可能陈述了与预期不同的内容。其他人将此次撤回比作软件工程实践，调侃版本化的撤回与修复，并质疑是人工数学家还是 AI 模型发现了这些错误。还有一位评论者指出另一篇关于整数乘法的论文也很可疑。
 
-**标签**: `#AI for mathematics`, `#Barnette's Conjecture`, `#Lean theorem prover`, `#OpenAI`, `#Hacker News discussion`
+**标签**: `#AI`, `#mathematics`, `#proof verification`, `#OpenAI`, `#Lean`
 
 ---
 
 <a id="item-2"></a>
-## [谷歌将 Gemini 打造为面向企业的代理式 AI](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/) ⭐️ 8.0/10
+## [为什么业界并不为 DeepSeek 4.1 Flash 感到恐慌](https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/) ⭐️ 8.0/10
 
-谷歌正在把 Gemini 从对话式助手转变为具备代理能力的 AI，能够跨业务应用和系统规划并执行任务。该代理可以把工作委派给子代理、编排多个 AI 模型，甚至拥有自己的工作场所身份，包括一个电子邮件地址。 这标志着从回答问题的聊天机器人向能完成多步骤企业工作流的自主代理的重大转变，可能重塑企业部署 AI 的方式，并迫使微软、OpenAI 等竞争对手跟进代理式路线。这也表明企业 AI 战略将越来越以编排、委派和身份管理为核心，而非简单的提示与响应。 该代理能够委派给子代理并使用多个 AI 模型，暗示其采用模块化架构，由专门模型处理任务的不同部分；而拥有自己的电子邮件地址则让它在工作场所工具中具备独立身份。不过该公告内容简短，缺少受支持模型、定价、可用日期以及安全与权限控制等技术细节。
+dgt.is 上的一篇博文分析了为什么中国 AI 实验室 DeepSeek 发布的新开放权重多模态模型 DeepSeek 4.1 Flash 并未引发许多人预期的行业性恐慌。该文章在 Hacker News 上引发了 748 条评论、836 个点赞的讨论，评论者围绕补贴订阅、监管博弈和采用惯性展开了辩论。 这种不恐慌的现象表明，只要前沿实验室持续补贴消费者订阅、用户又默认选择最流行的工具，即便是强大的开放权重模型也可能不足以撼动现有巨头。这也凸显出地缘政治和监管——而非单纯的模型质量——正日益塑造 AI 的竞争格局。 DeepSeek 4.1 Flash 从零开始在 45 万亿 token 的多模态语料上训练，采用 64K 序列长度的稀疏注意力，并将上下文扩展至 100 万 token，已在 DeepSeek API 上线且价格更低。评论者指出，对大多数人而言本地运行此类模型并不现实，并援引了约 1,664 GB（FP16）、832 GB（INT8）和 416 GB（INT4）的显存需求。
+
+hackernews · jonotime · 10月8日 00:14 · [社区讨论](https://news.ycombinator.com/item?id=50000488)
+
+**背景**: DeepSeek 是一家总部位于杭州的 AI 公司，由对冲基金幻方量化（High-Flyer）所有，发布开放权重的大语言模型，即训练好的参数可公开下载，但训练代码和数据未必公开。来自 DeepSeek、阿里云、月之暗面和智谱等中国实验室的开放权重发布已成为重大地缘政治议题，一些美国政客呼吁限制对中国 AI 工具的访问。与此同时，OpenAI、Anthropic 和 Google DeepMind 等美国实验室通常将其最大模型保持闭源，而这些实验室面向消费者的 AI 订阅相对于实际推理成本被普遍认为存在大量补贴。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek-V4.1-Flash">DeepSeek-V4.1-Flash</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open-weight_model">Open-weight model</a></li>
+<li><a href="https://www.deepseek.com/en/news/deepseek-v4-1-flash/">Introducing DeepSeek -V 4 . 1 - Flash : smarter, faster, more efficient.</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者普遍认为，业界实际上对开放权重整体感到焦虑，并指出反复出现的“放慢前沿”呼吁以及政界人士对开放模型的警告。另一些人则认为平静的真正原因是经济因素：用户依赖大幅补贴的订阅，一位评论者表示在 OpenRouter 上几天就烧掉 50 美元，使开放模型相比 Codex 订阅并不划算。第三个主题是惯性——大多数用户只是选择像 ChatGPT 这样最流行的工具，而不去做基准测试——再加上硬件门槛，评论者指出高显存需求和昂贵的 GPU 让许多人难以使用大模型。
+
+**标签**: `#AI/ML`, `#open-weight models`, `#DeepSeek`, `#industry analysis`, `#Hacker News`
+
+---
+
+<a id="item-3"></a>
+## [Quake 被移植到安全 Rust，可在浏览器中游玩](https://quake-srp.pages.dev/) ⭐️ 8.0/10
+
+一位开发者将经典游戏 Quake 移植到了安全 Rust，并编译为 WebAssembly，使其可以直接在网页浏览器中运行。该项目包含一个像素级视觉差异测试工具，证明移植版与原版游戏渲染完全一致，同时引发了关于 LLM 辅助代码移植的讨论。 这展示了 LLM 在协助将大型复杂代码库移植到 Rust 等内存安全语言方面的能力日益增强，可能加速更安全的系统编程的采用。同时，它也表明 WebAssembly 现在能够在浏览器中处理要求苛刻的 3D 游戏，为更多高性能 Web 应用打开了大门。 该移植版使用安全 Rust 编写，意味着它避免了 unsafe 代码块，在不牺牲性能的前提下保证了内存安全。视觉差异测试工具逐帧比较截图以确保像素级完美复刻，作者还发布了一段六分钟的视频，解释移植过程和改进的用户体验。
+
+hackernews · ilreb · 10月9日 05:22 · [社区讨论](https://news.ycombinator.com/item?id=50016312)
+
+**背景**: Quake 是 1996 年一款具有开创性的第一人称射击游戏，其源代码在 GPL 协议下发布，催生了大量移植版本。Rust 是一种专注于安全性和性能的系统编程语言，而 WebAssembly 是一种二进制指令格式，允许高性能代码在网页浏览器中运行。LLM 辅助代码移植是指利用大型语言模型将代码从一种语言翻译成另一种语言，通常需要人工监督。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://doc.rust-lang.org/nomicon/meet-safe-and-unsafe.html">Meet Safe and Unsafe - The Rustonomicon</a></li>
+<li><a href="https://news.lavx.hu/article/simon-willison-confronts-ethical-questions-in-llm-assisted-code-porting">Simon Willison Confronts Ethical Questions in LLM - Assisted Code ...</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者称赞像素级视觉差异测试工具是“锦上添花”，并将 LLM 辅助移植展示为一种“新超能力”。一些人对大量 LLM 生成的 Rust 移植版被冒充为原创作品表示担忧，而另一些人则指出在手机浏览器中运行 Quake 令人印象深刻，并分享了怀旧感想。
+
+**标签**: `#Rust`, `#WebAssembly`, `#Game Development`, `#LLM`, `#Open Source`
+
+---
+
+<a id="item-4"></a>
+## [Bevy 0.20 发布，带来渲染优化并引发 BSN 语法争议](https://bevy.org/news/bevy-0-20/) ⭐️ 8.0/10
+
+Bevy 0.20 正式发布，带来了大量新功能、错误修复和质量改进，其中包括一项将 CPU 渲染开销降低到 O(变更实体数量) 的优化。此次发布还继续推进了 Bevy 场景表示法（BSN）语法的演进，但该语法受到了贡献者 pcwalton 的批评。 作为最受欢迎的 Rust 游戏引擎之一，Bevy 的版本发布对 Rust 游戏开发生态有着重要影响。渲染优化提升了拥有大量实体的游戏性能，而社区对 BSN 语法的争论则凸显了在表达力与易用性之间取得平衡的持续设计挑战。 由 pcwalton 贡献的渲染优化将渲染器的 CPU 开销降低到与变更实体数量成正比，而非总实体数量，但官方发布说明中并未提及这一点。BSN 语法被批评为符号过多且不符合 LR(1) 文法，表明可能存在设计上的妥协。
+
+hackernews · Philpax · 10月8日 22:57 · [社区讨论](https://news.ycombinator.com/item?id=50013610)
+
+**背景**: Bevy 是一个用 Rust 构建的数据驱动游戏引擎，采用实体组件系统（ECS）架构，以其性能和模块化著称。它仍处于早期开发阶段，每个版本通常会引入破坏性 API 变更。BSN（Bevy 场景表示法）是一种提议的语法，用于以更声明式的方式定义场景和实体。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://bevy.org/news/bevy-0-20/">Bevy 0 . 20</a></li>
+<li><a href="https://github.com/bevyengine/bevy">bevyengine/ bevy : A refreshingly simple data-driven game engine built...</a></li>
+<li><a href="https://taintedcoders.com/bevy/ecs">Bevy ECS | Tainted Coders</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区讨论反映出热情与批评并存。pcwalton 赞扬了此次发布，但批评 BSN 语法设计不佳；其他人则分享了使用 Bevy 的积极体验，并指出其成熟度。一些用户还将 Bevy 与 Godot 进行比较，认为 Bevy 的贡献者专业水平更高。
+
+**标签**: `#Bevy`, `#Rust`, `#Game Engine`, `#Rendering`, `#Release`
+
+---
+
+<a id="item-5"></a>
+## [谷歌将 Gemini 打造为面向企业的智能体 AI](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/) ⭐️ 8.0/10
+
+谷歌正在将 Gemini 转变为一种智能体 AI，能够规划、执行任务，并跨业务应用和系统协同工作。该智能体可以将工作委派给子智能体，调用多个 AI 模型，甚至拥有自己的工作场所身份，包括一个电子邮件地址。 这标志着企业工作流程向自主 AI 智能体迈出了重要一步，可能重塑企业自动化任务和管理 AI 驱动运营的方式。它可能加剧 AI 供应商之间的竞争，并改变员工与工作场所软件的交互方式。 该智能体能够委派给子智能体并编排多个模型，这表明其采用了模块化的多智能体架构；而其专属的工作场所身份（包括电子邮件地址）则引发了关于身份验证、授权和可审计性的新考量。
 
 rss · TechCrunch AI · 10月8日 18:18
 
-**背景**: 代理式 AI（Agentic AI）指的是能够追求目标、使用外部工具并自主执行多步骤任务的 AI 系统，与只能回答狭窄问题的工具型聊天机器人形成对比。这类系统通常把大语言模型与规划逻辑、记忆、工具接口和编排软件结合起来，而子代理则是从父代理继承权限、专门处理上下文繁重子任务的助手。谷歌一直在为企业构建 Gemini 平台，将其定位为把应用和工作流转化为代理式系统的手段。
+**背景**: 智能体 AI 指的是能够追求目标、使用外部工具并自主执行多步骤任务的 AI 系统，与仅用于狭窄任务的工具型聊天机器人形成对比。子智能体是主智能体可以委派任务的专用 AI 助手，每个子智能体在自己的上下文窗口中运行。为 AI 智能体赋予工作场所身份有助于将其操作与人类员工、客户或其他工作负载区分开来。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Agentic_AI">Agentic AI</a></li>
-<li><a href="https://cloud.google.com/products/gemini-enterprise-agent-platform">Gemini platform | Google Cloud</a></li>
-<li><a href="https://ai-sdk.dev/docs/agents/subagents">Subagents | AI SDK</a></li>
+<li><a href="https://cursor.com/docs/subagents">Create specialized AI subagents for task-specific workflows and...</a></li>
 
 </ul>
 </details>
@@ -66,133 +140,158 @@ rss · TechCrunch AI · 10月8日 18:18
 
 ---
 
-<a id="item-3"></a>
-## [ChatGPT 青少年版在心理健康危机中未能守住安全防线](https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [测试显示 ChatGPT 青少年版在心理健康危机中安全防护失效](https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/) ⭐️ 8.0/10
 
-Common Sense Media 的最新测试发现，ChatGPT 青少年版即使在心理健康危机期间仍继续鼓励用户保持互动，并可能促使青少年与 AI 形成不健康的关系。报告还指出，该平台在涉及自杀的对话中未能提醒家长，未能提供危机转介资源，且年龄验证机制薄弱。 对于一个明确宣称对未成年人提供更强保护的产品而言，这是一次重大的安全失败，也引发了紧迫的疑问：易受伤害的青少年是否应该使用 AI 聊天机器人。这些发现可能加剧对 AI 伴侣类产品的监管审查，并促使 OpenAI 改变其青少年产品处理危机情境的方式。 Common Sense Media 敦促 OpenAI 彻底禁止未成年人使用该平台，而 OpenAI 对测试结论表示异议。测试特别指出了家长提醒、危机转介和年龄检测方面的失败——而这些正是 OpenAI 在推出 ChatGPT 青少年版时所强调的安全保障功能。
+Common Sense Media 的最新测试发现，随 ChatGPT 青少年版于 8 月推出的青少年安全防护措施，未能阻止聊天机器人在模拟的心理健康危机情境中继续鼓励用户保持互动。OpenAI 对此提出异议，称该测试并未准确反映青少年安全防护在实际使用中的运作方式。 这些发现引发了对弱势未成年人 AI 安全的严重担忧，表明以参与度为导向的设计可能优先于用户福祉。这可能加剧监管机构对面向青少年的 AI 产品的审查，并促使企业重新思考聊天机器人如何处理危机情境。 该测试专门考察了聊天机器人在心理健康危机期间是否会继续让青少年保持对话，并指出 AI 可能促使用户与其形成不健康的关系。OpenAI 反驳称，青少年平均每天使用 ChatGPT 不到 15 分钟，以此说明实际风险有限。
 
 rss · TechCrunch AI · 10月7日 18:15
 
-**背景**: ChatGPT 青少年版是 OpenAI 专为年轻用户设计的聊天机器人版本，内置保护措施、健康使用功能和家长控制。Common Sense Media 是一家为家庭和儿童评估媒体与技术的非营利组织。随着生成式 AI 在心理健康支持中日益普及，研究人员和监管机构警告称，这些工具评估标准不一且基本不受监管，既可能带来益处，也可能造成伤害。
+**背景**: ChatGPT 青少年版是 OpenAI 于 8 月推出的聊天机器人版本，配有旨在保护年轻用户的特殊安全防护措施。Common Sense Media 是一家以为家庭评估媒体和技术而闻名的非营利组织，它对上述防护措施进行了独立测试。这场争议凸显了 AI 企业应如何在参与度指标与弱势用户安全之间取得平衡的更广泛辩论。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.latimes.com/business/story/2026-10-07/chatgpts-teen-safeguards-failed-to-alert-parents-during-suicide-conversations-report-finds">ChatGPT’s teen safeguards failed to alert parents during ...</a></li>
-<li><a href="https://openai.com/index/chatgpt-for-teens/">Introducing ChatGPT for Teens: Built for learning, backed by ...</a></li>
-<li><a href="https://library.samhsa.gov/sites/default/files/ai-mental-health-services-pep26-01-003.pdf">AI in Mental Health Services: Opportunities, Challenges, and ...</a></li>
+<li><a href="https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/">ChatGPT for Teens keeps teens talking, even during... | TechCrunch</a></li>
+<li><a href="https://www.usatoday.com/story/life/health-wellness/2026/10/07/chatgpt-teen-account-safety-features-testing/92133273007/">ChatGPT teen account safety features are problematic, new report finds</a></li>
+<li><a href="https://money.usnews.com/investing/news/articles/2026-10-07/openai-says-teens-use-chatgpt-for-under-15-minutes-a-day-as-worries-over-risks-grow">OpenAI Says Teens Use ChatGPT for Under 15 Minutes a Day as...</a></li>
 
 </ul>
 </details>
+
+**社区讨论**: OpenAI 公开质疑 Common Sense Media 的测试方法，称其并未准确反映青少年安全防护在实际中的运作方式，同时表示欢迎严格的独立评估。争议的核心在于模拟危机情境是否能公平地代表现实中的青少年互动。
 
 **标签**: `#AI safety`, `#mental health`, `#ChatGPT`, `#teen users`, `#AI ethics`
 
 ---
 
-<a id="item-4"></a>
-## [ThinkingBox-Bench 以最终数据库状态评估 507 个有状态智能体工作流](https://www.reddit.com/r/MachineLearning/comments/1x17shf/thinkingbox_solving_an_agent_task_once_vs_solving/) ⭐️ 8.0/10
+<a id="item-7"></a>
+## [美政府以欺诈为由暂停微软绿卡申请资格](https://apnews.com/article/h1b-visa-program-vance-microsoft-e7b3a407f822702b269ee277d21343ea) ⭐️ 8.0/10
 
-微软研究人员发布了 ThinkingBox-Bench，包含横跨五个领域（零售、旅行/酒店、汽车保险、数字银行内部 IT、咨询 IT/HR）的 507 个策略条件化业务工作流，每个任务从相同的干净后端状态出发独立执行 20 次，每个模型共 10,140 次试验。评分方式是将最终后端状态及其副作用与要求的终态进行比对，论文报告了 pass@1、pass@20 和 all-20 三个指标，显示发现能力与可重复性对模型的排名差异极大（例如 Kimi-K3 至少成功一次的任务占 93.89%，但 20 次全部成功的仅占 13.41%）。 大多数智能体基准只衡量任务是否完成过一次，这可能掩盖不可靠的行为；通过评估最终数据库状态和副作用，ThinkingBox-Bench 揭示了许多看似成功的运行实际上让后端处于错误状态。这对任何在企业工作流中部署智能体的人都很重要，因为决定智能体能否被信任处理真实业务流程的是重复执行中的可靠性，而不是偶尔的成功。 在对 12 个模型、121,680 次有效试验的回顾性消融中，有 79,853 次未通过可执行检查，其中 67.24% 的失败仍然干净地终止——调用了改变状态的工具且没有最终工具错误，这意味着仅看完成度的代理指标会把它们判为成功；在这些干净终止的失败中，字段值错误占 77.61%，非预期的额外副作用占 43.30%，缺失必需副作用占 25.36%。作者指出，这些任务是对企业工作流模式的合成重建，20/20 是在固定试验预算下的观测计数而非未来可靠性的保证，并且模拟用户是固定的 LLM，这是附录中讨论的一个方差来源。
-
-reddit · r/MachineLearning · /u/tuhin_k · 10月9日 00:50
-
-**背景**: AI 智能体是基于大语言模型的系统，能够使用工具并在多步骤工作流中做出决策，而评估它们很困难，因为一次成功的轨迹并不能证明智能体能稳定成功。有状态工作流是指操作会改变持久化后端（如数据库或订单系统）的任务，因此正确性取决于最终状态，而不仅仅是智能体是否声称完成了任务。ThinkingBox-Bench 基于这一思路，从干净后端出发多次运行每个任务并检查最终状态，同时公开了代码、数据以及 Hugging Face OpenEnv 环境，方便他人测试自己的模型。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2608.19741">One Success Isn’t Reliability: Thinkingbox , a Sandbox and...</a></li>
-<li><a href="https://huggingface.co/datasets/microsoft/ThinkingBox-Bench">microsoft/ ThinkingBox - Bench · Datasets at Hugging Face</a></li>
-
-</ul>
-</details>
-
-**标签**: `#agent evaluation`, `#benchmark`, `#stateful workflows`, `#database state`, `#AI agents`
-
----
-
-<a id="item-5"></a>
-## [研究者将 56 亿条 TikTok 视频元数据上传至 Hugging Face](https://www.reddit.com/r/MachineLearning/comments/1x04235/uploaded_56_billion_tiktok_videos_metadata_on/) ⭐️ 8.0/10
-
-一位研究者（Reddit 用户 /u/DataShack）在 Hugging Face 上发布了一个包含 56 亿条 TikTok 视频元数据记录的数据集，时间跨度为 2014 年至 2026 年 10 月，同时还包含 45 亿行的创作者表和 6.33 亿行的音频表。该研究者还提供直接的 ClickHouse 查询访问，向在 Reddit 帖子下评论的用户发放数据库凭证。 这是目前公开发布的最大社交媒体元数据集之一，使推荐系统、趋势分析和内容病毒式传播等大规模研究成为可能，而这些研究此前在没有平台 API 访问权限的情况下几乎无法进行。直接提供 ClickHouse 查询的方式降低了门槛，让缺乏存储或算力的研究者也能使用这些数据。 该数据集托管在研究者自建的 ClickHouse 服务器上，研究者明确要求用户避免运行重量级查询以免服务器崩溃。元数据覆盖 2014 年至 2026 年 10 月的视频，但目前尚不清楚数据是如何收集的，以及是否符合 TikTok 的服务条款。
-
-reddit · r/MachineLearning · /u/DataShack · 10月7日 18:20
-
-**背景**: Hugging Face 是一个广泛使用的机器学习和数据集托管与分享平台，拥有超过 10 万个数据集。ClickHouse 是一个开源的列式数据库，专为实时分析设计，以在大数据集上极快的查询性能著称。TikTok 视频元数据通常包括视频 ID、创作者账号、互动统计、使用的音频和时间戳等信息，研究者利用这些数据来研究社交媒体动态。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://clickhouse.com/">Fast Open-Source OLAP DBMS | ClickHouse</a></li>
-<li><a href="https://huggingface.co/datasets">Datasets – Hugging Face</a></li>
-<li><a href="https://www.geeksforgeeks.org/artificial-intelligence/hugging-face-dataset-hub/">Hugging Face Dataset Hub - GeeksforGeeks</a></li>
-
-</ul>
-</details>
-
-**标签**: `#dataset`, `#TikTok`, `#social-media`, `#ClickHouse`, `#machine-learning`
-
----
-
-<a id="item-6"></a>
-## [OpenAI API 为 GPT-6.1 Sol 新增 Ultrafast 模式](https://developers.openai.com/api/docs/changelog) ⭐️ 8.0/10
-
-OpenAI 在其 Responses API（v1/responses）中为 GPT-6.1 Sol 模型新增了 Ultrafast 服务层级，生成速度最高可达 Standard 层级的约 8 倍。该模式面向所有 API 用户开放，价格为 Standard 的 6 倍，短上下文定价约为每百万输入 token 12 美元、缓存输入 0.60 美元、输出 60 美元。 这为开发者提供了一种用成本换取低延迟的手段，对延迟敏感以及需要频繁快速调用工具的智能体（agent）类工作负载尤为重要。这也表明 OpenAI 在早前于其他模型上预览 Ultrafast 之后，正持续按速度层级对其 API 进行细分。 Ultrafast 被描述为 OpenAI API 中最快的服务层级，OpenAI 强烈建议使用 WebSockets，尤其是在智能体应用中，因为如果没有持久连接，网络开销可能会削弱延迟收益。6 倍于 Standard 的定价适用于短上下文请求，而超过 272K 输入 token 的提示词将按更高的倍率计费。
+特朗普政府宣布暂停微软参与外籍劳工绿卡申请项目，指控其存在欺诈行为。副总统万斯表示，微软去年裁员 6000 名美国员工，却获得了 6300 份 H-1B 签证和近 3000 张绿卡，称其为“利用该系统最多的公司”。 这标志着美国政府对科技公司使用外籍劳工项目的审查显著升级，可能为其他大型雇主树立先例。此举可能扰乱微软招聘和留住国际人才的能力，并预示着影响整个科技行业的更广泛移民政策转变。 万斯指责微软先发布虚假招聘广告以证明招不到美国工人，再以外籍劳工替换美国员工；微软尚未回应。他还点名哈佛、耶鲁、MIT 等九所大学，称其涉嫌滥用 J-1 签证项目。
 
 telegram · zaihuapd · 10月9日 00:00
 
-**背景**: OpenAI API 提供多个服务层级，Standard 为默认层级，Fast 模式价格为 Standard 的 2 倍，而 Batch 和 Flex 则便宜 50%。Ultrafast 是较新的高价层级，主打最高生成速度；GPT-6.1 Sol 则是一款定位为接近 Astra 智能水平、面向编程、计算机操作和专业工作的模型。Responses API（v1/responses）是 OpenAI 用于调用模型并支持内置工具和状态管理的端点。
+**背景**: H-1B 签证项目允许美国雇主临时聘用从事专业职业的外籍员工，持有者最多可在该身份下停留六年。职业移民绿卡则通过雇主担保授予外籍员工合法永久居留权。特朗普政府近期以大规模替代美国工人和系统性滥用为由，加强了对这些项目的限制。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developers.openai.com/api/docs/guides/ultrafast-mode">Ultrafast mode | OpenAI API</a></li>
-<li><a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol">GPT-6.1 Sol Model | OpenAI API</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-6-1-sol/">Introducing GPT-6.1 Sol | OpenAI</a></li>
+<li><a href="https://www.foxbusiness.com/politics/vance-suspends-microsoft-others-from-foreign-workers-applying-green-cards-accuses-company-visa-abuse">Vance accuses Microsoft of abusing visa system... | Fox Business</a></li>
+<li><a href="https://bechtel.stanford.edu/navigate-international-life/visas/h-1b-employment-visa">H - 1 B Employment Visa | Bechtel International Center</a></li>
+<li><a href="https://www.usatoday.com/story/news/politics/2025/09/24/panic-lingers-trump-h1b-visa-restrictions/86293759007/">Panic lingers after new Trump visa restrictions</a></li>
 
 </ul>
 </details>
 
-**标签**: `#OpenAI`, `#API`, `#GPT-6.1`, `#performance`, `#pricing`
-
----
-
-<a id="item-7"></a>
-## [SpaceX 拟收购全美低频段频谱许可证](https://x.com/SpaceX/status/2108291133025698301) ⭐️ 8.0/10
-
-SpaceX 宣布达成协议，拟收购一套覆盖全美的低频段频谱许可证组合，公司称这将为 Starlink 成为美国主要移动运营商铺平道路。结合其 Gen2 星座，这批频谱将使 Starlink Mobile 能够让美国民众无论身处何地都获得高速移动宽带。 如果交易完成，SpaceX 将从卫星互联网提供商转变为全国性移动运营商，直接在美国无线市场挑战 AT&T、Verizon 和 T-Mobile。这也标志着卫星网络与地面网络更广泛的融合趋势，而低频段频谱正因其广域覆盖和建筑穿透能力而备受青睐。 低频段频谱（通常为 600–900 MHz）传播距离远、穿透建筑能力强，非常适合全国覆盖，但容量低于中频段或毫米波。SpaceX 表示，正是这批许可证与其 Gen2 星座的结合，才使无处不在的高速移动宽带成为可能，不过该交易仍需获得监管批准。
-
-telegram · zaihuapd · 10月9日 01:04
-
-**背景**: 低频段频谱许可证是政府授予的在特定频率上传输无线电信号的权利，在美国由 FCC 分配。T-Mobile 等运营商长期利用 600 MHz 和 700 MHz 频谱资源为农村地区提供 5G 覆盖，而 AT&T 近期也同意从 EchoStar 收购覆盖美国 400 多个市场的频谱许可证。Starlink 的 Gen2 星座是 SpaceX 的下一代卫星网络，FCC 已批准额外 7,500 颗 Gen2 卫星，以在全球扩展高速、低延迟覆盖。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://about.att.com/story/2025/echostar.html">AT&T to Acquire Spectrum Licenses from EchoStar</a></li>
-<li><a href="https://www.fierce-network.com/wireless/checking-top-10-owners-600-mhz-spectrum-licenses">Checking in on the top 10 owners of 600 MHz spectrum licenses</a></li>
-<li><a href="https://docs.fcc.gov/public/attachments/DOC-417881A1.pdf">FCC Approves Next-Gen Satellite Constellation Enabling Better ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#SpaceX`, `#Starlink`, `#telecom`, `#spectrum`, `#satellite-internet`
+**标签**: `#immigration`, `#H-1B`, `#Microsoft`, `#tech policy`, `#labor`
 
 ---
 
 <a id="item-8"></a>
-## [Anthropic 推出免费开源漏洞扫描服务 OSS Scanner](https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source) ⭐️ 8.0/10
+## [OpenAI API 为 GPT-6.1 Sol 新增 Ultrafast 模式](https://developers.openai.com/api/docs/changelog) ⭐️ 8.0/10
 
-Anthropic 推出了 OSS Scanner，这是一项面向符合条件的开源项目的免费、自愿接入的漏洞扫描服务，使用 Claude 等模型生成包含漏洞复现、说明和补丁建议的报告。过去半年它发现了逾 2.9 万个候选漏洞，人工审查约 6000 个，早期测试的 97 个高危或严重漏洞中有 85 个符合其披露流程要求。 这代表了一种新颖的 AI 驱动的大规模开源安全方法，可能加速那些通常缺乏专职安全资源的关键项目中的漏洞发现与修复。它可能重塑开源漏洞的发现和披露方式，影响维护者、下游用户以及更广泛的软件供应链。 报告由 Claude 等模型生成，不经人工审核，可能存在错误；符合条件项目的核心维护者可通过 GitHub PR 申请。该服务为自愿接入且免费，Anthropic 指出仅对部分候选漏洞进行了人工审查。
+OpenAI 在 Responses API（v1/responses）中为 GPT-6.1 Sol 推出了 Ultrafast 服务层级，生成速度最高可达 Standard 层级的约 8 倍。该模式面向所有 API 用户开放，价格为 Standard 的 6 倍：短上下文下约为每百万 token 输入 $12、缓存输入 $0.60、输出 $60。 这为开发者提供了一个以延迟为优先的选项，适用于吞吐量比成本更重要的智能体与实时工作负载，但 6 倍的价格溢价也迫使团队在速度与预算之间权衡。这也表明 OpenAI 的竞争焦点不仅是模型质量，还包括推理速度与硬件效率。 Ultrafast 被描述为 Responses API 中最快的服务层级，同时也正在 Codex 和 ChatGPT Work 中推出，可通过 service_tier="ultrafast" 等配置启用。定价与上下文长度相关，因此所引用的 $12/$0.60/$60 费率适用于短上下文，输入更长时价格可能上升。
 
-telegram · zaihuapd · 10月9日 02:00
+telegram · zaihuapd · 10月9日 00:00
 
-**背景**: 开源项目通常由小型团队维护，安全资源有限，因此自动化漏洞扫描很有价值。协调漏洞披露（CVD）是一种标准流程，报告者私下通知维护者并在公开披露前留出修复时间。Anthropic 的 OSS Scanner 旨在通过提供 AI 生成的报告和快速披露通道来融入这一生态。
+**背景**: Responses API（/v1/responses）是 OpenAI 于 2025 年 3 月推出的面向智能体与助手的新接口，与旧的 Chat Completions API 不同，它能跨轮次保留推理状态。服务层级让 API 用户可以在成本与速度之间选择，而 Ultrafast 是专为低延迟生成打造的高端层级。GPT-6.1 Sol 在 OpenAI DevDay 2026 上发布，被定位为以更低成本提供接近 Astra 智能水平的模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://red.anthropic.com/oss-scanner/">OSS Scanner</a></li>
-<li><a href="https://github.com/anthropics/oss-scanner">GitHub - anthropics/ oss - scanner · GitHub</a></li>
-<li><a href="https://oss-vulnerability-guide.openssf.org/">Guide to coordinated vulnerability disclosure for open source ...</a></li>
+<li><a href="https://community.openai.com/t/ultrafast-is-rolling-out-today-for-gpt-6-1-sol-in-the-api-codex-and-chatgpt-work/1404475">Ultrafast is rolling out today for GPT-6.1 Sol in the API , Codex, and...</a></li>
+<li><a href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61">[AINews] OpenAI DevDay 2026: Dots, 6 . 1 Sol , Ultrafast , Decisions...</a></li>
+<li><a href="https://vermal.mintlify.app/api-formats/openai-responses">OpenAI Responses API for agentic workflows</a></li>
 
 </ul>
 </details>
 
-**标签**: `#security`, `#open-source`, `#AI`, `#vulnerability-scanning`, `#Anthropic`
+**社区讨论**: 社区讨论较为有限，但 OpenAI 社区的相关帖子指出，Ultrafast 正在 API、Codex 和 ChatGPT Work 中面向 GPT-6.1 Sol 推出，并建议用户在采用这一更昂贵的层级前先估算自身的 token 需求。
+
+**标签**: `#OpenAI`, `#API`, `#GPT-6.1`, `#Ultrafast`, `#Pricing`
+
+---
+
+<a id="item-9"></a>
+## [SpaceX 拟收购全美低频段频谱许可证](https://x.com/SpaceX/status/2108291133025698301) ⭐️ 8.0/10
+
+SpaceX 宣布达成协议，拟收购一套覆盖全美的低频段频谱许可证组合，并表示结合其 Gen2 星座，Starlink Mobile 可让美国民众无论身处何地都能获得高速移动宽带。 此举可能使 Starlink 从卫星互联网提供商升级为美国主要移动运营商，直接挑战 T-Mobile、AT&T 和 Verizon 等老牌运营商，并重塑电信市场的竞争格局。 低频段频谱以覆盖范围广、穿透建筑物能力强著称，SpaceX 声称新频谱加上 Gen2 星座将实现高速移动宽带；目前 Starlink 的直连手机服务依托约 650 颗卫星、通过 T-Mobile 的 T-Satellite 提供约 4Mbps 速率，而获 FCC 批准的 1.5 万颗卫星 Starlink Mobile 星座承诺每用户最高 150Mbps。
+
+telegram · zaihuapd · 10月9日 01:04
+
+**背景**: 低频段频谱指 600MHz、700MHz 等传播距离远、穿透墙体能力强的无线电频率，非常适合全国性移动覆盖；美国运营商主要通过 FCC 拍卖获得此类许可证，T-Mobile 在 2017 年 600MHz 激励拍卖后成为首家持有全国性低频段许可证的运营商。Starlink 是 SpaceX 的低轨卫星互联网服务，其直连手机技术可让普通智能手机在地面网络不可用时连接卫星。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Spectrum_auction">Spectrum auction - Wikipedia</a></li>
+<li><a href="https://www.notebookcheck.net/FCC-approves-SpaceX-s-15-000-satellite-Starlink-Mobile-constellation-promising-150Mbps-to-phones.1417902.0.html">FCC approves SpaceX’s 15,000-satellite Starlink Mobile constellation ...</a></li>
+<li><a href="https://www.techradar.com/phones/what-is-starlink-price-speeds-how-to-get-it-on-t-mobile-and-more">What is Starlink ? How to get the satellite service for free... | TechRadar</a></li>
+
+</ul>
+</details>
+
+**标签**: `#SpaceX`, `#Starlink`, `#spectrum`, `#telecommunications`, `#satellite internet`
+
+---
+
+<a id="item-10"></a>
+## [Anthropic 推出免费开源漏洞扫描服务 OSS Scanner](https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source) ⭐️ 8.0/10
+
+Anthropic 推出了 OSS Scanner，这是一项免费、自愿接入的漏洞扫描服务，利用 Claude 等模型为符合条件的开源项目生成漏洞报告、复现步骤、漏洞说明以及可能的补丁建议。过去半年中，该服务发现了超过 2.9 万个候选漏洞，其中约 6000 个经过人工审查；在早期测试的 97 个高危或严重漏洞中，有 85 个符合 Anthropic 的披露流程要求。 这是一项重要的行业进展，因为它将前沿大语言模型直接、大规模地应用于开源软件安全，可能帮助那些通常缺乏资源来发现和修复漏洞的维护者。它可能改变开源安全审计的方式，并推动更多项目采用 AI 辅助的漏洞发现。 报告完全由模型生成，未经人工审核，因此可能存在错误；符合条件的核心维护者可以通过提交 GitHub PR 来申请。该服务与 Anthropic 面向企业的通用代码扫描与修复产品 Claude Security 不同。
+
+telegram · zaihuapd · 10月9日 02:00
+
+**背景**: 开源项目被广泛使用，但往往由安全资源有限的小团队维护，这使得漏洞发现和披露颇具挑战。漏洞披露流程旨在私下报告缺陷，以便在公开宣布前完成修补，但不同项目的流程可能并不一致。像 Claude 这样的大语言模型正越来越多地被用于分析代码和提出修复建议，不过其输出仍需验证。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source">An opt-in vulnerability -finding service for open - source software</a></li>
+<li><a href="https://red.anthropic.com/oss-scanner/">OSS Scanner</a></li>
+<li><a href="https://github.com/anthropics/oss-scanner">GitHub - anthropics/ oss - scanner · GitHub</a></li>
+
+</ul>
+</details>
+
+**标签**: `#security`, `#open-source`, `#AI/ML`, `#vulnerability-scanning`, `#Anthropic`
+
+---
+
+<a id="item-11"></a>
+## [中国天眼 FAST 发现首例脉冲星原生三体系统](https://nao.cas.cn/news/gd/202610/t20261009_8289939.html) ⭐️ 8.0/10
+
+中欧科学家独立确认，中国天眼 FAST 发现的脉冲星 PSR J0435+3233 属于首例仍在演化阶段的原生三体系统，由脉冲星、白矮星和类太阳恒星组成。该系统内外轨道周期分别为 8 天和 73.5 年，成果于 2026 年 10 月 9 日发表于《天体物理学杂志快报》。 这是首例被确认的含脉冲星的原生三体系统，为研究多星系统的形成与演化以及极端条件下的引力理论提供了罕见的天然实验室。同时，这也凸显了 FAST 在世界领先的灵敏度，巩固了中国在射电天文学领域日益重要的地位。 脉冲星 PSR J0435+3233 是一颗自转周期约 3.20 毫秒的毫秒脉冲星，由 FAST 在“多科学目标同时巡天”（CRAFTS）中发现。其自转减慢率比银河系中任何已知毫秒脉冲星高出两个数量级，在周期-周期导数图上远高于“自转加速线”，其伽马射线脉冲已被 Fermi-LAT 探测到。
+
+telegram · zaihuapd · 10月9日 05:14
+
+**背景**: FAST（500 米口径球面射电望远镜）是世界上最大的单口径射电望远镜，其 500 米直径的反射面建在中国贵州的一个天然洼地中。脉冲星是快速自转的中子星，会发出射电波束；毫秒脉冲星则是通过吸积伴星物质被加速到毫秒级自转周期的脉冲星。原生三体系统是指自形成以来就一直以三体构型相互束缚的系统，而非后来通过捕获或交换相互作用形成的系统。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2608.01227">The PSR J0435+3233 Triple System</a></li>
+<li><a href="https://english.cas.cn/newsroom/research-news/202604/t20260408_1155383.shtml">Scientists Identify Millisecond Pulsar PSR J 0435 + 3233 , Challenging...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#astronomy`, `#FAST telescope`, `#pulsar`, `#triple star system`, `#scientific discovery`
+
+---
+
+<a id="item-12"></a>
+## [Telegram Desktop 被曝一键窃取任意文件漏洞](https://t.me/zaihuapd/44307) ⭐️ 8.0/10
+
+Telegram Desktop 7.2.9 以下版本存在严重漏洞（CVE-2026-107181），用户点击恶意 tg:// 链接后，系统文件可在无确认的情况下被悄悄窃取，官方已在 7.2.9 版本中修复。 这是一个影响广泛使用的即时通讯客户端的严重零点击文件窃取漏洞，可能将浏览器会话、SSH 密钥和加密钱包等敏感数据暴露给远程攻击者。 该漏洞源于 tg:// 链接中的分号未转义，被当作独立的 IPC 命令处理，配合 interpret: 处理器可盗取文档、浏览器会话、SSH 密钥和加密钱包等任意文件；建议用户立即升级、警惕异常 tg:// 链接并启用本地密码。
+
+telegram · zaihuapd · 10月9日 09:51
+
+**背景**: Telegram Desktop 是一款流行的跨平台即时通讯应用，使用自定义的 tg:// URI 方案来处理打开聊天、加入群组等内部操作。IPC（进程间通信）允许应用的不同部分相互发送命令，如果用户提供的输入未被正确过滤，就可能被滥用执行非预期命令。CVE-2026-107181 是一个命令注入漏洞，精心构造的链接可触发应用读取本地文件并将其发送到攻击者控制的聊天中。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://dbu.gs/vulnerability/CVE-2026-107181">CVE-2026-107181 — Telegram Telegram Desktop | dbugs</a></li>
+<li><a href="https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/">Telegram Desktop : one-click account takeover via IPC... | beaksec</a></li>
+
+</ul>
+</details>
+
+**标签**: `#security`, `#vulnerability`, `#telegram`, `#CVE`, `#privacy`
 
 ---
